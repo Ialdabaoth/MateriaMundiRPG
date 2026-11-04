@@ -54,33 +54,39 @@ The Companion adds a repository from its published URL. It reads `mm.json` and t
 | `admin` | Path to the GeoJSON boundaries (`properties.name` is the region name). |
 | `books` | Ordered list: `{id, title, county, region, detail}`. `region` names the book's 3-mile region and `detail` its half-mile overview. |
 | `world` | Terrain settings for the one 3-mile world map (`counties`, `forest`, `bog_east_of`, `bog_north_of` …). |
-| `atlas` | `{hex_mi: 3, page_hex_mi: 24}`. |
-| `exploration` | `{hex_mi: 0.5, cluster_mi: 1.2, overrides: {county: {terrain settings}}}`. |
+| `atlas` | `{hex_mi: 3, page_hex_mi: 24}`: the March hex and the Region (page) hex. |
+| `league` | `{hex_mi: 0.5, overrides: {county: {terrain settings}}}`. |
 | `regions` | Named map regions. Each has `sites: [[name, lat, lon, kind, note?]]` plus terrain settings. |
 
 Site `kind` is one of `castle town abbey tomb hill cave ruin grove camp lair mist dead`. A new kind needs an icon in `assets/tiles/icons` and an entry in the build's icon table.
 
-Every site has a **real latitude and longitude**. Distances in the text must agree with the maps.
+Every site has a **real latitude and longitude**. Distances in the text must agree with the maps. A **mile is exactly 5,000 feet** (1.524 km), so a 3-mile hex is 4.572 km across its flats.
 
-## 4. Scales and pages (fixed for every module)
+## 4. Zoom levels, scales and pages (fixed for every module)
 
-| Product | Hex | Printed size | Page |
-| --- | --- | --- | --- |
-| World map | 3 mi (1 league, about 1 hour on foot) | 1 in | the whole module, on the web only |
-| Atlas | 24-mile page hex of 3-mile hexes | 1 in per 3-mile hex | one 11 × 8.5 in page per 24-mile hex that contains module land |
-| Exploration map | ½ mi (about 10 minutes on foot) | 1 in per ½-mile hex, about 2 mi each way | one page per point of interest; sites closer than `cluster_mi` share a page |
+Every map is a flat-top hex grid, odd columns shifted down, hexes numbered `CCRR` from `0101`. A mile is 5,000 feet. Each level divides one hex of the level above it.
 
-The page layout is 11 × 8.5 in landscape with a ¼ in border, the map (8.75 × 8 in) on the left and the legend on the right. Hexes beyond the module's boundary still render in full wherever they fall on a page, but they don't get pages of their own. Travel: forest and light woods both double travel time, and a Survival roll finds a path at normal speed (Easy in light woods, Hard in forest).
+| Level | What it is | Hex | Printed | Page |
+| --- | --- | --- | --- | --- |
+| **Region** | the whole module, a collection of 24-mile hexes | 24 mi | web only | the `#world` map, with the 24-mile hexes drawn over it |
+| **March** | one 24-mile hex divided into 3-mile hexes (8 across) | 3 mi (1 league, about 1 hour on foot) | 1 in per hex | one atlas page per 24-mile hex that contains module land |
+| **League** | one 3-mile hex divided into half-mile hexes (6 across) | ½ mi (2,500 ft, about 10 minutes on foot) | 1 in per hex | one page per 3-mile hex that holds a point of interest; every site in that hex shares the page |
+| **Field** | one half-mile hex divided into 100-foot hexes (25 across) | 100 ft | 1 in per hex | planned |
+| **Encounter** | a map of 5-foot squares of any size, keyed to a point of interest inside a Field hex | 5 ft square | 1 in per square | planned |
 
-Hex grids are flat-top, with odd columns shifted down, and are numbered `CCRR` from `0101`. 24-mile page hexes are numbered the same way on their own grid.
+The page layout is 11 × 8.5 in landscape with a ¼ in border, the map (8.75 × 8 in) on the left and the legend on the right. A page outlines its own hex and veils everything outside it; the neighbouring hexes still render in full, with their numbers and page references at the edges. Hexes beyond the module's boundary render wherever they fall on a page, but they don't get pages of their own.
+
+A League page is built from its March hex: the half-mile grid is centred on the 3-mile hex's centre, and in each 3-mile hex on the page (the League and its neighbours) the best-suited three in five half-mile hexes take that hex's March terrain (the highest ground for hills, the flattest for bog, and so on), so the two maps agree.
+
+Travel: forest and light woods both double travel time, and a Survival roll finds a path at normal speed (Easy in light woods, Hard in forest).
 
 ## 5. Identifiers and links (stable within a major version)
 
 - **Site slug**: the site name, accents stripped, lowercase, non-alphanumerics → `-` (`Dinn Ríg` → `dinn-rig`).
-- **Exploration key**: `p-` + the slug of the page's lead site (`p-an-caislean-dubh`).
-- **Atlas page**: its number, `1…n`, ordered north to south and then west to east.
-- **Viewer links**: `#world`, `#atlas-7`, `#p-an-caislean-dubh`, `#p-an-caislean-dubh--dinn-rig`.
-- **Hex addresses**: `<map>:<hex>`, where map is `world` or an exploration key: `#world:0706` (a 3-mile hex), `#p-an-uaimh:0304` (a half-mile hex on that page). These are the same keys as `campaign/state/hexes.json`. Every map uses the world map's hex geometry (`world.hex_px`, `world.col_px`, `world.origin_px`).
+- **League key**: `l-` + the number of its 3-mile hex (`l-1330`).
+- **March page**: its number, `1…n`, ordered north to south and then west to east.
+- **Viewer links**: `#world`, `#march-7`, `#l-1330`, `#l-1330--droichead-leithghlinne`. Links from version 0.1 (`#atlas-7`, `#p-<site>`, `#p-<site>--<site>`) still open the matching page, through the manifest's `aliases`.
+- **Hex addresses**: `<map>:<hex>`, where map is `world` or a League key: `#world:1330` (a 3-mile hex), `#l-1330:0607` (a half-mile hex in that League; the League's centre hex is 0907 on every League page). These are the same keys as `campaign/state/hexes.json`. Every map uses the world map's hex geometry (`world.hex_px`, `world.col_px`, `world.origin_px`).
 - **Render modes**: `?mode=map` shows only the map, with zoom buttons; `?mode=atlas` shows only the page list and search. The plain viewer shows both. An app can show the two modes in separate frames (the Companion does): a pick in the atlas frame posts `{"event": "select", "hash"}` instead of navigating, the app sends `{"show": hash}` to the map frame, and sends `{"current": hash}` back to the atlas frame so it highlights the page being shown.
 - **Embedding**: the viewer can sit in an iframe. It posts `{"type": "mm-viewer", "event": "view" | "hex" | "select", "module", "version", "hash", "map"?, "title"?, "small"?, "hex"?, "scale"?, "sites"?, "terrain"?, "terrainName"?}` to its parent whenever the reader moves or taps a hex. The parent may post `{"type": "mm-viewer", "show": "#world:0706"}` to open a link, and `{"type": "mm-viewer", "marks": [{"map": "world", "hex": "0706", "label": "P"}]}` to place markers, such as where a party stands.
 
@@ -99,7 +105,7 @@ A referee **forks** a module repository and adds a `campaign/` folder. Module au
 campaign/
   campaign.json              {"format": "mm-campaign/1", "modules": ["season-1"], "start": "1422-05-01", "referee": "…"}
   chronicle/2026-11-08-session-01.md   what happened, written after each session
-  state/hexes.json           {"<map>:<hex>": {"explored": true, "notes": "…"}}   map = "world" or an exploration key
+  state/hexes.json           {"<map>:<hex>": {"explored": true, "notes": "…"}}   map = "world" or a League key
   state/sites.json           {"<slug>": {"status": "cleared", "notes": "…"}}
   state/ratchets.json        {"<region>": 7}   the d20 region ratchets
   characters/<name>.json     character sheets, Companion CHARACTER_FORMAT
@@ -117,11 +123,11 @@ Building `modules/<id>` writes:
 ```
 <id>/index.html              the viewer
 <id>/module.json             the manifest (format "mm-module/1")
-<id>/maps/world.svg, maps/p-*.svg
-<id>/print/atlas.pdf, print/exploration.pdf
+<id>/maps/world.svg, maps/l-*.svg
+<id>/print/atlas.pdf (March pages), print/leagues.pdf
 ```
 
-The manifest contains `format`, `id`, `title`, `version`, `license`, `scales`, `books`, `world`, `atlas`, `exploration`, `sites`, `links` and `print`. `world` holds the map, its pixel geometry and every hex's terrain. `atlas` has one entry per page, with its centre, radius, neighbours and sites. `exploration` has one entry per page, with its map, title, book and sites with their pixel positions. `sites` gives each site's slug, kind, book, county, latitude and longitude, world hex, atlas page and exploration page. The web viewer, the PDFs and the manifest come from one build and carry the same `version` (semver, plus the commit and the date), printed in each page footer. If the versions match, the three agree.
+The manifest contains `format`, `id`, `title`, `version`, `license`, `scales`, `books`, `world`, `marches`, `leagues`, `sites`, `aliases`, `links` and `print`. `scales` gives `mile_ft` (5000) and the hex size of each zoom level. `world` holds the Region map, its pixel geometry and every 3-mile hex's terrain. `marches` has one entry per atlas page, with its 24-mile hex, centre, radius, neighbours and sites. `leagues` has one entry per League page, with its 3-mile hex, map, title, book, March terrain, centre and sites with their pixel positions. `sites` gives each site's slug, kind, book, county, latitude and longitude, world hex, March page and League. `aliases` maps old page keys to League keys. The web viewer, the PDFs and the manifest come from one build and carry the same `version` (semver, plus the commit and the date), printed in each page footer. If the versions match, the three agree.
 
 Build locally:
 
@@ -135,3 +141,4 @@ python3 -I modules/tools/build.py modules/season-1 dist/modules/season-1
 A module states its licence in `mm.json` and `module.json`. Materia Mundi's own Season 1 modules are **CC0**: fork, change and republish freely. A third-party module may use any licence, but a module that says it is "Materia Mundi compatible" must follow sections 3 to 6, so that the Companion and the viewer can read it.
 
 The map icons in `assets/tiles` are [Hex Tiles: Fantasy](https://cmartins.itch.io/hex-tiles-fantasy) by cmartins, licensed CC BY-SA 4.0. The viewer and the Companion credit them; keep that credit in anything built from them.
+The bonus Desert, Forest, Mountain and Tundra packs in `assets/tiles/packs` (and their keyed-out copies in `assets/tiles/features`) are art by C. Martins, licensed CC BY. Credit "Art by C. Martins" wherever they appear.
