@@ -80,6 +80,8 @@ Hex grids are flat-top, with odd columns shifted down, and are numbered `CCRR` f
 - **Exploration key**: `p-` + the slug of the page's lead site (`p-an-caislean-dubh`).
 - **Atlas page**: its number, `1…n`, ordered north to south and then west to east.
 - **Viewer links**: `#world`, `#atlas-7`, `#p-an-caislean-dubh`, `#p-an-caislean-dubh--dinn-rig`.
+- **Hex addresses**: `<map>:<hex>`, where map is `world` or an exploration key: `#world:0706` (a 3-mile hex), `#p-an-uaimh:0304` (a half-mile hex on that page). These are the same keys as `campaign/state/hexes.json`. Every map uses the world map's hex geometry (`world.hex_px`, `world.col_px`, `world.origin_px`).
+- **Embedding**: the viewer can sit in an iframe. It posts `{"type": "mm-viewer", "event": "view" | "hex", "module", "version", "hash", "map", "hex"?, "scale"?, "sites"?, "terrain"?, "terrainName"?}` to its parent whenever the reader moves or taps a hex. The parent may post `{"type": "mm-viewer", "show": "#world:0706"}` to open a link, and `{"type": "mm-viewer", "marks": [{"map": "world", "hex": "0706", "label": "P"}]}` to place markers, such as where a party stands.
 
 If a later version renames a site, add `"aliases": {"old-slug": "new-slug"}` to `module.json` so old links and campaign notes keep working.
 
