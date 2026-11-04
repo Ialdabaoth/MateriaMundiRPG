@@ -1,2 +1,2 @@
-Map icons from a CC0 "Hex Tiles: Fantasy" set (foundation icons and biome base tiles), supplied by Heph on 2026-11-04.
-`icons/` holds the icons with their hex outline removed (tools/tiles_prep.py) plus the three base tiles bg-green, bg-brown and bg-grey.
+Map icons and base tiles from **Hex Tiles: Fantasy** by cmartins (https://cmartins.itch.io/hex-tiles-fantasy), licensed under CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/). Supplied by Heph on 2026-11-04.
+`icons/` holds the icons with their hex outline removed (tools/tiles_prep.py) plus the three base tiles bg-green, bg-brown and bg-grey. These changes are shared under the same licence.

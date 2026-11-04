@@ -8,4 +8,4 @@ Playable Materia Mundi modules, built from one source into a web viewer, print P
 
 To build locally, see section 8 of the format. The build fetches SRTM terrain tiles into `modules/.cache/` the first time it runs.
 
-Everything in `modules/` is CC0 1.0 (public domain dedication): fork it, change it, and republish it.
+Everything in `modules/` is CC0 1.0 (public domain dedication): fork it, change it, and republish it. The one exception is the map icons in `assets/tiles/`: [Hex Tiles: Fantasy](https://cmartins.itch.io/hex-tiles-fantasy) by cmartins, CC BY-SA 4.0. Credit them wherever the maps go.
