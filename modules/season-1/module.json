@@ -2,7 +2,7 @@
  "id": "season-1",
  "title": "Season 1: Leinster, 1422",
  "short": "Season 1 · Leinster, 1422",
- "version": "0.1.0",
+ "version": "0.2.0",
  "license": "CC0-1.0",
  "dem": [
   52,
@@ -56,9 +56,8 @@
   "hex_mi": 3,
   "page_hex_mi": 24
  },
- "exploration": {
+ "league": {
   "hex_mi": 0.5,
-  "cluster_mi": 1.2,
   "overrides": {
    "Meath": {
     "bog_east_of": -7.0
