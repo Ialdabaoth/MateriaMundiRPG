@@ -1,0 +1,1217 @@
+{
+ "id": "season-1",
+ "title": "Season 1: Leinster, 1422",
+ "short": "Season 1 · Leinster, 1422",
+ "version": "0.1.0",
+ "license": "CC0-1.0",
+ "dem": [
+  52,
+  53,
+  -8,
+  -7
+ ],
+ "admin": "../geo/admin1.geojson",
+ "books": [
+  {
+   "id": "B2",
+   "title": "The Pale Keep",
+   "county": "Meath",
+   "region": "an-mhi",
+   "detail": "an-phail"
+  },
+  {
+   "id": "B3",
+   "title": "The Palace of Silver and Crimson",
+   "county": "Kilkenny",
+   "region": "cill-chainnigh",
+   "detail": "cill-chainnigh-b3"
+  },
+  {
+   "id": "B5",
+   "title": "Dinn Ríg",
+   "county": "Carlow",
+   "region": "ceatharlach",
+   "detail": "ceatharlach-b5"
+  },
+  {
+   "id": "B4",
+   "title": "Almhain",
+   "county": "Kildare",
+   "region": "cill-dara",
+   "detail": "cill-dara-b4"
+  }
+ ],
+ "world": {
+  "counties": [
+   "Meath",
+   "Kildare",
+   "Carlow",
+   "Kilkenny"
+  ],
+  "forest": 0.3,
+  "bog_east_of": -6.8,
+  "bog_north_of": 53.0
+ },
+ "atlas": {
+  "hex_mi": 3,
+  "page_hex_mi": 24
+ },
+ "exploration": {
+  "hex_mi": 0.5,
+  "cluster_mi": 1.2,
+  "overrides": {
+   "Meath": {
+    "bog_east_of": -7.0
+   },
+   "Kildare": {
+    "bog_north_of": 53.17
+   }
+  }
+ },
+ "regions": {
+  "an-mhi": {
+   "county": "Meath",
+   "title": "An Mhí",
+   "subtitle": "The Pale march: Baile Átha Troim and Tara (B2)",
+   "bog_east_of": -6.85,
+   "forest": 0.3,
+   "rivers": [
+    [
+     "Bóinn",
+     53.585,
+     -6.74
+    ],
+    [
+     "An Abhainn Dubh",
+     53.7,
+     -6.93
+    ]
+   ],
+   "sites": [
+    [
+     "Baile Átha Troim",
+     53.555,
+     -6.79,
+     "castle"
+    ],
+    [
+     "Cnoc na Teamhrach",
+     53.578,
+     -6.612,
+     "hill"
+    ],
+    [
+     "Brú na Bóinne",
+     53.694,
+     -6.475,
+     "tomb"
+    ],
+    [
+     "Tlachtga",
+     53.624,
+     -6.886,
+     "hill"
+    ],
+    [
+     "Ceanannas Mór",
+     53.726,
+     -6.879,
+     "abbey"
+    ],
+    [
+     "An Uaimh (Navan)",
+     53.652,
+     -6.681,
+     "town"
+    ],
+    [
+     "Sliabh na Caillí",
+     53.745,
+     -7.11,
+     "tomb"
+    ],
+    [
+     "Baile Shláine",
+     53.709,
+     -6.543,
+     "abbey"
+    ],
+    [
+     "Droichead Átha",
+     53.717,
+     -6.35,
+     "town"
+    ],
+    [
+     "Móin Chluain Caoimhín (bog bodies)",
+     53.535,
+     -6.97,
+     "dead"
+    ]
+   ]
+  },
+  "cill-chainnigh": {
+   "county": "Kilkenny",
+   "title": "Cill Chainnigh",
+   "subtitle": "Dame Kyteler's country (B3)",
+   "bog_east_of": -7.6,
+   "forest": 0.4,
+   "rivers": [
+    [
+     "An Fheoir",
+     52.6,
+     -7.2
+    ],
+    [
+     "An Bhearú",
+     52.55,
+     -6.98
+    ],
+    [
+     "An tSiúir",
+     52.33,
+     -7.3
+    ]
+   ],
+   "sites": [
+    [
+     "Cill Chainnigh",
+     52.654,
+     -7.252,
+     "castle"
+    ],
+    [
+     "Dearc Fhearna",
+     52.734,
+     -7.248,
+     "cave"
+    ],
+    [
+     "Seacht gCaisleán (Palace)",
+     52.54,
+     -7.27,
+     "castle"
+    ],
+    [
+     "Mainistir Sheireapúin",
+     52.51,
+     -7.16,
+     "abbey"
+    ],
+    [
+     "Baile Mhic Andáin",
+     52.526,
+     -7.137,
+     "town"
+    ],
+    [
+     "Callainn",
+     52.544,
+     -7.39,
+     "town"
+    ],
+    [
+     "Gabhrán",
+     52.628,
+     -7.066,
+     "castle"
+    ],
+    [
+     "Inis Tíog",
+     52.49,
+     -7.06,
+     "town"
+    ],
+    [
+     "Caisleán an Chomair",
+     52.8,
+     -7.21,
+     "hill"
+    ]
+   ]
+  },
+  "cill-dara": {
+   "county": "Kildare",
+   "title": "Cill Dara",
+   "subtitle": "The Bog of Allen and the revel under Almhain (B4)",
+   "bog_east_of": -6.8,
+   "forest": 0.3,
+   "rivers": [
+    [
+     "An Life",
+     53.25,
+     -6.7
+    ],
+    [
+     "An Bhearú",
+     53.05,
+     -7.02
+    ]
+   ],
+   "sites": [
+    [
+     "Cill Dara",
+     53.157,
+     -6.911,
+     "abbey"
+    ],
+    [
+     "Cnoc Almhaine (Hill of Allen)",
+     53.24,
+     -6.86,
+     "hill"
+    ],
+    [
+     "Dún Ailinne",
+     53.11,
+     -6.78,
+     "hill"
+    ],
+    [
+     "Maigh Nuad",
+     53.381,
+     -6.592,
+     "castle"
+    ],
+    [
+     "An Nás",
+     53.216,
+     -6.666,
+     "town"
+    ],
+    [
+     "Baile Átha Í",
+     52.99,
+     -6.986,
+     "castle"
+    ],
+    [
+     "Díseart Diarmada",
+     52.91,
+     -6.84,
+     "abbey"
+    ],
+    [
+     "An Currach",
+     53.15,
+     -6.85,
+     "grove"
+    ],
+    [
+     "Maoin",
+     52.98,
+     -6.82,
+     "ruin"
+    ],
+    [
+     "Mullach Maistean",
+     52.995,
+     -6.885,
+     "hill"
+    ],
+    [
+     "Móin Alúine",
+     53.28,
+     -7.02,
+     "ruin"
+    ]
+   ]
+  },
+  "ceatharlach": {
+   "county": "Carlow",
+   "title": "Ceatharlach",
+   "subtitle": "The Barrow, Dinn Ríg and the Blackstairs (B5)",
+   "bog_east_of": -7.2,
+   "forest": 0.45,
+   "rivers": [
+    [
+     "An Bhearú",
+     52.7,
+     -6.96
+    ],
+    [
+     "An tSláine",
+     52.78,
+     -6.7
+    ]
+   ],
+   "sites": [
+    [
+     "Ceatharlach",
+     52.836,
+     -6.934,
+     "castle"
+    ],
+    [
+     "Dolmen Chnoc an Bhrúnaigh",
+     52.84,
+     -6.88,
+     "tomb"
+    ],
+    [
+     "Seanleithghlinn",
+     52.74,
+     -7.02,
+     "abbey"
+    ],
+    [
+     "An Tulach",
+     52.8,
+     -6.735,
+     "castle"
+    ],
+    [
+     "An Bhuiríos",
+     52.6,
+     -6.92,
+     "castle"
+    ],
+    [
+     "Stua Laighean",
+     52.617,
+     -6.778,
+     "hill"
+    ],
+    [
+     "Tigh Moling",
+     52.49,
+     -6.93,
+     "abbey"
+    ],
+    [
+     "An Caisleán Dubh (Leighlinbridge)",
+     52.7365,
+     -6.972,
+     "castle"
+    ],
+    [
+     "Dinn Ríg",
+     52.724,
+     -6.966,
+     "ruin"
+    ]
+   ]
+  },
+  "an-phail": {
+   "bbox": [
+    -7.02,
+    53.5,
+    -6.56,
+    53.665
+   ],
+   "hex_mi": 0.5,
+   "agg": 3,
+   "px": 46,
+   "river_km2": 15,
+   "forest": 0.45,
+   "bog_east_of": -6.9,
+   "bog_sd": 2.2,
+   "hill_rel": 40,
+   "title": "An Pháil",
+   "subtitle": "Baile Átha Troim to Cnoc na Teamhrach",
+   "rivers": [
+    [
+     "Bóinn",
+     53.565,
+     -6.74
+    ],
+    [
+     "Bóinn",
+     53.63,
+     -6.68
+    ]
+   ],
+   "sites": [
+    [
+     "Baile Átha Troim",
+     53.5545,
+     -6.7896,
+     "castle",
+     "the keep"
+    ],
+    [
+     "Cnoc na Teamhrach",
+     53.5795,
+     -6.6119,
+     "cave",
+     "caves and labyrinth"
+    ],
+    [
+     "Móin Alúine",
+     53.535,
+     -6.965,
+     "lair",
+     "Péistduine nest, Clonycavan bog"
+    ],
+    [
+     "Dúnad Faoladh",
+     53.512,
+     -6.895,
+     "camp",
+     "Faoladh camp"
+    ],
+    [
+     "Coill na Síog",
+     53.624,
+     -6.886,
+     "grove",
+     "Tlachtga"
+    ],
+    [
+     "Nead an Damháin Alla",
+     53.515,
+     -6.765,
+     "lair",
+     "ettercaps on the road south"
+    ],
+    [
+     "Mainistir Bheigtí",
+     53.582,
+     -6.699,
+     "abbey",
+     "Bective Abbey"
+    ],
+    [
+     "Baile Átha Buí",
+     53.623,
+     -6.917,
+     "town",
+     "Athboy"
+    ],
+    [
+     "An Uaimh",
+     53.652,
+     -6.681,
+     "town",
+     "Navan"
+    ]
+   ],
+   "overrides": [
+    [
+     "1406",
+     "hills"
+    ]
+   ]
+  },
+  "cill-chainnigh-b3": {
+   "bbox": [
+    -7.46,
+    52.4,
+    -6.98,
+    52.84
+   ],
+   "hex_mi": 0.5,
+   "agg": 3,
+   "px": 36,
+   "river_km2": 20,
+   "forest": 0.4,
+   "bog_east_of": -7.6,
+   "hill_rel": 85,
+   "title": "Cill Chainnigh",
+   "subtitle": "The Palace of Silver and Crimson",
+   "rivers": [
+    [
+     "An Fheoir",
+     52.6,
+     -7.215
+    ],
+    [
+     "Abhainn na Rí",
+     52.553,
+     -7.33
+    ],
+    [
+     "An Díonán",
+     52.76,
+     -7.215
+    ],
+    [
+     "An Bhearú",
+     52.62,
+     -6.995
+    ]
+   ],
+   "sites": [
+    [
+     "Seacht gCaisleán (the Palace)",
+     52.5397,
+     -7.2706,
+     "castle",
+     "Kells Priory; bridge over the King's River"
+    ],
+    [
+     "Cill Chainnigh (Lady d'Meath)",
+     52.6505,
+     -7.249,
+     "castle",
+     "Kilkenny Castle; Kyteler's house in the town"
+    ],
+    [
+     "Dearc Fhearna",
+     52.7337,
+     -7.2471,
+     "cave",
+     "Dunmore Cave"
+    ],
+    [
+     "Caisleán an Chomair",
+     52.806,
+     -7.211,
+     "town",
+     "Castlecomer: d'Meath's henchmen, horse-breeding gnomes"
+    ],
+    [
+     "Móinín Rua",
+     52.812,
+     -7.157,
+     "town",
+     "Moneenroe: gnome farming village"
+    ],
+    [
+     "The Moorfoul Mountains",
+     52.82,
+     -7.06,
+     "hill",
+     "Castlecomer plateau; the old Deerpeak Mines"
+    ],
+    [
+     "The Misty Moor",
+     52.72,
+     -7.02,
+     "mist",
+     "assumed: low ground between the plateau and the Barrow"
+    ],
+    [
+     "The Feywoods",
+     52.665,
+     -7.4,
+     "grove",
+     "west of Cill Chainnigh"
+    ],
+    [
+     "The Stormpeaks",
+     52.425,
+     -7.3,
+     "hill",
+     "hills south of the county"
+    ],
+    [
+     "Mainistir Sheireapúin",
+     52.511,
+     -7.159,
+     "abbey",
+     "Jerpoint Abbey"
+    ],
+    [
+     "Baile Mhic Andáin",
+     52.526,
+     -7.137,
+     "town",
+     "Thomastown"
+    ],
+    [
+     "Callainn",
+     52.544,
+     -7.39,
+     "town",
+     "Callan"
+    ]
+   ],
+   "patches": [
+    [
+     52.72,
+     -7.02,
+     2.0,
+     "bog"
+    ],
+    [
+     52.665,
+     -7.4,
+     2.5,
+     "forest"
+    ],
+    [
+     52.425,
+     -7.3,
+     2.5,
+     "hills"
+    ]
+   ]
+  },
+  "ceatharlach-b5": {
+   "bbox": [
+    -7.13,
+    52.69,
+    -6.88,
+    52.87
+   ],
+   "hex_mi": 0.5,
+   "agg": 3,
+   "px": 40,
+   "river_km2": 20,
+   "forest": 0.4,
+   "bog_east_of": -7.6,
+   "hill_rel": 60,
+   "title": "Dinn Ríg",
+   "subtitle": "Leighlinbridge and the horror on Sliabh Mairge (B5)",
+   "rivers": [
+    [
+     "An Bhearú",
+     52.675,
+     -6.945
+    ]
+   ],
+   "patches": [
+    [
+     52.72,
+     -7.02,
+     1.5,
+     "bog"
+    ]
+   ],
+   "sites": [
+    [
+     "An Caisleán Dubh",
+     52.7365,
+     -6.972,
+     "castle",
+     "Black Castle, Leighlinbridge: the frontier fort (B5 base)"
+    ],
+    [
+     "Droichead Leithghlinne",
+     52.7368,
+     -6.976,
+     "ruin",
+     "the 1320 bridge, the only dry crossing"
+    ],
+    [
+     "Dinn Ríg",
+     52.724,
+     -6.966,
+     "ruin",
+     "royal fort; the thirty burned kings walk"
+    ],
+    [
+     "Seanleithghlinn",
+     52.736,
+     -7.025,
+     "abbey",
+     "Old Leighlin cathedral; Laserian's Well (Seelie numen)"
+    ],
+    [
+     "Mainistir na Mairge",
+     52.8475,
+     -6.998,
+     "ruin",
+     "Killeshin: ruined monastery in the glen (Romanesque doorway; plundered 1041); Bocánach stronghold"
+    ],
+    [
+     "Baile na mBocánach",
+     52.838,
+     -7.02,
+     "camp",
+     "assumed: the hobgoblin village up the Glen of Killeshin"
+    ],
+    [
+     "Uaimheanna na bhFear Bolg",
+     52.8,
+     -7.06,
+     "cave",
+     "assumed: the old people's caves under the escarpment"
+    ],
+    [
+     "Pluais an Athaigh",
+     52.83,
+     -7.04,
+     "lair",
+     "assumed: the ogre's den above the warren"
+    ],
+    [
+     "Poll an Ghuail",
+     52.825,
+     -7.09,
+     "cave",
+     "assumed: Crettyard coal; burning seam, the way down to the péist"
+    ],
+    [
+     "The Misty Moor",
+     52.72,
+     -7.02,
+     "mist",
+     "between the Barrow and the Moorfouls"
+    ],
+    [
+     "Sliabh Mairge",
+     52.79,
+     -7.05,
+     "hill",
+     "Slievemargy: east face of the Castlecomer plateau (the Moorfouls)"
+    ],
+    [
+     "Muine Bheag",
+     52.7,
+     -6.955,
+     "town",
+     "Bagenalstown"
+    ],
+    [
+     "Ceatharlach",
+     52.836,
+     -6.926,
+     "town",
+     "Carlow: the Crown garrison"
+    ]
+   ]
+  },
+  "cill-dara-b4": {
+   "bbox": [
+    -7.12,
+    53.13,
+    -6.76,
+    53.33
+   ],
+   "hex_mi": 0.5,
+   "agg": 3,
+   "px": 40,
+   "river_km2": 20,
+   "forest": 0.35,
+   "bog_east_of": -6.92,
+   "bog_sd": 2.5,
+   "hill_rel": 40,
+   "title": "Almhain",
+   "subtitle": "The Bog of Allen and the revel under the hill (B4)",
+   "rivers": [
+    [
+     "An Life",
+     53.2,
+     -6.79
+    ]
+   ],
+   "patches": [
+    [
+     53.24,
+     -6.86,
+     0.6,
+     "hills"
+    ]
+   ],
+   "sites": [
+    [
+     "Cnoc Almhaine",
+     53.24,
+     -6.86,
+     "hill",
+     "Hill of Allen: Fionn's seat; the way into the sídhe"
+    ],
+    [
+     "Móin Alúine",
+     53.28,
+     -7.02,
+     "ruin",
+     "Bog of Allen: the 'desert'"
+    ],
+    [
+     "Cill Dara",
+     53.157,
+     -6.911,
+     "abbey",
+     "Kildare: Brigid's fire"
+    ],
+    [
+     "An Currach",
+     53.15,
+     -6.85,
+     "grove",
+     "the Curragh"
+    ],
+    [
+     "Ráth Iomgháin",
+     53.221,
+     -6.995,
+     "town",
+     "Rathangan: the approach across the bog"
+    ]
+   ]
+  },
+  "leinster-powers": {
+   "counties": [
+    "Meath",
+    "Kildare",
+    "Carlow",
+    "Kilkenny"
+   ],
+   "title": "Who Holds Leinster",
+   "subtitle": "Numen, pagan Fair Folk and mortal land (draft)",
+   "px": 11,
+   "forest": 0.3,
+   "bog_east_of": -6.8,
+   "powers": [
+    [
+     "Bríd's Flame and the Oak",
+     53.157,
+     -6.911,
+     8,
+     "numen"
+    ],
+    [
+     "Boann of Tobar Neachtain",
+     53.357,
+     -6.963,
+     5,
+     "torn"
+    ],
+    [
+     "The Horned Hunter",
+     53.24,
+     -6.86,
+     6,
+     "pagan"
+    ],
+    [
+     "Aengus's Revel",
+     53.28,
+     -7.02,
+     8,
+     "pagan"
+    ],
+    [
+     "Aengus at Brú na Bóinne",
+     53.6947,
+     -6.4755,
+     6,
+     "pagan"
+    ],
+    [
+     "The Aos Sí of Tlachtga",
+     53.624,
+     -6.886,
+     5,
+     "torn"
+    ],
+    [
+     "The Cailleach of Sliabh na Caillí",
+     53.745,
+     -7.11,
+     7,
+     "pagan"
+    ],
+    [
+     "Paschal Fire of Sláine",
+     53.716,
+     -6.543,
+     4,
+     "numen"
+    ],
+    [
+     "Colm Cille's Ceanannas",
+     53.726,
+     -6.879,
+     5,
+     "numen"
+    ],
+    [
+     "Laserian's Well, Leighlin",
+     52.736,
+     -7.025,
+     5,
+     "numen"
+    ],
+    [
+     "Stua Laighean",
+     52.617,
+     -6.78,
+     7,
+     "pagan"
+    ],
+    [
+     "Kyteler's Mist",
+     52.5397,
+     -7.2706,
+     8,
+     "pagan"
+    ],
+    [
+     "Cainnech of Cill Chainnigh",
+     52.6567,
+     -7.2575,
+     5,
+     "numen"
+    ],
+    [
+     "The Feywoods",
+     52.665,
+     -7.4,
+     6,
+     "pagan"
+    ],
+    [
+     "Dearc Fhearna",
+     52.7337,
+     -7.2471,
+     3,
+     "pagan"
+    ],
+    [
+     "Jerpoint",
+     52.511,
+     -7.157,
+     3,
+     "numen"
+    ]
+   ],
+   "sites": [
+    [
+     "Baile Átha Troim",
+     53.5545,
+     -6.7896,
+     "castle"
+    ],
+    [
+     "Teamhair",
+     53.5795,
+     -6.6119,
+     "hill"
+    ],
+    [
+     "Cill Dara",
+     53.157,
+     -6.911,
+     "abbey"
+    ],
+    [
+     "Cnoc Almhaine",
+     53.24,
+     -6.86,
+     "hill"
+    ],
+    [
+     "Ceatharlach",
+     52.836,
+     -6.926,
+     "town"
+    ],
+    [
+     "Dinn Ríg",
+     52.724,
+     -6.966,
+     "ruin"
+    ],
+    [
+     "Cill Chainnigh",
+     52.6505,
+     -7.249,
+     "castle"
+    ],
+    [
+     "Kells Priory",
+     52.5397,
+     -7.2706,
+     "abbey"
+    ],
+    [
+     "Maigh Nuad",
+     53.381,
+     -6.592,
+     "castle"
+    ]
+   ]
+  },
+  "leinster-lords": {
+   "counties": [
+    "Meath",
+    "Kildare",
+    "Carlow",
+    "Kilkenny"
+   ],
+   "title": "The Lords of Leinster",
+   "subtitle": "Mortal lordships, 1422 (draft)",
+   "px": 11,
+   "forest": 0.3,
+   "bog_east_of": -6.8,
+   "powers": [
+    [
+     "Liberty of Meath (Trim)",
+     53.5545,
+     -6.7896,
+     15,
+     "crown"
+    ],
+    [
+     "Ceanannas",
+     53.726,
+     -6.879,
+     5,
+     "church"
+    ],
+    [
+     "Maigh Nuad",
+     53.381,
+     -6.592,
+     11,
+     "geraldine"
+    ],
+    [
+     "Cill Dara",
+     53.157,
+     -6.911,
+     10,
+     "geraldine"
+    ],
+    [
+     "Baile Átha Í",
+     52.99,
+     -6.986,
+     8,
+     "geraldine"
+    ],
+    [
+     "O'Connor Faly",
+     53.33,
+     -7.25,
+     13,
+     "gael"
+    ],
+    [
+     "Ceatharlach garrison",
+     52.836,
+     -6.934,
+     6,
+     "crown"
+    ],
+    [
+     "An Caisleán Dubh",
+     52.7365,
+     -6.972,
+     4,
+     "crown"
+    ],
+    [
+     "MacMurrough Kavanagh",
+     52.6,
+     -6.86,
+     13,
+     "gael"
+    ],
+    [
+     "O'Brennan of Uí Duach",
+     52.8,
+     -7.2,
+     8,
+     "gael"
+    ],
+    [
+     "Cill Chainnigh",
+     52.6505,
+     -7.249,
+     16,
+     "butler"
+    ],
+    [
+     "Gabhrán",
+     52.63,
+     -7.065,
+     6,
+     "butler"
+    ],
+    [
+     "Kells Priory (lost to the mist)",
+     52.5397,
+     -7.2706,
+     4,
+     "church"
+    ],
+    [
+     "Seanleithghlinn",
+     52.736,
+     -7.025,
+     2,
+     "church"
+    ]
+   ],
+   "sites": [
+    [
+     "Baile Átha Troim",
+     53.5545,
+     -6.7896,
+     "castle"
+    ],
+    [
+     "Teamhair",
+     53.5795,
+     -6.6119,
+     "hill"
+    ],
+    [
+     "Cill Dara",
+     53.157,
+     -6.911,
+     "abbey"
+    ],
+    [
+     "Cnoc Almhaine",
+     53.24,
+     -6.86,
+     "hill"
+    ],
+    [
+     "Ceatharlach",
+     52.836,
+     -6.926,
+     "town"
+    ],
+    [
+     "Dinn Ríg",
+     52.724,
+     -6.966,
+     "ruin"
+    ],
+    [
+     "Cill Chainnigh",
+     52.6505,
+     -7.249,
+     "castle"
+    ],
+    [
+     "Kells Priory",
+     52.5397,
+     -7.2706,
+     "abbey"
+    ],
+    [
+     "Maigh Nuad",
+     53.381,
+     -6.592,
+     "castle"
+    ]
+   ],
+   "unshaded": "Unshaded: contested or waste",
+   "sides": {
+    "crown": [
+     "#d97a6c",
+     "The Crown and its castellans",
+     "#8a2a1e"
+    ],
+    "butler": [
+     "#e9c75c",
+     "Butler (Earls of Ormond)",
+     "#8a6a10"
+    ],
+    "geraldine": [
+     "#9fb8d9",
+     "FitzGerald (Earls of Kildare)",
+     "#2c4f80"
+    ],
+    "gael": [
+     "#8fc47a",
+     "Gaelic lords",
+     "#2f6b1f"
+    ],
+    "church": [
+     "#d8d0e8",
+     "Church lands",
+     "#5a4f78"
+    ]
+   }
+  }
+ }
+}

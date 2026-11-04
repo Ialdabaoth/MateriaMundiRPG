@@ -1,0 +1,8 @@
+{
+  "format": "mm-repo/1",
+  "name": "Materia Mundi",
+  "publisher": "Heph",
+  "systems": ["materia-mundi", "e9"],
+  "license": "CC0-1.0",
+  "modules": [{ "id": "season-1", "path": "modules/season-1/" }]
+}

@@ -1,0 +1,71 @@
+name: Site (companion app + modules)
+
+on:
+  push:
+    branches: [main]
+    paths: ['companion-app/**', 'modules/**', 'mm.json', '.github/workflows/site.yml']
+  pull_request:
+    paths: ['companion-app/**', 'modules/**', 'mm.json', '.github/workflows/site.yml']
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: companion-app-pages
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: companion-app/package-lock.json
+      - name: Companion app
+        working-directory: companion-app
+        run: |
+          npm ci
+          npm run check
+          npm test
+          npm run build
+        env:
+          BASE_PATH: /${{ github.event.repository.name }}/
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - uses: actions/cache@v4
+        with:
+          path: modules/.cache
+          key: module-terrain-${{ hashFiles('modules/*/module.json') }}
+          restore-keys: module-terrain-
+      - name: Modules (maps, PDFs, manifests)
+        run: |
+          pip install -r modules/requirements.txt
+          npm install --prefix modules/tools --no-save playwright@1.48.2
+          npx --prefix modules/tools playwright install --with-deps chromium
+          for m in modules/*/module.json; do
+            id=$(basename "$(dirname "$m")")
+            python3 -I modules/tools/build.py "modules/$id" "companion-app/dist/modules/$id"
+          done
+          cp mm.json companion-app/dist/mm.json
+      - uses: actions/upload-pages-artifact@v3
+        if: github.event_name != 'pull_request'
+        with:
+          path: companion-app/dist
+
+  deploy:
+    if: github.event_name != 'pull_request'
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4
