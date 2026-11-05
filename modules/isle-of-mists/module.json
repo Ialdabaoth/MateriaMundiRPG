@@ -1,8 +1,11 @@
 {
- "id": "season-1",
- "title": "Season 1: Leinster, 1422",
- "short": "Season 1 · Leinster, 1422",
- "version": "0.2.1",
+ "id": "isle-of-mists",
+ "moved_from": [
+  "season-1"
+ ],
+ "title": "Beyond the Pale: Leinster, 1422",
+ "short": "Beyond the Pale · Leinster, 1422",
+ "version": "0.3.5",
  "license": "CC0-1.0",
  "dem": [
   52,
@@ -1221,6 +1224,230 @@
      "#5a4f78"
     ]
    }
+  }
+ },
+ "names": {
+  "Abhainn na Rí": {
+   "en": "Rye Water"
+  },
+  "An Abhainn Dubh": {
+   "en": "Blackwater"
+  },
+  "An Bhearú": {
+   "en": "Barrow"
+  },
+  "An Bhuiríos": {
+   "en": "Borris"
+  },
+  "An Caisleán Dubh": {
+   "en": "Black Castle"
+  },
+  "An Caisleán Dubh (Leighlinbridge)": {
+   "en": "Black Castle (Leighlinbridge)"
+  },
+  "An Currach": {
+   "en": "The Curragh"
+  },
+  "An Díonán": {
+   "en": "Dinin"
+  },
+  "An Fheoir": {
+   "en": "Nore"
+  },
+  "An Life": {
+   "en": "Liffey"
+  },
+  "An Nás": {
+   "en": "Naas"
+  },
+  "An Tulach": {
+   "en": "Tullow"
+  },
+  "An Uaimh": {
+   "en": "Navan"
+  },
+  "An Uaimh (Navan)": {
+   "en": "Navan"
+  },
+  "An tSiúir": {
+   "en": "Suir"
+  },
+  "An tSláine": {
+   "en": "Slaney"
+  },
+  "Baile Mhic Andáin": {
+   "en": "Thomastown"
+  },
+  "Baile Shláine": {
+   "en": "Slane"
+  },
+  "Baile na mBocánach": {
+   "en": "Goblintown"
+  },
+  "Baile Átha Buí": {
+   "en": "Athboy"
+  },
+  "Baile Átha Troim": {
+   "en": "Trim"
+  },
+  "Baile Átha Í": {
+   "en": "Athy"
+  },
+  "Brú na Bóinne": {
+   "en": "Newgrange"
+  },
+  "Bóinn": {
+   "en": "Boyne"
+  },
+  "Caisleán an Chomair": {
+   "en": "Castlecomer"
+  },
+  "Callainn": {
+   "en": "Callan"
+  },
+  "Ceanannas Mór": {
+   "en": "Kells"
+  },
+  "Ceatharlach": {
+   "en": "Carlow"
+  },
+  "Cill Chainnigh": {
+   "en": "Kilkenny"
+  },
+  "Cill Chainnigh (Lady d'Meath)": {
+   "en": "Kilkenny (Lady d'Meath)"
+  },
+  "Cill Dara": {
+   "en": "Kildare"
+  },
+  "Cnoc Almhaine": {
+   "en": "Hill of Allen"
+  },
+  "Cnoc Almhaine (Hill of Allen)": {
+   "en": "Hill of Allen"
+  },
+  "Cnoc na Teamhrach": {
+   "en": "Hill of Tara"
+  },
+  "Coill na Síog": {
+   "en": "The Fairy Wood"
+  },
+  "Dearc Fhearna": {
+   "en": "Dunmore Cave"
+  },
+  "Dinn Ríg": {
+   "en": "Dinn Rí"
+  },
+  "Dolmen Chnoc an Bhrúnaigh": {
+   "en": "Brownshill Dolmen"
+  },
+  "Droichead Leithghlinne": {
+   "en": "Leighlinbridge"
+  },
+  "Droichead Átha": {
+   "en": "Drogheda"
+  },
+  "Díseart Diarmada": {
+   "en": "Castledermot"
+  },
+  "Dún Ailinne": {
+   "en": "Knockaulin"
+  },
+  "Dúnad Faoladh": {
+   "en": "The Wolf-kin Camp"
+  },
+  "Gabhrán": {
+   "en": "Gowran"
+  },
+  "Inis Tíog": {
+   "en": "Inistioge"
+  },
+  "Maigh Nuad": {
+   "en": "Maynooth"
+  },
+  "Mainistir Bheigtí": {
+   "en": "Bective Abbey"
+  },
+  "Mainistir Sheireapúin": {
+   "en": "Jerpoint Abbey"
+  },
+  "Mainistir na Mairge": {
+   "en": "Margy Abbey"
+  },
+  "Maoin": {
+   "en": "Moone"
+  },
+  "Muine Bheag": {
+   "en": "Bagenalstown"
+  },
+  "Mullach Maistean": {
+   "en": "Mullaghmast"
+  },
+  "Móin Alúine": {
+   "en": "Bog of Allen"
+  },
+  "Móin Chluain Caoimhín (bog bodies)": {
+   "en": "Clonycavan Bog (bog bodies)"
+  },
+  "Móinín Rua": {
+   "en": "Red Bog"
+  },
+  "Nead an Damháin Alla": {
+   "en": "The Spider's Nest"
+  },
+  "Pluais an Athaigh": {
+   "en": "The Giant's Cave"
+  },
+  "Poll an Ghuail": {
+   "en": "The Coal Hole"
+  },
+  "Ráth Iomgháin": {
+   "en": "Rathangan"
+  },
+  "Seacht gCaisleán (Palace)": {
+   "en": "Seven Castles (Palace)"
+  },
+  "Seacht gCaisleán (the Palace)": {
+   "en": "Seven Castles (the Palace)"
+  },
+  "Seanleithghlinn": {
+   "en": "Old Leighlin"
+  },
+  "Sliabh Mairge": {
+   "en": "Slieve Margy"
+  },
+  "Sliabh na Caillí": {
+   "en": "Loughcrew"
+  },
+  "Stua Laighean": {
+   "en": "Mount Leinster"
+  },
+  "Teamhair": {
+   "en": "Tara"
+  },
+  "Tigh Moling": {
+   "en": "St Mullin's"
+  },
+  "Tlachtga": {
+   "en": "Hill of Ward"
+  },
+  "Uaimheanna na bhFear Bolg": {
+   "en": "Caves of the Fir Bolg"
+  },
+  "Kells Priory": {
+   "ga": "Prióireacht Cheanannais"
+  },
+  "The Feywoods": {
+   "ga": "Coill na Sí"
+  },
+  "The Misty Moor": {
+   "ga": "An Mhóin Cheoch"
+  },
+  "The Moorfoul Mountains": {
+   "ga": "Sléibhte na Móna Bréine"
+  },
+  "The Stormpeaks": {
+   "ga": "Beanna na Stoirme"
   }
  }
 }
