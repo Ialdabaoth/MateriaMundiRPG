@@ -56,6 +56,7 @@ The Companion adds a repository from its published URL. It reads `mm.json` and t
 | `world` | Terrain settings for the one 3-mile world map (`counties`, `forest`, `bog_east_of`, `bog_north_of` …). |
 | `atlas` | `{hex_mi: 3, page_hex_mi: 24}`: the March hex and the Region (page) hex. |
 | `league` | `{hex_mi: 0.5, overrides: {county: {terrain settings}}}`. |
+| `site_icons` | Optional `{site name: icon}` overrides; an icon is a file name (without `.png`) in `assets/tiles/icons/`. Without one, a site uses its kind's icon (grove = great tree, abbey = a cross until an icon exists). |
 | `regions` | Named map regions. Each has `sites: [[name, lat, lon, kind, note?]]` plus terrain settings. |
 
 Site `kind` is one of `castle town abbey tomb hill cave ruin grove camp lair mist dead`. A new kind needs an icon in `assets/tiles/icons` and an entry in the build's icon table.

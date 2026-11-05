@@ -2,7 +2,7 @@
  "id": "season-1",
  "title": "Season 1: Leinster, 1422",
  "short": "Season 1 · Leinster, 1422",
- "version": "0.2.0",
+ "version": "0.2.1",
  "license": "CC0-1.0",
  "dem": [
   52,
@@ -66,6 +66,16 @@
     "bog_north_of": 53.17
    }
   }
+ },
+ "site_icons": {
+  "The Feywoods": "clearing",
+  "An Currach": "clearing",
+  "Cnoc Almhaine": "mushrooms",
+  "Cnoc Almhaine (Hill of Allen)": "mushrooms",
+  "Nead an Damháin Alla": "spider",
+  "Pluais an Athaigh": "forest-cave",
+  "Sliabh Mairge": "forest-hill",
+  "Brú na Bóinne": "stone-circle"
  },
  "regions": {
   "an-mhi": {
