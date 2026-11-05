@@ -85,11 +85,12 @@ Sections appear in this order: base terrain, then rivers and roads, then region 
 
   "regions": [{"name": "Cill Dara", "kind": "county", "label": [62000, 140000], "outline": [[0, 0]]}],
 
-  "pois": [{"id": "ceanannas-mor", "name": "Ceanannas Mór", "kind": "abbey", "icon": "church", "at": [70310, 41020], "book": "B2"}]
+  "pois": [{"id": "ceanannas-mor", "name": "Ceanannas Mór", "kind": "abbey", "icon": "church", "hex": [812, 410], "ft": [12, -30], "book": "B2"}]
 }
 ```
 
 - **Points are in feet** from `origin`: `[x east, y south]`. Rivers and roads are polylines that the renderer smooths, so their points need no splines. A river's `class` sets its drawn width.
+- **POI positions** (Heph 2026-11-05) are a lattice hex `"hex": [C, R]` plus an optional `"ft": [east, south]` offset in feet from that hex's centre (omitted = the centre). The hex gives every level its address for free (which Field, League and March the place is in); the offset places it exactly, for Encounter maps. Tools keep the offset within the hex (at most 50 ft from the centre) by moving the point to the nearest hex.
 - **`names`** holds the Language box's translations, keyed by the name as drawn, as in module.json today.
 - **`overrides`** fixes a single hex at any level without repainting (`<march>:<league>`, and later deeper addresses).
 - An optional **elevation PNG** per March, 16-bit greyscale with the same geometry, can come later for hill shading.
@@ -99,4 +100,3 @@ Sections appear in this order: base terrain, then rivers and roads, then region 
 1. **Origin and projection:** use one local equirectangular projection at the region's centre (fine at county scale), or the DEM's own grid?
 2. **Hex addresses:** today's `#world:CCRR` addresses count 3-mile hexes from the old grid's corner. They need a fixed mapping to (March, League) before the switch, kept as aliases.
 3. **Road classes and widths**, and whether roads get their own icons for bridges and fords.
-4. **POI positions:** an `at` in feet, or a lattice hex `(C, R)`?
