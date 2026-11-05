@@ -8,8 +8,8 @@ Map icons and base tiles from **Hex Tiles: Fantasy** by cmartins (https://cmarti
 
 ## Hand-edited features in `icons/`
 
-`icons/clearing`, `bushes`, `thorns`, `spider`, `great-tree`, `mushrooms`, `forest-cave`, `forest-hill` and `stone-circle` (Heph's "dolmen") are C. Martins forest-pack features (03, 06, 07, 08, 09, 10, 11, 12, 13) with the pointy-top hex ground removed by hand by Heph on 2026-11-05, then cropped and scaled. Credit: **Art by C. Martins (https://cmartins.itch.io), CC BY.**
+`icons/clearing`, `bushes`, `thorns`, `spider`, `great-tree`, `mushrooms`, `forest-cave`, `forest-hill` and `stone-circle` (Heph's "dolmen") are C. Martins forest-pack features (03, 06, 07, 08, 09, 10, 11, 12, 13) with the pointy-top hex ground removed by hand by Heph on 2026-11-05, then cropped and scaled. Heph keeps the originals' licence. Credit: **Art by C. Martins (https://cmartins.itch.io), edited by Heph, CC BY.**
 
 ## Church
 
-`icons/church.png` (abbeys, priories and churches) was supplied by Heph on 2026-11-05 in the same style; cropped only.
+`icons/church.png` (abbeys, priories and churches) is Heph's own art developed from the C. Martins package, supplied 2026-11-05 and cropped only. Heph keeps the originals' licence. Credit: **Art by C. Martins (https://cmartins.itch.io), edited by Heph, CC BY.**
