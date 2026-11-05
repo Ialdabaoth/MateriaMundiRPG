@@ -92,7 +92,8 @@ Sections appear in this order: base terrain, then rivers and roads, then region 
   },
 
   "rivers": [{"name": "An Life", "class": 3, "points": [[41250, 88010], [41320, 88400]]}],
-  "roads": [{"name": "Slí Chualann", "class": "highway", "points": [[50100, 60200], [50900, 61000]]}],
+  "roads": [{"name": "Slí Chualann", "class": "roman", "points": [[50100, 60200], [50900, 61000]]}],
+  "crossings": [{"hex": [640, 512], "kind": "ford"}],
 
   "regions": [{"name": "Cill Dara", "kind": "county", "label": [62000, 140000], "outline": [[0, 0]]}],
 
@@ -101,6 +102,7 @@ Sections appear in this order: base terrain, then rivers and roads, then region 
 ```
 
 - **Points are in feet** from `origin`: `[x east, y south]`. Rivers and roads are polylines that the renderer smooths, so their points need no splines. A river's `class` sets its drawn width.
+- **Roads** come in three classes (Heph 2026-11-05): `roman` (paved great roads; in Ireland, the five ancient slighe from Tara fill this role), `local` and `trail`. Where a road crosses a river the renderer draws a crossing icon: a bridge on a `roman` road, a ford on the others, unless a `crossings` entry names the hex and the kind (`bridge` or `ford`). Heph is supplying the bridge and ford icons.
 - **POI positions** (Heph 2026-11-05) are a lattice hex `"hex": [C, R]` plus an optional `"ft": [east, south]` offset in feet from that hex's centre (omitted = the centre). The hex gives every level its address for free (which Field, League and March the place is in); the offset places it exactly, for Encounter maps. Tools keep the offset within the hex (at most 50 ft from the centre) by moving the point to the nearest hex.
 - **`names`** holds the Language box's translations, keyed by the name as drawn, as in module.json today.
 - **`overrides`** fixes a single hex at any level without repainting (`<march>:<league>`, and later deeper addresses).
@@ -109,4 +111,3 @@ Sections appear in this order: base terrain, then rivers and roads, then region 
 ## Open questions
 
 1. **Hex addresses:** today's `#world:CCRR` addresses count 3-mile hexes from the old grid's corner. They need a fixed mapping to (March, League) before the switch, kept as aliases.
-2. **Road classes and widths**, and whether roads get their own icons for bridges and fords.
