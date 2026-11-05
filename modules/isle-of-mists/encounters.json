@@ -1,0 +1,119 @@
+{
+ "encounters": {
+  "creatures": {
+   "blacksmith": {
+    "name": "Blacksmith",
+    "kind": "npc",
+    "is": "dweomersmith"
+   },
+   "banker": {
+    "name": "Banker",
+    "kind": "npc",
+    "is": "dweomersmith"
+   },
+   "bank-guard": {
+    "name": "Bank Guard",
+    "kind": "npc",
+    "is": "stalwart"
+   },
+   "bankers-wife": {
+    "name": "Banker’s Wife",
+    "kind": "npc",
+    "is": "delver"
+   },
+   "barkeep": {
+    "name": "Barkeep",
+    "kind": "npc"
+   },
+   "barkeeps-wife": {
+    "name": "Barkeep’s Wife",
+    "kind": "npc",
+    "is": "bard"
+   },
+   "brother-james": {
+    "name": "Brother “James”",
+    "kind": "npc",
+    "is": "wizard"
+   },
+   "abbot-costello": {
+    "name": "Abbot Costello",
+    "kind": "npc",
+    "is": "priest"
+   },
+   "sister-wendy": {
+    "name": "Sister Wendy",
+    "kind": "npc",
+    "is": "priest"
+   },
+   "sister-abigail": {
+    "name": "Sister Abigail",
+    "kind": "npc",
+    "is": "priest"
+   },
+   "brother-sean": {
+    "name": "Brother Sean",
+    "kind": "npc",
+    "is": "priest"
+   },
+   "brother-john": {
+    "name": "Brother John",
+    "kind": "npc",
+    "is": "priest"
+   },
+   "sister-penelope": {
+    "name": "Sister Penelope",
+    "kind": "npc",
+    "is": "priest"
+   },
+   "sir-edward-the-castellan": {
+    "name": "Sir Edward the Castellan",
+    "kind": "npc",
+    "is": "champion"
+   },
+   "dame-macgeralt": {
+    "name": "Dame MacGeralt",
+    "kind": "npc",
+    "is": "druid"
+   },
+   "chief-engineer": {
+    "name": "Chief Engineer",
+    "kind": "npc",
+    "is": "wizard"
+   },
+   "apprentice-engineer": {
+    "name": "Apprentice Engineer",
+    "kind": "npc",
+    "is": "wizard",
+    "troupe": {
+     "keep": 5
+    }
+   },
+   "captain-of-the-guard": {
+    "name": "Captain of the Guard",
+    "kind": "npc",
+    "is": "warrior"
+   },
+   "sergeant-at-arms": {
+    "name": "Sergeant-at-Arms",
+    "kind": "npc",
+    "is": "warrior"
+   },
+   "ranger-of-the-pale": {
+    "name": "Ranger of the Pale",
+    "kind": "npc",
+    "is": "scout",
+    "troupe": {
+     "keep": 12
+    }
+   },
+   "guard": {
+    "name": "Guard",
+    "kind": "npc",
+    "is": "warrior",
+    "troupe": {
+     "keep": 50
+    }
+   }
+  }
+ }
+}
