@@ -57,6 +57,10 @@ A block pixel for a League or Field that belongs to a neighbouring March is left
 
 Terrain is matched by **colour**, not by palette index, because some editors reorder palettes when they save. Colour 0 (`#000000`) means none or outside. Up to 255 other colours can each name a terrain type in the JSON.
 
+## Projection: Dymaxion
+
+Decided by Heph on 2026-11-05: the Atlas uses **Buckminster Fuller's Dymaxion projection** (the icosahedral layout, using Robert W. Gray's published transform), so one scheme covers every setting from Leinster to Francia to Barsoom. Each of the 20 triangular faces carries its own flat 100-ft lattice, and positions are in feet on that face. Distortion stays low across each face, unlike equirectangular, whose east-west stretch reaches about 2.4% at the north and south edges of Leinster alone. A map names its face and the face-local position of lattice hex (0, 0) in `origin`.
+
 ## The map JSON
 
 Sections appear in this order: base terrain, then rivers and roads, then region names, then points of interest.
@@ -67,7 +71,7 @@ Sections appear in this order: base terrain, then rivers and roads, then region 
   "id": "isle-of-mists",
   "title": "Beyond the Pale: Leinster, 1422",
   "names": {"An Life": {"en": "Liffey"}},
-  "origin": {"lat": 53.4, "lon": -7.6, "projection": "local-equirectangular"},
+  "origin": {"projection": "dymaxion", "face": 0, "x_ft": 0, "y_ft": 0},
 
   "terrain": {
     "types": [
@@ -97,6 +101,6 @@ Sections appear in this order: base terrain, then rivers and roads, then region 
 
 ## Open questions
 
-1. **Origin and projection:** use one local equirectangular projection at the region's centre (fine at county scale), or the DEM's own grid?
+1. **Seams:** where a March straddles an icosahedron face edge, which face's lattice owns it, and how the renderer joins the two (the lattice cannot run straight across a fold, and the 12 vertices behave like pentagons).
 2. **Hex addresses:** today's `#world:CCRR` addresses count 3-mile hexes from the old grid's corner. They need a fixed mapping to (March, League) before the switch, kept as aliases.
 3. **Road classes and widths**, and whether roads get their own icons for bridges and fords.
