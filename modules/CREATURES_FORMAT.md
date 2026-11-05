@@ -95,9 +95,9 @@ Each entry is `{"from": <template>, "replace": {...}, "adjust": {...}}`, applied
 | `from` | Starts with | Use for |
 |---|---|---|
 | `<bestiary>:<id>`, e.g. `mm:wolf-mastiff`, `ose:acolyte` | that bestiary entry, copied | monsters, animals, stock NPCs |
-| `npc:<template>`, e.g. `npc:veteran`, `npc:expert` | an NPC template from the ruleset's options (the quick NPC table, by level band) | ordinary named people |
+| `npc:<class>`, e.g. `npc:warrior`, or `npc` alone | a level 1 person of that class, primes at +1, hit points per level and saves from ability + level; `npc` alone rolls the ruleset's quick NPC table. Replace `level` to make them more. | ordinary named people |
 | `<creature-id>` | another creature in this layer, resolved first | variants: "as Ailill, but undead" |
-| `pc` + `"sheet": <file>` | a **full character sheet** (CHARACTER_FORMAT.md) in `bestiary/<ruleset>/` | the occasional NPC who needs full PC detail: class, spells, gear, Panoply, talents |
+| `pc` + `"sheet": <file or id>` | a **full character sheet** (CHARACTER_FORMAT.md) in `bestiary/<ruleset>/`, or in the Companion a sheet with `"owner": "referee"` | the occasional NPC who needs full PC detail: class, spells, gear, Panoply, talents |
 | `blank` | nothing | something wholly new; every field is in `replace` |
 
 - **replace** overwrites a field outright: `level`, `armor`, `movement`, `hd`, `hp`, `saves.fear`, `attacks` (the whole list), `talentThreshold`, `behavior`, `special`.
