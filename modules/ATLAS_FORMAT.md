@@ -18,6 +18,46 @@ The mile is exactly 5000 ft. Every hex is flat-topped and is measured flat to fl
 | 100-ft hex | 100 ft | 1 |
 | Encounter | 5-ft squares, keyed to a point of interest | |
 
+## Map scales per module (draft, Heph 2026-11-05)
+
+The lattice, the March PNGs and the stored summaries never change. A module's **scales** only say which zoom levels its ruleset uses to look at that one lattice, so ACKS (24 mi, 6 mi, then 60 ft, nothing in between) and Materia Mundi (24 mi, 3 mi, 1/2 mi, 100 ft, 5 ft) can share a world.
+
+```json
+"scales": {
+  "ladder": "mm",
+  "levels": [
+    {"id": "march",  "name": "March",  "hex_ft": 120000},
+    {"id": "league", "name": "League", "hex_ft": 15000},
+    {"id": "field",  "name": "Field",  "hex_ft": 2500},
+    {"id": "hex",    "name": "100 ft", "hex_ft": 100},
+    {"id": "encounter", "name": "Encounter", "kind": "encounter", "cell_ft": 5}
+  ]
+}
+```
+
+ACKS, as Heph described it (24 mi = `120000`, 6 mi = `30000`):
+
+```json
+"scales": {
+  "ladder": "acks",
+  "levels": [
+    {"id": "region", "name": "24-mile", "hex_ft": 120000},
+    {"id": "hex6",   "name": "6-mile",  "hex_ft": 30000},
+    {"id": "tactical", "name": "60-ft", "kind": "encounter", "cell_ft": 60}
+  ]
+}
+```
+
+- **Hex levels** have a `hex_ft` that is a whole multiple of 100 (flat to flat), so a hex is `n = hex_ft / 100` lattice hexes across. The mile being exactly 5000 ft means 6 miles is 300 and 24 miles is 1200: no rounding. Centres follow the same rule as the table above: hex (i, j) is centred on lattice hex `C = n i`, `R = n j + floor(n / 2) (i mod 2)`. Ownership is by nearest centre with the same tie rule, independently for each level. Levels need not nest exactly (as today, a League can straddle two Marches).
+- **Encounter levels** (`kind: "encounter"`) are finer than the lattice, keyed to a point of interest as in the Encounter map spec. `cell_ft` is the size of one cell. Any number of hex levels may be skipped; the ladder is just the list, ordered coarse to fine.
+- **Summaries.** The default ladder (`mm`) uses the stored summary blocks in each March PNG. For any other level the tools and the renderer compute the most common terrain among the hexes' lattice members, the same rule as above, and may cache it. A hand-painted summary exists only for the default levels.
+- **Ladders are ruleset data.** Each ruleset ships its default ladder (`mm`, `acks`, ...) and a module names one with `ladder`, optionally overriding levels. Everything is a module, so a ladder lives with the ruleset's other data.
+- **Zoom** goes one level at a time down the module's ladder; the click rule is unchanged.
+- **Addresses stay canonical.** `#world:CCRR:CCRR` always means League then 100-ft hex in the lattice's own terms, whatever the ruleset shows, so links and the print units survive a change of ladder. A module on another ladder can still show its own level names.
+- **Event triggers.** EVENTS_FORMAT.md's `lod` takes a level `id` from the module's ladder (the default ladder's ids are `march`, `league`, `field`, `hex`).
+
+Open questions: what a 60-ft cell means in a hex-based ruleset (square, or a hex measured flat to flat); and whether Atlas print pages follow the default ladder or the module's.
+
 ## The lattice
 
 The whole region shares one grid of 100-ft hexes, with flat tops and **odd columns shifted down half a hex**. A hex's global address is `(C, R)`, and its centre in feet is
