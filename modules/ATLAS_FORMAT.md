@@ -57,9 +57,16 @@ A block pixel for a League or Field that belongs to a neighbouring March is left
 
 Terrain is matched by **colour**, not by palette index, because some editors reorder palettes when they save. Colour 0 (`#000000`) means none or outside. Up to 255 other colours can each name a terrain type in the JSON.
 
-## Projection: Dymaxion
+## Projection: Dymaxion, one face per region
 
-Decided by Heph on 2026-11-05: the Atlas uses **Buckminster Fuller's Dymaxion projection** (the icosahedral layout, using Robert W. Gray's published transform), so one scheme covers every setting from Leinster to Francia to Barsoom. Each of the 20 triangular faces carries its own flat 100-ft lattice, and positions are in feet on that face. Distortion stays low across each face, unlike equirectangular, whose east-west stretch reaches about 2.4% at the north and south edges of Leinster alone. A map names its face and the face-local position of lattice hex (0, 0) in `origin`.
+Decided by Heph on 2026-11-05: the Atlas uses **Buckminster Fuller's Dymaxion projection** (the icosahedral layout, using Robert W. Gray's published transform), so one scheme covers every setting from Leinster to Francia to Barsoom. Two rules:
+
+1. **Each major region gets its own centroid.** The icosahedron is turned so that one face's centre (where the triangle touches the planet) sits on the region's centroid, with true north pointing up the page there. That whole region then lives on one flat face with one 100-ft lattice.
+2. **Seams always fall in the middle of the ocean.** A face reaches about 21° of arc (about 2,300 km) from its centre before the nearest edge, so a region the size of Ireland never touches a seam. Separate regions (Britain, Francia) get their own centroids and faces, and maps join them across water.
+
+For Ireland the centroid is the **Hill of Uisneach**, Westmeath (53.489° N, 7.561° W), the traditional centre of the island. Every Irish coast lies within 2.5° of it, so the scale error stays under 0.2% island-wide. Equirectangular, by contrast, reaches 2.4% across Leinster alone.
+
+`origin` names the centroid and gives the position of lattice hex (0, 0) in feet on that face.
 
 ## The map JSON
 
@@ -71,7 +78,7 @@ Sections appear in this order: base terrain, then rivers and roads, then region 
   "id": "isle-of-mists",
   "title": "Beyond the Pale: Leinster, 1422",
   "names": {"An Life": {"en": "Liffey"}},
-  "origin": {"projection": "dymaxion", "face": 0, "x_ft": 0, "y_ft": 0},
+  "origin": {"projection": "dymaxion", "centroid": {"name": "Uisneach", "lat": 53.489, "lon": -7.561}, "x_ft": 0, "y_ft": 0},
 
   "terrain": {
     "types": [
@@ -101,6 +108,5 @@ Sections appear in this order: base terrain, then rivers and roads, then region 
 
 ## Open questions
 
-1. **Seams:** where a March straddles an icosahedron face edge, which face's lattice owns it, and how the renderer joins the two (the lattice cannot run straight across a fold, and the 12 vertices behave like pentagons).
-2. **Hex addresses:** today's `#world:CCRR` addresses count 3-mile hexes from the old grid's corner. They need a fixed mapping to (March, League) before the switch, kept as aliases.
-3. **Road classes and widths**, and whether roads get their own icons for bridges and fords.
+1. **Hex addresses:** today's `#world:CCRR` addresses count 3-mile hexes from the old grid's corner. They need a fixed mapping to (March, League) before the switch, kept as aliases.
+2. **Road classes and widths**, and whether roads get their own icons for bridges and fords.
