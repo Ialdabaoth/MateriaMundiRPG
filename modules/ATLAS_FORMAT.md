@@ -51,7 +51,7 @@ Neighbouring March PNGs overlap at the corners. Only pixels that belong to this 
 | x 2–12, y 2–10 (11 × 9), upper left | one pixel per League. Block pixel (u, v) is League i = iL − 5 + u, j = jL − 4 + v, where (iL, jL) is the League under the March centre |
 | x 1533–1597, y 1149–1197 (65 × 49), lower right | one pixel per Field. Block pixel (u, v) is Field i = iF − 32 + u, j = jF − 24 + v, where (iF, jF) is the Field under the March centre |
 
-A block pixel for a League or Field whose centre belongs to a neighbouring March is left as colour 0 ("none"). The tools fill each summary with the **most common** terrain among all its member hexes (a League or Field can straddle two Marches), never a colour average, and colour 0 never wins while any terrain is present. A painter may then edit a summary by hand, and the renderer uses each level's own summary. That lets you paint a coarse map first and refine it later.
+A block pixel for a League or Field whose centre belongs to a neighbouring March is left as colour 0 ("none"). The converter gives each 100-ft hex seeded detail on top of the source maps: borders between parent hexes wander up to 900 ft, and each terrain becomes a natural mix (glades in forest, copses in grassland), repeatable because the noise is keyed to the global lattice. The tools fill each summary with the **most common** terrain among all its member hexes (a League or Field can straddle two Marches), never a colour average, and colour 0 never wins while any terrain is present. A painter may then edit a summary by hand, and the renderer uses each level's own summary. That lets you paint a coarse map first and refine it later.
 
 ### Palette
 
