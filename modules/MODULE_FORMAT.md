@@ -128,6 +128,7 @@ Building `modules/<id>` writes:
 <id>/maps/world.svg, maps/l-*.svg
 <id>/print/atlas.pdf (March pages), print/leagues.pdf
 <id>/atlas/map.json, atlas/terrain/<march>.png (E9 Atlas format, when atlas.centroid is set)
+<id>/atlas/index.html, atlas/tiles/ (the dynamic renderer: Region, March, League, Field; links #world, #march:MMMM, #world:LLLL[:HHHH])
 ```
 
 The manifest contains `format`, `id`, `title`, `version`, `license`, `scales`, `books`, `world`, `marches`, `leagues`, `sites`, `aliases`, `links` and `print`. `scales` gives `mile_ft` (5000) and the hex size of each zoom level. `world` holds the Region map, its pixel geometry and every 3-mile hex's terrain. `marches` has one entry per atlas page, with its 24-mile hex, centre, radius, neighbours and sites. `leagues` has one entry per League page, with its 3-mile hex, map, title, book, March terrain, centre and sites with their pixel positions. `sites` gives each site's slug, kind, book, county, latitude and longitude, world hex, March page and League. `aliases` maps old page keys to League keys. The web viewer, the PDFs and the manifest come from one build and carry the same `version` (semver, plus the commit and the date), printed in each page footer. If the versions match, the three agree.
