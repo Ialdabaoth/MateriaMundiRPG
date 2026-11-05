@@ -1,7 +1,7 @@
 # E9 Atlas map format (draft, Atlas 0.2.x)
 
 How the E9 Atlas stores a region so the browser can draw any hex at any zoom on demand.
-Designed with Heph on 2026-11-05. Status: **draft**; the build tools still read `module.json` (see MODULE_FORMAT.md) until the converter and renderer land.
+Designed with Heph on 2026-11-05. Status: **draft**. The converter (`tools/atlas_convert.py`, Atlas 0.2.2) writes this format from today's maps on every build, into `atlas/` next to the viewer; the browser renderer comes next. The build tools still read `module.json` (see MODULE_FORMAT.md).
 
 A map is one JSON file plus one 8-bit indexed PNG per March. You paint terrain in any image editor; everything else is in the JSON.
 
@@ -33,7 +33,7 @@ with x running east and y running south from the map's `origin` (see the JSON). 
 | League | C = 150 i, R = 150 j + 75 (i mod 2) |
 | Field | C = 25 i, R = 25 j + 12 (i mod 2) |
 
-A lattice hex belongs to the March, League or Field whose centre is nearest. On an exact tie, the lower i wins, then the lower j. With that rule every March holds exactly 64 Leagues and 2304 Fields, all of which fit the summary blocks below (checked with a script on 2026-11-05).
+A lattice hex belongs to the March, League or Field whose centre is nearest. On an exact tie, the **higher** i wins, then the higher j. With that rule every March owns columns Cm − 800 to Cm + 799 and rows Rm − 600 to Rm + 599, so its hexes fit its PNG exactly, and every March holds exactly 64 Leagues and 2304 Fields (by their centres), all of which fit the summary blocks below (checked by the converter on 2026-11-05; the first draft said "lower", which left one row of each March's hexes outside every PNG).
 
 ## Terrain PNGs: one per March
 
@@ -51,7 +51,7 @@ Neighbouring March PNGs overlap at the corners. Only pixels that belong to this 
 | x 2–12, y 2–10 (11 × 9), upper left | one pixel per League. Block pixel (u, v) is League i = iL − 5 + u, j = jL − 4 + v, where (iL, jL) is the League under the March centre |
 | x 1533–1597, y 1149–1197 (65 × 49), lower right | one pixel per Field. Block pixel (u, v) is Field i = iF − 32 + u, j = jF − 24 + v, where (iF, jF) is the Field under the March centre |
 
-A block pixel for a League or Field that belongs to a neighbouring March is left as colour 0 ("none"). The tools fill each summary with the **most common** terrain among its member hexes, never a colour average. A painter may then edit a summary by hand, and the renderer uses each level's own summary. That lets you paint a coarse map first and refine it later.
+A block pixel for a League or Field whose centre belongs to a neighbouring March is left as colour 0 ("none"). The tools fill each summary with the **most common** terrain among all its member hexes (a League or Field can straddle two Marches), never a colour average, and colour 0 never wins while any terrain is present. A painter may then edit a summary by hand, and the renderer uses each level's own summary. That lets you paint a coarse map first and refine it later.
 
 ### Palette
 
@@ -64,9 +64,11 @@ Decided by Heph on 2026-11-05: the Atlas uses **Buckminster Fuller's Dymaxion pr
 1. **Each major region gets its own centroid.** The icosahedron is turned so that one face's centre (where the triangle touches the planet) sits on the region's centroid, with true north pointing up the page there. That whole region then lives on one flat face with one 100-ft lattice.
 2. **Seams always fall in the middle of the ocean.** A face reaches about 21° of arc (about 2,300 km) from its centre before the nearest edge, so a region the size of Ireland never touches a seam. Separate regions (Britain, Francia) get their own centroids and faces, and maps join them across water.
 
-For Ireland the centroid is the **Hill of Uisneach**, Westmeath (53.489° N, 7.561° W), the traditional centre of the island. Every Irish coast lies within 2.5° of it, so the scale error stays under 0.2% island-wide. Equirectangular, by contrast, reaches 2.4% across Leinster alone.
+For Ireland the centroid is the **Hill of Uisneach**, Westmeath (53.489° N, 7.561° W), the traditional centre of the island. Every Irish coast lies within 2.5° of it. Measured with the converter's transform (tools/dymaxion.py), the local scale error is under 0.1% around Dublin, under 0.5% anywhere in Leinster and under 0.8% at the island's far tips (Malin Head, Mizen Head), and distances from Uisneach are true to within 0.4%. Equirectangular, by contrast, reaches 2.4% across Leinster alone. One face vertex points due north.
 
-`origin` names the centroid and gives the position of lattice hex (0, 0) in feet on that face.
+`origin` names the centroid and gives the position of lattice hex (0, 0) in feet on that face. The scale is set so that distances at the centroid are true (mean Earth radius 6,371,008.8 m).
+
+`labels` gives the March and League lattice (i, j) that are labelled `00`/`0000`: the top-left March and League of the region's fixed extent (module.json `atlas.extent`, for Ireland the whole island), so labels never shift when a map grows. March PNGs are named by their label, e.g. `terrain/0807.png`.
 
 ## The map JSON
 
@@ -79,6 +81,7 @@ Sections appear in this order: base terrain, then rivers and roads, then region 
   "title": "Beyond the Pale: Leinster, 1422",
   "names": {"An Life": {"en": "Liffey"}},
   "origin": {"projection": "dymaxion", "centroid": {"name": "Uisneach", "lat": 53.489, "lon": -7.561}, "x_ft": 0, "y_ft": 0},
+  "labels": {"march": [-7, -7], "league": [-55, -49]},
 
   "terrain": {
     "types": [
@@ -87,7 +90,7 @@ Sections appear in this order: base terrain, then rivers and roads, then region 
       {"color": "#6e6a5a", "id": "bog", "name": "Bog", "tile": "bg-grey", "icon": "swamp", "travel": 2},
       {"color": "#4f86a8", "id": "sea", "name": "Sea", "tile": "bg-blue", "travel": null}
     ],
-    "marches": [{"id": "0302", "i": 0, "j": 1, "png": "terrain/0302.png"}],
+    "marches": [{"id": "0708", "i": 0, "j": 1, "png": "terrain/0708.png"}],
     "overrides": {"0302:1506": "forest"}
   },
 
@@ -117,9 +120,9 @@ Decided by Heph on 2026-11-05: **`#world:CCRR:CCRR`**. The first `CCRR` is the L
 | Part | Counts | Range used |
 |---|---|---|
 | League column, row | League lattice (i, j), shifted so the region's top-left League is `0000` | Ireland needs about 70 columns × 100 rows |
-| 100-ft hex in the League | lattice hexes from the League's bounding box: column 0 = League centre C − 100, row 0 = centre R − 75 | columns `01`–`L0` (1–200), rows `00`–`F0` (0–150), 22,500 hexes per League; the centre hex is column `A0`, row `75` → `A075` |
+| 100-ft hex in the League | lattice hexes from the League's bounding box: column 0 = League centre C − 100, row 0 = centre R − 75 | columns `00`–`K9` (0–199), rows `00`–`E9` (0–149), 22,500 hexes per League; the centre hex is column `A0`, row `75` → `A075` |
 
-Parity carries through: column 0 is an even global column (it is never used, since the nearest-centre rule gives a League columns 1–200 and rows 0–150, checked with a script), so odd columns sit half a hex lower, as everywhere else. Tools write the canonical form (upper case, with the hex inside the League that owns it), and the viewer reads either case. Field and March are derived from the address, so they need no address of their own.
+Parity carries through: column 0 is an even global column, so odd columns sit half a hex lower, as everywhere else. With the tie rule above every League owns exactly columns 0–199 and rows 0–149 of its box (checked with a script). Tools write the canonical form (upper case, with the hex inside the League that owns it), and the viewer reads either case. Field and March are derived from the address, so they need no address of their own.
 
 **Old links.** Today's `#world:CCRR`, `#march-N` and `#l-CCRR` addresses count 3-mile hexes on the old grid. When the switch happens, each one becomes an alias to the new League whose centre is nearest, so links already in the Companion and the books keep working.
 
