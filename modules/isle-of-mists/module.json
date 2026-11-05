@@ -57,7 +57,9 @@
  },
  "atlas": {
   "hex_mi": 3,
-  "page_hex_mi": 24
+  "page_hex_mi": 24,
+  "centroid": ["Uisneach", 53.489, -7.561],
+  "extent": [-10.7, 51.4, -5.4, 55.45]
  },
  "league": {
   "hex_mi": 0.5,

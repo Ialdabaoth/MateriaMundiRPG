@@ -54,7 +54,7 @@ The Companion adds a repository from its published URL. It reads `mm.json` and t
 | `admin` | Path to the GeoJSON boundaries (`properties.name` is the region name). |
 | `books` | Ordered list: `{id, title, county, region, detail}`. `region` names the book's 3-mile region and `detail` its half-mile overview. |
 | `world` | Terrain settings for the one 3-mile world map (`counties`, `forest`, `bog_east_of`, `bog_north_of` …). |
-| `atlas` | `{hex_mi: 3, page_hex_mi: 24}`: the March hex and the Region (page) hex. |
+| `atlas` | `{hex_mi: 3, page_hex_mi: 24}`: the March hex and the Region (page) hex. Optional `centroid: [name, lat, lon]` and `extent: [minlon, minlat, maxlon, maxlat]` turn on the E9 Atlas format (ATLAS_FORMAT.md): the Dymaxion face centre, and the fixed area whose top-left March and League are labelled `00` and `0000`. |
 | `league` | `{hex_mi: 0.5, overrides: {county: {terrain settings}}}`. |
 | `site_icons` | Optional `{site name: icon}` overrides; an icon is a file name (without `.png`) in `assets/tiles/icons/`. Without one, a site uses its kind's icon (grove = great tree, abbey = church). |
 | `names` | Optional label translations `{name as drawn: {"en": "...", "ga": "..."}}`. The viewer's Language box swaps every map label, page title and list entry that matches a key; names without an entry stay as drawn. Copied to the built `module.json`. |
@@ -127,6 +127,7 @@ Building `modules/<id>` writes:
 <id>/module.json             the manifest (format "mm-module/1")
 <id>/maps/world.svg, maps/l-*.svg
 <id>/print/atlas.pdf (March pages), print/leagues.pdf
+<id>/atlas/map.json, atlas/terrain/<march>.png (E9 Atlas format, when atlas.centroid is set)
 ```
 
 The manifest contains `format`, `id`, `title`, `version`, `license`, `scales`, `books`, `world`, `marches`, `leagues`, `sites`, `aliases`, `links` and `print`. `scales` gives `mile_ft` (5000) and the hex size of each zoom level. `world` holds the Region map, its pixel geometry and every 3-mile hex's terrain. `marches` has one entry per atlas page, with its 24-mile hex, centre, radius, neighbours and sites. `leagues` has one entry per League page, with its 3-mile hex, map, title, book, March terrain, centre and sites with their pixel positions. `sites` gives each site's slug, kind, book, county, latitude and longitude, world hex, March page and League. `aliases` maps old page keys to League keys. The web viewer, the PDFs and the manifest come from one build and carry the same `version` (semver, plus the commit and the date), printed in each page footer. If the versions match, the three agree.
