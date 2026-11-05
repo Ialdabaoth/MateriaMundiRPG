@@ -1,7 +1,7 @@
 # E9 Characters and Encounters format (draft)
 
 How a module describes *who* the party meets (creatures, named NPCs and the factions behind them) and *what* an encounter with them looks like, and how the E9 Companion runs them on the Referee tab.
-Designed with Heph on 2026-11-05. Status: **draft, nothing built yet**. Companion to EVENTS_FORMAT.md, which decides *when* something happens and *how* it resolves, and to the Encounter map level in ATLAS_FORMAT.md, which decides *where everyone stands*. This file replaces the draft referee creature spec (project files, `companion-app/referee-creatures-spec.md`), whose seven open questions are answered in section 8.
+Designed with Heph on 2026-11-05. Status: **draft, nothing built yet**. Companion to EVENTS_FORMAT.md, which decides *when* something happens and *how* it resolves, and to ENCOUNTER_FORMAT.md (the Encounter map level of the Atlas), which decides *where everyone stands*. This file replaces the draft referee creature spec (project files, `companion-app/referee-creatures-spec.md`), whose seven open questions are answered in section 8.
 
 ## 1. The idea in one paragraph
 
@@ -153,7 +153,7 @@ An encounter record is called a **scene** in the file (`encounters.scenes`), so 
 - **where** is a site slug (`"site": "kells-priory"`, with an optional `"room"` key for keyed locations), a hex address (`"hex": "<map>:<hex>"`), or a terrain within a March (`"terrain"` plus `"march"`). A keyed encounter at a site shows as a marker on that point of interest in the Atlas; terrain encounters show nowhere until rolled.
 - **who** lists creatures with a `count` (a number, d6/d20 dice, or a `troupe` word such as `"wandering"` to use the creature's own size) and an optional `chance` (`"1-3 on d6"`, `"1-5 on d20"`) for members who are only sometimes there. One line with a count is one troupe; it gets one card with a pip per member, and a member can be split off into its own card if the fight needs it.
 - **disposition** and **threat** override the creatures' own. For Materia Mundi, a creature's bestiary behaviour line ("1-2 fearful, 3-5 wary, 6 aggressive") is its reaction table when neither layer sets a disposition.
-- **map** (optional) names a hand-made Encounter map. Where everyone stands is that map's business (ATLAS_FORMAT.md, Encounter level), not this file's.
+- **map** (optional) points into an Encounter map: a map id, or a pointer `{"map": id, "area": name}` / `{"map": id, "squares": [x, y, w, h]}` (ENCOUNTER_FORMAT.md section 4). Where everyone stands is that map's business, not this file's.
 - Event tables (EVENTS_FORMAT.md section 5) call an encounter with `{"call": "encounter", "with": {"encounter": "fomhoire-scouts"}}`, or an ad hoc one with `creature` and `count`. The `encounter` procedure rolls counts and chances, runs the reaction, and ends with a `scene` effect.
 - **Run encounter** (from a site marker, a table result, or the Referee tab) puts copies of everyone into the current scene: one card per troupe or individual, HP rolled, with the encounter's `wants`, `tactics` and `treasure` pinned above them. Ending the scene logs survivors and loot to the Events log; named NPCs keep their HP and notes in `campaign/creatures/<id>.json`.
 
