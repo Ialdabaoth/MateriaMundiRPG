@@ -1,0 +1,208 @@
+{
+ "format": "e9-encounter-map/1",
+ "id": "crom-grotto",
+ "title": "Cnoc na Teamhrach: the grotto of Crom Cruach",
+ "size": [
+  64,
+  40
+ ],
+ "grid": {
+  "ft": 10,
+  "show": true
+ },
+ "layers": [
+  {
+   "src": "crom-grotto/map.jpg",
+   "at": [
+    0,
+    0
+   ],
+   "px": 32
+  }
+ ],
+ "ground": "none",
+ "areas": {
+  "ravine": {
+   "squares": [
+    0,
+    14,
+    64,
+    16
+   ],
+   "title": "The ravine floor"
+  },
+  "cave-a": {
+   "squares": [
+    5,
+    27,
+    6,
+    5
+   ],
+   "title": "A · Péistduine warrens"
+  },
+  "cave-b": {
+   "squares": [
+    11,
+    30,
+    6,
+    5
+   ],
+   "title": "B · Blacktooth clan (upper ledge)"
+  },
+  "cave-c": {
+   "squares": [
+    19,
+    30,
+    6,
+    5
+   ],
+   "title": "C · Bloodhand clan (upper ledge)"
+  },
+  "cave-d": {
+   "squares": [
+    7,
+    13,
+    6,
+    5
+   ],
+   "title": "D · Skitterglint redcaps"
+  },
+  "cave-e": {
+   "squares": [
+    15,
+    11,
+    6,
+    5
+   ],
+   "title": "E · The ogre's cave"
+  },
+  "cave-f": {
+   "squares": [
+    21,
+    8,
+    6,
+    5
+   ],
+   "title": "F · Skitterglint hobgoblins (upper ledge)"
+  },
+  "cave-g": {
+   "squares": [
+    31,
+    9,
+    6,
+    5
+   ],
+   "title": "G · Owlbear's lair"
+  },
+  "cave-h": {
+   "squares": [
+    41,
+    25,
+    6,
+    5
+   ],
+   "title": "H · Wolf Faoladh lair"
+  },
+  "cave-i": {
+   "squares": [
+    39,
+    6,
+    6,
+    5
+   ],
+   "title": "I · The ancient labyrinth"
+  },
+  "cave-j": {
+   "squares": [
+    51,
+    24,
+    6,
+    5
+   ],
+   "title": "J · Boar Faoladh lair"
+  },
+  "cave-k": {
+   "squares": [
+    55,
+    4,
+    6,
+    5
+   ],
+   "title": "K · The shrine of Crom Cruach"
+  }
+ },
+ "links": [
+  {
+   "from": [
+    8,
+    29.6
+   ],
+   "to": {
+    "map": "crom-cave-a"
+   },
+   "label": "A"
+  },
+  {
+   "from": [
+    14,
+    32.6
+   ],
+   "to": {
+    "map": "crom-caves-b-c",
+    "area": "b-trophy-hall"
+   },
+   "label": "B"
+  },
+  {
+   "from": [
+    22,
+    32.4
+   ],
+   "to": {
+    "map": "crom-caves-b-c",
+    "area": "c-common-14"
+   },
+   "label": "C"
+  },
+  {
+   "from": [
+    10,
+    15.4
+   ],
+   "to": {
+    "map": "crom-caves-d-e-f",
+    "area": "d-mouth"
+   },
+   "label": "D"
+  },
+  {
+   "from": [
+    18,
+    13.6
+   ],
+   "to": {
+    "map": "crom-caves-d-e-f",
+    "area": "e-ogre-22"
+   },
+   "label": "E"
+  },
+  {
+   "from": [
+    24,
+    10.6
+   ],
+   "to": {
+    "map": "crom-caves-d-e-f",
+    "area": "f-guard-26"
+   },
+   "label": "F"
+  }
+ ],
+ "notes": "Caves G to K are marked but not drawn yet (next pass).",
+ "walls": [],
+ "doors": [],
+ "lights": [],
+ "environment": {},
+ "licence": "CC0",
+ "credit": "Drawn for Beyond the Pale with the E9 Atlas encounter tool (original layout, no traced art)"
+}

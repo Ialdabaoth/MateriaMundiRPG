@@ -1,0 +1,267 @@
+{
+ "format": "e9-encounter-map/1",
+ "id": "pale-keep",
+ "title": "Baile Átha Troim: the Pale Keep",
+ "size": [
+  110,
+  82
+ ],
+ "grid": {
+  "ft": 5,
+  "show": true
+ },
+ "layers": [
+  {
+   "src": "pale-keep/map.jpg",
+   "at": [
+    0,
+    0
+   ],
+   "px": 24
+  }
+ ],
+ "ground": "none",
+ "areas": {
+  "east-gate": {
+   "squares": [
+    100,
+    22,
+    10,
+    16
+   ],
+   "title": "1-2 · The east gate and its towers"
+  },
+  "entry-court": {
+   "squares": [
+    88,
+    22,
+    16,
+    15
+   ],
+   "title": "3 · Entry courtyard"
+  },
+  "stables": {
+   "squares": [
+    87,
+    12,
+    12,
+    9
+   ],
+   "title": "4 · Common stables"
+  },
+  "warehouse": {
+   "squares": [
+    87,
+    38,
+    12,
+    8
+   ],
+   "title": "5 · Common warehouse"
+  },
+  "bailiff": {
+   "squares": [
+    84,
+    58,
+    9,
+    8
+   ],
+   "title": "6 · The bailiff's tower"
+  },
+  "apartments": {
+   "squares": [
+    55,
+    56,
+    31,
+    8
+   ],
+   "title": "7 · Private apartments"
+  },
+  "smithy": {
+   "squares": [
+    77,
+    41,
+    9,
+    9
+   ],
+   "title": "8 · The blacksmith"
+  },
+  "general-store": {
+   "squares": [
+    67,
+    41,
+    9,
+    9
+   ],
+   "title": "9 · General store"
+  },
+  "trader": {
+   "squares": [
+    57,
+    41,
+    9,
+    9
+   ],
+   "title": "10 · The trader's shop"
+  },
+  "bank": {
+   "squares": [
+    43,
+    56,
+    9,
+    8
+   ],
+   "title": "11 · The bank"
+  },
+  "guard-tower": {
+   "squares": [
+    50,
+    54,
+    6,
+    6
+   ],
+   "title": "12 · Guard tower"
+  },
+  "fountain": {
+   "squares": [
+    30,
+    30,
+    24,
+    26
+   ],
+   "title": "13 · Main courtyard and fountain"
+  },
+  "inn": {
+   "squares": [
+    31,
+    22,
+    11,
+    8
+   ],
+   "title": "14 · The travellers' inn"
+  },
+  "tavern": {
+   "squares": [
+    41,
+    22,
+    11,
+    8
+   ],
+   "title": "15 · The tavern"
+  },
+  "guild": {
+   "squares": [
+    59,
+    27,
+    13,
+    9
+   ],
+   "title": "16 · Merchant guild headquarters"
+  },
+  "banker-house": {
+   "squares": [
+    71,
+    21,
+    8,
+    7
+   ],
+   "title": "7a · The banker's house"
+  },
+  "priest-house": {
+   "squares": [
+    71,
+    28,
+    8,
+    7
+   ],
+   "title": "7b · The visiting priest's house"
+  },
+  "chapel": {
+   "squares": [
+    55,
+    12,
+    18,
+    10
+   ],
+   "title": "17 · The chapel"
+  },
+  "inner-gate": {
+   "squares": [
+    24,
+    36,
+    8,
+    8
+   ],
+   "title": "18 · Inner gatehouse"
+  },
+  "watchtowers": {
+   "squares": [
+    24,
+    30,
+    10,
+    21
+   ],
+   "title": "19-20 · Watchtowers (ballista at 20)"
+  },
+  "inner-bailey": {
+   "squares": [
+    8,
+    9,
+    19,
+    58
+   ],
+   "title": "21 · The inner bailey"
+  },
+  "cavalry-stables": {
+   "squares": [
+    11,
+    11,
+    12,
+    8
+   ],
+   "title": "22 · Cavalry stables"
+  },
+  "great-tower": {
+   "squares": [
+    16,
+    20,
+    8,
+    8
+   ],
+   "title": "23 · The great tower and the storm cannon"
+  },
+  "fortress": {
+   "squares": [
+    9,
+    40,
+    15,
+    13
+   ],
+   "title": "24 · The fortress (26 guards' quarters, 27 castellan's quarters)"
+  },
+  "cliff-towers": {
+   "squares": [
+    9,
+    62,
+    18,
+    8
+   ],
+   "title": "25 · Thunder-rattler towers"
+  },
+  "lift": {
+   "squares": [
+    15,
+    45,
+    4,
+    4
+   ],
+   "title": "28 · The secret lift beneath the mountain"
+  }
+ },
+ "notes": "A feel-alike layout drawn from the module's key, set on the real site of Trim Castle (curtain wall, central keep, river below). Not a survey of the real castle.",
+ "walls": [],
+ "doors": [],
+ "lights": [],
+ "environment": {},
+ "licence": "CC0",
+ "credit": "Drawn for Beyond the Pale with the E9 Atlas encounter tool (original layout, no traced art)"
+}

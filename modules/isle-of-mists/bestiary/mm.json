@@ -629,6 +629,1135 @@
     ],
     "talents": []
    }
+  },
+  "peistduine-bone-mother": {
+   "from": "blank",
+   "replace": {
+    "level": 3,
+    "size": "Small",
+    "movement": "Normal",
+    "armor": "2 / 1",
+    "hp": "3d6÷2",
+    "abilities": {
+     "con": 0,
+     "str": 0,
+     "dex": 1,
+     "int": 0,
+     "wis": 1,
+     "cha": 0
+    },
+    "attacks": [
+     "Quarterstaff (2d6 blunt)"
+    ],
+    "talents": [
+     "science",
+     "lore",
+     "medicine",
+     "intuition",
+     "survival",
+     "wit"
+    ],
+    "talentThreshold": 4,
+    "special": [
+     "Magic: water ①, fey ①.",
+     "Carries an uncommon bag of holding full of severed heads."
+    ]
+   }
+  },
+  "peistduine-hunter": {
+   "from": "blank",
+   "replace": {
+    "level": 1,
+    "size": "Small",
+    "movement": "Normal",
+    "armor": "0",
+    "hp": "3",
+    "abilities": {
+     "con": 0,
+     "str": 1,
+     "dex": 1,
+     "int": -1,
+     "wis": 0,
+     "cha": 0
+    },
+    "attacks": [
+     "Shortbow (d6+1 piercing, range 10)"
+    ],
+    "talents": [
+     "agility",
+     "stealth",
+     "alertness",
+     "survival"
+    ],
+    "talentThreshold": 4,
+    "special": [
+     "Feats: Slay Quarry, Evasion."
+    ]
+   }
+  },
+  "peistduine-champion": {
+   "from": "blank",
+   "replace": {
+    "level": 1,
+    "size": "Small",
+    "movement": "Normal",
+    "armor": "0",
+    "hp": "4",
+    "abilities": {
+     "con": 0,
+     "str": 1,
+     "dex": 1,
+     "int": -1,
+     "wis": 0,
+     "cha": 0
+    },
+    "attacks": [
+     "Javelin (2d6, or d6 thrown, range 5)"
+    ],
+    "talents": [
+     "stealth"
+    ],
+    "talentThreshold": 5,
+    "special": [
+     "Feats: Snake Frenzy ×1, Evasion."
+    ]
+   }
+  },
+  "peistduine-young": {
+   "from": "blank",
+   "replace": {
+    "level": 0,
+    "size": "Small",
+    "movement": "Normal",
+    "armor": "0",
+    "hp": "1",
+    "abilities": {
+     "con": 0,
+     "str": -1,
+     "dex": 1,
+     "int": -1,
+     "wis": 0,
+     "cha": 0
+    },
+    "attacks": [],
+    "talents": [
+     "stealth"
+    ],
+    "talentThreshold": 5,
+    "special": [
+     "Non-combatant: flees or hides."
+    ]
+   }
+  },
+  "ettercap-champion": {
+   "from": "blank",
+   "replace": {
+    "level": 3,
+    "size": "Medium",
+    "movement": "Climb",
+    "armor": "1 / 0",
+    "hp": "3d6+9",
+    "abilities": {
+     "con": 1,
+     "str": 1,
+     "dex": 0,
+     "int": -1,
+     "wis": 0,
+     "cha": 0
+    },
+    "attacks": [
+     "Two poisoned daggers (2d6 piercing + d6 ongoing poison)"
+    ],
+    "talents": [
+     "agility",
+     "stealth",
+     "survival"
+    ],
+    "talentThreshold": 5,
+    "special": [
+     "Feats: Snake Frenzy ×2, Evasion."
+    ]
+   }
+  },
+  "ettercap-hunter": {
+   "from": "blank",
+   "replace": {
+    "level": 2,
+    "size": "Medium",
+    "movement": "Climb",
+    "armor": "1 / 0",
+    "hp": "3d6+6",
+    "abilities": {
+     "con": 1,
+     "str": 1,
+     "dex": 0,
+     "int": -1,
+     "wis": 0,
+     "cha": 0
+    },
+    "attacks": [
+     "Two poisoned daggers (2d6 piercing + d6 ongoing poison)"
+    ],
+    "talents": [
+     "agility",
+     "stealth",
+     "alertness",
+     "survival"
+    ],
+    "talentThreshold": 5,
+    "special": [
+     "Feats: Slay Quarry, Evasion."
+    ]
+   }
+  },
+  "faoladh-chieftain": {
+   "from": "blank",
+   "replace": {
+    "level": 3,
+    "size": "Medium",
+    "movement": "Normal",
+    "armor": "2 / 1",
+    "hp": "3d6+6",
+    "abilities": {
+     "con": 0,
+     "str": 2,
+     "dex": 1,
+     "int": -1,
+     "wis": 0,
+     "cha": 0
+    },
+    "attacks": [
+     "Venom scythe, common +1 (2d6+2 + d6 poison)"
+    ],
+    "talents": [
+     "agility",
+     "stealth",
+     "alertness",
+     "survival"
+    ],
+    "talentThreshold": 5,
+    "special": [
+     "Feats: Wolf Frenzy ×2, Evasion.",
+     "Wolf form (3 HD): Str +2, Dex +2, Con +1, Int -3, Wis +1, Cha +1; Fast; armor 1 / 0; HP 3d6+3; bite (d6+2 piercing), grapple (2d6); Stealth, Perception, Survival 3+; smell (superior)."
+    ]
+   }
+  },
+  "faoladh-champion": {
+   "from": "blank",
+   "replace": {
+    "level": 2,
+    "size": "Medium",
+    "movement": "Normal",
+    "armor": "2 / 1",
+    "hp": "2d6+4",
+    "abilities": {
+     "con": 0,
+     "str": 1,
+     "dex": 1,
+     "int": -1,
+     "wis": 0,
+     "cha": 0
+    },
+    "attacks": [
+     "Greatsword (2d6+1)"
+    ],
+    "talents": [
+     "agility",
+     "stealth",
+     "alertness",
+     "survival"
+    ],
+    "talentThreshold": 5,
+    "special": [
+     "Feats: Wolf Frenzy ×1, Evasion.",
+     "Fights as a wolf when attacked (see the chieftain's wolf form)."
+    ]
+   }
+  },
+  "faoladh-hunter": {
+   "from": "blank",
+   "replace": {
+    "level": 2,
+    "size": "Medium",
+    "movement": "Normal",
+    "armor": "1",
+    "hp": "2d6+2",
+    "abilities": {
+     "con": 0,
+     "str": 1,
+     "dex": 1,
+     "int": -1,
+     "wis": 0,
+     "cha": 0
+    },
+    "attacks": [
+     "Two daggers (2d6 piercing)"
+    ],
+    "talents": [
+     "agility",
+     "stealth",
+     "alertness",
+     "survival"
+    ],
+    "talentThreshold": 4,
+    "special": [
+     "Feats: Slay Quarry, Evasion.",
+     "Fights as a wolf when attacked."
+    ]
+   }
+  },
+  "wolf-faun-champion": {
+   "from": "blank",
+   "replace": {
+    "level": 1,
+    "size": "Medium",
+    "movement": "Normal",
+    "armor": "1",
+    "hp": "8",
+    "abilities": {
+     "con": 0,
+     "str": 1,
+     "dex": 0,
+     "int": 0,
+     "wis": 0,
+     "cha": 0
+    },
+    "attacks": [
+     "Greataxe (2d6+1, sundering)"
+    ],
+    "talents": [
+     "agility",
+     "stealth"
+    ],
+    "talentThreshold": 5,
+    "special": [
+     "Feats: Wolf Frenzy ×1, Evasion."
+    ]
+   }
+  },
+  "wolf-faun-hunter": {
+   "from": "blank",
+   "replace": {
+    "level": 1,
+    "size": "Medium",
+    "movement": "Normal",
+    "armor": "1",
+    "hp": "7",
+    "abilities": {
+     "con": 0,
+     "str": 1,
+     "dex": 0,
+     "int": 0,
+     "wis": 0,
+     "cha": 0
+    },
+    "attacks": [
+     "Two daggers (2d6 piercing)",
+     "Greatbow"
+    ],
+    "talents": [
+     "agility",
+     "stealth",
+     "alertness",
+     "survival"
+    ],
+    "talentThreshold": 5,
+    "special": [
+     "Feats: Slay Quarry, Evasion."
+    ]
+   }
+  },
+  "wolf-faun-druid": {
+   "from": "blank",
+   "replace": {
+    "level": 1,
+    "size": "Medium",
+    "movement": "Normal",
+    "armor": "3 (thornweave)",
+    "hp": "d6",
+    "abilities": {
+     "con": 0,
+     "str": 1,
+     "dex": 0,
+     "int": 0,
+     "wis": 0,
+     "cha": 0
+    },
+    "attacks": [
+     "Quarterstaff (2d6 blunt)",
+     "Dagger"
+    ],
+    "talents": [
+     "alertness",
+     "intuition",
+     "survival",
+     "wit"
+    ],
+    "talentThreshold": 5,
+    "special": [
+     "Magic: fey ①.",
+     "Wears common +1 thornweave hide."
+    ]
+   }
+  },
+  "the-hermit": {
+   "from": "blank",
+   "replace": {
+    "level": 3,
+    "size": "Medium",
+    "movement": "Normal",
+    "armor": "3 / 2",
+    "hp": "3d6",
+    "abilities": {
+     "con": 0,
+     "str": -1,
+     "dex": 2,
+     "int": 0,
+     "wis": 1,
+     "cha": 1
+    },
+    "attacks": [
+     "Two daggers coated in death poison (2d6 piercing + d6 ongoing poison)"
+    ],
+    "talents": [
+     "stealth",
+     "science",
+     "lore",
+     "medicine",
+     "intuition",
+     "survival",
+     "wit",
+     "charm"
+    ],
+    "talentThreshold": 3,
+    "special": [
+     "Magic: wood ①, fey ①. Wears common +1 thornweave hide.",
+     "Wild shape, horned owl (1 HD): Fly, Small, armor 0, HP 3, bite (d6 piercing).",
+     "Wild shape, black bear (2 HD): Large, armor 1 (0), HP (2d6+6)×2, bite (d6+3 piercing), claws (2d6), grapple (2d6+3 blunt)."
+    ]
+   }
+  },
+  "hermits-leopard": {
+   "from": "blank",
+   "replace": {
+    "level": 3,
+    "size": "Medium",
+    "movement": "Normal",
+    "armor": "0",
+    "hp": "(3d6+3)×2",
+    "abilities": {
+     "con": 1,
+     "str": 3,
+     "dex": 3,
+     "int": -4,
+     "wis": 1,
+     "cha": 0
+    },
+    "attacks": [
+     "Bite (2d6 piercing)",
+     "Claws (2d6+3), 2 per action"
+    ],
+    "talents": [
+     "agility",
+     "stealth",
+     "alertness",
+     "survival"
+    ],
+    "talentThreshold": 3,
+    "special": [
+     "Senses: smell (superior)."
+    ]
+   }
+  },
+  "warren-bone-mother": {
+   "from": "peistduine-bone-mother",
+   "replace": {
+    "attacks": [
+     "Greatsword (2d6+1)"
+    ],
+    "talents": [
+     "science",
+     "intuition",
+     "survival",
+     "wit"
+    ],
+    "special": [
+     "Magic: water ①, fey ①."
+    ]
+   }
+  },
+  "warren-hunter": {
+   "from": "peistduine-hunter",
+   "replace": {
+    "attacks": [
+     "Shortbow (d6 piercing, range 10)",
+     "Javelin (d6, range 5)"
+    ],
+    "talents": [
+     "agility",
+     "finesse",
+     "stealth",
+     "alertness"
+    ],
+    "talentThreshold": 5
+   }
+  },
+  "warren-champion": {
+   "from": "peistduine-champion"
+  },
+  "warren-young": {
+   "from": "peistduine-young"
+  },
+  "troglodyte-hunter": {
+   "from": "blank",
+   "replace": {
+    "level": 2,
+    "size": "Medium",
+    "movement": "Normal",
+    "armor": "0",
+    "hp": "2d6+4",
+    "abilities": {
+     "con": 0,
+     "str": 1,
+     "dex": 1,
+     "int": -1,
+     "wis": 0,
+     "cha": 0
+    },
+    "attacks": [
+     "Shortbow (d6 piercing, range 10)"
+    ],
+    "talents": [
+     "agility",
+     "finesse",
+     "stealth",
+     "alertness"
+    ],
+    "talentThreshold": 5,
+    "special": [
+     "Feats: Slay Quarry, Evasion."
+    ]
+   }
+  },
+  "giant-rat": {
+   "from": "blank",
+   "replace": {
+    "level": 1,
+    "size": "Small",
+    "movement": "Fast",
+    "armor": "0",
+    "hp": "2",
+    "abilities": {
+     "con": -2,
+     "str": -2,
+     "dex": 3,
+     "int": -4,
+     "wis": 1,
+     "cha": -1
+    },
+    "attacks": [
+     "Bite (d6 piercing)"
+    ],
+    "talents": [
+     "agility",
+     "stealth",
+     "alertness",
+     "survival"
+    ],
+    "talentThreshold": 3,
+    "special": [
+     "Senses: smell (superior).",
+     "Behaviour (d6): 1-2 fearful, 3-5 wary, 6 aggressive.",
+     "Critical bite: save vs. disease; on a 1 it is the Plague."
+    ]
+   }
+  },
+  "blacktooth-chieftain": {
+   "from": "blank",
+   "replace": {
+    "level": 3,
+    "size": "Medium",
+    "movement": "Normal",
+    "armor": "2 (1)",
+    "hp": "3d6+12",
+    "abilities": {
+     "con": 2,
+     "str": 2,
+     "dex": 1,
+     "int": -1,
+     "wis": 0,
+     "cha": 0
+    },
+    "attacks": [
+     "Mace (d6+2 blunt)"
+    ],
+    "talents": [
+     "agility",
+     "stealth",
+     "survival"
+    ],
+    "talentThreshold": 5,
+    "special": [
+     "Feats: Boar Frenzy ×2, Evasion."
+    ]
+   }
+  },
+  "blacktooth-champion": {
+   "from": "blank",
+   "replace": {
+    "level": 2,
+    "size": "Medium",
+    "movement": "Normal",
+    "armor": "2 (1)",
+    "hp": "3d6+12",
+    "abilities": {
+     "con": 2,
+     "str": 2,
+     "dex": 1,
+     "int": -1,
+     "wis": 0,
+     "cha": 0
+    },
+    "attacks": [
+     "Spear (d6+2 piercing, reach)"
+    ],
+    "talents": [
+     "agility",
+     "survival"
+    ],
+    "talentThreshold": 5,
+    "special": [
+     "Feats: Boar Frenzy ×1, Evasion."
+    ]
+   }
+  },
+  "blacktooth-hunter": {
+   "from": "blank",
+   "replace": {
+    "level": 2,
+    "size": "Medium",
+    "movement": "Normal",
+    "armor": "1 (0)",
+    "hp": "3d6+9",
+    "abilities": {
+     "con": 2,
+     "str": 2,
+     "dex": 1,
+     "int": -1,
+     "wis": 0,
+     "cha": 0
+    },
+    "attacks": [
+     "Shortbow (d6 piercing, range 10)"
+    ],
+    "talents": [
+     "agility",
+     "stealth",
+     "alertness",
+     "survival"
+    ],
+    "talentThreshold": 4,
+    "special": [
+     "Feats: Slay Quarry, Evasion."
+    ]
+   }
+  },
+  "goblin-young": {
+   "from": "blank",
+   "replace": {
+    "level": 1,
+    "size": "Small",
+    "movement": "Normal",
+    "armor": "0",
+    "hp": "2",
+    "abilities": {
+     "con": 0,
+     "str": -1,
+     "dex": 1,
+     "int": -1,
+     "wis": 0,
+     "cha": 0
+    },
+    "attacks": [],
+    "talents": [
+     "stealth"
+    ],
+    "talentThreshold": 5,
+    "special": [
+     "Non-combatant: flees or hides."
+    ]
+   }
+  },
+  "bloodhand-chieftain": {
+   "from": "blank",
+   "replace": {
+    "level": 3,
+    "size": "Small",
+    "movement": "Normal",
+    "armor": "2 (1)",
+    "hp": "(3d6+9)÷2",
+    "abilities": {
+     "con": 1,
+     "str": 0,
+     "dex": 1,
+     "int": -1,
+     "wis": 0,
+     "cha": 0
+    },
+    "attacks": [
+     "Handaxe, common +1 flying blade (d6+1, range 5)",
+     "Light steel shield"
+    ],
+    "talents": [
+     "agility",
+     "stealth",
+     "survival"
+    ],
+    "talentThreshold": 5,
+    "special": [
+     "Feats: Boar Frenzy ×2, Evasion."
+    ]
+   }
+  },
+  "bloodhand-hunter": {
+   "from": "blank",
+   "replace": {
+    "level": 1,
+    "size": "Small",
+    "movement": "Normal",
+    "armor": "1 (0)",
+    "hp": "4",
+    "abilities": {
+     "con": 1,
+     "str": 0,
+     "dex": 1,
+     "int": -1,
+     "wis": 0,
+     "cha": 0
+    },
+    "attacks": [
+     "Light crossbow (d6 piercing, range 10)",
+     "Shortsword",
+     "Light wooden shield"
+    ],
+    "talents": [
+     "agility",
+     "stealth",
+     "alertness",
+     "survival"
+    ],
+    "talentThreshold": 5,
+    "special": [
+     "Feats: Slay Quarry, Evasion."
+    ]
+   }
+  },
+  "skitterglint-subchief": {
+   "from": "blank",
+   "replace": {
+    "level": 3,
+    "size": "Small",
+    "movement": "Normal",
+    "armor": "2 (1)",
+    "hp": "(3d6+9)÷2",
+    "abilities": {
+     "con": 1,
+     "str": 0,
+     "dex": 1,
+     "int": -1,
+     "wis": 0,
+     "cha": 0
+    },
+    "attacks": [
+     "Spear (2d6, reach)"
+    ],
+    "talents": [
+     "agility",
+     "stealth",
+     "survival"
+    ],
+    "talentThreshold": 5,
+    "special": [
+     "Feats: Snake Frenzy ×2, Evasion."
+    ]
+   }
+  },
+  "skitterglint-redcap-champion": {
+   "from": "blank",
+   "replace": {
+    "level": 2,
+    "size": "Small",
+    "movement": "Normal",
+    "armor": "2 (1)",
+    "hp": "(2d6+4)÷2",
+    "abilities": {
+     "con": 1,
+     "str": 0,
+     "dex": 1,
+     "int": -1,
+     "wis": 0,
+     "cha": 0
+    },
+    "attacks": [
+     "Javelin (d6 piercing, range 5)"
+    ],
+    "talents": [
+     "agility",
+     "stealth",
+     "alertness",
+     "survival"
+    ],
+    "talentThreshold": 5,
+    "special": [
+     "Feats: Snake Frenzy ×1, Evasion."
+    ]
+   }
+  },
+  "skitterglint-redcap-hunter": {
+   "from": "blank",
+   "replace": {
+    "level": 1,
+    "size": "Small",
+    "movement": "Normal",
+    "armor": "1 (0)",
+    "hp": "4",
+    "abilities": {
+     "con": 1,
+     "str": 0,
+     "dex": 1,
+     "int": -1,
+     "wis": 0,
+     "cha": 0
+    },
+    "attacks": [
+     "Crossbow (d6+1 piercing, range 15)",
+     "Two hand axes"
+    ],
+    "talents": [
+     "agility",
+     "stealth",
+     "alertness",
+     "survival"
+    ],
+    "talentThreshold": 5,
+    "special": [
+     "Feats: Slay Quarry, Evasion."
+    ]
+   }
+  },
+  "skitterglint-redcap-druid": {
+   "from": "blank",
+   "replace": {
+    "level": 1,
+    "size": "Small",
+    "movement": "Normal",
+    "armor": "2 (1)",
+    "hp": "4",
+    "abilities": {
+     "con": 1,
+     "str": 0,
+     "dex": 1,
+     "int": -1,
+     "wis": 0,
+     "cha": 0
+    },
+    "attacks": [
+     "Quarterstaff (2d6 blunt)"
+    ],
+    "talents": [
+     "stealth",
+     "alertness",
+     "survival",
+     "wit"
+    ],
+    "talentThreshold": 5,
+    "special": [
+     "Magic: stone ①."
+    ]
+   }
+  },
+  "goblin-noncombatant": {
+   "from": "goblin-young"
+  },
+  "captive-hob": {
+   "from": "blank",
+   "replace": {
+    "level": 1,
+    "size": "Small",
+    "movement": "Normal",
+    "armor": "0",
+    "hp": "4",
+    "abilities": {
+     "con": 0,
+     "str": 0,
+     "dex": 0,
+     "int": 0,
+     "wis": 0,
+     "cha": 0
+    },
+    "attacks": [],
+    "talents": [],
+    "talentThreshold": 5,
+    "special": [
+     "Non-combatant."
+    ]
+   }
+  },
+  "skitterglint-ogre": {
+   "from": "blank",
+   "replace": {
+    "level": 6,
+    "size": "Huge",
+    "movement": "Normal",
+    "armor": "2",
+    "hp": "[3d6+12] per section",
+    "abilities": {
+     "con": 4,
+     "str": 6,
+     "dex": -2,
+     "int": -3,
+     "wis": 0,
+     "cha": 0
+    },
+    "attacks": [
+     "Earthbreaker maul, rare +3 (3d6+9 structure damage, reach 2)"
+    ],
+    "talents": [
+     "alertness",
+     "survival"
+    ],
+    "talentThreshold": 3,
+    "special": [
+     "Huge size: hit points are split by body section; on any hit that was not easy, roll 2d6: 3-4 left leg [hp], 5 left arm [hp], 6-8 body 4×[hp], 9 right arm [hp], 10-11 right leg [hp], 2 or 12 head ½[hp].",
+     "Duck: reaction to make a head hit re-roll its location; any damage to the head stuns it.",
+     "Cripple: a critical to a location drops it to 0. Head or body at 0 kills; a leg at 0 hobbles; an arm at 0 makes attacks harder except reckless ones.",
+     "Frenzy and sweep: when a location drops to 0 it regains all 3 rage and may sweep as a reaction. Sweep (1 rage, action): 3d6 burst vs. everyone within 3 paces; save vs. blast or knockdown for half; failures are knocked prone and flung d6 paces.",
+     "Senses: smells fresh demihuman blood from nearly a mile.",
+     "Gear: bearskin hides enchanted as an uncommon +2 belt of feral might; rare +3 earthbreaker maul."
+    ]
+   }
+  },
+  "skitterglint-bugbear": {
+   "from": "blank",
+   "replace": {
+    "level": 4,
+    "size": "Large",
+    "movement": "Normal",
+    "armor": "2 (1)",
+    "hp": "(4d6+20)×2",
+    "abilities": {
+     "con": 3,
+     "str": 3,
+     "dex": 1,
+     "int": -1,
+     "wis": 0,
+     "cha": 0
+    },
+    "attacks": [
+     "Oversized greatsword (3d6+3)"
+    ],
+    "talents": [
+     "agility",
+     "stealth",
+     "survival",
+     "bearing"
+    ],
+    "talentThreshold": 5,
+    "special": [
+     "Feats: Bear Frenzy ×2, Evasion."
+    ]
+   }
+  },
+  "hobgoblin-jailer": {
+   "from": "blank",
+   "replace": {
+    "level": 3,
+    "size": "Medium",
+    "movement": "Normal",
+    "armor": "3 (thornweave)",
+    "hp": "3d6+12",
+    "abilities": {
+     "con": 2,
+     "str": 2,
+     "dex": 1,
+     "int": -1,
+     "wis": 0,
+     "cha": 0
+    },
+    "attacks": [
+     "Whip (d6, reach 2)",
+     "Shortsword",
+     "Light wooden shield"
+    ],
+    "talents": [
+     "stealth",
+     "alertness",
+     "wit"
+    ],
+    "talentThreshold": 5,
+    "special": [
+     "Feats: Bear Frenzy ×2, Evasion.",
+     "Practised at combat stunts with the whip (Finesse 3+)."
+    ]
+   }
+  },
+  "hobgoblin-jail-guard": {
+   "from": "blank",
+   "replace": {
+    "level": 3,
+    "size": "Medium",
+    "movement": "Normal",
+    "armor": "3 (thornweave)",
+    "hp": "3d6+12",
+    "abilities": {
+     "con": 2,
+     "str": 1,
+     "dex": 1,
+     "int": -1,
+     "wis": 0,
+     "cha": 0
+    },
+    "attacks": [
+     "Shortsword (d6)",
+     "Light wooden shield"
+    ],
+    "talents": [
+     "agility",
+     "alertness",
+     "wit"
+    ],
+    "talentThreshold": 5,
+    "special": [
+     "Feats: Bear Frenzy ×2, Evasion."
+    ]
+   }
+  },
+  "skitterglint-hobgoblin-champion": {
+   "from": "blank",
+   "replace": {
+    "level": 3,
+    "size": "Medium",
+    "movement": "Normal",
+    "armor": "2 (1)",
+    "hp": "3d6+12",
+    "abilities": {
+     "con": 2,
+     "str": 2,
+     "dex": 1,
+     "int": -1,
+     "wis": 0,
+     "cha": 0
+    },
+    "attacks": [
+     "Greataxe (2d6+2, sundering)"
+    ],
+    "talents": [
+     "agility",
+     "survival",
+     "bearing"
+    ],
+    "talentThreshold": 5,
+    "special": [
+     "Feats: Bear Frenzy ×2, Evasion."
+    ]
+   }
+  },
+  "skitterglint-hobgoblin-hunter": {
+   "from": "blank",
+   "replace": {
+    "level": 3,
+    "size": "Medium",
+    "movement": "Normal",
+    "armor": "1 (0)",
+    "hp": "3d6+9",
+    "abilities": {
+     "con": 2,
+     "str": 2,
+     "dex": 1,
+     "int": -1,
+     "wis": 0,
+     "cha": 0
+    },
+    "attacks": [
+     "Shortbow (d6, range 10)",
+     "Two shortswords or two daggers"
+    ],
+    "talents": [
+     "agility",
+     "stealth",
+     "alertness",
+     "survival"
+    ],
+    "talentThreshold": 4,
+    "special": [
+     "Feats: Slay Quarry, Evasion."
+    ]
+   }
+  },
+  "captive-merchant": {
+   "from": "blank",
+   "replace": {
+    "level": 1,
+    "size": "Medium",
+    "movement": "Normal",
+    "armor": "0",
+    "hp": "6",
+    "abilities": {
+     "con": 0,
+     "str": 0,
+     "dex": 0,
+     "int": 0,
+     "wis": 0,
+     "cha": 1
+    },
+    "attacks": [],
+    "talents": [],
+    "talentThreshold": 5
+   }
+  },
+  "merchants-wife": {
+   "from": "blank",
+   "replace": {
+    "level": 1,
+    "size": "Medium",
+    "movement": "Normal",
+    "armor": "0",
+    "hp": "6",
+    "abilities": {
+     "con": 0,
+     "str": 0,
+     "dex": 0,
+     "int": 0,
+     "wis": 0,
+     "cha": 1
+    },
+    "attacks": [],
+    "talents": [],
+    "talentThreshold": 5
+   }
+  },
+  "merchants-bodyguard": {
+   "from": "blank",
+   "replace": {
+    "level": 1,
+    "size": "Medium",
+    "movement": "Normal",
+    "armor": "0",
+    "hp": "8",
+    "abilities": {
+     "con": 0,
+     "str": 1,
+     "dex": 0,
+     "int": 0,
+     "wis": 0,
+     "cha": 0
+    },
+    "attacks": [
+     "Per weapon"
+    ],
+    "talents": [],
+    "talentThreshold": 5
+   }
   }
  }
 }

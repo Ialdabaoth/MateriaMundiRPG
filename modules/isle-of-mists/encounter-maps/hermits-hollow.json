@@ -1,0 +1,108 @@
+{
+ "format": "e9-encounter-map/1",
+ "id": "hermits-hollow",
+ "title": "The hermit's hollow oak",
+ "size": [
+  36,
+  30
+ ],
+ "grid": {
+  "ft": 5,
+  "show": true
+ },
+ "layers": [
+  {
+   "src": "hermits-hollow/map.jpg",
+   "at": [
+    0,
+    0
+   ],
+   "px": 40
+  }
+ ],
+ "ground": "none",
+ "terrain": "forest",
+ "areas": {
+  "oak": {
+   "squares": [
+    13,
+    10,
+    8,
+    8
+   ],
+   "title": "1 · The hollow oak"
+  },
+  "well": {
+   "squares": [
+    20,
+    16,
+    5,
+    5
+   ],
+   "title": "2 · The well"
+  },
+  "gardens": {
+   "squares": [
+    9,
+    9,
+    18,
+    13
+   ],
+   "title": "3 · Gardens inside the illusion"
+  },
+  "apothecary": {
+   "squares": [
+    1,
+    1,
+    9,
+    7
+   ],
+   "title": "4 · The apothecary beneath the oak"
+  },
+  "illusion": {
+   "squares": [
+    8,
+    6,
+    20,
+    20
+   ],
+   "title": "The fey illusion and its five dream pearls (P)"
+  }
+ },
+ "links": [
+  {
+   "from": [
+    17,
+    14
+   ],
+   "to": {
+    "map": "hermits-hollow",
+    "square": [
+     8,
+     6
+    ]
+   },
+   "label": "Down into the apothecary"
+  },
+  {
+   "from": [
+    8.6,
+    6.6
+   ],
+   "to": {
+    "map": "hermits-hollow",
+    "square": [
+     17,
+     14
+    ]
+   },
+   "label": "Up into the oak"
+  }
+ ],
+ "walls": [],
+ "doors": [],
+ "lights": [],
+ "environment": {},
+ "licence": "CC0",
+ "credit": "Drawn for Beyond the Pale with the E9 Atlas encounter tool (original layout, no traced art)"
+}

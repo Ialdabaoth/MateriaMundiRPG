@@ -1,0 +1,70 @@
+{
+ "format": "e9-encounter-map/1",
+ "id": "nead-an-damhain-alla",
+ "title": "Nead an Damháin Alla: the web across the road",
+ "size": [
+  40,
+  30
+ ],
+ "grid": {
+  "ft": 5,
+  "show": true
+ },
+ "layers": [
+  {
+   "src": "nead-an-damhain-alla/map.jpg",
+   "at": [
+    0,
+    0
+   ],
+   "px": 40
+  }
+ ],
+ "ground": "none",
+ "terrain": "forest",
+ "areas": {
+  "webs": {
+   "squares": [
+    15,
+    6,
+    9,
+    14
+   ],
+   "title": "1 · Silk across the wagon path"
+  },
+  "tunnel": {
+   "squares": [
+    10,
+    13,
+    20,
+    4
+   ],
+   "title": "2 · The camouflaged tunnel under the path"
+  },
+  "alcove": {
+   "squares": [
+    28,
+    12,
+    6,
+    5
+   ],
+   "title": "3 · The female's alcove (wolf-Faoladh corpse)"
+  },
+  "egg-sac": {
+   "squares": [
+    29,
+    20,
+    8,
+    8
+   ],
+   "title": "4 · The egg sac in the pines"
+  }
+ },
+ "notes": "The tunnel (2) is hidden under turf and silk: show players only the path until they find it.",
+ "walls": [],
+ "doors": [],
+ "lights": [],
+ "environment": {},
+ "licence": "CC0",
+ "credit": "Drawn for Beyond the Pale with the E9 Atlas encounter tool (original layout, no traced art)"
+}

@@ -1,0 +1,231 @@
+{
+ "title": "Nead an Damháin Alla: the web across the road",
+ "size": [
+  40,
+  30
+ ],
+ "px": 40,
+ "seed": 53,
+ "style": "outdoor",
+ "ground": "heath",
+ "terrain": "forest",
+ "road": [
+  {
+   "path": [
+    [
+     18,
+     -1
+    ],
+    [
+     19,
+     9
+    ],
+    [
+     21,
+     18
+    ],
+    [
+     20,
+     31
+    ]
+   ],
+   "w": 3
+  }
+ ],
+ "floor": [
+  {
+   "path": [
+    [
+     12,
+     15.5
+    ],
+    [
+     29,
+     14.5
+    ]
+   ],
+   "w": 1.8
+  },
+  {
+   "blob": [
+    31,
+    14.5,
+    2.2,
+    1.6
+   ]
+  },
+  {
+   "blob": [
+    11.5,
+    15.5,
+    1.4,
+    1.4
+   ]
+  }
+ ],
+ "trees": [
+  {
+   "in": {
+    "rect": [
+     0,
+     0,
+     40,
+     30
+    ]
+   },
+   "n": 85,
+   "kind": "pine",
+   "r": 1.2
+  },
+  {
+   "in": {
+    "rect": [
+     0,
+     0,
+     40,
+     30
+    ]
+   },
+   "n": 30,
+   "kind": "scrub",
+   "r": 0.6
+  }
+ ],
+ "marks": [
+  {
+   "t": "web",
+   "at": [
+    19.2,
+    9
+   ],
+   "r": 2.4
+  },
+  {
+   "t": "web",
+   "at": [
+    20.4,
+    13
+   ],
+   "r": 2.2
+  },
+  {
+   "t": "web",
+   "at": [
+    21,
+    17.5
+   ],
+   "r": 2.4
+  },
+  {
+   "t": "bones",
+   "at": [
+    31.2,
+    14.6
+   ],
+   "n": 4,
+   "spread": 0.6
+  },
+  {
+   "t": "web",
+   "at": [
+    33,
+    24.5
+   ],
+   "r": 2.6
+  },
+  {
+   "t": "sac",
+   "at": [
+    33,
+    24.5
+   ]
+  },
+  {
+   "t": "num",
+   "at": [
+    16.4,
+    9
+   ],
+   "text": "1"
+  },
+  {
+   "t": "num",
+   "at": [
+    14,
+    13.6
+   ],
+   "text": "2"
+  },
+  {
+   "t": "num",
+   "at": [
+    31,
+    12.4
+   ],
+   "text": "3"
+  },
+  {
+   "t": "num",
+   "at": [
+    33,
+    21.6
+   ],
+   "text": "4"
+  },
+  {
+   "t": "label",
+   "at": [
+    20,
+    1.6
+   ],
+   "text": "to Baile Átha Troim"
+  },
+  {
+   "t": "label",
+   "at": [
+    20,
+    28.6
+   ],
+   "text": "south to the ford"
+  }
+ ],
+ "areas": {
+  "webs": {
+   "squares": [
+    15,
+    6,
+    9,
+    14
+   ],
+   "title": "1 · Silk across the wagon path"
+  },
+  "tunnel": {
+   "squares": [
+    10,
+    13,
+    20,
+    4
+   ],
+   "title": "2 · The camouflaged tunnel under the path"
+  },
+  "alcove": {
+   "squares": [
+    28,
+    12,
+    6,
+    5
+   ],
+   "title": "3 · The female's alcove (wolf-Faoladh corpse)"
+  },
+  "egg-sac": {
+   "squares": [
+    29,
+    20,
+    8,
+    8
+   ],
+   "title": "4 · The egg sac in the pines"
+  }
+ },
+ "notes": "The tunnel (2) is hidden under turf and silk: show players only the path until they find it."
+}

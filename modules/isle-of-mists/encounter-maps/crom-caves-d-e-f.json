@@ -1,0 +1,253 @@
+{
+ "format": "e9-encounter-map/1",
+ "id": "crom-caves-d-e-f",
+ "title": "Caves of Crom Cruach: D, E and F, the Skitterglint clan",
+ "size": [
+  66,
+  50
+ ],
+ "grid": {
+  "ft": 5,
+  "show": true
+ },
+ "layers": [
+  {
+   "src": "crom-caves-d-e-f/map.jpg",
+   "at": [
+    0,
+    0
+   ],
+   "px": 40
+  }
+ ],
+ "ground": "none",
+ "areas": {
+  "d-mouth": {
+   "squares": [
+    7,
+    43,
+    8,
+    7
+   ],
+   "title": "D · Redcap warrens mouth"
+  },
+  "d-guard-17": {
+   "squares": [
+    0,
+    37,
+    8,
+    7
+   ],
+   "title": "17 · Javelin guard chamber"
+  },
+  "d-guard-18": {
+   "squares": [
+    15,
+    37,
+    8,
+    7
+   ],
+   "title": "18 · Javelin guard chamber (secret door to the ogre)"
+  },
+  "d-common-19": {
+   "squares": [
+    3,
+    25,
+    15,
+    11
+   ],
+   "title": "19 · Redcap common room"
+  },
+  "d-subchief-20": {
+   "squares": [
+    0,
+    13,
+    10,
+    8
+   ],
+   "title": "20 · Sub-chieftain's chambers"
+  },
+  "d-larder-21": {
+   "squares": [
+    13,
+    15,
+    8,
+    9
+   ],
+   "title": "21 · Larder and crossbow guard"
+  },
+  "e-ogre-22": {
+   "squares": [
+    20,
+    29,
+    18,
+    21
+   ],
+   "title": "E · 22 · The ogre's cave"
+  },
+  "f-common-23": {
+   "squares": [
+    38,
+    32,
+    10,
+    8
+   ],
+   "title": "23 · Hobgoblin common room (stairs down to 19)"
+  },
+  "f-torture-24": {
+   "squares": [
+    36,
+    21,
+    8,
+    7
+   ],
+   "title": "24 · Pantry and torture chamber"
+  },
+  "f-feast-25": {
+   "squares": [
+    44,
+    21,
+    14,
+    10
+   ],
+   "title": "25 · Feast hall and sleeping quarters"
+  },
+  "f-guard-26": {
+   "squares": [
+    51,
+    37,
+    8,
+    6
+   ],
+   "title": "26 · Guard room"
+  },
+  "f-armory-27": {
+   "squares": [
+    58,
+    22,
+    8,
+    8
+   ],
+   "title": "27 · Armory (locked)"
+  },
+  "f-larder-28": {
+   "squares": [
+    32,
+    12,
+    8,
+    7
+   ],
+   "title": "28 · Stolen larder (stairs down to 21)"
+  },
+  "f-guard-29": {
+   "squares": [
+    41,
+    12,
+    8,
+    6
+   ],
+   "title": "29 · Guard room"
+  },
+  "f-bugbear-30": {
+   "squares": [
+    46,
+    2,
+    11,
+    9
+   ],
+   "title": "30 · The bugbear sub-chieftain"
+  },
+  "f-guard-31": {
+   "squares": [
+    54,
+    12,
+    8,
+    6
+   ],
+   "title": "31 · Guard room"
+  }
+ },
+ "links": [
+  {
+   "from": [
+    11,
+    49
+   ],
+   "to": {
+    "map": "crom-grotto",
+    "area": "cave-d"
+   },
+   "label": "Out to the grotto (D)"
+  },
+  {
+   "from": [
+    30,
+    49
+   ],
+   "to": {
+    "map": "crom-grotto",
+    "area": "cave-e"
+   },
+   "label": "Out to the grotto (E)"
+  },
+  {
+   "from": [
+    55,
+    49
+   ],
+   "to": {
+    "map": "crom-grotto",
+    "area": "cave-f"
+   },
+   "label": "Out to the grotto (F)"
+  },
+  {
+   "from": [
+    17,
+    14.2
+   ],
+   "to": {
+    "map": "crom-caves-d-e-f",
+    "square": [
+     34,
+     17
+    ]
+   },
+   "label": "Secret stair up to 28"
+  },
+  {
+   "from": [
+    34,
+    17.2
+   ],
+   "to": {
+    "map": "crom-caves-d-e-f",
+    "square": [
+     17,
+     14
+    ]
+   },
+   "label": "Secret stair down to 21"
+  },
+  {
+   "from": [
+    43,
+    40.6
+   ],
+   "to": {
+    "map": "crom-caves-d-e-f",
+    "square": [
+     10,
+     30
+    ]
+   },
+   "label": "Stairs down to 19"
+  }
+ ],
+ "walls": [],
+ "doors": [],
+ "lights": [],
+ "environment": {},
+ "licence": "CC0",
+ "credit": "Drawn for Beyond the Pale with the E9 Atlas encounter tool (original layout, no traced art)"
+}
