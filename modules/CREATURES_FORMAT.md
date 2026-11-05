@@ -11,7 +11,7 @@ Creatures are split the same way events are. A module's **`encounters.json`** is
 
 ```
 modules/<module-id>/
-  encounters.json                  fiction: creatures, factions, encounters (rule-generic; any name)
+  encounters.json                  fiction: creatures, factions, encounters (rule-generic; any *.json with an "encounters" block also counts)
   bestiary/<ruleset-id>.json       mechanics: this module's stat blocks for one ruleset
   bestiary/<ruleset-id>/<id>.json  full character sheets for PC-level NPCs (CHARACTER_FORMAT.md)
 companion-app/src/rules/
@@ -23,11 +23,17 @@ campaign/                          in a referee's fork (MODULE_FORMAT.md section
 
 A campaign's entry overrides a module's entry with the same id, in both layers, so a referee can change an NPC without touching the module and still pull upstream fixes.
 
-`encounters.json` is the usual name, not a required one. Any `*.json` in the module or campaign with a top-level `creatures`, `factions` or `encounters` block is merged into the encounters layer, just as `triggers` and `tables` blocks are merged into the events layer, and one file may hold both. The rules (what is scanned, duplicate ids, campaign overrides) are in EVENTS_FORMAT.md section 2.1.
+`encounters.json` is a convention, not a requirement. **Any `*.json` file in the module folder (at any depth) that has a top-level `"encounters"` block is merged into the module's encounters**, whatever its name, exactly as `"events"` blocks are (EVENTS_FORMAT.md section 2, "Multiple files", which owns the rules). One file may hold both blocks. An `"encounters"` block holds any of `creatures` and `scenes` (each keyed by id) and `factions` (a list keyed by `id`):
+
+```json
+{"encounters": {"creatures": {"fomhoire-scout": {...}}, "factions": [{"id": "kells-priory", ...}], "scenes": {"fomhoire-scouts": {...}}}}
+```
+
+The collision rules are the same as for events: files load in path order; a duplicate id inside one layer (the module, or the campaign) is flagged on load and the first file in path order keeps it; the campaign layer replaces a module id on purpose, and the load report lists every replacement; to remove a module creature, faction or scene, the campaign gives the same id with `"off": true`.
 
 Every bestiary file declares the rulesets it serves, as procedures do: `{"format": "e9-bestiary/1", "rules": ["mm", "e9mm"], "creatures": {...}}`.
 
-## 3. The fiction layer: creatures (in `encounters.json`)
+## 3. The fiction layer: creatures (`encounters.creatures`)
 
 The names and story in the examples below are placeholders to show the fields, not canon.
 
@@ -113,7 +119,7 @@ The Referee tab's creature list holds the campaign's creatures: referee creature
 
 **Add** offers: from the bestiary, from a module creature, from the quick NPC table, from a character sheet, or blank. Rolls are logged with the creature's name in the Who field.
 
-## 6. Factions (in `encounters.json`)
+## 6. Factions (`encounters.factions`)
 
 ```json
 "factions": [
@@ -126,13 +132,13 @@ The Referee tab's creature list holds the campaign's creatures: referee creature
 - Relations are words, not numbers, so they stay rule-generic. A ruleset or a later procedure may read them, for example to bend a reaction roll.
 - The Companion shows a faction's members, its seat on the Atlas, and its relations. Events may move a faction's standing through a region ratchet (EVENTS_FORMAT.md section 7); this file only names who stands where.
 
-## 7. Encounters (in `encounters.json`)
+## 7. Encounters (`encounters.scenes`)
 
-The third block of the fiction layer. A file's top level holds any of `{"creatures": {...}, "factions": [...], "encounters": [...]}`, alongside events blocks if it likes.
+An encounter record is called a **scene** in the file (`encounters.scenes`), so the block does not read `"encounters": {"encounters": ...}`. Scenes are keyed by id.
 
 ```json
-"encounters": [
-  {"id": "fomhoire-scouts", "title": "Fomhóire scouts",
+"scenes": {
+  "fomhoire-scouts": {"title": "Fomhóire scouts",
    "where": {"terrain": "bog", "march": "an-mhi"},
    "who": [{"creature": "fomhoire-scout", "count": "d6"}, {"creature": "fomhoire-hound", "count": "d6÷2", "chance": "1-3 on d6"}],
    "disposition": "aggressive", "threat": "dangerous",
@@ -141,7 +147,7 @@ The third block of the fiction layer. A file's top level holds any of `{"creatur
    "treasure": "Each carries a bronze token marked with the bent knee.",
    "players": "Shapes in the reeds keep pace with you.",
    "map": null}
-]
+}
 ```
 
 - **where** is a site slug (`"site": "kells-priory"`, with an optional `"room"` key for keyed locations), a hex address (`"hex": "<map>:<hex>"`), or a terrain within a March (`"terrain"` plus `"march"`). A keyed encounter at a site shows as a marker on that point of interest in the Atlas; terrain encounters show nowhere until rolled.
