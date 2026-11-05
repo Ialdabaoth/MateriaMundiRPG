@@ -4,7 +4,7 @@ Playable Materia Mundi modules, built from one source into a web viewer, print P
 
 | Module | Source | Published |
 | --- | --- | --- |
-| Beyond the Pale: Leinster, 1422 | [season-1/module.json](season-1/module.json) | `https://ialdabaoth.github.io/MateriaMundiRPG/modules/season-1/` |
+| Beyond the Pale: Leinster, 1422 | [isle-of-mists/module.json](isle-of-mists/module.json) | `https://ialdabaoth.github.io/MateriaMundiRPG/modules/isle-of-mists/` |
 
 To build locally, see section 8 of the format. The build fetches SRTM terrain tiles into `modules/.cache/` the first time it runs.
 
