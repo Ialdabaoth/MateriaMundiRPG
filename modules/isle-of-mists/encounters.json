@@ -4,81 +4,129 @@
    "blacksmith": {
     "name": "Blacksmith",
     "kind": "npc",
-    "is": "dweomersmith"
+    "is": "dweomersmith",
+    "lair": {
+     "site": "baile-atha-troim"
+    }
    },
    "banker": {
     "name": "Banker",
     "kind": "npc",
-    "is": "dweomersmith"
+    "is": "dweomersmith",
+    "lair": {
+     "site": "baile-atha-troim"
+    }
    },
    "bank-guard": {
     "name": "Bank Guard",
     "kind": "npc",
-    "is": "stalwart"
+    "is": "stalwart",
+    "lair": {
+     "site": "baile-atha-troim"
+    }
    },
    "bankers-wife": {
     "name": "Banker’s Wife",
     "kind": "npc",
-    "is": "delver"
+    "is": "delver",
+    "lair": {
+     "site": "baile-atha-troim"
+    }
    },
    "barkeep": {
     "name": "Barkeep",
-    "kind": "npc"
+    "kind": "npc",
+    "lair": {
+     "site": "baile-atha-troim"
+    }
    },
    "barkeeps-wife": {
     "name": "Barkeep’s Wife",
     "kind": "npc",
-    "is": "bard"
+    "is": "bard",
+    "lair": {
+     "site": "baile-atha-troim"
+    }
    },
    "brother-james": {
     "name": "Brother “James”",
     "kind": "npc",
-    "is": "wizard"
+    "is": "wizard",
+    "lair": {
+     "site": "baile-atha-troim"
+    }
    },
    "abbot-costello": {
     "name": "Abbot Costello",
     "kind": "npc",
-    "is": "priest"
+    "is": "priest",
+    "lair": {
+     "site": "baile-atha-troim"
+    }
    },
    "sister-wendy": {
     "name": "Sister Wendy",
     "kind": "npc",
-    "is": "priest"
+    "is": "priest",
+    "lair": {
+     "site": "baile-atha-troim"
+    }
    },
    "sister-abigail": {
     "name": "Sister Abigail",
     "kind": "npc",
-    "is": "priest"
+    "is": "priest",
+    "lair": {
+     "site": "baile-atha-troim"
+    }
    },
    "brother-sean": {
     "name": "Brother Sean",
     "kind": "npc",
-    "is": "priest"
+    "is": "priest",
+    "lair": {
+     "site": "baile-atha-troim"
+    }
    },
    "brother-john": {
     "name": "Brother John",
     "kind": "npc",
-    "is": "priest"
+    "is": "priest",
+    "lair": {
+     "site": "baile-atha-troim"
+    }
    },
    "sister-penelope": {
     "name": "Sister Penelope",
     "kind": "npc",
-    "is": "priest"
+    "is": "priest",
+    "lair": {
+     "site": "baile-atha-troim"
+    }
    },
    "sir-edward-the-castellan": {
     "name": "Sir Edward the Castellan",
     "kind": "npc",
-    "is": "champion"
+    "is": "champion",
+    "lair": {
+     "site": "baile-atha-troim"
+    }
    },
    "dame-macgeralt": {
     "name": "Dame MacGeralt",
     "kind": "npc",
-    "is": "druid"
+    "is": "druid",
+    "lair": {
+     "site": "baile-atha-troim"
+    }
    },
    "chief-engineer": {
     "name": "Chief Engineer",
     "kind": "npc",
-    "is": "wizard"
+    "is": "wizard",
+    "lair": {
+     "site": "baile-atha-troim"
+    }
    },
    "apprentice-engineer": {
     "name": "Apprentice Engineer",
@@ -86,17 +134,26 @@
     "is": "wizard",
     "troupe": {
      "keep": 5
+    },
+    "lair": {
+     "site": "baile-atha-troim"
     }
    },
    "captain-of-the-guard": {
     "name": "Captain of the Guard",
     "kind": "npc",
-    "is": "warrior"
+    "is": "warrior",
+    "lair": {
+     "site": "baile-atha-troim"
+    }
    },
    "sergeant-at-arms": {
     "name": "Sergeant-at-Arms",
     "kind": "npc",
-    "is": "warrior"
+    "is": "warrior",
+    "lair": {
+     "site": "baile-atha-troim"
+    }
    },
    "ranger-of-the-pale": {
     "name": "Ranger of the Pale",
@@ -104,6 +161,9 @@
     "is": "scout",
     "troupe": {
      "keep": 12
+    },
+    "lair": {
+     "site": "baile-atha-troim"
     }
    },
    "guard": {
@@ -112,6 +172,9 @@
     "is": "warrior",
     "troupe": {
      "keep": 50
+    },
+    "lair": {
+     "site": "baile-atha-troim"
     }
    }
   }
