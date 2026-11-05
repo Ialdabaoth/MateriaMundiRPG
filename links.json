@@ -1,0 +1,4 @@
+{
+  "_comment": "Links shared by the E9 Companion (companion-app/vite.config.ts) and the E9 Atlas (modules/tools/build.py). An empty value hides that link in both apps.",
+  "patreon": ""
+}
