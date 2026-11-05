@@ -98,6 +98,7 @@ If a later version renames a site, add `"aliases": {"old-slug": "new-slug"}` to 
 
 - Random tables use **d20 and d6 only**. A big table is a d6 choosing among d20 sub-tables, 120 entries in all. JSON: `{"id", "title", "die": "d20" | "d6", "rows": [{"roll": [lo, hi], "text", "site"?: slug}], "sub"?: {"1": table, …}}`.
 - Creatures reference the Materia Mundi Compendium by name and page wherever possible (`{"name": "Athach", "base": "Ogre", "page": <Compendium page>, "changes": "…"}`). Give a full stat block only for something new.
+- Full creature, NPC, faction and encounter records (templates with replace and adjust, per-ruleset stats) are drafted in CREATURES_FORMAT.md.
 
 ## 7. Campaigns: fork, play, commit
 
