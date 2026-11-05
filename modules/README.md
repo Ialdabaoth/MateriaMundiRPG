@@ -1,6 +1,6 @@
 # Modules
 
-Playable Materia Mundi modules, built from one source into a web viewer, print PDFs and a Companion manifest. The protocol is in [MODULE_FORMAT.md](MODULE_FORMAT.md). The planned E9 Atlas map format (one terrain PNG per March plus a JSON) is drafted in [ATLAS_FORMAT.md](ATLAS_FORMAT.md).
+Playable Materia Mundi modules, built from one source into a web viewer, print PDFs and a Companion manifest. The protocol is in [MODULE_FORMAT.md](MODULE_FORMAT.md). The planned E9 Atlas map format (one terrain PNG per March plus a JSON) is drafted in [ATLAS_FORMAT.md](ATLAS_FORMAT.md), and [REALMAP.md](REALMAP.md) shows how to start a new campaign map from real-world data. The tools are CC0 ([tools/LICENSE.md](tools/LICENSE.md)).
 
 | Module | Source | Published |
 | --- | --- | --- |
