@@ -108,6 +108,21 @@ Sections appear in this order: base terrain, then rivers and roads, then region 
 - **`overrides`** fixes a single hex at any level without repainting (`<march>:<league>`, and later deeper addresses).
 - An optional **elevation PNG** per March, 16-bit greyscale with the same geometry, can come later for hill shading.
 
+## Hex addresses
+
+Decided by Heph on 2026-11-05: **`#world:CCRR:CCRR`**. The first `CCRR` is the League (3-mile hex), and the second is the 100-ft hex inside that League. `#world:CCRR` alone means the whole League.
+
+**Labels.** Each column or row label is exactly two characters: `00`–`99`, then `A0`–`A9`, `B0`–`B9` and so on. The letters `I`, `O` and `Q` are never used, so 23 letters give 330 values (0–329). For example, 100 = `A0`, 147 = `E7`, 200 = `L0`.
+
+| Part | Counts | Range used |
+|---|---|---|
+| League column, row | League lattice (i, j), shifted so the region's top-left League is `0000` | Ireland needs about 70 columns × 100 rows |
+| 100-ft hex in the League | lattice hexes from the League's bounding box: column 0 = League centre C − 100, row 0 = centre R − 75 | columns `01`–`L0` (1–200), rows `00`–`F0` (0–150), 22,500 hexes per League; the centre hex is column `A0`, row `75` → `A075` |
+
+Parity carries through: column 0 is an even global column (it is never used, since the nearest-centre rule gives a League columns 1–200 and rows 0–150, checked with a script), so odd columns sit half a hex lower, as everywhere else. Tools write the canonical form (upper case, with the hex inside the League that owns it), and the viewer reads either case. Field and March are derived from the address, so they need no address of their own.
+
+**Old links.** Today's `#world:CCRR`, `#march-N` and `#l-CCRR` addresses count 3-mile hexes on the old grid. When the switch happens, each one becomes an alias to the new League whose centre is nearest, so links already in the Companion and the books keep working.
+
 ## Open questions
 
-1. **Hex addresses:** today's `#world:CCRR` addresses count 3-mile hexes from the old grid's corner. They need a fixed mapping to (March, League) before the switch, kept as aliases.
+None at the moment.
