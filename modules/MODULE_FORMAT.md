@@ -34,7 +34,7 @@ At the repository root, and copied to the root of the published site:
 ```json
 {
   "format": "mm-repo/1",
-  "name": "Materia Mundi: Season 1",
+  "name": "Materia Mundi: Beyond the Pale",
   "publisher": "Heph",
   "systems": ["materia-mundi", "e9"],
   "license": "CC0-1.0",
@@ -139,7 +139,7 @@ python3 -I modules/tools/build.py modules/season-1 dist/modules/season-1
 
 ## 9. Compatibility and licence
 
-A module states its licence in `mm.json` and `module.json`. Materia Mundi's own Season 1 modules are **CC0**: fork, change and republish freely. A third-party module may use any licence, but a module that says it is "Materia Mundi compatible" must follow sections 3 to 6, so that the Companion and the viewer can read it.
+A module states its licence in `mm.json` and `module.json`. Materia Mundi's own Beyond the Pale modules are **CC0**: fork, change and republish freely. A third-party module may use any licence, but a module that says it is "Materia Mundi compatible" must follow sections 3 to 6, so that the Companion and the viewer can read it.
 
 The map icons in `assets/tiles` are [Hex Tiles: Fantasy](https://cmartins.itch.io/hex-tiles-fantasy) by cmartins, licensed CC BY-SA 4.0. The viewer and the Companion credit them; keep that credit in anything built from them.
 The bonus Desert, Forest, Mountain and Tundra packs in `assets/tiles/packs` (and their keyed-out copies in `assets/tiles/features`) are art by C. Martins, licensed CC BY. Credit "Art by C. Martins" wherever they appear.
