@@ -1,0 +1,634 @@
+{
+ "format": "e9-bestiary/1",
+ "rules": [
+  "mm"
+ ],
+ "creatures": {
+  "blacksmith": {
+   "from": "blank",
+   "replace": {
+    "level": 5,
+    "size": "Medium",
+    "movement": "Normal",
+    "armor": "2",
+    "hp": "5d6+15",
+    "abilities": {
+     "con": 1,
+     "str": 1,
+     "dex": 0,
+     "int": 1,
+     "wis": 0,
+     "cha": -1
+    },
+    "attacks": [
+     "Thundering warhammer (3d6+1 blunt)"
+    ],
+    "talents": [
+     "finesse",
+     "science",
+     "lore",
+     "medicine"
+    ],
+    "talentThreshold": 2,
+    "special": [
+     "Forges common or uncommon arcane magic items, and prepares and maintains one common and one uncommon arcane formula or enchantment."
+    ]
+   }
+  },
+  "banker": {
+   "from": "blank",
+   "replace": {
+    "level": 2,
+    "size": "Medium",
+    "movement": "Normal",
+    "armor": "1",
+    "hp": "2d6+4",
+    "abilities": {
+     "con": 1,
+     "str": 1,
+     "dex": -1,
+     "int": 1,
+     "wis": 1,
+     "cha": -1
+    },
+    "attacks": [
+     "Revolver (d6 piercing + d6 thunder)"
+    ],
+    "talents": [
+     "finesse",
+     "science",
+     "lore",
+     "medicine"
+    ],
+    "talentThreshold": 4,
+    "special": [
+     "The banker can cast identify magic as a ritual, and usually has one volatile common elixir of health prepared."
+    ]
+   }
+  },
+  "bank-guard": {
+   "from": "blank",
+   "replace": {
+    "level": 2,
+    "size": "Medium",
+    "movement": "Normal",
+    "armor": "4",
+    "hp": "2d6+6",
+    "abilities": {
+     "con": 1,
+     "str": 1,
+     "dex": 0,
+     "int": 0,
+     "wis": 0,
+     "cha": 0
+    },
+    "attacks": [
+     "Thundermace (d6+1 blunt + d6 thunder )"
+    ],
+    "talents": [
+     "finesse",
+     "science",
+     "lore",
+     "medicine"
+    ],
+    "talentThreshold": 4,
+    "special": [
+     "Each bank guard has one volatile potion of entanglement prepared."
+    ]
+   }
+  },
+  "bankers-wife": {
+   "from": "blank",
+   "replace": {
+    "level": 1,
+    "size": "Medium",
+    "movement": "Normal",
+    "armor": "3 / 1",
+    "hp": "8",
+    "abilities": {
+     "con": 1,
+     "str": 1,
+     "dex": 1,
+     "int": 0,
+     "wis": 0,
+     "cha": 0
+    },
+    "attacks": [
+     "Musket (d6+1 piercing + d6+1 thunder)"
+    ],
+    "talents": [
+     "agility",
+     "finesse",
+     "stealth",
+     "survival"
+    ],
+    "talentThreshold": 4,
+    "special": [
+     "The banker’s wife can cast the traceless passage glamour as a ritual."
+    ]
+   }
+  },
+  "barkeep": {
+   "from": "blank",
+   "replace": {
+    "level": 1,
+    "size": "Medium",
+    "movement": "Normal",
+    "armor": "0",
+    "hp": "6",
+    "abilities": {
+     "con": 0,
+     "str": 0,
+     "dex": 0,
+     "int": 0,
+     "wis": 0,
+     "cha": 1
+    },
+    "attacks": [
+     "Unarmed (d6 blunt)"
+    ],
+    "talents": [
+     "charm"
+    ],
+    "talentThreshold": 5
+   }
+  },
+  "barkeeps-wife": {
+   "from": "blank",
+   "replace": {
+    "level": 2,
+    "size": "Medium",
+    "movement": "Normal",
+    "armor": "0",
+    "hp": "2d6",
+    "abilities": {
+     "con": 0,
+     "str": 0,
+     "dex": 1,
+     "int": 0,
+     "wis": 0,
+     "cha": 2
+    },
+    "attacks": [
+     "Unarmed (d6 blunt)"
+    ],
+    "talents": [
+     "finesse",
+     "lore",
+     "wit",
+     "charm"
+    ],
+    "talentThreshold": 4,
+    "special": [
+     "The barkeep’s wife has one glamour , which she can spend to cast any first-circle bardsong."
+    ]
+   }
+  },
+  "brother-james": {
+   "from": "blank",
+   "replace": {
+    "level": 5,
+    "size": "Medium",
+    "movement": "Normal",
+    "armor": "3 / 1",
+    "hp": "5d6",
+    "abilities": {
+     "con": 0,
+     "str": 0,
+     "dex": 0,
+     "int": 2,
+     "wis": 1,
+     "cha": 2
+    },
+    "attacks": [
+     "thundermace (d6 blunt+d6 thunder)"
+    ],
+    "talents": [
+     "stealth",
+     "medicine",
+     "lore",
+     "charm",
+     "wit",
+     "bearing"
+    ],
+    "talentThreshold": 3,
+    "special": [
+     "James has three favor, which he can use to perform any first- or second- circle miracle from the death domain, or prepare any other first- or second- circle miracle into a prayer strip."
+    ]
+   }
+  },
+  "abbot-costello": {
+   "from": "blank",
+   "replace": {
+    "level": 5,
+    "size": "Medium",
+    "movement": "Normal",
+    "armor": "1",
+    "hp": "5d6-5",
+    "abilities": {
+     "con": -1,
+     "str": 0,
+     "dex": 0,
+     "int": 0,
+     "wis": 1,
+     "cha": 2
+    },
+    "attacks": [
+     "healer’s staff quarterstaff (1d6 blunt)"
+    ],
+    "talents": [
+     "finesse",
+     "lore",
+     "medicine",
+     "survival",
+     "charm",
+     "bearing",
+     "wit"
+    ],
+    "talentThreshold": 3,
+    "special": [
+     "Costello has three faith, which he can use to perform any first- or second- circle miracle from the beauty domain, or prepare any other first- or second- circle miracle into a prayer strip."
+    ]
+   }
+  },
+  "sister-wendy": {
+   "from": "blank",
+   "replace": {
+    "level": 3,
+    "size": "Medium",
+    "movement": "Normal",
+    "armor": "1",
+    "hp": "3d6-3",
+    "abilities": {
+     "con": -1,
+     "str": 0,
+     "dex": 0,
+     "int": 0,
+     "wis": 1,
+     "cha": 1
+    },
+    "attacks": [
+     "quarterstaff (1d6 blunt / reach)"
+    ],
+    "talents": [
+     "stealth",
+     "medicine",
+     "charm",
+     "wit",
+     "bearing"
+    ],
+    "talentThreshold": 4,
+    "special": [
+     "Wendy has two faith, which she can use to perform any first-circle miracle from the death domain, or prepare any other first-circle miracle into a prayer strip."
+    ]
+   }
+  },
+  "sister-abigail": {
+   "from": "blank",
+   "replace": {
+    "level": 2,
+    "size": "Medium",
+    "movement": "Normal",
+    "armor": "2 / 1",
+    "hp": "2d6",
+    "abilities": {
+     "con": 0,
+     "str": 0,
+     "dex": 0,
+     "int": 0,
+     "wis": 0,
+     "cha": 1
+    },
+    "attacks": [
+     "frying pan (1d6 blunt)"
+    ],
+    "talents": [
+     "medicine",
+     "survival",
+     "charm",
+     "bearing"
+    ],
+    "talentThreshold": 5,
+    "special": [
+     "Abigail has one faith, which she can use to perform any first-circle miracle from the life domain."
+    ]
+   }
+  },
+  "brother-sean": {
+   "from": "blank",
+   "replace": {
+    "level": 2,
+    "size": "Medium",
+    "movement": "Normal",
+    "armor": "1",
+    "hp": "5d6-5",
+    "abilities": {
+     "con": -1,
+     "str": 0,
+     "dex": 0,
+     "int": 0,
+     "wis": 1,
+     "cha": 2
+    },
+    "attacks": [
+     "mace (1d6 blunt)"
+    ],
+    "talents": [
+     "alertness",
+     "charm",
+     "bearing"
+    ],
+    "talentThreshold": 5,
+    "special": [
+     "Sean has one faith, which he can use to perform any first-circle miracle from the fate domain."
+    ]
+   }
+  },
+  "brother-john": {
+   "from": "blank",
+   "replace": {
+    "level": 1,
+    "size": "Medium",
+    "movement": "Normal",
+    "armor": "1",
+    "hp": "5d6-5",
+    "abilities": {
+     "con": 0,
+     "str": 0,
+     "dex": 0,
+     "int": 0,
+     "wis": 1,
+     "cha": 1
+    },
+    "attacks": [
+     "mace (1d6 blunt)"
+    ],
+    "talents": [
+     "bearing",
+     "lore"
+    ],
+    "talentThreshold": 5,
+    "special": [
+     "John has one faith, which he can use to perform any first-circle miracle from the truth domain."
+    ]
+   }
+  },
+  "sister-penelope": {
+   "from": "blank",
+   "replace": {
+    "level": 1,
+    "size": "Medium",
+    "movement": "Normal",
+    "armor": "1",
+    "hp": "5d6-5",
+    "abilities": {
+     "con": -1,
+     "str": 0,
+     "dex": 0,
+     "int": 0,
+     "wis": 1,
+     "cha": 2
+    },
+    "attacks": [],
+    "talents": [
+     "bearing",
+     "medicine"
+    ],
+    "talentThreshold": 5,
+    "special": [
+     "Penelope has one faith, which she can use to perform any first-circle miracle from the life domain."
+    ]
+   }
+  },
+  "sir-edward-the-castellan": {
+   "from": "blank",
+   "replace": {
+    "level": 6,
+    "size": "Medium",
+    "movement": "Normal",
+    "armor": "5",
+    "hp": "6d6+12",
+    "abilities": {
+     "con": 0,
+     "str": 0,
+     "dex": 2,
+     "int": 0,
+     "wis": 1,
+     "cha": 1
+    },
+    "attacks": [
+     "Keen longsword (4d6)"
+    ],
+    "talents": [
+     "agility",
+     "lore",
+     "medicine",
+     "survival",
+     "charm",
+     "bearing",
+     "wit"
+    ],
+    "talentThreshold": 3,
+    "special": [
+     "Edward has three faith, which he can use to perform any first- or second- circle miracle from the War domain, or prepare any other first- or second- circle miracle into a prayer strip."
+    ]
+   }
+  },
+  "dame-macgeralt": {
+   "from": "blank",
+   "replace": {
+    "level": 3,
+    "size": "Medium",
+    "movement": "Normal",
+    "armor": "3 / 1",
+    "hp": "3d6",
+    "abilities": {
+     "con": 0,
+     "str": 0,
+     "dex": 1,
+     "int": 0,
+     "wis": 1,
+     "cha": 1
+    },
+    "attacks": [
+     "windbow (1d6+1 piercing / 20 paces)"
+    ],
+    "talents": [
+     "lore",
+     "medicine",
+     "intuition",
+     "survival"
+    ],
+    "talentThreshold": 3,
+    "special": [
+     "Dame MacGeralt is always attuned to her two wisp companions, a fey wisp and an air wisp."
+    ]
+   }
+  },
+  "chief-engineer": {
+   "from": "blank",
+   "replace": {
+    "level": 5,
+    "size": "Medium",
+    "movement": "Normal",
+    "armor": "3",
+    "hp": "3d6+6",
+    "abilities": {
+     "con": 0,
+     "str": -1,
+     "dex": 1,
+     "int": 2,
+     "wis": 1,
+     "cha": 0
+    },
+    "attacks": [
+     "stormcannon (3D6 structural lightning)"
+    ],
+    "talents": [
+     "finesse",
+     "science",
+     "bearing"
+    ],
+    "talentThreshold": 2,
+    "special": [
+     "The chief engineer usually has the enchant uncommon magic item spell prepared and two copies of identify magic prepared, all used to keep the exceptionally finicky storm cannon operational."
+    ]
+   }
+  },
+  "apprentice-engineer": {
+   "from": "blank",
+   "replace": {
+    "level": 3,
+    "size": "Medium",
+    "movement": "Normal",
+    "armor": "3",
+    "hp": "3d6+6",
+    "abilities": {
+     "con": 0,
+     "str": 1,
+     "dex": 0,
+     "int": 0,
+     "wis": 0,
+     "cha": 0
+    },
+    "attacks": [
+     "magic missile (d6 at 20 paces)"
+    ],
+    "talents": [
+     "science"
+    ],
+    "talentThreshold": 2,
+    "special": [
+     "Each assistant engineer usually has the identify magic and arcane bolt spells prepared."
+    ]
+   }
+  },
+  "captain-of-the-guard": {
+   "from": "blank",
+   "replace": {
+    "level": 3,
+    "size": "Medium",
+    "movement": "Normal",
+    "armor": "3 / 2",
+    "hp": "3d6+6",
+    "abilities": {
+     "con": 0,
+     "str": 1,
+     "dex": 0,
+     "int": 0,
+     "wis": 0,
+     "cha": 0
+    },
+    "attacks": [
+     "+1 longsword (d6+1)"
+    ],
+    "talents": [
+     "agility",
+     "survival",
+     "bearing"
+    ],
+    "talentThreshold": 5
+   }
+  },
+  "sergeant-at-arms": {
+   "from": "blank",
+   "replace": {
+    "level": 2,
+    "size": "Medium",
+    "movement": "Normal",
+    "armor": "3 / 2",
+    "hp": "2d6+6",
+    "abilities": {
+     "con": 1,
+     "str": 0,
+     "dex": 0,
+     "int": 0,
+     "wis": 0,
+     "cha": 0
+    },
+    "attacks": [
+     "+1 longsword (d6+1)"
+    ],
+    "talents": [
+     "agility",
+     "survival",
+     "bearing"
+    ],
+    "talentThreshold": 5,
+    "special": [
+     "Carries a common amulet of protection, which casts shield once per day."
+    ]
+   }
+  },
+  "ranger-of-the-pale": {
+   "from": "blank",
+   "replace": {
+    "level": 2,
+    "size": "Medium",
+    "movement": "Normal",
+    "armor": "1",
+    "hp": "6",
+    "abilities": {
+     "con": 0,
+     "str": 0,
+     "dex": 1,
+     "int": 0,
+     "wis": 0,
+     "cha": 0
+    },
+    "attacks": [
+     "longbow (d6)"
+    ],
+    "talents": [
+     "agility",
+     "finesse",
+     "stealth",
+     "alertness"
+    ],
+    "talentThreshold": 4
+   }
+  },
+  "guard": {
+   "from": "blank",
+   "replace": {
+    "level": 1,
+    "size": "Medium",
+    "movement": "Normal",
+    "armor": "2 / 1",
+    "hp": "9",
+    "abilities": {
+     "con": 1,
+     "str": 0,
+     "dex": 0,
+     "int": 0,
+     "wis": 0,
+     "cha": 0
+    },
+    "attacks": [
+     "longsword (d6)"
+    ],
+    "talents": []
+   }
+  }
+ }
+}
