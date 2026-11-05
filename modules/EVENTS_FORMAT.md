@@ -11,12 +11,30 @@ A module's `events.json` speaks only in **fiction**: triggers (when something ca
 
 ```
 modules/<module-id>/
-  events.json                         triggers, tables, macro vocabularies, calendar (rule-generic)
+  events.json                         triggers, tables, macro vocabularies, calendar (rule-generic; any *.json with an "events" block also counts)
   procedures/<ruleset-id>.json        this module's procedures for one ruleset
 companion-app/src/rules/
   options/<ruleset-id>-options.json   gains a "conditions" list and "time" units (sections 6, 7)
   procedures/<ruleset-id>.json        the ruleset's generic procedures (save, morale, reaction, damage...)
 ```
+
+### Multiple files (Heph 2026-11-05)
+
+`events.json` is a convention, not a requirement. **Any `*.json` file in the module folder (at any depth) that has a top-level `"events"` block is merged into the module's events**, whatever its name, so a referee can keep `bog-hazards.json`, `fomhoire.json` and `weather.json` side by side. The same rule applies to `"encounters"` blocks (the sibling encounters spec). One file may hold both blocks. An `"events"` block holds any of `triggers` (a list), `tables`, `macros` and `calendar`:
+
+```json
+{"events": {"triggers": [...], "tables": {"bog-hazards": {...}}, "macros": {"threat": [...]}}}
+```
+
+Merging and name collisions:
+
+- Files load in **path order** (case-sensitive, `/` before letters), so the result never depends on the disk or the browser.
+- **Triggers and tables** are keyed by `id`. A duplicate id inside one layer (the module, or the campaign) is **flagged on load**, and the first file in path order keeps it. Nothing is silently replaced.
+- **Macros** with the same vocabulary name must list the same values. A different list is flagged, and the first one is kept.
+- **Calendar**: at most one per module. A second one is flagged and ignored.
+- **Layers**: a referee's `campaign/` folder is a later layer (MODULE_FORMAT.md section 7). An id there **replaces** the module's id on purpose, which is how a referee house-rules a table without editing the module. The load report lists each replacement so it is never a surprise. To remove a module trigger, the campaign gives the same id with `"off": true`.
+
+The load report names the file for every warning, such as `fomhoire.json: table "bog-hazards" already defined in bog-hazards.json`.
 
 Every `procedures.json` declares which rulesets it serves: `{"format": "e9-procedures/1", "rules": ["e9mm"], ...}`. `rules` is a list, so one file may serve several rulesets that share conditions and dice. A campaign only offers procedures written for its own ruleset.
 
