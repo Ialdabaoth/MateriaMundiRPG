@@ -11,7 +11,7 @@ A module's `events.json` speaks only in **fiction**: triggers (when something ca
 
 ```
 modules/<module-id>/
-  events.json                         triggers, tables, macro vocabularies, calendar (rule-generic)
+  events.json                         triggers, tables, macro vocabularies, calendar (rule-generic; any name, section 2.1)
   procedures/<ruleset-id>.json        this module's procedures for one ruleset
 companion-app/src/rules/
   options/<ruleset-id>-options.json   gains a "conditions" list and "time" units (sections 6, 7)
@@ -19,6 +19,22 @@ companion-app/src/rules/
 ```
 
 Every `procedures.json` declares which rulesets it serves: `{"format": "e9-procedures/1", "rules": ["e9mm"], ...}`. `rules` is a list, so one file may serve several rulesets that share conditions and dice. A campaign only offers procedures written for its own ruleset.
+
+### 2.1 Any file, found by its blocks (Heph 2026-11-05)
+
+`events.json` and `encounters.json` are the usual names, not required ones. When a module or campaign loads, the app reads **every `*.json`** in the module folder and in `campaign/`, at any depth, and merges each file's top-level blocks by their key, whatever the file is called:
+
+| Block | Goes into | Spec |
+|---|---|---|
+| `triggers`, `tables`, `macros`, `calendar` | the events layer | this file, sections 4 to 6 |
+| `creatures`, `factions`, `encounters` | the encounters layer | CREATURES_FORMAT.md |
+
+So a referee can keep `bog.json` with the bog's triggers, tables, creatures and encounters together, or split a big module into one file per March. One file may hold blocks of both layers.
+
+- **Not scanned:** `module.json`, `procedures/` and `bestiary/` (the mechanics layer, which is found by folder and ruleset), `atlas/`, `creatures/` (play state), and anything under `assets/`. A file with none of the blocks above is ignored.
+- **Merging:** entries merge by id (by name for macros). The same id twice within the module, or twice within the campaign, is an error the app lists at load, naming both files; neither entry is used until it is fixed. A **campaign** entry with a module entry's id **replaces** it on purpose, which is how a referee changes a module's table or NPC.
+- **`calendar`** may appear once in the module and once in the campaign (the campaign's wins).
+- File order never matters, and each entry remembers its file, so the Events log and load errors can point at it.
 
 ## 3. Name lookup and the contract
 

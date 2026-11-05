@@ -11,7 +11,7 @@ Creatures are split the same way events are. A module's **`encounters.json`** is
 
 ```
 modules/<module-id>/
-  encounters.json                  fiction: creatures, factions, encounters (rule-generic)
+  encounters.json                  fiction: creatures, factions, encounters (rule-generic; any name)
   bestiary/<ruleset-id>.json       mechanics: this module's stat blocks for one ruleset
   bestiary/<ruleset-id>/<id>.json  full character sheets for PC-level NPCs (CHARACTER_FORMAT.md)
 companion-app/src/rules/
@@ -22,6 +22,8 @@ campaign/                          in a referee's fork (MODULE_FORMAT.md section
 ```
 
 A campaign's entry overrides a module's entry with the same id, in both layers, so a referee can change an NPC without touching the module and still pull upstream fixes.
+
+`encounters.json` is the usual name, not a required one. Any `*.json` in the module or campaign with a top-level `creatures`, `factions` or `encounters` block is merged into the encounters layer, just as `triggers` and `tables` blocks are merged into the events layer, and one file may hold both. The rules (what is scanned, duplicate ids, campaign overrides) are in EVENTS_FORMAT.md section 2.1.
 
 Every bestiary file declares the rulesets it serves, as procedures do: `{"format": "e9-bestiary/1", "rules": ["mm", "e9mm"], "creatures": {...}}`.
 
@@ -126,7 +128,7 @@ The Referee tab's creature list holds the campaign's creatures: referee creature
 
 ## 7. Encounters (in `encounters.json`)
 
-The third part of `encounters.json`. Its top level is `{"format": "e9-encounters/1", "creatures": {...}, "factions": [...], "encounters": [...]}`.
+The third block of the fiction layer. A file's top level holds any of `{"creatures": {...}, "factions": [...], "encounters": [...]}`, alongside events blocks if it likes.
 
 ```json
 "encounters": [
