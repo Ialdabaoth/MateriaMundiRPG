@@ -56,7 +56,7 @@ These rules suit Ireland around 1420. Another region or period needs its own val
 
 ## Then edit by hand
 
-The PNGs are the map. Paint them in any editor that keeps 8-bit indexed colour (terrain is matched by colour, so the palette order doesn't matter). Repaint the League and Field summary corners too if you change a lot, or rerun the converter on your painted PNGs. Commit the PNGs to the module once you start painting, because a rerun overwrites them.
+The PNGs are the map. Paint them in any editor that keeps 8-bit indexed colour (terrain is matched by colour, so the palette order doesn't matter). Repaint the League and Field summary corners too if you change a lot, or rerun the converter on your painted PNGs. To make the map yours, copy the PNGs into `modules/<id>/atlas/terrain/` and commit them. From then on every build uses those masters as they are, including their summary corners (so after a big repaint, repaint the corners too, or delete a master and rerun `--real` to regenerate that March). Beyond the Pale's masters were made this way on 2026-11-05.
 
 ## Credits and licences
 

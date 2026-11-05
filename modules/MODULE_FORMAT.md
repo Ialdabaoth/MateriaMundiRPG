@@ -54,7 +54,7 @@ The Companion adds a repository from its published URL. It reads `mm.json` and t
 | `admin` | Path to the GeoJSON boundaries (`properties.name` is the region name). |
 | `books` | Ordered list: `{id, title, county, region, detail}`. `region` names the book's 3-mile region and `detail` its half-mile overview. |
 | `world` | Terrain settings for the one 3-mile world map (`counties`, `forest`, `bog_east_of`, `bog_north_of` …). |
-| `atlas` | `{hex_mi: 3, page_hex_mi: 24}`: the March hex and the Region (page) hex. Optional `centroid: [name, lat, lon]` and `extent: [minlon, minlat, maxlon, maxlat]` turn on the E9 Atlas format (ATLAS_FORMAT.md): the Dymaxion face centre, and the fixed area whose top-left March and League are labelled `00` and `0000`. |
+| `atlas` | `{hex_mi: 3, page_hex_mi: 24}`: the March hex and the Region (page) hex. Optional `centroid: [name, lat, lon]` and `extent: [minlon, minlat, maxlon, maxlat]` turn on the E9 Atlas format (ATLAS_FORMAT.md): the Dymaxion face centre, and the fixed area whose top-left March and League are labelled `00` and `0000`. Painted March PNGs in `<module>/atlas/terrain/<march>.png` are the masters and are used as they are (see REALMAP.md). |
 | `league` | `{hex_mi: 0.5, overrides: {county: {terrain settings}}}`. |
 | `site_icons` | Optional `{site name: icon}` overrides; an icon is a file name (without `.png`) in `assets/tiles/icons/`. Without one, a site uses its kind's icon (grove = great tree, abbey = church). |
 | `names` | Optional label translations `{name as drawn: {"en": "...", "ga": "..."}}`. The viewer's Language box swaps every map label, page title and list entry that matches a key; names without an entry stay as drawn. Copied to the built `module.json`. |
