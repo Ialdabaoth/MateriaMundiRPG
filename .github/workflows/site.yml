@@ -13,8 +13,10 @@ permissions:
   pages: write
   id-token: write
 
+# PR builds and main deploys queue separately, so a PR build can never cancel a deploy (they did on 2026-11-05);
+# a newer push still cancels an older build of the same branch or PR
 concurrency:
-  group: companion-app-pages
+  group: site-${{ github.event_name == 'pull_request' && github.ref || 'deploy' }}
   cancel-in-progress: true
 
 jobs:
