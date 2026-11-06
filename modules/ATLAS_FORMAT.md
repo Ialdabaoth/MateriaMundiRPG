@@ -1,7 +1,7 @@
 # E9 Atlas map format (draft, Atlas 0.2.x)
 
 How the E9 Atlas stores a region so the browser can draw any hex at any zoom on demand.
-Designed with Heph on 2026-11-05. Status: **draft**. The converter (`tools/atlas_convert.py`, Atlas 0.2.2) writes this format from today's maps on every build, into `atlas/` next to the viewer; the browser renderer (`tools/atlas.html`, Atlas 0.2.3) draws it; since Atlas 0.3.0 it is one app at `<site>/atlas/` that loads any module listed in the site's `mm.json` (`?module=<id>`), and each module's `atlas/index.html` forwards there. Rule (Heph 2026-11-05): a click always zooms in one level, centred on the hex clicked; at Field level only a point of interest zooms further (to an Encounter map, specified in ENCOUNTER_FORMAT.md, not built yet). The build tools still read `module.json` (see MODULE_FORMAT.md).
+Designed with Heph on 2026-11-05. Status: **draft**. The converter (`tools/atlas_convert.py`, Atlas 0.2.2) writes this format from today's maps on every build, into `atlas/` next to the viewer; the browser renderer (`tools/atlas.html`, Atlas 0.2.3) draws it; since Atlas 0.3.0 it is one app at `<site>/atlas/` that loads any module listed in the site's `mm.json` (`?module=<id>`), and each module's `atlas/index.html` forwards there. Rule (Heph 2026-11-05): a click always zooms in one level, centred on the hex clicked; at the 100-ft level (Furlong, since Atlas 0.4.8) only a point of interest zooms further (to an Encounter map, specified in ENCOUNTER_FORMAT.md, not built yet). The build tools still read `module.json` (see MODULE_FORMAT.md).
 
 A map is one JSON file plus one 8-bit indexed PNG per March. You paint terrain in any image editor; everything else is in the JSON.
 
@@ -15,12 +15,13 @@ The mile is exactly 5000 ft. Every hex is flat-topped and is measured flat to fl
 | March | 24 miles | 1200 |
 | League | 3 miles | 150 |
 | Field | 1/2 mile | 25 |
+| Furlong | 500 ft | 5 |
 | 100-ft hex | 100 ft | 1 |
 | Encounter | 5-ft squares, keyed to a point of interest (ENCOUNTER_FORMAT.md) | |
 
 ## Map scales per module (draft, Heph 2026-11-05)
 
-The lattice, the March PNGs and the stored summaries never change. A module's **scales** only say which zoom levels its ruleset uses to look at that one lattice, so ACKS (24 mi, 6 mi, then 60 ft, nothing in between) and Materia Mundi (24 mi, 3 mi, 1/2 mi, 100 ft, 5 ft) can share a world.
+The lattice, the March PNGs and the stored summaries never change. A module's **scales** only say which zoom levels its ruleset uses to look at that one lattice, so ACKS (24 mi, 6 mi, then 60 ft, nothing in between) and Materia Mundi (24 mi, 3 mi, 1/2 mi, 500 ft, 100 ft, 5 ft) can share a world.
 
 ```json
 "scales": {
@@ -29,6 +30,7 @@ The lattice, the March PNGs and the stored summaries never change. A module's **
     {"id": "march",  "name": "March",  "hex_ft": 120000},
     {"id": "league", "name": "League", "hex_ft": 15000},
     {"id": "field",  "name": "Field",  "hex_ft": 2500},
+    {"id": "furlong", "name": "Furlong", "hex_ft": 500},
     {"id": "hex",    "name": "100 ft", "hex_ft": 100},
     {"id": "encounter", "name": "Encounter", "kind": "encounter", "cell_ft": 5}
   ]
@@ -54,7 +56,7 @@ ACKS, as Heph described it (24 mi = `120000`, 6 mi = `30000`):
 - **Ladders are ruleset data.** Each ruleset ships its default ladder (`mm`, `acks`, ...) and a module names one with `ladder`, optionally overriding levels. Everything is a module, so a ladder lives with the ruleset's other data.
 - **Zoom** goes one level at a time down the module's ladder; the click rule is unchanged.
 - **Addresses stay canonical.** `#world:CCRR:CCRR` always means League then 100-ft hex in the lattice's own terms, whatever the ruleset shows, so links and the print units survive a change of ladder. A module on another ladder can still show its own level names.
-- **Event triggers.** EVENTS_FORMAT.md's `lod` takes a level `id` from the module's ladder (the default ladder's ids are `march`, `league`, `field`, `hex`).
+- **Event triggers.** EVENTS_FORMAT.md's `lod` takes a level `id` from the module's ladder (the default ladder's ids are `march`, `league`, `field`, `furlong`, `hex`).
 
 Open questions: what a 60-ft cell means in a hex-based ruleset (square, or a hex measured flat to flat); and whether Atlas print pages follow the default ladder or the module's.
 
@@ -72,6 +74,9 @@ with x running east and y running south from the map's `origin` (see the JSON). 
 | March | C = 1200 i, R = 1200 j + 600 (i mod 2) |
 | League | C = 150 i, R = 150 j + 75 (i mod 2) |
 | Field | C = 25 i, R = 25 j + 12 (i mod 2) |
+| Furlong | C = 5 i, R = 5 j + 2 (i mod 2) |
+
+**Furlong** (Heph 2026-11-06, Atlas 0.4.8): a 500-ft hex, named for the old furlong (660 ft), which is close enough on a 5000-ft mile. A Field is 5 Furlongs across and a Furlong is 5 lattice hexes across, so the level needs no new data. It has no stored summary: the Atlas works out its terrain as the most common terrain among its 100-ft hexes, by the rule in "Map scales per module", and caches it. In the viewer, Field shows Furlongs, the Furlong level shows 100-ft hexes, and places open their Encounter maps at the Furlong level.
 
 A lattice hex belongs to the March, League or Field whose centre is nearest. On an exact tie, the **higher** i wins, then the higher j. With that rule every March owns columns Cm − 800 to Cm + 799 and rows Rm − 600 to Rm + 599, so its hexes fit its PNG exactly, and every March holds exactly 64 Leagues and 2304 Fields (by their centres), all of which fit the summary blocks below (checked by the converter on 2026-11-05; the first draft said "lower", which left one row of each March's hexes outside every PNG).
 
@@ -146,14 +151,14 @@ Sections appear in this order: base terrain, then rivers and roads, then region 
 
 - **Points are in feet** from `origin`: `[x east, y south]`. Rivers and roads are polylines that the renderer smooths, so their points need no splines. A river's `class` sets its drawn width.
 - **Roads** come in three classes (Heph 2026-11-05): `roman` (a size class named for familiarity, not history: any great paved or engineered highway; in Ireland, the five ancient slighe from Tara), `local` and `trail`. Where a road crosses a river the renderer draws a crossing icon: a bridge on a `roman` road, a ford on the others, unless a `crossings` entry names the hex and the kind (`bridge` or `ford`). Heph is supplying the bridge and ford icons.
-- **POI positions** (Heph 2026-11-06) are a whole lattice hex `"hex": [C, R]`: a PoI is always one 100-ft hex, with no offset inside it. The hex gives every level its address for free (which Field, League and March the place is in). At the 100-ft (Field) level a PoI draws centred in its hex and never past the hex's edge; its icon and label shrink to fit, and the label is left off when it would be too small to read. Visibility at the other levels is still to be worked out (open question). Older files with an `"ft"` offset still load; the offset is ignored.
+- **POI positions** (Heph 2026-11-06) are a whole lattice hex `"hex": [C, R]`: a PoI is always one 100-ft hex, with no offset inside it. The hex gives every level its address for free (which Field, League and March the place is in). At the 100-ft (Furlong) level a PoI draws centred in its hex and never past the hex's edge; its icon and label shrink to fit, and the label is left off when it would be too small to read. Visibility at the other levels is still to be worked out (open question). Older files with an `"ft"` offset still load; the offset is ignored.
 - **`names`** holds the Language box's translations, keyed by the name as drawn, as in module.json today.
 - **`overrides`** fixes a single hex at any level without repainting (`<march>:<league>`, and later deeper addresses).
 - An optional **elevation PNG** per March, 16-bit greyscale with the same geometry, can come later for hill shading.
 
 ## Hex addresses
 
-Decided by Heph on 2026-11-05: **`#world:CCRR:CCRR`**. The first `CCRR` is the League (3-mile hex), and the second is the 100-ft hex inside that League. `#world:CCRR` alone means the whole League.
+Decided by Heph on 2026-11-05: **`#world:CCRR:CCRR`**. The first `CCRR` is the League (3-mile hex), and the second is the 100-ft hex inside that League. `#world:CCRR` alone means the whole League. A full address opens the Furlong level with that 100-ft hex picked. **`#field:CCRR:CCRR`** (Atlas 0.4.8) opens the Field that holds the 100-ft hex; the tools write it with the Field's centre hex.
 
 **Labels.** Each column or row label is exactly two characters: `00`–`99`, then `A0`–`A9`, `B0`–`B9` and so on. The letters `I`, `O` and `Q` are never used, so 23 letters give 330 values (0–329). For example, 100 = `A0`, 147 = `E7`, 200 = `L0`.
 
@@ -162,7 +167,7 @@ Decided by Heph on 2026-11-05: **`#world:CCRR:CCRR`**. The first `CCRR` is the L
 | League column, row | League lattice (i, j), shifted so the region's top-left League is `0000` | Ireland needs about 70 columns × 100 rows |
 | 100-ft hex in the League | lattice hexes from the League's bounding box: column 0 = League centre C − 100, row 0 = centre R − 75 | columns `00`–`K9` (0–199), rows `00`–`E9` (0–149), 22,500 hexes per League; the centre hex is column `A0`, row `75` → `A075` |
 
-Parity carries through: column 0 is an even global column, so odd columns sit half a hex lower, as everywhere else. With the tie rule above every League owns exactly columns 0–199 and rows 0–149 of its box (checked with a script). Tools write the canonical form (upper case, with the hex inside the League that owns it), and the viewer reads either case. Field and March are derived from the address, so they need no address of their own.
+Parity carries through: column 0 is an even global column, so odd columns sit half a hex lower, as everywhere else. With the tie rule above every League owns exactly columns 0–199 and rows 0–149 of its box (checked with a script). Tools write the canonical form (upper case, with the hex inside the League that owns it), and the viewer reads either case. Furlong, Field and March are derived from the address; `#field:` only says which level to show.
 
 **Old links.** Today's `#world:CCRR`, `#march-N` and `#l-CCRR` addresses count 3-mile hexes on the old grid. When the switch happens, each one becomes an alias to the new League whose centre is nearest, so links already in the Companion and the books keep working.
 

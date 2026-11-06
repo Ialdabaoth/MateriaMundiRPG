@@ -63,7 +63,7 @@ Procedures may call each other and the ruleset's generic procedures. Calls and n
 | `terrain` | the party enters or leaves terrain of a type | `terrain`, `edge`, `lod`, `mode` |
 | `manual` | the referee presses its button | `label` |
 
-- **`lod`** is `100ft`, `field`, `league` or `march`. A module with its own map scales (ATLAS_FORMAT.md, "Map scales per module") instead uses a level `id` from its ladder. A terrain trigger tests that level's own summary terrain (the most common terrain in the hex, as the Atlas computes it; ATLAS_FORMAT.md). A March-scale "enter bog" fires on entering a mostly-bog March even if the League underfoot is dry.
+- **`lod`** is `100ft`, `furlong` (500 ft), `field`, `league` or `march`. A module with its own map scales (ATLAS_FORMAT.md, "Map scales per module") instead uses a level `id` from its ladder. A terrain trigger tests that level's own summary terrain (the most common terrain in the hex, as the Atlas computes it; ATLAS_FORMAT.md). A March-scale "enter bog" fires on entering a mostly-bog March even if the League underfoot is dry.
 - **`mode`**: `boundary` (default) fires only when crossing from other terrain into this one (or out, for `leave`); `each` fires on every hex of that terrain entered, for things like a per-hex check to get stuck in the bog.
 - `run` names either a table (`{"table": id}`) or a procedure (`{"call": name, "with": {...}}`).
 - An optional `"recommend": {"roller": "player" | "referee"}` gives the module's recommended default for who rolls (section 9).
