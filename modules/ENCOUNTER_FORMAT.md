@@ -1,6 +1,6 @@
 # E9 Encounter map format (draft)
 
-How a module stores its **Encounter maps** (the 5-ft-square battle maps below the Field level of the E9 Atlas), how points of interest and scenes point into them, and how they can grow into a virtual tabletop later.
+How a module stores its **Encounter maps** (the 5-ft-square battle maps below the Furlong level of the E9 Atlas), how points of interest and scenes point into them, and how they can grow into a virtual tabletop later.
 Designed with Heph on 2026-11-05. Status: **draft**. Map files, the drawing tool and the checker exist (section 12); the Atlas and the module viewer open maps from points of interest (Atlas 0.2.12). Atlas 0.4.x is VTT and referee-tool integration (Heph 2026-11-06): 0.4.0 fills in walls, doors and lights and tidies the format for Universal VTT import, export and links into VTTs (sections 7, 11 and 13). Sits under ATLAS_FORMAT.md (the hex levels) and beside CREATURES_FORMAT.md (who is there) and EVENTS_FORMAT.md (what happens).
 
 ## 1. The idea in one paragraph
@@ -74,7 +74,7 @@ A point of interest in the Atlas map JSON (ATLAS_FORMAT.md, `pois`) gains an opt
 - A **scene** (CREATURES_FORMAT.md section 7) uses the same pointer in its `map` field instead of a bare id: `"map": {"map": "kells-priory", "area": "gatehouse"}`. A bare string still means the whole map.
 - Keyed adventure text can link a room by address: **`#<module>:<map-id>`**, **`#<module>:<map-id>/<area>`**, or **`#<module>:<map-id>/x,y`** for one square. The Companion's page links and the Atlas both read these.
 
-**In the Atlas.** At Field level a PoI with pointers can be clicked (the rule that clicks always zoom in one level, ATLAS_FORMAT.md). One pointer opens straight onto its map, centred and zoomed to the pointed squares. Several pointers show a short picker. An anchored map is also outlined on the Field view, so the referee sees how far the battle map reaches. A PoI with no pointer opens a generated map of its own 100-ft hex (section 6), so every PoI still zooms in.
+**In the Atlas.** At the Furlong level (100-ft hexes) a PoI with pointers can be clicked (the rule that clicks always zoom in one level, ATLAS_FORMAT.md). One pointer opens straight onto its map, centred and zoomed to the pointed squares. Several pointers show a short picker. An anchored map is also outlined on the Furlong view, so the referee sees how far the battle map reaches. A PoI with no pointer opens a generated map of its own 100-ft hex (section 6), so every PoI still zooms in.
 
 ## 5. Bringing in images
 
