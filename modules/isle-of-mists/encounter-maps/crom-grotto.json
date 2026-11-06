@@ -2,10 +2,7 @@
  "format": "e9-encounter-map/1",
  "id": "crom-grotto",
  "title": "Cnoc na Teamhrach: the grotto of Crom Cruach",
- "size": [
-  45,
-  70
- ],
+ "size": [45, 70],
  "grid": {
   "ft": 5,
   "show": true
@@ -13,10 +10,7 @@
  "layers": [
   {
    "src": "crom-grotto/map.jpg",
-   "at": [
-    0,
-    0
-   ],
+   "at": [0, 0],
    "px": 32
   }
  ],
@@ -133,10 +127,7 @@
  },
  "links": [
   {
-   "from": [
-    37.48,
-    39.35
-   ],
+   "from": [37.48, 39.35],
    "to": {
     "map": "crom-caves-b-c",
     "area": "c-common-14"
@@ -144,10 +135,7 @@
    "label": "Bloodhand goblins"
   },
   {
-   "from": [
-    8.91,
-    40.22
-   ],
+   "from": [8.91, 40.22],
    "to": {
     "map": "crom-caves-d-e-f",
     "area": "d-mouth"
@@ -155,10 +143,7 @@
    "label": "Skitterglint lair"
   },
   {
-   "from": [
-    12.0,
-    52.61
-   ],
+   "from": [12.0, 52.61],
    "to": {
     "map": "crom-caves-d-e-f",
     "area": "e-ogre-22"
@@ -166,20 +151,14 @@
    "label": "The ogre's cave"
   },
   {
-   "from": [
-    30.22,
-    48.26
-   ],
+   "from": [30.22, 48.26],
    "to": {
     "map": "crom-cave-a"
    },
    "label": "Kobolds"
   },
   {
-   "from": [
-    8.61,
-    60.22
-   ],
+   "from": [8.61, 60.22],
    "to": {
     "map": "crom-caves-d-e-f",
     "area": "f-guard-26"
@@ -187,10 +166,7 @@
    "label": "Skitterglint warrens"
   },
   {
-   "from": [
-    37.04,
-    61.09
-   ],
+   "from": [37.04, 61.09],
    "to": {
     "map": "crom-caves-b-c",
     "area": "b-trophy-hall"
@@ -204,5 +180,5 @@
  "lights": [],
  "environment": {},
  "licence": "CC0",
- "credit": "Drawn for Beyond the Pale with the E9 Atlas encounter tool (original layout, no traced art)"
+ "credit": "Drawn for Beyond the Pale with the E9 Atlas encounter tool"
 }

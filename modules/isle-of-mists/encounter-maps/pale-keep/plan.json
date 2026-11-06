@@ -8,6 +8,7 @@
  "seed": 101,
  "style": "outdoor",
  "ground": "grass",
+ "openings": [{"rect": [57.4, 53.7, 2.6, 2.3], "note": "main gate passage"}, {"rect": [27.5, 37.6, 4.06, 6.5], "note": "inner gate passage"}],
  "rock": [
   {
    "poly": [

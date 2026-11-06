@@ -2,10 +2,7 @@
  "format": "e9-encounter-map/1",
  "id": "dunad-faoladh",
  "title": "Dúnad Faoladh: the wolf camp",
- "size": [
-  36,
-  28
- ],
+ "size": [36, 28],
  "grid": {
   "ft": 5,
   "show": true
@@ -13,10 +10,7 @@
  "layers": [
   {
    "src": "dunad-faoladh/map.jpg",
-   "at": [
-    0,
-    0
-   ],
+   "at": [0, 0],
    "px": 40
   }
  ],
@@ -62,8 +56,15 @@
  },
  "walls": [],
  "doors": [],
- "lights": [],
+ "lights": [
+  {
+   "at": [18, 14],
+   "range": 6,
+   "colour": "#ffa04a",
+   "intensity": 1
+  }
+ ],
  "environment": {},
  "licence": "CC0",
- "credit": "Drawn for Beyond the Pale with the E9 Atlas encounter tool (original layout, no traced art)"
+ "credit": "Drawn for Beyond the Pale with the E9 Atlas encounter tool"
 }
