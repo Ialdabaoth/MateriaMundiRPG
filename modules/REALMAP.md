@@ -23,6 +23,7 @@ The tools are CC0 (tools/LICENSE.md): use them for your own modules freely.
 
 - `centroid` is the region's Dymaxion face centre: a traditional or geographic centre, with every coast of the region within about 20° of it. Separate landmasses get their own module and centroid.
 - `extent` is the whole land the region could ever cover (`[minlon, minlat, maxlon, maxlat]`). It fixes where the labels `00` and `0000` sit, so addresses never shift as the map grows. Choose it once.
+- `land` (optional): `"island"` makes the Atlas cover every county in the `admin` file, not just the books' counties; the print maps stay on the books' counties. Beyond the Pale uses it for all of Ireland.
 - `real` (optional) tunes the period rules for this region. It takes any key of `RULES` in `tools/realmap.py`, and `modern_water`, which lists reservoirs and other water that did not exist in the period as `[lat, lon, radius in miles]`.
 
 ## Run it
@@ -63,6 +64,8 @@ The PNGs are the map. Paint them in any editor that keeps 8-bit indexed colour (
 Credit the sources wherever the map is shown:
 - ESA WorldCover 2021 v200 (© ESA WorldCover project / contains modified Copernicus Sentinel data, CC BY 4.0)
 - SRTM elevation (NASA, public domain)
+- County and district outlines from Natural Earth (public domain)
+- Castle positions (Beyond the Pale): Canonical Castles (CC BY 4.0), from the Archaeological Survey of Ireland's Sites and Monuments Record (CC BY 4.0)
 - Hex tile art by C. Martins (CC BY-SA 4.0; edited icons by Heph)
 
 If you add OpenStreetMap data later (rivers, coast, roads), it is ODbL. That share-alike licence applies to map data derived from OSM, so keep those derived files open.

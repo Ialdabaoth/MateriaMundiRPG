@@ -5,13 +5,13 @@
  ],
  "title": "Beyond the Pale: Leinster, 1422",
  "short": "Beyond the Pale · Leinster, 1422",
- "version": "0.3.6",
+ "version": "0.4.0",
  "license": "CC0-1.0",
  "dem": [
-  52,
-  53,
-  -8,
-  -7
+  51,
+  55,
+  -11,
+  -6
  ],
  "admin": "../geo/admin1.geojson",
  "books": [
@@ -60,6 +60,7 @@
   "page_hex_mi": 24,
   "centroid": ["Uisneach", 53.489, -7.561],
   "extent": [-10.7, 51.4, -5.4, 55.45],
+  "land": "island",
   "real": {"modern_water": [[53.13, -6.55, 4]]}
  },
  "league": {
@@ -1240,6 +1241,2308 @@
      "#5a4f78"
     ]
    }
+  },
+  "eire-1422": {
+   "title": "Éire, 1422",
+   "subtitle": "Gazetteer of the whole island: towns, castles, abbeys and old places, not yet tied to a book",
+   "sites": [
+    [
+     "Baile Átha Cliath",
+     53.343,
+     -6.267,
+     "town",
+     "The king's city: Dublin Castle, Christ Church and St Patrick's cathedrals, St Mary's Abbey, many friaries"
+    ],
+    [
+     "Cill Mhaighneann",
+     53.342,
+     -6.307,
+     "abbey",
+     "Priory of the Knights Hospitaller"
+    ],
+    [
+     "Sord",
+     53.459,
+     -6.218,
+     "town",
+     "The archbishop of Dublin's manor and castle"
+    ],
+    [
+     "Binn Éadair",
+     53.387,
+     -6.065,
+     "castle",
+     "The St Lawrence lords of Howth"
+    ],
+    [
+     "Deilginis",
+     53.276,
+     -6.1,
+     "town",
+     "Outport of Dublin, its quay guarded by fortified houses"
+    ],
+    [
+     "Tamhlacht",
+     53.288,
+     -6.357,
+     "castle",
+     "The archbishop's manor at the edge of the Wicklow mountains"
+    ],
+    [
+     "Lusca",
+     53.526,
+     -6.166,
+     "ruin",
+     "Old monastery with a round tower"
+    ],
+    [
+     "Dún Dealgan",
+     54.004,
+     -6.402,
+     "town",
+     "Walled march town of the Pale facing Ulster; Franciscan friary"
+    ],
+    [
+     "Cairlinn",
+     54.041,
+     -6.187,
+     "town",
+     "Port under King John's Castle; Dominican friary"
+    ],
+    [
+     "Baile Átha Fhirdhia",
+     53.859,
+     -6.539,
+     "town",
+     "Walled march town of the Pale"
+    ],
+    [
+     "Lú",
+     53.956,
+     -6.54,
+     "abbey",
+     "Augustinian priory of St Mary"
+    ],
+    [
+     "An Mhainistir Mhór",
+     53.743,
+     -6.466,
+     "abbey",
+     "The first Cistercian abbey in Ireland (1142)"
+    ],
+    [
+     "Mainistir Bhuithe",
+     53.778,
+     -6.418,
+     "ruin",
+     "Old monastery: round tower and great high crosses"
+    ],
+    [
+     "Damhliag",
+     53.656,
+     -6.42,
+     "abbey",
+     "Augustinian priory"
+    ],
+    [
+     "Tailtiu",
+     53.7,
+     -6.77,
+     "hill",
+     "Where the ancient Fair of Tailtiu was held"
+    ],
+    [
+     "Cluain Eraird",
+     53.452,
+     -7.022,
+     "abbey",
+     "St Finian's school of saints, now an Augustinian abbey"
+    ],
+    [
+     "An Muileann gCearr",
+     53.525,
+     -7.338,
+     "town",
+     "Augustinian priory and Dominican friary"
+    ],
+    [
+     "Baile Átha Luain",
+     53.423,
+     -7.94,
+     "town",
+     "Castle and bridge over the Shannon, the door into Connacht"
+    ],
+    [
+     "Fobhar",
+     53.681,
+     -7.227,
+     "abbey",
+     "Benedictine priory in a valley of wonders"
+    ],
+    [
+     "Uisneach",
+     53.489,
+     -7.561,
+     "hill",
+     "The navel of Ireland where the provinces meet; the Stone of Divisions"
+    ],
+    [
+     "Dealbhna",
+     53.611,
+     -7.093,
+     "castle",
+     "Nugent castle in Westmeath"
+    ],
+    [
+     "Cruachán Brí Éile",
+     53.343,
+     -7.27,
+     "hill",
+     "Brigid's hill, crowned by an old king's grave"
+    ],
+    [
+     "Cluain Mhic Nóis",
+     53.327,
+     -7.986,
+     "abbey",
+     "St Ciarán's monastery on the Shannon: cathedral, round towers, high crosses"
+    ],
+    [
+     "Biorra",
+     53.091,
+     -7.913,
+     "town",
+     "O'Carroll town and castle"
+    ],
+    [
+     "Daingean Uí Fhailí",
+     53.295,
+     -7.29,
+     "castle",
+     "Fortress of O'Connor Faly in the bogs"
+    ],
+    [
+     "Cill Achaidh",
+     53.218,
+     -7.449,
+     "abbey",
+     "Augustinian priory and nunnery"
+    ],
+    [
+     "Darú",
+     53.326,
+     -7.522,
+     "abbey",
+     "St Columba's monastery, home of the Book of Durrow"
+    ],
+    [
+     "Mainistir Fheorais",
+     53.358,
+     -7.077,
+     "abbey",
+     "Franciscan friary of the Berminghams"
+    ],
+    [
+     "Mainistir Laoise",
+     52.915,
+     -7.348,
+     "abbey",
+     "Cistercian abbey of the O'Mores"
+    ],
+    [
+     "Teach Mochua",
+     52.958,
+     -7.204,
+     "ruin",
+     "Old monastery with a round tower"
+    ],
+    [
+     "Achadh Bhó",
+     52.917,
+     -7.513,
+     "abbey",
+     "St Canice's first monastery, now a Dominican friary"
+    ],
+    [
+     "An Longfort",
+     53.727,
+     -7.798,
+     "castle",
+     "O'Farrell seat; Dominican priory"
+    ],
+    [
+     "Mainistir Shruthla",
+     53.59,
+     -7.645,
+     "abbey",
+     "Cistercian abbey"
+    ],
+    [
+     "Inis Clothrann",
+     53.552,
+     -7.991,
+     "ruin",
+     "Island monastery in Lough Ree, where Queen Medb was killed"
+    ],
+    [
+     "Ard Achadh",
+     53.668,
+     -7.7,
+     "ruin",
+     "St Mel's old see"
+    ],
+    [
+     "Gránard",
+     53.778,
+     -7.495,
+     "castle",
+     "Great motte at the edge of O'Farrell country"
+    ],
+    [
+     "Cill Chuillinn",
+     53.13,
+     -6.745,
+     "town",
+     "Town on the Liffey below Dún Ailinne"
+    ],
+    [
+     "Gleann Dá Loch",
+     53.011,
+     -6.33,
+     "abbey",
+     "St Kevin's monastery and its seven churches, in O'Toole country"
+    ],
+    [
+     "Gleann Molúra",
+     52.951,
+     -6.351,
+     "hill",
+     "The O'Byrnes' stronghold valley"
+    ],
+    [
+     "Log na Coille",
+     52.967,
+     -6.464,
+     "hill",
+     "Highest of the Wicklow mountains"
+    ],
+    [
+     "Cill Mhantáin",
+     52.98,
+     -6.045,
+     "town",
+     "Black Castle and Franciscan friary"
+    ],
+    [
+     "An tInbhear Mór",
+     52.797,
+     -6.16,
+     "town",
+     "Butler port; Dominican friary"
+    ],
+    [
+     "Bealach Conglais",
+     52.941,
+     -6.711,
+     "abbey",
+     "Cistercian abbey"
+    ],
+    [
+     "Fearna",
+     52.59,
+     -6.499,
+     "town",
+     "Old seat of the MacMurrough kings; cathedral and Augustinian abbey"
+    ],
+    [
+     "Loch Garman",
+     52.336,
+     -6.463,
+     "town",
+     "Walled port; Selskar priory"
+    ],
+    [
+     "Ros Mhic Thriúin",
+     52.396,
+     -6.946,
+     "town",
+     "Walled river port on the Barrow"
+    ],
+    [
+     "Inis Córthaidh",
+     52.501,
+     -6.558,
+     "castle",
+     "Castle on the Slaney in MacMurrough Kavanagh hands"
+    ],
+    [
+     "Dún Bróithe",
+     52.284,
+     -6.959,
+     "abbey",
+     "Cistercian abbey on the Barrow estuary"
+    ],
+    [
+     "Mainistir Thinteirn",
+     52.237,
+     -6.838,
+     "abbey",
+     "Cistercian abbey founded by William Marshal"
+    ],
+    [
+     "Rinn Duáin",
+     52.124,
+     -6.929,
+     "castle",
+     "The Hook tower, a lighthouse kept by monks"
+    ],
+    [
+     "Cuan an Bhainbh",
+     52.229,
+     -6.802,
+     "ruin",
+     "The Norman landing place, a town being swallowed by sand"
+    ],
+    [
+     "Dún Ailinne",
+     53.091,
+     -6.76,
+     "hill",
+     "Royal enclosure of the old kings of Leinster"
+    ],
+    [
+     "Port Láirge",
+     52.259,
+     -7.11,
+     "town",
+     "Walled city and Reginald's Tower, loyal to the king"
+    ],
+    [
+     "Dún Garbhán",
+     52.089,
+     -7.62,
+     "town",
+     "Castle and walled port"
+    ],
+    [
+     "Lios Mór",
+     52.137,
+     -7.931,
+     "town",
+     "Bishop's castle and St Carthage's cathedral"
+    ],
+    [
+     "Aird Mhór",
+     51.95,
+     -7.725,
+     "abbey",
+     "St Declan's monastery and round tower"
+    ],
+    [
+     "Eochaill",
+     51.953,
+     -7.85,
+     "town",
+     "Walled port; St Mary's church and Franciscan friary"
+    ],
+    [
+     "Corcaigh",
+     51.898,
+     -8.473,
+     "town",
+     "Walled city of the marshes"
+    ],
+    [
+     "Cionn tSáile",
+     51.706,
+     -8.522,
+     "town",
+     "Walled port; Carmelite friary"
+    ],
+    [
+     "Mainistir na Corann",
+     51.915,
+     -8.175,
+     "abbey",
+     "Cistercian abbey"
+    ],
+    [
+     "Cluain",
+     51.862,
+     -8.121,
+     "abbey",
+     "Cathedral and round tower"
+    ],
+    [
+     "Mainistir Fhear Maí",
+     52.138,
+     -8.276,
+     "abbey",
+     "Cistercian abbey on the Blackwater"
+    ],
+    [
+     "Mala",
+     52.134,
+     -8.645,
+     "castle",
+     "Desmond castle on the Blackwater"
+    ],
+    [
+     "Cill na Mallach",
+     52.233,
+     -8.669,
+     "town",
+     "Barry town; Franciscan friary"
+    ],
+    [
+     "Dún na Séad",
+     51.483,
+     -9.373,
+     "castle",
+     "O'Driscoll fortress over the harbour"
+    ],
+    [
+     "Ros Ailithir",
+     51.577,
+     -9.03,
+     "abbey",
+     "St Fachtna's cathedral"
+    ],
+    [
+     "Tigh Molaige",
+     51.643,
+     -8.763,
+     "abbey",
+     "Franciscan friary on the estuary"
+    ],
+    [
+     "Cill Briotáin",
+     51.672,
+     -8.69,
+     "castle",
+     "Seat of MacCarthy Reagh"
+    ],
+    [
+     "Guagán Barra",
+     51.839,
+     -9.318,
+     "abbey",
+     "St Finbarr's island hermitage at the source of the Lee"
+    ],
+    [
+     "Dhá Chích Anann",
+     52.013,
+     -9.268,
+     "hill",
+     "The breasts of the goddess Anu"
+    ],
+    [
+     "Cailleach Bhéarra",
+     51.68,
+     -9.95,
+     "tomb",
+     "The Hag of Beara, turned to stone above the sea"
+    ],
+    [
+     "Teach Duinn",
+     51.592,
+     -10.3,
+     "hill",
+     "The House of Donn, where the dead gather"
+    ],
+    [
+     "Droim Beag",
+     51.565,
+     -9.087,
+     "tomb",
+     "Stone circle"
+    ],
+    [
+     "Trá Lí",
+     52.271,
+     -9.7,
+     "town",
+     "Desmond town; Dominican friary"
+    ],
+    [
+     "An Daingean",
+     52.141,
+     -10.269,
+     "town",
+     "Fishing port of Corca Dhuibhne"
+    ],
+    [
+     "Ard Fhearta",
+     52.329,
+     -9.782,
+     "abbey",
+     "Cathedral of Kerry and Franciscan friary"
+    ],
+    [
+     "Inis Faithleann",
+     52.051,
+     -9.54,
+     "abbey",
+     "Island monastery in Lough Leane, where the Annals of Inisfallen are kept"
+    ],
+    [
+     "Sceilg Mhichíl",
+     51.772,
+     -10.539,
+     "ruin",
+     "The monks' rock in the ocean, now left to the birds"
+    ],
+    [
+     "Baile an Sceilg",
+     51.814,
+     -10.27,
+     "abbey",
+     "Augustinian priory of the Skellig monks"
+    ],
+    [
+     "Séipéal Ghallarais",
+     52.172,
+     -10.349,
+     "ruin",
+     "Dry-stone oratory"
+    ],
+    [
+     "An Staig",
+     51.805,
+     -10.017,
+     "ruin",
+     "Great stone fort"
+    ],
+    [
+     "Gleann na nGealt",
+     52.204,
+     -9.94,
+     "hill",
+     "The valley of the madmen, where the frenzied come to be cured"
+    ],
+    [
+     "Inis",
+     52.845,
+     -8.981,
+     "town",
+     "O'Brien town around its Franciscan friary"
+    ],
+    [
+     "Mainistir Chorca Mrua",
+     53.127,
+     -9.054,
+     "abbey",
+     "Cistercian abbey in the Burren"
+    ],
+    [
+     "Cill Fhionnúrach",
+     53.041,
+     -9.217,
+     "abbey",
+     "Cathedral of the Burren and its high crosses"
+    ],
+    [
+     "Inis Cealtra",
+     52.913,
+     -8.448,
+     "ruin",
+     "Island monastery with a round tower in Lough Derg"
+    ],
+    [
+     "Cill Dalua",
+     52.807,
+     -8.441,
+     "town",
+     "O'Brien see on the Shannon"
+    ],
+    [
+     "Béal Bóramha",
+     52.817,
+     -8.441,
+     "hill",
+     "Brian Boru's fort above Killaloe"
+    ],
+    [
+     "Inis Cathaigh",
+     52.612,
+     -9.519,
+     "ruin",
+     "St Senan's island monastery"
+    ],
+    [
+     "Poll na mBrón",
+     53.049,
+     -9.14,
+     "tomb",
+     "Portal tomb on the Burren"
+    ],
+    [
+     "Cathair Chomáin",
+     53.038,
+     -9.08,
+     "ruin",
+     "Stone fort on a cliff edge"
+    ],
+    [
+     "Díseart Tola",
+     52.91,
+     -9.067,
+     "abbey",
+     "St Tola's church and high cross"
+    ],
+    [
+     "Aillte an Mhothair",
+     52.972,
+     -9.43,
+     "hill",
+     "Sea cliffs at the edge of the world"
+    ],
+    [
+     "Luimneach",
+     52.668,
+     -8.626,
+     "town",
+     "Walled city at the head of the Shannon; King John's Castle"
+    ],
+    [
+     "Cill Mocheallóg",
+     52.4,
+     -8.577,
+     "town",
+     "Desmond walled town; Dominican priory"
+    ],
+    [
+     "Áth Dara",
+     52.564,
+     -8.79,
+     "town",
+     "Kildare castle and Trinitarian abbey"
+    ],
+    [
+     "Eas Géitine",
+     52.6,
+     -8.976,
+     "castle",
+     "Desmond castle on the Deel; Franciscan friary"
+    ],
+    [
+     "Mainistir an Aonaigh",
+     52.535,
+     -8.665,
+     "abbey",
+     "Cistercian abbey"
+    ],
+    [
+     "Loch Goir",
+     52.52,
+     -8.525,
+     "tomb",
+     "Lake of stone circles; Gearóid Iarla sleeps beneath it"
+    ],
+    [
+     "Cnoc Áine",
+     52.468,
+     -8.479,
+     "hill",
+     "Hill of Áine, fairy queen of Munster"
+    ],
+    [
+     "Cnoc Fírinne",
+     52.471,
+     -8.893,
+     "hill",
+     "Donn Fírinne's fairy hill"
+    ],
+    [
+     "Caiseal",
+     52.52,
+     -7.89,
+     "abbey",
+     "The Rock of Cashel: Cormac's Chapel, cathedral, round tower"
+    ],
+    [
+     "Mainistir na Carraige",
+     52.523,
+     -7.898,
+     "abbey",
+     "Cistercian abbey below the Rock"
+    ],
+    [
+     "Cluain Meala",
+     52.355,
+     -7.704,
+     "town",
+     "Walled town on the Suir"
+    ],
+    [
+     "Fiodh Ard",
+     52.465,
+     -7.693,
+     "town",
+     "Walled town; Augustinian friary"
+    ],
+    [
+     "Durlas",
+     52.68,
+     -7.814,
+     "town",
+     "Butler town; Carmelite friary"
+    ],
+    [
+     "Mainistir na Croiche",
+     52.639,
+     -7.868,
+     "abbey",
+     "Cistercian abbey that keeps a relic of the True Cross"
+    ],
+    [
+     "Aonach Urmhumhan",
+     52.862,
+     -8.197,
+     "town",
+     "Butler town and great round keep"
+    ],
+    [
+     "Ros Cré",
+     52.951,
+     -7.798,
+     "town",
+     "Castle and St Cronan's old monastery"
+    ],
+    [
+     "Carraig na Siúire",
+     52.349,
+     -7.414,
+     "town",
+     "Butler town on the Suir"
+    ],
+    [
+     "Áth Asail",
+     52.484,
+     -7.952,
+     "abbey",
+     "The greatest Augustinian priory in Ireland"
+    ],
+    [
+     "Inis Leamhnachta",
+     52.345,
+     -7.784,
+     "abbey",
+     "Cistercian abbey on the Suir"
+    ],
+    [
+     "Cill Chúile",
+     52.674,
+     -7.57,
+     "abbey",
+     "Cistercian abbey"
+    ],
+    [
+     "Sliabh na mBan",
+     52.383,
+     -7.663,
+     "hill",
+     "Mountain of the fairy women"
+    ],
+    [
+     "Gaillte Mór",
+     52.366,
+     -8.18,
+     "hill",
+     "Highest of the Galtee mountains"
+    ],
+    [
+     "Lothra",
+     53.093,
+     -8.121,
+     "abbey",
+     "St Ruadhán's monastery and Dominican priory"
+    ],
+    [
+     "Imleach Iúir",
+     52.463,
+     -8.35,
+     "abbey",
+     "Cathedral of St Ailbe"
+    ],
+    [
+     "Gaillimh",
+     53.272,
+     -9.052,
+     "town",
+     "Walled town of the merchant families; St Nicholas's church"
+    ],
+    [
+     "Baile Átha an Rí",
+     53.297,
+     -8.744,
+     "town",
+     "Walled de Bermingham town; Dominican priory"
+    ],
+    [
+     "Tuaim",
+     53.515,
+     -8.851,
+     "town",
+     "Archbishop's see of Connacht"
+    ],
+    [
+     "Mainistir Chnoc Muaidhe",
+     53.432,
+     -8.737,
+     "abbey",
+     "Cistercian abbey with painted walls"
+    ],
+    [
+     "Eanach Dhúin",
+     53.389,
+     -9.072,
+     "abbey",
+     "Monastery and cathedral on Lough Corrib"
+    ],
+    [
+     "Cluain Fearta",
+     53.239,
+     -8.059,
+     "abbey",
+     "St Brendan's cathedral and its carved doorway"
+    ],
+    [
+     "Cill Mhic Duach",
+     53.049,
+     -8.888,
+     "abbey",
+     "Monastery with a leaning round tower"
+    ],
+    [
+     "Baile Locha Riach",
+     53.197,
+     -8.567,
+     "town",
+     "De Burgo town; Carmelite priory"
+    ],
+    [
+     "Cill Chonaill",
+     53.333,
+     -8.405,
+     "abbey",
+     "Franciscan friary"
+    ],
+    [
+     "Cloch an Tuair",
+     53.257,
+     -8.462,
+     "tomb",
+     "Carved stone of the old La Tène kings"
+    ],
+    [
+     "Dún Aonghasa",
+     53.126,
+     -9.768,
+     "ruin",
+     "Great cliff fort of Inis Mór"
+    ],
+    [
+     "Conga",
+     53.541,
+     -9.286,
+     "abbey",
+     "Augustinian abbey of the O'Connors"
+    ],
+    [
+     "Magh Tuireadh",
+     53.548,
+     -9.23,
+     "hill",
+     "Plain where the Tuatha Dé Danann fought the Fir Bolg"
+    ],
+    [
+     "Cruach Phádraig",
+     53.76,
+     -9.658,
+     "hill",
+     "Patrick's holy mountain, climbed by pilgrims"
+    ],
+    [
+     "Mainistir Bhaile an Tobair",
+     53.758,
+     -9.282,
+     "abbey",
+     "Augustinian abbey"
+    ],
+    [
+     "Cill Ala",
+     54.213,
+     -9.221,
+     "abbey",
+     "Cathedral and round tower"
+    ],
+    [
+     "An tSráid",
+     53.92,
+     -9.135,
+     "abbey",
+     "Dominican friary"
+    ],
+    [
+     "Maigh Eo",
+     53.765,
+     -9.104,
+     "abbey",
+     "Mayo of the Saxons"
+    ],
+    [
+     "Cliara",
+     53.802,
+     -9.99,
+     "abbey",
+     "Cistercian cell on Clare Island"
+    ],
+    [
+     "Sligeach",
+     54.27,
+     -8.474,
+     "town",
+     "Town and Dominican friary at the Garavogue"
+    ],
+    [
+     "Ceathrú Mhór",
+     54.257,
+     -8.518,
+     "tomb",
+     "A great field of passage tombs"
+    ],
+    [
+     "Cnoc na Riabh",
+     54.258,
+     -8.574,
+     "tomb",
+     "Queen Medb's cairn"
+    ],
+    [
+     "Binn Ghulbain",
+     54.367,
+     -8.472,
+     "hill",
+     "Where Diarmuid met the boar"
+    ],
+    [
+     "Céis Chorainn",
+     54.042,
+     -8.385,
+     "cave",
+     "Caves of the hags and of Cormac mac Airt"
+    ],
+    [
+     "Ceathrú Chaoil",
+     54.058,
+     -8.372,
+     "tomb",
+     "Passage tombs on the Bricklieve hills"
+    ],
+    [
+     "Droim Chliabh",
+     54.326,
+     -8.493,
+     "abbey",
+     "St Columba's monastery"
+    ],
+    [
+     "Baile an Mhóta",
+     54.088,
+     -8.519,
+     "castle",
+     "Great de Burgo castle"
+    ],
+    [
+     "Inis Muireadhaigh",
+     54.432,
+     -8.659,
+     "ruin",
+     "Walled island monastery"
+    ],
+    [
+     "Ráth Chruachan",
+     53.8,
+     -8.305,
+     "hill",
+     "Queen Medb's royal seat"
+    ],
+    [
+     "Uaimh na gCat",
+     53.796,
+     -8.316,
+     "cave",
+     "The Cave of Cats, Ireland's gate of hell"
+    ],
+    [
+     "Ros Comáin",
+     53.633,
+     -8.19,
+     "castle",
+     "Great castle held by the O'Connors; Dominican priory"
+    ],
+    [
+     "Mainistir na Búille",
+     53.972,
+     -8.301,
+     "abbey",
+     "Cistercian abbey"
+    ],
+    [
+     "Ail Finn",
+     53.851,
+     -8.2,
+     "abbey",
+     "Cathedral town"
+    ],
+    [
+     "Loch Cé",
+     54.002,
+     -8.249,
+     "castle",
+     "MacDermot's island castle; Trinity Island priory nearby, where the Annals of Loch Cé are written"
+    ],
+    [
+     "Droim Dhá Thiar",
+     54.231,
+     -8.303,
+     "castle",
+     "Seat of O'Rourke"
+    ],
+    [
+     "Fíonacha",
+     54.022,
+     -7.835,
+     "abbey",
+     "St Caillín's monastery"
+    ],
+    [
+     "Sliabh an Iarainn",
+     54.09,
+     -7.95,
+     "hill",
+     "The Iron Mountain where the Tuatha Dé Danann landed"
+    ],
+    [
+     "Ard Mhacha",
+     54.346,
+     -6.654,
+     "abbey",
+     "St Patrick's primatial see"
+    ],
+    [
+     "Eamhain Mhacha",
+     54.348,
+     -6.698,
+     "hill",
+     "Seat of the Red Branch"
+    ],
+    [
+     "Sliabh gCuillinn",
+     54.119,
+     -6.432,
+     "hill",
+     "Mountain of the Cailleach's lake, with a passage tomb on top"
+    ],
+    [
+     "Iúr Cinn Trá",
+     54.176,
+     -6.338,
+     "abbey",
+     "Cistercian abbey of the yew tree"
+    ],
+    [
+     "Dún Pádraig",
+     54.327,
+     -5.716,
+     "town",
+     "Patrick's grave; cathedral and Benedictine priory"
+    ],
+    [
+     "Inis Cumhscraigh",
+     54.334,
+     -5.731,
+     "abbey",
+     "Cistercian abbey on the Quoile"
+    ],
+    [
+     "An Mhainistir Liath",
+     54.538,
+     -5.556,
+     "abbey",
+     "Cistercian abbey on Strangford Lough"
+    ],
+    [
+     "Beannchar",
+     54.662,
+     -5.668,
+     "abbey",
+     "Ruined great monastery, re-founded by Augustinian canons"
+    ],
+    [
+     "Maigh Bhile",
+     54.596,
+     -5.689,
+     "abbey",
+     "Augustinian abbey"
+    ],
+    [
+     "Naoindroim",
+     54.502,
+     -5.682,
+     "ruin",
+     "Island monastery on Strangford Lough"
+    ],
+    [
+     "Carraig Fhearghais",
+     54.713,
+     -5.807,
+     "castle",
+     "Great castle of the old Earldom of Ulster, still the king's"
+    ],
+    [
+     "Dún Droma",
+     54.261,
+     -5.854,
+     "castle",
+     "Round-keep castle above the bay"
+    ],
+    [
+     "An Caisleán Glas",
+     54.039,
+     -6.104,
+     "castle",
+     "Royal castle at the mouth of Carlingford Lough"
+    ],
+    [
+     "Ard Ghlais",
+     54.263,
+     -5.61,
+     "town",
+     "Port with fortified warehouses"
+    ],
+    [
+     "Sliabh Dónairt",
+     54.18,
+     -5.921,
+     "hill",
+     "Highest of the Mournes"
+    ],
+    [
+     "Droim Mór",
+     54.415,
+     -6.149,
+     "abbey",
+     "Cathedral of Dromore"
+    ],
+    [
+     "Aontroim",
+     54.719,
+     -6.212,
+     "ruin",
+     "Old monastery with a round tower"
+    ],
+    [
+     "Sliabh Mis",
+     54.88,
+     -6.098,
+     "hill",
+     "Where Patrick herded swine as a slave"
+    ],
+    [
+     "Seanchaisleán",
+     54.845,
+     -5.796,
+     "castle",
+     "Castle at Larne harbour"
+    ],
+    [
+     "Cúil Raithin",
+     55.133,
+     -6.669,
+     "town",
+     "Dominican friary at the Bann ford"
+    ],
+    [
+     "Dún Sobhairce",
+     55.24,
+     -6.452,
+     "ruin",
+     "End of one of the five roads from Tara"
+    ],
+    [
+     "Clochán na bhFómhórach",
+     55.241,
+     -6.512,
+     "hill",
+     "The giant's causeway"
+    ],
+    [
+     "Doire",
+     54.996,
+     -7.322,
+     "abbey",
+     "Columba's monastery of the oak grove"
+    ],
+    [
+     "Grianán Ailigh",
+     55.024,
+     -7.428,
+     "hill",
+     "Stone fort of the northern kings"
+    ],
+    [
+     "Carraig an Dúin",
+     55.045,
+     -7.81,
+     "hill",
+     "Where the O'Donnell is inaugurated"
+    ],
+    [
+     "Ráth Bhoth",
+     54.874,
+     -7.6,
+     "abbey",
+     "Cathedral of Raphoe"
+    ],
+    [
+     "Mainistir Easa Rua",
+     54.508,
+     -8.193,
+     "abbey",
+     "Cistercian abbey above the falls of the Erne"
+    ],
+    [
+     "Loch Dearg",
+     54.612,
+     -7.874,
+     "cave",
+     "St Patrick's Purgatory, a pit into the Otherworld"
+    ],
+    [
+     "Gleann Cholm Cille",
+     54.709,
+     -8.727,
+     "abbey",
+     "Columba's valley"
+    ],
+    [
+     "Toraigh",
+     55.265,
+     -8.23,
+     "ruin",
+     "Balor's island fortress"
+    ],
+    [
+     "Sliabh Liag",
+     54.64,
+     -8.7,
+     "hill",
+     "Sea cliffs and a pilgrim path"
+    ],
+    [
+     "An Earagail",
+     55.034,
+     -8.098,
+     "hill",
+     "The white peak of Donegal"
+    ],
+    [
+     "Cluain Eois",
+     54.18,
+     -7.232,
+     "abbey",
+     "St Tighernach's abbey and round tower"
+    ],
+    [
+     "Muineachán",
+     54.249,
+     -6.968,
+     "town",
+     "MacMahon seat"
+    ],
+    [
+     "An Cabhán",
+     53.991,
+     -7.36,
+     "town",
+     "O'Reilly town and friary"
+    ],
+    [
+     "Magh Sléacht",
+     54.105,
+     -7.64,
+     "tomb",
+     "Plain of Prostration, where Crom Cruach's idol stood"
+    ],
+    [
+     "Tulach Óg",
+     54.598,
+     -6.738,
+     "hill",
+     "Where the O'Neill is inaugurated"
+    ],
+    [
+     "Dún Geanainn",
+     54.503,
+     -6.767,
+     "castle",
+     "Seat of the O'Neill, king of Tír Eoghain"
+    ],
+    [
+     "Caisleán Anraí Aimhréidh",
+     54.712,
+     -7.442,
+     "castle",
+     "O'Neill castle on the hill"
+    ],
+    [
+     "Daimhinis",
+     54.371,
+     -7.663,
+     "abbey",
+     "Island monastery and round tower in Lough Erne"
+    ],
+    [
+     "Sciath Ghabhra",
+     54.25,
+     -7.445,
+     "hill",
+     "Where the Maguire is inaugurated"
+    ],
+    [
+     "Badhbha",
+     54.52,
+     -7.858,
+     "tomb",
+     "The two-faced stone of Badhbh"
+    ],
+    [
+     "Clochar",
+     54.411,
+     -7.17,
+     "abbey",
+     "Cathedral of Clogher"
+    ],
+    [
+     "Rock of Dunamase",
+     53.03189,
+     -7.21069,
+     "castle",
+     "Anglo-Norman stone castle (Sites and Monuments Record)"
+    ],
+    [
+     "Annaghkeen Castle",
+     53.44663,
+     -9.19636,
+     "castle",
+     "Anglo-Norman stone castle (Sites and Monuments Record)"
+    ],
+    [
+     "Ardnaglass Castle",
+     54.25637,
+     -8.70746,
+     "castle",
+     "Anglo-Norman stone castle (Sites and Monuments Record)"
+    ],
+    [
+     "Ardfinnan Castle",
+     52.31136,
+     -7.88011,
+     "castle",
+     "Anglo-Norman stone castle (Sites and Monuments Record)"
+    ],
+    [
+     "Ardrahan North Castle",
+     53.15848,
+     -8.80678,
+     "castle",
+     "Anglo-Norman stone castle (Sites and Monuments Record)"
+    ],
+    [
+     "Baldongan Castle",
+     53.55345,
+     -6.12892,
+     "castle",
+     "Anglo-Norman stone castle (Sites and Monuments Record)"
+    ],
+    [
+     "Ballingarry Castle",
+     53.01299,
+     -8.02198,
+     "castle",
+     "Anglo-Norman stone castle (Sites and Monuments Record)"
+    ],
+    [
+     "Ballintober,Rosmeen Castle",
+     53.72216,
+     -8.41582,
+     "castle",
+     "Anglo-Norman stone castle (Sites and Monuments Record)"
+    ],
+    [
+     "Ballyboy East Castle",
+     52.28159,
+     -7.97056,
+     "castle",
+     "Hall-house (Sites and Monuments Record)"
+    ],
+    [
+     "Ballycahane Upper Castle",
+     52.55076,
+     -8.66752,
+     "castle",
+     "Hall-house (Sites and Monuments Record)"
+    ],
+    [
+     "Ballycapple Castle",
+     52.92993,
+     -8.07721,
+     "castle",
+     "Hall-house (Sites and Monuments Record)"
+    ],
+    [
+     "Ballycarbery Castle",
+     51.94884,
+     -10.25874,
+     "castle",
+     "Hall-house (Sites and Monuments Record)"
+    ],
+    [
+     "Drummeen Castle",
+     52.91273,
+     -8.96131,
+     "castle",
+     "Hall-house (Sites and Monuments Record)"
+    ],
+    [
+     "Ballycurrin Castle",
+     53.48711,
+     -9.21492,
+     "castle",
+     "Hall-house (Sites and Monuments Record)"
+    ],
+    [
+     "Ballyderown Castle",
+     52.15832,
+     -8.22386,
+     "castle",
+     "Hall-house (Sites and Monuments Record)"
+    ],
+    [
+     "Ballyhandle Castle",
+     51.80568,
+     -8.65446,
+     "castle",
+     "Anglo-Norman stone castle (Sites and Monuments Record)"
+    ],
+    [
+     "Ballylahan Castle",
+     53.93458,
+     -9.10504,
+     "castle",
+     "Anglo-Norman stone castle (Sites and Monuments Record)"
+    ],
+    [
+     "Ballyloughan Castle",
+     52.67314,
+     -6.89819,
+     "castle",
+     "Anglo-Norman stone castle (Sites and Monuments Record)"
+    ],
+    [
+     "Ballylusky Castle",
+     52.94728,
+     -8.13149,
+     "castle",
+     "Hall-house (Sites and Monuments Record)"
+    ],
+    [
+     "Ballymacoda Castle",
+     51.89206,
+     -7.93067,
+     "castle",
+     "Anglo-Norman stone castle (Sites and Monuments Record)"
+    ],
+    [
+     "Ballymacphilip Castle",
+     52.12399,
+     -8.38,
+     "castle",
+     "Anglo-Norman stone castle (Sites and Monuments Record)"
+    ],
+    [
+     "Ballymoon Castle",
+     52.70023,
+     -6.9067,
+     "castle",
+     "Anglo-Norman stone castle (Sites and Monuments Record)"
+    ],
+    [
+     "Davis's Castle",
+     52.00712,
+     -8.63712,
+     "castle",
+     "Anglo-Norman stone castle (Sites and Monuments Record)"
+    ],
+    [
+     "Ballynaclogh Castle",
+     52.82545,
+     -8.16287,
+     "castle",
+     "Anglo-Norman stone castle (Sites and Monuments Record)"
+    ],
+    [
+     "Bawn Castle",
+     53.67714,
+     -7.76864,
+     "castle",
+     "Anglo-Norman stone castle (Sites and Monuments Record)"
+    ],
+    [
+     "Billistown Castle",
+     53.60109,
+     -7.11271,
+     "castle",
+     "Hall-house (Sites and Monuments Record)"
+    ],
+    [
+     "Glanworth Castle",
+     52.18814,
+     -8.35458,
+     "castle",
+     "Anglo-Norman stone castle (Sites and Monuments Record)"
+    ],
+    [
+     "Brees Castle",
+     53.77559,
+     -9.06704,
+     "castle",
+     "Anglo-Norman stone castle (Sites and Monuments Record)"
+    ],
+    [
+     "Brittas Castle",
+     52.6066,
+     -8.41127,
+     "castle",
+     "Anglo-Norman stone castle (Sites and Monuments Record)"
+    ],
+    [
+     "Bunratty Castle",
+     52.69668,
+     -8.81204,
+     "castle",
+     "Hall-house (Sites and Monuments Record)"
+    ],
+    [
+     "Carbury Castle",
+     53.36162,
+     -6.96911,
+     "castle",
+     "Anglo-Norman stone castle (Sites and Monuments Record)"
+    ],
+    [
+     "Cargin Castle",
+     53.43535,
+     -9.15505,
+     "castle",
+     "Hall-house (Sites and Monuments Record)"
+    ],
+    [
+     "Carrick Castle",
+     53.37808,
+     -7.03838,
+     "castle",
+     "Hall-house (Sites and Monuments Record)"
+    ],
+    [
+     "Carrigaline Castle",
+     51.81701,
+     -8.37144,
+     "castle",
+     "Anglo-Norman stone castle (Sites and Monuments Record)"
+    ],
+    [
+     "Carrigdownane Castle",
+     52.22033,
+     -8.39259,
+     "castle",
+     "Anglo-Norman stone castle (Sites and Monuments Record)"
+    ],
+    [
+     "Carrigogunnel Castle",
+     52.64623,
+     -8.7423,
+     "castle",
+     "Anglo-Norman stone castle (Sites and Monuments Record)"
+    ],
+    [
+     "Carrigrohane Castle",
+     51.89642,
+     -8.56013,
+     "castle",
+     "Anglo-Norman stone castle (Sites and Monuments Record)"
+    ],
+    [
+     "Ballynacourty Court",
+     53.21372,
+     -8.95336,
+     "castle",
+     "Hall-house (Sites and Monuments Record)"
+    ],
+    [
+     "Castle Barrett",
+     52.08418,
+     -8.64164,
+     "castle",
+     "Anglo-Norman stone castle (Sites and Monuments Record)"
+    ],
+    [
+     "Castleboy Castle",
+     53.14619,
+     -8.71167,
+     "castle",
+     "Anglo-Norman stone castle (Sites and Monuments Record)"
+    ],
+    [
+     "Castleconnor",
+     54.16145,
+     -9.13585,
+     "castle",
+     "Hall-house (Sites and Monuments Record)"
+    ],
+    [
+     "Dunmore Castle",
+     53.62381,
+     -8.75561,
+     "castle",
+     "Hall-house (Sites and Monuments Record)"
+    ],
+    [
+     "Castle Grace",
+     52.28099,
+     -7.95678,
+     "castle",
+     "Anglo-Norman stone castle (Sites and Monuments Record)"
+    ],
+    [
+     "Castle Hacket",
+     53.48914,
+     -8.96942,
+     "castle",
+     "Hall-house (Sites and Monuments Record)"
+    ],
+    [
+     "Castle Kevin",
+     53.0245,
+     -6.23674,
+     "castle",
+     "Anglo-Norman stone castle (Sites and Monuments Record)"
+    ],
+    [
+     "Castlelands Castle",
+     51.74488,
+     -8.93529,
+     "castle",
+     "Anglo-Norman stone castle (Sites and Monuments Record)"
+    ],
+    [
+     "Castlemaine",
+     52.16745,
+     -9.70285,
+     "castle",
+     "Anglo-Norman stone castle (Sites and Monuments Record)"
+    ],
+    [
+     "Beal Castle",
+     52.5758,
+     -9.60917,
+     "castle",
+     "Anglo-Norman stone castle (Sites and Monuments Record)"
+    ],
+    [
+     "Reban Castle",
+     53.03034,
+     -7.03522,
+     "castle",
+     "Anglo-Norman stone castle (Sites and Monuments Record)"
+    ],
+    [
+     "Castletown Castle",
+     52.4179,
+     -8.81899,
+     "castle",
+     "Hall-house (Sites and Monuments Record)"
+    ],
+    [
+     "Kiltartan Castle",
+     53.09033,
+     -8.80714,
+     "castle",
+     "Anglo-Norman stone castle (Sites and Monuments Record)"
+    ],
+    [
+     "Castleview Castle",
+     52.22945,
+     -9.46618,
+     "castle",
+     "Anglo-Norman stone castle (Sites and Monuments Record)"
+    ],
+    [
+     "Castlewidenham Castle",
+     52.17049,
+     -8.46047,
+     "castle",
+     "Anglo-Norman stone castle (Sites and Monuments Record)"
+    ],
+    [
+     "Clare Castle",
+     52.4558,
+     -7.62478,
+     "castle",
+     "Hall-house (Sites and Monuments Record)"
+    ],
+    [
+     "Cloghkeating Castle",
+     52.9679,
+     -8.09684,
+     "castle",
+     "Hall-house (Sites and Monuments Record)"
+    ],
+    [
+     "Clohaskin Castle",
+     53.05234,
+     -7.99062,
+     "castle",
+     "Hall-house (Sites and Monuments Record)"
+    ],
+    [
+     "Clonamicklon Castle",
+     52.65506,
+     -7.58456,
+     "castle",
+     "Anglo-Norman stone castle (Sites and Monuments Record)"
+    ],
+    [
+     "Clonmore Castle",
+     52.82811,
+     -6.57551,
+     "castle",
+     "Anglo-Norman stone castle (Sites and Monuments Record)"
+    ],
+    [
+     "Clonshire Castle",
+     52.55062,
+     -8.85063,
+     "castle",
+     "Hall-house (Sites and Monuments Record)"
+    ],
+    [
+     "Coolbanagher Castle",
+     53.07822,
+     -7.23232,
+     "castle",
+     "Hall-house (Sites and Monuments Record)"
+    ],
+    [
+     "Castleconnell",
+     52.71236,
+     -8.5037,
+     "castle",
+     "Anglo-Norman stone castle (Sites and Monuments Record)"
+    ],
+    [
+     "Coonagh Castle",
+     52.58254,
+     -8.26013,
+     "castle",
+     "Anglo-Norman stone castle (Sites and Monuments Record)"
+    ],
+    [
+     "Coololla Castle",
+     53.30574,
+     -8.31581,
+     "castle",
+     "Anglo-Norman stone castle (Sites and Monuments Record)"
+    ],
+    [
+     "Corrool Castle",
+     53.55445,
+     -7.91769,
+     "castle",
+     "Anglo-Norman stone castle (Sites and Monuments Record)"
+    ],
+    [
+     "Cramp's Castle",
+     52.47063,
+     -7.68038,
+     "castle",
+     "Hall-house (Sites and Monuments Record)"
+    ],
+    [
+     "Croom Castle",
+     52.5171,
+     -8.71985,
+     "castle",
+     "Anglo-Norman stone castle (Sites and Monuments Record)"
+    ],
+    [
+     "Dangan Castle",
+     52.83028,
+     -8.80787,
+     "castle",
+     "Hall-house (Sites and Monuments Record)"
+    ],
+    [
+     "Newcastle West",
+     52.45007,
+     -9.06108,
+     "castle",
+     "Anglo-Norman stone castle (Sites and Monuments Record)"
+    ],
+    [
+     "Mannan Castle",
+     54.00935,
+     -6.69923,
+     "castle",
+     "Anglo-Norman stone castle (Sites and Monuments Record)"
+    ],
+    [
+     "Dromineer Castle",
+     52.92588,
+     -8.27722,
+     "castle",
+     "Hall-house (Sites and Monuments Record)"
+    ],
+    [
+     "Clontarf Castle",
+     53.36481,
+     -6.20703,
+     "castle",
+     "Anglo-Norman stone castle (Sites and Monuments Record)"
+    ],
+    [
+     "Dundrum Castle",
+     53.28777,
+     -6.24508,
+     "castle",
+     "Anglo-Norman stone castle (Sites and Monuments Record)"
+    ],
+    [
+     "Dunmanway North Castle",
+     51.71989,
+     -9.11839,
+     "castle",
+     "Anglo-Norman stone castle (Sites and Monuments Record)"
+    ],
+    [
+     "Dunmore Castle (52.15, -6.99)",
+     52.15347,
+     -6.99405,
+     "castle",
+     "Anglo-Norman stone castle (Sites and Monuments Record)"
+    ],
+    [
+     "Northburgh Castle",
+     55.20537,
+     -6.9751,
+     "castle",
+     "Anglo-Norman stone castle (Sites and Monuments Record)"
+    ],
+    [
+     "Elfeet Castle",
+     53.58284,
+     -7.96377,
+     "castle",
+     "Anglo-Norman stone castle (Sites and Monuments Record)"
+    ],
+    [
+     "Faha Castle",
+     52.54498,
+     -9.67885,
+     "castle",
+     "Anglo-Norman stone castle (Sites and Monuments Record)"
+    ],
+    [
+     "Gash Castle",
+     52.97836,
+     -7.49217,
+     "castle",
+     "Anglo-Norman stone castle (Sites and Monuments Record)"
+    ],
+    [
+     "Glenogra Castle",
+     52.52639,
+     -8.60353,
+     "castle",
+     "Anglo-Norman stone castle (Sites and Monuments Record)"
+    ],
+    [
+     "Fethard Castle",
+     52.19336,
+     -6.84,
+     "castle",
+     "Hall-house (Sites and Monuments Record)"
+    ],
+    [
+     "Inchiquin Castle",
+     51.92578,
+     -7.94497,
+     "castle",
+     "Anglo-Norman stone castle (Sites and Monuments Record)"
+    ],
+    [
+     "Furmina Castle",
+     53.06204,
+     -9.51922,
+     "castle",
+     "Hall-house (Sites and Monuments Record)"
+    ],
+    [
+     "Kilbolane Castle",
+     52.33798,
+     -8.84691,
+     "castle",
+     "Anglo-Norman stone castle (Sites and Monuments Record)"
+    ],
+    [
+     "Kilfadda Castle",
+     53.05779,
+     -8.11965,
+     "castle",
+     "Anglo-Norman stone castle (Sites and Monuments Record)"
+    ],
+    [
+     "Kilfinny Castle",
+     52.50788,
+     -8.79279,
+     "castle",
+     "Hall-house (Sites and Monuments Record)"
+    ],
+    [
+     "Castlelyons",
+     52.08569,
+     -8.23238,
+     "castle",
+     "Anglo-Norman stone castle (Sites and Monuments Record)"
+    ],
+    [
+     "Kilmaclenine Castle",
+     52.20517,
+     -8.72581,
+     "castle",
+     "Anglo-Norman stone castle (Sites and Monuments Record)"
+    ],
+    [
+     "Witches' Castle",
+     53.36126,
+     -8.79977,
+     "castle",
+     "Hall-house (Sites and Monuments Record)"
+    ],
+    [
+     "Kiltinan Castle",
+     52.43922,
+     -7.65696,
+     "castle",
+     "Anglo-Norman stone castle (Sites and Monuments Record)"
+    ],
+    [
+     "Kindlestown Castle",
+     53.14118,
+     -6.08906,
+     "castle",
+     "Hall-house (Sites and Monuments Record)"
+    ],
+    [
+     "Knockantota South Castle",
+     52.03162,
+     -8.61705,
+     "castle",
+     "Anglo-Norman stone castle (Sites and Monuments Record)"
+    ],
+    [
+     "Lackagh Castle",
+     53.16145,
+     -6.98891,
+     "castle",
+     "Hall-house (Sites and Monuments Record)"
+    ],
+    [
+     "Lanesborough Castle",
+     53.67349,
+     -7.99195,
+     "castle",
+     "Anglo-Norman stone castle (Sites and Monuments Record)"
+    ],
+    [
+     "Latteragh Castle",
+     52.80489,
+     -8.03773,
+     "castle",
+     "Anglo-Norman stone castle (Sites and Monuments Record)"
+    ],
+    [
+     "Lea Castle",
+     53.15629,
+     -7.14736,
+     "castle",
+     "Anglo-Norman stone castle (Sites and Monuments Record)"
+    ],
+    [
+     "Leitrim Castle",
+     52.16053,
+     -8.20161,
+     "castle",
+     "Anglo-Norman stone castle (Sites and Monuments Record)"
+    ],
+    [
+     "Leixlip Castle",
+     53.36204,
+     -6.49064,
+     "castle",
+     "Anglo-Norman stone castle (Sites and Monuments Record)"
+    ],
+    [
+     "Licklash Castle",
+     52.15124,
+     -8.25131,
+     "castle",
+     "Hall-house (Sites and Monuments Record)"
+    ],
+    [
+     "Lisbunny Castle",
+     52.86496,
+     -8.1618,
+     "castle",
+     "Hall-house (Sites and Monuments Record)"
+    ],
+    [
+     "Liscarroll Castle",
+     52.26117,
+     -8.80346,
+     "castle",
+     "Anglo-Norman stone castle (Sites and Monuments Record)"
+    ],
+    [
+     "Lissardowlan Castle",
+     53.71542,
+     -7.71806,
+     "castle",
+     "Anglo-Norman stone castle (Sites and Monuments Record)"
+    ],
+    [
+     "Lixnaw Castle",
+     52.40209,
+     -9.62808,
+     "castle",
+     "Anglo-Norman stone castle (Sites and Monuments Record)"
+    ],
+    [
+     "Bruree Castle",
+     52.42965,
+     -8.67254,
+     "castle",
+     "Anglo-Norman stone castle (Sites and Monuments Record)"
+    ],
+    [
+     "Castlekirk",
+     53.49256,
+     -9.51339,
+     "castle",
+     "Hall-house (Sites and Monuments Record)"
+    ],
+    [
+     "Clogh Oughter Castle",
+     54.01869,
+     -7.45485,
+     "castle",
+     "Anglo-Norman stone castle (Sites and Monuments Record)"
+    ],
+    [
+     "Mocollop Castle",
+     52.14682,
+     -8.09448,
+     "castle",
+     "Anglo-Norman stone castle (Sites and Monuments Record)"
+    ],
+    [
+     "Mogeely Castle",
+     52.09848,
+     -8.06323,
+     "castle",
+     "Anglo-Norman stone castle (Sites and Monuments Record)"
+    ],
+    [
+     "Moylough Castle",
+     53.48979,
+     -8.58018,
+     "castle",
+     "Hall-house (Sites and Monuments Record)"
+    ],
+    [
+     "Newcastle Castle",
+     53.40398,
+     -7.36526,
+     "castle",
+     "Hall-house (Sites and Monuments Record)"
+    ],
+    [
+     "Newcastle Middle Castle",
+     53.07335,
+     -6.07214,
+     "castle",
+     "Anglo-Norman stone castle (Sites and Monuments Record)"
+    ],
+    [
+     "Oldcastle Castle",
+     52.90068,
+     -7.85212,
+     "castle",
+     "Anglo-Norman stone castle (Sites and Monuments Record)"
+    ],
+    [
+     "Pallas Castle",
+     52.86083,
+     -8.30876,
+     "castle",
+     "Anglo-Norman stone castle (Sites and Monuments Record)"
+    ],
+    [
+     "Park Castle",
+     53.25727,
+     -8.32421,
+     "castle",
+     "Hall-house (Sites and Monuments Record)"
+    ],
+    [
+     "Round Castle",
+     52.07591,
+     -9.55504,
+     "castle",
+     "Anglo-Norman stone castle (Sites and Monuments Record)"
+    ],
+    [
+     "Phale Castle",
+     51.72337,
+     -8.96492,
+     "castle",
+     "Anglo-Norman stone castle (Sites and Monuments Record)"
+    ],
+    [
+     "Quin Castle",
+     52.81923,
+     -8.86292,
+     "castle",
+     "Anglo-Norman stone castle (Sites and Monuments Record)"
+    ],
+    [
+     "Rathcoffey Demesne Castle",
+     53.33139,
+     -6.66481,
+     "castle",
+     "Anglo-Norman stone castle (Sites and Monuments Record)"
+    ],
+    [
+     "Rathumney Castle",
+     52.29529,
+     -6.87445,
+     "castle",
+     "Hall-house (Sites and Monuments Record)"
+    ],
+    [
+     "Roche Castle",
+     54.04648,
+     -6.48844,
+     "castle",
+     "Anglo-Norman stone castle (Sites and Monuments Record)"
+    ],
+    [
+     "Shanid Castle",
+     52.55284,
+     -9.11684,
+     "castle",
+     "Anglo-Norman stone castle (Sites and Monuments Record)"
+    ],
+    [
+     "Shanrahan Castle",
+     52.27285,
+     -8.01439,
+     "castle",
+     "Hall-house (Sites and Monuments Record)"
+    ],
+    [
+     "Shrule Castle",
+     53.51957,
+     -9.08583,
+     "castle",
+     "Hall-house (Sites and Monuments Record)"
+    ],
+    [
+     "Clare Castle (52.82, -8.96)",
+     52.81615,
+     -8.96107,
+     "castle",
+     "Anglo-Norman stone castle (Sites and Monuments Record)"
+    ],
+    [
+     "Strancally Castle",
+     52.02679,
+     -7.85205,
+     "castle",
+     "Hall-house (Sites and Monuments Record)"
+    ],
+    [
+     "Templehouse castle",
+     54.11186,
+     -8.58509,
+     "castle",
+     "Hall-house (Sites and Monuments Record)"
+    ],
+    [
+     "Old Court",
+     53.05946,
+     -8.21188,
+     "castle",
+     "Anglo-Norman stone castle (Sites and Monuments Record)"
+    ],
+    [
+     "Tomdeely North Castle",
+     52.61521,
+     -8.9994,
+     "castle",
+     "Hall-house (Sites and Monuments Record)"
+    ],
+    [
+     "Cahir Castle",
+     52.37456,
+     -7.92716,
+     "castle",
+     "Anglo-Norman stone castle (Sites and Monuments Record)"
+    ],
+    [
+     "Ivy Castle",
+     53.33004,
+     -8.21256,
+     "castle",
+     "Anglo-Norman stone castle (Sites and Monuments Record)"
+    ],
+    [
+     "Tullow Castle",
+     52.79727,
+     -7.71626,
+     "castle",
+     "Anglo-Norman stone castle (Sites and Monuments Record)"
+    ],
+    [
+     "Rindown Castle",
+     53.53888,
+     -7.9913,
+     "castle",
+     "Anglo-Norman stone castle (Sites and Monuments Record)"
+    ]
+   ]
   }
  },
  "names": {
@@ -1464,6 +3767,588 @@
   },
   "The Stormpeaks": {
    "ga": "Beanna na Stoirme"
+  },
+  "Baile Átha Cliath": {
+   "en": "Dublin"
+  },
+  "Cill Mhaighneann": {
+   "en": "Kilmainham"
+  },
+  "Sord": {
+   "en": "Swords"
+  },
+  "Binn Éadair": {
+   "en": "Howth"
+  },
+  "Deilginis": {
+   "en": "Dalkey"
+  },
+  "Tamhlacht": {
+   "en": "Tallaght"
+  },
+  "Lusca": {
+   "en": "Lusk"
+  },
+  "Dún Dealgan": {
+   "en": "Dundalk"
+  },
+  "Cairlinn": {
+   "en": "Carlingford"
+  },
+  "Baile Átha Fhirdhia": {
+   "en": "Ardee"
+  },
+  "Lú": {
+   "en": "Louth"
+  },
+  "An Mhainistir Mhór": {
+   "en": "Mellifont"
+  },
+  "Mainistir Bhuithe": {
+   "en": "Monasterboice"
+  },
+  "Damhliag": {
+   "en": "Duleek"
+  },
+  "Tailtiu": {
+   "en": "Teltown"
+  },
+  "Cluain Eraird": {
+   "en": "Clonard"
+  },
+  "An Muileann gCearr": {
+   "en": "Mullingar"
+  },
+  "Baile Átha Luain": {
+   "en": "Athlone"
+  },
+  "Fobhar": {
+   "en": "Fore"
+  },
+  "Dealbhna": {
+   "en": "Delvin"
+  },
+  "Cruachán Brí Éile": {
+   "en": "Croghan Hill"
+  },
+  "Cluain Mhic Nóis": {
+   "en": "Clonmacnoise"
+  },
+  "Biorra": {
+   "en": "Birr"
+  },
+  "Daingean Uí Fhailí": {
+   "en": "Daingean"
+  },
+  "Cill Achaidh": {
+   "en": "Killeigh"
+  },
+  "Darú": {
+   "en": "Durrow"
+  },
+  "Mainistir Fheorais": {
+   "en": "Monasteroris"
+  },
+  "Mainistir Laoise": {
+   "en": "Abbeyleix"
+  },
+  "Teach Mochua": {
+   "en": "Timahoe"
+  },
+  "Achadh Bhó": {
+   "en": "Aghaboe"
+  },
+  "An Longfort": {
+   "en": "Longford"
+  },
+  "Mainistir Shruthla": {
+   "en": "Abbeyshrule"
+  },
+  "Inis Clothrann": {
+   "en": "Inchcleraun"
+  },
+  "Ard Achadh": {
+   "en": "Ardagh"
+  },
+  "Gránard": {
+   "en": "Granard"
+  },
+  "Cill Chuillinn": {
+   "en": "Kilcullen"
+  },
+  "Gleann Dá Loch": {
+   "en": "Glendalough"
+  },
+  "Gleann Molúra": {
+   "en": "Glenmalure"
+  },
+  "Log na Coille": {
+   "en": "Lugnaquilla"
+  },
+  "Cill Mhantáin": {
+   "en": "Wicklow"
+  },
+  "An tInbhear Mór": {
+   "en": "Arklow"
+  },
+  "Bealach Conglais": {
+   "en": "Baltinglass"
+  },
+  "Fearna": {
+   "en": "Ferns"
+  },
+  "Loch Garman": {
+   "en": "Wexford"
+  },
+  "Ros Mhic Thriúin": {
+   "en": "New Ross"
+  },
+  "Inis Córthaidh": {
+   "en": "Enniscorthy"
+  },
+  "Dún Bróithe": {
+   "en": "Dunbrody"
+  },
+  "Mainistir Thinteirn": {
+   "en": "Tintern de Voto"
+  },
+  "Rinn Duáin": {
+   "en": "Hook Head"
+  },
+  "Cuan an Bhainbh": {
+   "en": "Bannow"
+  },
+  "Port Láirge": {
+   "en": "Waterford"
+  },
+  "Dún Garbhán": {
+   "en": "Dungarvan"
+  },
+  "Lios Mór": {
+   "en": "Lismore"
+  },
+  "Aird Mhór": {
+   "en": "Ardmore"
+  },
+  "Eochaill": {
+   "en": "Youghal"
+  },
+  "Corcaigh": {
+   "en": "Cork"
+  },
+  "Cionn tSáile": {
+   "en": "Kinsale"
+  },
+  "Mainistir na Corann": {
+   "en": "Chore Abbey"
+  },
+  "Cluain": {
+   "en": "Cloyne"
+  },
+  "Mainistir Fhear Maí": {
+   "en": "Fermoy"
+  },
+  "Mala": {
+   "en": "Mallow"
+  },
+  "Cill na Mallach": {
+   "en": "Buttevant"
+  },
+  "Dún na Séad": {
+   "en": "Baltimore"
+  },
+  "Ros Ailithir": {
+   "en": "Rosscarbery"
+  },
+  "Tigh Molaige": {
+   "en": "Timoleague"
+  },
+  "Cill Briotáin": {
+   "en": "Kilbrittain"
+  },
+  "Guagán Barra": {
+   "en": "Gougane Barra"
+  },
+  "Dhá Chích Anann": {
+   "en": "Paps of Anu"
+  },
+  "Cailleach Bhéarra": {
+   "en": "Hag of Beara"
+  },
+  "Teach Duinn": {
+   "en": "Bull Rock"
+  },
+  "Droim Beag": {
+   "en": "Drombeg"
+  },
+  "Trá Lí": {
+   "en": "Tralee"
+  },
+  "An Daingean": {
+   "en": "Dingle"
+  },
+  "Ard Fhearta": {
+   "en": "Ardfert"
+  },
+  "Inis Faithleann": {
+   "en": "Inisfallen"
+  },
+  "Sceilg Mhichíl": {
+   "en": "Skellig Michael"
+  },
+  "Baile an Sceilg": {
+   "en": "Ballinskelligs"
+  },
+  "Séipéal Ghallarais": {
+   "en": "Gallarus"
+  },
+  "An Staig": {
+   "en": "Staigue Fort"
+  },
+  "Gleann na nGealt": {
+   "en": "Glannagalt"
+  },
+  "Inis": {
+   "en": "Ennis"
+  },
+  "Mainistir Chorca Mrua": {
+   "en": "Corcomroe"
+  },
+  "Cill Fhionnúrach": {
+   "en": "Kilfenora"
+  },
+  "Inis Cealtra": {
+   "en": "Holy Island"
+  },
+  "Cill Dalua": {
+   "en": "Killaloe"
+  },
+  "Béal Bóramha": {
+   "en": "Béal Boru"
+  },
+  "Inis Cathaigh": {
+   "en": "Scattery Island"
+  },
+  "Poll na mBrón": {
+   "en": "Poulnabrone"
+  },
+  "Cathair Chomáin": {
+   "en": "Cahercommaun"
+  },
+  "Díseart Tola": {
+   "en": "Dysert O'Dea"
+  },
+  "Aillte an Mhothair": {
+   "en": "Cliffs of Moher"
+  },
+  "Luimneach": {
+   "en": "Limerick"
+  },
+  "Cill Mocheallóg": {
+   "en": "Kilmallock"
+  },
+  "Áth Dara": {
+   "en": "Adare"
+  },
+  "Eas Géitine": {
+   "en": "Askeaton"
+  },
+  "Mainistir an Aonaigh": {
+   "en": "Monasteranenagh"
+  },
+  "Loch Goir": {
+   "en": "Lough Gur"
+  },
+  "Cnoc Áine": {
+   "en": "Knockainey"
+  },
+  "Cnoc Fírinne": {
+   "en": "Knockfierna"
+  },
+  "Caiseal": {
+   "en": "Cashel"
+  },
+  "Mainistir na Carraige": {
+   "en": "Hore Abbey"
+  },
+  "Cluain Meala": {
+   "en": "Clonmel"
+  },
+  "Fiodh Ard": {
+   "en": "Fethard"
+  },
+  "Durlas": {
+   "en": "Thurles"
+  },
+  "Mainistir na Croiche": {
+   "en": "Holycross"
+  },
+  "Aonach Urmhumhan": {
+   "en": "Nenagh"
+  },
+  "Ros Cré": {
+   "en": "Roscrea"
+  },
+  "Carraig na Siúire": {
+   "en": "Carrick-on-Suir"
+  },
+  "Áth Asail": {
+   "en": "Athassel"
+  },
+  "Inis Leamhnachta": {
+   "en": "Inislounaght"
+  },
+  "Cill Chúile": {
+   "en": "Kilcooley"
+  },
+  "Sliabh na mBan": {
+   "en": "Slievenamon"
+  },
+  "Gaillte Mór": {
+   "en": "Galtymore"
+  },
+  "Lothra": {
+   "en": "Lorrha"
+  },
+  "Imleach Iúir": {
+   "en": "Emly"
+  },
+  "Gaillimh": {
+   "en": "Galway"
+  },
+  "Baile Átha an Rí": {
+   "en": "Athenry"
+  },
+  "Tuaim": {
+   "en": "Tuam"
+  },
+  "Mainistir Chnoc Muaidhe": {
+   "en": "Abbeyknockmoy"
+  },
+  "Eanach Dhúin": {
+   "en": "Annaghdown"
+  },
+  "Cluain Fearta": {
+   "en": "Clonfert"
+  },
+  "Cill Mhic Duach": {
+   "en": "Kilmacduagh"
+  },
+  "Baile Locha Riach": {
+   "en": "Loughrea"
+  },
+  "Cill Chonaill": {
+   "en": "Kilconnell"
+  },
+  "Cloch an Tuair": {
+   "en": "Turoe Stone"
+  },
+  "Conga": {
+   "en": "Cong"
+  },
+  "Magh Tuireadh": {
+   "en": "Moytura"
+  },
+  "Cruach Phádraig": {
+   "en": "Croagh Patrick"
+  },
+  "Mainistir Bhaile an Tobair": {
+   "en": "Ballintubber Abbey"
+  },
+  "Cill Ala": {
+   "en": "Killala"
+  },
+  "An tSráid": {
+   "en": "Strade"
+  },
+  "Maigh Eo": {
+   "en": "Mayo Abbey"
+  },
+  "Cliara": {
+   "en": "Clare Island"
+  },
+  "Sligeach": {
+   "en": "Sligo"
+  },
+  "Ceathrú Mhór": {
+   "en": "Carrowmore"
+  },
+  "Cnoc na Riabh": {
+   "en": "Knocknarea"
+  },
+  "Binn Ghulbain": {
+   "en": "Benbulbin"
+  },
+  "Céis Chorainn": {
+   "en": "Keshcorran"
+  },
+  "Ceathrú Chaoil": {
+   "en": "Carrowkeel"
+  },
+  "Droim Chliabh": {
+   "en": "Drumcliff"
+  },
+  "Baile an Mhóta": {
+   "en": "Ballymote"
+  },
+  "Inis Muireadhaigh": {
+   "en": "Inishmurray"
+  },
+  "Ráth Chruachan": {
+   "en": "Rathcroghan"
+  },
+  "Uaimh na gCat": {
+   "en": "Oweynagat"
+  },
+  "Ros Comáin": {
+   "en": "Roscommon"
+  },
+  "Mainistir na Búille": {
+   "en": "Boyle"
+  },
+  "Ail Finn": {
+   "en": "Elphin"
+  },
+  "Loch Cé": {
+   "en": "Lough Key"
+  },
+  "Droim Dhá Thiar": {
+   "en": "Dromahair"
+  },
+  "Fíonacha": {
+   "en": "Fenagh"
+  },
+  "Sliabh an Iarainn": {
+   "en": "Slieve Anierin"
+  },
+  "Ard Mhacha": {
+   "en": "Armagh"
+  },
+  "Eamhain Mhacha": {
+   "en": "Navan Fort"
+  },
+  "Sliabh gCuillinn": {
+   "en": "Slieve Gullion"
+  },
+  "Iúr Cinn Trá": {
+   "en": "Newry"
+  },
+  "Dún Pádraig": {
+   "en": "Downpatrick"
+  },
+  "Inis Cumhscraigh": {
+   "en": "Inch Abbey"
+  },
+  "An Mhainistir Liath": {
+   "en": "Grey Abbey"
+  },
+  "Beannchar": {
+   "en": "Bangor"
+  },
+  "Maigh Bhile": {
+   "en": "Movilla"
+  },
+  "Naoindroim": {
+   "en": "Nendrum"
+  },
+  "Carraig Fhearghais": {
+   "en": "Carrickfergus"
+  },
+  "Dún Droma": {
+   "en": "Dundrum"
+  },
+  "An Caisleán Glas": {
+   "en": "Greencastle"
+  },
+  "Ard Ghlais": {
+   "en": "Ardglass"
+  },
+  "Sliabh Dónairt": {
+   "en": "Slieve Donard"
+  },
+  "Droim Mór": {
+   "en": "Dromore"
+  },
+  "Aontroim": {
+   "en": "Antrim"
+  },
+  "Sliabh Mis": {
+   "en": "Slemish"
+  },
+  "Seanchaisleán": {
+   "en": "Olderfleet"
+  },
+  "Cúil Raithin": {
+   "en": "Coleraine"
+  },
+  "Dún Sobhairce": {
+   "en": "Dunseverick"
+  },
+  "Clochán na bhFómhórach": {
+   "en": "Giant's Causeway"
+  },
+  "Doire": {
+   "en": "Derry"
+  },
+  "Grianán Ailigh": {
+   "en": "Grianan of Aileach"
+  },
+  "Carraig an Dúin": {
+   "en": "Doon Rock"
+  },
+  "Ráth Bhoth": {
+   "en": "Raphoe"
+  },
+  "Mainistir Easa Rua": {
+   "en": "Assaroe"
+  },
+  "Loch Dearg": {
+   "en": "Lough Derg"
+  },
+  "Gleann Cholm Cille": {
+   "en": "Glencolumbkille"
+  },
+  "Toraigh": {
+   "en": "Tory Island"
+  },
+  "Sliabh Liag": {
+   "en": "Slieve League"
+  },
+  "An Earagail": {
+   "en": "Errigal"
+  },
+  "Cluain Eois": {
+   "en": "Clones"
+  },
+  "Muineachán": {
+   "en": "Monaghan"
+  },
+  "An Cabhán": {
+   "en": "Cavan"
+  },
+  "Magh Sléacht": {
+   "en": "Magh Slécht"
+  },
+  "Tulach Óg": {
+   "en": "Tullaghoge"
+  },
+  "Dún Geanainn": {
+   "en": "Dungannon"
+  },
+  "Caisleán Anraí Aimhréidh": {
+   "en": "Harry Avery's Castle"
+  },
+  "Daimhinis": {
+   "en": "Devenish"
+  },
+  "Sciath Ghabhra": {
+   "en": "Lisnaskea"
+  },
+  "Badhbha": {
+   "en": "Boa Island"
+  },
+  "Clochar": {
+   "en": "Clogher"
   }
  }
 }
