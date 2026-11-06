@@ -2,10 +2,7 @@
  "format": "e9-encounter-map/1",
  "id": "hermits-hollow",
  "title": "The hermit's hollow oak",
- "size": [
-  36,
-  30
- ],
+ "size": [36, 30],
  "grid": {
   "ft": 5,
   "show": true
@@ -13,10 +10,7 @@
  "layers": [
   {
    "src": "hermits-hollow/map.jpg",
-   "at": [
-    0,
-    0
-   ],
+   "at": [0, 0],
    "px": 40
   }
  ],
@@ -71,38 +65,34 @@
  },
  "links": [
   {
-   "from": [
-    17,
-    14
-   ],
+   "from": [17, 14],
    "to": {
     "map": "hermits-hollow",
-    "square": [
-     8,
-     6
-    ]
+    "square": [8, 6]
    },
    "label": "Down into the apothecary"
   },
   {
-   "from": [
-    8.6,
-    6.6
-   ],
+   "from": [8.6, 6.6],
    "to": {
     "map": "hermits-hollow",
-    "square": [
-     17,
-     14
-    ]
+    "square": [17, 14]
    },
    "label": "Up into the oak"
   }
  ],
- "walls": [],
+ "walls": [
+  [
+   [1.0, 1.0],
+   [1.0, 8.0],
+   [10.0, 8.0],
+   [10.0, 1.0],
+   [1.0, 1.0]
+  ]
+ ],
  "doors": [],
  "lights": [],
  "environment": {},
  "licence": "CC0",
- "credit": "Drawn for Beyond the Pale with the E9 Atlas encounter tool (original layout, no traced art)"
+ "credit": "Drawn for Beyond the Pale with the E9 Atlas encounter tool"
 }

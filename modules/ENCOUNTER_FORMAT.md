@@ -1,7 +1,7 @@
 # E9 Encounter map format (draft)
 
 How a module stores its **Encounter maps** (the 5-ft-square battle maps below the Field level of the E9 Atlas), how points of interest and scenes point into them, and how they can grow into a virtual tabletop later.
-Designed with Heph on 2026-11-05. Status: **draft**. Map files and the drawing tool exist (section 12); the Atlas does not open them yet. Sits under ATLAS_FORMAT.md (the hex levels) and beside CREATURES_FORMAT.md (who is there) and EVENTS_FORMAT.md (what happens).
+Designed with Heph on 2026-11-05. Status: **draft**. Map files, the drawing tool and the checker exist (section 12); the Atlas and the module viewer open maps from points of interest (Atlas 0.2.12). Atlas 0.4.x is VTT and referee-tool integration (Heph 2026-11-06): 0.4.0 fills in walls, doors and lights and tidies the format for Universal VTT import, export and links into VTTs (sections 7, 11 and 13). Sits under ATLAS_FORMAT.md (the hex levels) and beside CREATURES_FORMAT.md (who is there) and EVENTS_FORMAT.md (what happens).
 
 ## 1. The idea in one paragraph
 
@@ -53,7 +53,7 @@ One map per file keeps git diffs small and lets a referee drop in a single map. 
 - **anchor** (optional) pins the map to the world: the map square `square` sits on lattice hex `hex` plus the `ft` offset (the same shape as a PoI position, ATLAS_FORMAT.md), turned `rotate` degrees clockwise from north. Without an anchor the map floats free, like a dungeon level or a dream.
 - **areas** name rectangles of squares so PoIs, scenes and keyed text can point at a room by name instead of numbers. An area may instead list several rectangles: `"squares": [[...], [...]]`.
 - **links** are stairs, trapdoors and paths to another map (or another square of the same one). They let a dungeon be a stack of maps, one per level, with no extra "level" field.
-- **walls, doors, lights, environment** are reserved for the play surface (section 8) and stay empty for now.
+- **walls, doors, lights, environment** are the play surface, in the shapes of section 7. `walls` are polylines that block sight; `doors` are `{"at": [[x, y], [x, y]], "closed": true, "secret": false}` with an optional `"locked": true`; `lights` are `{"at": [x, y], "range": squares, "colour": "#rrggbb", "intensity": 1}`. Since Atlas 0.4.0 the drawing tool fills them in for its own maps (section 12); a dropped-in picture gets them from a Universal VTT import or by hand. The Atlas map view has a **Walls** button that draws them over the picture, for checking before an export. Nothing plays on them yet (section 8).
 - **licence** and **credit** belong to the map's art, because a dropped-in image can carry a different licence from the module (for example CC BY-SA if it uses Hex Tiles Fantasy art). The Atlas shows them under the map.
 
 ## 4. Pointing into a map
@@ -97,20 +97,22 @@ When `ground` is `"generate"`, the Atlas draws the squares from the world under 
 
 **Universal VTT** is the JSON format that Dungeondraft exports (`.dd2vtt`, also `.uvtt`) and that Foundry VTT, Fantasy Grounds Unity, Arkenforge and others import. It holds one image, the grid size in pixels, wall lines that block sight, doors ("portals") and lights. The reserved fields in section 3 follow it on purpose so it maps almost one to one:
 
-| Encounter map | Universal VTT |
+| Encounter map | Universal VTT (`format: 0.3`) |
 |---|---|
-| `size` | `resolution.map_size` (in squares) |
-| layer `px` | `resolution.pixels_per_grid` |
-| layers, flattened to one picture | `image` |
-| `walls`: polylines in squares, `[[x, y], [x, y], ...]` | `line_of_sight` |
-| `doors`: `{"at": [[x, y], [x, y]], "closed": true, "secret": false}` | `portals` |
-| `lights`: `{"at": [x, y], "range": squares, "colour": "#ffcc88", "intensity": 1}` | `lights` |
-| `environment`: `{"ambient": "#ffffff", "baked": false}` | `environment` |
+| `size` `[w, h]` | `resolution.map_size` `{"x": w, "y": h}`, with `resolution.map_origin` `{"x": 0, "y": 0}` |
+| the largest layer `px` | `resolution.pixels_per_grid` (a whole number) |
+| layers, flattened to one picture (`show: "referee"` left out) | `image`: base64 PNG |
+| `walls`: polylines `[[x, y], ...]` | `line_of_sight`: `[[{"x": x, "y": y}, ...], ...]` (and `objects_line_of_sight`, empty) |
+| `doors`: `{"at": [a, b], "closed": true, "secret": false}` | `portals`: `{"position": midpoint, "bounds": [a, b], "rotation": radians, "closed": true, "freestanding": false}` |
+| `lights`: `{"at": [x, y], "range": squares, "colour": "#rrggbb", "intensity": 1}` | `lights`: `{"position", "range", "intensity", "color": "ffrrggbb", "shadows": true}` |
+| `environment`: `{"ambient": "#ffffff", "baked": false}` | `environment`: `{"baked_lighting": false, "ambient_light": "ffffffff"}` |
 
-- **Coordinates** in these fields are in squares (fractions allowed), the same unit Universal VTT uses, so there is nothing to convert.
+- **Coordinates** in these fields are in squares (fractions allowed), the same unit Universal VTT uses, so only the point shape changes (`[x, y]` against `{"x", "y"}`). Universal VTT colours are ARGB hex without `#`.
+- **Map origin.** Dungeondraft exports may start at a `map_origin` other than 0, 0. Import subtracts it from every point.
+- **Secret and locked doors** have no Universal VTT field, so they ride in the `"e9"` block and are exported as ordinary closed doors.
+- The field names above were checked on 2026-11-06 against a sample Dungeondraft `.dd2vtt` (the uvtt2fgu project's `sampleMap.dd2vtt`) and the published Universal VTT notes. Check again against Foundry's Universal Battlemap Importer and Fantasy Grounds Unity's importer when the exporter is built.
 - **Export** writes one `.uvtt` per map: the layers flattened at the largest `px`, plus walls, doors and lights. Fields Universal VTT lacks (areas, links, anchor, referee-only layers) go in an `"e9"` block that other tools ignore and E9 reads back.
 - **Import** reads a `.uvtt`/`.dd2vtt` into a new map file and saves its image as a layer.
-- Before the exporter is built, check the field names against a real Dungeondraft export and Foundry's importer. This table is the plan, not a tested mapping.
 
 ## 8. Play state (later)
 
@@ -149,13 +151,23 @@ Each slice is usable on its own:
 7. Play state in the Companion: tokens, then hand-revealed fog, then walls, doors and light.
 8. VTT links (section 13): pasted links and the Open button first, then an Export for VTT button, then account connections one VTT at a time.
 
+Done so far: 1 (spec), 2 (maps open in the Atlas and the module viewer, Atlas 0.2.12). **Atlas 0.4.x is slices 5 and 8** (Heph 2026-11-06: "VTT and referee-tool integration"):
+
+- **0.4.0, cleanup.** Walls, doors and lights from the drawing tool; `encounter_check.py` in the build; the viewer fills in the format's defaults in one place (`E9Map.load`), honours layer `rotate`, `opacity` and multi-rectangle areas, shows the play surface (Walls button) and has a hook for map buttons (`E9Map.actions`); the section 7 table checked against a real file; campaign links keyed by module (section 13).
+- **0.4.1** Export for VTT: `.dd2vtt` for Foundry, Fantasy Grounds Unity and Arkenforge, plus picture + grid size for Roll20 and Owlbear Rodeo.
+- **0.4.2** Universal VTT import into a map file.
+- **0.4.3** VTT links: paste a scene link, **Open in …** buttons.
+- **Later** Spool up a scene directly in a connected VTT (Send to Foundry and so on), one VTT at a time.
+
 ## 12. Drawing maps: `tools/encounter_draw.py`
 
-Beyond the Pale's first maps are drawn by our own tool, not traced from any published map (Heph 2026-11-05: the old pro maps were redraws of classic modules and are not licensable, so ours are feel-alikes with their own identity). The hex tiles are hex art, so they are not used here either.
+Beyond the Pale's maps are drawn by our own tool from hand-written plans; since 2026-11-06 the plans may follow Heph's traced layouts (Heph: "tracing isn't going to be a problem"). The hex tiles are hex art, so they are not used here.
 
 - Each map has a hand-written plan, `encounter-maps/<id>/plan.json`, in squares: shapes for open floor (`rect`, `blob`, `path`, `poly`), water, roads, mounds, cliffs, curtain walls, towers, roofed buildings, seeded tree scatter, and marks (room numbers, cave letters, doors, secret doors, pit traps, stairs, webs, tents, nests, bones and so on). The tool's docstring lists every key.
 - `python3 -I modules/tools/encounter_draw.py modules/<module>/encounter-maps [id ...]` draws `<id>/map.jpg` in the E9 ink style and writes `<id>.json` in this format, with the plan's areas, links and notes. The same plan and seed always draw the same picture.
 - Any map can later swap its drawn layer for real art (a Dungeon Scrawl export, say) by editing `layers`; areas, links and scenes keep working.
+- **Play surface.** The same run writes `walls` (the edge of cave and dug floors, and the outline of curtain walls, towers and buildings), `doors` (one per `door`, `locked` and `secret` mark, one square across) and `lights` (one per `fire` mark, 6 squares). Cliffs and water don't block sight. The plan key `openings` lists shapes that cut the walls without drawing anything, for gate passages and archways. `--json` rewrites only the map files and leaves the pictures alone, since JPEG bytes differ between Pillow builds even when the drawing is the same. A plan may set its own `credit` and `licence`.
+- **Checks.** `python3 -I modules/tools/encounter_check.py modules/<module>` checks every map file (format, size, layer files, areas, links, walls, doors, lights) and every pointer from `site_encounters` and scenes. `build.py` runs it and stops on any problem.
 - **Pointers.** `module.json` key `site_encounters` maps a site name, as drawn, to its pointer list (section 4). The Atlas converter copies it onto that point of interest as `encounter`, and the build copies `encounter-maps/` to the site (without the plans) and lists the maps in the published module manifest under `encounter_maps`.
 - **Scenes.** Keyed rooms are scenes (CREATURES_FORMAT.md section 7) whose `where.room` and `map.area` share the area id.
 
@@ -173,14 +185,15 @@ A referee who runs play in a VTT (Foundry, Roll20, Owlbear Rodeo, Fantasy Ground
     "owlbear": {"app": "owlbear"}
   },
   "maps": {
-    "pale-keep":   [{"account": "foundry", "url": "https://my-table.example.com/game", "scene": "Pale Keep"}],
-    "crom-grotto": [{"account": "owlbear", "url": "https://www.owlbear.rodeo/room/..."}]
+    "isle-of-mists:pale-keep":   [{"account": "foundry", "url": "https://my-table.example.com/game", "scene": "Pale Keep"}],
+    "isle-of-mists:crom-grotto": [{"account": "owlbear", "url": "https://www.owlbear.rodeo/room/..."}]
   }
 }
 ```
 
 - `accounts` names each VTT the referee uses: `app` is one of a short list (`foundry`, `roll20`, `owlbear`, `fgu`, `other`), and `base` is the server address for self-hosted apps. Logins, passwords and API keys are never stored here. A later account connection keeps its token on the referee's device, not in the campaign repo.
-- `maps` lists links per map id, and a map may have several, one per VTT. `url` is what the Open button follows. `scene`, `page` or `id` are optional labels or ids that a connection can use to jump straight to the scene, and the button shows them.
+- `maps` lists links per map, keyed `<module>:<map-id>` like the `#<module>:<map-id>` address (section 4), because a campaign can use several modules and two of them may both have a `cellar`. A map may have several links, one per VTT.
+- Only `http:` and `https:` links are followed; anything else is ignored. `url` is what the Open button follows. `scene`, `page` or `id` are optional labels or ids that a connection can use to jump straight to the scene, and the button shows them.
 - The file can be referee-only, so players don't see join links, or shared, so players can open the table from their Companion. The campaign decides (campaigns-as-git: the file sits in the campaign repo like any other).
 
 **How they're opened.**
