@@ -3,8 +3,8 @@
  "id": "crom-grotto",
  "title": "Cnoc na Teamhrach: the grotto of Crom Cruach",
  "size": [
-  64,
-  40
+  45,
+  70
  ],
  "grid": {
   "ft": 10,
@@ -24,181 +24,181 @@
  "areas": {
   "ravine": {
    "squares": [
-    0,
-    14,
-    64,
-    16
+    12,
+    17,
+    18,
+    53
    ],
    "title": "The ravine floor"
   },
-  "cave-a": {
+  "cave-k": {
    "squares": [
-    5,
-    27,
-    6,
-    5
-   ],
-   "title": "A · Péistduine warrens"
-  },
-  "cave-b": {
-   "squares": [
-    11,
-    30,
-    6,
-    5
-   ],
-   "title": "B · Blacktooth clan (upper ledge)"
-  },
-  "cave-c": {
-   "squares": [
-    19,
-    30,
-    6,
-    5
-   ],
-   "title": "C · Bloodhand clan (upper ledge)"
-  },
-  "cave-d": {
-   "squares": [
-    7,
-    13,
-    6,
-    5
-   ],
-   "title": "D · Skitterglint redcaps"
-  },
-  "cave-e": {
-   "squares": [
-    15,
-    11,
-    6,
-    5
-   ],
-   "title": "E · The ogre's cave"
-  },
-  "cave-f": {
-   "squares": [
-    21,
-    8,
-    6,
-    5
-   ],
-   "title": "F · Skitterglint hobgoblins (upper ledge)"
-  },
-  "cave-g": {
-   "squares": [
-    31,
+    17,
     9,
-    6,
-    5
+    4,
+    4
    ],
-   "title": "G · Owlbear's lair"
-  },
-  "cave-h": {
-   "squares": [
-    41,
-    25,
-    6,
-    5
-   ],
-   "title": "H · Wolf Faoladh lair"
-  },
-  "cave-i": {
-   "squares": [
-    39,
-    6,
-    6,
-    5
-   ],
-   "title": "I · The ancient labyrinth"
+   "title": "The shrine of Crom Cruach"
   },
   "cave-j": {
    "squares": [
-    51,
-    24,
-    6,
-    5
-   ],
-   "title": "J · Boar Faoladh lair"
-  },
-  "cave-k": {
-   "squares": [
-    55,
+    1,
+    21,
     4,
-    6,
-    5
+    4
    ],
-   "title": "K · The shrine of Crom Cruach"
+   "title": "Boar beastfolk"
+  },
+  "cave-i": {
+   "squares": [
+    31,
+    17,
+    4,
+    4
+   ],
+   "title": "The demon's labyrinth"
+  },
+  "cave-g": {
+   "squares": [
+    28,
+    21,
+    4,
+    4
+   ],
+   "title": "The areograph"
+  },
+  "cave-h": {
+   "squares": [
+    35,
+    27,
+    4,
+    4
+   ],
+   "title": "Bloodhand bugbears"
+  },
+  "cave-c": {
+   "squares": [
+    35,
+    37,
+    4,
+    4
+   ],
+   "title": "Bloodhand goblins"
+  },
+  "cave-d": {
+   "squares": [
+    6,
+    38,
+    4,
+    4
+   ],
+   "title": "Skitterglint lair"
+  },
+  "cave-e": {
+   "squares": [
+    9,
+    51,
+    4,
+    4
+   ],
+   "title": "The ogre's cave"
+  },
+  "cave-a": {
+   "squares": [
+    28,
+    46,
+    4,
+    4
+   ],
+   "title": "Kobolds"
+  },
+  "cave-f": {
+   "squares": [
+    6,
+    58,
+    4,
+    4
+   ],
+   "title": "Skitterglint warrens"
+  },
+  "cave-b": {
+   "squares": [
+    35,
+    59,
+    4,
+    4
+   ],
+   "title": "Blacktooth goblins"
   }
  },
  "links": [
   {
    "from": [
-    8,
-    29.6
-   ],
-   "to": {
-    "map": "crom-cave-a"
-   },
-   "label": "A"
-  },
-  {
-   "from": [
-    14,
-    32.6
-   ],
-   "to": {
-    "map": "crom-caves-b-c",
-    "area": "b-trophy-hall"
-   },
-   "label": "B"
-  },
-  {
-   "from": [
-    22,
-    32.4
+    37.48,
+    39.35
    ],
    "to": {
     "map": "crom-caves-b-c",
     "area": "c-common-14"
    },
-   "label": "C"
+   "label": "Bloodhand goblins"
   },
   {
    "from": [
-    10,
-    15.4
+    8.26,
+    40.22
    ],
    "to": {
     "map": "crom-caves-d-e-f",
     "area": "d-mouth"
    },
-   "label": "D"
+   "label": "Skitterglint lair"
   },
   {
    "from": [
-    18,
-    13.6
+    11.39,
+    52.61
    ],
    "to": {
     "map": "crom-caves-d-e-f",
     "area": "e-ogre-22"
    },
-   "label": "E"
+   "label": "The ogre's cave"
   },
   {
    "from": [
-    24,
-    10.6
+    30.22,
+    48.26
+   ],
+   "to": {
+    "map": "crom-cave-a"
+   },
+   "label": "Kobolds"
+  },
+  {
+   "from": [
+    7.91,
+    60.22
    ],
    "to": {
     "map": "crom-caves-d-e-f",
     "area": "f-guard-26"
    },
-   "label": "F"
+   "label": "Skitterglint warrens"
+  },
+  {
+   "from": [
+    37.04,
+    61.09
+   ],
+   "to": {
+    "map": "crom-caves-b-c",
+    "area": "b-trophy-hall"
+   },
+   "label": "Blacktooth goblins"
   }
  ],
- "notes": "Caves G to K are marked but not drawn yet (next pass).",
+ "notes": "Traced from the grotto layout Heph supplied (2026-11-06) and redrawn in the E9 ink style; cave names from Heph's labelled copy. Terraced cliffs ring a wooded ravine floor; each cave opens at the foot of a cliff.",
  "walls": [],
  "doors": [],
  "lights": [],
