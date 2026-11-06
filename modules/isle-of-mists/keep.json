@@ -2,7 +2,7 @@
  "encounters": {
   "scenes": {
    "keep-east-gate": {
-    "title": "1-2 · The east gate",
+    "title": "1-2 · The drawbridge",
     "where": {
      "site": "baile-atha-troim",
      "room": "east-gate"
@@ -79,7 +79,7 @@
     }
    },
    "keep-apartments": {
-    "title": "7 · Private apartments",
+    "title": "7 · Private residences",
     "where": {
      "site": "baile-atha-troim",
      "room": "apartments"
@@ -280,7 +280,7 @@
     }
    },
    "keep-chapel": {
-    "title": "17 · The chapel",
+    "title": "17 · The abbey",
     "where": {
      "site": "baile-atha-troim",
      "room": "chapel"
