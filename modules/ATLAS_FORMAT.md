@@ -78,6 +78,14 @@ with x running east and y running south from the map's `origin` (see the JSON). 
 
 **Furlong** (Heph 2026-11-06, Atlas 0.4.8): a 500-ft hex, named for the old furlong (660 ft), which is close enough on a 5000-ft mile. A Field is 5 Furlongs across and a Furlong is 5 lattice hexes across, so the level needs no new data. It has no stored summary: the Atlas works out its terrain as the most common terrain among its 100-ft hexes, by the rule in "Map scales per module", and caches it. In the viewer, Field shows Furlongs, the Furlong level shows 100-ft hexes, and places open their Encounter maps at the Furlong level.
 
+**Tile cache** (Heph 2026-11-06, Atlas 0.4.9): a build product, not part of the format. The browser never loads the March PNGs. `tools/atlas_cache.py` cuts them into small pieces under `atlas/cache/` and adds a `cache` block to map.json that says where each piece is and how big it is. Every pixel in a piece is a terrain index (0 means nothing), and a tile holds only the hexes its March or League owns.
+- `overview.png` has one pixel per League over the whole region. It draws the Region and March views and should stay under about 100k Leagues; the build warns past that.
+- `f/<march>.png` holds a March's Field summaries. The League view loads the ones within 5 Marches of the view's centre (91 at most).
+- `u/<i>_<j>.png` holds a League's Furlongs. The Field view loads the ones within 4 Leagues (61 at most).
+- `h/<i>_<j>.png` holds a League's 100-ft hexes. The Furlong view loads the ones within 3 Leagues (37 at most).
+
+As the view moves, tiles load around it. Tiles of that kind that fall outside the ring are dropped unless they are on screen, so there is no hard edge and no scroll limit. The cache is rebuilt whenever a March PNG changes: `cache/sources.json` keeps the PNGs' hashes. The March PNGs stay the source of truth.
+
 A lattice hex belongs to the March, League or Field whose centre is nearest. On an exact tie, the **higher** i wins, then the higher j. With that rule every March owns columns Cm − 800 to Cm + 799 and rows Rm − 600 to Rm + 599, so its hexes fit its PNG exactly, and every March holds exactly 64 Leagues and 2304 Fields (by their centres), all of which fit the summary blocks below (checked by the converter on 2026-11-05; the first draft said "lower", which left one row of each March's hexes outside every PNG).
 
 ## Terrain PNGs: one per March
