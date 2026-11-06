@@ -61,7 +61,7 @@ function hexAt(x, y, N) {  // level-N hex (i, j) under a point in feet: the leve
 }
 const hexFt = (i, j, N) => { const [C, R] = centre(i, j, N); return N === 25 ? [C * CW, (R + 0.5 * (i & 1)) * 100] : ft(C, R); };
 const T_BG = {}, T_ICON = {}, HEX_FEATURES = new Set(['clearing', 'bushes', 'thorns', 'spider', 'great-tree', 'mushrooms', 'forest-cave', 'forest-hill', 'stone-circle']);
-let D, TYPES = [], LBL, lang = 'ga', EDGES = true, CR = [];  // CR: the module's creatures (creatures.json from build.py)
+let D, POIS = null, TYPES = [], LBL, lang = 'ga', EDGES = true, CR = [];  // CR: the module's creatures (creatures.json from build.py)
 const cv = document.getElementById('cv'), ctx = cv.getContext('2d');
 
 // ---- data ----
@@ -169,6 +169,11 @@ function fit() {
   const [x0, y0, x1, y1] = regionBox();
   cam.x = (x0 + x1) / 2; cam.y = (y0 + y1) / 2; cam.s = Math.min(W / (x1 - x0), H / (y1 - y0)) * .96;
 }
+const FAR = {};  // a terrain's colour when its hex is too small for the icon: a type with an icon is drawn darker, so woods and hills stand out from grass
+function farColour(t) {
+  if (FAR[t]) return FAR[t]; const c = TYPES[t - 1].color, k = T_ICON[t] ? .72 : 1;
+  return FAR[t] = '#' + [1, 3, 5].map(o => Math.round(parseInt(c.slice(o, o + 2), 16) * k).toString(16).padStart(2, '0')).join('');
+}
 function regionBox() {  // the region's extent in feet: every March, whole
   let x0 = 1e12, y0 = 1e12, x1 = -1e12, y1 = -1e12;
   for (const m of MI.values()) { const [x, y] = ft(m.Cm, m.Rm); x0 = Math.min(x0, x - 800 * CW); x1 = Math.max(x1, x + 800 * CW); y0 = Math.min(y0, y - 60000); y1 = Math.max(y1, y + 60000); }
@@ -177,7 +182,7 @@ function regionBox() {  // the region's extent in feet: every March, whole
 // a user report (2026-11-06): zooming far out blanked the map and the way back was lost. The camera now stays between half the
 // whole-region view and a 100-ft hex about 1200 px across, and its centre stays over the region
 function clampCam() {
-  const [x0, y0, x1, y1] = regionBox(), lo = Math.min(W / (x1 - x0), H / (y1 - y0)) * .5;
+  const [x0, y0, x1, y1] = regionBox(), lo = Math.max(Math.min(W / (x1 - x0), H / (y1 - y0)) * .5, 3 / 15000);  // and never below 3 px per League (Heph: about a pixel per hex)
   cam.s = Math.min(12, Math.max(lo, cam.s || lo));
   cam.x = Math.min(x1, Math.max(x0, isFinite(cam.x) ? cam.x : (x0 + x1) / 2)); cam.y = Math.min(y1, Math.max(y0, isFinite(cam.y) ? cam.y : (y0 + y1) / 2));
 }
@@ -216,7 +221,7 @@ function draw() {
   while (N < 150 && ((x1 - x0) / (N * CW) + 3) * ((y1 - y0) / (N * 100) + 4) > 40000) N = { 1: 5, 5: 25, 25: 150 }[N];
   const hh = N * 100 * cam.s, r = hh / SQ3, bw = 2 * r;  // hex height (flat to flat) and corner radius in px
   const i0 = Math.floor(x0 / (N * CW)) - 1, i1 = Math.ceil(x1 / (N * CW)) + 1, j0 = Math.floor(y0 / (N * 100)) - 2, j1 = Math.ceil(y1 / (N * 100)) + 1;
-  if ((i1 - i0) * (j1 - j0) > 40000) return;
+  if ((i1 - i0) * (j1 - j0) > (N === 150 ? 250000 : 40000)) return;  // Leagues come from the small overview, so many are cheap
   const vis = [], top = [];
   for (let i = i0; i <= i1; i++) for (let j = j0; j <= j1; j++) { const t = T(i, j, N); if (t) vis.push([i, j, t]); }
   const sfx = EDGES ? '' : '-x', pad = EDGES ? 0 : 4 / 238;
@@ -225,9 +230,9 @@ function draw() {
     // one rect for the tile and its blends, snapped to device pixels so they can never resample differently
     const sn = v => Math.round(v * dpr) / dpr, X = sn(sx - bw / 2 - pad * bw), Y = sn(sy - hh / 2 - pad * bw);
     const w_ = sn(sx + bw / 2 + pad * bw) - X, h_ = sn(sy + hh / 2 + pad * bw) - Y;
-    const im = bg && tile(bg + sfx);
-    if (im) ctx.drawImage(im, X, Y, w_, h_); else { hexPath(sx, sy, r); ctx.fillStyle = TYPES[t - 1].color; ctx.fill(); }
-    if (bg) {  // blends: each border bleeds both ways at 40% (hexmap.py BLEED_ALPHA)
+    const im = r > 5 && bg && tile(bg + sfx);  // too small for its icon: the hex takes the terrain's own colour, so forest still reads as forest (Heph 2026-11-06)
+    if (im) ctx.drawImage(im, X, Y, w_, h_); else { hexPath(sx, sy, r); ctx.fillStyle = farColour(t); ctx.fill(); }
+    if (bg && im) {  // blends: each border bleeds both ways at 40% (hexmap.py BLEED_ALPHA)
       const ring = DIRS(i & 1).map(([di, dj]) => { const nb = T_BG[T(i + di, j + dj, N)]; return nb && nb !== bg ? nb.slice(3) : null; });
       ctx.globalAlpha = .4;
       ring.forEach((c, k) => { if (!c) return;
@@ -254,12 +259,19 @@ function draw() {
   if (V.lvl === 'region' || V.lvl === 'march') for (const g of D.regions) {
     const [sx, sy] = S(...g.label); ctx.font = 'italic bold 15px Georgia'; ctx.strokeStyle = '#f4efe1'; ctx.lineWidth = 4; ctx.strokeText(name(g.name), sx, sy); ctx.fillStyle = '#7a2e2e'; ctx.fillText(name(g.name), sx, sy); }
   // points of interest
-  const isz = { region: 16, march: 30, league: 44, field: 50, furlong: 56 }[V.lvl], fs = { region: 10, march: 12, league: 13, field: 13, furlong: 14 }[V.lvl];
+  const isz = V.lvl === 'region' ? Math.min(16, 3 * 150 * 100 * cam.s) : { march: 30, league: 44, field: 50, furlong: 56 }[V.lvl], /* Heph 2026-11-06: at Region, never wider than 3 League hexes */ fs = { region: 10, march: 12, league: 13, field: 13, furlong: 14 }[V.lvl];
   ctx.font = `bold ${fs}px Georgia`;
   const KP = [];
-  for (const p of D.pois) {
+  // place ranks (Heph 2026-11-06): 1 shows from the Region view, 2 from March, 3 from League down; then, most important first,
+  // a place whose icon (and name) would overlap one already drawn waits for a closer zoom
+  const maxRank = { region: 1, march: 2 }[V.lvl] || 3, put = [], bh = isz + (V.lvl === 'region' ? 0 : fs * 1.6);
+  POIS = POIS || D.pois.slice().sort((a, b) => (a.rank || 3) - (b.rank || 3));
+  for (const p of POIS) {
+    if ((p.rank || 3) > maxRank) continue;
     const [sx, sy] = S(...ft(...p.hex));  // a place is always one 100-ft hex (Heph 2026-11-06): drawn at its centre
     if (sx < -100 || sy < -100 || sx > W + 100 || sy > H + 100) continue;
+    if (V.lvl !== 'furlong') { const w = Math.max(isz, ctx.measureText(name(p.name)).width * (V.lvl === 'region' ? 0 : 1));
+      if (put.some(q => Math.abs(q[0] - sx) < (q[2] + w) / 2 && Math.abs(q[1] - sy) < bh)) continue; put.push([sx, sy, w]); }
     if (sx >= 0 && sy >= 0 && sx <= W && sy <= H) KP.push(p);
     const im = p.icon && tile(p.icon);
     if (V.lvl === 'furlong') { fieldPoi(p, im, sx, sy); continue; }
