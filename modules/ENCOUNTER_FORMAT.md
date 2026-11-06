@@ -69,7 +69,7 @@ A point of interest in the Atlas map JSON (ATLAS_FORMAT.md, `pois`) gains an opt
  ]}
 ```
 
-- A pointer names a `map` and either an `entrance`, an `area`, a `squares` rectangle, or neither (the whole map). `label` is what the picker shows. **A point of interest's pointer should name an entrance** (section 14.4, Heph 2026-11-06); an area pointer still works and the area acts as the entrance.
+- A pointer names a `map` and either an `entrance`, an `area`, a `squares` rectangle, or neither (the whole map). `label` is what the picker shows. **A point of interest's pointer should name an entrance** (section 14.3, Heph 2026-11-06); an area pointer still works and the area acts as the entrance.
 - Several PoIs may point into the same map, at the same or different squares, and one PoI may point into several maps (Heph 2026-11-05).
 - A **scene** (CREATURES_FORMAT.md section 7) uses the same pointer in its `map` field instead of a bare id: `"map": {"map": "kells-priory", "area": "gatehouse"}`. A bare string still means the whole map.
 - Keyed adventure text can link a room by address: **`#<module>:<map-id>`**, **`#<module>:<map-id>/<area>`**, or **`#<module>:<map-id>/x,y`** for one square. The Companion's page links and the Atlas both read these.
@@ -157,7 +157,7 @@ Done so far: 1 (spec), 2 (maps open in the Atlas and the module viewer, Atlas 0.
 - **0.4.1** Export for VTT: `.uvtt` for Foundry, Fantasy Grounds Unity and Arkenforge, plus picture + grid size for Roll20 and Owlbear Rodeo. Done.
 - **0.4.2** Universal VTT import into a map file (`tools/uvtt_import.py`, a creator tool for now). Done.
 - **0.4.3** Entrances, spawn points and the VTT adapter protocol, spec only (section 14).
-- **0.4.4 on** The adapter pieces in the apps (section 14.3), then one adapter per VTT with its **Open in …** links: spool up the scene, spawn the mobs, move the party to its entrance.
+- **0.4.4 on** The adapter pieces in the apps (section 14.4), then one adapter per VTT with its **Open in …** links: spool up the scene, spawn the mobs, move the party to its entrance.
 
 ## 12. Drawing maps: `tools/encounter_draw.py`
 
@@ -251,7 +251,7 @@ An adapter is a small piece of code inside one VTT: a Foundry module, an Owlbear
 - **Transport.** Same machine, no server: the adapter opens or embeds the E9 app (a Foundry popout window, an Owlbear extension popover) and the two talk with `window.postMessage`, each checking the other's origin, after the referee confirms a short pairing code shown on both sides. Where a VTT can't host a page (Roll20 API scripts, Fantasy Grounds), the fallback is a **file drop**: the app saves one `.e9vtt` bundle (the `.uvtt` plus the commands as a list) and the adapter's import button runs it.
 - **Never stored or sent**: VTT logins, passwords or API keys (section 13).
 
-### 14.4 Points of interest are entrances (Heph 2026-11-06, Atlas 0.4.5)
+### 14.3 Points of interest are entrances (Heph 2026-11-06, Atlas 0.4.5)
 
 Heph: "Each PoI is an Entrance into an Encounter Map. One encounter map might correspond to multiple PoI." A vast underground megadungeon or underdark cavern can be **one map** with a mouth under each of several PoIs, each in its own hex.
 
@@ -261,7 +261,7 @@ Heph: "Each PoI is an Entrance into an Encounter Map. One encounter map might co
 4. **Size.** An entrance can be as big as the 100-ft hex its PoI stands in: up to **25 × 20 squares** (paces). The checker warns past that.
 5. **Where it sits in the world.** Each entrance stands under its own PoI: the entrance's centre is the PoI's position (hex plus `ft` offset), north up. So a megadungeon needs no `anchor` for the whole map, and the Field view can outline each entrance's footprint in its own hex (to build with the Field outlines, section 11 slice 3). An entrance may set `"rotate"` (degrees clockwise) when the mouth faces another way on the map.
 
-### 14.3 Order of work
+### 14.4 Order of work
 
 1. This spec. Atlas 0.4.3.
 2. `spawns` in the checker, the viewer (entrances and spawn points drawn with the Walls overlay) and the `.uvtt` `e9` block, and the shared placement function `E9Map.place`. Done in Atlas 0.4.4.
