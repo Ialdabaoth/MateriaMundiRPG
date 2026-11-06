@@ -225,7 +225,7 @@ A map file may have a `spawns` block, keyed by id like `areas`:
 - **kind** is `entrance` (where the party arrives) or `spawn` (where creatures appear). An entrance can also take creatures, for an ambush that follows the party in.
 - **Where**: `squares` (a rectangle, or a list of them, as for areas) or `area` (an area id; the area's squares). A spawn with neither uses its scene's area.
 - **facing** (optional, `n`, `ne`, `e` … `nw`) is the way tokens face on arrival. **hidden** spawns put tokens down hidden from players, for the referee to reveal.
-- **Placement** is the same in every app and adapter: tokens fill the rectangle's squares left to right, top to bottom, starting from the square nearest its centre and skipping squares a wall crosses, one square per token (a creature's `size` in squares, when the bestiary gives one, takes a block). Extra tokens spill into the nearest free squares outside. The same input always places the same way.
+- **Placement** is the same in every app and adapter (`E9Map.place`, Atlas 0.4.4): free squares nearest the rectangle's centre come first (ties: top to bottom, then left to right), a square is skipped if a wall crosses its middle (the central 0.4 × 0.4 of it; a wall may clip a corner) or a token already stands there, and a creature of `size` n (in squares, from the bestiary; default 1) takes an n × n block. When the rectangle is full, tokens spill into the ring of squares around it, then the next ring, but only into squares a token could walk to from the open square nearest the rectangle's centre, stepping square to square without a wall or closed door crossing the line between their centres, (so a cave spawn never spills into solid rock, and a rectangle drawn a little over the rock still fills only its floor). The same input always places the same way.
 - **Pointers and links** may name an entrance: `{"map": "pale-keep", "entrance": "east-gate"}`. A PoI pointer with an entrance says where the party arrives when it opens the map from the world; a link (`links[].to`) with one says where a stair or path comes out on the other map.
 - **Scenes** (CREATURES_FORMAT.md section 7) may say where their `who` stand: `"map": {"map": "pale-keep", "area": "guard-tower", "spawn": "guard-room"}`, or per line, `{"creature": "fomhoire-scout", "count": "d6", "spawn": "wolf-den"}`. Without one, they spawn in the scene's area.
 - A map with no `spawns` still works: the party arrives in the pointed area (or the centre of the map) and creatures in their scene's area.
@@ -254,7 +254,7 @@ An adapter is a small piece of code inside one VTT: a Foundry module, an Owlbear
 ### 14.3 Order of work
 
 1. This spec. Atlas 0.4.3.
-2. `spawns` in the checker, the viewer (entrances and spawn points drawn with the Walls overlay) and the `.uvtt` `e9` block. The shared placement function in JS (and Python for tests).
+2. `spawns` in the checker, the viewer (entrances and spawn points drawn with the Walls overlay) and the `.uvtt` `e9` block, and the shared placement function `E9Map.place`. Done in Atlas 0.4.4.
 3. The first adapter: **Foundry VTT** (Heph 2026-11-06), an E9 Foundry module, with Open in links from section 13.
 4. More adapters, one VTT at a time.
 
