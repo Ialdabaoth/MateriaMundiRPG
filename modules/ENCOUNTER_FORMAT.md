@@ -134,6 +134,7 @@ Nothing in this section is built or promised for a version yet. It is here so th
 1. Each PoI sets its own Encounter size. Several PoIs may point into squares of the same map, or into different maps.
 2. Encounter maps get their own backgrounds of any size, or are stitched from assets of any size, so a Dungeon Scrawl PNG or JPG can simply be dropped in.
 3. Tokens, light and fog are coming later. The format leaves room to grow into a VTT and to integrate with other VTTs.
+4. (Heph 2026-11-06) A referee who uses a VTT account can link each map to its scene in that VTT. The links live in the campaign, not the module (section 13).
 
 ## 11. Build order (see section 12 for what exists)
 
@@ -146,6 +147,7 @@ Each slice is usable on its own:
 5. Universal VTT import, then export.
 6. Atlas editor "Add image" and area drawing.
 7. Play state in the Companion: tokens, then hand-revealed fog, then walls, doors and light.
+8. VTT links (section 13): pasted links and the Open button first, then an Export for VTT button, then account connections one VTT at a time.
 
 ## 12. Drawing maps: `tools/encounter_draw.py`
 
@@ -156,3 +158,36 @@ Beyond the Pale's first maps are drawn by our own tool, not traced from any publ
 - Any map can later swap its drawn layer for real art (a Dungeon Scrawl export, say) by editing `layers`; areas, links and scenes keep working.
 - **Pointers.** `module.json` key `site_encounters` maps a site name, as drawn, to its pointer list (section 4). The Atlas converter copies it onto that point of interest as `encounter`, and the build copies `encounter-maps/` to the site (without the plans) and lists the maps in the published module manifest under `encounter_maps`.
 - **Scenes.** Keyed rooms are scenes (CREATURES_FORMAT.md section 7) whose `where.room` and `map.area` share the area id.
+
+## 13. Links into a referee's VTT (Heph 2026-11-06)
+
+A referee who runs play in a VTT (Foundry, Roll20, Owlbear Rodeo, Fantasy Grounds, and so on) can link each Encounter map to the matching scene there. The Atlas and the Companion then open that scene directly. This section is a spec only: nothing is built yet.
+
+**Where the links are stored.** The module's map file stays the same for every referee and carries only VTT-neutral data (layers, grid, walls, doors, lights). The links belong to the **campaign**, because every referee has a different account, and a scene or room link often works as a join key that shouldn't ship inside a published module. They go in one file, `campaign/vtt.json`, keyed by map id:
+
+```json
+{
+  "format": "e9-vtt-links/1",
+  "accounts": {
+    "foundry": {"app": "foundry", "base": "https://my-table.example.com"},
+    "owlbear": {"app": "owlbear"}
+  },
+  "maps": {
+    "pale-keep":   [{"account": "foundry", "url": "https://my-table.example.com/game", "scene": "Pale Keep"}],
+    "crom-grotto": [{"account": "owlbear", "url": "https://www.owlbear.rodeo/room/..."}]
+  }
+}
+```
+
+- `accounts` names each VTT the referee uses: `app` is one of a short list (`foundry`, `roll20`, `owlbear`, `fgu`, `other`), and `base` is the server address for self-hosted apps. Logins, passwords and API keys are never stored here. A later account connection keeps its token on the referee's device, not in the campaign repo.
+- `maps` lists links per map id, and a map may have several, one per VTT. `url` is what the Open button follows. `scene`, `page` or `id` are optional labels or ids that a connection can use to jump straight to the scene, and the button shows them.
+- The file can be referee-only, so players don't see join links, or shared, so players can open the table from their Companion. The campaign decides (campaigns-as-git: the file sits in the campaign repo like any other).
+
+**How they're opened.**
+
+1. A map with a link in the current campaign shows **Open in Foundry** (or Roll20, or Owlbear) in the Atlas map view, the Companion's Run encounter screen, and a scene's card. It opens `url` in a new tab.
+2. A map with no link shows **Export for VTT**. It writes the `.uvtt` file from section 7 and then offers a box to paste the new scene's link back, which saves it to `vtt.json`.
+3. Later, with a connected account, **Send to Foundry** (and so on) creates the scene through that VTT's API and fills in the link itself. That is separate work for each VTT and comes last (section 11).
+
+**Module creators** can still ship ready-made VTT content, such as a Foundry adventure pack, as a separate download. The module points to it with an ordinary link in `module.json`, which is not a campaign link.
+
