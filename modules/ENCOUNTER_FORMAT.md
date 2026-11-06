@@ -156,8 +156,8 @@ Done so far: 1 (spec), 2 (maps open in the Atlas and the module viewer, Atlas 0.
 - **0.4.0, cleanup.** Walls, doors and lights from the drawing tool; `encounter_check.py` in the build; the viewer fills in the format's defaults in one place (`E9Map.load`), honours layer `rotate`, `opacity` and multi-rectangle areas, shows the play surface (Walls button) and has a hook for map buttons (`E9Map.actions`); the section 7 table checked against a real file; campaign links keyed by module (section 13).
 - **0.4.1** Export for VTT: `.uvtt` for Foundry, Fantasy Grounds Unity and Arkenforge, plus picture + grid size for Roll20 and Owlbear Rodeo. Done.
 - **0.4.2** Universal VTT import into a map file (`tools/uvtt_import.py`, a creator tool for now). Done.
-- **0.4.3** VTT links: paste a scene link, **Open in …** buttons.
-- **Later** Spool up a scene directly in a connected VTT (Send to Foundry and so on), one VTT at a time.
+- **0.4.3** Entrances, spawn points and the VTT adapter protocol, spec only (section 14).
+- **0.4.4 on** The adapter pieces in the apps (section 14.3), then one adapter per VTT with its **Open in …** links: spool up the scene, spawn the mobs, move the party to its entrance.
 
 ## 12. Drawing maps: `tools/encounter_draw.py`
 
@@ -204,3 +204,58 @@ A referee who runs play in a VTT (Foundry, Roll20, Owlbear Rodeo, Fantasy Ground
 
 **Module creators** can still ship ready-made VTT content, such as a Foundry adventure pack, as a separate download. The module points to it with an ordinary link in `module.json`, which is not a campaign link.
 
+
+## 14. Entrances, spawn points and VTT adapters (Heph 2026-11-06, Atlas 0.4.3, spec only)
+
+A `.uvtt` file is only the scene. To run an encounter in a VTT the E9 apps also have to **spawn the mobs** and **move everyone to their entrances**, and that needs code running inside each VTT: a per-VTT **adapter** (Heph: "we'll need a per-VTT wrapper anyways"). This section adds the map data adapters need and the one protocol every adapter speaks, so the Atlas and the Companion never carry VTT-specific code.
+
+### 14.1 Entrances and spawn points in the map file
+
+A map file may have a `spawns` block, keyed by id like `areas`:
+
+```json
+"spawns": {
+  "east-gate":  {"kind": "entrance", "squares": [60, 52, 3, 6], "title": "Over the drawbridge", "facing": "w"},
+  "cellar-up":  {"kind": "entrance", "squares": [12, 40, 2, 2], "title": "Up from the cellars"},
+  "guard-room": {"kind": "spawn", "area": "guard-tower"},
+  "wolf-den":   {"kind": "spawn", "squares": [4, 4, 5, 4], "hidden": true}
+}
+```
+
+- **kind** is `entrance` (where the party arrives) or `spawn` (where creatures appear). An entrance can also take creatures, for an ambush that follows the party in.
+- **Where**: `squares` (a rectangle, or a list of them, as for areas) or `area` (an area id; the area's squares). A spawn with neither uses its scene's area.
+- **facing** (optional, `n`, `ne`, `e` … `nw`) is the way tokens face on arrival. **hidden** spawns put tokens down hidden from players, for the referee to reveal.
+- **Placement** is the same in every app and adapter: tokens fill the rectangle's squares left to right, top to bottom, starting from the square nearest its centre and skipping squares a wall crosses, one square per token (a creature's `size` in squares, when the bestiary gives one, takes a block). Extra tokens spill into the nearest free squares outside. The same input always places the same way.
+- **Pointers and links** may name an entrance: `{"map": "pale-keep", "entrance": "east-gate"}`. A PoI pointer with an entrance says where the party arrives when it opens the map from the world; a link (`links[].to`) with one says where a stair or path comes out on the other map.
+- **Scenes** (CREATURES_FORMAT.md section 7) may say where their `who` stand: `"map": {"map": "pale-keep", "area": "guard-tower", "spawn": "guard-room"}`, or per line, `{"creature": "fomhoire-scout", "count": "d6", "spawn": "wolf-den"}`. Without one, they spawn in the scene's area.
+- A map with no `spawns` still works: the party arrives in the pointed area (or the centre of the map) and creatures in their scene's area.
+- `encounter_check.py` checks `spawns` (kind, squares on the map, area ids) and every `entrance` and `spawn` reference. A Universal VTT export carries `spawns` in its `e9` block.
+
+### 14.2 The adapter protocol (`e9-vtt/1`)
+
+An adapter is a small piece of code inside one VTT: a Foundry module, an Owlbear Rodeo extension, a Roll20 API script, a Fantasy Grounds extension. The E9 app (Atlas map view, Companion Run encounter) sends it **commands** and gets back **results** and **events**, all JSON:
+
+| Command | What the adapter does | Result |
+|---|---|---|
+| `hello` `{"protocol": "e9-vtt/1", "app": "atlas", "campaign": id}` | says what it can do | `{"vtt": "foundry", "version", "can": ["scene", "walls", "lights", "tokens", "move", "hide", "activate"]}` |
+| `scene.open` `{"map": "<module>:<map-id>", "uvtt": file or URL}` | finds the scene it made for this map before, or builds one from the `.uvtt` | `{"scene": vtt scene ref, "link": URL}`; the app saves the link in `vtt.json` (section 13) |
+| `scene.activate` `{"scene"}` | shows the scene to the players (Foundry: activate; Owlbear: open) | `ok` |
+| `tokens.spawn` `{"scene", "tokens": [{"id", "name", "creature", "img", "square": [x, y], "size": 1, "hidden": false, "disposition": "hostile"}]}` | creates tokens at those squares | `{"tokens": {e9 id: vtt token ref}}` |
+| `party.place` `{"scene", "entrance", "squares": [[x, y], ...], "actors": [character ids]}` | moves each player character's token there (creating it from the actor if missing): the "teleport" | `{"tokens": {...}}` |
+| `tokens.move` / `tokens.remove` / `tokens.reveal` | as named | `ok` |
+| `bye` | lets go | `ok` |
+
+- **The app works out the squares.** Placement (14.1) runs in the E9 app, so every adapter puts tokens in the same squares and an adapter stays small.
+- **Token ids** are E9's: `<scene id>/<creature id>#<n>` for creatures, the character id for player characters. The adapter keeps its own map from E9 ids to VTT refs, and the campaign's `vtt.json` gains `"actors": {character id: {account: vtt actor ref}}` so a character is always the same VTT actor.
+- **Events back** (later, for EVENTS_FORMAT.md triggers): `token.moved` `{"id", "square"}`, `door.opened`, `token.removed`. An adapter may send none.
+- **Transport.** Same machine, no server: the adapter opens or embeds the E9 app (a Foundry popout window, an Owlbear extension popover) and the two talk with `window.postMessage`, each checking the other's origin, after the referee confirms a short pairing code shown on both sides. Where a VTT can't host a page (Roll20 API scripts, Fantasy Grounds), the fallback is a **file drop**: the app saves one `.e9vtt` bundle (the `.uvtt` plus the commands as a list) and the adapter's import button runs it.
+- **Never stored or sent**: VTT logins, passwords or API keys (section 13).
+
+### 14.3 Order of work
+
+1. This spec. Atlas 0.4.3.
+2. `spawns` in the checker, the viewer (entrances and spawn points drawn with the Walls overlay) and the `.uvtt` `e9` block. The shared placement function in JS (and Python for tests).
+3. The first adapter: **Foundry VTT** (Heph 2026-11-06), an E9 Foundry module, with Open in links from section 13.
+4. More adapters, one VTT at a time.
+
+Module threads supply real `spawns` for their maps (Heph 2026-11-06: the Atlas provides capabilities, the module threads provide implementations and test data).
