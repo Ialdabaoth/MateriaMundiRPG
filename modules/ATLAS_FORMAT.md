@@ -1,7 +1,7 @@
 # E9 Atlas map format (draft, Atlas 0.2.x)
 
 How the E9 Atlas stores a region so the browser can draw any hex at any zoom on demand.
-Designed with Heph on 2026-11-05. Status: **draft**. The converter (`tools/atlas_convert.py`, Atlas 0.2.2) writes this format from today's maps on every build, into `atlas/` next to the viewer; the browser renderer (`tools/atlas.html`, Atlas 0.2.3) draws it at `atlas/index.html` as a preview next to the current viewer. Rule (Heph 2026-11-05): a click always zooms in one level, centred on the hex clicked; at Field level only a point of interest zooms further (to an Encounter map, specified in ENCOUNTER_FORMAT.md, not built yet). The build tools still read `module.json` (see MODULE_FORMAT.md).
+Designed with Heph on 2026-11-05. Status: **draft**. The converter (`tools/atlas_convert.py`, Atlas 0.2.2) writes this format from today's maps on every build, into `atlas/` next to the viewer; the browser renderer (`tools/atlas.html`, Atlas 0.2.3) draws it; since Atlas 0.3.0 it is one app at `<site>/atlas/` that loads any module listed in the site's `mm.json` (`?module=<id>`), and each module's `atlas/index.html` forwards there. Rule (Heph 2026-11-05): a click always zooms in one level, centred on the hex clicked; at Field level only a point of interest zooms further (to an Encounter map, specified in ENCOUNTER_FORMAT.md, not built yet). The build tools still read `module.json` (see MODULE_FORMAT.md).
 
 A map is one JSON file plus one 8-bit indexed PNG per March. You paint terrain in any image editor; everything else is in the JSON.
 
