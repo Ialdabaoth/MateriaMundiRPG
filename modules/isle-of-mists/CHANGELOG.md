@@ -2,6 +2,13 @@
 
 This module's version is its own. It does not follow the E9 Atlas (`modules/tools/ATLAS_VERSION`) or the E9 Companion; a change to the tools or apps alone never bumps it. Bump it only for changes to this module's content (text, sites, creatures, encounters, maps), using the rules in [WORKFLOWS.md](../WORKFLOWS.md#versioning).
 
+## 0.4.2 (2026-11-06)
+
+Place ranks for the E9 Atlas (`site_ranks`, Atlas 0.4.16), so that zooming out shows the island's great places instead of a pile of castle icons.
+- Rank 1, shown from the Region view (16 places): the great lordships' seats (Trim, Kilkenny, Maynooth, Carrickfergus, Dungannon, Askeaton, Ballintober, Daingean) and the island's great old places (Tara, Rathcroghan, Emain Macha, Cashel, Brú na Bóinne, Clonmacnoise, Armagh, Croagh Patrick).
+- Rank 2, shown from the March view (58 places): the other book and hand-picked castles, the best-known Sites and Monuments Record castles, and the notable mythic sites, such as Uisneach, Grianán Ailigh, Skellig Michael, Lough Gur and Lough Derg.
+- Everything else uses the Atlas defaults: towns 1, abbeys 2, other sites 3.
+
 ## 0.4.1 (2026-11-06)
 
 Gazetteer cleanup for the 131 castles taken from the Sites and Monuments Record.
