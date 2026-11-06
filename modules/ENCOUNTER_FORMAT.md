@@ -112,7 +112,7 @@ When `ground` is `"generate"`, the Atlas draws the squares from the world under 
 - **Secret and locked doors** have no Universal VTT field, so they ride in the `"e9"` block and are exported as ordinary closed doors.
 - The field names above were checked on 2026-11-06 against a sample Dungeondraft `.dd2vtt` (the uvtt2fgu project's `sampleMap.dd2vtt`) and the published Universal VTT notes. Check again against Foundry's Universal Battlemap Importer and Fantasy Grounds Unity's importer when the exporter is built.
 - **Export** (Atlas 0.4.1, `tools/vtt_export.html`): the **Export for VTT** button on the map view saves one `<module>-<map>.uvtt` (Heph 2026-11-06: E9 always writes `.uvtt`; the content is the same as a `.dd2vtt`): the players' layers flattened at the largest layer `px` (smaller if the picture would pass 16 megapixels, the iOS canvas limit), plus walls, doors and lights. Fields Universal VTT lacks (areas, links, anchor, secret and locked doors, licence and credit) go in an `"e9"` block that other tools ignore and E9 reads back. A second option saves the picture alone as PNG, named with its pixels per square, for VTTs that only take images (Roll20, Owlbear Rodeo). `E9VTT.uvtt(map)` gives the same object from script.
-- **Import** reads a `.uvtt`/`.dd2vtt` into a new map file and saves its image as a layer.
+- **Import** (Atlas 0.4.2): `python3 -I modules/tools/uvtt_import.py <file.uvtt> modules/<module>/encounter-maps [--id <map-id>] [--title ...] [--ft 5]` reads a `.uvtt`, `.dd2vtt` or `.df2vtt` into `<id>.json` and saves its picture, bytes unchanged, as `<id>/map.png` (or `.jpg`, `.webp`). `line_of_sight` and `objects_line_of_sight` both become `walls`; points are moved by `map_origin`. An E9 export's `e9` block brings back title, grid, areas, links, anchor, secret and locked doors, licence and credit, so export then import gives the same map file. A file from elsewhere gets an empty `licence`, to set before publishing; areas, links, scenes and the `site_encounters` pointer are the module author's to add.
 
 ## 8. Play state (later)
 
@@ -155,7 +155,7 @@ Done so far: 1 (spec), 2 (maps open in the Atlas and the module viewer, Atlas 0.
 
 - **0.4.0, cleanup.** Walls, doors and lights from the drawing tool; `encounter_check.py` in the build; the viewer fills in the format's defaults in one place (`E9Map.load`), honours layer `rotate`, `opacity` and multi-rectangle areas, shows the play surface (Walls button) and has a hook for map buttons (`E9Map.actions`); the section 7 table checked against a real file; campaign links keyed by module (section 13).
 - **0.4.1** Export for VTT: `.uvtt` for Foundry, Fantasy Grounds Unity and Arkenforge, plus picture + grid size for Roll20 and Owlbear Rodeo. Done.
-- **0.4.2** Universal VTT import into a map file.
+- **0.4.2** Universal VTT import into a map file (`tools/uvtt_import.py`, a creator tool for now). Done.
 - **0.4.3** VTT links: paste a scene link, **Open in …** buttons.
 - **Later** Spool up a scene directly in a connected VTT (Send to Foundry and so on), one VTT at a time.
 
