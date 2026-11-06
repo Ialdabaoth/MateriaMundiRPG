@@ -1,0 +1,491 @@
+{
+ "encounters": {
+  "scenes": {
+   "keep-east-gate": {
+    "title": "1-2 · The east gate",
+    "where": {
+     "site": "baile-atha-troim",
+     "room": "east-gate"
+    },
+    "who": [
+     {
+      "creature": "guard",
+      "count": 4
+     }
+    ],
+    "description": "Two 30 ft towers and a 20 ft gatehouse working the drawbridge, all granite, with arrow slits.",
+    "disposition": "friendly",
+    "map": {
+     "map": "pale-keep",
+     "area": "east-gate"
+    }
+   },
+   "keep-entry-court": {
+    "title": "3 · Entry courtyard",
+    "where": {
+     "site": "baile-atha-troim",
+     "room": "entry-court"
+    },
+    "who": [
+     {
+      "creature": "guard",
+      "count": 1
+     }
+    ],
+    "players": "Cobbles and bright banners. The watch corporal tells you to dismount and stable your mounts.",
+    "disposition": "friendly",
+    "map": {
+     "map": "pale-keep",
+     "area": "entry-court"
+    }
+   },
+   "keep-stables": {
+    "title": "4 · Common stables",
+    "where": {
+     "site": "baile-atha-troim",
+     "room": "stables"
+    },
+    "who": [],
+    "description": "d6+3 stable-boys and attendants. d6-1 each of light courier horses, draft horses and mules, besides the party's mounts.",
+    "map": {
+     "map": "pale-keep",
+     "area": "stables"
+    }
+   },
+   "keep-warehouse": {
+    "title": "5 · Common warehouse",
+    "where": {
+     "site": "baile-atha-troim",
+     "room": "warehouse"
+    },
+    "who": [],
+    "description": "Anything that cannot reasonably be carried, and any valuables, must be kept here while staying at the keep.",
+    "map": {
+     "map": "pale-keep",
+     "area": "warehouse"
+    }
+   },
+   "keep-bailiff": {
+    "title": "6 · The bailiff's tower",
+    "where": {
+     "site": "baile-atha-troim",
+     "room": "bailiff"
+    },
+    "who": [],
+    "description": "The bailiff keeps the peace in the public keep: a 3rd-level warrior and minor noble in mastercraft +1 plate (defense 4) with a mastercraft +1 longsword. (Not yet in the creature list.)",
+    "map": {
+     "map": "pale-keep",
+     "area": "bailiff"
+    }
+   },
+   "keep-apartments": {
+    "title": "7 · Private apartments",
+    "where": {
+     "site": "baile-atha-troim",
+     "room": "apartments"
+    },
+    "who": [],
+    "description": "Five well-furnished apartments for merchants and noble visitors, two more by the courtyard.",
+    "map": {
+     "map": "pale-keep",
+     "area": "apartments"
+    }
+   },
+   "keep-smithy": {
+    "title": "8 · The blacksmith",
+    "where": {
+     "site": "baile-atha-troim",
+     "room": "smithy"
+    },
+    "who": [
+     {
+      "creature": "blacksmith",
+      "count": 1
+     }
+    ],
+    "description": "She can craft common or uncommon magic items, but haggling with her is an exercise in frustration. Going through the trader smooths it over and doubles the price.",
+    "map": {
+     "map": "pale-keep",
+     "area": "smithy"
+    }
+   },
+   "keep-general-store": {
+    "title": "9 · General store",
+    "where": {
+     "site": "baile-atha-troim",
+     "room": "general-store"
+    },
+    "who": [],
+    "description": "Any reasonable mundane adventuring gear at standard prices. Arms and armour: next door.",
+    "map": {
+     "map": "pale-keep",
+     "area": "general-store"
+    }
+   },
+   "keep-trader": {
+    "title": "10 · The trader's shop",
+    "where": {
+     "site": "baile-atha-troim",
+     "room": "trader"
+    },
+    "who": [],
+    "description": "Fine clothing and the blacksmith's arms and armour; commissions in 2-3 days (plate or barding 1-2 weeks). Buys furs, hides, cloth, gold and jewellery for the seamstress wife.",
+    "map": {
+     "map": "pale-keep",
+     "area": "trader"
+    }
+   },
+   "keep-bank": {
+    "title": "11 · The bank",
+    "where": {
+     "site": "baile-atha-troim",
+     "room": "bank"
+    },
+    "who": [
+     {
+      "creature": "banker",
+      "count": 1
+     },
+     {
+      "creature": "bank-guard",
+      "count": 2
+     }
+    ],
+    "map": {
+     "map": "pale-keep",
+     "area": "bank"
+    }
+   },
+   "keep-guard-tower": {
+    "title": "12 · Guard tower",
+    "where": {
+     "site": "baile-atha-troim",
+     "room": "guard-tower"
+    },
+    "who": [
+     {
+      "creature": "guard",
+      "count": 2
+     }
+    ],
+    "map": {
+     "map": "pale-keep",
+     "area": "guard-tower"
+    }
+   },
+   "keep-courtyard": {
+    "title": "13 · Main courtyard and fountain",
+    "where": {
+     "site": "baile-atha-troim",
+     "room": "fountain"
+    },
+    "who": [],
+    "players": "Wide ornate brickwork around a large fountain.",
+    "map": {
+     "map": "pale-keep",
+     "area": "fountain"
+    }
+   },
+   "keep-inn": {
+    "title": "14 · The travellers' inn",
+    "where": {
+     "site": "baile-atha-troim",
+     "room": "inn"
+    },
+    "who": [],
+    "description": "Five private rooms at 1 drac a night; a common room of twelve bunks at a dime a bed.",
+    "map": {
+     "map": "pale-keep",
+     "area": "inn"
+    }
+   },
+   "keep-tavern": {
+    "title": "15 · The tavern",
+    "where": {
+     "site": "baile-atha-troim",
+     "room": "tavern"
+    },
+    "who": [
+     {
+      "creature": "barkeep",
+      "count": 1
+     },
+     {
+      "creature": "barkeeps-wife",
+      "count": 1
+     }
+    ],
+    "description": "At least 3d6 patrons at any hour. Meals 1-5 dimes, drink 5 pennies to a drac. The family's three children serve. Buy the barkeep a drink for a rumour (the d6 table in the text).",
+    "map": {
+     "map": "pale-keep",
+     "area": "tavern"
+    }
+   },
+   "keep-guild": {
+    "title": "16 · Merchant guild headquarters",
+    "where": {
+     "site": "baile-atha-troim",
+     "room": "guild"
+    },
+    "who": [],
+    "description": "Will pay a handsome reward for the missing merchant (held in the caves at F24).",
+    "map": {
+     "map": "pale-keep",
+     "area": "guild"
+    }
+   },
+   "keep-banker-house": {
+    "title": "7a · The banker's house",
+    "where": {
+     "site": "baile-atha-troim",
+     "room": "banker-house"
+    },
+    "who": [
+     {
+      "creature": "banker",
+      "count": 1
+     },
+     {
+      "creature": "bankers-wife",
+      "count": 1
+     },
+     {
+      "creature": "bank-guard",
+      "count": 2
+     }
+    ],
+    "description": "If bothered at home they gruffly send the party to the bank during business hours.",
+    "map": {
+     "map": "pale-keep",
+     "area": "banker-house"
+    }
+   },
+   "keep-priest-house": {
+    "title": "7b · The visiting priest",
+    "where": {
+     "site": "baile-atha-troim",
+     "room": "priest-house"
+    },
+    "who": [
+     {
+      "creature": "brother-james",
+      "count": 1
+     }
+    ],
+    "description": "A charming scholar-priest, eager to discuss Crom Cruach and to volunteer as a guide. Secretly a warlock of the cult: he will lead the party into the labyrinth at I and offer them to the baal-malak.",
+    "disposition": "friendly (feigned)",
+    "map": {
+     "map": "pale-keep",
+     "area": "priest-house"
+    }
+   },
+   "keep-chapel": {
+    "title": "17 · The chapel",
+    "where": {
+     "site": "baile-atha-troim",
+     "room": "chapel"
+    },
+    "who": [
+     {
+      "creature": "abbot-costello",
+      "count": 1
+     },
+     {
+      "creature": "sister-wendy",
+      "count": 1
+     },
+     {
+      "creature": "sister-abigail",
+      "count": 1
+     },
+     {
+      "creature": "brother-sean",
+      "count": 1
+     },
+     {
+      "creature": "brother-john",
+      "count": 1
+     },
+     {
+      "creature": "sister-penelope",
+      "count": 1
+     }
+    ],
+    "description": "The priests keep the whole keep hallowed ground.",
+    "map": {
+     "map": "pale-keep",
+     "area": "chapel"
+    }
+   },
+   "keep-inner-gate": {
+    "title": "18 · Inner gatehouse",
+    "where": {
+     "site": "baile-atha-troim",
+     "room": "inner-gate"
+    },
+    "who": [
+     {
+      "creature": "captain-of-the-guard",
+      "count": 1
+     },
+     {
+      "creature": "sergeant-at-arms",
+      "count": 1
+     },
+     {
+      "creature": "guard",
+      "count": 24
+     }
+    ],
+    "description": "Visitors need special permission to pass. If Sir Edward is persuaded, nine guards and the sergeant may go with the party to the caves.",
+    "map": {
+     "map": "pale-keep",
+     "area": "inner-gate"
+    }
+   },
+   "keep-watchtowers": {
+    "title": "19-20 · Watchtowers",
+    "where": {
+     "site": "baile-atha-troim",
+     "room": "watchtowers"
+    },
+    "who": [
+     {
+      "creature": "guard",
+      "count": 12
+     }
+    ],
+    "description": "Six guards in each, two on post at the top. The larger tower (20) mounts a ballista.",
+    "map": {
+     "map": "pale-keep",
+     "area": "watchtowers"
+    }
+   },
+   "keep-inner-bailey": {
+    "title": "21 · The inner bailey",
+    "where": {
+     "site": "baile-atha-troim",
+     "room": "inner-bailey"
+    },
+    "who": [
+     {
+      "creature": "guard",
+      "count": 20
+     }
+    ],
+    "description": "By day, at least two ten-man ranks of guards drill on the grass.",
+    "map": {
+     "map": "pale-keep",
+     "area": "inner-bailey"
+    }
+   },
+   "keep-cavalry-stables": {
+    "title": "22 · Cavalry stables",
+    "where": {
+     "site": "baile-atha-troim",
+     "room": "cavalry-stables"
+    },
+    "who": [
+     {
+      "creature": "guard",
+      "count": 2
+     }
+    ],
+    "description": "Thirty warhorses, d6 light courier horses, two stable hands.",
+    "map": {
+     "map": "pale-keep",
+     "area": "cavalry-stables"
+    }
+   },
+   "keep-great-tower": {
+    "title": "23 · The great tower",
+    "where": {
+     "site": "baile-atha-troim",
+     "room": "great-tower"
+    },
+    "who": [
+     {
+      "creature": "chief-engineer",
+      "count": 1
+     },
+     {
+      "creature": "apprentice-engineer",
+      "count": 5
+     },
+     {
+      "creature": "guard",
+      "count": 24
+     }
+    ],
+    "description": "The storm cannon, an artifact siege weapon brought from Albion against dragons and ogres. The engineers never stop repairing it.",
+    "map": {
+     "map": "pale-keep",
+     "area": "great-tower"
+    }
+   },
+   "keep-fortress": {
+    "title": "24 · The fortress",
+    "where": {
+     "site": "baile-atha-troim",
+     "room": "fortress"
+    },
+    "who": [
+     {
+      "creature": "sir-edward-the-castellan",
+      "count": 1
+     },
+     {
+      "creature": "dame-macgeralt",
+      "count": 1
+     }
+    ],
+    "description": "Steel doors 20 ft wide and 15 ft high; a courtyard, great hall and armory inside. Guards' quarters (26) and the castellan's quarters (27) are on top.",
+    "wants": "Sir Edward sees the beastfolk and lizardfolk across the river as the real threat and will not leave the keep undefended on a rumour.",
+    "map": {
+     "map": "pale-keep",
+     "area": "fortress"
+    }
+   },
+   "keep-cliff-towers": {
+    "title": "25 · Thunder-rattler towers",
+    "where": {
+     "site": "baile-atha-troim",
+     "room": "cliff-towers"
+    },
+    "who": [
+     {
+      "creature": "guard",
+      "count": 4
+     }
+    ],
+    "description": "Each holds a thunder rattler against raiders climbing the cliff.",
+    "map": {
+     "map": "pale-keep",
+     "area": "cliff-towers"
+    }
+   },
+   "keep-lift": {
+    "title": "28 · The lift beneath the mountain",
+    "where": {
+     "site": "baile-atha-troim",
+     "room": "lift"
+    },
+    "who": [
+     {
+      "creature": "sir-edward-the-castellan",
+      "count": 1
+     },
+     {
+      "creature": "chief-engineer",
+      "count": 1
+     }
+    ],
+    "description": "A secret lift down to the Siege Perilous (+2 keen longsword, +3 mirror shield, thunder pinions), kept by a dwarf crew: seven dweomersmiths, twelve stalwarts, three delvers. They help with nothing else. (Golem and dwarves not yet in the creature list.)",
+    "map": {
+     "map": "pale-keep",
+     "area": "lift"
+    }
+   }
+  }
+ }
+}

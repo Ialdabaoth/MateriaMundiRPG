@@ -5,7 +5,7 @@
  ],
  "title": "Beyond the Pale: Leinster, 1422",
  "short": "Beyond the Pale · Leinster, 1422",
- "version": "0.3.5",
+ "version": "0.3.6",
  "license": "CC0-1.0",
  "dem": [
   52,
@@ -82,6 +82,19 @@
   "Pluais an Athaigh": "forest-cave",
   "Sliabh Mairge": "forest-hill",
   "Brú na Bóinne": "stone-circle"
+ },
+ "site_encounters": {
+  "Baile Átha Troim": [{"map": "pale-keep", "label": "The Pale Keep"}],
+  "Móin Chluain Caoimhín (bog bodies)": [{"map": "bog-barrows", "label": "The Péistduine barrows"}],
+  "Nead an Damháin Alla": [{"map": "nead-an-damhain-alla", "label": "The web across the road"}],
+  "Dúnad Faoladh": [{"map": "dunad-faoladh", "label": "The wolf camp"}],
+  "Sliabh na Caillí": [{"map": "hermits-hollow", "label": "The hermit's hollow oak"}],
+  "Cnoc na Teamhrach": [
+   {"map": "crom-grotto", "label": "The grotto"},
+   {"map": "crom-cave-a", "label": "A · Péistduine warrens"},
+   {"map": "crom-caves-b-c", "label": "B and C · Blacktooth and Bloodhand"},
+   {"map": "crom-caves-d-e-f", "label": "D, E and F · Skitterglint clan"}
+  ]
  },
  "regions": {
   "an-mhi": {
@@ -452,7 +465,7 @@
      "caves and labyrinth"
     ],
     [
-     "Móin Alúine",
+     "Móin Chluain Caoimhín (bog bodies)",
      53.535,
      -6.965,
      "lair",

@@ -1,0 +1,69 @@
+{
+ "format": "e9-encounter-map/1",
+ "id": "dunad-faoladh",
+ "title": "Dúnad Faoladh: the wolf camp",
+ "size": [
+  36,
+  28
+ ],
+ "grid": {
+  "ft": 5,
+  "show": true
+ },
+ "layers": [
+  {
+   "src": "dunad-faoladh/map.jpg",
+   "at": [
+    0,
+    0
+   ],
+   "px": 40
+  }
+ ],
+ "ground": "none",
+ "terrain": "forest",
+ "areas": {
+  "fire": {
+   "squares": [
+    14,
+    11,
+    8,
+    6
+   ],
+   "title": "1 · The fire ring"
+  },
+  "pucca": {
+   "squares": [
+    8,
+    7,
+    8,
+    7
+   ],
+   "title": "2 · The wolf-folk hide tent"
+  },
+  "fauns": {
+   "squares": [
+    20,
+    6,
+    10,
+    9
+   ],
+   "title": "3 · Faun tents"
+  },
+  "druid": {
+   "squares": [
+    19,
+    15,
+    9,
+    8
+   ],
+   "title": "4 · The druid's tent and the stake line"
+  }
+ },
+ "walls": [],
+ "doors": [],
+ "lights": [],
+ "environment": {},
+ "licence": "CC0",
+ "credit": "Drawn for Beyond the Pale with the E9 Atlas encounter tool (original layout, no traced art)"
+}

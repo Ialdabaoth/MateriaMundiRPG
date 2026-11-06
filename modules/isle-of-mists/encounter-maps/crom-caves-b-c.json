@@ -1,0 +1,164 @@
+{
+ "format": "e9-encounter-map/1",
+ "id": "crom-caves-b-c",
+ "title": "Caves of Crom Cruach: B and C, the Blacktooth and Bloodhand clans",
+ "size": [
+  54,
+  40
+ ],
+ "grid": {
+  "ft": 5,
+  "show": true
+ },
+ "layers": [
+  {
+   "src": "crom-caves-b-c/map.jpg",
+   "at": [
+    0,
+    0
+   ],
+   "px": 40
+  }
+ ],
+ "ground": "none",
+ "areas": {
+  "b-trophy-hall": {
+   "squares": [
+    7,
+    28,
+    12,
+    7
+   ],
+   "title": "B · Trophy wall and spy window"
+  },
+  "b-guard-7": {
+   "squares": [
+    0,
+    25,
+    7,
+    7
+   ],
+   "title": "7 · Dice-table guard room"
+  },
+  "b-guard-8": {
+   "squares": [
+    19,
+    25,
+    7,
+    7
+   ],
+   "title": "8 · Guard room"
+  },
+  "b-mess-9": {
+   "squares": [
+    6,
+    16,
+    13,
+    8
+   ],
+   "title": "9 · Mess hall"
+  },
+  "b-common-10": {
+   "squares": [
+    0,
+    6,
+    12,
+    9
+   ],
+   "title": "10 · Common room"
+  },
+  "b-armory-11": {
+   "squares": [
+    18,
+    10,
+    8,
+    6
+   ],
+   "title": "11 · Armory (locked)"
+  },
+  "b-chief-12": {
+   "squares": [
+    13,
+    1,
+    13,
+    9
+   ],
+   "title": "12 · Blacktooth chieftain"
+  },
+  "parley-13": {
+   "squares": [
+    26,
+    4,
+    5,
+    4
+   ],
+   "title": "13 · Secret parley room"
+  },
+  "c-common-14": {
+   "squares": [
+    33,
+    25,
+    15,
+    9
+   ],
+   "title": "14 · Bloodhand common room"
+  },
+  "c-mess-15": {
+   "squares": [
+    41,
+    15,
+    11,
+    8
+   ],
+   "title": "15 · Mess hall"
+  },
+  "c-larder-g": {
+   "squares": [
+    35,
+    10,
+    7,
+    6
+   ],
+   "title": "Guard post and larder"
+  },
+  "c-chief-16": {
+   "squares": [
+    31,
+    2,
+    10,
+    8
+   ],
+   "title": "16 · Bloodhand chieftain"
+  }
+ },
+ "links": [
+  {
+   "from": [
+    13,
+    39
+   ],
+   "to": {
+    "map": "crom-grotto",
+    "area": "cave-b"
+   },
+   "label": "Out to the grotto (B)"
+  },
+  {
+   "from": [
+    44,
+    39
+   ],
+   "to": {
+    "map": "crom-grotto",
+    "area": "cave-c"
+   },
+   "label": "Out to the grotto (C)"
+  }
+ ],
+ "walls": [],
+ "doors": [],
+ "lights": [],
+ "environment": {},
+ "licence": "CC0",
+ "credit": "Drawn for Beyond the Pale with the E9 Atlas encounter tool (original layout, no traced art)"
+}

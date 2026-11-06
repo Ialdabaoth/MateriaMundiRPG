@@ -1,0 +1,108 @@
+{
+ "format": "e9-encounter-map/1",
+ "id": "crom-cave-a",
+ "title": "Caves of Crom Cruach: A, the Péistduine warrens",
+ "size": [
+  44,
+  36
+ ],
+ "grid": {
+  "ft": 5,
+  "show": true
+ },
+ "layers": [
+  {
+   "src": "crom-cave-a/map.jpg",
+   "at": [
+    0,
+    0
+   ],
+   "px": 40
+  }
+ ],
+ "ground": "none",
+ "areas": {
+  "mouth": {
+   "squares": [
+    6,
+    29,
+    7,
+    7
+   ],
+   "title": "Cave mouth and pit trap"
+  },
+  "guard-post": {
+   "squares": [
+    1,
+    23,
+    7,
+    6
+   ],
+   "title": "1 · Guard post"
+  },
+  "midden": {
+   "squares": [
+    0,
+    7,
+    10,
+    9
+   ],
+   "title": "2 · Rat midden"
+  },
+  "larder": {
+   "squares": [
+    6,
+    2,
+    10,
+    7
+   ],
+   "title": "3 · Larder"
+  },
+  "lizard-guard": {
+   "squares": [
+    18,
+    15,
+    8,
+    8
+   ],
+   "title": "4 · Troglodyte guard station"
+  },
+  "bone-mother": {
+   "squares": [
+    28,
+    3,
+    14,
+    12
+   ],
+   "title": "5 · The bone mother's lair"
+  },
+  "den": {
+   "squares": [
+    25,
+    22,
+    17,
+    12
+   ],
+   "title": "6 · Common den"
+  }
+ },
+ "links": [
+  {
+   "from": [
+    9,
+    35
+   ],
+   "to": {
+    "map": "crom-grotto",
+    "area": "cave-a"
+   },
+   "label": "Out to the grotto"
+  }
+ ],
+ "walls": [],
+ "doors": [],
+ "lights": [],
+ "environment": {},
+ "licence": "CC0",
+ "credit": "Drawn for Beyond the Pale with the E9 Atlas encounter tool (original layout, no traced art)"
+}

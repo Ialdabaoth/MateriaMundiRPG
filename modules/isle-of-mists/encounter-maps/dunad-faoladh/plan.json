@@ -1,0 +1,267 @@
+{
+ "title": "Dúnad Faoladh: the wolf camp",
+ "size": [
+  36,
+  28
+ ],
+ "px": 40,
+ "seed": 67,
+ "style": "outdoor",
+ "ground": "grass",
+ "terrain": "forest",
+ "road": [
+  {
+   "blob": [
+    18,
+    14,
+    9,
+    6.5
+   ]
+  },
+  {
+   "path": [
+    [
+     18,
+     -1
+    ],
+    [
+     18,
+     8
+    ]
+   ],
+   "w": 1.4
+  }
+ ],
+ "water": [
+  {
+   "path": [
+    [
+     3,
+     -1
+    ],
+    [
+     4,
+     9
+    ],
+    [
+     2.5,
+     18
+    ],
+    [
+     4,
+     29
+    ]
+   ],
+   "w": 1.4
+  }
+ ],
+ "trees": [
+  {
+   "in": {
+    "rect": [
+     0,
+     0,
+     36,
+     28
+    ]
+   },
+   "n": 60,
+   "kind": "oak",
+   "r": 1.4
+  },
+  {
+   "in": {
+    "rect": [
+     0,
+     0,
+     36,
+     28
+    ]
+   },
+   "n": 30,
+   "kind": "scrub",
+   "r": 0.7
+  }
+ ],
+ "marks": [
+  {
+   "t": "fire",
+   "at": [
+    18,
+    14
+   ],
+   "r": 0.6
+  },
+  {
+   "t": "bones",
+   "at": [
+    16,
+    16
+   ],
+   "n": 5,
+   "spread": 1
+  },
+  {
+   "t": "tent",
+   "at": [
+    12,
+    10.5
+   ],
+   "size": [
+    4,
+    3
+   ]
+  },
+  {
+   "t": "tent",
+   "at": [
+    22.5,
+    9
+   ],
+   "size": [
+    3,
+    2.5
+   ]
+  },
+  {
+   "t": "tent",
+   "at": [
+    26.5,
+    12.5
+   ],
+   "size": [
+    3,
+    2.5
+   ]
+  },
+  {
+   "t": "tent",
+   "at": [
+    23.5,
+    18.5
+   ],
+   "size": [
+    3,
+    3
+   ]
+  },
+  {
+   "t": "stake",
+   "at": [
+    20,
+    16.4
+   ],
+   "n": 5,
+   "dx": 1.4,
+   "dy": 0
+  },
+  {
+   "t": "stake",
+   "at": [
+    19.6,
+    17.6
+   ],
+   "n": 3,
+   "dx": 0,
+   "dy": 1.2
+  },
+  {
+   "t": "table",
+   "at": [
+    11.5,
+    17.5
+   ],
+   "size": [
+    3,
+    1
+   ]
+  },
+  {
+   "t": "num",
+   "at": [
+    18,
+    11.6
+   ],
+   "text": "1"
+  },
+  {
+   "t": "num",
+   "at": [
+    12,
+    7.8
+   ],
+   "text": "2"
+  },
+  {
+   "t": "num",
+   "at": [
+    24.5,
+    6.6
+   ],
+   "text": "3"
+  },
+  {
+   "t": "num",
+   "at": [
+    26,
+    20.8
+   ],
+   "text": "4"
+  },
+  {
+   "t": "label",
+   "at": [
+    18,
+    1.8
+   ],
+   "text": "trail to the road"
+  },
+  {
+   "t": "label",
+   "at": [
+    18,
+    26.4
+   ],
+   "text": "Dúnad Faoladh",
+   "big": true
+  }
+ ],
+ "areas": {
+  "fire": {
+   "squares": [
+    14,
+    11,
+    8,
+    6
+   ],
+   "title": "1 · The fire ring"
+  },
+  "pucca": {
+   "squares": [
+    8,
+    7,
+    8,
+    7
+   ],
+   "title": "2 · The wolf-folk hide tent"
+  },
+  "fauns": {
+   "squares": [
+    20,
+    6,
+    10,
+    9
+   ],
+   "title": "3 · Faun tents"
+  },
+  "druid": {
+   "squares": [
+    19,
+    15,
+    9,
+    8
+   ],
+   "title": "4 · The druid's tent and the stake line"
+  }
+ }
+}

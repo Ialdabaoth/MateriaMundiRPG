@@ -1,7 +1,7 @@
 # E9 Encounter map format (draft)
 
 How a module stores its **Encounter maps** (the 5-ft-square battle maps below the Field level of the E9 Atlas), how points of interest and scenes point into them, and how they can grow into a virtual tabletop later.
-Designed with Heph on 2026-11-05. Status: **draft, nothing built yet**. Sits under ATLAS_FORMAT.md (the hex levels) and beside CREATURES_FORMAT.md (who is there) and EVENTS_FORMAT.md (what happens).
+Designed with Heph on 2026-11-05. Status: **draft**. Map files and the drawing tool exist (section 12); the Atlas does not open them yet. Sits under ATLAS_FORMAT.md (the hex levels) and beside CREATURES_FORMAT.md (who is there) and EVENTS_FORMAT.md (what happens).
 
 ## 1. The idea in one paragraph
 
@@ -135,7 +135,7 @@ Nothing in this section is built or promised for a version yet. It is here so th
 2. Encounter maps get their own backgrounds of any size, or are stitched from assets of any size, so a Dungeon Scrawl PNG or JPG can simply be dropped in.
 3. Tokens, light and fog are coming later. The format leaves room to grow into a VTT and to integrate with other VTTs.
 
-## 11. Build order
+## 11. Build order (see section 12 for what exists)
 
 Each slice is usable on its own:
 
@@ -146,3 +146,13 @@ Each slice is usable on its own:
 5. Universal VTT import, then export.
 6. Atlas editor "Add image" and area drawing.
 7. Play state in the Companion: tokens, then hand-revealed fog, then walls, doors and light.
+
+## 12. Drawing maps: `tools/encounter_draw.py`
+
+Beyond the Pale's first maps are drawn by our own tool, not traced from any published map (Heph 2026-11-05: the old pro maps were redraws of classic modules and are not licensable, so ours are feel-alikes with their own identity). The hex tiles are hex art, so they are not used here either.
+
+- Each map has a hand-written plan, `encounter-maps/<id>/plan.json`, in squares: shapes for open floor (`rect`, `blob`, `path`, `poly`), water, roads, mounds, cliffs, curtain walls, towers, roofed buildings, seeded tree scatter, and marks (room numbers, cave letters, doors, secret doors, pit traps, stairs, webs, tents, nests, bones and so on). The tool's docstring lists every key.
+- `python3 -I modules/tools/encounter_draw.py modules/<module>/encounter-maps [id ...]` draws `<id>/map.jpg` in the E9 ink style and writes `<id>.json` in this format, with the plan's areas, links and notes. The same plan and seed always draw the same picture.
+- Any map can later swap its drawn layer for real art (a Dungeon Scrawl export, say) by editing `layers`; areas, links and scenes keep working.
+- **Pointers.** `module.json` key `site_encounters` maps a site name, as drawn, to its pointer list (section 4). The Atlas converter copies it onto that point of interest as `encounter`, and the build copies `encounter-maps/` to the site (without the plans) and lists the maps in the published module manifest under `encounter_maps`.
+- **Scenes.** Keyed rooms are scenes (CREATURES_FORMAT.md section 7) whose `where.room` and `map.area` share the area id.

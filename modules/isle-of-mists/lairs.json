@@ -1,0 +1,1579 @@
+{
+ "encounters": {
+  "creatures": {
+   "peistduine-bone-mother": {
+    "name": "Péistduine bone mother",
+    "kind": "monster",
+    "is": "kobold",
+    "lair": {
+     "site": "moin-chluain-caoimhin-bog-bodies",
+     "room": "bone-mother"
+    },
+    "faction": "peistduine-of-the-bog",
+    "description": "The tribe's druid and leader. Her bag of holding is full of severed heads, kept fresh for the pot.",
+    "wants": "To take back the warrens in Cnoc na Teamhrach that the Blacktooth goblins drove her people from."
+   },
+   "peistduine-hunter": {
+    "name": "Péistduine hunter",
+    "kind": "monster",
+    "is": "kobold",
+    "lair": {
+     "site": "moin-chluain-caoimhin-bog-bodies",
+     "room": "hunters"
+    },
+    "troupe": {
+     "lair": 6
+    },
+    "faction": "peistduine-of-the-bog",
+    "description": "Night hunters who waylay travellers on the road just out of sight of the keep."
+   },
+   "peistduine-champion": {
+    "name": "Péistduine champion",
+    "kind": "monster",
+    "is": "kobold",
+    "lair": {
+     "site": "moin-chluain-caoimhin-bog-bodies",
+     "room": "cook-fire"
+    },
+    "troupe": {
+     "lair": 3
+    },
+    "faction": "peistduine-of-the-bog"
+   },
+   "peistduine-young": {
+    "name": "Péistduine young",
+    "kind": "monster",
+    "is": "kobold",
+    "lair": {
+     "site": "moin-chluain-caoimhin-bog-bodies",
+     "room": "hatchery"
+    },
+    "troupe": {
+     "lair": 8
+    },
+    "faction": "peistduine-of-the-bog",
+    "description": "They flee or hide rather than fight."
+   },
+   "ettercap-champion": {
+    "name": "Ettercap champion",
+    "kind": "monster",
+    "is": "ettercap",
+    "lair": {
+     "site": "nead-an-damhain-alla",
+     "room": "alcove"
+    },
+    "description": "The female. Fierce in defence of her egg sac, hidden in the pines to the south-east."
+   },
+   "ettercap-hunter": {
+    "name": "Ettercap hunter",
+    "kind": "monster",
+    "is": "ettercap",
+    "lair": {
+     "site": "nead-an-damhain-alla",
+     "room": "tunnel"
+    }
+   },
+   "faoladh-chieftain": {
+    "name": "Faoladh chieftain",
+    "kind": "monster",
+    "is": "werewolf",
+    "lair": {
+     "site": "dunad-faoladh",
+     "room": "pucca"
+    },
+    "faction": "faoladh-of-the-wolf-camp",
+    "description": "A wolf pucca whose true shape is the wolf. Grabs the venom scythe if there is time."
+   },
+   "faoladh-champion": {
+    "name": "Faoladh champion",
+    "kind": "monster",
+    "is": "werewolf",
+    "lair": {
+     "site": "dunad-faoladh",
+     "room": "pucca"
+    },
+    "troupe": {
+     "lair": 2
+    },
+    "faction": "faoladh-of-the-wolf-camp"
+   },
+   "faoladh-hunter": {
+    "name": "Faoladh hunter",
+    "kind": "monster",
+    "is": "werewolf",
+    "lair": {
+     "site": "dunad-faoladh",
+     "room": "pucca"
+    },
+    "troupe": {
+     "lair": 2
+    },
+    "faction": "faoladh-of-the-wolf-camp"
+   },
+   "wolf-faun-champion": {
+    "name": "Wolf-faun champion",
+    "kind": "monster",
+    "is": "faun",
+    "lair": {
+     "site": "dunad-faoladh",
+     "room": "fauns"
+    },
+    "troupe": {
+     "lair": 2
+    },
+    "faction": "faoladh-of-the-wolf-camp"
+   },
+   "wolf-faun-hunter": {
+    "name": "Wolf-faun hunter",
+    "kind": "monster",
+    "is": "faun",
+    "lair": {
+     "site": "dunad-faoladh",
+     "room": "fauns"
+    },
+    "troupe": {
+     "lair": 3
+    },
+    "faction": "faoladh-of-the-wolf-camp"
+   },
+   "wolf-faun-druid": {
+    "name": "Wolf-faun druid",
+    "kind": "monster",
+    "is": "faun",
+    "lair": {
+     "site": "dunad-faoladh",
+     "room": "druid"
+    },
+    "faction": "faoladh-of-the-wolf-camp"
+   },
+   "the-hermit": {
+    "name": "The hermit",
+    "kind": "npc",
+    "is": "druid",
+    "lair": {
+     "site": "sliabh-na-cailli",
+     "room": "oak"
+    },
+    "faction": "unseelie",
+    "description": "An elf druid who passes as a devout nature hermit. Violently set against the Albians; she will try to murder the party at the first chance.",
+    "wants": "To drive the Albians off \"her island\"."
+   },
+   "hermits-leopard": {
+    "name": "The hermit's leopard",
+    "kind": "beast",
+    "is": "leopard",
+    "lair": {
+     "site": "sliabh-na-cailli",
+     "room": "oak"
+    }
+   },
+   "hermits-wisp": {
+    "name": "Wisp",
+    "kind": "beast",
+    "is": "wisp",
+    "lair": {
+     "site": "sliabh-na-cailli",
+     "room": "gardens"
+    },
+    "troupe": {
+     "lair": 2
+    },
+    "description": "The hermit's two companion wisps."
+   },
+   "warren-bone-mother": {
+    "name": "Warren bone mother",
+    "kind": "monster",
+    "is": "kobold",
+    "lair": {
+     "site": "cnoc-na-teamhrach",
+     "room": "A-5"
+    },
+    "faction": "peistduine-of-the-warrens"
+   },
+   "warren-hunter": {
+    "name": "Warren hunter",
+    "kind": "monster",
+    "is": "kobold",
+    "lair": {
+     "site": "cnoc-na-teamhrach",
+     "room": "A-6"
+    },
+    "troupe": {
+     "lair": "3d6"
+    },
+    "faction": "peistduine-of-the-warrens"
+   },
+   "warren-champion": {
+    "name": "Warren champion",
+    "kind": "monster",
+    "is": "kobold",
+    "lair": {
+     "site": "cnoc-na-teamhrach",
+     "room": "A-6"
+    },
+    "troupe": {
+     "lair": "4d6"
+    },
+    "faction": "peistduine-of-the-warrens"
+   },
+   "warren-young": {
+    "name": "Warren young",
+    "kind": "monster",
+    "is": "kobold",
+    "lair": {
+     "site": "cnoc-na-teamhrach",
+     "room": "A-6"
+    },
+    "troupe": {
+     "lair": "2d6"
+    },
+    "faction": "peistduine-of-the-warrens"
+   },
+   "troglodyte-hunter": {
+    "name": "Troglodyte hunter",
+    "kind": "monster",
+    "is": "troglodyte",
+    "lair": {
+     "site": "cnoc-na-teamhrach",
+     "room": "A-4"
+    },
+    "troupe": {
+     "lair": 2
+    },
+    "faction": "peistduine-of-the-warrens",
+    "description": "Human-sized; they shoot any non-lizardfolk on sight."
+   },
+   "giant-rat": {
+    "name": "Giant rat",
+    "kind": "beast",
+    "is": "giant rat",
+    "lair": {
+     "site": "cnoc-na-teamhrach",
+     "room": "A-2"
+    },
+    "troupe": {
+     "lair": "2d6"
+    },
+    "description": "Plague rats. A bitten creature hit by a critical saves vs. disease; a 1 on that save means the Plague."
+   },
+   "blacktooth-chieftain": {
+    "name": "Blacktooth chieftain",
+    "kind": "monster",
+    "is": "hobgoblin",
+    "lair": {
+     "site": "cnoc-na-teamhrach",
+     "room": "B-12"
+    },
+    "faction": "blacktooth-clan",
+    "description": "Wears chainmail and a dwarven common +1 bracer of shielding, and a dwarven signet ring worth 700 drac."
+   },
+   "blacktooth-champion": {
+    "name": "Blacktooth champion",
+    "kind": "monster",
+    "is": "hobgoblin",
+    "lair": {
+     "site": "cnoc-na-teamhrach",
+     "room": "B-10"
+    },
+    "troupe": {
+     "lair": "2d6"
+    },
+    "faction": "blacktooth-clan"
+   },
+   "blacktooth-hunter": {
+    "name": "Blacktooth hunter",
+    "kind": "monster",
+    "is": "hobgoblin",
+    "lair": {
+     "site": "cnoc-na-teamhrach",
+     "room": "B-10"
+    },
+    "troupe": {
+     "lair": "3d6"
+    },
+    "faction": "blacktooth-clan"
+   },
+   "goblin-young": {
+    "name": "Goblin young",
+    "kind": "monster",
+    "is": "goblin",
+    "lair": {
+     "site": "cnoc-na-teamhrach",
+     "room": "B-10"
+    },
+    "troupe": {
+     "lair": "2d6"
+    },
+    "faction": "blacktooth-clan",
+    "description": "They flee or hide rather than fight."
+   },
+   "bloodhand-chieftain": {
+    "name": "Bloodhand chieftain",
+    "kind": "monster",
+    "is": "goblin",
+    "lair": {
+     "site": "cnoc-na-teamhrach",
+     "room": "C-16"
+    },
+    "faction": "bloodhand-clan",
+    "description": "Wears dwarf-made banded armour in slight need of repair and dwarven jewellery: a silver-and-gold belt (160 drac), an ivory bracelet (100 drac) and a gold-and-garnet signet (100 drac)."
+   },
+   "bloodhand-hunter": {
+    "name": "Bloodhand hunter",
+    "kind": "monster",
+    "is": "goblin",
+    "lair": {
+     "site": "cnoc-na-teamhrach",
+     "room": "C-14"
+    },
+    "troupe": {
+     "lair": "2d6"
+    },
+    "faction": "bloodhand-clan"
+   },
+   "skitterglint-subchief": {
+    "name": "Skitterglint redcap sub-chieftain",
+    "kind": "monster",
+    "is": "goblin",
+    "lair": {
+     "site": "cnoc-na-teamhrach",
+     "room": "D-20"
+    },
+    "faction": "skitterglint-clan"
+   },
+   "skitterglint-redcap-champion": {
+    "name": "Skitterglint redcap champion",
+    "kind": "monster",
+    "is": "goblin",
+    "lair": {
+     "site": "cnoc-na-teamhrach",
+     "room": "D-19"
+    },
+    "troupe": {
+     "lair": "4d6"
+    },
+    "faction": "skitterglint-clan"
+   },
+   "skitterglint-redcap-hunter": {
+    "name": "Skitterglint redcap hunter",
+    "kind": "monster",
+    "is": "goblin",
+    "lair": {
+     "site": "cnoc-na-teamhrach",
+     "room": "D-19"
+    },
+    "troupe": {
+     "lair": "4d6"
+    },
+    "faction": "skitterglint-clan"
+   },
+   "skitterglint-redcap-druid": {
+    "name": "Skitterglint redcap druid",
+    "kind": "monster",
+    "is": "goblin",
+    "lair": {
+     "site": "cnoc-na-teamhrach",
+     "room": "D-19"
+    },
+    "troupe": {
+     "lair": 2
+    },
+    "faction": "skitterglint-clan"
+   },
+   "goblin-noncombatant": {
+    "name": "Goblin non-combatant",
+    "kind": "monster",
+    "is": "goblin",
+    "lair": {
+     "site": "cnoc-na-teamhrach",
+     "room": "D-20"
+    },
+    "troupe": {
+     "lair": 3
+    },
+    "faction": "skitterglint-clan",
+    "description": "Flees or hides rather than fight."
+   },
+   "captive-hob": {
+    "name": "The captive hob",
+    "kind": "npc",
+    "is": "hob",
+    "lair": {
+     "site": "cnoc-na-teamhrach",
+     "room": "D-20"
+    },
+    "description": "Very traumatised. Insists they are neither goblin, nor female, nor interested. Begs to join the party and be escorted out."
+   },
+   "skitterglint-ogre": {
+    "name": "The Skitterglint ogre",
+    "kind": "monster",
+    "is": "ogre",
+    "lair": {
+     "site": "cnoc-na-teamhrach",
+     "room": "E-22"
+    },
+    "faction": "skitterglint-clan",
+    "description": "The clan's \"ur-chief\", grown fat on Albians and Eirish alike. Eats about two of his own underlings a week when nobody brings him elves, dwarves or hobs.",
+    "wants": "Meat. Elves, dwarves and hobs above all."
+   },
+   "skitterglint-bugbear": {
+    "name": "Skitterglint bugbear sub-chieftain",
+    "kind": "monster",
+    "is": "bugbear",
+    "lair": {
+     "site": "cnoc-na-teamhrach",
+     "room": "F-30"
+    },
+    "faction": "skitterglint-clan",
+    "description": "Calls the shots for the hobgoblins. Wears a dwarven belt set with rubies (600 drac)."
+   },
+   "hobgoblin-jailer": {
+    "name": "Hobgoblin jailer",
+    "kind": "monster",
+    "is": "hobgoblin",
+    "lair": {
+     "site": "cnoc-na-teamhrach",
+     "room": "F-24"
+    },
+    "faction": "skitterglint-clan"
+   },
+   "hobgoblin-jail-guard": {
+    "name": "Hobgoblin jail guard",
+    "kind": "monster",
+    "is": "hobgoblin",
+    "lair": {
+     "site": "cnoc-na-teamhrach",
+     "room": "F-24"
+    },
+    "faction": "skitterglint-clan",
+    "description": "Wears a silver and sapphire amulet worth 135 drac."
+   },
+   "skitterglint-hobgoblin-champion": {
+    "name": "Skitterglint hobgoblin champion",
+    "kind": "monster",
+    "is": "hobgoblin",
+    "lair": {
+     "site": "cnoc-na-teamhrach",
+     "room": "F-25"
+    },
+    "troupe": {
+     "lair": "d6"
+    },
+    "faction": "skitterglint-clan"
+   },
+   "skitterglint-hobgoblin-hunter": {
+    "name": "Skitterglint hobgoblin hunter",
+    "kind": "monster",
+    "is": "hobgoblin",
+    "lair": {
+     "site": "cnoc-na-teamhrach",
+     "room": "F-25"
+    },
+    "troupe": {
+     "lair": "d6"
+    },
+    "faction": "skitterglint-clan"
+   },
+   "captive-merchant": {
+    "name": "The captive merchant",
+    "kind": "npc",
+    "is": "merchant",
+    "lair": {
+     "site": "cnoc-na-teamhrach",
+     "room": "F-24"
+    },
+    "description": "An overweight merchant from the keep, being fattened for tonight's banquet. Rescue: the keep pays 3d6×10 drac and honorary guild membership."
+   },
+   "merchants-wife": {
+    "name": "The merchant's wife",
+    "kind": "npc",
+    "is": "merchant",
+    "lair": {
+     "site": "cnoc-na-teamhrach",
+     "room": "F-24"
+    },
+    "description": "Tonight's appetiser. If brought home she gives the party a common +1 keen blade dagger."
+   },
+   "merchants-bodyguard": {
+    "name": "Merchant's bodyguard",
+    "kind": "npc",
+    "is": "warrior",
+    "lair": {
+     "site": "cnoc-na-teamhrach",
+     "room": "F-24"
+    },
+    "troupe": {
+     "lair": 2
+    },
+    "description": "If rescued, each offers their services to the party."
+   }
+  },
+  "factions": [
+   {
+    "id": "peistduine-of-the-bog",
+    "name": "The Péistduine of Cluain Caoimhín",
+    "kind": "clan",
+    "seat": "moin-chluain-caoimhin-bog-bodies",
+    "leader": "peistduine-bone-mother",
+    "relations": {
+     "blacktooth-clan": "enemy",
+     "the-hermit": "respects"
+    }
+   },
+   {
+    "id": "peistduine-of-the-warrens",
+    "name": "The Péistduine of the warrens",
+    "kind": "clan",
+    "seat": "cnoc-na-teamhrach",
+    "leader": "warren-bone-mother",
+    "relations": {
+     "blacktooth-clan": "resentful",
+     "bloodhand-clan": "resentful"
+    }
+   },
+   {
+    "id": "faoladh-of-the-wolf-camp",
+    "name": "The Faoladh of the wolf camp",
+    "kind": "clan",
+    "seat": "dunad-faoladh",
+    "leader": "faoladh-chieftain",
+    "relations": {
+     "the-hermit": "respects"
+    }
+   },
+   {
+    "id": "blacktooth-clan",
+    "name": "The Blacktooth clan",
+    "kind": "clan",
+    "seat": "cnoc-na-teamhrach",
+    "leader": "blacktooth-chieftain",
+    "relations": {
+     "bloodhand-clan": "rival and ally",
+     "skitterglint-clan": "enemy"
+    }
+   },
+   {
+    "id": "bloodhand-clan",
+    "name": "The Bloodhand clan",
+    "kind": "clan",
+    "seat": "cnoc-na-teamhrach",
+    "leader": "bloodhand-chieftain",
+    "relations": {
+     "blacktooth-clan": "rival and ally",
+     "skitterglint-clan": "enemy"
+    }
+   },
+   {
+    "id": "skitterglint-clan",
+    "name": "The Skitterglint clan",
+    "kind": "clan",
+    "seat": "cnoc-na-teamhrach",
+    "leader": "skitterglint-ogre",
+    "relations": {
+     "blacktooth-clan": "enemy",
+     "bloodhand-clan": "enemy"
+    }
+   }
+  ],
+  "scenes": {
+   "bog-barrows-lookout": {
+    "title": "The lookout on the plank track",
+    "where": {
+     "site": "moin-chluain-caoimhin-bog-bodies",
+     "room": "lookout"
+    },
+    "who": [
+     {
+      "creature": "peistduine-hunter",
+      "count": "d6"
+     }
+    ],
+    "tactics": "Hunt by night on the road just north-east of the barrows, out of sight of the keep.",
+    "disposition": "hostile",
+    "map": {
+     "map": "bog-barrows",
+     "area": "lookout"
+    }
+   },
+   "bog-barrows-camp": {
+    "title": "Cook-fire and refuse",
+    "where": {
+     "site": "moin-chluain-caoimhin-bog-bodies",
+     "room": "cook-fire"
+    },
+    "who": [
+     {
+      "creature": "peistduine-champion",
+      "count": 3
+     },
+     {
+      "creature": "peistduine-hunter",
+      "count": "d6"
+     }
+    ],
+    "players": "A cooking pot over a peat fire. The refuse around it is mostly skulls.",
+    "treasure": "The refuse shows that severed heads are a delicacy here.",
+    "map": {
+     "map": "bog-barrows",
+     "area": "cook-fire"
+    }
+   },
+   "bog-barrows-bone-mother": {
+    "title": "The bone mother's barrow",
+    "where": {
+     "site": "moin-chluain-caoimhin-bog-bodies",
+     "room": "bone-mother"
+    },
+    "who": [
+     {
+      "creature": "peistduine-bone-mother",
+      "count": 1
+     }
+    ],
+    "wants": "Help retaking the warrens in Cnoc na Teamhrach. Afterwards the tribe will cook and eat its helpers: anyone eaten is reborn into the tribe, so it is a kindness.",
+    "treasure": "Uncommon bag of holding (full of heads).",
+    "disposition": "wary",
+    "map": {
+     "map": "bog-barrows",
+     "area": "bone-mother"
+    }
+   },
+   "bog-barrows-hatchery": {
+    "title": "The egg barrow",
+    "where": {
+     "site": "moin-chluain-caoimhin-bog-bodies",
+     "room": "hatchery"
+    },
+    "who": [
+     {
+      "creature": "peistduine-young",
+      "count": 8
+     }
+    ],
+    "treasure": "Six eggs.",
+    "map": {
+     "map": "bog-barrows",
+     "area": "hatchery"
+    }
+   },
+   "bog-barrows-hunters": {
+    "title": "The hunters' barrow",
+    "where": {
+     "site": "moin-chluain-caoimhin-bog-bodies",
+     "room": "hunters"
+    },
+    "who": [
+     {
+      "creature": "peistduine-hunter",
+      "count": "d6"
+     }
+    ],
+    "map": {
+     "map": "bog-barrows",
+     "area": "hunters"
+    }
+   },
+   "ettercap-ambush": {
+    "title": "Silk across the wagon path",
+    "where": {
+     "site": "nead-an-damhain-alla",
+     "room": "webs"
+    },
+    "who": [
+     {
+      "creature": "ettercap-champion",
+      "count": 1
+     },
+     {
+      "creature": "ettercap-hunter",
+      "count": 1
+     }
+    ],
+    "tactics": "Fine, barely visible nets cross the whole path. Both lie hidden in the camouflaged tunnel beneath it and strike from below.",
+    "players": "The pines lean close over the track, and the air glitters faintly.",
+    "disposition": "hostile",
+    "map": {
+     "map": "nead-an-damhain-alla",
+     "area": "webs"
+    }
+   },
+   "ettercap-alcove": {
+    "title": "The female's alcove",
+    "where": {
+     "site": "nead-an-damhain-alla",
+     "room": "alcove"
+    },
+    "who": [],
+    "treasure": "The desiccated corpse of a wolf-Faoladh hunter, bound in silk. His gear has rotted except a common +1 bracer of shielding, which any wizard or dweomersmith can restore.",
+    "map": {
+     "map": "nead-an-damhain-alla",
+     "area": "alcove"
+    }
+   },
+   "ettercap-egg-sac": {
+    "title": "The egg sac in the pines",
+    "where": {
+     "site": "nead-an-damhain-alla",
+     "room": "egg-sac"
+    },
+    "who": [
+     {
+      "creature": "ettercap-champion",
+      "count": 1
+     }
+    ],
+    "description": "Hundreds of young. The champion defends it fiercely. If it hatches (ratchet 10), ettercap young waylay travellers on the road.",
+    "map": {
+     "map": "nead-an-damhain-alla",
+     "area": "egg-sac"
+    }
+   },
+   "faoladh-camp": {
+    "title": "The wolf camp",
+    "where": {
+     "site": "dunad-faoladh",
+     "room": "fire"
+    },
+    "who": [
+     {
+      "creature": "faoladh-chieftain",
+      "count": 1
+     },
+     {
+      "creature": "faoladh-champion",
+      "count": 2
+     },
+     {
+      "creature": "faoladh-hunter",
+      "count": 2
+     },
+     {
+      "creature": "wolf-faun-champion",
+      "count": 2
+     },
+     {
+      "creature": "wolf-faun-hunter",
+      "count": 3
+     },
+     {
+      "creature": "wolf-faun-druid",
+      "count": 1
+     }
+    ],
+    "tactics": "When attacked the pucca change into wolves and fight as a pack; the fauns fall back to the stake line around their druid. Pucca can fall back to change and fetch greatswords.",
+    "treasure": "The chieftain's common +1 venom scythe; the druid's common +1 thornweave hide.",
+    "map": {
+     "map": "dunad-faoladh",
+     "area": "fire"
+    }
+   },
+   "faoladh-druid-line": {
+    "title": "The druid's tent and the stake line",
+    "where": {
+     "site": "dunad-faoladh",
+     "room": "druid"
+    },
+    "who": [
+     {
+      "creature": "wolf-faun-druid",
+      "count": 1
+     },
+     {
+      "creature": "wolf-faun-champion",
+      "count": 2
+     },
+     {
+      "creature": "wolf-faun-hunter",
+      "count": 3
+     }
+    ],
+    "map": {
+     "map": "dunad-faoladh",
+     "area": "druid"
+    }
+   },
+   "hermits-hollow": {
+    "title": "The hermit at home",
+    "where": {
+     "site": "sliabh-na-cailli",
+     "room": "oak"
+    },
+    "who": [
+     {
+      "creature": "the-hermit",
+      "count": 1
+     },
+     {
+      "creature": "hermits-leopard",
+      "count": 1
+     },
+     {
+      "creature": "hermits-wisp",
+      "count": 2
+     }
+    ],
+    "wants": "To pass as a devout hermit, then murder the party at the first chance.",
+    "tactics": "Scouts as a horned owl; fights as a black bear. Her daggers carry death poison: +d6 poison on the first hit, save vs. poison or d6 ongoing.",
+    "disposition": "friendly (feigned)",
+    "map": {
+     "map": "hermits-hollow",
+     "area": "oak"
+    }
+   },
+   "hermits-apothecary": {
+    "title": "The apothecary beneath the oak",
+    "where": {
+     "site": "sliabh-na-cailli",
+     "room": "apothecary"
+    },
+    "who": [],
+    "treasure": "2d6 charges of materia of each element, a potion of invisibility, an orichalc +1 keen dagger shaped as a sickle, rare alchemical stock (cave spider silk, exotic leathers, a cured leopard pelt usable as hide armour).",
+    "map": {
+     "map": "hermits-hollow",
+     "area": "apothecary"
+    }
+   },
+   "hermits-dream-pearls": {
+    "title": "The five dream pearls",
+    "where": {
+     "site": "sliabh-na-cailli",
+     "room": "illusion"
+    },
+    "who": [],
+    "treasure": "Five common dream pearls buried around the hollow, each holding up one of the fey illusions that hide it.",
+    "map": {
+     "map": "hermits-hollow",
+     "area": "illusion"
+    }
+   },
+   "grotto-watchers": {
+    "title": "Watchers in the trees",
+    "where": {
+     "site": "cnoc-na-teamhrach",
+     "room": "ravine"
+    },
+    "who": [
+     {
+      "creature": "warren-hunter",
+      "count": 8
+     }
+    ],
+    "description": "Roll d20: 1-7 the Péistduine watchers are here (Stealth 3+; a hard Perception check spots them, only for someone on watch who asks). 19 the ogre is out instead, 20 the owlbear: everyone saves vs. fear or is shaken (attacks harder).",
+    "players": "Bones, gnawed: beasts, goblins, men, dwarves.",
+    "map": {
+     "map": "crom-grotto",
+     "area": "ravine"
+    }
+   },
+   "cave-a-mouth": {
+    "title": "A · Cave mouth and pit trap",
+    "where": {
+     "site": "cnoc-na-teamhrach",
+     "room": "A"
+    },
+    "who": [
+     {
+      "creature": "warren-hunter",
+      "count": "d6"
+     }
+    ],
+    "description": "2 in 6: a hunting party saw the party coming and waits in the trees. A pit 20 ft in holds a Péistduine but gives way under anyone Medium or larger.",
+    "map": {
+     "map": "crom-cave-a",
+     "area": "mouth"
+    }
+   },
+   "cave-a-guard-post": {
+    "title": "A1 · Guard post",
+    "where": {
+     "site": "cnoc-na-teamhrach",
+     "room": "A-1"
+    },
+    "who": [
+     {
+      "creature": "warren-hunter",
+      "count": "d6+1"
+     }
+    ],
+    "description": "Javelins and small shields.",
+    "map": {
+     "map": "crom-cave-a",
+     "area": "guard-post"
+    }
+   },
+   "cave-a-midden": {
+    "title": "A2 · Rat midden",
+    "where": {
+     "site": "cnoc-na-teamhrach",
+     "room": "A-2"
+    },
+    "who": [
+     {
+      "creature": "giant-rat",
+      "count": "2d6"
+     }
+    ],
+    "map": {
+     "map": "crom-cave-a",
+     "area": "midden"
+    }
+   },
+   "cave-a-larder": {
+    "title": "A3 · Larder",
+    "where": {
+     "site": "cnoc-na-teamhrach",
+     "room": "A-3"
+    },
+    "who": [],
+    "players": "Salted jerky, grain, sour beer and wine. Some of the jerky was clearly once human or elven.",
+    "map": {
+     "map": "crom-cave-a",
+     "area": "larder"
+    }
+   },
+   "cave-a-trogs": {
+    "title": "A4 · Troglodyte guard station",
+    "where": {
+     "site": "cnoc-na-teamhrach",
+     "room": "A-4"
+    },
+    "who": [
+     {
+      "creature": "troglodyte-hunter",
+      "count": 2
+     }
+    ],
+    "tactics": "They shoot any non-lizardfolk who come near.",
+    "map": {
+     "map": "crom-cave-a",
+     "area": "lizard-guard"
+    }
+   },
+   "cave-a-bone-mother": {
+    "title": "A5 · The bone mother's lair",
+    "where": {
+     "site": "cnoc-na-teamhrach",
+     "room": "A-5"
+    },
+    "who": [
+     {
+      "creature": "warren-bone-mother",
+      "count": 1
+     },
+     {
+      "creature": "warren-young",
+      "count": "d6+1"
+     }
+    ],
+    "description": "Also d6+1 pregnant or brooding mothers (count them as young) and large clutches of eggs.",
+    "map": {
+     "map": "crom-cave-a",
+     "area": "bone-mother"
+    }
+   },
+   "cave-a-den": {
+    "title": "A6 · Common den",
+    "where": {
+     "site": "cnoc-na-teamhrach",
+     "room": "A-6"
+    },
+    "who": [
+     {
+      "creature": "warren-hunter",
+      "count": "3d6"
+     },
+     {
+      "creature": "warren-champion",
+      "count": "4d6"
+     },
+     {
+      "creature": "warren-young",
+      "count": "2d6"
+     }
+    ],
+    "treasure": "Hidden in the nests, found only by searching: 3d6 sp and an uncommon +2 robe of splendour used as bedding.",
+    "map": {
+     "map": "crom-cave-a",
+     "area": "den"
+    }
+   },
+   "cave-b-trophy-wall": {
+    "title": "B · Trophy wall and spy window",
+    "where": {
+     "site": "cnoc-na-teamhrach",
+     "room": "B"
+    },
+    "who": [
+     {
+      "creature": "blacktooth-hunter",
+      "count": 1
+     }
+    ],
+    "description": "Heads and skulls of men, goblins and lizardfolk cover the wall. A grey cloth hides a window where the guard looks out as one more trophy.",
+    "map": {
+     "map": "crom-caves-b-c",
+     "area": "b-trophy-hall"
+    }
+   },
+   "cave-b-7": {
+    "title": "B7 · Dice-table guard room",
+    "where": {
+     "site": "cnoc-na-teamhrach",
+     "room": "B-7"
+    },
+    "who": [
+     {
+      "creature": "blacktooth-champion",
+      "count": 4
+     }
+    ],
+    "treasure": "Each guard has 2d6+3 electrum quarters on the table.",
+    "map": {
+     "map": "crom-caves-b-c",
+     "area": "b-guard-7"
+    }
+   },
+   "cave-b-8": {
+    "title": "B8 · Guard room",
+    "where": {
+     "site": "cnoc-na-teamhrach",
+     "room": "B-8"
+    },
+    "who": [
+     {
+      "creature": "blacktooth-champion",
+      "count": 4
+     }
+    ],
+    "description": "They report to the window guard and join him against invaders.",
+    "map": {
+     "map": "crom-caves-b-c",
+     "area": "b-guard-8"
+    }
+   },
+   "cave-b-9": {
+    "title": "B9 · Mess hall",
+    "where": {
+     "site": "cnoc-na-teamhrach",
+     "room": "B-9"
+    },
+    "who": [
+     {
+      "creature": "blacktooth-chieftain",
+      "count": 1,
+      "chance": "1 on d20"
+     },
+     {
+      "creature": "blacktooth-champion",
+      "count": "2d6",
+      "chance": "1 on d20"
+     },
+     {
+      "creature": "blacktooth-hunter",
+      "count": "3d6",
+      "chance": "1 on d20"
+     }
+    ],
+    "description": "On a d20 roll of 1 the chieftain holds court here with his warriors. Otherwise empty, with a charcoal fire still burning.",
+    "map": {
+     "map": "crom-caves-b-c",
+     "area": "b-mess-9"
+    }
+   },
+   "cave-b-10": {
+    "title": "B10 · Common room",
+    "where": {
+     "site": "cnoc-na-teamhrach",
+     "room": "B-10"
+    },
+    "who": [
+     {
+      "creature": "blacktooth-champion",
+      "count": "2d6"
+     },
+     {
+      "creature": "blacktooth-hunter",
+      "count": "3d6"
+     },
+     {
+      "creature": "goblin-young",
+      "count": "2d6"
+     }
+    ],
+    "treasure": "d6 silver each.",
+    "map": {
+     "map": "crom-caves-b-c",
+     "area": "b-common-10"
+    }
+   },
+   "cave-b-11": {
+    "title": "B11 · Armory",
+    "where": {
+     "site": "cnoc-na-teamhrach",
+     "room": "B-11"
+    },
+    "who": [],
+    "treasure": "Locked. Three medium wooden shields, 3d6 spears and two battle axes, all excellent.",
+    "map": {
+     "map": "crom-caves-b-c",
+     "area": "b-armory-11"
+    }
+   },
+   "cave-b-12": {
+    "title": "B12 · Blacktooth chieftain",
+    "where": {
+     "site": "cnoc-na-teamhrach",
+     "room": "B-12"
+    },
+    "who": [
+     {
+      "creature": "blacktooth-chieftain",
+      "count": 1
+     }
+    ],
+    "treasure": "Hidden alcove: an uncommon elixir of health, two suits of chainmail, four swords, and a small locked chest with 3d6×10 gp and 3d6×10 sp.",
+    "map": {
+     "map": "crom-caves-b-c",
+     "area": "b-chief-12"
+    }
+   },
+   "cave-bc-13": {
+    "title": "B/C13 · Secret parley room",
+    "where": {
+     "site": "cnoc-na-teamhrach",
+     "room": "C-13"
+    },
+    "who": [],
+    "description": "Secret doors to both chieftains' rooms. The two use it to negotiate and plan joint raids when they are not fighting each other.",
+    "map": {
+     "map": "crom-caves-b-c",
+     "area": "parley-13"
+    }
+   },
+   "cave-c-14": {
+    "title": "C14 · Bloodhand common room",
+    "where": {
+     "site": "cnoc-na-teamhrach",
+     "room": "C-14"
+    },
+    "who": [
+     {
+      "creature": "bloodhand-hunter",
+      "count": "2d6"
+     },
+     {
+      "creature": "goblin-young",
+      "count": "2d6"
+     }
+    ],
+    "map": {
+     "map": "crom-caves-b-c",
+     "area": "c-common-14"
+    }
+   },
+   "cave-c-15": {
+    "title": "C15 · Mess hall",
+    "where": {
+     "site": "cnoc-na-teamhrach",
+     "room": "C-15"
+    },
+    "who": [
+     {
+      "creature": "bloodhand-hunter",
+      "count": "2d6"
+     }
+    ],
+    "map": {
+     "map": "crom-caves-b-c",
+     "area": "c-mess-15"
+    }
+   },
+   "cave-c-guard": {
+    "title": "C · Guard post and larder",
+    "where": {
+     "site": "cnoc-na-teamhrach",
+     "room": "C-g"
+    },
+    "who": [
+     {
+      "creature": "bloodhand-hunter",
+      "count": 1
+     }
+    ],
+    "description": "This guard takes the watch seriously.",
+    "treasure": "Among the offal, a cask of genuinely good wine worth 55 drac.",
+    "map": {
+     "map": "crom-caves-b-c",
+     "area": "c-larder-g"
+    }
+   },
+   "cave-c-16": {
+    "title": "C16 · Bloodhand chieftain",
+    "where": {
+     "site": "cnoc-na-teamhrach",
+     "room": "C-16"
+    },
+    "who": [
+     {
+      "creature": "bloodhand-chieftain",
+      "count": 1
+     }
+    ],
+    "treasure": "Fine dwarven furniture in slight disrepair and a locked chest with 500 gp.",
+    "map": {
+     "map": "crom-caves-b-c",
+     "area": "c-chief-16"
+    }
+   },
+   "cave-d-patrol": {
+    "title": "D · Redcap patrol",
+    "where": {
+     "site": "cnoc-na-teamhrach",
+     "room": "D"
+    },
+    "who": [
+     {
+      "creature": "skitterglint-redcap-hunter",
+      "count": 6
+     }
+    ],
+    "description": "Each exploration round in the D tunnels, d6: 1-2 the party meets this patrol (2 HD, leather, a hand axe in each hand).",
+    "map": {
+     "map": "crom-caves-d-e-f",
+     "area": "d-mouth"
+    }
+   },
+   "cave-d-17": {
+    "title": "D17 · Javelin guard chamber",
+    "where": {
+     "site": "cnoc-na-teamhrach",
+     "room": "D-17"
+    },
+    "who": [
+     {
+      "creature": "skitterglint-redcap-champion",
+      "count": 6
+     }
+    ],
+    "map": {
+     "map": "crom-caves-d-e-f",
+     "area": "d-guard-17"
+    }
+   },
+   "cave-d-18": {
+    "title": "D18 · Javelin guard chamber",
+    "where": {
+     "site": "cnoc-na-teamhrach",
+     "room": "D-18"
+    },
+    "who": [
+     {
+      "creature": "skitterglint-redcap-champion",
+      "count": 6
+     }
+    ],
+    "description": "A secret door leads to the ogre. If it seems worth the risk they ask him for help.",
+    "map": {
+     "map": "crom-caves-d-e-f",
+     "area": "d-guard-18"
+    }
+   },
+   "cave-d-19": {
+    "title": "D19 · Redcap common room",
+    "where": {
+     "site": "cnoc-na-teamhrach",
+     "room": "D-19"
+    },
+    "who": [
+     {
+      "creature": "skitterglint-redcap-champion",
+      "count": "4d6"
+     },
+     {
+      "creature": "skitterglint-redcap-hunter",
+      "count": "4d6"
+     },
+     {
+      "creature": "skitterglint-redcap-druid",
+      "count": 2
+     }
+    ],
+    "map": {
+     "map": "crom-caves-d-e-f",
+     "area": "d-common-19"
+    }
+   },
+   "cave-d-20": {
+    "title": "D20 · Sub-chieftain's chambers",
+    "where": {
+     "site": "cnoc-na-teamhrach",
+     "room": "D-20"
+    },
+    "who": [
+     {
+      "creature": "skitterglint-subchief",
+      "count": 1
+     },
+     {
+      "creature": "skitterglint-redcap-hunter",
+      "count": 2
+     },
+     {
+      "creature": "goblin-noncombatant",
+      "count": 3
+     },
+     {
+      "creature": "captive-hob",
+      "count": 1
+     }
+    ],
+    "map": {
+     "map": "crom-caves-d-e-f",
+     "area": "d-subchief-20"
+    }
+   },
+   "cave-d-21": {
+    "title": "D21 · Larder",
+    "where": {
+     "site": "cnoc-na-teamhrach",
+     "room": "D-21"
+    },
+    "who": [
+     {
+      "creature": "skitterglint-redcap-hunter",
+      "count": 4
+     },
+     {
+      "creature": "skitterglint-hobgoblin-hunter",
+      "count": "d6",
+      "chance": "1 on d6"
+     }
+    ],
+    "description": "Four crossbow guards. A secret stair in the back leads up to F28; each turn the party lingers past the first, 1 in 6 that d6 hobgoblin hunters come down to raid the pantry.",
+    "map": {
+     "map": "crom-caves-d-e-f",
+     "area": "d-larder-21"
+    }
+   },
+   "cave-e-ogre": {
+    "title": "E22 · The ogre's cave",
+    "where": {
+     "site": "cnoc-na-teamhrach",
+     "room": "E-22"
+    },
+    "who": [
+     {
+      "creature": "skitterglint-ogre",
+      "count": 1
+     }
+    ],
+    "description": "If the party brings Sir Edward proof of the ogre, or lures it to the keep, he dons the Siege Perilous; a wizard or dweomersmith may be asked to take the engineer's seat, and the rest get a dozen guards.",
+    "treasure": "Under the bearskins: a common +1 quiver of elemental bolts, a keg of brandy (80 drac), 3d6×100 copper pennies, 3d6×100 silver dimes, 3d6×100 gold drakhma, and 3d6×100 counterfeit drakhma (gilded lead).",
+    "threat": "deadly",
+    "map": {
+     "map": "crom-caves-d-e-f",
+     "area": "e-ogre-22"
+    }
+   },
+   "cave-f-23": {
+    "title": "F23 · Hobgoblin common room",
+    "where": {
+     "site": "cnoc-na-teamhrach",
+     "room": "F-23"
+    },
+    "who": [
+     {
+      "creature": "skitterglint-hobgoblin-champion",
+      "count": "d6"
+     },
+     {
+      "creature": "skitterglint-hobgoblin-hunter",
+      "count": "2d6"
+     },
+     {
+      "creature": "goblin-young",
+      "count": "d6+2"
+     }
+    ],
+    "map": {
+     "map": "crom-caves-d-e-f",
+     "area": "f-common-23"
+    }
+   },
+   "cave-f-24": {
+    "title": "F24 · Pantry and torture chamber",
+    "where": {
+     "site": "cnoc-na-teamhrach",
+     "room": "F-24"
+    },
+    "who": [
+     {
+      "creature": "hobgoblin-jailer",
+      "count": 1
+     },
+     {
+      "creature": "hobgoblin-jail-guard",
+      "count": 1
+     },
+     {
+      "creature": "captive-merchant",
+      "count": 1
+     },
+     {
+      "creature": "merchants-wife",
+      "count": 1
+     },
+     {
+      "creature": "merchants-bodyguard",
+      "count": 2
+     }
+    ],
+    "map": {
+     "map": "crom-caves-d-e-f",
+     "area": "f-torture-24"
+    }
+   },
+   "cave-f-25": {
+    "title": "F25 · Feast hall",
+    "where": {
+     "site": "cnoc-na-teamhrach",
+     "room": "F-25"
+    },
+    "who": [
+     {
+      "creature": "skitterglint-hobgoblin-champion",
+      "count": "d6"
+     },
+     {
+      "creature": "skitterglint-hobgoblin-hunter",
+      "count": "d6"
+     },
+     {
+      "creature": "goblin-young",
+      "count": "d6+3"
+     }
+    ],
+    "players": "Tables, chairs and silverware laid for a feast. The silverware is fine dwarven work.",
+    "treasure": "Dwarven silverware worth 25 drac.",
+    "map": {
+     "map": "crom-caves-d-e-f",
+     "area": "f-feast-25"
+    }
+   },
+   "cave-f-26": {
+    "title": "F26 · Guard room",
+    "where": {
+     "site": "cnoc-na-teamhrach",
+     "room": "F-26"
+    },
+    "who": [
+     {
+      "creature": "skitterglint-hobgoblin-champion",
+      "count": "d6÷2"
+     },
+     {
+      "creature": "skitterglint-hobgoblin-hunter",
+      "count": "d6÷2"
+     }
+    ],
+    "description": "d6+1 hobgoblins: half (round down) champions with greataxes, half (round up) hunters with shortbows and two daggers.",
+    "map": {
+     "map": "crom-caves-d-e-f",
+     "area": "f-guard-26"
+    }
+   },
+   "cave-f-29": {
+    "title": "F29 · Guard room",
+    "where": {
+     "site": "cnoc-na-teamhrach",
+     "room": "F-29"
+    },
+    "who": [
+     {
+      "creature": "skitterglint-hobgoblin-champion",
+      "count": "d6÷2"
+     },
+     {
+      "creature": "skitterglint-hobgoblin-hunter",
+      "count": "d6÷2"
+     }
+    ],
+    "description": "d6+1 hobgoblins: half (round down) champions with greataxes, half (round up) hunters with shortbows and two daggers.",
+    "map": {
+     "map": "crom-caves-d-e-f",
+     "area": "f-guard-29"
+    }
+   },
+   "cave-f-31": {
+    "title": "F31 · Guard room",
+    "where": {
+     "site": "cnoc-na-teamhrach",
+     "room": "F-31"
+    },
+    "who": [
+     {
+      "creature": "skitterglint-hobgoblin-champion",
+      "count": "d6÷2"
+     },
+     {
+      "creature": "skitterglint-hobgoblin-hunter",
+      "count": "d6÷2"
+     }
+    ],
+    "description": "d6+1 hobgoblins: half (round down) champions with greataxes, half (round up) hunters with shortbows and two daggers.",
+    "map": {
+     "map": "crom-caves-d-e-f",
+     "area": "f-guard-31"
+    }
+   },
+   "cave-f-27": {
+    "title": "F27 · Armory",
+    "where": {
+     "site": "cnoc-na-teamhrach",
+     "room": "F-27"
+    },
+    "who": [],
+    "treasure": "Two suits of plate (one human, one dwarf), five chainmail, seven leather, eleven light wooden shields, six daggers, a battle axe, four maces, two shortswords, a longsword, two shortbows, a longbow, thirteen crossbows, 130 arrows, 72 bolts, 50 javelins, 19 glaives and 42 helmets.",
+    "map": {
+     "map": "crom-caves-d-e-f",
+     "area": "f-armory-27"
+    }
+   },
+   "cave-f-28": {
+    "title": "F28 · Stolen larder",
+    "where": {
+     "site": "cnoc-na-teamhrach",
+     "room": "F-28"
+    },
+    "who": [],
+    "description": "Stores stolen from the redcaps. A secret stair leads down to D21.",
+    "map": {
+     "map": "crom-caves-d-e-f",
+     "area": "f-larder-28"
+    }
+   },
+   "cave-f-30": {
+    "title": "F30 · The bugbear sub-chieftain",
+    "where": {
+     "site": "cnoc-na-teamhrach",
+     "room": "F-30"
+    },
+    "who": [
+     {
+      "creature": "skitterglint-bugbear",
+      "count": 1
+     },
+     {
+      "creature": "skitterglint-hobgoblin-hunter",
+      "count": 4
+     }
+    ],
+    "treasure": "In the fireplace kindling: an uncommon +2 wand of hold person. An iron chest of rotting hides with a false bottom: 3d6×100 drakhma, a 100 drac emerald, and an uncommon -2 intelligence-sapping poison.",
+    "map": {
+     "map": "crom-caves-d-e-f",
+     "area": "f-bugbear-30"
+    }
+   }
+  }
+ }
+}
