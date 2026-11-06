@@ -241,14 +241,6 @@
  ],
  "road": [
   {
-   "blob": [
-    19.22,
-    11.39,
-    1.83,
-    1.22
-   ]
-  },
-  {
    "path": [
     [
      19.57,
@@ -580,6 +572,17 @@
   {
    "t": "cave",
    "at": [
+    19.22,
+    11.83
+   ],
+   "size": [
+    1.5,
+    1.05
+   ]
+  },
+  {
+   "t": "cave",
+   "at": [
     3.39,
     22.61
    ],
@@ -691,7 +694,7 @@
    "t": "label",
    "at": [
     19.22,
-    9.35
+    9.65
    ],
    "text": "Shrine of\nCrom Cruach",
    "rot": -8
@@ -717,10 +720,10 @@
   {
    "t": "label",
    "at": [
-    28.48,
-    21.74
+    28.17,
+    21.39
    ],
-   "text": "Areograph",
+   "text": "Ursagryph",
    "rot": -55
   },
   {
@@ -785,15 +788,6 @@
    ],
    "text": "Blacktooth\nGoblins",
    "rot": -80
-  },
-  {
-   "t": "bones",
-   "at": [
-    19.22,
-    11.65
-   ],
-   "n": 5,
-   "spread": 1
   }
  ],
  "areas": {
@@ -809,7 +803,7 @@
   "cave-k": {
    "squares": [
     17,
-    9,
+    10,
     4,
     4
    ],
@@ -840,7 +834,7 @@
     4,
     4
    ],
-   "title": "The areograph"
+   "title": "The ursagryph"
   },
   "cave-h": {
    "squares": [
