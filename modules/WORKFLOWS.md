@@ -67,6 +67,8 @@ Every piece of content has a permanent id, and each module's version number says
 | Minor | 1.0.1 to 1.1.0 | New content added. Existing ids keep their meaning. |
 | Major | 1.1.0 to 2.0.0 | An id removed or renamed, a stat or rule changed in a way that changes existing characters or encounters. |
 
+Each module, each app (E9 Companion, E9 Atlas) and the tools keep their own version (Heph 2026-11-06). A change to the tools or an app alone never bumps a module's version, and a module's content change never bumps an app. Each module keeps a `CHANGELOG.md` next to its `module.json`.
+
 Versions before 1.0.0 make no promises, as in semver. The Compendium's revised edition (January 2027 at the earliest) would be a major version of `mm-core`.
 
 **Release notes.** Every release lists its added, changed and removed ids. The apps use this list to show the referee what an update does.
