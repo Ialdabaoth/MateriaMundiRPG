@@ -29,7 +29,7 @@
     8,
     12
    ],
-   "title": "1-2 · The drawbridge and its towers"
+   "title": "The drawbridge and its towers"
   },
   "entry-court": {
    "squares": [
@@ -38,7 +38,7 @@
     4,
     25
    ],
-   "title": "3 · Entry lane inside the gate"
+   "title": "Entry lane inside the gate"
   },
   "stables": {
    "squares": [
@@ -47,7 +47,7 @@
     4,
     12
    ],
-   "title": "4 · Common stables"
+   "title": "Common stables"
   },
   "warehouse": {
    "squares": [
@@ -56,7 +56,7 @@
     4,
     13
    ],
-   "title": "5 · Common warehouse"
+   "title": "Common warehouse"
   },
   "bailiff": {
    "squares": [
@@ -65,7 +65,7 @@
     5,
     5
    ],
-   "title": "6 · The bailiff's tower"
+   "title": "The bailiff's tower"
   },
   "apartments": {
    "squares": [
@@ -74,7 +74,7 @@
     22,
     5
    ],
-   "title": "7 · Private residences"
+   "title": "Private residences"
   },
   "smithy": {
    "squares": [
@@ -83,7 +83,7 @@
     6,
     7
    ],
-   "title": "8 · The blacksmith"
+   "title": "The blacksmith"
   },
   "general-store": {
    "squares": [
@@ -92,7 +92,7 @@
     10,
     5
    ],
-   "title": "9 · General store"
+   "title": "General store"
   },
   "trader": {
    "squares": [
@@ -101,7 +101,7 @@
     9,
     5
    ],
-   "title": "10 · The trader's shop"
+   "title": "The trader's shop"
   },
   "bank": {
    "squares": [
@@ -110,7 +110,7 @@
     5,
     4
    ],
-   "title": "11 · The bank"
+   "title": "The bank"
   },
   "guard-tower": {
    "squares": [
@@ -119,7 +119,7 @@
     5,
     5
    ],
-   "title": "12 · Guard tower"
+   "title": "Guard tower"
   },
   "fountain": {
    "squares": [
@@ -128,7 +128,7 @@
     9,
     9
    ],
-   "title": "13 · Courtyard and fountain"
+   "title": "Courtyard and fountain"
   },
   "inn": {
    "squares": [
@@ -137,7 +137,7 @@
     5,
     6
    ],
-   "title": "14 · The travellers' inn"
+   "title": "The travellers' inn"
   },
   "tavern": {
    "squares": [
@@ -146,7 +146,7 @@
     10,
     5
    ],
-   "title": "15 · The tavern"
+   "title": "The tavern"
   },
   "guild": {
    "squares": [
@@ -155,7 +155,7 @@
     10,
     9
    ],
-   "title": "16 · Merchant guild headquarters"
+   "title": "Merchant guild headquarters"
   },
   "banker-house": {
    "squares": [
@@ -164,7 +164,7 @@
     9,
     5
    ],
-   "title": "7a · The banker's house"
+   "title": "The banker's house"
   },
   "priest-house": {
    "squares": [
@@ -173,7 +173,7 @@
     5,
     6
    ],
-   "title": "7b · The visiting priest's house"
+   "title": "The visiting priest's house"
   },
   "chapel": {
    "squares": [
@@ -182,7 +182,7 @@
     12,
     5
    ],
-   "title": "17 · The abbey"
+   "title": "The abbey"
   },
   "inner-gate": {
    "squares": [
@@ -191,7 +191,7 @@
     13,
     10
    ],
-   "title": "18 · Inner gatehouse"
+   "title": "Inner gatehouse"
   },
   "watchtowers": {
    "squares": [
@@ -200,7 +200,7 @@
     53,
     9
    ],
-   "title": "19-20 · Watchtowers at the ends of the inner wall (ballista at 20)"
+   "title": "Watchtowers at the ends of the inner wall (ballista on the east one)"
   },
   "inner-bailey": {
    "squares": [
@@ -209,7 +209,7 @@
     44,
     26
    ],
-   "title": "21 · The inner bailey"
+   "title": "The inner bailey"
   },
   "cavalry-stables": {
    "squares": [
@@ -218,7 +218,7 @@
     15,
     16
    ],
-   "title": "22 · Cavalry stables"
+   "title": "Cavalry stables"
   },
   "great-tower": {
    "squares": [
@@ -227,7 +227,7 @@
     6,
     6
    ],
-   "title": "23 · The great tower and the storm cannon"
+   "title": "The great tower and the storm cannon"
   },
   "fortress": {
    "squares": [
@@ -236,7 +236,7 @@
     19,
     16
    ],
-   "title": "24 · The fortress (26 guards' quarters, 27 castellan's quarters)"
+   "title": "The fortress (guards' and castellan's quarters)"
   },
   "cliff-towers": {
    "squares": [
@@ -245,7 +245,7 @@
     4,
     4
    ],
-   "title": "25 · Thunder-rattler towers (north-west and south-west corners)"
+   "title": "Thunder-rattler corner towers (north-west and south-west)"
   },
   "lift": {
    "squares": [
@@ -254,7 +254,7 @@
     4,
     4
    ],
-   "title": "28 · The secret lift beneath the mountain"
+   "title": "The secret lift beneath the mountain"
   }
  },
  "notes": "Traced from the layout Heph supplied (2026-11-06), redrawn in the E9 ink style; buildings keyed from Heph's labelled zoom.",

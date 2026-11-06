@@ -334,8 +334,8 @@
   },
   {
    "blob": [
-    11.88,
-    40.0,
+    12.94,
+    42.75,
     2.81,
     2.81
    ]
@@ -464,19 +464,19 @@
   },
   {
    "rect": [
-    43.12,
-    16.56,
-    13.75,
-    1.88
+    43.44,
+    16.52,
+    14.69,
+    1.98
    ],
    "roof": "thatch"
   },
   {
    "rect": [
-    55.31,
-    18.44,
-    1.88,
-    12.81
+    56.12,
+    18.5,
+    2.0,
+    12.75
    ],
    "roof": "thatch"
   },
@@ -1037,252 +1037,257 @@
    "dir": "n"
   },
   {
-   "t": "num",
+   "t": "label",
    "at": [
-    62.5,
-    54.38
+    62.81,
+    52.5
    ],
-   "text": "1"
+   "text": "Drawbridge",
+   "rot": 90
   },
   {
-   "t": "num",
+   "t": "label",
    "at": [
     58.75,
     49.38
    ],
-   "text": "2"
+   "text": "Gate"
   },
   {
-   "t": "num",
+   "t": "label",
    "at": [
-    54.88,
-    55.0
+    55.62,
+    55.62
    ],
-   "text": "3"
+   "text": "Entry lane",
+   "rot": 90
   },
   {
-   "t": "num",
+   "t": "label",
    "at": [
     51.75,
     48.75
    ],
-   "text": "4"
+   "text": "Stables",
+   "rot": 90
   },
   {
-   "t": "num",
+   "t": "label",
    "at": [
     51.75,
-    61.25
+    62.5
    ],
-   "text": "5"
+   "text": "Warehouse",
+   "rot": 90
   },
   {
-   "t": "num",
+   "t": "label",
    "at": [
     58.5,
     73.5
    ],
-   "text": "6"
+   "text": "Bailiff"
   },
   {
-   "t": "num",
+   "t": "label",
    "at": [
     42.19,
     70.75
    ],
-   "text": "7"
+   "text": "Private residences"
   },
   {
-   "t": "num",
+   "t": "label",
    "at": [
     47.31,
     64.5
    ],
-   "text": "8"
+   "text": "Smithy"
   },
   {
-   "t": "num",
+   "t": "label",
    "at": [
-    37.5,
+    38.75,
     63.75
    ],
-   "text": "9"
+   "text": "General store"
   },
   {
-   "t": "num",
+   "t": "label",
    "at": [
     28.12,
     63.75
    ],
-   "text": "10"
+   "text": "Trader"
   },
   {
-   "t": "num",
+   "t": "label",
    "at": [
     29.69,
     70.5
    ],
-   "text": "11"
+   "text": "Bank"
   },
   {
-   "t": "num",
+   "t": "label",
    "at": [
     23.75,
     73.06
    ],
-   "text": "12"
+   "text": "Guard\ntower"
   },
   {
-   "t": "num",
+   "t": "label",
    "at": [
     20.0,
     64.06
    ],
-   "text": "13"
+   "text": "Courtyard"
   },
   {
-   "t": "num",
+   "t": "label",
    "at": [
     25.94,
     59.38
    ],
-   "text": "14"
+   "text": "Inn"
   },
   {
-   "t": "num",
+   "t": "label",
    "at": [
     18.12,
     54.12
    ],
-   "text": "15"
+   "text": "Tavern"
   },
   {
-   "t": "num",
+   "t": "label",
    "at": [
     44.81,
-    56.25
+    55.0
    ],
-   "text": "16"
+   "text": "Guild\nhall"
   },
   {
-   "t": "num",
+   "t": "label",
    "at": [
     28.12,
     54.12
    ],
-   "text": "7a"
+   "text": "Banker's house"
   },
   {
-   "t": "num",
+   "t": "label",
    "at": [
     35.12,
-    56.25
+    55.31
    ],
-   "text": "7b"
+   "text": "Priest's\nhouse"
   },
   {
-   "t": "num",
+   "t": "label",
    "at": [
     44.38,
     45.44
    ],
-   "text": "17"
+   "text": "Abbey"
   },
   {
-   "t": "num",
+   "t": "label",
    "at": [
     29.69,
     40.94
    ],
-   "text": "18"
+   "text": "Inner gate"
   },
   {
-   "t": "num",
+   "t": "label",
    "at": [
-    11.88,
-    40.0
+    12.94,
+    42.75
    ],
-   "text": "19"
+   "text": "Watch-\ntower"
   },
   {
-   "t": "num",
+   "t": "label",
    "at": [
     58.75,
     42.19
    ],
-   "text": "20"
+   "text": "Watch-\ntower"
   },
   {
-   "t": "num",
+   "t": "label",
    "at": [
     20.0,
     36.88
    ],
-   "text": "21"
+   "text": "Inner bailey"
   },
   {
-   "t": "num",
+   "t": "label",
    "at": [
     50.0,
     17.5
    ],
-   "text": "22"
+   "text": "Cavalry stables"
   },
   {
-   "t": "num",
+   "t": "label",
    "at": [
     59.06,
     15.0
    ],
-   "text": "23"
+   "text": "Great\ntower"
   },
   {
-   "t": "num",
+   "t": "label",
    "at": [
     34.38,
-    14.38
+    14.06
    ],
-   "text": "24"
+   "text": "The fortress",
+   "big": true
   },
   {
-   "t": "num",
+   "t": "label",
    "at": [
     13.12,
     15.31
    ],
-   "text": "25"
+   "text": "Corner\ntower"
   },
   {
-   "t": "num",
+   "t": "label",
    "at": [
     12.81,
     59.38
    ],
-   "text": "25"
+   "text": "Corner\ntower"
   },
   {
-   "t": "num",
+   "t": "label",
    "at": [
     29.38,
-    16.88
+    17.5
    ],
-   "text": "26"
+   "text": "Guards"
   },
   {
-   "t": "num",
+   "t": "label",
    "at": [
-    39.38,
-    16.88
+    40.0,
+    17.5
    ],
-   "text": "27"
+   "text": "Castellan"
   },
   {
-   "t": "num",
+   "t": "label",
    "at": [
-    36.88,
-    20.62
+    34.38,
+    21.88
    ],
-   "text": "28"
+   "text": "Lift"
   },
   {
    "t": "label",
@@ -1326,7 +1331,7 @@
     8,
     12
    ],
-   "title": "1-2 · The drawbridge and its towers"
+   "title": "The drawbridge and its towers"
   },
   "entry-court": {
    "squares": [
@@ -1335,7 +1340,7 @@
     4,
     25
    ],
-   "title": "3 · Entry lane inside the gate"
+   "title": "Entry lane inside the gate"
   },
   "stables": {
    "squares": [
@@ -1344,7 +1349,7 @@
     4,
     12
    ],
-   "title": "4 · Common stables"
+   "title": "Common stables"
   },
   "warehouse": {
    "squares": [
@@ -1353,7 +1358,7 @@
     4,
     13
    ],
-   "title": "5 · Common warehouse"
+   "title": "Common warehouse"
   },
   "bailiff": {
    "squares": [
@@ -1362,7 +1367,7 @@
     5,
     5
    ],
-   "title": "6 · The bailiff's tower"
+   "title": "The bailiff's tower"
   },
   "apartments": {
    "squares": [
@@ -1371,7 +1376,7 @@
     22,
     5
    ],
-   "title": "7 · Private residences"
+   "title": "Private residences"
   },
   "smithy": {
    "squares": [
@@ -1380,7 +1385,7 @@
     6,
     7
    ],
-   "title": "8 · The blacksmith"
+   "title": "The blacksmith"
   },
   "general-store": {
    "squares": [
@@ -1389,7 +1394,7 @@
     10,
     5
    ],
-   "title": "9 · General store"
+   "title": "General store"
   },
   "trader": {
    "squares": [
@@ -1398,7 +1403,7 @@
     9,
     5
    ],
-   "title": "10 · The trader's shop"
+   "title": "The trader's shop"
   },
   "bank": {
    "squares": [
@@ -1407,7 +1412,7 @@
     5,
     4
    ],
-   "title": "11 · The bank"
+   "title": "The bank"
   },
   "guard-tower": {
    "squares": [
@@ -1416,7 +1421,7 @@
     5,
     5
    ],
-   "title": "12 · Guard tower"
+   "title": "Guard tower"
   },
   "fountain": {
    "squares": [
@@ -1425,7 +1430,7 @@
     9,
     9
    ],
-   "title": "13 · Courtyard and fountain"
+   "title": "Courtyard and fountain"
   },
   "inn": {
    "squares": [
@@ -1434,7 +1439,7 @@
     5,
     6
    ],
-   "title": "14 · The travellers' inn"
+   "title": "The travellers' inn"
   },
   "tavern": {
    "squares": [
@@ -1443,7 +1448,7 @@
     10,
     5
    ],
-   "title": "15 · The tavern"
+   "title": "The tavern"
   },
   "guild": {
    "squares": [
@@ -1452,7 +1457,7 @@
     10,
     9
    ],
-   "title": "16 · Merchant guild headquarters"
+   "title": "Merchant guild headquarters"
   },
   "banker-house": {
    "squares": [
@@ -1461,7 +1466,7 @@
     9,
     5
    ],
-   "title": "7a · The banker's house"
+   "title": "The banker's house"
   },
   "priest-house": {
    "squares": [
@@ -1470,7 +1475,7 @@
     5,
     6
    ],
-   "title": "7b · The visiting priest's house"
+   "title": "The visiting priest's house"
   },
   "chapel": {
    "squares": [
@@ -1479,7 +1484,7 @@
     12,
     5
    ],
-   "title": "17 · The abbey"
+   "title": "The abbey"
   },
   "inner-gate": {
    "squares": [
@@ -1488,7 +1493,7 @@
     13,
     10
    ],
-   "title": "18 · Inner gatehouse"
+   "title": "Inner gatehouse"
   },
   "watchtowers": {
    "squares": [
@@ -1497,7 +1502,7 @@
     53,
     9
    ],
-   "title": "19-20 · Watchtowers at the ends of the inner wall (ballista at 20)"
+   "title": "Watchtowers at the ends of the inner wall (ballista on the east one)"
   },
   "inner-bailey": {
    "squares": [
@@ -1506,7 +1511,7 @@
     44,
     26
    ],
-   "title": "21 · The inner bailey"
+   "title": "The inner bailey"
   },
   "cavalry-stables": {
    "squares": [
@@ -1515,7 +1520,7 @@
     15,
     16
    ],
-   "title": "22 · Cavalry stables"
+   "title": "Cavalry stables"
   },
   "great-tower": {
    "squares": [
@@ -1524,7 +1529,7 @@
     6,
     6
    ],
-   "title": "23 · The great tower and the storm cannon"
+   "title": "The great tower and the storm cannon"
   },
   "fortress": {
    "squares": [
@@ -1533,7 +1538,7 @@
     19,
     16
    ],
-   "title": "24 · The fortress (26 guards' quarters, 27 castellan's quarters)"
+   "title": "The fortress (guards' and castellan's quarters)"
   },
   "cliff-towers": {
    "squares": [
@@ -1542,7 +1547,7 @@
     4,
     4
    ],
-   "title": "25 · Thunder-rattler towers (north-west and south-west corners)"
+   "title": "Thunder-rattler corner towers (north-west and south-west)"
   },
   "lift": {
    "squares": [
@@ -1551,7 +1556,7 @@
     4,
     4
    ],
-   "title": "28 · The secret lift beneath the mountain"
+   "title": "The secret lift beneath the mountain"
   }
  },
  "notes": "Traced from the layout Heph supplied (2026-11-06), redrawn in the E9 ink style; buildings keyed from Heph's labelled zoom."

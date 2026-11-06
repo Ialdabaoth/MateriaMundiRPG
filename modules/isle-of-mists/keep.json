@@ -2,7 +2,7 @@
  "encounters": {
   "scenes": {
    "keep-east-gate": {
-    "title": "1-2 · The drawbridge",
+    "title": "The drawbridge",
     "where": {
      "site": "baile-atha-troim",
      "room": "east-gate"
@@ -21,7 +21,7 @@
     }
    },
    "keep-entry-court": {
-    "title": "3 · Entry courtyard",
+    "title": "Entry courtyard",
     "where": {
      "site": "baile-atha-troim",
      "room": "entry-court"
@@ -40,7 +40,7 @@
     }
    },
    "keep-stables": {
-    "title": "4 · Common stables",
+    "title": "Common stables",
     "where": {
      "site": "baile-atha-troim",
      "room": "stables"
@@ -53,7 +53,7 @@
     }
    },
    "keep-warehouse": {
-    "title": "5 · Common warehouse",
+    "title": "Common warehouse",
     "where": {
      "site": "baile-atha-troim",
      "room": "warehouse"
@@ -66,7 +66,7 @@
     }
    },
    "keep-bailiff": {
-    "title": "6 · The bailiff's tower",
+    "title": "The bailiff's tower",
     "where": {
      "site": "baile-atha-troim",
      "room": "bailiff"
@@ -79,7 +79,7 @@
     }
    },
    "keep-apartments": {
-    "title": "7 · Private residences",
+    "title": "Private residences",
     "where": {
      "site": "baile-atha-troim",
      "room": "apartments"
@@ -92,7 +92,7 @@
     }
    },
    "keep-smithy": {
-    "title": "8 · The blacksmith",
+    "title": "The blacksmith",
     "where": {
      "site": "baile-atha-troim",
      "room": "smithy"
@@ -110,7 +110,7 @@
     }
    },
    "keep-general-store": {
-    "title": "9 · General store",
+    "title": "General store",
     "where": {
      "site": "baile-atha-troim",
      "room": "general-store"
@@ -123,7 +123,7 @@
     }
    },
    "keep-trader": {
-    "title": "10 · The trader's shop",
+    "title": "The trader's shop",
     "where": {
      "site": "baile-atha-troim",
      "room": "trader"
@@ -136,7 +136,7 @@
     }
    },
    "keep-bank": {
-    "title": "11 · The bank",
+    "title": "The bank",
     "where": {
      "site": "baile-atha-troim",
      "room": "bank"
@@ -157,7 +157,7 @@
     }
    },
    "keep-guard-tower": {
-    "title": "12 · Guard tower",
+    "title": "Guard tower",
     "where": {
      "site": "baile-atha-troim",
      "room": "guard-tower"
@@ -174,7 +174,7 @@
     }
    },
    "keep-courtyard": {
-    "title": "13 · Main courtyard and fountain",
+    "title": "Main courtyard and fountain",
     "where": {
      "site": "baile-atha-troim",
      "room": "fountain"
@@ -187,7 +187,7 @@
     }
    },
    "keep-inn": {
-    "title": "14 · The travellers' inn",
+    "title": "The travellers' inn",
     "where": {
      "site": "baile-atha-troim",
      "room": "inn"
@@ -200,7 +200,7 @@
     }
    },
    "keep-tavern": {
-    "title": "15 · The tavern",
+    "title": "The tavern",
     "where": {
      "site": "baile-atha-troim",
      "room": "tavern"
@@ -222,7 +222,7 @@
     }
    },
    "keep-guild": {
-    "title": "16 · Merchant guild headquarters",
+    "title": "Merchant guild headquarters",
     "where": {
      "site": "baile-atha-troim",
      "room": "guild"
@@ -235,7 +235,7 @@
     }
    },
    "keep-banker-house": {
-    "title": "7a · The banker's house",
+    "title": "The banker's house",
     "where": {
      "site": "baile-atha-troim",
      "room": "banker-house"
@@ -261,7 +261,7 @@
     }
    },
    "keep-priest-house": {
-    "title": "7b · The visiting priest",
+    "title": "The visiting priest",
     "where": {
      "site": "baile-atha-troim",
      "room": "priest-house"
@@ -280,7 +280,7 @@
     }
    },
    "keep-chapel": {
-    "title": "17 · The abbey",
+    "title": "The abbey",
     "where": {
      "site": "baile-atha-troim",
      "room": "chapel"
@@ -318,7 +318,7 @@
     }
    },
    "keep-inner-gate": {
-    "title": "18 · Inner gatehouse",
+    "title": "Inner gatehouse",
     "where": {
      "site": "baile-atha-troim",
      "room": "inner-gate"
@@ -344,7 +344,7 @@
     }
    },
    "keep-watchtowers": {
-    "title": "19-20 · Watchtowers",
+    "title": "Watchtowers",
     "where": {
      "site": "baile-atha-troim",
      "room": "watchtowers"
@@ -362,7 +362,7 @@
     }
    },
    "keep-inner-bailey": {
-    "title": "21 · The inner bailey",
+    "title": "The inner bailey",
     "where": {
      "site": "baile-atha-troim",
      "room": "inner-bailey"
@@ -380,7 +380,7 @@
     }
    },
    "keep-cavalry-stables": {
-    "title": "22 · Cavalry stables",
+    "title": "Cavalry stables",
     "where": {
      "site": "baile-atha-troim",
      "room": "cavalry-stables"
@@ -398,7 +398,7 @@
     }
    },
    "keep-great-tower": {
-    "title": "23 · The great tower",
+    "title": "The great tower",
     "where": {
      "site": "baile-atha-troim",
      "room": "great-tower"
@@ -424,7 +424,7 @@
     }
    },
    "keep-fortress": {
-    "title": "24 · The fortress",
+    "title": "The fortress",
     "where": {
      "site": "baile-atha-troim",
      "room": "fortress"
@@ -447,7 +447,7 @@
     }
    },
    "keep-cliff-towers": {
-    "title": "25 · Thunder-rattler towers",
+    "title": "Thunder-rattler towers",
     "where": {
      "site": "baile-atha-troim",
      "room": "cliff-towers"
@@ -465,7 +465,7 @@
     }
    },
    "keep-lift": {
-    "title": "28 · The lift beneath the mountain",
+    "title": "The lift beneath the mountain",
     "where": {
      "site": "baile-atha-troim",
      "room": "lift"
