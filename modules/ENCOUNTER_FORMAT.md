@@ -157,7 +157,7 @@ Done so far: 1 (spec), 2 (maps open in the Atlas and the module viewer, Atlas 0.
 - **0.4.1** Export for VTT: `.uvtt` for Foundry, Fantasy Grounds Unity and Arkenforge, plus picture + grid size for Roll20 and Owlbear Rodeo. Done.
 - **0.4.2** Universal VTT import into a map file (`tools/uvtt_import.py`, a creator tool for now). Done.
 - **0.4.3** Entrances, spawn points and the VTT adapter protocol, spec only (section 14).
-- **0.4.4 on** The adapter pieces in the apps (section 14.4), then one adapter per VTT with its **Open in …** links: spool up the scene, spawn the mobs, move the party to its entrance.
+- **0.4.4 on** The adapter pieces in the apps (section 14.5), then one adapter per VTT with its **Open in …** links: spool up the scene, spawn the mobs, move the party to its entrance.
 
 ## 12. Drawing maps: `tools/encounter_draw.py`
 
@@ -261,11 +261,21 @@ Heph: "Each PoI is an Entrance into an Encounter Map. One encounter map might co
 4. **Size.** An entrance can be as big as the 100-ft hex its PoI stands in: up to **25 × 20 squares** (paces). The checker warns past that.
 5. **Where it sits in the world.** Each entrance stands under its own PoI: the entrance's centre is the PoI's position (hex plus `ft` offset), north up. So a megadungeon needs no `anchor` for the whole map, and the Field view can outline each entrance's footprint in its own hex (to build with the Field outlines, section 11 slice 3). An entrance may set `"rotate"` (degrees clockwise) when the mouth faces another way on the map.
 
-### 14.4 Order of work
+### 14.4 The Foundry adapter (Atlas 0.4.6)
+
+`vtt/foundry/e9-bridge/` is a Foundry VTT module (v12, v13; README there). The GM presses *Open the E9 Atlas* in Foundry's token controls; the Atlas opens with `?vtt=foundry&pair=<code>`, shows "Linked to Foundry · code …", and every encounter map gains **Send to Foundry** (`tools/vtt_bridge.html`): pick the scenes whose creatures to place and the entrance the party arrives at, then the Atlas sends `scene.open` (the `.uvtt`), `tokens.spawn`, `party.place` (`actors: "players"`, each player's assigned character) and `scene.activate`.
+
+- **Counts.** The Atlas rolls each `who` line's dice (`3`, `d6`, `2d6`, `d6+1`, `d6÷2`) and its `chance` (`1-3 on d6`); a troupe word counts as 1 until the bestiary is wired in.
+- **Where.** A `who` line's `spawn`, else the scene's `map.spawn`, else its `map.area`, placed with 14.1; all tokens of one send avoid each other and the party.
+- **Reuse.** The scene is marked with `<module>:<map-id>`; sending the same map again reuses it and only places tokens.
+- **Creatures are actorless tokens** for now; making Foundry actors from the bestiary is per game system and comes later.
+- **Untested in a live Foundry world** at 0.4.6: the module was run against a stand-in for Foundry's API.
+
+### 14.5 Order of work
 
 1. This spec. Atlas 0.4.3.
 2. `spawns` in the checker, the viewer (entrances and spawn points drawn with the Walls overlay) and the `.uvtt` `e9` block, and the shared placement function `E9Map.place`. Done in Atlas 0.4.4.
-3. The first adapter: **Foundry VTT** (Heph 2026-11-06), an E9 Foundry module, with Open in links from section 13.
+3. The first adapter: **Foundry VTT** (Heph 2026-11-06), an E9 Foundry module (14.4, Atlas 0.4.6). Open in links from section 13 still to come.
 4. More adapters, one VTT at a time.
 
 Module threads supply real `spawns` for their maps (Heph 2026-11-06: the Atlas provides capabilities, the module threads provide implementations and test data).
