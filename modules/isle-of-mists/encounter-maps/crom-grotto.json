@@ -7,7 +7,7 @@
   70
  ],
  "grid": {
-  "ft": 10,
+  "ft": 5,
   "show": true
  },
  "layers": [
@@ -34,7 +34,7 @@
   "cave-k": {
    "squares": [
     17,
-    9,
+    10,
     4,
     4
    ],
@@ -65,7 +65,7 @@
     4,
     4
    ],
-   "title": "The areograph"
+   "title": "The ursagryph"
   },
   "cave-h": {
    "squares": [
