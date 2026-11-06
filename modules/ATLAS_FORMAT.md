@@ -140,13 +140,13 @@ Sections appear in this order: base terrain, then rivers and roads, then region 
 
   "regions": [{"name": "Cill Dara", "kind": "county", "label": [62000, 140000], "outline": [[0, 0]]}],
 
-  "pois": [{"id": "ceanannas-mor", "name": "Ceanannas Mór", "kind": "abbey", "icon": "church", "hex": [812, 410], "ft": [12, -30], "book": "B2"}]
+  "pois": [{"id": "ceanannas-mor", "name": "Ceanannas Mór", "kind": "abbey", "icon": "church", "hex": [812, 410], "book": "B2"}]
 }
 ```
 
 - **Points are in feet** from `origin`: `[x east, y south]`. Rivers and roads are polylines that the renderer smooths, so their points need no splines. A river's `class` sets its drawn width.
 - **Roads** come in three classes (Heph 2026-11-05): `roman` (a size class named for familiarity, not history: any great paved or engineered highway; in Ireland, the five ancient slighe from Tara), `local` and `trail`. Where a road crosses a river the renderer draws a crossing icon: a bridge on a `roman` road, a ford on the others, unless a `crossings` entry names the hex and the kind (`bridge` or `ford`). Heph is supplying the bridge and ford icons.
-- **POI positions** (Heph 2026-11-05) are a lattice hex `"hex": [C, R]` plus an optional `"ft": [east, south]` offset in feet from that hex's centre (omitted = the centre). The hex gives every level its address for free (which Field, League and March the place is in); the offset places it exactly, for Encounter maps. Tools keep the offset within the hex (at most 50 ft from the centre) by moving the point to the nearest hex.
+- **POI positions** (Heph 2026-11-06) are a whole lattice hex `"hex": [C, R]`: a PoI is always one 100-ft hex, with no offset inside it. The hex gives every level its address for free (which Field, League and March the place is in). At the 100-ft (Field) level a PoI draws centred in its hex and never past the hex's edge; its icon and label shrink to fit, and the label is left off when it would be too small to read. Visibility at the other levels is still to be worked out (open question). Older files with an `"ft"` offset still load; the offset is ignored.
 - **`names`** holds the Language box's translations, keyed by the name as drawn, as in module.json today.
 - **`overrides`** fixes a single hex at any level without repainting (`<march>:<league>`, and later deeper addresses).
 - An optional **elevation PNG** per March, 16-bit greyscale with the same geometry, can come later for hill shading.
