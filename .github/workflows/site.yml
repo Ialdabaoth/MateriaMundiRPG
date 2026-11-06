@@ -56,6 +56,7 @@ jobs:
             python3 -I modules/tools/build.py "modules/$id" "companion-app/dist/modules/$id"
           done
           cp mm.json companion-app/dist/mm.json
+          python3 -I modules/tools/atlas_app.py companion-app/dist
       - uses: actions/upload-pages-artifact@v3
         if: github.event_name != 'pull_request'
         with:
