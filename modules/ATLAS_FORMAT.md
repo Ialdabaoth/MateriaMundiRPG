@@ -165,6 +165,7 @@ Sections appear in this order: base terrain, then rivers and roads, then region 
   "travel": {"pace": {"mi_per_hour": 3, "hours_per_day": 8}, "roads": {"roman": 0.5, "local": 0.75, "trail": 1}}
   ```
   A module sets its own values in module.json `atlas.travel`, with the same shape plus `terrain`: `{"forest": 2, "woods": 2, "bog": 3}`. Anything it leaves out keeps the tool's defaults (3 mi/h, 8 h a day; roman 0.5, local 0.75, trail 1; terrain as in atlas_convert.py). A ruleset's procedures may later set the party's own pace, for example from encumbrance; the multipliers stay with the map. The Atlas key shows each terrain's multiplier and walking speed, and `E9Atlas.travel(legs)` adds up a route: legs are `[{mi, terrain, road?}]`, and it returns `{hours, days, mi}`.
+  The **Route** button (Atlas 0.4.12) is the first path tool. While it is on, a click adds a stop at the centre of the hex under it instead of zooming in, and dragging still pans. The route is measured on the terrain of the level being drawn (Leagues, Fields, Furlongs or 100-ft hexes), sampled every quarter hex along each straight leg. A leg that crosses terrain with no travel on foot is flagged. Roads count once the map has them.
 - **`names`** holds the Language box's translations, keyed by the name as drawn, as in module.json today.
 - **`overrides`** fixes a single hex at any level without repainting (`<march>:<league>`, and later deeper addresses).
 - An optional **elevation PNG** per March, 16-bit greyscale with the same geometry, can come later for hill shading.
