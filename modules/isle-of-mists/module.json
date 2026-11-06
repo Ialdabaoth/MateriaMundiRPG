@@ -5,7 +5,7 @@
  ],
  "title": "Beyond the Pale: Leinster, 1422",
  "short": "Beyond the Pale · Leinster, 1422",
- "version": "0.4.0",
+ "version": "0.4.1",
  "license": "CC0-1.0",
  "dem": [
   51,
@@ -2627,921 +2627,921 @@
      "Cathedral of Clogher"
     ],
     [
-     "Rock of Dunamase",
+     "Dún Másc",
      53.03189,
      -7.21069,
-     "castle",
-     "Anglo-Norman stone castle (Sites and Monuments Record)"
+     "ruin",
+     "Mortimer fortress on its rock, empty since the O'Mores took the country in the 1300s"
     ],
     [
-     "Annaghkeen Castle",
+     "Eanach Caoin",
      53.44663,
      -9.19636,
      "castle",
-     "Anglo-Norman stone castle (Sites and Monuments Record)"
+     "Burke castle on the eastern shore of Lough Corrib"
     ],
     [
-     "Ardnaglass Castle",
+     "Ard na Glaise",
      54.25637,
      -8.70746,
      "castle",
-     "Anglo-Norman stone castle (Sites and Monuments Record)"
+     "Old de Burgo castle, now in O'Dowd hands"
     ],
     [
-     "Ardfinnan Castle",
+     "Ard Fhíonáin",
      52.31136,
      -7.88011,
      "castle",
-     "Anglo-Norman stone castle (Sites and Monuments Record)"
+     "King John's castle over the Suir ford, held for the Butlers"
     ],
     [
-     "Ardrahan North Castle",
+     "Ard Raithin",
      53.15848,
      -8.80678,
      "castle",
-     "Anglo-Norman stone castle (Sites and Monuments Record)"
+     "de Burgo castle in Clanricarde"
     ],
     [
-     "Baldongan Castle",
+     "Baile Dongáin",
      53.55345,
      -6.12892,
      "castle",
-     "Anglo-Norman stone castle (Sites and Monuments Record)"
+     "Fortified church and castle in Fingal, inside the Pale"
     ],
     [
-     "Ballingarry Castle",
+     "Baile an Gharraí",
      53.01299,
      -8.02198,
      "castle",
-     "Anglo-Norman stone castle (Sites and Monuments Record)"
+     "Old hall-house in Éile, O'Carroll country"
     ],
     [
-     "Ballintober,Rosmeen Castle",
+     "Baile an Tobair",
      53.72216,
      -8.41582,
      "castle",
-     "Anglo-Norman stone castle (Sites and Monuments Record)"
+     "Great walled castle, seat of O'Conor Don"
     ],
     [
-     "Ballyboy East Castle",
+     "Baile Buí",
      52.28159,
      -7.97056,
      "castle",
-     "Hall-house (Sites and Monuments Record)"
+     "Hall-house in the Galtee foothills, Butler country"
     ],
     [
-     "Ballycahane Upper Castle",
+     "Baile Uí Chatháin",
      52.55076,
      -8.66752,
      "castle",
-     "Hall-house (Sites and Monuments Record)"
+     "Hall-house in the Earl of Desmond's Limerick"
     ],
     [
-     "Ballycapple Castle",
+     "Baile an Chapaill",
      52.92993,
      -8.07721,
      "castle",
-     "Hall-house (Sites and Monuments Record)"
+     "Hall-house in Ormond, under O'Kennedy raids"
     ],
     [
-     "Ballycarbery Castle",
+     "Baile Uí Chairbre",
      51.94884,
      -10.25874,
      "castle",
-     "Hall-house (Sites and Monuments Record)"
+     "Hall-house by the Valentia channel, MacCarthy Mór country"
     ],
     [
-     "Drummeen Castle",
+     "Droimín",
      52.91273,
      -8.96131,
      "castle",
-     "Hall-house (Sites and Monuments Record)"
+     "Hall-house in Thomond, O'Brien country"
     ],
     [
-     "Ballycurrin Castle",
+     "Baile Uí Churraoin",
      53.48711,
      -9.21492,
      "castle",
-     "Hall-house (Sites and Monuments Record)"
+     "Hall-house on the Lough Corrib shore"
     ],
     [
-     "Ballyderown Castle",
+     "Baile idir Dhá Abhainn",
      52.15832,
      -8.22386,
      "castle",
-     "Hall-house (Sites and Monuments Record)"
+     "Hall-house where the Funshion meets the Blackwater, Condon country"
     ],
     [
-     "Ballyhandle Castle",
+     "Ballyhandle",
      51.80568,
      -8.65446,
      "castle",
-     "Anglo-Norman stone castle (Sites and Monuments Record)"
+     "Castle south-west of Cork, in Barry and MacCarthy borderland"
     ],
     [
-     "Ballylahan Castle",
+     "Béal Átha Leathain",
      53.93458,
      -9.10504,
      "castle",
-     "Anglo-Norman stone castle (Sites and Monuments Record)"
+     "Jordan d'Exeter castle on the Moy, held by Mac Jordan"
     ],
     [
-     "Ballyloughan Castle",
+     "Baile an Locháin",
      52.67314,
      -6.89819,
      "castle",
-     "Anglo-Norman stone castle (Sites and Monuments Record)"
+     "Gatehouse castle in MacMurrough Kavanagh country"
     ],
     [
-     "Ballylusky Castle",
+     "Ballylusky",
      52.94728,
      -8.13149,
      "castle",
-     "Hall-house (Sites and Monuments Record)"
+     "Hall-house in north Ormond"
     ],
     [
-     "Ballymacoda Castle",
+     "Baile Mhac Óda",
      51.89206,
      -7.93067,
      "castle",
-     "Anglo-Norman stone castle (Sites and Monuments Record)"
+     "Castle near Youghal, Fitzgerald of Imokilly"
     ],
     [
-     "Ballymacphilip Castle",
+     "Baile Mhic Philib",
      52.12399,
      -8.38,
      "castle",
-     "Anglo-Norman stone castle (Sites and Monuments Record)"
+     "Castle in Roche country"
     ],
     [
-     "Ballymoon Castle",
+     "Baile Mhuáin",
      52.70023,
      -6.9067,
-     "castle",
-     "Anglo-Norman stone castle (Sites and Monuments Record)"
+     "ruin",
+     "Courtyard castle never finished, empty for a century"
     ],
     [
      "Davis's Castle",
      52.00712,
      -8.63712,
      "castle",
-     "Anglo-Norman stone castle (Sites and Monuments Record)"
+     "Castle in Barrett country, north of Cork"
     ],
     [
-     "Ballynaclogh Castle",
+     "Baile na Cloiche",
      52.82545,
      -8.16287,
      "castle",
-     "Anglo-Norman stone castle (Sites and Monuments Record)"
+     "Castle in Ormond"
     ],
     [
-     "Bawn Castle",
+     "An Bábhún",
      53.67714,
      -7.76864,
      "castle",
-     "Anglo-Norman stone castle (Sites and Monuments Record)"
+     "Castle in O'Farrell's Annaly"
     ],
     [
-     "Billistown Castle",
+     "Billistown",
      53.60109,
      -7.11271,
      "castle",
-     "Hall-house (Sites and Monuments Record)"
+     "Hall-house in Nugent's Delvin"
     ],
     [
-     "Glanworth Castle",
+     "Gleannúir",
      52.18814,
      -8.35458,
      "castle",
-     "Anglo-Norman stone castle (Sites and Monuments Record)"
+     "Seat of the Roches of Fermoy; Dominican friary by the bridge"
     ],
     [
-     "Brees Castle",
+     "An Bhrí",
      53.77559,
      -9.06704,
      "castle",
-     "Anglo-Norman stone castle (Sites and Monuments Record)"
+     "Castle in Mac William Burke's Mayo"
     ],
     [
-     "Brittas Castle",
+     "An Briotás",
      52.6066,
      -8.41127,
      "castle",
-     "Anglo-Norman stone castle (Sites and Monuments Record)"
+     "Castle on the plain east of Limerick"
     ],
     [
-     "Bunratty Castle",
+     "Bun Raite",
      52.69668,
      -8.81204,
-     "castle",
-     "Hall-house (Sites and Monuments Record)"
+     "ruin",
+     "De Clare castle wrecked by the O'Briens; the MacNamaras are gathering stone to build anew"
     ],
     [
-     "Carbury Castle",
+     "Cairbre",
      53.36162,
      -6.96911,
      "castle",
-     "Anglo-Norman stone castle (Sites and Monuments Record)"
+     "Bermingham castle on Carbury Hill, at the edge of the Pale; the Boyne rises below"
     ],
     [
-     "Cargin Castle",
+     "Cargin",
      53.43535,
      -9.15505,
      "castle",
-     "Hall-house (Sites and Monuments Record)"
+     "Hall-house by Lough Hackett, Burke country"
     ],
     [
-     "Carrick Castle",
+     "An Charraig",
      53.37808,
      -7.03838,
      "castle",
-     "Hall-house (Sites and Monuments Record)"
+     "Bermingham hall-house; men still whisper of the feast where the O'Connors were murdered"
     ],
     [
-     "Carrigaline Castle",
+     "Carraig Uí Leighin",
      51.81701,
      -8.37144,
      "castle",
-     "Anglo-Norman stone castle (Sites and Monuments Record)"
+     "Cogan castle on its rock over the Owenboy"
     ],
     [
-     "Carrigdownane Castle",
+     "Carraig Dhúnáin",
      52.22033,
      -8.39259,
      "castle",
-     "Anglo-Norman stone castle (Sites and Monuments Record)"
+     "Roche castle near the Blackwater"
     ],
     [
-     "Carrigogunnel Castle",
+     "Carraig Ó gCoinneall",
      52.64623,
      -8.7423,
      "castle",
-     "Anglo-Norman stone castle (Sites and Monuments Record)"
+     "Castle on a crag over the Shannon, in O'Brien hands"
     ],
     [
-     "Carrigrohane Castle",
+     "Carraig Ruacháin",
      51.89642,
      -8.56013,
      "castle",
-     "Anglo-Norman stone castle (Sites and Monuments Record)"
+     "Castle on a cliff over the Lee, west of Cork"
     ],
     [
-     "Ballynacourty Court",
+     "Baile na Cúirte",
      53.21372,
      -8.95336,
      "castle",
-     "Hall-house (Sites and Monuments Record)"
+     "Hall-house in Clanricarde"
     ],
     [
-     "Castle Barrett",
+     "Caisleán Bharóid",
      52.08418,
      -8.64164,
      "castle",
-     "Anglo-Norman stone castle (Sites and Monuments Record)"
+     "Seat of the Barretts"
     ],
     [
-     "Castleboy Castle",
+     "An Caisleán Buí",
      53.14619,
      -8.71167,
      "castle",
-     "Anglo-Norman stone castle (Sites and Monuments Record)"
+     "Castle in Clanricarde"
     ],
     [
-     "Castleconnor",
+     "Caisleán Chonchúir",
      54.16145,
      -9.13585,
      "castle",
-     "Hall-house (Sites and Monuments Record)"
+     "O'Dowd castle on the Moy estuary"
     ],
     [
-     "Dunmore Castle",
+     "Dún Mór",
      53.62381,
      -8.75561,
      "castle",
-     "Hall-house (Sites and Monuments Record)"
+     "Bermingham castle beside the old abbey of Dunmore"
     ],
     [
-     "Castle Grace",
+     "Caisleán Ghrás",
      52.28099,
      -7.95678,
      "castle",
-     "Anglo-Norman stone castle (Sites and Monuments Record)"
+     "Castle under the Galtees, Butler country"
     ],
     [
-     "Castle Hacket",
+     "Caisleán Haicéid",
      53.48914,
      -8.96942,
      "castle",
-     "Hall-house (Sites and Monuments Record)"
+     "Hall-house of the Hackets under Knockma, the hill of Finvarra's court"
     ],
     [
-     "Castle Kevin",
+     "Caisleán Chaoimhín",
      53.0245,
      -6.23674,
-     "castle",
-     "Anglo-Norman stone castle (Sites and Monuments Record)"
+     "ruin",
+     "The archbishop's castle in the hills, lost to the O'Tooles long ago"
     ],
     [
-     "Castlelands Castle",
+     "Castlelands",
      51.74488,
      -8.93529,
      "castle",
-     "Anglo-Norman stone castle (Sites and Monuments Record)"
+     "Castle in MacCarthy Reagh country"
     ],
     [
-     "Castlemaine",
+     "Caisleán na Mainge",
      52.16745,
      -9.70285,
      "castle",
-     "Anglo-Norman stone castle (Sites and Monuments Record)"
+     "Castle on the bridge over the Maine, held for Desmond"
     ],
     [
-     "Beal Castle",
+     "Béal",
      52.5758,
      -9.60917,
      "castle",
-     "Anglo-Norman stone castle (Sites and Monuments Record)"
+     "Castle at the Shannon mouth, Fitzmaurice of Kerry"
     ],
     [
-     "Reban Castle",
+     "Rí Bán",
      53.03034,
      -7.03522,
      "castle",
-     "Anglo-Norman stone castle (Sites and Monuments Record)"
+     "Castle on the Barrow, Kildare Fitzgerald country"
     ],
     [
-     "Castletown Castle",
+     "Baile an Chaisleáin",
      52.4179,
      -8.81899,
      "castle",
-     "Hall-house (Sites and Monuments Record)"
+     "Hall-house in Desmond's Limerick"
     ],
     [
-     "Kiltartan Castle",
+     "Cill Tartan",
      53.09033,
      -8.80714,
      "castle",
-     "Anglo-Norman stone castle (Sites and Monuments Record)"
+     "de Burgo castle in Clanricarde"
     ],
     [
-     "Castleview Castle",
+     "Castleview",
      52.22945,
      -9.46618,
      "castle",
-     "Anglo-Norman stone castle (Sites and Monuments Record)"
+     "Castle in Desmond's Kerry"
     ],
     [
-     "Castlewidenham Castle",
+     "Caisleán Uídeanam",
      52.17049,
      -8.46047,
      "castle",
-     "Anglo-Norman stone castle (Sites and Monuments Record)"
+     "Castle on the Blackwater near Fermoy"
     ],
     [
      "Clare Castle",
      52.4558,
      -7.62478,
      "castle",
-     "Hall-house (Sites and Monuments Record)"
+     "Hall-house in Butler Tipperary, near Fethard"
     ],
     [
-     "Cloghkeating Castle",
+     "Cloch Céitinn",
      52.9679,
      -8.09684,
      "castle",
-     "Hall-house (Sites and Monuments Record)"
+     "Hall-house in Ormond"
     ],
     [
-     "Clohaskin Castle",
+     "Clohaskin",
      53.05234,
      -7.99062,
      "castle",
-     "Hall-house (Sites and Monuments Record)"
+     "Hall-house in Éile, O'Carroll country"
     ],
     [
-     "Clonamicklon Castle",
+     "Clonamicklon",
      52.65506,
      -7.58456,
      "castle",
-     "Anglo-Norman stone castle (Sites and Monuments Record)"
+     "Castle under the Slieveardagh hills, Butler country"
     ],
     [
-     "Clonmore Castle",
+     "Cluain Mór",
      52.82811,
      -6.57551,
      "castle",
-     "Anglo-Norman stone castle (Sites and Monuments Record)"
+     "Big square castle, won and lost by the Kavanaghs"
     ],
     [
-     "Clonshire Castle",
+     "Cluain Siar",
      52.55062,
      -8.85063,
      "castle",
-     "Hall-house (Sites and Monuments Record)"
+     "Hall-house near Adare"
     ],
     [
-     "Coolbanagher Castle",
+     "Cúil Bheannchair",
      53.07822,
      -7.23232,
      "castle",
-     "Hall-house (Sites and Monuments Record)"
+     "Hall-house in O'More country"
     ],
     [
-     "Castleconnell",
+     "Caisleán Uí Chonaing",
      52.71236,
      -8.5037,
      "castle",
-     "Anglo-Norman stone castle (Sites and Monuments Record)"
+     "de Burgo castle over the Shannon rapids"
     ],
     [
-     "Coonagh Castle",
+     "Coonagh",
      52.58254,
      -8.26013,
      "castle",
-     "Anglo-Norman stone castle (Sites and Monuments Record)"
+     "Castle on the Limerick-Tipperary border"
     ],
     [
-     "Coololla Castle",
+     "Coololla",
      53.30574,
      -8.31581,
      "castle",
-     "Anglo-Norman stone castle (Sites and Monuments Record)"
+     "Castle in Clanricarde"
     ],
     [
-     "Corrool Castle",
+     "Corrool",
      53.55445,
      -7.91769,
      "castle",
-     "Anglo-Norman stone castle (Sites and Monuments Record)"
+     "Castle near Lough Ree, O'Kelly country"
     ],
     [
      "Cramp's Castle",
      52.47063,
      -7.68038,
      "castle",
-     "Hall-house (Sites and Monuments Record)"
+     "Hall-house near Fethard"
     ],
     [
-     "Croom Castle",
+     "Cromadh",
      52.5171,
      -8.71985,
      "castle",
-     "Anglo-Norman stone castle (Sites and Monuments Record)"
+     "Fitzgerald castle on the Maigue; \"Crom Abú\" is their war cry"
     ],
     [
-     "Dangan Castle",
+     "An Daingean, An Clár",
      52.83028,
      -8.80787,
      "castle",
-     "Hall-house (Sites and Monuments Record)"
+     "Hall-house in Thomond, MacNamara country"
     ],
     [
-     "Newcastle West",
+     "An Caisleán Nua Thiar",
      52.45007,
      -9.06108,
      "castle",
-     "Anglo-Norman stone castle (Sites and Monuments Record)"
+     "Desmond's great hall and castle"
     ],
     [
-     "Mannan Castle",
+     "Mainnín",
      54.00935,
      -6.69923,
-     "castle",
-     "Anglo-Norman stone castle (Sites and Monuments Record)"
+     "ruin",
+     "Pipard motte castle, deserted, deep in MacMahon country"
     ],
     [
-     "Dromineer Castle",
+     "Droim Inbhir",
      52.92588,
      -8.27722,
      "castle",
-     "Hall-house (Sites and Monuments Record)"
+     "O'Kennedy hall-house on Lough Derg"
     ],
     [
-     "Clontarf Castle",
+     "Cluain Tarbh",
      53.36481,
      -6.20703,
      "castle",
-     "Anglo-Norman stone castle (Sites and Monuments Record)"
+     "Hospitaller castle (once the Templars') by the strand of the old battle"
     ],
     [
-     "Dundrum Castle",
+     "Dún Droma Átha Cliath",
      53.28777,
      -6.24508,
      "castle",
-     "Anglo-Norman stone castle (Sites and Monuments Record)"
+     "Castle on the march between Dublin and the mountains"
     ],
     [
-     "Dunmanway North Castle",
+     "Dún Mánmhaí",
      51.71989,
      -9.11839,
      "castle",
-     "Anglo-Norman stone castle (Sites and Monuments Record)"
+     "MacCarthy castle in west Cork"
     ],
     [
-     "Dunmore Castle (52.15, -6.99)",
+     "Dún Mór Port Láirge",
      52.15347,
      -6.99405,
      "castle",
-     "Anglo-Norman stone castle (Sites and Monuments Record)"
+     "Castle over the harbour mouth of Waterford"
     ],
     [
-     "Northburgh Castle",
+     "An Caisleán Nua Inis Eoghain",
      55.20537,
      -6.9751,
      "castle",
-     "Anglo-Norman stone castle (Sites and Monuments Record)"
+     "The Red Earl's castle on Lough Foyle, now in O'Doherty hands"
     ],
     [
-     "Elfeet Castle",
+     "Elfeet",
      53.58284,
      -7.96377,
      "castle",
-     "Anglo-Norman stone castle (Sites and Monuments Record)"
+     "Castle on the Lough Ree shore, O'Farrell country"
     ],
     [
-     "Faha Castle",
+     "An Fhaiche",
      52.54498,
      -9.67885,
      "castle",
-     "Anglo-Norman stone castle (Sites and Monuments Record)"
+     "Castle on the north Kerry coast"
     ],
     [
-     "Gash Castle",
+     "Gash",
      52.97836,
      -7.49217,
      "castle",
-     "Anglo-Norman stone castle (Sites and Monuments Record)"
+     "Castle in Upper Ossory, MacGillapatrick country"
     ],
     [
-     "Glenogra Castle",
+     "Gleann Ogra",
      52.52639,
      -8.60353,
      "castle",
-     "Anglo-Norman stone castle (Sites and Monuments Record)"
+     "Desmond castle on the Limerick plain"
     ],
     [
-     "Fethard Castle",
+     "Fiodh Ard Loch Garman",
      52.19336,
      -6.84,
      "castle",
-     "Hall-house (Sites and Monuments Record)"
+     "The Bishop of Ferns' hall-house on the Hook"
     ],
     [
-     "Inchiquin Castle",
+     "Inse Uí Chuinn",
      51.92578,
      -7.94497,
      "castle",
-     "Anglo-Norman stone castle (Sites and Monuments Record)"
+     "Round keep by Youghal, Fitzgerald"
     ],
     [
-     "Furmina Castle",
+     "Furmina",
      53.06204,
      -9.51922,
      "castle",
-     "Hall-house (Sites and Monuments Record)"
+     "Hall-house on the Burren coast, O'Loughlin country"
     ],
     [
-     "Kilbolane Castle",
+     "Cill Bholáin",
      52.33798,
      -8.84691,
      "castle",
-     "Anglo-Norman stone castle (Sites and Monuments Record)"
+     "Courtyard castle in north Cork"
     ],
     [
-     "Kilfadda Castle",
+     "Coill Fhada",
      53.05779,
      -8.11965,
      "castle",
-     "Anglo-Norman stone castle (Sites and Monuments Record)"
+     "Castle in Ormond"
     ],
     [
-     "Kilfinny Castle",
+     "Cill Finne",
      52.50788,
      -8.79279,
      "castle",
-     "Hall-house (Sites and Monuments Record)"
+     "Hall-house in Desmond's Limerick"
     ],
     [
-     "Castlelyons",
+     "Caisleán Ó Liatháin",
      52.08569,
      -8.23238,
      "castle",
-     "Anglo-Norman stone castle (Sites and Monuments Record)"
+     "Seat of the Barrys; Carmelite friary"
     ],
     [
-     "Kilmaclenine Castle",
+     "Cill Mhic Léinín",
      52.20517,
      -8.72581,
      "castle",
-     "Anglo-Norman stone castle (Sites and Monuments Record)"
+     "Castle of the Bishop of Cloyne"
     ],
     [
      "Witches' Castle",
      53.36126,
      -8.79977,
      "castle",
-     "Hall-house (Sites and Monuments Record)"
+     "Hall-house in Clanricarde that the country people avoid"
     ],
     [
-     "Kiltinan Castle",
+     "Cill Tíonáin",
      52.43922,
      -7.65696,
      "castle",
-     "Anglo-Norman stone castle (Sites and Monuments Record)"
+     "Castle on a cliff over the Clashawley, Butler"
     ],
     [
-     "Kindlestown Castle",
+     "Kindlestown",
      53.14118,
      -6.08906,
      "castle",
-     "Hall-house (Sites and Monuments Record)"
+     "Hall-house by Delgany, raided by the O'Byrnes"
     ],
     [
-     "Knockantota South Castle",
+     "Knockantota",
      52.03162,
      -8.61705,
      "castle",
-     "Anglo-Norman stone castle (Sites and Monuments Record)"
+     "Castle in Barrett country"
     ],
     [
-     "Lackagh Castle",
+     "An Leacach",
      53.16145,
      -6.98891,
      "castle",
-     "Hall-house (Sites and Monuments Record)"
+     "Hall-house on the Kildare-Offaly march"
     ],
     [
-     "Lanesborough Castle",
+     "Béal Átha Liag",
      53.67349,
      -7.99195,
      "castle",
-     "Anglo-Norman stone castle (Sites and Monuments Record)"
+     "Castle at the Shannon ford above Lough Ree"
     ],
     [
-     "Latteragh Castle",
+     "Leatracha",
      52.80489,
      -8.03773,
      "castle",
-     "Anglo-Norman stone castle (Sites and Monuments Record)"
+     "Castle beside an old monastery in Ormond"
     ],
     [
-     "Lea Castle",
+     "Léigh",
      53.15629,
      -7.14736,
      "castle",
-     "Anglo-Norman stone castle (Sites and Monuments Record)"
+     "Fitzgerald castle on the Barrow, burned again and again by the O'Mores"
     ],
     [
-     "Leitrim Castle",
+     "Liatroim",
      52.16053,
      -8.20161,
      "castle",
-     "Anglo-Norman stone castle (Sites and Monuments Record)"
+     "Castle near Fermoy"
     ],
     [
-     "Leixlip Castle",
+     "Léim an Bhradáin",
      53.36204,
      -6.49064,
      "castle",
-     "Anglo-Norman stone castle (Sites and Monuments Record)"
+     "Castle over the Liffey's salmon leap, inside the Pale"
     ],
     [
-     "Licklash Castle",
+     "Licklash",
      52.15124,
      -8.25131,
      "castle",
-     "Hall-house (Sites and Monuments Record)"
+     "Hall-house on the Blackwater"
     ],
     [
-     "Lisbunny Castle",
+     "Lisbunny",
      52.86496,
      -8.1618,
      "castle",
-     "Hall-house (Sites and Monuments Record)"
+     "Hall-house near Nenagh"
     ],
     [
-     "Liscarroll Castle",
+     "Lios Cearúill",
      52.26117,
      -8.80346,
      "castle",
-     "Anglo-Norman stone castle (Sites and Monuments Record)"
+     "Great courtyard castle of the Barrys"
     ],
     [
-     "Lissardowlan Castle",
+     "Lissardowlan",
      53.71542,
      -7.71806,
      "castle",
-     "Anglo-Norman stone castle (Sites and Monuments Record)"
+     "Castle in Annaly, O'Farrell country"
     ],
     [
-     "Lixnaw Castle",
+     "Leic Snámha",
      52.40209,
      -9.62808,
      "castle",
-     "Anglo-Norman stone castle (Sites and Monuments Record)"
+     "Seat of Fitzmaurice, Lord of Kerry"
     ],
     [
-     "Bruree Castle",
+     "Brú Rí",
      52.42965,
      -8.67254,
      "castle",
-     "Anglo-Norman stone castle (Sites and Monuments Record)"
+     "Castle on the Maigue at the old seat of the kings of Munster"
     ],
     [
-     "Castlekirk",
+     "Caisleán na Circe",
      53.49256,
      -9.51339,
      "castle",
-     "Hall-house (Sites and Monuments Record)"
+     "O'Flaherty island castle in Lough Corrib; a witch and her hen built it in one night, they say"
     ],
     [
-     "Clogh Oughter Castle",
+     "Cloch Uachtair",
      54.01869,
      -7.45485,
      "castle",
-     "Anglo-Norman stone castle (Sites and Monuments Record)"
+     "O'Reilly island castle on Lough Oughter, their prison"
     ],
     [
-     "Mocollop Castle",
+     "Maigh Colpa",
      52.14682,
      -8.09448,
      "castle",
-     "Anglo-Norman stone castle (Sites and Monuments Record)"
+     "Desmond castle on the Blackwater"
     ],
     [
-     "Mogeely Castle",
+     "Maigh Íle",
      52.09848,
      -8.06323,
      "castle",
-     "Anglo-Norman stone castle (Sites and Monuments Record)"
+     "Desmond castle in Imokilly"
     ],
     [
-     "Moylough Castle",
+     "Maigh Locha",
      53.48979,
      -8.58018,
      "castle",
-     "Hall-house (Sites and Monuments Record)"
+     "Hall-house in Galway"
     ],
     [
-     "Newcastle Castle",
+     "Newcastle (Westmeath)",
      53.40398,
      -7.36526,
      "castle",
-     "Hall-house (Sites and Monuments Record)"
+     "Hall-house in Westmeath"
     ],
     [
-     "Newcastle Middle Castle",
+     "Caisleán Nua Mhic Coinnigh",
      53.07335,
      -6.07214,
      "castle",
-     "Anglo-Norman stone castle (Sites and Monuments Record)"
+     "Royal castle on the Wicklow coast, often under O'Byrne siege"
     ],
     [
-     "Oldcastle Castle",
+     "Oldcastle (Tipperary)",
      52.90068,
      -7.85212,
      "castle",
-     "Anglo-Norman stone castle (Sites and Monuments Record)"
+     "Castle in Ormond"
     ],
     [
-     "Pallas Castle",
+     "An Pailís",
      52.86083,
      -8.30876,
      "castle",
-     "Anglo-Norman stone castle (Sites and Monuments Record)"
+     "Castle in Ormond"
     ],
     [
-     "Park Castle",
+     "Park",
      53.25727,
      -8.32421,
      "castle",
-     "Hall-house (Sites and Monuments Record)"
+     "Hall-house in Uí Mhaine"
     ],
     [
      "Round Castle",
      52.07591,
      -9.55504,
      "castle",
-     "Anglo-Norman stone castle (Sites and Monuments Record)"
+     "Round keep in Desmond's Kerry"
     ],
     [
-     "Phale Castle",
+     "Phale",
      51.72337,
      -8.96492,
      "castle",
-     "Anglo-Norman stone castle (Sites and Monuments Record)"
+     "Castle near Enniskean, MacCarthy Reagh country"
     ],
     [
-     "Quin Castle",
+     "Cuinche",
      52.81923,
      -8.86292,
-     "castle",
-     "Anglo-Norman stone castle (Sites and Monuments Record)"
+     "ruin",
+     "Ruined de Clare castle; the MacNamaras mean to raise a friary in its walls"
     ],
     [
-     "Rathcoffey Demesne Castle",
+     "Ráth Cobhthaigh",
      53.33139,
      -6.66481,
      "castle",
-     "Anglo-Norman stone castle (Sites and Monuments Record)"
+     "Wogan castle inside the Pale"
     ],
     [
-     "Rathumney Castle",
+     "Rathumney",
      52.29529,
      -6.87445,
      "castle",
-     "Hall-house (Sites and Monuments Record)"
+     "Hall-house in south Wexford"
     ],
     [
-     "Roche Castle",
+     "Castle Roche",
      54.04648,
      -6.48844,
      "castle",
-     "Anglo-Norman stone castle (Sites and Monuments Record)"
+     "De Verdon castle on a rock at the edge of the Pale"
     ],
     [
-     "Shanid Castle",
+     "Seanaid",
      52.55284,
      -9.11684,
      "castle",
-     "Anglo-Norman stone castle (Sites and Monuments Record)"
+     "Desmond motte castle; \"Shanid Abú\" is their war cry"
     ],
     [
-     "Shanrahan Castle",
+     "Shanrahan",
      52.27285,
      -8.01439,
      "castle",
-     "Hall-house (Sites and Monuments Record)"
+     "Hall-house near Clogheen"
     ],
     [
-     "Shrule Castle",
+     "Sruthair",
      53.51957,
      -9.08583,
      "castle",
-     "Hall-house (Sites and Monuments Record)"
+     "Hall-house on the Mayo-Galway border"
     ],
     [
-     "Clare Castle (52.82, -8.96)",
+     "Clarecastle",
      52.81615,
      -8.96107,
      "castle",
-     "Anglo-Norman stone castle (Sites and Monuments Record)"
+     "Castle at the Fergus bridge, O'Brien"
     ],
     [
-     "Strancally Castle",
+     "Srón Caillí",
      52.02679,
      -7.85205,
      "castle",
-     "Hall-house (Sites and Monuments Record)"
+     "Hall-house on the Blackwater, Desmond"
     ],
     [
-     "Templehouse castle",
+     "Teach an Teampaill",
      54.11186,
      -8.58509,
      "castle",
-     "Hall-house (Sites and Monuments Record)"
+     "Old Templar house, now held by the O'Haras"
     ],
     [
      "Old Court",
      53.05946,
      -8.21188,
      "castle",
-     "Anglo-Norman stone castle (Sites and Monuments Record)"
+     "Castle in Éile"
     ],
     [
-     "Tomdeely North Castle",
+     "Tomdeely",
      52.61521,
      -8.9994,
      "castle",
-     "Hall-house (Sites and Monuments Record)"
+     "Hall-house on the Shannon estuary"
     ],
     [
-     "Cahir Castle",
+     "An Chathair",
      52.37456,
      -7.92716,
      "castle",
-     "Anglo-Norman stone castle (Sites and Monuments Record)"
+     "Butler castle on its rock island in the Suir"
     ],
     [
      "Ivy Castle",
      53.33004,
      -8.21256,
      "castle",
-     "Anglo-Norman stone castle (Sites and Monuments Record)"
+     "Castle in Uí Mhaine, O'Kelly country"
     ],
     [
-     "Tullow Castle",
+     "Tullow (Tipperary)",
      52.79727,
      -7.71626,
      "castle",
-     "Anglo-Norman stone castle (Sites and Monuments Record)"
+     "Castle in Ormond"
     ],
     [
-     "Rindown Castle",
+     "Rinn Dúin",
      53.53888,
      -7.9913,
-     "castle",
-     "Anglo-Norman stone castle (Sites and Monuments Record)"
+     "ruin",
+     "Royal castle on Lough Ree, deserted since the 1340s"
     ]
    ]
   }
@@ -4350,6 +4350,291 @@
   },
   "Clochar": {
    "en": "Clogher"
+  },
+  "Dún Másc": {
+   "en": "Rock of Dunamase"
+  },
+  "Eanach Caoin": {
+   "en": "Annaghkeen"
+  },
+  "Ard na Glaise": {
+   "en": "Ardnaglass"
+  },
+  "Ard Fhíonáin": {
+   "en": "Ardfinnan"
+  },
+  "Ard Raithin": {
+   "en": "Ardrahan"
+  },
+  "Baile Dongáin": {
+   "en": "Baldongan"
+  },
+  "Baile an Gharraí": {
+   "en": "Ballingarry"
+  },
+  "Baile an Tobair": {
+   "en": "Ballintober"
+  },
+  "Baile Buí": {
+   "en": "Ballyboy"
+  },
+  "Baile Uí Chatháin": {
+   "en": "Ballycahane"
+  },
+  "Baile an Chapaill": {
+   "en": "Ballycapple"
+  },
+  "Baile Uí Chairbre": {
+   "en": "Ballycarbery"
+  },
+  "Droimín": {
+   "en": "Drummeen"
+  },
+  "Baile Uí Churraoin": {
+   "en": "Ballycurrin"
+  },
+  "Baile idir Dhá Abhainn": {
+   "en": "Ballyderown"
+  },
+  "Béal Átha Leathain": {
+   "en": "Ballylahan"
+  },
+  "Baile an Locháin": {
+   "en": "Ballyloughan"
+  },
+  "Baile Mhac Óda": {
+   "en": "Ballymacoda"
+  },
+  "Baile Mhic Philib": {
+   "en": "Ballymacphilip"
+  },
+  "Baile Mhuáin": {
+   "en": "Ballymoon"
+  },
+  "Baile na Cloiche": {
+   "en": "Ballynaclogh"
+  },
+  "An Bábhún": {
+   "en": "Bawn"
+  },
+  "Gleannúir": {
+   "en": "Glanworth"
+  },
+  "An Bhrí": {
+   "en": "Brees"
+  },
+  "An Briotás": {
+   "en": "Brittas"
+  },
+  "Bun Raite": {
+   "en": "Bunratty"
+  },
+  "Cairbre": {
+   "en": "Carbury"
+  },
+  "An Charraig": {
+   "en": "Carrick"
+  },
+  "Carraig Uí Leighin": {
+   "en": "Carrigaline"
+  },
+  "Carraig Dhúnáin": {
+   "en": "Carrigdownane"
+  },
+  "Carraig Ó gCoinneall": {
+   "en": "Carrigogunnel"
+  },
+  "Carraig Ruacháin": {
+   "en": "Carrigrohane"
+  },
+  "Baile na Cúirte": {
+   "en": "Ballynacourty"
+  },
+  "Caisleán Bharóid": {
+   "en": "Castle Barrett"
+  },
+  "An Caisleán Buí": {
+   "en": "Castleboy"
+  },
+  "Caisleán Chonchúir": {
+   "en": "Castleconnor"
+  },
+  "Dún Mór": {
+   "en": "Dunmore"
+  },
+  "Caisleán Ghrás": {
+   "en": "Castle Grace"
+  },
+  "Caisleán Haicéid": {
+   "en": "Castle Hacket"
+  },
+  "Caisleán Chaoimhín": {
+   "en": "Castle Kevin"
+  },
+  "Caisleán na Mainge": {
+   "en": "Castlemaine"
+  },
+  "Béal": {
+   "en": "Beal"
+  },
+  "Rí Bán": {
+   "en": "Reban"
+  },
+  "Baile an Chaisleáin": {
+   "en": "Castletown"
+  },
+  "Cill Tartan": {
+   "en": "Kiltartan"
+  },
+  "Caisleán Uídeanam": {
+   "en": "Castlewidenham"
+  },
+  "Cloch Céitinn": {
+   "en": "Cloghkeating"
+  },
+  "Cluain Mór": {
+   "en": "Clonmore"
+  },
+  "Cluain Siar": {
+   "en": "Clonshire"
+  },
+  "Cúil Bheannchair": {
+   "en": "Coolbanagher"
+  },
+  "Caisleán Uí Chonaing": {
+   "en": "Castleconnell"
+  },
+  "Cromadh": {
+   "en": "Croom"
+  },
+  "An Daingean, An Clár": {
+   "en": "Dangan (Clare)"
+  },
+  "An Caisleán Nua Thiar": {
+   "en": "Newcastle West"
+  },
+  "Mainnín": {
+   "en": "Mannan"
+  },
+  "Droim Inbhir": {
+   "en": "Dromineer"
+  },
+  "Cluain Tarbh": {
+   "en": "Clontarf"
+  },
+  "Dún Droma Átha Cliath": {
+   "en": "Dundrum (Dublin)"
+  },
+  "Dún Mánmhaí": {
+   "en": "Dunmanway"
+  },
+  "Dún Mór Port Láirge": {
+   "en": "Dunmore (Waterford)"
+  },
+  "An Caisleán Nua Inis Eoghain": {
+   "en": "Northburgh"
+  },
+  "An Fhaiche": {
+   "en": "Faha"
+  },
+  "Gleann Ogra": {
+   "en": "Glenogra"
+  },
+  "Fiodh Ard Loch Garman": {
+   "en": "Fethard (Wexford)"
+  },
+  "Inse Uí Chuinn": {
+   "en": "Inchiquin"
+  },
+  "Cill Bholáin": {
+   "en": "Kilbolane"
+  },
+  "Coill Fhada": {
+   "en": "Kilfadda"
+  },
+  "Cill Finne": {
+   "en": "Kilfinny"
+  },
+  "Caisleán Ó Liatháin": {
+   "en": "Castlelyons"
+  },
+  "Cill Mhic Léinín": {
+   "en": "Kilmaclenine"
+  },
+  "Cill Tíonáin": {
+   "en": "Kiltinan"
+  },
+  "An Leacach": {
+   "en": "Lackagh"
+  },
+  "Béal Átha Liag": {
+   "en": "Lanesborough"
+  },
+  "Leatracha": {
+   "en": "Latteragh"
+  },
+  "Léigh": {
+   "en": "Lea"
+  },
+  "Liatroim": {
+   "en": "Leitrim (Cork)"
+  },
+  "Léim an Bhradáin": {
+   "en": "Leixlip"
+  },
+  "Lios Cearúill": {
+   "en": "Liscarroll"
+  },
+  "Leic Snámha": {
+   "en": "Lixnaw"
+  },
+  "Brú Rí": {
+   "en": "Bruree"
+  },
+  "Caisleán na Circe": {
+   "en": "Hen's Castle"
+  },
+  "Cloch Uachtair": {
+   "en": "Clogh Oughter"
+  },
+  "Maigh Colpa": {
+   "en": "Mocollop"
+  },
+  "Maigh Íle": {
+   "en": "Mogeely"
+  },
+  "Maigh Locha": {
+   "en": "Moylough"
+  },
+  "Caisleán Nua Mhic Coinnigh": {
+   "en": "Newcastle McKynegan"
+  },
+  "An Pailís": {
+   "en": "Pallas"
+  },
+  "Cuinche": {
+   "en": "Quin"
+  },
+  "Ráth Cobhthaigh": {
+   "en": "Rathcoffey"
+  },
+  "Seanaid": {
+   "en": "Shanid"
+  },
+  "Sruthair": {
+   "en": "Shrule"
+  },
+  "Srón Caillí": {
+   "en": "Strancally"
+  },
+  "Teach an Teampaill": {
+   "en": "Templehouse"
+  },
+  "An Chathair": {
+   "en": "Cahir"
+  },
+  "Rinn Dúin": {
+   "en": "Rindown"
   }
  }
 }

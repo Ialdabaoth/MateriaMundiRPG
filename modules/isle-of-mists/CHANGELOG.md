@@ -2,6 +2,14 @@
 
 This module's version is its own. It does not follow the E9 Atlas (`modules/tools/ATLAS_VERSION`) or the E9 Companion; a change to the tools or apps alone never bumps it. Bump it only for changes to this module's content (text, sites, creatures, encounters, maps), using the rules in [WORKFLOWS.md](../WORKFLOWS.md#versioning).
 
+## 0.4.1 (2026-11-06)
+
+Gazetteer cleanup for the 131 castles taken from the Sites and Monuments Record.
+- Irish names for 95 of them, with the English name kept for the Language toggle. The other 36 are small townland names whose Irish form is uncertain; they stay in English.
+- Each castle has a 1422 note in place of the record's class: who holds it (Butler, Desmond, Burke, O'Brien, O'Connor, O'Neill and so on) and what it is like.
+- Seven castles that stood empty or wrecked by 1422 are now `ruin`: Dún Másc (Dunamase), Baile Mhuáin (Ballymoon), Bun Raite (Bunratty), Caisleán Chaoimhín (Castle Kevin), Mainnín (Mannan), Cuinche (Quin) and Rinn Dúin (Rindown).
+- To check before print: the Irish names come from memory (Claude) and need checking against logainm.ie; holders are general history, not a survey of each site.
+
 ## 0.4.0 (2026-11-06)
 
 All of Ireland in the E9 Atlas (Heph: "available for exploration", not yet tied to books). The print maps stay on the four book counties.
