@@ -128,7 +128,7 @@ Building `modules/<id>` writes:
 <id>/index.html              the viewer
 <id>/module.json             the manifest (format "mm-module/1")
 <id>/maps/world.svg, maps/l-*.svg
-<id>/print/atlas.pdf (March pages), print/leagues.pdf
+<id>/print/atlas.pdf (March pages), print/leagues.pdf  (only with build.py --pdf: print PDFs are paused until the print process is settled, Heph 2026-11-07)
 <id>/atlas/map.json, atlas/terrain/<march>.png (E9 Atlas format, when atlas.centroid is set)
 <id>/atlas/tiles/ (the tiles the E9 Atlas draws this module with)
 <id>/atlas/index.html       forwards to the E9 Atlas app at <site>/atlas/?module=<id>, keeping the #link
