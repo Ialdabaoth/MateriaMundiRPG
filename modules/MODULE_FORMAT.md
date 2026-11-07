@@ -50,6 +50,7 @@ The Companion adds a repository from its published URL. It reads `mm.json` and t
 | --- | --- |
 | `id`, `title`, `short`, `version` | `version` is semver. Breaking changes to ids (section 5) need a new major version. |
 | `license` | SPDX id. Required. |
+| `credits` | Optional list of the data sources the module's maps use, `[{what, by, license, url?}]` (for example castle positions, CC BY 4.0). Copied to the built `module.json`; the E9 Atlas shows them under Credits in its footer and the module viewer in its footer (Atlas 0.5.0). Any CC BY source must be listed here. |
 | `dem` | `[lat0, lat1, lon0, lon1]`: the SRTM 1° tiles (south-west corners) the terrain comes from. The build fetches them. |
 | `admin` | Path to the GeoJSON boundaries (`properties.name` is the region name). |
 | `books` | Ordered list: `{id, title, county, region, detail}`. `region` names the book's 3-mile region and `detail` its half-mile overview. |
