@@ -2,6 +2,11 @@
 
 This module's version is its own. It does not follow the E9 Atlas (`modules/tools/ATLAS_VERSION`) or the E9 Companion; a change to the tools or apps alone never bumps it. Bump it only for changes to this module's content (text, sites, creatures, encounters, maps), using the rules in [WORKFLOWS.md](../WORKFLOWS.md#versioning).
 
+## 0.4.6 (2026-11-07)
+
+- B2 matches Heph's latest draft: scene and creature descriptions in `keep.json`, `lairs.json` and `encounters.json` use his Google Doc of 10 October 2026 word for word. The only edits are agreed canon and rules words (the Boyne at Trim, barrow-cat, feysilver, save vs. Doom and Fear, Alertness checks), listed before and after in `adventure/b2-text-changes.md`.
+- New scenes from the Doc: arriving in the Pale, keeping the adventure alive, Beyond the Pale, the caves introduction, inter-clan relations, emptying the caves, caves G to K room by room, and the abandoned druid's grove at Tlachtga. They have no map pointers yet.
+
 ## 0.4.5 (2026-11-07)
 
 B3, the Palace of Silver and Crimson, brought in from Heph's February 2026 draft, with stat blocks brought up to the current rules with him, in the new `palace.json` (an `encounters` block) and both bestiaries.
