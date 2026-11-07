@@ -2171,6 +2171,249 @@
     "origin": "human",
     "classId": "warrior"
    }
+  },
+  "chaplains-haunt": {
+   "from": "blank",
+   "replace": {
+    "level": 3,
+    "size": "Medium",
+    "movement": "Fly",
+    "armor": "immaterial",
+    "hp": "—",
+    "abilities": {
+     "con": 0,
+     "str": 0,
+     "dex": 0,
+     "int": 0,
+     "wis": 1,
+     "cha": 0
+    },
+    "attacks": [
+     "Thrown odds and ends (d6 blunt, 13+)",
+     "Thrown furniture (2d6 blunt, harder)"
+    ],
+    "talents": [],
+    "talentThreshold": 6,
+    "special": [
+     "Cannot manifest a body: no attack can harm him.",
+     "Speak With Dead calms him so he can be questioned."
+    ],
+    "origin": "undead"
+   }
+  },
+  "palace-bugbear": {
+   "from": "blank",
+   "replace": {
+    "level": 4,
+    "size": "Large",
+    "movement": "Normal",
+    "armor": "2 (0)",
+    "hp": "(4d6+20)×2",
+    "abilities": {
+     "con": 3,
+     "str": 3,
+     "dex": 1,
+     "int": -2,
+     "wis": 0,
+     "cha": 0
+    },
+    "attacks": [
+     "Oversized greatsword (3d6+3)"
+    ],
+    "talents": [
+     "stealth",
+     "alertness",
+     "survival"
+    ],
+    "talentThreshold": 4,
+    "special": [
+     "Improved Critical Hit. Battle-Trance with the Boar initiation: a frenzied charge is a critical hit if any damage die matches or beats the target's Agility. They charge screaming.",
+     "Feat: Cleave.",
+     "Hide armour."
+    ],
+    "origin": "bugbear",
+    "classId": "champion"
+   }
+  },
+  "palace-bugbear-outcast": {
+   "from": "blank",
+   "replace": {
+    "level": 4,
+    "size": "Large",
+    "movement": "Normal",
+    "armor": "2 (0)",
+    "hp": "(4d6+20)×2",
+    "abilities": {
+     "con": 3,
+     "str": 3,
+     "dex": 1,
+     "int": -2,
+     "wis": 0,
+     "cha": 0
+    },
+    "attacks": [
+     "Oversized greatsword (3d6+3)"
+    ],
+    "talents": [
+     "stealth",
+     "alertness",
+     "survival"
+    ],
+    "talentThreshold": 4,
+    "special": [
+     "Improved Critical Hit. Battle-Trance with the Boar initiation: a frenzied charge is a critical hit if any damage die matches or beats the target's Agility. They charge screaming.",
+     "Feat: Cleave.",
+     "Hide armour.",
+     "Sleepless and paranoid: nothing convinces him the party are not another illusion."
+    ],
+    "origin": "bugbear",
+    "classId": "champion"
+   }
+  },
+  "an-deichlamhach": {
+   "from": "blank",
+   "replace": {
+    "level": 6,
+    "size": "Small",
+    "movement": "Normal",
+    "armor": "0",
+    "hp": "3d6",
+    "abilities": {
+     "con": 0,
+     "str": -1,
+     "dex": 3,
+     "int": 1,
+     "wis": 0,
+     "cha": -2
+    },
+    "attacks": [
+     "Grapple (reach 2)",
+     "Bite (2d6 piercing)"
+    ],
+    "talents": [
+     "agility",
+     "finesse",
+     "stealth"
+    ],
+    "talentThreshold": 3,
+    "special": [
+     "Glamour 6: Beguile, Phantasm, Mirage, Invisibility, Darkness, Read Thoughts. Its trick: squirt a 5-pace sphere of darkness and vanish.",
+     "Crushing Hug: d6 bashing per round to a grappled target; biting it is easier.",
+     "Poison Bite: initiative -d6 per round until a save vs. Doom.",
+     "Camouflage: spotting it is a hard Alertness check; inside a fey illusion only Hunter's Expertise can. From ambush it sneak attacks, and hobbles on any damage die of 6.",
+     "Harvest: 3d6 psychic materia."
+    ],
+    "origin": "fey monster"
+   }
+  },
+  "aine": {
+   "from": "blank",
+   "replace": {
+    "level": 4,
+    "size": "Medium",
+    "movement": "Normal",
+    "armor": "2 (1)",
+    "hp": "4d6+12",
+    "abilities": {
+     "con": 1,
+     "str": 1,
+     "dex": 0,
+     "int": 0,
+     "wis": 2,
+     "cha": 1
+    },
+    "attacks": [
+     "Ruby-bladed keen longsword (2d6, +4 in battle-trance)"
+    ],
+    "talents": [
+     "alertness",
+     "survival",
+     "charm"
+    ],
+    "talentThreshold": 4,
+    "special": [
+     "Improved Critical Hit. Battle-Trance with the Wolf initiation: other attacks on her target this round are easier.",
+     "Feat: Defender.",
+     "Pucca: a wolf is her natural shape and she shifts at will (innate, not magic). Wolf form: Medium, Armor 2, HP 4d6+24, Con +4 Str +4 Dex +0, attack 7+: bite (3d6 piercing), drag down (grapple 3d6+4 blunt).",
+     "Kept collared in iron in wolf form; she sleeps in the drawing room and wakes if anyone fails a Stealth check passing her."
+    ],
+    "origin": "wolf pucca",
+    "classId": "champion"
+   }
+  },
+  "cathbad": {
+   "from": "blank",
+   "replace": {
+    "level": 5,
+    "size": "Medium",
+    "movement": "Normal",
+    "armor": "3 (2)",
+    "hp": "5d6",
+    "abilities": {
+     "con": 0,
+     "str": 0,
+     "dex": 0,
+     "int": 1,
+     "wis": 2,
+     "cha": 2
+    },
+    "attacks": [
+     "Quarterstaff (2d6 blunt)"
+    ],
+    "talents": [
+     "lore",
+     "intuition",
+     "survival",
+     "bearing",
+     "wit"
+    ],
+    "talentThreshold": 3,
+    "special": [
+     "Warlock: a priest sworn to Crom Cruach.",
+     "Dark prayers prepared (2 first, 2 second, 1 third circle; Death): Cause Fear, Sense the Divine; Speak With Dead, Bless; Curse Ability.",
+     "Feysilver chainmail."
+    ],
+    "origin": "human",
+    "classId": "priest"
+   }
+  },
+  "alice-kyteler": {
+   "from": "blank",
+   "replace": {
+    "level": 5,
+    "size": "Medium",
+    "movement": "Slow",
+    "armor": "10 (aetheric shield)",
+    "hp": "5d6-10",
+    "abilities": {
+     "con": -2,
+     "str": -1,
+     "dex": 1,
+     "int": 1,
+     "wis": 2,
+     "cha": 2
+    },
+    "attacks": [
+     "Lashing vine whip (2d6-1 piercing, reach 20)"
+    ],
+    "talents": [
+     "finesse",
+     "lore",
+     "intuition",
+     "survival",
+     "bearing",
+     "charm"
+    ],
+    "talentThreshold": 3,
+    "special": [
+     "Warlock: a priest sworn to Crom Cruach, Nature domain. Still alive.",
+     "Dark prayers prepared (2 first, 2 second, 1 third circle; Nature): Protection from Elements, Sense the Divine; Speak With Animals, Bless; Create Water.",
+     "The Croidhe mo Mhaistir (a dragon pearl in her chest): she may try any spell, prayer or glamour at will. Roll d6: first circle works on 3-6, second on 4-6, third on 5-6. On a failure the magic twists as on the Misty Moor.",
+     "The roses' stupor: everyone else's rolls are harder in the throneroom. Whoever wears the matching silver locket is immune, but obeys her every order."
+    ],
+    "origin": "human",
+    "classId": "priest"
+   }
   }
  }
 }

@@ -150,6 +150,89 @@
     },
     "description": "Dog-sized feathered crickets (1d6+1) that crawl from a crevice behind anyone approaching the purple ink pool and swarm steel armour, shields and heavy weapons.",
     "wants": "Iron and steel to rust and eat."
+   },
+   "chaplains-haunt": {
+    "name": "The chaplain's haunt",
+    "kind": "monster",
+    "is": "shade",
+    "lair": {
+     "site": "seacht-gcaislean-the-palace",
+     "room": "chaplains-bedroom"
+    },
+    "description": "The palace chaplain, cursed to lash out in impotent rage. Furniture and odds and ends fly at anyone who enters his bedroom. Calmed with Speak With Dead, he will tell his story of the palace and its curse.",
+    "wants": "Peace, and someone to hear how the palace fell."
+   },
+   "palace-bugbear": {
+    "name": "Bugbear champion",
+    "kind": "monster",
+    "is": "bugbear",
+    "lair": {
+     "site": "seacht-gcaislean-the-palace",
+     "room": "chapel"
+    },
+    "troupe": {
+     "lair": 5
+    },
+    "faction": "cathbads-bugbears",
+    "description": "A small bugbear tribe camped in the desecrated chapel, burning sacrifices to Crom Cruach before the altar. Three sleep on the pews; two take turns guarding Cathbad.",
+    "wants": "Meat, a fire, and a week off from guarding the old man."
+   },
+   "palace-bugbear-outcast": {
+    "name": "The outcast bugbear",
+    "kind": "monster",
+    "is": "bugbear",
+    "lair": {
+     "site": "seacht-gcaislean-the-palace",
+     "room": "lounge-upper"
+    },
+    "faction": "cathbads-bugbears",
+    "description": "A huge bugbear smashing up the upper lounge. The Cleasaí has tormented him for nights; everything he eats, sits on or picks up turns out to be the squid. His tribe threw him out. He charges anyone, yelling \"STOP MAKING FUN OF ME!\", \"IT'S NOT FUNNY ANYMORE, CLEASAÍ!\" and \"I WANT TO GO HOME!\"",
+    "wants": "To kill the Cleasaí, sleep, and go home."
+   },
+   "an-deichlamhach": {
+    "name": "An Deichlámhach, the Cleasaí",
+    "kind": "monster",
+    "is": "mimic",
+    "lair": {
+     "site": "seacht-gcaislean-the-palace",
+     "room": "great-hall"
+    },
+    "description": "A ten-armed air-breathing squid, made unnaturally clever by the fey magic of the Croidhe mo Mhaistir. It reads thoughts and spins fey illusions; its favourite is a gnome girl hung by her own hair while nine redcaps prod her with spears. Once met, it stalks the party for sport.",
+    "wants": "Good sport: the cruellest, funniest joke it can play on whoever is nearest."
+   },
+   "aine": {
+    "name": "Aine",
+    "kind": "npc",
+    "is": "werewolf",
+    "lair": {
+     "site": "seacht-gcaislean-the-palace",
+     "room": "drawing-room"
+    },
+    "description": "Mairead and Maddy's older sister, an Ossory Faoladh. The redcaps gave her to the bugbears; Cathbad keeps her collared in iron as a great sleeping wolf in the drawing room and tells visitors she is cursed. Her ruby-bladed sword lies in his study.",
+    "wants": "Her collar off, her sword back, and her little sister safe."
+   },
+   "cathbad": {
+    "name": "Cathbad",
+    "kind": "npc",
+    "is": "human",
+    "lair": {
+     "site": "seacht-gcaislean-the-palace",
+     "room": "cathbads-chambers"
+    },
+    "faction": "cathbads-bugbears",
+    "description": "A warlock sworn to Crom Cruach who presents himself as a kindly old priest trying to lift Aine's 'curse'. He studies ancient manuscripts and the secrets of her ruby-bladed sword, with two bugbears always at his side.",
+    "wants": "To unlock the ruby-bladed sword, and to keep Aine as his proof and his pet."
+   },
+   "alice-kyteler": {
+    "name": "Dame Alice Kyteler",
+    "kind": "npc",
+    "is": "human",
+    "lair": {
+     "site": "seacht-gcaislean-the-palace",
+     "room": "throneroom"
+    },
+    "description": "Hung above the throne, still alive, her ribcage torn open and the Croidhe mo Mhaistir pulsing in her chest where her heart should be. Rose vines run through her in place of veins and spread across the throneroom. She wears a gold locket; the silver one that matches it lies in the palace.",
+    "wants": "To wield the Croidhe and finish what she and Lady d'Meath began: the Isle reclaimed from Albion and its Church."
    }
   },
   "factions": [],
