@@ -1,7 +1,7 @@
 {
  "format": "e9-encounter-map/1",
  "id": "crom-caves-b-c",
- "title": "Caves of Crom Cruach: B and C, the Blacktooth and Bloodhand clans",
+ "title": "Caves of Crom Cruach: B and C, the Dubhfhiacail and Lámh Fhuilteach clans",
  "size": [54, 40],
  "grid": {
   "ft": 5,
@@ -77,7 +77,7 @@
     13,
     9
    ],
-   "title": "12 · Blacktooth chieftain"
+   "title": "12 · Dubhfhiacail chieftain"
   },
   "parley-13": {
    "squares": [
@@ -95,7 +95,7 @@
     15,
     9
    ],
-   "title": "14 · Bloodhand common room"
+   "title": "14 · Lámh Fhuilteach common room"
   },
   "c-mess-15": {
    "squares": [
@@ -122,7 +122,7 @@
     10,
     8
    ],
-   "title": "16 · Bloodhand chieftain"
+   "title": "16 · Lámh Fhuilteach chieftain"
   }
  },
  "links": [

@@ -71,7 +71,7 @@
     4,
     4
    ],
-   "title": "Bloodhand bugbears"
+   "title": "Lámh Fhuilteach bugbears"
   },
   "cave-c": {
    "squares": [
@@ -80,7 +80,7 @@
     4,
     4
    ],
-   "title": "Bloodhand goblins"
+   "title": "Lámh Fhuilteach goblins"
   },
   "cave-d": {
    "squares": [
@@ -89,7 +89,7 @@
     4,
     4
    ],
-   "title": "Skitterglint lair"
+   "title": "Drithleoga lair"
   },
   "cave-e": {
    "squares": [
@@ -116,7 +116,7 @@
     4,
     4
    ],
-   "title": "Skitterglint warrens"
+   "title": "Drithleoga warrens"
   },
   "cave-b": {
    "squares": [
@@ -125,7 +125,7 @@
     4,
     4
    ],
-   "title": "Blacktooth goblins"
+   "title": "Dubhfhiacail goblins"
   }
  },
  "links": [
@@ -135,7 +135,7 @@
     "map": "crom-caves-b-c",
     "area": "c-common-14"
    },
-   "label": "Bloodhand goblins"
+   "label": "Lámh Fhuilteach goblins"
   },
   {
    "from": [8.91, 40.22],
@@ -143,7 +143,7 @@
     "map": "crom-caves-d-e-f",
     "area": "d-mouth"
    },
-   "label": "Skitterglint lair"
+   "label": "Drithleoga lair"
   },
   {
    "from": [12.0, 52.61],
@@ -166,7 +166,7 @@
     "map": "crom-caves-d-e-f",
     "area": "f-guard-26"
    },
-   "label": "Skitterglint warrens"
+   "label": "Drithleoga warrens"
   },
   {
    "from": [37.04, 61.09],
@@ -174,7 +174,7 @@
     "map": "crom-caves-b-c",
     "area": "b-trophy-hall"
    },
-   "label": "Blacktooth goblins"
+   "label": "Dubhfhiacail goblins"
   }
  ],
  "notes": "Traced from the grotto layout Heph supplied (2026-11-06) and redrawn in the E9 ink style; cave names from Heph's labelled copy. Terraced cliffs ring a wooded ravine floor; each cave opens at the foot of a cliff.",

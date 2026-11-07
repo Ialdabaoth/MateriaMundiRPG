@@ -11,7 +11,7 @@
     },
     "faction": "peistduine-of-the-bog",
     "description": "The bone-mother’s bag of holding is currently full of severed heads, which the bag’s enchantment is keeping fresh.",
-    "wants": "To take back the warrens in Cnoc na Teamhrach that the Blacktooth goblins drove her people from."
+    "wants": "To take back the warrens in Cnoc na Teamhrach that the Dubhfhiacail goblins drove her people from."
    },
    "peistduine-hunter": {
     "name": "Péistduine hunter",
@@ -257,7 +257,7 @@
     "description": "The garbage pile at ② is infested with unusually large rats, many of which carry the Black Plague in their bite. There are 2d6 giant rats hiding within the garbage pile at any given time. Anyone bitten by a rat that achieves a critical hit should save vs. Doom to determine whether they contract an infection; rolling a ‘1’ on this saving throw indicates that the infection is the Plague."
    },
    "blacktooth-chieftain": {
-    "name": "Blacktooth chieftain",
+    "name": "Dubhfhiacail chieftain",
     "kind": "monster",
     "is": "hobgoblin",
     "lair": {
@@ -268,7 +268,7 @@
     "description": "The hobgoblin chieftain’s lair is at ⑫. He is wearing chainmail and a common (+1) bracer of shielding of dwarven manufacture, and wields a mace. He is wearing a non-magical dwarven signet ring worth 700 drac. The treasure alcove hidden in his room holds an uncommon elixir of health, two suits of chainmail, four swords, and a small locked treasure chest with 3d6 x 10 gold pieces and 3d6 x 10 silver."
    },
    "blacktooth-champion": {
-    "name": "Blacktooth champion",
+    "name": "Dubhfhiacail champion",
     "kind": "monster",
     "is": "hobgoblin",
     "lair": {
@@ -281,7 +281,7 @@
     "faction": "blacktooth-clan"
    },
    "blacktooth-hunter": {
-    "name": "Blacktooth hunter",
+    "name": "Dubhfhiacail hunter",
     "kind": "monster",
     "is": "hobgoblin",
     "lair": {
@@ -308,7 +308,7 @@
     "description": "They flee or hide rather than fight."
    },
    "bloodhand-chieftain": {
-    "name": "Bloodhand chieftain",
+    "name": "Lámh Fhuilteach chieftain",
     "kind": "monster",
     "is": "goblin",
     "lair": {
@@ -319,7 +319,7 @@
     "description": "The chieftain is a 3hd goblin redcap champion who wields a handaxe enchanted as a common (+1) flying blade, as well as a light steel shield. She is wearing banded armor originally intended for a dwarf, which is in slight need of repair. She is also adorned with various bits of expensive dwarven jewelry – a silver and gold belt worth 160 drac, an ivory bracelet worth 100 drac, and a gold and garnet signet ring worth 100 drac."
    },
    "bloodhand-hunter": {
-    "name": "Bloodhand hunter",
+    "name": "Lámh Fhuilteach hunter",
     "kind": "monster",
     "is": "goblin",
     "lair": {
@@ -332,7 +332,7 @@
     "faction": "bloodhand-clan"
    },
    "skitterglint-subchief": {
-    "name": "Skitterglint redcap sub-chieftain",
+    "name": "Drithleoga redcap sub-chieftain",
     "kind": "monster",
     "is": "goblin",
     "lair": {
@@ -342,7 +342,7 @@
     "faction": "skitterglint-clan"
    },
    "skitterglint-redcap-champion": {
-    "name": "Skitterglint redcap champion",
+    "name": "Drithleoga redcap champion",
     "kind": "monster",
     "is": "goblin",
     "lair": {
@@ -355,7 +355,7 @@
     "faction": "skitterglint-clan"
    },
    "skitterglint-redcap-hunter": {
-    "name": "Skitterglint redcap hunter",
+    "name": "Drithleoga redcap hunter",
     "kind": "monster",
     "is": "goblin",
     "lair": {
@@ -368,7 +368,7 @@
     "faction": "skitterglint-clan"
    },
    "skitterglint-redcap-druid": {
-    "name": "Skitterglint redcap druid",
+    "name": "Drithleoga redcap druid",
     "kind": "monster",
     "is": "goblin",
     "lair": {
@@ -405,7 +405,7 @@
     "description": "Very traumatised. Insists they are neither goblin, nor female, nor interested. Begs to join the party and be escorted out."
    },
    "skitterglint-ogre": {
-    "name": "The Skitterglint ogre",
+    "name": "The Drithleoga ogre",
     "kind": "monster",
     "is": "ogre",
     "lair": {
@@ -413,11 +413,11 @@
      "room": "E-22"
     },
     "faction": "skitterglint-clan",
-    "description": "While the ogre is officially the “ur-chief” over the Skitterglint clan, he mostly sits in his cave and demands to be brought elves, dwarves, and hobs to feast on. When he cannot sate his ravenous hunger, he often turns on his own subjects and allies, consuming roughly two goblins, beastfolk, or lizardfolk per week.",
+    "description": "While the ogre is officially the “ur-chief” over the Drithleoga clan, he mostly sits in his cave and demands to be brought elves, dwarves, and hobs to feast on. When he cannot sate his ravenous hunger, he often turns on his own subjects and allies, consuming roughly two goblins, beastfolk, or lizardfolk per week.",
     "wants": "Meat. Elves, dwarves and hobs above all."
    },
    "skitterglint-bugbear": {
-    "name": "Skitterglint bugbear sub-chieftain",
+    "name": "Drithleoga bugbear sub-chieftain",
     "kind": "monster",
     "is": "bugbear",
     "lair": {
@@ -449,7 +449,7 @@
     "description": "Wears a silver and sapphire amulet worth 135 drac."
    },
    "skitterglint-hobgoblin-champion": {
-    "name": "Skitterglint hobgoblin champion",
+    "name": "Drithleoga hobgoblin champion",
     "kind": "monster",
     "is": "hobgoblin",
     "lair": {
@@ -462,7 +462,7 @@
     "faction": "skitterglint-clan"
    },
    "skitterglint-hobgoblin-hunter": {
-    "name": "Skitterglint hobgoblin hunter",
+    "name": "Drithleoga hobgoblin hunter",
     "kind": "monster",
     "is": "hobgoblin",
     "lair": {
@@ -543,7 +543,7 @@
    },
    {
     "id": "blacktooth-clan",
-    "name": "The Blacktooth clan",
+    "name": "The Dubhfhiacail clan",
     "kind": "clan",
     "seat": "cnoc-na-teamhrach",
     "leader": "blacktooth-chieftain",
@@ -554,7 +554,7 @@
    },
    {
     "id": "bloodhand-clan",
-    "name": "The Bloodhand clan",
+    "name": "The Lámh Fhuilteach clan",
     "kind": "clan",
     "seat": "cnoc-na-teamhrach",
     "leader": "bloodhand-chieftain",
@@ -565,7 +565,7 @@
    },
    {
     "id": "skitterglint-clan",
-    "name": "The Skitterglint clan",
+    "name": "The Drithleoga clan",
     "kind": "clan",
     "seat": "cnoc-na-teamhrach",
     "leader": "skitterglint-ogre",
@@ -639,7 +639,7 @@
      "map": "bog-barrows",
      "area": "bone-mother"
     },
-    "description": "The bone-mother’s bag of holding is currently full of severed heads, which the bag’s enchantment is keeping fresh. An examination of the cooking pot and refuse around the barrow will suggest that severed heads are a delicacy for the kobolds.\n\nThese kobolds originally lived in cave B in Crum Cruach’s grotto, but were decimated and pushed out by the Blacktooth goblin clan. They are extremely resentful of this, and would eagerly accept help reclaiming their ancestral warrens — after which they are likely to reward the party’s help by cooking and eating them. If the party talks their way into allying with the tribe to re-take their warrens and then tries to talk their way out of being eaten, the tribe will explain that anyone eaten by the tribe gets reborn into the tribe, and so cooking and eating the party is the tribe’s way of welcoming them permanently into their family."
+    "description": "The bone-mother’s bag of holding is currently full of severed heads, which the bag’s enchantment is keeping fresh. An examination of the cooking pot and refuse around the barrow will suggest that severed heads are a delicacy for the kobolds.\n\nThese kobolds originally lived in cave B in Crum Cruach’s grotto, but were decimated and pushed out by the Dubhfhiacail goblin clan. They are extremely resentful of this, and would eagerly accept help reclaiming their ancestral warrens — after which they are likely to reward the party’s help by cooking and eating them. If the party talks their way into allying with the tribe to re-take their warrens and then tries to talk their way out of being eaten, the tribe will explain that anyone eaten by the tribe gets reborn into the tribe, and so cooking and eating the party is the tribe’s way of welcoming them permanently into their family."
    },
    "bog-barrows-hatchery": {
     "title": "The egg barrow",
@@ -1139,7 +1139,7 @@
     "description": "The door to the armory at ⑪ is locked; inside are three medium wooden shields, 3d6 spears, and two battle axes, all in excellent condition."
    },
    "cave-b-12": {
-    "title": "B12 · Blacktooth chieftain",
+    "title": "B12 · Dubhfhiacail chieftain",
     "where": {
      "site": "cnoc-na-teamhrach",
      "room": "B-12"
@@ -1164,14 +1164,14 @@
      "room": "C-13"
     },
     "who": [],
-    "description": "This is also directly above the kobold warrens. The secret room at ⑬ has a secret door leading from the Bloodhand chieftain’s quarters, and another leading from the Blacktooth chieftain’s quarters at Ⓑ-⑫. Both leaders use this room to negotiate between their tribes and plan joint raids, whenever the two clans are not fighting each other.",
+    "description": "This is also directly above the kobold warrens. The secret room at ⑬ has a secret door leading from the Lámh Fhuilteach chieftain’s quarters, and another leading from the Dubhfhiacail chieftain’s quarters at Ⓑ-⑫. Both leaders use this room to negotiate between their tribes and plan joint raids, whenever the two clans are not fighting each other.",
     "map": {
      "map": "crom-caves-b-c",
      "area": "parley-13"
     }
    },
    "cave-c-14": {
-    "title": "C14 · Bloodhand common room",
+    "title": "C14 · Lámh Fhuilteach common room",
     "where": {
      "site": "cnoc-na-teamhrach",
      "room": "C-14"
@@ -1222,7 +1222,7 @@
       "count": 1
      }
     ],
-    "description": "The Bloodhand chieftain’s lair is at ⑯; she always has a redcap hunter guard posted at (g) who actually takes their watch seriously. The room the guard is posted in also serves as the larder for the tribe; among the typical goblin offal is an actually high-quality cask of wine worth 55 drac.",
+    "description": "The Lámh Fhuilteach chieftain’s lair is at ⑯; she always has a redcap hunter guard posted at (g) who actually takes their watch seriously. The room the guard is posted in also serves as the larder for the tribe; among the typical goblin offal is an actually high-quality cask of wine worth 55 drac.",
     "treasure": "Among the offal, a cask of genuinely good wine worth 55 drac.",
     "map": {
      "map": "crom-caves-b-c",
@@ -1230,7 +1230,7 @@
     }
    },
    "cave-c-16": {
-    "title": "C16 · Bloodhand chieftain",
+    "title": "C16 · Lámh Fhuilteach chieftain",
     "where": {
      "site": "cnoc-na-teamhrach",
      "room": "C-16"
@@ -1246,7 +1246,7 @@
      "map": "crom-caves-b-c",
      "area": "c-chief-16"
     },
-    "description": "The Bloodhand chieftain’s lair is at ⑯; she always has a redcap hunter guard posted at (g) who actually takes their watch seriously. The room the guard is posted in also serves as the larder for the tribe; among the typical goblin offal is an actually high-quality cask of wine worth 55 drac.\n\nThe chieftain is a 3hd goblin redcap champion who wields a handaxe enchanted as a common (+1) flying blade, as well as a light steel shield. She is wearing banded armor originally intended for a dwarf, which is in slight need of repair. She is also adorned with various bits of expensive dwarven jewelry – a silver and gold belt worth 160 drac, an ivory bracelet worth 100 drac, and a gold and garnet signet ring worth 100 drac.\n\nThe room is well furnished with finely crafted dwarven furniture in slight disrepair, and contains a locked chest with 500 gold pieces inside."
+    "description": "The Lámh Fhuilteach chieftain’s lair is at ⑯; she always has a redcap hunter guard posted at (g) who actually takes their watch seriously. The room the guard is posted in also serves as the larder for the tribe; among the typical goblin offal is an actually high-quality cask of wine worth 55 drac.\n\nThe chieftain is a 3hd goblin redcap champion who wields a handaxe enchanted as a common (+1) flying blade, as well as a light steel shield. She is wearing banded armor originally intended for a dwarf, which is in slight need of repair. She is also adorned with various bits of expensive dwarven jewelry – a silver and gold belt worth 160 drac, an ivory bracelet worth 100 drac, and a gold and garnet signet ring worth 100 drac.\n\nThe room is well furnished with finely crafted dwarven furniture in slight disrepair, and contains a locked chest with 500 gold pieces inside."
    },
    "cave-d-patrol": {
     "title": "D · Redcap patrol",
@@ -1260,7 +1260,7 @@
       "count": 6
      }
     ],
-    "description": "㉘ The third goblin clan’s nest is across the ravine from the kobold lair, on the right side at ground level. At the ground level are the redcap warrens, where the young goblins of the Skitterglint clan are mostly left to fend for themselves.\n\nThese tunnels are used much more often than the others; each exploration round that the party is within the tunnels, the referee should roll a d6 to determine whether a random encounter occurs. On a 1-2, the party stumbles into a patrol of 6 x 2hd redcap hunters, each wearing leather and wielding a pair of hand axes.",
+    "description": "㉘ The third goblin clan’s nest is across the ravine from the kobold lair, on the right side at ground level. At the ground level are the redcap warrens, where the young goblins of the Drithleoga clan are mostly left to fend for themselves.\n\nThese tunnels are used much more often than the others; each exploration round that the party is within the tunnels, the referee should roll a d6 to determine whether a random encounter occurs. On a 1-2, the party stumbles into a patrol of 6 x 2hd redcap hunters, each wearing leather and wielding a pair of hand axes.",
     "map": {
      "map": "crom-caves-d-e-f",
      "area": "d-mouth"
@@ -1356,7 +1356,7 @@
      "map": "crom-caves-d-e-f",
      "area": "d-subchief-20"
     },
-    "description": "The Skitterglint redcaps have a “sub-chieftain”, who handles actual day-to-day leadership while their “ur-chief” ogre focuses on filling his belly with meat. The sub-chieftain’s chambers are at ⑳; he is a 3hd redcap champion, accompanied by a harem of two 2hd redcap hunters, three non-combatant female goblins (1hd each, will flee or hide rather than fight), and one very traumatized hob who continues to insist that they are neither goblin, nor female, nor interested (1hd non-combatant, will beg to join the party and be escorted out)."
+    "description": "The Drithleoga redcaps have a “sub-chieftain”, who handles actual day-to-day leadership while their “ur-chief” ogre focuses on filling his belly with meat. The sub-chieftain’s chambers are at ⑳; he is a 3hd redcap champion, accompanied by a harem of two 2hd redcap hunters, three non-combatant female goblins (1hd each, will flee or hide rather than fight), and one very traumatized hob who continues to insist that they are neither goblin, nor female, nor interested (1hd non-combatant, will beg to join the party and be escorted out)."
    },
    "cave-d-21": {
     "title": "D21 · Larder",
@@ -1393,7 +1393,7 @@
       "count": 1
      }
     ],
-    "description": "There is a separate cavern with an entrance next to Ⓓ; this cavern has a noticeably larger opening. The Skitterglint clan’s chieftain lives here – a vast ogre grown fat on the blood and bones of Albians and Eirish alike. The middle of the cave contains a vast bed made from straw and bear-hides; the chieftain himself will usually be sitting at ㉒. The secret door at Ⓓ-⑱ leads into his chambers; the Skitterglint goblins will come to ask him for help only if they find they can’t handle the adventurers themselves, as he is known to devour any underlings that disturb him without cause.\n\nThe ogre chieftain has bearskin hides (defense 2) which has been enchanted as an uncommon (+2) belt of feral might, and he wields a rare (+3) earthbreaker maul warhammer. He is a 6 hd huge creature, and as such is quite possibly the most formidable threat the party could face aside from the baal-malak demon in the labyrinth.\n\nHidden under his bearskin bedsheets are a series of leather sacks containing a common (+1) quiver of elemental bolts, a keg of brandy worth 80 drac, 3d6 x 100 copper pennies, 3d6 x 100 silver dimes, 3d6 x 100 gold drakhma, and another 3d6 x 100 counterfeit gold drakhma (actually lead alloy plated with gold).\n\nWhile the ogre is officially the “ur-chief” over the Skitterglint clan, he mostly sits in his cave and demands to be brought elves, dwarves, and hobs to feast on. When he cannot sate his ravenous hunger, he often turns on his own subjects and allies, consuming roughly two goblins, beastfolk, or lizardfolk per week.\n\nAdventure Note — If the party can bring back sufficient proof of the ogre’s existence to Sir Edward, or if the party manages to antagonize the ogre sufficiently that it chases them back to the Keep, Sir Edward will don the Siege Perilous and come fight it himself. If the party contains a Wizard or Dweomersmith, they will likely be asked to take the Engineer’s seat and assist him in the battle; the rest of the party will be given a dozen guards to help clear out any goblins or other creatures that decide to join the fray.",
+    "description": "There is a separate cavern with an entrance next to Ⓓ; this cavern has a noticeably larger opening. The Drithleoga clan’s chieftain lives here – a vast ogre grown fat on the blood and bones of Albians and Eirish alike. The middle of the cave contains a vast bed made from straw and bear-hides; the chieftain himself will usually be sitting at ㉒. The secret door at Ⓓ-⑱ leads into his chambers; the Drithleoga goblins will come to ask him for help only if they find they can’t handle the adventurers themselves, as he is known to devour any underlings that disturb him without cause.\n\nThe ogre chieftain has bearskin hides (defense 2) which has been enchanted as an uncommon (+2) belt of feral might, and he wields a rare (+3) earthbreaker maul warhammer. He is a 6 hd huge creature, and as such is quite possibly the most formidable threat the party could face aside from the baal-malak demon in the labyrinth.\n\nHidden under his bearskin bedsheets are a series of leather sacks containing a common (+1) quiver of elemental bolts, a keg of brandy worth 80 drac, 3d6 x 100 copper pennies, 3d6 x 100 silver dimes, 3d6 x 100 gold drakhma, and another 3d6 x 100 counterfeit gold drakhma (actually lead alloy plated with gold).\n\nWhile the ogre is officially the “ur-chief” over the Drithleoga clan, he mostly sits in his cave and demands to be brought elves, dwarves, and hobs to feast on. When he cannot sate his ravenous hunger, he often turns on his own subjects and allies, consuming roughly two goblins, beastfolk, or lizardfolk per week.\n\nAdventure Note — If the party can bring back sufficient proof of the ogre’s existence to Sir Edward, or if the party manages to antagonize the ogre sufficiently that it chases them back to the Keep, Sir Edward will don the Siege Perilous and come fight it himself. If the party contains a Wizard or Dweomersmith, they will likely be asked to take the Engineer’s seat and assist him in the battle; the rest of the party will be given a dozen guards to help clear out any goblins or other creatures that decide to join the fray.",
     "treasure": "Under the bearskins: a common +1 quiver of elemental bolts, a keg of brandy (80 drac), 3d6×100 copper pennies, 3d6×100 silver dimes, 3d6×100 gold drakhma, and 3d6×100 counterfeit drakhma (gilded lead).",
     "threat": "deadly",
     "map": {
@@ -1425,7 +1425,7 @@
      "map": "crom-caves-d-e-f",
      "area": "f-common-23"
     },
-    "description": "The hobgoblins of the Skitterglint clan reside above the ogre cave, in what they call the “luxury suites”.\n\nAt ㉓ is a common room that also leads down into the redcap warrens, with 1d6 x 3hd hobgoblin champions and 2d6 x 3hd hobgoblin hunters. Each champion will have a greataxe, while each hunter will wield a pair of shortswords. There are also 1d6+2 redcap children (1hd each, will flee or hide rather than fight)."
+    "description": "The hobgoblins of the Drithleoga clan reside above the ogre cave, in what they call the “luxury suites”.\n\nAt ㉓ is a common room that also leads down into the redcap warrens, with 1d6 x 3hd hobgoblin champions and 2d6 x 3hd hobgoblin hunters. Each champion will have a greataxe, while each hunter will wield a pair of shortswords. There are also 1d6+2 redcap children (1hd each, will flee or hide rather than fight)."
    },
    "cave-f-24": {
     "title": "F24 · Pantry and torture chamber",
