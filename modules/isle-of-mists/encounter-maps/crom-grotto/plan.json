@@ -692,7 +692,7 @@
     39.35,
     27.83
    ],
-   "text": "Lámh Fhuilteach\nBugbears",
+   "text": "L\u00e1mh Fhuilteach\nBugbears",
    "rot": -80
   },
   {
@@ -701,7 +701,7 @@
     39.35,
     38.26
    ],
-   "text": "Lámh Fhuilteach\nGoblins",
+   "text": "L\u00e1mh Fhuilteach\nGoblins",
    "rot": -80
   },
   {
@@ -728,7 +728,7 @@
     32.17,
     47.39
    ],
-   "text": "Péistdaoine",
+   "text": "P\u00e9istdaoine",
    "rot": -85
   },
   {
@@ -803,7 +803,7 @@
     4,
     4
    ],
-   "title": "Lámh Fhuilteach Bodaigh"
+   "title": "L\u00e1mh Fhuilteach Bodaigh"
   },
   "cave-c": {
    "squares": [
@@ -812,7 +812,7 @@
     4,
     4
    ],
-   "title": "Lámh Fhuilteach goblins"
+   "title": "L\u00e1mh Fhuilteach goblins"
   },
   "cave-d": {
    "squares": [
@@ -839,7 +839,7 @@
     4,
     4
    ],
-   "title": "Péistdaoine"
+   "title": "P\u00e9istdaoine"
   },
   "cave-f": {
    "squares": [
@@ -863,68 +863,124 @@
  "links": [
   {
    "from": [
-    37.48,
-    39.35
+    30.0,
+    48.0
    ],
    "to": {
-    "map": "crom-caves-b-c",
-    "area": "c-common-14"
+    "map": "crom-caves",
+    "entrance": "a"
    },
-   "label": "Lámh Fhuilteach goblins"
+   "label": "P\u00e9istdaoine"
   },
   {
    "from": [
-    8.91,
-    40.22
+    37.0,
+    61.0
    ],
    "to": {
-    "map": "crom-caves-d-e-f",
-    "area": "d-mouth"
+    "map": "crom-caves",
+    "entrance": "b"
+   },
+   "label": "Dubhfhiacail goblins"
+  },
+  {
+   "from": [
+    37.0,
+    39.0
+   ],
+   "to": {
+    "map": "crom-caves",
+    "entrance": "c"
+   },
+   "label": "L\u00e1mh Fhuilteach goblins"
+  },
+  {
+   "from": [
+    9.0,
+    40.0
+   ],
+   "to": {
+    "map": "crom-caves",
+    "entrance": "d"
    },
    "label": "Drithleoga lair"
   },
   {
    "from": [
     12.0,
-    52.61
+    53.0
    ],
    "to": {
-    "map": "crom-caves-d-e-f",
-    "area": "e-ogre-22"
+    "map": "crom-caves",
+    "entrance": "e"
    },
    "label": "The Athach's cave"
   },
   {
    "from": [
-    30.22,
-    48.26
+    9.0,
+    60.0
    ],
    "to": {
-    "map": "crom-cave-a"
-   },
-   "label": "Péistdaoine"
-  },
-  {
-   "from": [
-    8.61,
-    60.22
-   ],
-   "to": {
-    "map": "crom-caves-d-e-f",
-    "area": "f-guard-26"
+    "map": "crom-caves",
+    "entrance": "f"
    },
    "label": "Drithleoga warrens"
   },
   {
    "from": [
-    37.04,
-    61.09
+    30.0,
+    23.0
    ],
    "to": {
-    "map": "crom-caves-b-c",
-    "area": "b-trophy-hall"
+    "map": "crom-caves",
+    "entrance": "g"
    },
-   "label": "Dubhfhiacail goblins"
+   "label": "The ursagryph"
+  },
+  {
+   "from": [
+    37.0,
+    29.0
+   ],
+   "to": {
+    "map": "crom-caves",
+    "entrance": "h"
+   },
+   "label": "L\u00e1mh Fhuilteach Bodaigh"
+  },
+  {
+   "from": [
+    33.0,
+    19.0
+   ],
+   "to": {
+    "map": "crom-caves",
+    "entrance": "i"
+   },
+   "label": "The demon's labyrinth"
+  },
+  {
+   "from": [
+    3.0,
+    23.0
+   ],
+   "to": {
+    "map": "crom-caves",
+    "entrance": "j"
+   },
+   "label": "Boar beastfolk"
+  },
+  {
+   "from": [
+    19.0,
+    12.0
+   ],
+   "to": {
+    "map": "crom-caves",
+    "entrance": "k"
+   },
+   "label": "The shrine of Crom Cruach"
   }
  ],
  "anchor": {

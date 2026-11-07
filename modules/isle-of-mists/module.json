@@ -147,9 +147,7 @@
   "Sliabh na Caillí": [{"map": "hermits-hollow", "label": "The hermit's hollow oak"}],
   "Cnoc na Teamhrach": [
    {"map": "crom-grotto", "label": "The grotto"},
-   {"map": "crom-cave-a", "label": "A · Péistduine warrens"},
-   {"map": "crom-caves-b-c", "label": "B and C · Dubhfhiacail and Lámh Fhuilteach"},
-   {"map": "crom-caves-d-e-f", "label": "D, E and F · Drithleoga clan"}
+   {"map": "crom-caves", "entrance": "a", "label": "The caves of Crom Cruach"}
   ]
  },
  "site_ranks": {
