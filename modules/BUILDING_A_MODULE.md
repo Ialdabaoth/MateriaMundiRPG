@@ -120,7 +120,7 @@ KEEP_WORK=1 python3 -I modules/tools/build.py modules/<id> /tmp/out
 python3 modules/tools/atlas_convert.py modules/<id>/module.json /tmp/out/_work /tmp/out/atlas --real
 ```
 
-`/tmp/out/atlas/terrain/*.png` holds one 8-bit indexed picture per March. Paint on them in any editor that keeps indexed colour (terrain is matched by colour). Then copy the pictures you want to keep into `modules/<id>/atlas/terrain/` and commit them. From then on every build uses them as they are, including their summary corners (repaint those too after a big change, or delete a picture and rerun `--real` to regenerate it). Tune the period rules with `atlas.real` in `module.json` (REALMAP.md lists them).
+The first run downloads WorldCover tiles (3° squares of 30–50 MB each; a one-county test took a few minutes). `/tmp/out/atlas/terrain/*.png` holds one 8-bit indexed picture per March. Paint on them in any editor that keeps indexed colour (terrain is matched by colour). Then copy the pictures you want to keep into `modules/<id>/atlas/terrain/` and commit them. From then on every build uses them as they are, including their summary corners (repaint those too after a big change, or delete a picture and rerun `--real` to regenerate it). Tune the period rules with `atlas.real` in `module.json` (REALMAP.md lists them).
 
 ## 8. Add content
 
