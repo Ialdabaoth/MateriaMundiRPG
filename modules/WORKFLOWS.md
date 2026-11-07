@@ -244,6 +244,19 @@ flowchart TD
 
 **Advancing the clock by hand** is a deterministic procedure, not a special control.
 
+## Sub-refs and West Marches
+
+Agreed with Heph, 2026-11-07. A West Marches campaign has several referees, a party that forms fresh for each session, and one shared world. It uses the same model as above, one level up.
+
+- **Head referee** owns the campaign repo and has the final say.
+- **Sub-refs** are referees with a scope the head ref grants: a **region** of the Atlas (or a site or faction), **any session they run**, or both. The head ref chooses per sub-ref.
+- **Secrets are scoped.** A sub-ref sees referee-only data inside their scope and nothing outside it.
+- **Git.** Each referee writes their own session branch. A sub-ref's Update campaign becomes a request to the head ref, in the same Inbox flow players use. The head ref can mark a sub-ref as trusted, so their changes merge on their own, but only when nothing conflicts.
+- **Conflicts between sessions** (two groups loot the same barrow) always go to the head ref, who decides.
+- **Sessions.** Each session is posted to the calendar and Discord; players sign up; the party exists for that session only. Whoever runs it hosts the live channel. A game can require "end every session back in town", so characters are never stranded in a state another session collides with.
+- **Shared map.** What any group explores is added to one player-visible Atlas layer that all players see.
+- **Game time** (1:1 with real time, a clock per session that is reconciled later, or anything else) is set by a **procedure** the head ref picks, like everything else.
+
 ## Decisions and build order
 
 **Decided by Heph (2026-11-05)**
@@ -265,6 +278,7 @@ flowchart TD
 - VTTs: Foundry, Owlbear Rodeo and gTove.
 - Downtime rolls post to Discord as pending until the referee approves.
 - One engine: session open/close, clock advance, downtime and pushes are all procedures, defined per game.
+- Sub-refs: scope by region, session or both (head ref's choice); game-time model is a procedure; the head ref always decides conflicts between sessions.
 
 **Suggested build order** (each step is one PR, after the Full Sheet cleanup and campaigns-as-git steps already queued)
 
@@ -279,4 +293,5 @@ flowchart TD
 9. Device pairing and the live channel (WebRTC with Drive handshake), roll prompts to phones.
 10. Open session and Close session procedures, packets, recap; procedure shortlist; push to app or Discord.
 11. Downtime procedures with Discord witness posts.
-12. gTove export. Then, post-MVP, the creator app.
+12. gTove export.
+13. Sub-refs and West Marches: scoped referee roles, session branches with head-ref merge, per-session parties, shared player map layer. Then, post-MVP, the creator app.
