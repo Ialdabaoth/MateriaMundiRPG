@@ -7,7 +7,8 @@
     "is": "dweomersmith",
     "lair": {
      "site": "baile-atha-troim"
-    }
+    },
+    "description": "The blacksmith at ⑧ is a level five dweomersmith, capable of crafting common or uncommon magic items, but convincing her to do so and agreeing upon a price will be an exercise in frustration. (There is a reason she has the trader handling sales for her, instead of simply selling her wares herself from her smithy.) Getting the trader involved in a negotiation for a magic item will smooth over the negotiations, at the cost of doubling the final price."
    },
    "banker": {
     "name": "Banker",
@@ -15,7 +16,8 @@
     "is": "dweomersmith",
     "lair": {
      "site": "baile-atha-troim"
-    }
+    },
+    "description": "The banker at ⑦a is a second-level dweomersmith, living with his wife (a first-level delver) and two second-level dwarven stalwart guards from his clan. If bothered at home, they will gruffly direct the party to come to the bank during business hours."
    },
    "bank-guard": {
     "name": "Bank Guard",
@@ -54,7 +56,8 @@
     "is": "wizard",
     "lair": {
      "site": "baile-atha-troim"
-    }
+    },
+    "description": "The priest in ⑦b is a newcomer. During the day, he is likely to be found at the tavern; during the evening, he will retire to this dwelling, but will eagerly accept visitors. He is a fifth-level death priest with exceptional intelligence (+2) and a wide range of well-thought-out philosophical views that he is eager to discuss with others, backed up by an impressive wealth of theoretical and practical knowledge (his Arcana and Lore skills are each 2+).\n\nHe is also, unfortunately, a warlock in league with the Crom-Cruach cultists.\n\nIf the party mentions the orc caves or Crom Cruach, he will eagerly offer a scholar’s wealth of information about the pagan god and its worship, interspersed with dire moral admonitions. If the party expresses interest in investigating the caves, he will eagerly volunteer to accompany them; he has a suit of feysilver chainmail, a +1 bracer of shielding, and a +1 thunderhammer mace to bring to the party.\n\nHe will, if he can, lead the party directly into the labyrinth at Ⓘ, and attempt to offer them up as a sacrifice to the baal-malak."
    },
    "abbot-costello": {
     "name": "Abbot Costello",
@@ -62,7 +65,8 @@
     "is": "priest",
     "lair": {
      "site": "baile-atha-troim"
-    }
+    },
+    "description": "Behind the guild’s headquarters, the chapel at ⑰ is a single large cathedral with ornate stained glass windows, richly stained wood, and gilded symbols of faith framed in grey stone. The abbot in residence is Father Costello, a fifth level priest of the beauty domain, who wields an uncommon (+2) healer’s staff; he is attended to by five acolytes – a third level priest of the death domain, a second level priest of the life domain, a second level priest of the fate domain, a first level priest of the truth domain, and a first level priest of the life domain."
    },
    "sister-wendy": {
     "name": "Sister Wendy",
@@ -110,15 +114,17 @@
     "is": "champion",
     "lair": {
      "site": "baile-atha-troim"
-    }
+    },
+    "description": "The castellan is Sir Edward, a sixth-level war priest. He possesses an uncommon (+2) keen longsword, as well a legendary (+4) relic dagger which serves as the ‘ignition key’ for his golem armor, the Siege Perilous.\n\nSir Edward is a friendly man, and deeply committed to the defense of his people. He knows about the rumors of the orc caves and the ogre, but he feels that right now the beastfolk and lizardfolk across the river are the primary threat. He can’t afford to send his men away from the keep to deal with something that’s only a rumor; even if the party comes back with proof, he’ll be more worried about leaving the keep undefended than about clearing out Crom Cruach’s temple.\n\nIf persuaded, may be willing to send a squad of guards with the party to help clear out the caves. This will consist of nine first-level warriors from the gatehouse commanded by a second-level sergeant."
    },
    "dame-macgeralt": {
-    "name": "Dame MacGeralt",
+    "name": "Dame MacGearailt",
     "kind": "npc",
     "is": "druid",
     "lair": {
      "site": "baile-atha-troim"
-    }
+    },
+    "description": "When not piloting the Siege Perilous, he wears orichalc plate (defense 5) and a common (+1) bracer of shielding. His advisor, Dame MacGearailt, is a third level elven druid, mute from some ancient neck injury but capable of reading and writing in several dozen languages. She wears common (+1) living armor and wields a common (+1) short windbow with a common (+1) elemental quiver, usually kept charged with wood (poison) materia."
    },
    "chief-engineer": {
     "name": "Chief Engineer",

@@ -10,8 +10,8 @@
      "room": "bone-mother"
     },
     "faction": "peistduine-of-the-bog",
-    "description": "The tribe's druid and leader. Her bag of holding is full of severed heads, kept fresh for the pot.",
-    "wants": "To take back the warrens in Cnoc na Teamhrach that the Blacktooth goblins drove her people from."
+    "description": "The bone-mother’s bag of holding is currently full of severed heads, which the bag’s enchantment is keeping fresh.",
+    "wants": "To take back the warrens in Cnoc na Teamhrach that the Dubhfhiacail goblins drove her people from."
    },
    "peistduine-hunter": {
     "name": "Péistduine hunter",
@@ -25,7 +25,7 @@
      "lair": 6
     },
     "faction": "peistduine-of-the-bog",
-    "description": "Night hunters who waylay travellers on the road just out of sight of the keep."
+    "description": "This lizardfolk tribe operates primarily at night, sending hunters to attack any travellers along the road in the large hex directly northeast of their barrow, just out of view of the keep."
    },
    "peistduine-champion": {
     "name": "Péistduine champion",
@@ -62,7 +62,7 @@
      "site": "nead-an-damhain-alla",
      "room": "alcove"
     },
-    "description": "The female. Fierce in defence of her egg sac, hidden in the pines to the south-east."
+    "description": "The champion has hidden her egg sac with hundreds of young in the trees to the southeast, and will be fiercely protective of it against anyone who approaches."
    },
    "ettercap-hunter": {
     "name": "Ettercap hunter",
@@ -82,7 +82,7 @@
      "room": "pucca"
     },
     "faction": "faoladh-of-the-wolf-camp",
-    "description": "A wolf pucca whose true shape is the wolf. Grabs the venom scythe if there is time."
+    "description": "The third-level champion will grab a common (+1) venom scythe."
    },
    "faoladh-champion": {
     "name": "Faoladh champion",
@@ -155,7 +155,7 @@
      "room": "oak"
     },
     "faction": "unseelie",
-    "description": "An elf druid who passes as a devout nature hermit. Violently set against the Albians; she will try to murder the party at the first chance.",
+    "description": "If approached in earnest, she will present herself as a devout hermit who has isolated herself to worship in nature; while this is technically true, she is also violently prejudiced against the Albians and their allies, and will strive to murder the entire party at the first opportunity that presents itself.",
     "wants": "To drive the Albians off \"her island\"."
    },
    "hermits-barrow-cat": {
@@ -241,7 +241,7 @@
      "lair": 2
     },
     "faction": "peistduine-of-the-warrens",
-    "description": "Human-sized; they shoot any non-lizardfolk on sight."
+    "description": "A guard station at ④ contains two human-sized troglodyte hunter guards (2hd each). Each is wearing hides and wielding a shortbow, which they will eagerly use to shoot any non-lizardfolk that approach this area."
    },
    "giant-rat": {
     "name": "Giant rat",
@@ -254,10 +254,10 @@
     "troupe": {
      "lair": "2d6"
     },
-    "description": "Plague rats. A bitten creature hit by a critical saves vs. disease; a 1 on that save means the Plague."
+    "description": "The garbage pile at ② is infested with unusually large rats, many of which carry the Black Plague in their bite. There are 2d6 giant rats hiding within the garbage pile at any given time. Anyone bitten by a rat that achieves a critical hit should save vs. Doom to determine whether they contract an infection; rolling a ‘1’ on this saving throw indicates that the infection is the Plague."
    },
    "blacktooth-chieftain": {
-    "name": "Blacktooth chieftain",
+    "name": "Dubhfhiacail chieftain",
     "kind": "monster",
     "is": "hobgoblin",
     "lair": {
@@ -265,10 +265,10 @@
      "room": "B-12"
     },
     "faction": "blacktooth-clan",
-    "description": "Wears chainmail and a dwarven common +1 bracer of shielding, and a dwarven signet ring worth 700 drac."
+    "description": "The hobgoblin chieftain’s lair is at ⑫. He is wearing chainmail and a common (+1) bracer of shielding of dwarven manufacture, and wields a mace. He is wearing a non-magical dwarven signet ring worth 700 drac. The treasure alcove hidden in his room holds an uncommon elixir of health, two suits of chainmail, four swords, and a small locked treasure chest with 3d6 x 10 gold pieces and 3d6 x 10 silver."
    },
    "blacktooth-champion": {
-    "name": "Blacktooth champion",
+    "name": "Dubhfhiacail champion",
     "kind": "monster",
     "is": "hobgoblin",
     "lair": {
@@ -281,7 +281,7 @@
     "faction": "blacktooth-clan"
    },
    "blacktooth-hunter": {
-    "name": "Blacktooth hunter",
+    "name": "Dubhfhiacail hunter",
     "kind": "monster",
     "is": "hobgoblin",
     "lair": {
@@ -308,7 +308,7 @@
     "description": "They flee or hide rather than fight."
    },
    "bloodhand-chieftain": {
-    "name": "Bloodhand chieftain",
+    "name": "Lámh Fhuilteach chieftain",
     "kind": "monster",
     "is": "goblin",
     "lair": {
@@ -316,10 +316,10 @@
      "room": "C-16"
     },
     "faction": "bloodhand-clan",
-    "description": "Wears dwarf-made banded armour in slight need of repair and dwarven jewellery: a silver-and-gold belt (160 drac), an ivory bracelet (100 drac) and a gold-and-garnet signet (100 drac)."
+    "description": "The chieftain is a 3hd goblin redcap champion who wields a handaxe enchanted as a common (+1) flying blade, as well as a light steel shield. She is wearing banded armor originally intended for a dwarf, which is in slight need of repair. She is also adorned with various bits of expensive dwarven jewelry – a silver and gold belt worth 160 drac, an ivory bracelet worth 100 drac, and a gold and garnet signet ring worth 100 drac."
    },
    "bloodhand-hunter": {
-    "name": "Bloodhand hunter",
+    "name": "Lámh Fhuilteach hunter",
     "kind": "monster",
     "is": "goblin",
     "lair": {
@@ -332,7 +332,7 @@
     "faction": "bloodhand-clan"
    },
    "skitterglint-subchief": {
-    "name": "Skitterglint redcap sub-chieftain",
+    "name": "Drithleoga redcap sub-chieftain",
     "kind": "monster",
     "is": "goblin",
     "lair": {
@@ -342,7 +342,7 @@
     "faction": "skitterglint-clan"
    },
    "skitterglint-redcap-champion": {
-    "name": "Skitterglint redcap champion",
+    "name": "Drithleoga redcap champion",
     "kind": "monster",
     "is": "goblin",
     "lair": {
@@ -355,7 +355,7 @@
     "faction": "skitterglint-clan"
    },
    "skitterglint-redcap-hunter": {
-    "name": "Skitterglint redcap hunter",
+    "name": "Drithleoga redcap hunter",
     "kind": "monster",
     "is": "goblin",
     "lair": {
@@ -368,7 +368,7 @@
     "faction": "skitterglint-clan"
    },
    "skitterglint-redcap-druid": {
-    "name": "Skitterglint redcap druid",
+    "name": "Drithleoga redcap druid",
     "kind": "monster",
     "is": "goblin",
     "lair": {
@@ -405,7 +405,7 @@
     "description": "Very traumatised. Insists they are neither goblin, nor female, nor interested. Begs to join the party and be escorted out."
    },
    "skitterglint-ogre": {
-    "name": "The Skitterglint ogre",
+    "name": "The Drithleoga ogre",
     "kind": "monster",
     "is": "ogre",
     "lair": {
@@ -413,11 +413,11 @@
      "room": "E-22"
     },
     "faction": "skitterglint-clan",
-    "description": "The clan's \"ur-chief\", grown fat on Albians and Eirish alike. Eats about two of his own underlings a week when nobody brings him elves, dwarves or hobs.",
+    "description": "While the ogre is officially the “ur-chief” over the Drithleoga clan, he mostly sits in his cave and demands to be brought elves, dwarves, and hobs to feast on. When he cannot sate his ravenous hunger, he often turns on his own subjects and allies, consuming roughly two goblins, beastfolk, or lizardfolk per week.",
     "wants": "Meat. Elves, dwarves and hobs above all."
    },
    "skitterglint-bugbear": {
-    "name": "Skitterglint bugbear sub-chieftain",
+    "name": "Drithleoga bugbear sub-chieftain",
     "kind": "monster",
     "is": "bugbear",
     "lair": {
@@ -425,7 +425,7 @@
      "room": "F-30"
     },
     "faction": "skitterglint-clan",
-    "description": "Calls the shots for the hobgoblins. Wears a dwarven belt set with rubies (600 drac)."
+    "description": "Like the redcaps, the hobgoblins have a “sub-chieftain” who calls the shots — a 4hd bugbear champion holed up at ㉚, with a harem of four 3hd hobgoblin hunters. The chieftain wields a greatsword too large for a medium creature, and has a dwarven belt adorned with rubies worth 600 drac."
    },
    "hobgoblin-jailer": {
     "name": "Hobgoblin jailer",
@@ -449,7 +449,7 @@
     "description": "Wears a silver and sapphire amulet worth 135 drac."
    },
    "skitterglint-hobgoblin-champion": {
-    "name": "Skitterglint hobgoblin champion",
+    "name": "Drithleoga hobgoblin champion",
     "kind": "monster",
     "is": "hobgoblin",
     "lair": {
@@ -462,7 +462,7 @@
     "faction": "skitterglint-clan"
    },
    "skitterglint-hobgoblin-hunter": {
-    "name": "Skitterglint hobgoblin hunter",
+    "name": "Drithleoga hobgoblin hunter",
     "kind": "monster",
     "is": "hobgoblin",
     "lair": {
@@ -482,7 +482,7 @@
      "site": "cnoc-na-teamhrach",
      "room": "F-24"
     },
-    "description": "An overweight merchant from the keep, being fattened for tonight's banquet. Rescue: the keep pays 3d6×10 drac and honorary guild membership."
+    "description": "An overweight merchant from the keep, being fattened up to serve as the main course for tonight’s banquet. If he can be rescued, the keep will offer a 3d6 x 10 drac reward and honorary guild membership."
    },
    "merchants-wife": {
     "name": "The merchant's wife",
@@ -492,7 +492,7 @@
      "site": "cnoc-na-teamhrach",
      "room": "F-24"
     },
-    "description": "Tonight's appetiser. If brought home she gives the party a common +1 keen blade dagger."
+    "description": "The merchant’s wife, who is also being prepared as tonight’s appetizer. If brought back to the keep, she will reward the adventurers with a common (+1) keen blade enchanted dagger."
    },
    "merchants-bodyguard": {
     "name": "Merchant's bodyguard",
@@ -505,7 +505,7 @@
     "troupe": {
      "lair": 2
     },
-    "description": "If rescued, each offers their services to the party."
+    "description": "A 1hd human warrior, who was the merchant’s bodyguard. If rescued, they will offer their services to the party."
    }
   },
   "factions": [
@@ -543,7 +543,7 @@
    },
    {
     "id": "blacktooth-clan",
-    "name": "The Blacktooth clan",
+    "name": "The Dubhfhiacail clan",
     "kind": "clan",
     "seat": "cnoc-na-teamhrach",
     "leader": "blacktooth-chieftain",
@@ -554,7 +554,7 @@
    },
    {
     "id": "bloodhand-clan",
-    "name": "The Bloodhand clan",
+    "name": "The Lámh Fhuilteach clan",
     "kind": "clan",
     "seat": "cnoc-na-teamhrach",
     "leader": "bloodhand-chieftain",
@@ -565,7 +565,7 @@
    },
    {
     "id": "skitterglint-clan",
-    "name": "The Skitterglint clan",
+    "name": "The Drithleoga clan",
     "kind": "clan",
     "seat": "cnoc-na-teamhrach",
     "leader": "skitterglint-ogre",
@@ -593,7 +593,8 @@
     "map": {
      "map": "bog-barrows",
      "area": "lookout"
-    }
+    },
+    "description": "This lizardfolk tribe operates primarily at night, sending hunters to attack any travellers along the road in the large hex directly northeast of their barrow, just out of view of the keep."
    },
    "bog-barrows-camp": {
     "title": "Cook-fire and refuse",
@@ -616,7 +617,8 @@
     "map": {
      "map": "bog-barrows",
      "area": "cook-fire"
-    }
+    },
+    "description": "Their forces currently consist of three first-level champions wielding javelins, six first-level hunters wielding shortbows, one third-level druid (called the “bone mother” in the tribe’s native tongue) who has an uncommon bag of holding, eight young (who will flee or hide rather than attack) and six eggs.\n\nThe bone-mother’s bag of holding is currently full of severed heads, which the bag’s enchantment is keeping fresh. An examination of the cooking pot and refuse around the barrow will suggest that severed heads are a delicacy for the kobolds."
    },
    "bog-barrows-bone-mother": {
     "title": "The bone mother's barrow",
@@ -636,7 +638,8 @@
     "map": {
      "map": "bog-barrows",
      "area": "bone-mother"
-    }
+    },
+    "description": "The bone-mother’s bag of holding is currently full of severed heads, which the bag’s enchantment is keeping fresh. An examination of the cooking pot and refuse around the barrow will suggest that severed heads are a delicacy for the kobolds.\n\nThese kobolds originally lived in cave B in Crum Cruach’s grotto, but were decimated and pushed out by the Dubhfhiacail goblin clan. They are extremely resentful of this, and would eagerly accept help reclaiming their ancestral warrens — after which they are likely to reward the party’s help by cooking and eating them. If the party talks their way into allying with the tribe to re-take their warrens and then tries to talk their way out of being eaten, the tribe will explain that anyone eaten by the tribe gets reborn into the tribe, and so cooking and eating the party is the tribe’s way of welcoming them permanently into their family."
    },
    "bog-barrows-hatchery": {
     "title": "The egg barrow",
@@ -654,7 +657,8 @@
     "map": {
      "map": "bog-barrows",
      "area": "hatchery"
-    }
+    },
+    "description": "Their forces currently consist of three first-level champions wielding javelins, six first-level hunters wielding shortbows, one third-level druid (called the “bone mother” in the tribe’s native tongue) who has an uncommon bag of holding, eight young (who will flee or hide rather than attack) and six eggs."
    },
    "bog-barrows-hunters": {
     "title": "The hunters' barrow",
@@ -671,7 +675,8 @@
     "map": {
      "map": "bog-barrows",
      "area": "hunters"
-    }
+    },
+    "description": "Their forces currently consist of three first-level champions wielding javelins, six first-level hunters wielding shortbows, one third-level druid (called the “bone mother” in the tribe’s native tongue) who has an uncommon bag of holding, eight young (who will flee or hide rather than attack) and six eggs."
    },
    "ettercap-ambush": {
     "title": "Silk across the wagon path",
@@ -695,7 +700,8 @@
     "map": {
      "map": "nead-an-damhain-alla",
      "area": "webs"
-    }
+    },
+    "description": "The two ettercap centaurs that have woven their web within these pine barrens are a third-level champion and a second-level hunter. The champion has hidden her egg sac with hundreds of young in the trees to the southeast, and will be fiercely protective of it against anyone who approaches.\n\nBoth ettercaps have woven fine nets of barely-visible spidersilk across the entire path here, and typically lay in ambush hidden within a camouflaged tunnel beneath the wagon-path."
    },
    "ettercap-alcove": {
     "title": "The female's alcove",
@@ -708,7 +714,8 @@
     "map": {
      "map": "nead-an-damhain-alla",
      "area": "alcove"
-    }
+    },
+    "description": "Bound into the female’s web inside the eastern alcove within the tunnel is the dessicated corpse of a wolf-pucca hunter; his gear has long since rotted into uselessness except for a common (+1) bracer of shielding which can be restored to full use by any wizard or dweomersmith."
    },
    "ettercap-egg-sac": {
     "title": "The egg sac in the pines",
@@ -722,7 +729,7 @@
       "count": 1
      }
     ],
-    "description": "Hundreds of young. The champion defends it fiercely. If it hatches (ratchet 10), ettercap young waylay travellers on the road.",
+    "description": "The champion has hidden her egg sac with hundreds of young in the trees to the southeast, and will be fiercely protective of it against anyone who approaches.",
     "map": {
      "map": "nead-an-damhain-alla",
      "area": "egg-sac"
@@ -765,7 +772,8 @@
     "map": {
      "map": "dunad-faoladh",
      "area": "fire"
-    }
+    },
+    "description": "The beastfolk tribe consists of five pucca and six fauns. When attacked, the pucca will immediately transform into wolves and attack as a pack, while the fauns fall back into defensive positions around their druid.\n\nThe pucca pack consists of a third-level wolf pucca champion, two second-level wolf pucca champions, and two second-level wolf pucca hunters. All fight with only their natural hide and claw in wolf form, but can fall back to the keep, transform, and acquire greatswords if the need arises. The third-level champion will grab a common (+1) venom scythe.\n\nThe faun pack consists of two first-level wolf faun champions with hide armor and greatswords, three first-level wolf faun hunters with leather armor and greatbows, and one first-level wolf faun druid with a quarterstaff, a dagger, and common (+1) thornweave hide."
    },
    "faoladh-druid-line": {
     "title": "The druid's tent and the stake line",
@@ -790,7 +798,8 @@
     "map": {
      "map": "dunad-faoladh",
      "area": "druid"
-    }
+    },
+    "description": "The faun pack consists of two first-level wolf faun champions with hide armor and greatswords, three first-level wolf faun hunters with leather armor and greatbows, and one first-level wolf faun druid with a quarterstaff, a dagger, and common (+1) thornweave hide."
    },
    "hermits-hollow": {
     "title": "The hermit at home",
@@ -818,7 +827,8 @@
     "map": {
      "map": "hermits-hollow",
      "area": "oak"
-    }
+    },
+    "description": "The hermit is a third-level elven druid with a barrow-cat and a pair of wisps for company. She has built her home within a huge hollowed-out oak, which has been concealed (along with the surrounding well and gardens) by a fey illusion spell. She has learned two wild shapes which she uses to navigate the forest — a horned owl for reconnaissance, and a black bear for fighting.\n\nThe hermit usually has one wood and one fey attunement prepared, wears a common (+1) thornweave hide, and wields two daggers which she coats in death poison (+1d6 poison damage on first hit; victim must save vs. Doom or continue to take 1d6 ongoing poison damage).\n\nIf approached in earnest, she will present herself as a devout hermit who has isolated herself to worship in nature; while this is technically true, she is also violently prejudiced against the Albians and their allies, and will strive to murder the entire party at the first opportunity that presents itself."
    },
    "hermits-apothecary": {
     "title": "The apothecary beneath the oak",
@@ -831,7 +841,8 @@
     "map": {
      "map": "hermits-hollow",
      "area": "apothecary"
-    }
+    },
+    "description": "The hermit’s house itself holds very little of value, but there is a well-stocked apothecary in the basement with 2d6 charges of materia from each element, a potion of invisibility, and an orichalc +1 keen dagger (shaped as a sickle). There are also various rare alchemical ingredients, including cave spider silk, exotic leathers, and a cured leopard’s pelt (usable as hide armor). There are also five common dream pearls buried around her dwelling, each of which is currently maintaining one of the fey illusions that conceal her home."
    },
    "hermits-dream-pearls": {
     "title": "The five dream pearls",
@@ -844,7 +855,8 @@
     "map": {
      "map": "hermits-hollow",
      "area": "illusion"
-    }
+    },
+    "description": "The hermit’s house itself holds very little of value, but there is a well-stocked apothecary in the basement with 2d6 charges of materia from each element, a potion of invisibility, and an orichalc +1 keen dagger (shaped as a sickle). There are also various rare alchemical ingredients, including cave spider silk, exotic leathers, and a cured leopard’s pelt (usable as hide armor). There are also five common dream pearls buried around her dwelling, each of which is currently maintaining one of the fey illusions that conceal her home."
    },
    "grotto-watchers": {
     "title": "Watchers in the trees",
@@ -858,7 +870,7 @@
       "count": 8
      }
     ],
-    "description": "Roll d20: 1-7 the Péistduine watchers are here (Stealth 3+; a hard Perception check spots them, only for someone on watch who asks). 19 the ogre is out instead, 20 the owlbear: everyone saves vs. fear or is shaken (attacks harder).",
+    "description": "The grotto itself is a wide, heavily forested ravine with limestone cliff walls. Several caves can be seen from the ground, with more presumably hidden by the foliage. The entire area is difficult terrain, and the party must move through it single-file. Strewn about the ground here and there are the bones of various beasts along with the bones of goblins, kobolds, men, and dwarves, all scored with the tell-tale gnaw-marks of cannibalism.\n\nThe area often has a hunting party of 8 reasonably well-camouflaged (Stealth 3+) kobolds hiding in the trees, guarding the entrance to their cave at Ⓐ. Roll a d20; on a 1-7, these kobold “guards” are present. A hard Alertness check will notice them, but only if a party member is on-watch and specifically asks if they see anyone hidden in the trees.\n\nIf the d20 rolls a ‘19’ or ‘20’, then instead a larger threat is present – the ogre from Ⓔ at 19, or the owlbear from Ⓖ at 20. Either creature represents a substantial threat to the adventuring party; each member of the group should save vs. Fear before proceeding, and all those who fail will be shaken (all their attack rolls will be harder).",
     "players": "Bones, gnawed: beasts, goblins, men, dwarves.",
     "map": {
      "map": "crom-grotto",
@@ -877,7 +889,7 @@
       "count": "d6"
      }
     ],
-    "description": "2 in 6: a hunting party saw the party coming and waits in the trees. A pit 20 ft in holds a Péistduine but gives way under anyone Medium or larger.",
+    "description": "This is the first cavern entrance on the left, at the bottom of the ravine. Kobold hunting parties frequently enter and exit the cave; as the party approaches the entrance, there is a 2 in 6 chance that a hunting party has seen their approach and is hiding in the trees to ambush them.\n\nThe kobolds have dug a pit-trap 20’ in from the entrance at X, which will support the weight of a kobold but will collapse if walked on by a medium or larger creature.",
     "map": {
      "map": "crom-cave-a",
      "area": "mouth"
@@ -895,7 +907,7 @@
       "count": "d6+1"
      }
     ],
-    "description": "Javelins and small shields.",
+    "description": "An alcove at ① is set up as a guard post; at any given time, 1d6+1 1hd kobold hunters, each wielding javelins and small shields, will be stationed here to guard their home.",
     "map": {
      "map": "crom-cave-a",
      "area": "guard-post"
@@ -916,7 +928,8 @@
     "map": {
      "map": "crom-cave-a",
      "area": "midden"
-    }
+    },
+    "description": "The garbage pile at ② is infested with unusually large rats, many of which carry the Black Plague in their bite. There are 2d6 giant rats hiding within the garbage pile at any given time. Anyone bitten by a rat that achieves a critical hit should save vs. Doom to determine whether they contract an infection; rolling a ‘1’ on this saving throw indicates that the infection is the Plague."
    },
    "cave-a-larder": {
     "title": "A3 · Larder",
@@ -929,7 +942,8 @@
     "map": {
      "map": "crom-cave-a",
      "area": "larder"
-    }
+    },
+    "description": "The room at ③ is the larder. The salted jerky, grains, beer, and wine are of low quality and barely edible; moreso, some of the jerky was very clearly once human or elven."
    },
    "cave-a-trogs": {
     "title": "A4 · Troglodyte guard station",
@@ -947,7 +961,8 @@
     "map": {
      "map": "crom-cave-a",
      "area": "lizard-guard"
-    }
+    },
+    "description": "A guard station at ④ contains two human-sized troglodyte hunter guards (2hd each). Each is wearing hides and wielding a shortbow, which they will eagerly use to shoot any non-lizardfolk that approach this area."
    },
    "cave-a-bone-mother": {
     "title": "A5 · The bone mother's lair",
@@ -965,7 +980,7 @@
       "count": "d6+1"
      }
     ],
-    "description": "Also d6+1 pregnant or brooding mothers (count them as young) and large clutches of eggs.",
+    "description": "⑤ is the bone-mother’s lair. She is a 3hd kobold druid and serves as the leader of the tribe. This room also contains 1d6+1 pregnant or brooding kobold mothers, and several large clutches of eggs.",
     "map": {
      "map": "crom-cave-a",
      "area": "bone-mother"
@@ -995,7 +1010,8 @@
     "map": {
      "map": "crom-cave-a",
      "area": "den"
-    }
+    },
+    "description": "⑥ is the kobold’s common den. There are 3d6 kobold hunter males, 4d6 kobold champion females, and 2d6 kobold young (who will flee or hide rather than fight). Hidden among their nests is 3d6 sp and an uncommon (+2) robe of splendour, which one of them is using as bedding. These items will not be found without a search, however."
    },
    "cave-b-trophy-wall": {
     "title": "B · Trophy wall and spy window",
@@ -1009,7 +1025,7 @@
       "count": 1
      }
     ],
-    "description": "Heads and skulls of men, goblins and lizardfolk cover the wall. A grey cloth hides a window where the guard looks out as one more trophy.",
+    "description": "This cave is directly above the kobold warrens. Before the goblins arrived, these caves were part of the kobold warrens — a fact that the kobolds have not forgotten, and still hold considerable resentment about.\n\nThe wall facing the entrance is covered with the grizzly trophies of human, goblin, and lizardfolk heads and skulls in various stages of decay. There is a small window hidden by a grey cloth, where a 2hd hobgoblin hunter guard from the alcove at (g) can poke their head through and keep watch, while appearing to be one of the trophy-heads.",
     "map": {
      "map": "crom-caves-b-c",
      "area": "b-trophy-hall"
@@ -1031,7 +1047,8 @@
     "map": {
      "map": "crom-caves-b-c",
      "area": "b-guard-7"
-    }
+    },
+    "description": "At ⑦ is a guard room which is regularly staffed by four 2hd hobgoblin champions, each armed with a spear and a medium shield. They are positioned around a gambling table; each guard has 2d6+3 electrum quarters that they are wagering at games of dice."
    },
    "cave-b-8": {
     "title": "B8 · Guard room",
@@ -1045,7 +1062,7 @@
       "count": 4
      }
     ],
-    "description": "They report to the window guard and join him against invaders.",
+    "description": "At ⑧ is another guard room with four more 3hd hobgoblin guards; they report to the guard at (g) and will join him in repelling any invaders.",
     "map": {
      "map": "crom-caves-b-c",
      "area": "b-guard-8"
@@ -1074,7 +1091,7 @@
       "chance": "1 on d20"
      }
     ],
-    "description": "On a d20 roll of 1 the chieftain holds court here with his warriors. Otherwise empty, with a charcoal fire still burning.",
+    "description": "There is a mess hall at ⑨ filled with benches and tables, with a fireplace inset into the far wall. On a d20 roll of ‘1’, the 3hd bugbear champion chieftain is holding court here, and the room is filled with 2d6 x 2hd hobgoblins and 3d6 x 1hd redcaps. Otherwise, the room is empty, but a small charcoal fire is still burning in the fireplace.",
     "map": {
      "map": "crom-caves-b-c",
      "area": "b-mess-9"
@@ -1104,7 +1121,8 @@
     "map": {
      "map": "crom-caves-b-c",
      "area": "b-common-10"
-    }
+    },
+    "description": "The common room at ⑩ quarters 2d6 x 2hd male hobgoblin champions, 3d6 x 2hd female hobgoblin hunters, and 2d6 redcap young (1hd each, will flee or hide rather than fighting). Each of the hobgoblins will have 1d6 silver in their pockets."
    },
    "cave-b-11": {
     "title": "B11 · Armory",
@@ -1117,10 +1135,11 @@
     "map": {
      "map": "crom-caves-b-c",
      "area": "b-armory-11"
-    }
+    },
+    "description": "The door to the armory at ⑪ is locked; inside are three medium wooden shields, 3d6 spears, and two battle axes, all in excellent condition."
    },
    "cave-b-12": {
-    "title": "B12 · Blacktooth chieftain",
+    "title": "B12 · Dubhfhiacail chieftain",
     "where": {
      "site": "cnoc-na-teamhrach",
      "room": "B-12"
@@ -1135,7 +1154,8 @@
     "map": {
      "map": "crom-caves-b-c",
      "area": "b-chief-12"
-    }
+    },
+    "description": "The hobgoblin chieftain’s lair is at ⑫. He is wearing chainmail and a common (+1) bracer of shielding of dwarven manufacture, and wields a mace. He is wearing a non-magical dwarven signet ring worth 700 drac. The treasure alcove hidden in his room holds an uncommon elixir of health, two suits of chainmail, four swords, and a small locked treasure chest with 3d6 x 10 gold pieces and 3d6 x 10 silver."
    },
    "cave-bc-13": {
     "title": "B/C13 · Secret parley room",
@@ -1144,14 +1164,14 @@
      "room": "C-13"
     },
     "who": [],
-    "description": "Secret doors to both chieftains' rooms. The two use it to negotiate and plan joint raids when they are not fighting each other.",
+    "description": "This is also directly above the kobold warrens. The secret room at ⑬ has a secret door leading from the Lámh Fhuilteach chieftain’s quarters, and another leading from the Dubhfhiacail chieftain’s quarters at Ⓑ-⑫. Both leaders use this room to negotiate between their tribes and plan joint raids, whenever the two clans are not fighting each other.",
     "map": {
      "map": "crom-caves-b-c",
      "area": "parley-13"
     }
    },
    "cave-c-14": {
-    "title": "C14 · Bloodhand common room",
+    "title": "C14 · Lámh Fhuilteach common room",
     "where": {
      "site": "cnoc-na-teamhrach",
      "room": "C-14"
@@ -1169,7 +1189,8 @@
     "map": {
      "map": "crom-caves-b-c",
      "area": "c-common-14"
-    }
+    },
+    "description": "The common room at ⑭ has 2d6 x 1hd redcap hunters each with shortswords and light wooden shields, along with 2d6 goblin young (1hd, will flee or hide rather than fighting)."
    },
    "cave-c-15": {
     "title": "C15 · Mess hall",
@@ -1186,7 +1207,8 @@
     "map": {
      "map": "crom-caves-b-c",
      "area": "c-mess-15"
-    }
+    },
+    "description": "The mess hall is at ⑮; there are 2d6 x 1hd redcap hunters quartered here, each with light crossbows and light wooden shields."
    },
    "cave-c-guard": {
     "title": "C · Guard post and larder",
@@ -1200,7 +1222,7 @@
       "count": 1
      }
     ],
-    "description": "This guard takes the watch seriously.",
+    "description": "The Lámh Fhuilteach chieftain’s lair is at ⑯; she always has a redcap hunter guard posted at (g) who actually takes their watch seriously. The room the guard is posted in also serves as the larder for the tribe; among the typical goblin offal is an actually high-quality cask of wine worth 55 drac.",
     "treasure": "Among the offal, a cask of genuinely good wine worth 55 drac.",
     "map": {
      "map": "crom-caves-b-c",
@@ -1208,7 +1230,7 @@
     }
    },
    "cave-c-16": {
-    "title": "C16 · Bloodhand chieftain",
+    "title": "C16 · Lámh Fhuilteach chieftain",
     "where": {
      "site": "cnoc-na-teamhrach",
      "room": "C-16"
@@ -1223,7 +1245,8 @@
     "map": {
      "map": "crom-caves-b-c",
      "area": "c-chief-16"
-    }
+    },
+    "description": "The Lámh Fhuilteach chieftain’s lair is at ⑯; she always has a redcap hunter guard posted at (g) who actually takes their watch seriously. The room the guard is posted in also serves as the larder for the tribe; among the typical goblin offal is an actually high-quality cask of wine worth 55 drac.\n\nThe chieftain is a 3hd goblin redcap champion who wields a handaxe enchanted as a common (+1) flying blade, as well as a light steel shield. She is wearing banded armor originally intended for a dwarf, which is in slight need of repair. She is also adorned with various bits of expensive dwarven jewelry – a silver and gold belt worth 160 drac, an ivory bracelet worth 100 drac, and a gold and garnet signet ring worth 100 drac.\n\nThe room is well furnished with finely crafted dwarven furniture in slight disrepair, and contains a locked chest with 500 gold pieces inside."
    },
    "cave-d-patrol": {
     "title": "D · Redcap patrol",
@@ -1237,7 +1260,7 @@
       "count": 6
      }
     ],
-    "description": "Each exploration round in the D tunnels, d6: 1-2 the party meets this patrol (2 HD, leather, a hand axe in each hand).",
+    "description": "㉘ The third goblin clan’s nest is across the ravine from the kobold lair, on the right side at ground level. At the ground level are the redcap warrens, where the young goblins of the Drithleoga clan are mostly left to fend for themselves.\n\nThese tunnels are used much more often than the others; each exploration round that the party is within the tunnels, the referee should roll a d6 to determine whether a random encounter occurs. On a 1-2, the party stumbles into a patrol of 6 x 2hd redcap hunters, each wearing leather and wielding a pair of hand axes.",
     "map": {
      "map": "crom-caves-d-e-f",
      "area": "d-mouth"
@@ -1258,7 +1281,8 @@
     "map": {
      "map": "crom-caves-d-e-f",
      "area": "d-guard-17"
-    }
+    },
+    "description": "There are two guard chambers at ⑰ and ⑱, each staffed by six 2hd redcap champions. Each redcap has a stack of javelins that they are ready to throw at intruders. The chamber at ⑱ has a secret door into their ogre chieftain’s lair at Ⓔ-㉒; if the goblins in ⑱ decide it is worth the risk, they will ask the chieftain for help in repelling the invaders."
    },
    "cave-d-18": {
     "title": "D18 · Javelin guard chamber",
@@ -1272,7 +1296,7 @@
       "count": 6
      }
     ],
-    "description": "A secret door leads to the ogre. If it seems worth the risk they ask him for help.",
+    "description": "There are two guard chambers at ⑰ and ⑱, each staffed by six 2hd redcap champions. Each redcap has a stack of javelins that they are ready to throw at intruders. The chamber at ⑱ has a secret door into their ogre chieftain’s lair at Ⓔ-㉒; if the goblins in ⑱ decide it is worth the risk, they will ask the chieftain for help in repelling the invaders.",
     "map": {
      "map": "crom-caves-d-e-f",
      "area": "d-guard-18"
@@ -1301,7 +1325,8 @@
     "map": {
      "map": "crom-caves-d-e-f",
      "area": "d-common-19"
-    }
+    },
+    "description": "At ⑲ is the common room, with 4d6 x 2hd redcap champions, 4d6 x 2hd redcap hunters, and two 1hd redcap druids."
    },
    "cave-d-20": {
     "title": "D20 · Sub-chieftain's chambers",
@@ -1330,7 +1355,8 @@
     "map": {
      "map": "crom-caves-d-e-f",
      "area": "d-subchief-20"
-    }
+    },
+    "description": "The Drithleoga redcaps have a “sub-chieftain”, who handles actual day-to-day leadership while their “ur-chief” ogre focuses on filling his belly with meat. The sub-chieftain’s chambers are at ⑳; he is a 3hd redcap champion, accompanied by a harem of two 2hd redcap hunters, three non-combatant female goblins (1hd each, will flee or hide rather than fight), and one very traumatized hob who continues to insist that they are neither goblin, nor female, nor interested (1hd non-combatant, will beg to join the party and be escorted out)."
    },
    "cave-d-21": {
     "title": "D21 · Larder",
@@ -1349,7 +1375,7 @@
       "chance": "1 on d6"
      }
     ],
-    "description": "Four crossbow guards. A secret stair in the back leads up to F28; each turn the party lingers past the first, 1 in 6 that d6 hobgoblin hunters come down to raid the pantry.",
+    "description": "The redcap’s larder is at ㉑, with four 2hd redcap hunters with crossbows positioned at (g) to guard it. Nothing in the larder is of particular value to anyone but a goblin. There is a hidden secret door into the hobgoblin’s caves at Ⓕ-㉘ in the back of the larder, which the hobgoblins of the clan has been using to raid the redcaps’ stores; each turn that the party lingers in this room beyond the first, there is a 1-in-6 chance that 1d6 x 3hd hobgoblin hunters will appear, hoping to raid the pantry.",
     "map": {
      "map": "crom-caves-d-e-f",
      "area": "d-larder-21"
@@ -1367,7 +1393,7 @@
       "count": 1
      }
     ],
-    "description": "If the party brings Sir Edward proof of the ogre, or lures it to the keep, he dons the Siege Perilous; a wizard or dweomersmith may be asked to take the engineer's seat, and the rest get a dozen guards.",
+    "description": "There is a separate cavern with an entrance next to Ⓓ; this cavern has a noticeably larger opening. The Drithleoga clan’s chieftain lives here – a vast ogre grown fat on the blood and bones of Albians and Eirish alike. The middle of the cave contains a vast bed made from straw and bear-hides; the chieftain himself will usually be sitting at ㉒. The secret door at Ⓓ-⑱ leads into his chambers; the Drithleoga goblins will come to ask him for help only if they find they can’t handle the adventurers themselves, as he is known to devour any underlings that disturb him without cause.\n\nThe ogre chieftain has bearskin hides (defense 2) which has been enchanted as an uncommon (+2) belt of feral might, and he wields a rare (+3) earthbreaker maul warhammer. He is a 6 hd huge creature, and as such is quite possibly the most formidable threat the party could face aside from the baal-malak demon in the labyrinth.\n\nHidden under his bearskin bedsheets are a series of leather sacks containing a common (+1) quiver of elemental bolts, a keg of brandy worth 80 drac, 3d6 x 100 copper pennies, 3d6 x 100 silver dimes, 3d6 x 100 gold drakhma, and another 3d6 x 100 counterfeit gold drakhma (actually lead alloy plated with gold).\n\nWhile the ogre is officially the “ur-chief” over the Drithleoga clan, he mostly sits in his cave and demands to be brought elves, dwarves, and hobs to feast on. When he cannot sate his ravenous hunger, he often turns on his own subjects and allies, consuming roughly two goblins, beastfolk, or lizardfolk per week.\n\nAdventure Note — If the party can bring back sufficient proof of the ogre’s existence to Sir Edward, or if the party manages to antagonize the ogre sufficiently that it chases them back to the Keep, Sir Edward will don the Siege Perilous and come fight it himself. If the party contains a Wizard or Dweomersmith, they will likely be asked to take the Engineer’s seat and assist him in the battle; the rest of the party will be given a dozen guards to help clear out any goblins or other creatures that decide to join the fray.",
     "treasure": "Under the bearskins: a common +1 quiver of elemental bolts, a keg of brandy (80 drac), 3d6×100 copper pennies, 3d6×100 silver dimes, 3d6×100 gold drakhma, and 3d6×100 counterfeit drakhma (gilded lead).",
     "threat": "deadly",
     "map": {
@@ -1398,7 +1424,8 @@
     "map": {
      "map": "crom-caves-d-e-f",
      "area": "f-common-23"
-    }
+    },
+    "description": "The hobgoblins of the Drithleoga clan reside above the ogre cave, in what they call the “luxury suites”.\n\nAt ㉓ is a common room that also leads down into the redcap warrens, with 1d6 x 3hd hobgoblin champions and 2d6 x 3hd hobgoblin hunters. Each champion will have a greataxe, while each hunter will wield a pair of shortswords. There are also 1d6+2 redcap children (1hd each, will flee or hide rather than fight)."
    },
    "cave-f-24": {
     "title": "F24 · Pantry and torture chamber",
@@ -1431,7 +1458,8 @@
     "map": {
      "map": "crom-caves-d-e-f",
      "area": "f-torture-24"
-    }
+    },
+    "description": "At ㉔ is a combination pantry and torture chamber. Two 3hd hobgoblin champions are here, each wearing a common (+1) thornweave hide armor and wielding a shortsword and a light wooden shield. One also has a whip, and is reasonably practiced at using it for combat stunts (Finesse 3+). The other is wearing an expensive but non-magical silver and sapphire amulet, worth 135 drac. There are four prisoners here:\n\n1. An overweight merchant from the keep, being fattened up to serve as the main course for tonight’s banquet. If he can be rescued, the keep will offer a 3d6 x 10 drac reward and honorary guild membership.\n2. The merchant’s wife, who is also being prepared as tonight’s appetizer. If brought back to the keep, she will reward the adventurers with a common (+1) keen blade enchanted dagger.\n3. A 1hd human warrior, who was the merchant’s bodyguard. If rescued, they will offer their services to the party.\n4. Another 1hd human warrior, also the merchant’s bodyguard. If rescued, they will offer their services to the party."
    },
    "cave-f-25": {
     "title": "F25 · Feast hall",
@@ -1458,7 +1486,8 @@
     "map": {
      "map": "crom-caves-d-e-f",
      "area": "f-feast-25"
-    }
+    },
+    "description": "㉕ is the hobgoblins’ common room. This is where meals, celebrations, and other gatherings occur, and also serves as their sleeping quarters. It is very, very messy and unkempt. There are 1d6 x 3hd hobgoblin champions here, 1d6 x 3hd hobgoblin hunters, and (1d6+3) young goblins (1hd each, will hide or flee rather than fight). The room is currently in the process of being laid out with tables, chairs, and silverware for a feast (the merchant and his wife). The silverware in particular is of fine dwarven make, worth 25 drac."
    },
    "cave-f-26": {
     "title": "F26 · Guard room",
@@ -1476,7 +1505,7 @@
       "count": "d6÷2"
      }
     ],
-    "description": "d6+1 hobgoblins: half (round down) champions with greataxes, half (round up) hunters with shortbows and two daggers.",
+    "description": "At ㉖, ㉙ and ㉛ are guardrooms, each with (1d6+1) hobgoblins — half (round down) will be 3hd champions with greataxes, and half (round up) will be 3hd hunters with shortbows and two daggers.",
     "map": {
      "map": "crom-caves-d-e-f",
      "area": "f-guard-26"
@@ -1498,7 +1527,7 @@
       "count": "d6÷2"
      }
     ],
-    "description": "d6+1 hobgoblins: half (round down) champions with greataxes, half (round up) hunters with shortbows and two daggers.",
+    "description": "At ㉖, ㉙ and ㉛ are guardrooms, each with (1d6+1) hobgoblins — half (round down) will be 3hd champions with greataxes, and half (round up) will be 3hd hunters with shortbows and two daggers.",
     "map": {
      "map": "crom-caves-d-e-f",
      "area": "f-guard-29"
@@ -1520,7 +1549,7 @@
       "count": "d6÷2"
      }
     ],
-    "description": "d6+1 hobgoblins: half (round down) champions with greataxes, half (round up) hunters with shortbows and two daggers.",
+    "description": "At ㉖, ㉙ and ㉛ are guardrooms, each with (1d6+1) hobgoblins — half (round down) will be 3hd champions with greataxes, and half (round up) will be 3hd hunters with shortbows and two daggers.",
     "map": {
      "map": "crom-caves-d-e-f",
      "area": "f-guard-31"
@@ -1537,7 +1566,8 @@
     "map": {
      "map": "crom-caves-d-e-f",
      "area": "f-armory-27"
-    }
+    },
+    "description": "The hobgoblin’s armory at ㉗ contains two suits of plate armor (one sized for humans, the other for dwarves), five suits of chainmail, seven suits of leather armor, eleven light wooden shields, six daggers, one battle ax, four maces, two shortswords, one longsword, two shortbows, one longbow, thirteen crossbows, 130 arrows, 72 crossbow bolts, 50 javelins, 19 glaives, and 42 helmets of various sizes."
    },
    "cave-f-28": {
     "title": "F28 · Stolen larder",
@@ -1546,7 +1576,7 @@
      "room": "F-28"
     },
     "who": [],
-    "description": "Stores stolen from the redcaps. A secret stair leads down to D21.",
+    "description": "At ㉘ is a larder where the supplies stolen from the redcaps are stored. There is nothing particularly valuable to the party here. Between ㉘ and ㉙ is a staircase down into a secret passageway into the redcaps’ larder at Ⓓ-㉑.",
     "map": {
      "map": "crom-caves-d-e-f",
      "area": "f-larder-28"
@@ -1572,7 +1602,362 @@
     "map": {
      "map": "crom-caves-d-e-f",
      "area": "f-bugbear-30"
-    }
+    },
+    "description": "Like the redcaps, the hobgoblins have a “sub-chieftain” who calls the shots — a 4hd bugbear champion holed up at ㉚, with a harem of four 3hd hobgoblin hunters. The chieftain wields a greatsword too large for a medium creature, and has a dwarven belt adorned with rubies worth 600 drac. Hidden in the kindling of the fireplace is an uncommon (+2) magic wand enchanted with the hold person spell. There is an iron treasure chest in one corner of the room filled with rotting animal hides; it has a false bottom, below which is 3d6 x 100 drakhma coins, a 100 drac emerald, and a potion of uncommon (-2) intelligence-sapping poison."
+   },
+   "beyond-the-pale": {
+    "title": "Beyond the Pale",
+    "where": {
+     "site": "baile-atha-troim"
+    },
+    "who": [],
+    "description": "Traveling outside the keep is reasonably fast and straightforward, as long as the party keeps to the road. Each large hex is one-half mile, while each small hex is 100 paces (500 feet); along the road, the party can travel one large hex per exploration round while on foot or in a wagon. Across the open fields, this slows to three small hexes per exploration round; trudging through rivers, swampland, or forests slows the party to one hex per exploration round, and requires a Survival check to not get bogged down. Stopping to fully investigate a single small hex is also an exploration action.\n\nJust across the river to the south, the marshland houses tribes of beastfolk and lizardfolk orcs who have been harassing the keep for generations. The lizardfolk nest in a series of barrow-mounds at ❶, while the wolf-beastfolk tribe’s current camp is at ❸. Between them, at ❷, are a pair of ettercap centaurs. All three groups would quickly descend into petty infighting if not for an elven hermit druid, who each tribe independently respects. The elf bears a serious grudge against the Albians, and has been working for centuries to drive them off “her island”. She lives in a small hovel at ❹, with her animal companion (a large and surly barrow-cat).\n\nAbove them, on the keep’s side of the river, is an abandoned temple to Crom Cruach at ❺. The temple is inside a cave system in a grotto that is hidden within the forest. The temple and surrounding caverns are inhabited by several tribes of beastfolk, lizardfolk, and goblin orcs, all of whom have come to worship under the direction of an evil pagan warlock cult dedicated to the Crooked God."
+   },
+   "caves-of-crom-cruach": {
+    "title": "The Caves of Crom-Cruach",
+    "where": {
+     "site": "cnoc-na-teamhrach"
+    },
+    "who": [],
+    "description": "The source of the recent orc raids is a cavern system located in a deep ravine east of the Pale Keep, on the Albian side of the Boyne river. An ancient shrine to Crom-Cruach, has languished here for centuries; a barbarian tribe has recently re-discovered the ruins, and are performing dark rituals to Crom-Cruach in return for power to drive off the Albians. In their endeavors, they have recruited local tribes of goblins, beastfolk, and lizardfolk to join their cause; each tribe has claimed and taken up residence in their own area of the cave network.\n\nThere are eleven different cavern entrances, referred to here as Ⓐ through Ⓚ."
+   },
+   "caves-inter-clan": {
+    "title": "Inter-Clan Relations",
+    "where": {
+     "site": "cnoc-na-teamhrach"
+    },
+    "who": [],
+    "description": "The lizardfolk, beastfolk, and goblin clans dwelling in the caves are in a constant state of low-level intertribal warfare with each other, kept barely in check by the priests of the shrine. A clever party of adventurers might be able to inflame tensions sufficiently to incite an all-out war, then exploit the chaos to loot the caves, or wait and clear out the weakened survivors after hostilities cool off.\n\nThe kobolds in particular resent the goblin clans living above them, who kicked them out of the choice caves in Ⓑ and Ⓒ and decimated their population in the process. These two clans, in turn, are constantly engaged in low-level fighting with each other, but their chiefs maintain a kind of “diplomacy” to ally against the much larger goblin clan at Ⓓ, Ⓔ and Ⓕ. Meanwhile, the two beastfolk clans are constantly fighting each other; the wolf clan at Ⓗ has been regularly taking captives from the boar clan at Ⓙ and serving them for dinner.\n\nEveryone knows to avoid the owlbear cave at Ⓖ and the demon’s labyrinth at Ⓘ. The actual priests of Crom Cruach, at Ⓚ, have their hands full keeping everyone from killing each other, and regularly invite clan leaders to offer dark blessings or auguries in exchange for a barely-kept peace."
+   },
+   "caves-emptying": {
+    "title": "Emptying the Caves",
+    "where": {
+     "site": "cnoc-na-teamhrach"
+    },
+    "who": [],
+    "description": "If the party kills or drives off the inhabitants of one of the caves and then leaves, the priests in the shrine will seek to collect and re-animate any corpses that they can; within 2-3 weeks, they will have recruited a new group to replace them. Roll a d6 to determine the composition of the new group:\n\nD20 Group Type\n1-8 Lizardfolk\n9-12 Goblins\n13-14 Bear Beastfolk\n15-16 Wolf Beastfolk\n17-18 Boar Beastfolk\n19-20 Ettercaps\n\nA new tribe will consist of a third-level shaman, a third-level champion chieftain, two second-level champion lieutenants, and a second-level hunter lieutenant, as well as 1d6 first-level champions and 2d6 first-level hunters."
+   },
+   "cave-g-owlbear": {
+    "title": "Ⓖ Owlbear's Lair",
+    "where": {
+     "site": "cnoc-na-teamhrach",
+     "room": "G"
+    },
+    "who": [],
+    "description": "There is a smaller cavern deep in the ravine that the goblins and kobolds haven’t bothered to clear out, because it is the home of both a gelatinous ooze and a ferocious owlbear."
+   },
+   "cave-g-32": {
+    "title": "Ⓖ ㉜ Alcoves",
+    "where": {
+     "site": "cnoc-na-teamhrach",
+     "room": "G-32"
+    },
+    "who": [],
+    "description": "Each of the small alcoves at ㉜ is a dumping-ground for the remains of the owlbears’ victims. Searching each of these spaces might result in a few coins or other small low-value treasure. Searching is likely to attract the attention of the cavern’s inhabitants; roll a d6 for each exploration round spent searching:\n\n1d6 Encounter Result\n1 Owlbear\n2 2d6 Giant Rats\n3 Ooze\n4-6 No Encounter"
+   },
+   "cave-g-33": {
+    "title": "Ⓖ ㉝ Pool",
+    "where": {
+     "site": "cnoc-na-teamhrach",
+     "room": "G-33"
+    },
+    "who": [],
+    "description": "There is a still pool of water at ㉝, containing a small population of blind white cave-fish. Laying in the pool is a jewel-encrusted gold cup worth 1300 drac. Gripping the walls and ceiling above the pool is a gelatinous ooze; when the water of the pool is disturbed, the ooze will retract from its perch, cover the entrance, and wait for the party to stumble into it so it can feast upon them. In the dark, the ooze simply looks like a slick, wet coating on the cavern walls until it begins moving; even then, noticing its movement is hard."
+   },
+   "cave-g-34": {
+    "title": "Ⓖ ㉞ The owlbear",
+    "where": {
+     "site": "cnoc-na-teamhrach",
+     "room": "G-34"
+    },
+    "who": [],
+    "description": "The owlbear itself lairs at ㉞, deep in the furthest recesses of the cave. The creature is used to being harassed by goblins and kobolds, and so is naturally hostile towards any creature that approaches it."
+   },
+   "cave-h-wolf-lair": {
+    "title": "Ⓗ Wolf Beastfolk Lair",
+    "where": {
+     "site": "cnoc-na-teamhrach",
+     "room": "H"
+    },
+    "who": [],
+    "description": "A group of clever wolf beastfolk have taken up residence in a small cavern in the far back of the ravine, near Crom Cruach’s shrine. (They are related to the beastfolk camp at ❸ — any non-pucca beastfolk that gets “too big for their britches” is sent here.) There is a small sign next to the entrance to the cave, advertising for recruitment into their mercenary company in Albian, Eire, Imperial, draconic, and feytongue."
+   },
+   "cave-h-35": {
+    "title": "Ⓗ ㉟ Common room",
+    "where": {
+     "site": "cnoc-na-teamhrach",
+     "room": "H-35"
+    },
+    "who": [],
+    "description": "The common room at ㉟ houses three 3hd wolf beastfolk champions who appear to be enjoying a good meal. There are three maces propped up against the table, and roast pheasant is cooking on a spit over an open fire. They will offer anyone who enters the cave some roast pheasant on a skewer, then suddenly attack with those skewers (which are actually disguised rapiers), usually catching their prey by surprise. There is a large warning-gong nearby, which one of them will use to alert the rest of the beastfolk tribe if they start losing the fight."
+   },
+   "cave-h-36": {
+    "title": "Ⓗ ㊱ Chieftain and shaman",
+    "where": {
+     "site": "cnoc-na-teamhrach",
+     "room": "H-36"
+    },
+    "who": [],
+    "description": "The chieftain and shaman’s lair is at ㊱; the chieftain is a 3hd beastfolk champion wielding a greatsword, while his mate is a 4hd beastfolk druid. On display above their bed is a hand ax enchanted as a common (+1) flying blade, a large wooden treasure chest with two uncommon elixirs of health and 4d6 x 100 sp, and an alabaster-and-ivory statue of an elven dancer worth 200 drac. There is a secret door in this room, which leads to the labyrinth at Ⓘ-㊸; if the fight is going poorly, the druid will attempt to cast an illusion to distract the party, and then both will attempt to escape and lure any pursuers into a confrontation with the demon. In the chieftain’s pocket is a small brass key."
+   },
+   "cave-h-37": {
+    "title": "Ⓗ ㊲ Larder",
+    "where": {
+     "site": "cnoc-na-teamhrach",
+     "room": "H-37"
+    },
+    "who": [],
+    "description": "The larder at ㊲ has is locked, normally requiring the chieftain’s key to open. Inside is an uncommon (+2) medium flying shield, being used as a tray to hold various herbs and spices. There is also 400 drac worth of fine quality food and wine, and a flask of lamp oil."
+   },
+   "cave-h-38": {
+    "title": "Ⓗ ㊳ Common room",
+    "where": {
+     "site": "cnoc-na-teamhrach",
+     "room": "H-38"
+    },
+    "who": [],
+    "description": "The common room at ㊳ houses three 3hd beastfolk champions and seven 2hd beastfolk hunters."
+   },
+   "cave-h-39": {
+    "title": "Ⓗ ㊴ Guard room",
+    "where": {
+     "site": "cnoc-na-teamhrach",
+     "room": "H-39"
+    },
+    "who": [],
+    "description": "At ㊴ is a guard room, with two 3hd beastfolk champions and seven 2hd beastfolk hunters guarding the slave pens in the next room."
+   },
+   "cave-h-40": {
+    "title": "Ⓗ ㊵ ㊶ Slave pens",
+    "where": {
+     "site": "cnoc-na-teamhrach",
+     "room": "H-40"
+    },
+    "who": [],
+    "description": "At ㊵ and ㊶ are the slave pens. Within the first are two humans, two elves, and a dwarf; within the second is a scarred boar-faun and a single enormous human who seems half-mad from captivity. The inhabitants of each pen are chained to the wall with a common cold iron chain and a heavy padlock. The two elves are a 1hd druid and a 2hd hunter; the dwarf is a 2hd delver. The human in the other cell is a 4 hd champion, and the hobgoblin next to him is a 3hd champion. Each prisoner has only half their maximum hit points, due to weeks of malnutrition, captivity, and torture. If freed and given weapons, they will all gladly help the party fight their way back out of the caves.\n\nOnce out, the human will seek to betray his liberators, kill them, and take all their treasure for himself; the hobgoblin, on the other hand, will sincerely ask for assistance in forswearing Crom Cruach and joining civilization, and the elves and dwarf will ask to be escorted back to the keep where they can recuperate."
+   },
+   "cave-i-labyrinth": {
+    "title": "Ⓘ The Ancient Labyrinth",
+    "where": {
+     "site": "cnoc-na-teamhrach",
+     "room": "I"
+    },
+    "who": [],
+    "description": "This naturally formed maze of tunnels is the original wellspring of power that the shrine was built around in antiquity.\n\nTrapped within these twisted passages is an avatar of Crom Cruach itself — an ancient Baal-Malak demon cursed and trapped within the cavern. It has languished without worshippers for thousands of years, and so is incredibly weak — reduce it from a 10hd creature to 6hd by halving its structure points and increasing its attack and saving throws to 9+. Even so, it is an incredibly dangerous foe; encountering it before destroying the shrine and severing its connection to its worshippers is effectively suicide, and even after the shrine is destroyed, the creature is likely to be considerably stronger than the entire adventuring party. Each member of the party needs to make a hard save vs. Fear upon encountering the demon; those who fail are shaken (all their attack rolls will be harder).\n\nA nest of 3d6 bloodstirges is near the entrance at ㊷, and a nest of six fire beetles moves between ㊸ and ㊹, each of which are likely to ambush the party if they explore in those directions or are chased into them by the demon — who is usually sulking in its own lair at ㊺ unless a noise alerts it to visitors. Behind ㊸ is a well-hidden secret door that leads to the wolfkin chieftain’s lair at Ⓗ-㊱."
+   },
+   "cave-i-shrine": {
+    "title": "Ⓘ The original shrine",
+    "where": {
+     "site": "cnoc-na-teamhrach",
+     "room": "I-shrine"
+    },
+    "who": [],
+    "description": "In the back of the demon’s lair is the original shrine that summoned it; a set of locked drawers built into the shrine will reveal a small treasure horde that was originally owned by a pagan hero of Crom Cruach in long-forgotten antiquity.\n\nThe first drawer is locked and trapped with a poison needle; if successfully opened, it contains 3d6 x 1000 drac worth of gold coins that predate the Old Empire, as well as three expensive pieces of jewelry worth approximately 1600, 900, and 300 drac respectively.\n\nThe second drawer contains a staff of healing and an orichalc plate of a truly ancient (Aztlantean) design.\n\nThe third drawer is locked, but not trapped; it contains an elixir of regeneration, a love potion, and a tempest in a bottle — all of which are still good, even after thousands of years."
+   },
+   "cave-i-note": {
+    "title": "Ⓘ Adventure note",
+    "where": {
+     "site": "cnoc-na-teamhrach"
+    },
+    "who": [],
+    "description": "Adventure Note — Like the ogre at Ⓔ, the demon represents a sufficient threat that Sir Edward might be roused to attend to the matter personally. The demon cannot leave its cave yet, and the Siege Perilous will not fit inside, so Sir Edward would likely ask the party to lead him to the cave and help with the assault. As before, Sir Edward would need sufficient proof of the danger to do so.\n\nEven with the temple eradicated and Sir Edward leading the charge, a direct assault on the demon is likely to be an incredibly difficult battle. Destroying the altars in Crom Cruach’s temple, and then performing the hallow ritual on each room as a group with all the other priests from the keep’s abbey, might further reduce the Baal-malak’s power from 6 hd to 4 hd. This would reduce its SP to 2D6+10, reducing its abilities to +4 and raising its saving throws from 5+ to 7+."
+   },
+   "cave-j-boar-lair": {
+    "title": "Ⓙ Boar Beastfolk Lair",
+    "where": {
+     "site": "cnoc-na-teamhrach",
+     "room": "J"
+    },
+    "who": [],
+    "description": "Between the labyrinth and shrine, a barbarian tribe of boar beastfolk have taken up residence. They are bitter enemies of the wolf beastfolk at Ⓗ; the acolytes in the shrine have their hands full keeping the two tribes from going at each other’s throats."
+   },
+   "cave-j-46": {
+    "title": "Ⓙ ㊻ Guard room",
+    "where": {
+     "site": "cnoc-na-teamhrach",
+     "room": "J-46"
+    },
+    "who": [],
+    "description": "The guard room at ㊻ always has two 3hd beastfolk champions and two 2hd beastfolk hunters on duty. Each hunter is wearing leather and armed with a longbow; each champion is wearing boar hides and armed with a greataxe. Each is wearing d6 x 10 drac worth of gold jewelry, mostly as piercing rings. When the encounter begins, each hunter will fire their bow at intruders while the champions charge into melee; then the hunters will dash back into the corridor to alert the rest of the tribe."
+   },
+   "cave-j-47": {
+    "title": "Ⓙ ㊼ Guard chamber",
+    "where": {
+     "site": "cnoc-na-teamhrach",
+     "room": "J-47"
+    },
+    "who": [],
+    "description": "The second guard chamber at ㊼ houses another 1d6+2 x 3hd beastfolk champions and 1d6+1 x 2hd beastfolk hunters, ready to aid the guards at ㊻ when summoned."
+   },
+   "cave-j-48": {
+    "title": "Ⓙ ㊽ Armory",
+    "where": {
+     "site": "cnoc-na-teamhrach",
+     "room": "J-48"
+    },
+    "who": [],
+    "description": "The beastfolk armory at ㊽ is locked; inside are one suit of dwarven chainmail, seven round wooden medium shields, three longbows, twelve greataxes, and an uncommon (+2) keen longsword which is cursed — whenever it misses, it immediately inflicts a critical hit upon its wielder, lopping off a limb."
+   },
+   "cave-j-49": {
+    "title": "Ⓙ ㊾ Common room",
+    "where": {
+     "site": "cnoc-na-teamhrach",
+     "room": "J-49"
+    },
+    "who": [],
+    "description": "The common room at ㊾ serves as the tribe’s sleeping and living space. There are 2d6 x 3hd champions and 2d6+1 x 2hd hunters quartered here, along with 4d6 children (1hd each, will flee or hide rather than fighting)."
+   },
+   "cave-j-50": {
+    "title": "Ⓙ ㊿ Chieftain's quarters",
+    "where": {
+     "site": "cnoc-na-teamhrach",
+     "room": "J-50"
+    },
+    "who": [],
+    "description": "At ㊿ is the chieftain’s quarters. He is a 4hd champion wielding a greataxe. With him are his four wives (2 x 2hd hunters, 1 x 3hd champion, 1x 4hd druid), and his two sons (one a 2hd hunter, one a 2hd champion). The druidess has an uncommon wood pearl focus fashioned into an amulet."
+   },
+   "cave-k-shrine": {
+    "title": "Ⓚ The Shrine",
+    "where": {
+     "site": "cnoc-na-teamhrach",
+     "room": "K"
+    },
+    "who": [],
+    "description": "This is an ancient temple of worship dedicated to Crom Cruach, which is feeding power to the demon within the labyrinth in the hopes of freeing it and using it to crush the Albians for good."
+   },
+   "cave-k-6": {
+    "title": "Ⓚ ❻ Collapsed tunnel",
+    "where": {
+     "site": "cnoc-na-teamhrach",
+     "room": "K-6"
+    },
+    "who": [],
+    "description": "At ❻ is a collapsed tunnel filled with boulders; clearing it would take at least a hundred man-hours of labor. The tunnel leads to a druid grove hidden by a mirage, also marked as ❻ on the wilderness map."
+   },
+   "cave-k-7": {
+    "title": "Ⓚ ❼ Throne of skeletons",
+    "where": {
+     "site": "cnoc-na-teamhrach",
+     "room": "K-7"
+    },
+    "who": [],
+    "description": "The room in ❼ is a grisly sight, with an ornate throne surrounded by twelve skeletons in chainmail. The throne is decorated with four blood-red rubies, each worth approximately 500 drac.\n\nEach skeleton has a medium shield and a shortsword, all in poor repair. They are not animated upon entering the chamber, but touching the throne will release a glyph of warding that animates them. Each animates as a 1hd skeleton, and each is wearing an agate amulet displaying the holy symbol of Crom Cruach, which grants each of them a 12+ saving throw vs. rebuke the unholy."
+   },
+   "cave-k-8": {
+    "title": "Ⓚ ❽ Shamblers",
+    "where": {
+     "site": "cnoc-na-teamhrach",
+     "room": "K-8"
+    },
+    "who": [],
+    "description": "The room at ❽ is filled with eight 2hd shamblers, who will attack anyone not wearing an amulet displaying the holy symbol of Crom Cruach. The shamblers are themselves wearing such amulets, which grant each of them a 12+ saving throw vs. rebuke the unholy, as above."
+   },
+   "cave-k-9": {
+    "title": "Ⓚ ❾ Acolytes' chamber",
+    "where": {
+     "site": "cnoc-na-teamhrach",
+     "room": "K-9"
+    },
+    "who": [],
+    "description": "The acolyte’s chamber at ❾ houses three human acolytes of Crom Cruach’s cult (treat as a 1hd death domain priests), and one adept (treat as a 3hd death domain priest). Each has cause fear prepared, and the adept also has command prepared."
+   },
+   "cave-k-10": {
+    "title": "Ⓚ ❿ Devotional chapel",
+    "where": {
+     "site": "cnoc-na-teamhrach",
+     "room": "K-10"
+    },
+    "who": [],
+    "description": "There is a devotional chapel at ❿, where the acolytes perform rituals to honor Crom Cruach, or to grant dark blessings to the goblins, beastfolk and lizardfolk that have come to serve them. The floor is a black-and-red marble checkerboard, and there is a grisly tapestry mural to Crom Cruach hanging on the far wall. There are expensive, finely wrought implements of sacrifice on the altar — a gold-alloy sickle, four iron spikes inlaid with silver and ivory, and a large gold bowl for collecting blood — but each radiates an aura of palpable evil."
+   },
+   "cave-k-11": {
+    "title": "Ⓚ ⓫ Adepts' chamber",
+    "where": {
+     "site": "cnoc-na-teamhrach",
+     "room": "K-11"
+    },
+    "who": [],
+    "description": "The adept’s chamber at ⓫ houses four human adepts of Crom Cruach’s cult (treat as 3hd death domain priests). As before, each has cause fear and command prepared."
+   },
+   "cave-k-12": {
+    "title": "Ⓚ ⓬ Ready-room",
+    "where": {
+     "site": "cnoc-na-teamhrach",
+     "room": "K-12"
+    },
+    "who": [],
+    "description": "At ⓬ is a ready-room where an undead army is being prepared, to raid the keep. Twenty 1hd skeletons and twenty 1hd shamblers are here, outfitted as in rooms ② and ③."
+   },
+   "cave-k-13": {
+    "title": "Ⓚ ⓭ The temple",
+    "where": {
+     "site": "cnoc-na-teamhrach",
+     "room": "K-13"
+    },
+    "who": [],
+    "description": "Room ⓭ is the temple proper, where dark rites to Crom Cruach feed the demon in the labyrinth. The floor here is polished black obsidian, shot through with veins of a translucent blood-red stone. The western wall is a solid piece of the same red stone, which has also been polished to a mirror shine. Dim light and moving shadows can be seen through the translucent wall, but clear shapes can’t be made out.\n\nThere is a black wrought-iron bell and hammer at the entrance to the room, etched with swirling pagan runes. Towards the back of the room is a raised dais, on which is a circle of twelve standing stones of near-black basalt; in the middle of these is a gilded basalt stone crudely carved to vaguely suggest the form of a hunched over, wizened man. In front of this gilded stone is a translucent black obsidian altar, with flow channels to direct blood into the translucent red stone veins in the floor."
+   },
+   "cave-k-14": {
+    "title": "Ⓚ ⓮ High priest's chamber",
+    "where": {
+     "site": "cnoc-na-teamhrach",
+     "room": "K-14"
+    },
+    "who": [],
+    "description": "At ⓮ is the high priest’s chamber. He is a 5th level priest of the death domain, and wears feysilver chainmail and a flying shield while wielding a staff of suggestion quarterstaff. If cornered, he also has a legendary aetheric dagger which he can use to cut open a hole into the underworld to escape any fight that he feels he is losing. He has curse ability, heal minor wounds, and divine rebuke prepared, as well as two scrolls of cause fear and one scroll of divine censure. He has 3d6 x 50 drac, and a gold ring with a black star sapphire gem worth 1400 drac."
+   },
+   "cave-k-15": {
+    "title": "Ⓚ ⓯ Guest chamber",
+    "where": {
+     "site": "cnoc-na-teamhrach",
+     "room": "K-15"
+    },
+    "who": [],
+    "description": "The guest chamber at ⓯ is for negotiating with the leaders of new tribes that wish to join the coalition. It has a comfortable bed and furnishings, but contains nothing of value to the party."
+   },
+   "cave-k-16": {
+    "title": "Ⓚ ⓰ Dungeon",
+    "where": {
+     "site": "cnoc-na-teamhrach",
+     "room": "K-16"
+    },
+    "who": [],
+    "description": "The dungeon at ⓰ is a well-furnished torture chamber. The torturer is a 3hd human warrior wearing black chainmail and wielding a greataxe."
+   },
+   "cave-k-17": {
+    "title": "Ⓚ ⓱ Barrow-crypt",
+    "where": {
+     "site": "cnoc-na-teamhrach",
+     "room": "K-17"
+    },
+    "who": [],
+    "description": "The door to ⓱ is bolted shut; behind it is a barrow-crypt, with sarcophagi entombing the first worshippers of Crom Cruach who built this temple. If the tombs are opened, one of the corpses will animate as a 3hd revenant after one exploration round, and attack the party for disturbing their rest. The revenant is wearing mithril chainmail and wielding an uncommon (+2) frostbrand longsword.\n\nThe revenant’s tomb has a secret compartment that can be found with a thorough search; within it is a cursed crown of command which slowly corrupts the wearer until his personality is overtaken by the revenant’s, and a silver dagger with inset rubies worth 800 drac."
+   },
+   "cave-k-18": {
+    "title": "Ⓚ ⓲ Storage chamber",
+    "where": {
+     "site": "cnoc-na-teamhrach",
+     "room": "K-18"
+    },
+    "who": [],
+    "description": "The storage chamber at ⓲ has nothing of value, but if the party lingers for more than one exploration round, they will awaken a gelatinous ooze that the cultists use to guard the area."
+   },
+   "cave-k-19": {
+    "title": "Ⓚ ⓳ Prison cells",
+    "where": {
+     "site": "cnoc-na-teamhrach",
+     "room": "K-19"
+    },
+    "who": [],
+    "description": "The prison cells at ⓳ contain several corpses, and one living, beautiful, and naked woman who will beg to be set free and taken back to the keep. She is actually a lilin, and hopes to begin corrupting others into Crom’s service once she is “home”."
+   },
+   "druids-grove": {
+    "title": "❻ The Abandoned Druid's Grove",
+    "where": {
+     "site": "tlachtga"
+    },
+    "who": [],
+    "description": "The mad hermit druid from ❹ originally worshipped here with her circle of fellow druids, who established this grove long before the coming of the Albions. In response to the Albion threat, the druids used a powerful group ritual to cast a potent mirage enchantment over the entire grove, then convened to decide whether to use the shrine to Crom Cruach to fight the Albions, or offer their guidance and council to the newcomers.\n\nThe argument quickly grew heated; the vote was strongly in favor of allying, which the hermit could not abide — so they waited till nightfall, slit the throats of their fellow druids, and abandoned the grove for a small hovel south of the river. Dame MacGearailt was the only other survivor of that night, and her vows to the druid circle continue to prevent her from speaking of it or from raising her hand against the hermit.\n\nThe grove is still defended by twelve huge treants, who have maintained their vigil since the massacre. It is also haunted by the wraiths of the eleven druids who were slaughtered here. They are severely weakened, both from neglect and from the miasma of evil coming from Crom Cruach’s temple; thus they only fight as 2hd huge creatures."
    }
   }
  }

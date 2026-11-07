@@ -692,7 +692,7 @@
     39.35,
     27.83
    ],
-   "text": "Bloodhand\nBugbears",
+   "text": "Lámh Fhuilteach\nBugbears",
    "rot": -80
   },
   {
@@ -701,7 +701,7 @@
     39.35,
     38.26
    ],
-   "text": "Bloodhand\nGoblins",
+   "text": "Lámh Fhuilteach\nGoblins",
    "rot": -80
   },
   {
@@ -710,7 +710,7 @@
     7.61,
     37.83
    ],
-   "text": "Skitterglint\nLair",
+   "text": "Drithleoga\nLair",
    "rot": 80
   },
   {
@@ -737,7 +737,7 @@
     6.96,
     57.83
    ],
-   "text": "Skitterglint\nWarrens",
+   "text": "Drithleoga\nWarrens",
    "rot": 80
   },
   {
@@ -746,7 +746,7 @@
     39.13,
     60.0
    ],
-   "text": "Blacktooth\nGoblins",
+   "text": "Dubhfhiacail\nGoblins",
    "rot": -80
   }
  ],
@@ -803,7 +803,7 @@
     4,
     4
    ],
-   "title": "Bloodhand bugbears"
+   "title": "Lámh Fhuilteach bugbears"
   },
   "cave-c": {
    "squares": [
@@ -812,7 +812,7 @@
     4,
     4
    ],
-   "title": "Bloodhand goblins"
+   "title": "Lámh Fhuilteach goblins"
   },
   "cave-d": {
    "squares": [
@@ -821,7 +821,7 @@
     4,
     4
    ],
-   "title": "Skitterglint lair"
+   "title": "Drithleoga lair"
   },
   "cave-e": {
    "squares": [
@@ -848,7 +848,7 @@
     4,
     4
    ],
-   "title": "Skitterglint warrens"
+   "title": "Drithleoga warrens"
   },
   "cave-b": {
    "squares": [
@@ -857,7 +857,7 @@
     4,
     4
    ],
-   "title": "Blacktooth goblins"
+   "title": "Dubhfhiacail goblins"
   }
  },
  "links": [
@@ -870,7 +870,7 @@
     "map": "crom-caves-b-c",
     "area": "c-common-14"
    },
-   "label": "Bloodhand goblins"
+   "label": "Lámh Fhuilteach goblins"
   },
   {
    "from": [
@@ -881,7 +881,7 @@
     "map": "crom-caves-d-e-f",
     "area": "d-mouth"
    },
-   "label": "Skitterglint lair"
+   "label": "Drithleoga lair"
   },
   {
    "from": [
@@ -913,7 +913,7 @@
     "map": "crom-caves-d-e-f",
     "area": "f-guard-26"
    },
-   "label": "Skitterglint warrens"
+   "label": "Drithleoga warrens"
   },
   {
    "from": [
@@ -924,7 +924,7 @@
     "map": "crom-caves-b-c",
     "area": "b-trophy-hall"
    },
-   "label": "Blacktooth goblins"
+   "label": "Dubhfhiacail goblins"
   }
  ],
  "anchor": {

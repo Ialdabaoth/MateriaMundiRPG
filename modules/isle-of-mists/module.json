@@ -5,7 +5,7 @@
  ],
  "title": "Beyond the Pale: Leinster, 1422",
  "short": "Beyond the Pale · Leinster, 1422",
- "version": "0.4.5",
+ "version": "0.4.6",
  "license": "CC0-1.0",
  "dem": [
   51,
@@ -124,8 +124,8 @@
   "Cnoc na Teamhrach": [
    {"map": "crom-grotto", "label": "The grotto"},
    {"map": "crom-cave-a", "label": "A · Péistduine warrens"},
-   {"map": "crom-caves-b-c", "label": "B and C · Blacktooth and Bloodhand"},
-   {"map": "crom-caves-d-e-f", "label": "D, E and F · Skitterglint clan"}
+   {"map": "crom-caves-b-c", "label": "B and C · Dubhfhiacail and Lámh Fhuilteach"},
+   {"map": "crom-caves-d-e-f", "label": "D, E and F · Drithleoga clan"}
   ]
  },
  "site_ranks": {

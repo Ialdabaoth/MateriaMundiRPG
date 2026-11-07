@@ -13,7 +13,7 @@
       "count": 4
      }
     ],
-    "description": "Two 30 ft towers and a 20 ft gatehouse working the drawbridge, all granite, with arrow slits.",
+    "description": "The main gate of the keep at ① is flanked by two 30 foot tall towers at ② and a 20 foot tall gatehouse, which controls the keep’s drawbridge. Everything is made of large granite stones, with various defensive slots to fire arrows out of.",
     "disposition": "friendly",
     "map": {
      "map": "pale-keep",
@@ -37,7 +37,8 @@
     "map": {
      "map": "pale-keep",
      "area": "entry-court"
-    }
+    },
+    "description": "The gates lead to a small entry courtyard at ③, paved with cobblestones and decorated with bright banners."
    },
    "keep-stables": {
     "title": "Common stables",
@@ -46,7 +47,7 @@
      "room": "stables"
     },
     "who": [],
-    "description": "d6+3 stable-boys and attendants. d6-1 each of light courier horses, draft horses and mules, besides the party's mounts.",
+    "description": "The watch corporal at the courtyard will direct all visitors to dismount and stable their horses or other mounts at ④, the common stables. There are always d6+3 stable-boys and other attendants in the stables, which are quite clean and well-kept. Expect there to be 1d6-1 each of light courier horses, draft horses, and mules stabled at any given time, besides the party’s mounts.",
     "map": {
      "map": "pale-keep",
      "area": "stables"
@@ -59,7 +60,7 @@
      "room": "warehouse"
     },
     "who": [],
-    "description": "Anything that cannot reasonably be carried, and any valuables, must be kept here while staying at the keep.",
+    "description": "Beside the stables is a common warehouse at ⑤. Anything that can’t be reasonably carried, as well as any valuable goods, are required to be kept here while the party is staying at the keep.",
     "map": {
      "map": "pale-keep",
      "area": "warehouse"
@@ -72,7 +73,7 @@
      "room": "bailiff"
     },
     "who": [],
-    "description": "The bailiff keeps the peace in the public keep: a 3rd-level warrior and minor noble in mastercraft +1 plate (defense 4) with a mastercraft +1 longsword. (Not yet in the creature list.)",
+    "description": "Just beyond the smithy, the bailiff's tower at ⑥ houses the bailiff, who is in charge of keeping the peace in the public sections of the keep. The bailiff is a third-level warrior and a well-to-do minor noble, wearing mastercraft +1 plate armor (defense 4) and wielding a mastercraft +1 longsword.",
     "map": {
      "map": "pale-keep",
      "area": "bailiff"
@@ -85,7 +86,7 @@
      "room": "apartments"
     },
     "who": [],
-    "description": "Five well-furnished apartments for merchants and noble visitors, two more by the courtyard.",
+    "description": "A series of five well-furnished private apartments at ⑦ house merchants and noble visitors to the keep. Opposite these lodgings are a blacksmith, a general store and a trader’s shop. There is a path between the blacksmith’s and the general store leading to a smaller back-street.",
     "map": {
      "map": "pale-keep",
      "area": "apartments"
@@ -103,7 +104,7 @@
       "count": 1
      }
     ],
-    "description": "She can craft common or uncommon magic items, but haggling with her is an exercise in frustration. Going through the trader smooths it over and doubles the price.",
+    "description": "The blacksmith at ⑧ is a level five dweomersmith, capable of crafting common or uncommon magic items, but convincing her to do so and agreeing upon a price will be an exercise in frustration. (There is a reason she has the trader handling sales for her, instead of simply selling her wares herself from her smithy.) Getting the trader involved in a negotiation for a magic item will smooth over the negotiations, at the cost of doubling the final price.",
     "map": {
      "map": "pale-keep",
      "area": "smithy"
@@ -116,7 +117,7 @@
      "room": "general-store"
     },
     "who": [],
-    "description": "Any reasonable mundane adventuring gear at standard prices. Arms and armour: next door.",
+    "description": "The general store at ⑨ stocks any reasonable mundane adventuring gear that the party might need, at standard prices. If the party asks about weapons or armor, the clerk will direct them next door to the trader’s shop.",
     "map": {
      "map": "pale-keep",
      "area": "general-store"
@@ -129,7 +130,7 @@
      "room": "trader"
     },
     "who": [],
-    "description": "Fine clothing and the blacksmith's arms and armour; commissions in 2-3 days (plate or barding 1-2 weeks). Buys furs, hides, cloth, gold and jewellery for the seamstress wife.",
+    "description": "The trader’s shop at ⑩ sells expensive high-class clothing, as well as arms and armor made by the blacksmith; any mundane arms or armor can be commissioned with a 2-3 day’s advance notice (full plate or horse barding might instead take 1-2 weeks). The trader’s wife is an accomplished seamstress who makes much of the merchandise on offer; as such, the trader is always interested in purchasing furs, hides, or other fabrics that the party might come across, as well as any gold, jewelry, or other potential ornamentation for her work.",
     "map": {
      "map": "pale-keep",
      "area": "trader"
@@ -154,7 +155,8 @@
     "map": {
      "map": "pale-keep",
      "area": "bank"
-    }
+    },
+    "description": "A bank at ⑪ and a guard tower at ⑫ marks the end of the promenade, and the entrance to the public courtyard; there are two more private apartments at ⑦ to the right."
    },
    "keep-guard-tower": {
     "title": "Guard tower",
@@ -171,7 +173,8 @@
     "map": {
      "map": "pale-keep",
      "area": "guard-tower"
-    }
+    },
+    "description": "A bank at ⑪ and a guard tower at ⑫ marks the end of the promenade, and the entrance to the public courtyard; there are two more private apartments at ⑦ to the right."
    },
    "keep-courtyard": {
     "title": "Main courtyard and fountain",
@@ -184,7 +187,8 @@
     "map": {
      "map": "pale-keep",
      "area": "fountain"
-    }
+    },
+    "description": "The courtyard itself is a wide open space with an ornate brickwork pattern and a large fountain at ⑬ serving as a focus."
    },
    "keep-inn": {
     "title": "The travellers' inn",
@@ -193,7 +197,7 @@
      "room": "inn"
     },
     "who": [],
-    "description": "Five private rooms at 1 drac a night; a common room of twelve bunks at a dime a bed.",
+    "description": "Behind the fountain is a traveller’s inn at ⑭ and tavern at ⑮. There are five small private rooms at the inn which each cost 1 gold drac per night; there is also a communal sleeping area with twelve bunk beds, which costs a dime per bed per night.",
     "map": {
      "map": "pale-keep",
      "area": "inn"
@@ -215,7 +219,7 @@
       "count": 1
      }
     ],
-    "description": "At least 3d6 patrons at any hour. Meals 1-5 dimes, drink 5 pennies to a drac. The family's three children serve. Buy the barkeep a drink for a rumour (the d6 table in the text).",
+    "description": "The tavern at ⑮ is the main gathering place for most of the keep, with excellent food and drink, good entertainment, and a welcoming atmosphere. There are always at least 3d6 patrons active in the tavern at any time of day or night. A good hearty meal will cost between 1 and 5 silver dimes, while alcohol costs between 5 copper pennies and one drac, depending on the quality and type requested. The tavern is an excellent place to recruit hirelings, trade rumors, and gather information about the surrounding area.\n\nThe family that owns the tavern lives in a set of private rooms on the top floor; the three children clean and serve food while the husband and wife take turns as the barkeep. Buying an extra drink for either is a good way to pick up rumors about the surrounding area, some of which might actually be true. Roll a d6 whenever the party asks the current barkeep for local gossip:\n\nD6 Rumor\n1-2 A traveling merchant went missing recently, probably captured by orcs. The guild will pay a handsome reward for their return.\n3 There’s some kind of coalition of orc tribes building up in the caves to the east of here. They’re up to no good. People have heard the name ‘Crom Cruach’ bandied about, which is never a good sign.\n4 Travellers heading east have said they’ve seen an ogre recently, but Sir Edward says he needs more than rumors before he can justify doing something about it.\n5 There’s tribes of beastfolk and lizardfolk south of the river — tales tell that they’re being goaded by some crazy hermit witch.\n6 Some fancy priest showed up in town last week, seems like a nice enough fellow but he gives my wife the creeps.",
     "map": {
      "map": "pale-keep",
      "area": "tavern"
@@ -228,7 +232,7 @@
      "room": "guild"
     },
     "who": [],
-    "description": "Will pay a handsome reward for the missing merchant (held in the caves at F24).",
+    "description": "Between the general store and the smithy on the promenade is a small street that leads to the merchant guild’s headquarters at ⑯, and two larger private dwellings (labeled ⑦a and ⑦b on the map); these currently house the banker and a wealthy human priest.",
     "map": {
      "map": "pale-keep",
      "area": "guild"
@@ -254,7 +258,7 @@
       "count": 2
      }
     ],
-    "description": "If bothered at home they gruffly send the party to the bank during business hours.",
+    "description": "The banker at ⑦a is a second-level dweomersmith, living with his wife (a first-level delver) and two second-level dwarven stalwart guards from his clan. If bothered at home, they will gruffly direct the party to come to the bank during business hours.",
     "map": {
      "map": "pale-keep",
      "area": "banker-house"
@@ -272,7 +276,7 @@
       "count": 1
      }
     ],
-    "description": "A charming scholar-priest, eager to discuss Crom Cruach and to volunteer as a guide. Secretly a warlock of the cult: he will lead the party into the labyrinth at I and offer them to the baal-malak.",
+    "description": "The priest in ⑦b is a newcomer. During the day, he is likely to be found at the tavern; during the evening, he will retire to this dwelling, but will eagerly accept visitors. He is a fifth-level death priest with exceptional intelligence (+2) and a wide range of well-thought-out philosophical views that he is eager to discuss with others, backed up by an impressive wealth of theoretical and practical knowledge (his Arcana and Lore skills are each 2+).\n\nHe is also, unfortunately, a warlock in league with the Crom-Cruach cultists.\n\nIf the party mentions the orc caves or Crom Cruach, he will eagerly offer a scholar’s wealth of information about the pagan god and its worship, interspersed with dire moral admonitions. If the party expresses interest in investigating the caves, he will eagerly volunteer to accompany them; he has a suit of feysilver chainmail, a +1 bracer of shielding, and a +1 thunderhammer mace to bring to the party.\n\nHe will, if he can, lead the party directly into the labyrinth at Ⓘ, and attempt to offer them up as a sacrifice to the baal-malak.",
     "disposition": "friendly (feigned)",
     "map": {
      "map": "pale-keep",
@@ -311,7 +315,7 @@
       "count": 1
      }
     ],
-    "description": "The priests keep the whole keep hallowed ground.",
+    "description": "Behind the guild’s headquarters, the chapel at ⑰ is a single large cathedral with ornate stained glass windows, richly stained wood, and gilded symbols of faith framed in grey stone. The abbot in residence is Father Costello, a fifth level priest of the beauty domain, who wields an uncommon (+2) healer’s staff; he is attended to by five acolytes – a third level priest of the death domain, a second level priest of the life domain, a second level priest of the fate domain, a first level priest of the truth domain, and a first level priest of the life domain.",
     "map": {
      "map": "pale-keep",
      "area": "chapel"
@@ -337,7 +341,7 @@
       "count": 24
      }
     ],
-    "description": "Visitors need special permission to pass. If Sir Edward is persuaded, nine guards and the sergeant may go with the party to the caves.",
+    "description": "The inner gatehouse at ⑱ separates the public area from the inner bailey. It is built like a small fortress, with sufficient defenses to repel most attackers. Visitors must first gain special permission before entering through the gatehouse into the inner bailey. There are 24 guards quartered within the inner gatehouse, each of which is a first level warrior with a longsword, medium shield, and chainmail. They are commanded by the captain of the guard, a third-level warrior, and his sergeant, a second-level warrior. Each possess a mastercraft +1 longsword; the sergeant also has a common amulet of protection.",
     "map": {
      "map": "pale-keep",
      "area": "inner-gate"
@@ -355,7 +359,7 @@
       "count": 12
      }
     ],
-    "description": "Six guards in each, two on post at the top. The larger tower (20) mounts a ballista.",
+    "description": "The gatehouse is flanked by two watchtowers at ⑲ and ⑳; the larger tower, at ⑳, houses a ballista for repelling sieges. Each tower houses six guards at any moment, two of which are on post at the tops of the towers.",
     "map": {
      "map": "pale-keep",
      "area": "watchtowers"
@@ -373,7 +377,7 @@
       "count": 20
      }
     ],
-    "description": "By day, at least two ten-man ranks of guards drill on the grass.",
+    "description": "The inner bailey at ㉑ is a large grassy field; during daylight hours, there are always at least two ten-man ranks of guards practicing their combat maneuvers here.",
     "map": {
      "map": "pale-keep",
      "area": "inner-bailey"
@@ -391,7 +395,7 @@
       "count": 2
      }
     ],
-    "description": "Thirty warhorses, d6 light courier horses, two stable hands.",
+    "description": "The cavalry stables at ㉒ house 30 warhorses and 1d6 light courier horses at any given time, plus two stable hands and two guards.",
     "map": {
      "map": "pale-keep",
      "area": "cavalry-stables"
@@ -417,7 +421,7 @@
       "count": 24
      }
     ],
-    "description": "The storm cannon, an artifact siege weapon brought from Albion against dragons and ogres. The engineers never stop repairing it.",
+    "description": "The great tower at ㉓ houses a storm cannon, an artifact siege weapon brought over from Albion at great expense to defend the keep against dragons, ogres, or any other large beastie that might come from beyond the Pale. The tower houses 24 guards, plus six engineers – the chief engineer is a level five wizard, while his five apprentices are all level three wizards. All are experts (2+) in Arcana, and all have their hands busy constantly maintaining and repairing their fickle weapon.",
     "map": {
      "map": "pale-keep",
      "area": "great-tower"
@@ -439,7 +443,7 @@
       "count": 1
      }
     ],
-    "description": "Steel doors 20 ft wide and 15 ft high; a courtyard, great hall and armory inside. Guards' quarters (26) and the castellan's quarters (27) are on top.",
+    "description": "The keep’s fortress is at ㉔. The front doors of the fortress are solid steel, 20 feet wide, and 15 feet high. The building itself is 30 feet tall, while the two flanking towers rise another 30 feet above it. Inside is a main courtyard, a great hall, and an armory.\n\nAtop the fortress are the guard’s quarters at ㉖ and the castellan’s quarters at ㉗.\n\nThe castellan is Sir Edward, a sixth-level war priest. He possesses an uncommon (+2) keen longsword, as well a legendary (+4) relic dagger which serves as the ‘ignition key’ for his golem armor, the Siege Perilous. When not piloting the Siege Perilous, he wears orichalc plate (defense 5) and a common (+1) bracer of shielding. His advisor, Dame MacGearailt, is a third level elven druid, mute from some ancient neck injury but capable of reading and writing in several dozen languages. She wears common (+1) living armor and wields a common (+1) short windbow with a common (+1) elemental quiver, usually kept charged with wood (poison) materia.\n\nSir Edward is a friendly man, and deeply committed to the defense of his people. He knows about the rumors of the orc caves and the ogre, but he feels that right now the beastfolk and lizardfolk across the river are the primary threat. He can’t afford to send his men away from the keep to deal with something that’s only a rumor; even if the party comes back with proof, he’ll be more worried about leaving the keep undefended than about clearing out Crom Cruach’s temple.\n\nIf persuaded, may be willing to send a squad of guards with the party to help clear out the caves. This will consist of nine first-level warriors from the gatehouse commanded by a second-level sergeant.",
     "wants": "Sir Edward sees the beastfolk and lizardfolk across the river as the real threat and will not leave the keep undefended on a rumour.",
     "map": {
      "map": "pale-keep",
@@ -458,7 +462,7 @@
       "count": 4
      }
     ],
-    "description": "Each holds a thunder rattler against raiders climbing the cliff.",
+    "description": "Another pair of defensive towers at ㉕ each house a thunder rattler siege weapon to defend against raiders attempting to climb the cliff walls.",
     "map": {
      "map": "pale-keep",
      "area": "cliff-towers"
@@ -480,11 +484,27 @@
       "count": 1
      }
     ],
-    "description": "A secret lift down to the Siege Perilous (+2 keen longsword, +3 mirror shield, thunder pinions), kept by a dwarf crew: seven dweomersmiths, twelve stalwarts, three delvers. They help with nothing else. (Golem and dwarves not yet in the creature list.)",
+    "description": "The main courtyard of the inner bailey has a secret lift at ㉘. In an emergency, the Castellan or a sworn lieutenant can descend into the mountain with the keep’s chief engineer, and activate the Scout-class golem armor secured within: the Siege Perilous. The Siege Perilous is armed with a +2 keen longsword, a +3 mirror shield, and thunder pinions.\n\nAlso housed within the mountain are a team of dwarves: seven dweomersmiths (a ninth-level, two fifth-level, one third-level, and four first-level), twelve third-level stalwarts, and three third-level delvers; their sworn duty is to maintain the Siege Perilous for the Crown, and they will not hinder or assist any other task.",
     "map": {
      "map": "pale-keep",
      "area": "lift"
     }
+   },
+   "keep-arrival": {
+    "title": "Arriving in the Pale",
+    "where": {
+     "site": "baile-atha-troim"
+    },
+    "who": [],
+    "description": "The Pale Keep is intended as an introductory adventure for characters level 1-3. It serves to introduce a small corner of the world, a wild land half-claimed by faerie called the Isle of Mists, which the kingdom of Albion is trying unsuccessfully to conquer and subjugate.\n\nOn Money — the coins of the realm in Albion are the gold drakhma or drac, the silver dinarus or dime, and the copper penny. A dime is worth one day’s wages for an unskilled laborer; one drac is worth ten dimes, and one dime is worth ten pennies. Dwarven currency is less common, but still recognized – the electrum quarter is worth 25 pennies, and the nickel (made, unsurprisingly, of nickel) is worth five pennies.\n\nThe Pale Keep was built by the Crown of Albion in 3257 to fortify the bordermarch of the Pale against the Eire barbarians and their fey allies. The keep sits on a tall cliff overlooking the Boyne river to the south; the entirety of the island across the Boyne is referred to as “beyond the Pale” by the March’s inhabitants. The entire keep is hallowed ground, kept consecrated regularly by the abbey’s priests."
+   },
+   "keep-ratchet": {
+    "title": "Keeping the Adventure Alive",
+    "where": {
+     "site": "baile-atha-troim"
+    },
+    "who": [],
+    "description": "A large part of the referee’s job is to give the players a sense that they are in a living, evolving world. You can use the following d20 table to create a “ratchet” of escalating events to simulate the passage of time and keep the pressure on the party.\n\nIf the party is sufficiently proactive, or if the “ratchet” style of advancing doom doesn’t fit your table’s style of play, you are free to ignore this table.\n\nAfter the players spend a week at the keep, roll a d20 and consult the following table; on each subsequent week that the caves are left alone, add a cumulative +1 modifier to this roll. Clearing out one of the factions in the caves will reduce the “ratchet” by 1d6, or more if the referee feels that the cultists’ plans have been thwarted more substantially.\n\nD20 Event\n1-5 No Event\n6-7 A random prisoner of the Drithleoga clan is\neaten by the ogre.\n8-9 A random prisoner of the Drithleoga clan is\neaten by the bugbear; roll 1d6: on a ‘1’, the bugbear grows into another ogre, and both\nogres immediately fight until one is defeated.\nThe defeated ogre moves into the forest;\nif ‘8-9’ is rolled subsequently, it indicates that\ntravelers along the road between the forest\nand the river are waylaid by the exiled ogre.\n10 The ettercap’s egg sac hatches. If ‘10’ is rolled\nsubsequently, it indicates that travelers along\nthe road between the forest and the river are\nwaylaid by wandering ettercap young.\n11-13 Travelers along the road near Crom’s cave are\nkidnapped by the wolf clan.\n14-16 Travelers along the road near Crom’s cave are\nkidnapped by the Drithleoga hobgoblins.\n17 Travelers along the road between the forest and the river are kidnapped by the lizardfolk\nat ❶ and eaten.\n18 Travelers along the road between the forest and the river are waylaid by marauding wolf\nclan barbarians from ❸; a single survivor is sent back to the keep with ransom demands.\n19+ A random prisoner of the wolf clan is given to\n(odd) the priests and sacrificed, increasing the\ndemon’s power by 1 hd. Increase this d20 roll’s cumulative modifier by +1d6.\n20+ A random prisoner of the Drithleoga clan is\n(even) given to the priests and sacrificed, increasing\nthe demon’s power by 1 hd. Increase this d20 roll’s cumulative modifier by +1d6.\n\nOnce the demon’s power reaches 10 hd, the next subsequent roll of 19+ instead triggers an all-out assault on the keep by every monster in the area. The referee is encouraged to use the mass combat rules found in the Referee’s Guide to simulate this encounter; the assault will definitely bring out the castellan’s Siege Perilous and many ranks of the keep’s guards in formation — both mounted cavalry and foot soldiers — as well as giving the engineers an opportunity to try out their fancy siege weapons."
    }
   }
  }
