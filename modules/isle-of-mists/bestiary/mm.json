@@ -227,8 +227,12 @@
     ],
     "talentThreshold": 3,
     "special": [
-     "James has three favor, which he can use to perform any first- or second- circle miracle from the death domain, or prepare any other first- or second- circle miracle into a prayer strip."
-    ]
+     "Warlock: sworn in secret to the Baalim (Crom Cruach). Passes as an ordinary brother of the keep chapel.",
+     "Dark prayers prepared (2 first, 2 second, 1 third circle): Cause Fear, Command; Speak With Dead, Beguile; Curse Ability.",
+     "His prayer strips are prayers to the Baalim: a true priest who copies or reads one gets no miracle, which is one way to unmask him."
+    ],
+    "origin": "human",
+    "classId": "priest"
    }
   },
   "abbot-costello": {
@@ -261,8 +265,10 @@
     ],
     "talentThreshold": 3,
     "special": [
-     "Costello has three faith, which he can use to perform any first- or second- circle miracle from the beauty domain, or prepare any other first- or second- circle miracle into a prayer strip."
-    ]
+     "Prayer strips (2 first, 2 second, 1 third circle; Beauty): Inspire, Heal Minor Wounds; Beguile, Cure Poison or Disease; Enhance Charisma."
+    ],
+    "origin": "human",
+    "classId": "priest"
    }
   },
   "sister-wendy": {
@@ -293,8 +299,11 @@
     ],
     "talentThreshold": 4,
     "special": [
-     "Wendy has two faith, which she can use to perform any first-circle miracle from the death domain, or prepare any other first-circle miracle into a prayer strip."
-    ]
+     "Keeps the graves and gives the last rites.",
+     "Prayer strips (2 first, 1 second circle; Death): Cause Fear, Sense the Divine; Speak With Dead."
+    ],
+    "origin": "human",
+    "classId": "priest"
    }
   },
   "sister-abigail": {
@@ -324,8 +333,11 @@
     ],
     "talentThreshold": 5,
     "special": [
-     "Abigail has one faith, which she can use to perform any first-circle miracle from the life domain."
-    ]
+     "Runs the chapel kitchen.",
+     "Prayer strips (2 first circle; Life): Heal Minor Wounds ×2."
+    ],
+    "origin": "human",
+    "classId": "priest"
    }
   },
   "brother-sean": {
@@ -335,7 +347,7 @@
     "size": "Medium",
     "movement": "Normal",
     "armor": "1",
-    "hp": "5d6-5",
+    "hp": "2d6-2",
     "abilities": {
      "con": -1,
      "str": 0,
@@ -354,8 +366,10 @@
     ],
     "talentThreshold": 5,
     "special": [
-     "Sean has one faith, which he can use to perform any first-circle miracle from the fate domain."
-    ]
+     "Prayer strips (2 first circle; Fate): Command, Sense the Divine."
+    ],
+    "origin": "human",
+    "classId": "priest"
    }
   },
   "brother-john": {
@@ -365,7 +379,7 @@
     "size": "Medium",
     "movement": "Normal",
     "armor": "1",
-    "hp": "5d6-5",
+    "hp": "1d6",
     "abilities": {
      "con": 0,
      "str": 0,
@@ -383,8 +397,10 @@
     ],
     "talentThreshold": 5,
     "special": [
-     "John has one faith, which he can use to perform any first-circle miracle from the truth domain."
-    ]
+     "Prayer strip (1 first circle; Truth): Holy Light."
+    ],
+    "origin": "human",
+    "classId": "priest"
    }
   },
   "sister-penelope": {
@@ -394,7 +410,7 @@
     "size": "Medium",
     "movement": "Normal",
     "armor": "1",
-    "hp": "5d6-5",
+    "hp": "1d6-1",
     "abilities": {
      "con": -1,
      "str": 0,
@@ -403,15 +419,19 @@
      "wis": 1,
      "cha": 2
     },
-    "attacks": [],
+    "attacks": [
+     "Quarterstaff (1d6 blunt)"
+    ],
     "talents": [
      "bearing",
      "medicine"
     ],
     "talentThreshold": 5,
     "special": [
-     "Penelope has one faith, which she can use to perform any first-circle miracle from the life domain."
-    ]
+     "Prayer strip (1 first circle; Life): Heal Minor Wounds."
+    ],
+    "origin": "human",
+    "classId": "priest"
    }
   },
   "sir-edward-the-castellan": {

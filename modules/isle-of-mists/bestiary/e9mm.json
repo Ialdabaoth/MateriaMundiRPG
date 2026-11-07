@@ -195,6 +195,242 @@
     "origin": "gnome",
     "classId": "expert+druid"
    }
+  },
+  "brother-james": {
+   "from": "blank",
+   "replace": {
+    "level": 5,
+    "size": "Medium",
+    "movement": "Normal",
+    "armor": "3 / 1",
+    "hp": "5d6",
+    "abilities": {
+     "con": 0,
+     "str": 0,
+     "dex": 0,
+     "int": 2,
+     "wis": 1,
+     "cha": 2
+    },
+    "attacks": [
+     "thundermace (d6 blunt+d6 thunder)"
+    ],
+    "talents": [
+     "stealth",
+     "medicine",
+     "lore",
+     "charm",
+     "wit",
+     "bearing"
+    ],
+    "talentThreshold": 3,
+    "special": [
+     "Warlock: sworn in secret to the Baalim (Crom Cruach). Passes as an ordinary brother of the keep chapel.",
+     "Dark prayers prepared (2 first, 2 second, 1 third circle): Cause Fear, Command; Speak With Dead, Beguile; Curse Ability.",
+     "His prayer strips are prayers to the Baalim: a true priest who copies or reads one gets no miracle, which is one way to unmask him."
+    ],
+    "origin": "human",
+    "classId": "priest"
+   }
+  },
+  "abbot-costello": {
+   "from": "blank",
+   "replace": {
+    "level": 5,
+    "size": "Medium",
+    "movement": "Normal",
+    "armor": "1",
+    "hp": "5d6-5",
+    "abilities": {
+     "con": -1,
+     "str": 0,
+     "dex": 0,
+     "int": 0,
+     "wis": 1,
+     "cha": 2
+    },
+    "attacks": [
+     "healer’s staff quarterstaff (1d6 blunt)"
+    ],
+    "talents": [
+     "finesse",
+     "lore",
+     "medicine",
+     "survival",
+     "charm",
+     "bearing",
+     "wit"
+    ],
+    "talentThreshold": 3,
+    "special": [
+     "Prayer strips (2 first, 2 second, 1 third circle; Beauty): Inspire, Heal Minor Wounds; Beguile, Cure Poison or Disease; Enhance Charisma."
+    ],
+    "origin": "human",
+    "classId": "priest"
+   }
+  },
+  "sister-wendy": {
+   "from": "blank",
+   "replace": {
+    "level": 3,
+    "size": "Medium",
+    "movement": "Normal",
+    "armor": "1",
+    "hp": "3d6-3",
+    "abilities": {
+     "con": -1,
+     "str": 0,
+     "dex": 0,
+     "int": 0,
+     "wis": 1,
+     "cha": 1
+    },
+    "attacks": [
+     "quarterstaff (1d6 blunt / reach)"
+    ],
+    "talents": [
+     "stealth",
+     "medicine",
+     "charm",
+     "wit",
+     "bearing"
+    ],
+    "talentThreshold": 4,
+    "special": [
+     "Keeps the graves and gives the last rites.",
+     "Prayer strips (2 first, 1 second circle; Death): Cause Fear, Sense the Divine; Speak With Dead."
+    ],
+    "origin": "human",
+    "classId": "priest"
+   }
+  },
+  "sister-abigail": {
+   "from": "blank",
+   "replace": {
+    "level": 2,
+    "size": "Medium",
+    "movement": "Normal",
+    "armor": "2 / 1",
+    "hp": "2d6",
+    "abilities": {
+     "con": 0,
+     "str": 0,
+     "dex": 0,
+     "int": 0,
+     "wis": 0,
+     "cha": 1
+    },
+    "attacks": [
+     "frying pan (1d6 blunt)"
+    ],
+    "talents": [
+     "medicine",
+     "survival",
+     "charm",
+     "bearing"
+    ],
+    "talentThreshold": 5,
+    "special": [
+     "Runs the chapel kitchen.",
+     "Prayer strips (2 first circle; Life): Heal Minor Wounds ×2."
+    ],
+    "origin": "human",
+    "classId": "priest"
+   }
+  },
+  "brother-sean": {
+   "from": "blank",
+   "replace": {
+    "level": 2,
+    "size": "Medium",
+    "movement": "Normal",
+    "armor": "1",
+    "hp": "2d6-2",
+    "abilities": {
+     "con": -1,
+     "str": 0,
+     "dex": 0,
+     "int": 0,
+     "wis": 1,
+     "cha": 2
+    },
+    "attacks": [
+     "mace (1d6 blunt)"
+    ],
+    "talents": [
+     "alertness",
+     "charm",
+     "bearing"
+    ],
+    "talentThreshold": 5,
+    "special": [
+     "Prayer strips (2 first circle; Fate): Command, Sense the Divine."
+    ],
+    "origin": "human",
+    "classId": "priest"
+   }
+  },
+  "brother-john": {
+   "from": "blank",
+   "replace": {
+    "level": 1,
+    "size": "Medium",
+    "movement": "Normal",
+    "armor": "1",
+    "hp": "1d6",
+    "abilities": {
+     "con": 0,
+     "str": 0,
+     "dex": 0,
+     "int": 0,
+     "wis": 1,
+     "cha": 1
+    },
+    "attacks": [
+     "mace (1d6 blunt)"
+    ],
+    "talents": [
+     "bearing",
+     "lore"
+    ],
+    "talentThreshold": 5,
+    "special": [
+     "Prayer strip (1 first circle; Truth): Holy Light."
+    ],
+    "origin": "human",
+    "classId": "priest"
+   }
+  },
+  "sister-penelope": {
+   "from": "blank",
+   "replace": {
+    "level": 1,
+    "size": "Medium",
+    "movement": "Normal",
+    "armor": "1",
+    "hp": "1d6-1",
+    "abilities": {
+     "con": -1,
+     "str": 0,
+     "dex": 0,
+     "int": 0,
+     "wis": 1,
+     "cha": 2
+    },
+    "attacks": [
+     "Quarterstaff (1d6 blunt)"
+    ],
+    "talents": [
+     "bearing",
+     "medicine"
+    ],
+    "talentThreshold": 5,
+    "special": [
+     "Prayer strip (1 first circle; Life): Heal Minor Wounds."
+    ],
+    "origin": "human",
+    "classId": "priest"
+   }
   }
  }
 }
