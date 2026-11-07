@@ -891,7 +891,7 @@
     ],
     "description": "This is the first cavern entrance on the left, at the bottom of the ravine. Péistduine (kobold) hunting parties frequently enter and exit the cave; as the party approaches the entrance, there is a 2 in 6 chance that a hunting party has seen their approach and is hiding in the trees to ambush them.\n\nThe Péistdaoine have dug a pit-trap 20’ in from the entrance at X, which will support the weight of a Péistduine but will collapse if walked on by a medium or larger creature.",
     "map": {
-     "map": "crom-cave-a",
+     "map": "crom-caves",
      "area": "mouth"
     }
    },
@@ -909,7 +909,7 @@
     ],
     "description": "An alcove at ① is set up as a guard post; at any given time, 1d6+1 1hd Péistduine (kobold) hunters, each wielding javelins and small shields, will be stationed here to guard their home.",
     "map": {
-     "map": "crom-cave-a",
+     "map": "crom-caves",
      "area": "guard-post"
     }
    },
@@ -926,7 +926,7 @@
      }
     ],
     "map": {
-     "map": "crom-cave-a",
+     "map": "crom-caves",
      "area": "midden"
     },
     "description": "The garbage pile at ② is infested with unusually large rats, many of which carry the Black Plague in their bite. There are 2d6 giant rats hiding within the garbage pile at any given time. Anyone bitten by a rat that achieves a critical hit should save vs. Doom to determine whether they contract an infection; rolling a ‘1’ on this saving throw indicates that the infection is the Plague."
@@ -940,7 +940,7 @@
     "who": [],
     "players": "Salted jerky, grain, sour beer and wine. Some of the jerky was clearly once human or elven.",
     "map": {
-     "map": "crom-cave-a",
+     "map": "crom-caves",
      "area": "larder"
     },
     "description": "The room at ③ is the larder. The salted jerky, grains, beer, and wine are of low quality and barely edible; moreso, some of the jerky was very clearly once human or elven."
@@ -959,7 +959,7 @@
     ],
     "tactics": "They shoot any non-Péistdaoine who come near.",
     "map": {
-     "map": "crom-cave-a",
+     "map": "crom-caves",
      "area": "lizard-guard"
     },
     "description": "A guard station at ④ contains two human-sized Earc-dhuine (troglodyte) hunter guards (2hd each). Each is wearing hides and wielding a shortbow, which they will eagerly use to shoot any non-Péistdaoine that approach this area."
@@ -982,7 +982,7 @@
     ],
     "description": "⑤ is the bone-mother’s lair. She is a 3hd Péistduine (kobold) druid and serves as the leader of the tribe. This room also contains 1d6+1 pregnant or brooding Péistduine mothers, and several large clutches of eggs.",
     "map": {
-     "map": "crom-cave-a",
+     "map": "crom-caves",
      "area": "bone-mother"
     }
    },
@@ -1008,7 +1008,7 @@
     ],
     "treasure": "Hidden in the nests, found only by searching: 3d6 sp and an uncommon +2 robe of splendour used as bedding.",
     "map": {
-     "map": "crom-cave-a",
+     "map": "crom-caves",
      "area": "den"
     },
     "description": "⑥ is the Péistduine (kobold)’s common den. There are 3d6 Péistduine hunter males, 4d6 Péistduine champion females, and 2d6 Péistduine young (who will flee or hide rather than fight). Hidden among their nests is 3d6 sp and an uncommon (+2) robe of splendour, which one of them is using as bedding. These items will not be found without a search, however."
@@ -1027,7 +1027,7 @@
     ],
     "description": "This cave is directly above the Péistduine (kobold) warrens. Before the goblins arrived, these caves were part of the Péistduine warrens — a fact that the Péistdaoine have not forgotten, and still hold considerable resentment about.\n\nThe wall facing the entrance is covered with the grizzly trophies of human, goblin, and Péistdaoine (lizardfolk) heads and skulls in various stages of decay. There is a small window hidden by a grey cloth, where a 2hd Bocánach (hobgoblin) hunter guard from the alcove at (g) can poke their head through and keep watch, while appearing to be one of the trophy-heads.",
     "map": {
-     "map": "crom-caves-b-c",
+     "map": "crom-caves",
      "area": "b-trophy-hall"
     }
    },
@@ -1045,7 +1045,7 @@
     ],
     "treasure": "Each guard has 2d6+3 electrum quarters on the table.",
     "map": {
-     "map": "crom-caves-b-c",
+     "map": "crom-caves",
      "area": "b-guard-7"
     },
     "description": "At ⑦ is a guard room which is regularly staffed by four 2hd Bocánach (hobgoblin) champions, each armed with a spear and a medium shield. They are positioned around a gambling table; each guard has 2d6+3 electrum quarters that they are wagering at games of dice."
@@ -1064,7 +1064,7 @@
     ],
     "description": "At ⑧ is another guard room with four more 3hd Bocánach (hobgoblin) guards; they report to the guard at (g) and will join him in repelling any invaders.",
     "map": {
-     "map": "crom-caves-b-c",
+     "map": "crom-caves",
      "area": "b-guard-8"
     }
    },
@@ -1093,7 +1093,7 @@
     ],
     "description": "There is a mess hall at ⑨ filled with benches and tables, with a fireplace inset into the far wall. On a d20 roll of ‘1’, the 3hd Bodach (bugbear) champion chieftain is holding court here, and the room is filled with 2d6 x 2hd Bocánaigh (hobgoblins) and 3d6 x 1hd Fir Dhearga (redcaps). Otherwise, the room is empty, but a small charcoal fire is still burning in the fireplace.",
     "map": {
-     "map": "crom-caves-b-c",
+     "map": "crom-caves",
      "area": "b-mess-9"
     }
    },
@@ -1119,7 +1119,7 @@
     ],
     "treasure": "d6 silver each.",
     "map": {
-     "map": "crom-caves-b-c",
+     "map": "crom-caves",
      "area": "b-common-10"
     },
     "description": "The common room at ⑩ quarters 2d6 x 2hd male Bocánach (hobgoblin) champions, 3d6 x 2hd female Bocánach hunters, and 2d6 Fear Dearg (redcap) young (1hd each, will flee or hide rather than fighting). Each of the Bocánaigh will have 1d6 silver in their pockets."
@@ -1133,7 +1133,7 @@
     "who": [],
     "treasure": "Locked. Three medium wooden shields, 3d6 spears and two battle axes, all excellent.",
     "map": {
-     "map": "crom-caves-b-c",
+     "map": "crom-caves",
      "area": "b-armory-11"
     },
     "description": "The door to the armory at ⑪ is locked; inside are three medium wooden shields, 3d6 spears, and two battle axes, all in excellent condition."
@@ -1152,7 +1152,7 @@
     ],
     "treasure": "Hidden alcove: an uncommon elixir of health, two suits of chainmail, four swords, and a small locked chest with 3d6×10 gp and 3d6×10 sp.",
     "map": {
-     "map": "crom-caves-b-c",
+     "map": "crom-caves",
      "area": "b-chief-12"
     },
     "description": "The Bocánach (hobgoblin) chieftain’s lair is at ⑫. He is wearing chainmail and a common (+1) bracer of shielding of dwarven manufacture, and wields a mace. He is wearing a non-magical dwarven signet ring worth 700 drac. The treasure alcove hidden in his room holds an uncommon elixir of health, two suits of chainmail, four swords, and a small locked treasure chest with 3d6 x 10 gold pieces and 3d6 x 10 silver."
@@ -1166,7 +1166,7 @@
     "who": [],
     "description": "This is also directly above the Péistduine (kobold) warrens. The secret room at ⑬ has a secret door leading from the Lámh Fhuilteach chieftain’s quarters, and another leading from the Dubhfhiacail chieftain’s quarters at Ⓑ-⑫. Both leaders use this room to negotiate between their tribes and plan joint raids, whenever the two clans are not fighting each other.",
     "map": {
-     "map": "crom-caves-b-c",
+     "map": "crom-caves",
      "area": "parley-13"
     }
    },
@@ -1187,7 +1187,7 @@
      }
     ],
     "map": {
-     "map": "crom-caves-b-c",
+     "map": "crom-caves",
      "area": "c-common-14"
     },
     "description": "The common room at ⑭ has 2d6 x 1hd Fear Dearg (redcap) hunters each with shortswords and light wooden shields, along with 2d6 goblin young (1hd, will flee or hide rather than fighting)."
@@ -1205,7 +1205,7 @@
      }
     ],
     "map": {
-     "map": "crom-caves-b-c",
+     "map": "crom-caves",
      "area": "c-mess-15"
     },
     "description": "The mess hall is at ⑮; there are 2d6 x 1hd Fear Dearg (redcap) hunters quartered here, each with light crossbows and light wooden shields."
@@ -1225,7 +1225,7 @@
     "description": "The Lámh Fhuilteach chieftain’s lair is at ⑯; she always has a Fear Dearg (redcap) hunter guard posted at (g) who actually takes their watch seriously. The room the guard is posted in also serves as the larder for the tribe; among the typical goblin offal is an actually high-quality cask of wine worth 55 drac.",
     "treasure": "Among the offal, a cask of genuinely good wine worth 55 drac.",
     "map": {
-     "map": "crom-caves-b-c",
+     "map": "crom-caves",
      "area": "c-larder-g"
     }
    },
@@ -1243,7 +1243,7 @@
     ],
     "treasure": "Fine dwarven furniture in slight disrepair and a locked chest with 500 gp.",
     "map": {
-     "map": "crom-caves-b-c",
+     "map": "crom-caves",
      "area": "c-chief-16"
     },
     "description": "The Lámh Fhuilteach chieftain’s lair is at ⑯; she always has a Fear Dearg (redcap) hunter guard posted at (g) who actually takes their watch seriously. The room the guard is posted in also serves as the larder for the tribe; among the typical goblin offal is an actually high-quality cask of wine worth 55 drac.\n\nThe chieftain is a 3hd goblin Fear Dearg champion who wields a handaxe enchanted as a common (+1) flying blade, as well as a light steel shield. She is wearing banded armor originally intended for a dwarf, which is in slight need of repair. She is also adorned with various bits of expensive dwarven jewelry – a silver and gold belt worth 160 drac, an ivory bracelet worth 100 drac, and a gold and garnet signet ring worth 100 drac.\n\nThe room is well furnished with finely crafted dwarven furniture in slight disrepair, and contains a locked chest with 500 gold pieces inside."
@@ -1262,7 +1262,7 @@
     ],
     "description": "㉘ The third goblin clan’s nest is across the ravine from the Péistduine (kobold) lair, on the right side at ground level. At the ground level are the Fear Dearg (redcap) warrens, where the young goblins of the Drithleoga clan are mostly left to fend for themselves.\n\nThese tunnels are used much more often than the others; each exploration round that the party is within the tunnels, the referee should roll a d6 to determine whether a random encounter occurs. On a 1-2, the party stumbles into a patrol of 6 x 2hd Fear Dearg hunters, each wearing leather and wielding a pair of hand axes.",
     "map": {
-     "map": "crom-caves-d-e-f",
+     "map": "crom-caves",
      "area": "d-mouth"
     }
    },
@@ -1279,7 +1279,7 @@
      }
     ],
     "map": {
-     "map": "crom-caves-d-e-f",
+     "map": "crom-caves",
      "area": "d-guard-17"
     },
     "description": "There are two guard chambers at ⑰ and ⑱, each staffed by six 2hd Fear Dearg (redcap) champions. Each Fear Dearg has a stack of javelins that they are ready to throw at intruders. The chamber at ⑱ has a secret door into their Athach (ogre) chieftain’s lair at Ⓔ-㉒; if the goblins in ⑱ decide it is worth the risk, they will ask the chieftain for help in repelling the invaders."
@@ -1298,7 +1298,7 @@
     ],
     "description": "There are two guard chambers at ⑰ and ⑱, each staffed by six 2hd Fear Dearg (redcap) champions. Each Fear Dearg has a stack of javelins that they are ready to throw at intruders. The chamber at ⑱ has a secret door into their Athach (ogre) chieftain’s lair at Ⓔ-㉒; if the goblins in ⑱ decide it is worth the risk, they will ask the chieftain for help in repelling the invaders.",
     "map": {
-     "map": "crom-caves-d-e-f",
+     "map": "crom-caves",
      "area": "d-guard-18"
     }
    },
@@ -1323,7 +1323,7 @@
      }
     ],
     "map": {
-     "map": "crom-caves-d-e-f",
+     "map": "crom-caves",
      "area": "d-common-19"
     },
     "description": "At ⑲ is the common room, with 4d6 x 2hd Fear Dearg (redcap) champions, 4d6 x 2hd Fear Dearg hunters, and two 1hd Fear Dearg druids."
@@ -1353,7 +1353,7 @@
      }
     ],
     "map": {
-     "map": "crom-caves-d-e-f",
+     "map": "crom-caves",
      "area": "d-subchief-20"
     },
     "description": "The Drithleoga Fir Dhearga (redcaps) have a “sub-chieftain”, who handles actual day-to-day leadership while their “ur-chief” Athach (ogre) focuses on filling his belly with meat. The sub-chieftain’s chambers are at ⑳; he is a 3hd Fear Dearg champion, accompanied by a harem of two 2hd Fear Dearg hunters, three non-combatant female goblins (1hd each, will flee or hide rather than fight), and one very traumatized hob who continues to insist that they are neither goblin, nor female, nor interested (1hd non-combatant, will beg to join the party and be escorted out)."
@@ -1377,7 +1377,7 @@
     ],
     "description": "The Fear Dearg (redcap)’s larder is at ㉑, with four 2hd Fear Dearg hunters with crossbows positioned at (g) to guard it. Nothing in the larder is of particular value to anyone but a goblin. There is a hidden secret door into the Bocánach (hobgoblin)’s caves at Ⓕ-㉘ in the back of the larder, which the Bocánaigh of the clan has been using to raid the Fir Dhearga’ stores; each turn that the party lingers in this room beyond the first, there is a 1-in-6 chance that 1d6 x 3hd Bocánach hunters will appear, hoping to raid the pantry.",
     "map": {
-     "map": "crom-caves-d-e-f",
+     "map": "crom-caves",
      "area": "d-larder-21"
     }
    },
@@ -1397,7 +1397,7 @@
     "treasure": "Under the bearskins: a common +1 quiver of elemental bolts, a keg of brandy (80 drac), 3d6×100 copper pennies, 3d6×100 silver dimes, 3d6×100 gold drakhma, and 3d6×100 counterfeit drakhma (gilded lead).",
     "threat": "deadly",
     "map": {
-     "map": "crom-caves-d-e-f",
+     "map": "crom-caves",
      "area": "e-ogre-22"
     }
    },
@@ -1422,7 +1422,7 @@
      }
     ],
     "map": {
-     "map": "crom-caves-d-e-f",
+     "map": "crom-caves",
      "area": "f-common-23"
     },
     "description": "The Bocánaigh (hobgoblins) of the Drithleoga clan reside above the Athach (ogre) cave, in what they call the “luxury suites”.\n\nAt ㉓ is a common room that also leads down into the Fear Dearg (redcap) warrens, with 1d6 x 3hd Bocánach champions and 2d6 x 3hd Bocánach hunters. Each champion will have a greataxe, while each hunter will wield a pair of shortswords. There are also 1d6+2 Fear Dearg children (1hd each, will flee or hide rather than fight)."
@@ -1456,7 +1456,7 @@
      }
     ],
     "map": {
-     "map": "crom-caves-d-e-f",
+     "map": "crom-caves",
      "area": "f-torture-24"
     },
     "description": "At ㉔ is a combination pantry and torture chamber. Two 3hd Bocánach (hobgoblin) champions are here, each wearing a common (+1) thornweave hide armor and wielding a shortsword and a light wooden shield. One also has a whip, and is reasonably practiced at using it for combat stunts (Finesse 3+). The other is wearing an expensive but non-magical silver and sapphire amulet, worth 135 drac. There are four prisoners here:\n\n1. An overweight merchant from the keep, being fattened up to serve as the main course for tonight’s banquet. If he can be rescued, the keep will offer a 3d6 x 10 drac reward and honorary guild membership.\n2. The merchant’s wife, who is also being prepared as tonight’s appetizer. If brought back to the keep, she will reward the adventurers with a common (+1) keen blade enchanted dagger.\n3. A 1hd human warrior, who was the merchant’s bodyguard. If rescued, they will offer their services to the party.\n4. Another 1hd human warrior, also the merchant’s bodyguard. If rescued, they will offer their services to the party."
@@ -1484,7 +1484,7 @@
     "players": "Tables, chairs and silverware laid for a feast. The silverware is fine dwarven work.",
     "treasure": "Dwarven silverware worth 25 drac.",
     "map": {
-     "map": "crom-caves-d-e-f",
+     "map": "crom-caves",
      "area": "f-feast-25"
     },
     "description": "㉕ is the Bocánaigh (hobgoblins)’ common room. This is where meals, celebrations, and other gatherings occur, and also serves as their sleeping quarters. It is very, very messy and unkempt. There are 1d6 x 3hd Bocánach champions here, 1d6 x 3hd Bocánach hunters, and (1d6+3) young goblins (1hd each, will hide or flee rather than fight). The room is currently in the process of being laid out with tables, chairs, and silverware for a feast (the merchant and his wife). The silverware in particular is of fine dwarven make, worth 25 drac."
@@ -1507,7 +1507,7 @@
     ],
     "description": "At ㉖, ㉙ and ㉛ are guardrooms, each with (1d6+1) Bocánaigh (hobgoblins) — half (round down) will be 3hd champions with greataxes, and half (round up) will be 3hd hunters with shortbows and two daggers.",
     "map": {
-     "map": "crom-caves-d-e-f",
+     "map": "crom-caves",
      "area": "f-guard-26"
     }
    },
@@ -1529,7 +1529,7 @@
     ],
     "description": "At ㉖, ㉙ and ㉛ are guardrooms, each with (1d6+1) Bocánaigh (hobgoblins) — half (round down) will be 3hd champions with greataxes, and half (round up) will be 3hd hunters with shortbows and two daggers.",
     "map": {
-     "map": "crom-caves-d-e-f",
+     "map": "crom-caves",
      "area": "f-guard-29"
     }
    },
@@ -1551,7 +1551,7 @@
     ],
     "description": "At ㉖, ㉙ and ㉛ are guardrooms, each with (1d6+1) Bocánaigh (hobgoblins) — half (round down) will be 3hd champions with greataxes, and half (round up) will be 3hd hunters with shortbows and two daggers.",
     "map": {
-     "map": "crom-caves-d-e-f",
+     "map": "crom-caves",
      "area": "f-guard-31"
     }
    },
@@ -1564,7 +1564,7 @@
     "who": [],
     "treasure": "Two suits of plate (one human, one dwarf), five chainmail, seven leather, eleven light wooden shields, six daggers, a battle axe, four maces, two shortswords, a longsword, two shortbows, a longbow, thirteen crossbows, 130 arrows, 72 bolts, 50 javelins, 19 glaives and 42 helmets.",
     "map": {
-     "map": "crom-caves-d-e-f",
+     "map": "crom-caves",
      "area": "f-armory-27"
     },
     "description": "The Bocánach (hobgoblin)’s armory at ㉗ contains two suits of plate armor (one sized for humans, the other for dwarves), five suits of chainmail, seven suits of leather armor, eleven light wooden shields, six daggers, one battle ax, four maces, two shortswords, one longsword, two shortbows, one longbow, thirteen crossbows, 130 arrows, 72 crossbow bolts, 50 javelins, 19 glaives, and 42 helmets of various sizes."
@@ -1578,7 +1578,7 @@
     "who": [],
     "description": "At ㉘ is a larder where the supplies stolen from the Fir Dhearga (redcaps) are stored. There is nothing particularly valuable to the party here. Between ㉘ and ㉙ is a staircase down into a secret passageway into the Fir Dhearga’ larder at Ⓓ-㉑.",
     "map": {
-     "map": "crom-caves-d-e-f",
+     "map": "crom-caves",
      "area": "f-larder-28"
     }
    },
@@ -1600,7 +1600,7 @@
     ],
     "treasure": "In the fireplace kindling: an uncommon +2 wand of hold person. An iron chest of rotting hides with a false bottom: 3d6×100 drakhma, a 100 drac emerald, and an uncommon -2 intelligence-sapping poison.",
     "map": {
-     "map": "crom-caves-d-e-f",
+     "map": "crom-caves",
      "area": "f-bugbear-30"
     },
     "description": "Like the Fir Dhearga (redcaps), the Bocánaigh (hobgoblins) have a “sub-chieftain” who calls the shots — a 4hd Bodach (bugbear) champion holed up at ㉚, with a harem of four 3hd Bocánach hunters. The chieftain wields a greatsword too large for a medium creature, and has a dwarven belt adorned with rubies worth 600 drac. Hidden in the kindling of the fireplace is an uncommon (+2) magic wand enchanted with the hold person spell. There is an iron treasure chest in one corner of the room filled with rotting animal hides; it has a false bottom, below which is 3d6 x 100 drakhma coins, a 100 drac emerald, and a potion of uncommon (-2) intelligence-sapping poison."

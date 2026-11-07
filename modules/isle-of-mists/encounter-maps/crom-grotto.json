@@ -2,7 +2,7 @@
  "format": "e9-encounter-map/1",
  "id": "crom-grotto",
  "title": "Cnoc na Teamhrach: the grotto of Crom Cruach",
- "size": [45, 70],
+ "size": [95, 147],
  "grid": {
   "ft": 5,
   "show": true
@@ -11,173 +11,214 @@
   {
    "src": "crom-grotto/map.jpg",
    "at": [0, 0],
-   "px": 32
+   "px": 24
   }
  ],
  "ground": "none",
  "anchor": {
-  "square": [22.5, 35]
+  "square": [47.25, 73.5]
  },
  "areas": {
   "ravine": {
    "squares": [
-    12,
-    17,
-    18,
-    53
+    25,
+    36,
+    38,
+    111
    ],
    "title": "The ravine floor"
   },
   "cave-k": {
    "squares": [
-    17,
-    10,
-    4,
-    4
+    36,
+    21,
+    8,
+    8
    ],
    "title": "The shrine of Crom Cruach"
   },
   "cave-j": {
    "squares": [
-    1,
-    21,
-    4,
-    4
+    2,
+    44,
+    8,
+    8
    ],
    "title": "Boar beastfolk"
   },
   "cave-i": {
    "squares": [
-    31,
-    17,
-    4,
-    4
+    65,
+    36,
+    8,
+    8
    ],
    "title": "The demon's labyrinth"
   },
   "cave-g": {
    "squares": [
-    28,
-    21,
-    4,
-    4
+    59,
+    44,
+    8,
+    8
    ],
    "title": "The ursagryph"
   },
   "cave-h": {
    "squares": [
-    35,
-    27,
-    4,
-    4
+    74,
+    57,
+    8,
+    8
    ],
    "title": "Lámh Fhuilteach Bodaigh"
   },
   "cave-c": {
    "squares": [
-    35,
-    37,
-    4,
-    4
+    74,
+    78,
+    8,
+    8
    ],
    "title": "Lámh Fhuilteach goblins"
   },
   "cave-d": {
    "squares": [
-    7,
-    38,
-    4,
-    4
+    15,
+    80,
+    8,
+    8
    ],
    "title": "Drithleoga lair"
   },
   "cave-e": {
    "squares": [
-    10,
-    51,
-    4,
-    4
+    21,
+    107,
+    8,
+    8
    ],
    "title": "The Athach's cave"
   },
   "cave-a": {
    "squares": [
-    28,
-    46,
-    4,
-    4
+    59,
+    97,
+    8,
+    8
    ],
    "title": "Péistdaoine"
   },
   "cave-f": {
    "squares": [
-    7,
-    58,
-    4,
-    4
+    15,
+    122,
+    8,
+    8
    ],
    "title": "Drithleoga warrens"
   },
   "cave-b": {
    "squares": [
-    35,
-    59,
-    4,
-    4
+    74,
+    124,
+    8,
+    8
    ],
    "title": "Dubhfhiacail goblins"
   }
  },
  "links": [
   {
-   "from": [37.48, 39.35],
+   "from": [63.0, 100.8],
    "to": {
-    "map": "crom-caves-b-c",
-    "area": "c-common-14"
-   },
-   "label": "Lámh Fhuilteach goblins"
-  },
-  {
-   "from": [8.91, 40.22],
-   "to": {
-    "map": "crom-caves-d-e-f",
-    "area": "d-mouth"
-   },
-   "label": "Drithleoga lair"
-  },
-  {
-   "from": [12.0, 52.61],
-   "to": {
-    "map": "crom-caves-d-e-f",
-    "area": "e-ogre-22"
-   },
-   "label": "The Athach's cave"
-  },
-  {
-   "from": [30.22, 48.26],
-   "to": {
-    "map": "crom-cave-a"
+    "map": "crom-caves",
+    "entrance": "a"
    },
    "label": "Péistdaoine"
   },
   {
-   "from": [8.61, 60.22],
+   "from": [77.7, 128.1],
    "to": {
-    "map": "crom-caves-d-e-f",
-    "area": "f-guard-26"
+    "map": "crom-caves",
+    "entrance": "b"
+   },
+   "label": "Dubhfhiacail goblins"
+  },
+  {
+   "from": [77.7, 81.9],
+   "to": {
+    "map": "crom-caves",
+    "entrance": "c"
+   },
+   "label": "Lámh Fhuilteach goblins"
+  },
+  {
+   "from": [18.9, 84.0],
+   "to": {
+    "map": "crom-caves",
+    "entrance": "d"
+   },
+   "label": "Drithleoga lair"
+  },
+  {
+   "from": [25.2, 111.3],
+   "to": {
+    "map": "crom-caves",
+    "entrance": "e"
+   },
+   "label": "The Athach's cave"
+  },
+  {
+   "from": [18.9, 126.0],
+   "to": {
+    "map": "crom-caves",
+    "entrance": "f"
    },
    "label": "Drithleoga warrens"
   },
   {
-   "from": [37.04, 61.09],
+   "from": [63.0, 48.3],
    "to": {
-    "map": "crom-caves-b-c",
-    "area": "b-trophy-hall"
+    "map": "crom-caves",
+    "entrance": "g"
    },
-   "label": "Dubhfhiacail goblins"
+   "label": "The ursagryph"
+  },
+  {
+   "from": [77.7, 60.9],
+   "to": {
+    "map": "crom-caves",
+    "entrance": "h"
+   },
+   "label": "Lámh Fhuilteach Bodaigh"
+  },
+  {
+   "from": [69.3, 39.9],
+   "to": {
+    "map": "crom-caves",
+    "entrance": "i"
+   },
+   "label": "The demon's labyrinth"
+  },
+  {
+   "from": [6.3, 48.3],
+   "to": {
+    "map": "crom-caves",
+    "entrance": "j"
+   },
+   "label": "Boar beastfolk"
+  },
+  {
+   "from": [39.9, 25.2],
+   "to": {
+    "map": "crom-caves",
+    "entrance": "k"
+   },
+   "label": "The shrine of Crom Cruach"
   }
  ],
- "notes": "Traced from the grotto layout Heph supplied (2026-11-06) and redrawn in the E9 ink style; cave names from Heph's labelled copy. Terraced cliffs ring a wooded ravine floor; each cave opens at the foot of a cliff.",
+ "notes": "Traced from the grotto layout Heph supplied (2026-11-06) and redrawn in the E9 ink style; cave names from Heph's labelled copy. Terraced cliffs ring a wooded ravine floor; each cave opens at the foot of a cliff. Scaled up 2.1x (Heph 2026-11-07) so the ravine and its cave mouths match the caves megadungeon.",
  "surface": {
   "src": "crom-grotto/surface.png",
   "px": 8,
