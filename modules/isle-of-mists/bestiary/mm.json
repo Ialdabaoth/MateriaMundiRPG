@@ -1883,12 +1883,12 @@
     "talents": [],
     "talentThreshold": 6,
     "special": [
-     "Infernal plant. Each 5-ft patch is a separate Large creature with 1d6 structure points and no abilities; it cannot move or act. Attack throws against it are easy.",
-     "Thorns: a creature moving next to a patch saves vs. Blast (the referee rolls in secret the first time). Touching it counts as failing. On a fail: 1d6+1 piercing plus ongoing bleeding.",
-     "Grab: if the damage die shows 6, the victim is restrained unless it saves vs. Hold, taking another d6 piercing, and d6 piercing each round after. Breaking free takes an action and a hard save vs. Hold.",
-     "Rose-hip burst: on a critical fail the victim takes a critical hit and the patch drops its petals. Next round its hips explode: 3d6+1 piercing plus bleeding in a 4-pace blast. The round after, new vines sprout over everything in the blast.",
-     "Axes and fire deal structure damage; other attacks follow the rules for structures. A burning patch spreads fire to each adjacent patch on a 1 in 6.",
-     "Rebuke the Unholy and holy water harm it as an infernal creature."
+     "Whenever a creature attempts to move through a space adjacent to them, that creature must save vs. Blast to avoid being scratched; the referee should make these saving throws in secret the first time a creature passes by a rosebush. Attempting to touch a rosebush, even on an apparently non-thorny part of a vine, is treated as failing this saving throw.",
+     "A creature that fails this saving throw immediately suffers 1d6+1 piercing damage and ongoing bleeding damage, as the vines twist and lash to drive the thorns deeper into their flesh. If this damage die rolls a '6', that creature is grabbed and restrained by the thornbushes unless they succeed at a save vs. Hold, suffering another d6 piercing damage as they are grabbed. A restrained creature suffers another d6 piercing damage each round, and must use their action to make a hard save vs. Hold until they manage to free themselves.",
+     "As the bloodroses inflict damage, the flowers around them change color from white, to pink, to deep red. Whenever a creature critically fails their saving throw vs. a bush, that creature suffers a critical hit and all the petals fall off of the blooms on that 5' patch of bush. The next round, each of the exposed rose hips explode, sending razor-sharp shrapnel in a blast 4 paces in radius that deals 3d6+1 piercing damage and ongoing bleeding damage. The next round after that, every inch of exposed surface within the blast area starts growing new rosevines, which continue to grow and mature over 1d6 rounds until they produce their own thorns and flowers.",
+     "Each 5' patch of bloodrose is treated as a separate large \"creature\" with 1d6 structure points, although they have no abilities and cannot move or perform actions. Attack throws against a bloodrose are easy, since it fills a 5' space and can't move or dodge.",
+     "Attacks from an ax weapon or fire inflict direct structure damage, while other attacks follow the normal rules for attacking a structure. If a bloodrose is lit on fire, it has a 1- in-6 chance of spreading the flames to each adjacent bush.",
+     "This same energy makes the plants vulnerable to the rebuke the unholy miracle, which inflicts 1d6 structure damage to each plant within 10 paces, and prevents those plants from regenerating when further damage is inflicted on them."
     ],
     "origin": "infernal plant"
    }
@@ -1986,9 +1986,8 @@
     "talentThreshold": 4,
     "special": [
      "Pucca: a wolf is her natural shape and she shifts at will (innate, not magic).",
-     "Starved: Con -2 and 2 hp (max 4). With care her Con returns to +0 over a few months.",
-     "Wolf-cub form: Medium, Armor 2, HP 2d6+2, Con +1 Str +3 Dex +1 Int +1 Wis +2 Cha -1, attack 10+: claws (2d6), grapple (2d6+3 blunt); talents Alertness, Survival.",
-     "Chained in frenzy: subdue her without killing her and take off the iron collar, and she turns back into a girl."
+     "Con -2 and 2 hp (max 4) while starved; Con returns to +0 over a few months of care.",
+     "Wolf-cub form: Medium, Armor 2, HP 2d6+2, Con +1 Str +3 Dex +1 Int +1 Wis +2 Cha -1, attack 10+: claws (2d6), grapple (2d6+3 blunt); talents Alertness, Survival."
     ],
     "origin": "wolf pucca"
    }
@@ -2028,10 +2027,9 @@
     ],
     "talentThreshold": 2,
     "special": [
-     "Human bard (her grandmother had an elf lover). A century in Faerie has trained her in every talent.",
+     "Human bard; trained in every talent.",
      "Bardsong: weaves a Dream or Song glamour of up to fourth circle into a performance (Fascinate, Sleep; Beguile, Phantasm; Inspiration, Suggestion; Confusion, Irresistible Dance), one Charm check per circle, one round each.",
-     "Feysilver chainmail.",
-     "Bound to her quartz harp (legendary primal artifact): she may stay in the material world only one hour per summoning."
+     "Feysilver chainmail."
     ],
     "origin": "human",
     "classId": "bard"
@@ -2135,8 +2133,7 @@
     "talentThreshold": 4,
     "special": [
      "Talismans (2 first, 1 second circle): Call Beasts, Iron Ward; Tremorsense.",
-     "Natural scales.",
-     "Keeper of the silver dragon: a little cult of Lig na Péiste."
+     "Natural scales."
     ],
     "origin": "kobold",
     "classId": "druid"
@@ -2165,8 +2162,7 @@
     "talentThreshold": 6,
     "special": [
      "Feat: Cleave.",
-     "Common +1 chainmail.",
-     "Mad and ageless: attacks anyone coming round the north corner within 10 paces."
+     "Common +1 chainmail."
     ],
     "origin": "human",
     "classId": "warrior"
@@ -2195,8 +2191,8 @@
     "talents": [],
     "talentThreshold": 6,
     "special": [
-     "Cannot manifest a body: no attack can harm him.",
-     "Speak With Dead calms him so he can be questioned."
+     "The chaplain cannot manifest enough of a body to be harmed by any kind of attack; he can only make ranged attacks with a 13+ attack throw threshold. Thrown odds-and- ends each deal 1d6 blunt damage, while heavy furniture (like the desk or chair) has a harder attack throw but 2d6 blunt damage.",
+     "The speak with dead miracle can be used to calm the chaplain down, in which case he can be interrogated to hear his story about the palace and its curse."
     ],
     "origin": "undead"
    }
@@ -2227,7 +2223,7 @@
     ],
     "talentThreshold": 4,
     "special": [
-     "Improved Critical Hit. Battle-Trance with the Boar initiation: a frenzied charge is a critical hit if any damage die matches or beats the target's Agility. They charge screaming.",
+     "Improved Critical Hit. Battle-Trance with the Boar initiation: a frenzied charge is a critical hit if any damage die matches or beats the target's Agility.",
      "Feat: Cleave.",
      "Hide armour."
     ],
@@ -2261,10 +2257,9 @@
     ],
     "talentThreshold": 4,
     "special": [
-     "Improved Critical Hit. Battle-Trance with the Boar initiation: a frenzied charge is a critical hit if any damage die matches or beats the target's Agility. They charge screaming.",
+     "Improved Critical Hit. Battle-Trance with the Boar initiation: a frenzied charge is a critical hit if any damage die matches or beats the target's Agility.",
      "Feat: Cleave.",
-     "Hide armour.",
-     "Sleepless and paranoid: nothing convinces him the party are not another illusion."
+     "Hide armour."
     ],
     "origin": "bugbear",
     "classId": "champion"
@@ -2297,11 +2292,11 @@
     ],
     "talentThreshold": 3,
     "special": [
-     "Glamour 6: Beguile, Phantasm, Mirage, Invisibility, Darkness, Read Thoughts. Its trick: squirt a 5-pace sphere of darkness and vanish.",
-     "Crushing Hug: d6 bashing per round to a grappled target; biting it is easier.",
-     "Poison Bite: initiative -d6 per round until a save vs. Doom.",
-     "Camouflage: spotting it is a hard Alertness check; inside a fey illusion only Hunter's Expertise can. From ambush it sneak attacks, and hobbles on any damage die of 6.",
-     "Harvest: 3d6 psychic materia."
+     "Magic: The Cleasaí has 6 glamour, which it can use to cast the beguile, fey illusion, or mirage glamours, or the invisibility, darkness, or read thoughts spells.",
+     "Crushing Hug - A mimic’s tentacles begin squeezing once they grapple a target, dealing 1d6 bashing damage per round. Biting any target that it has already grappled is easier.",
+     "Poison Bite - Any creature bitten by a mimic is poisoned, reducing the victim's initiative by 1d6 per round until they make a successful save vs. Doom.",
+     "Camouflage - Detecting a camouflaged mimic is a hard Alertness check; detecting the Cleasaí while it is actively hidden within a fey illusion is impossible for anyone without the Hunter's Expertise feat. Mimics prefer to attack from ambush with their grappling tentacles; a hidden mimic makes sneak attacks. Any attack from ambush hobbles its target whenever any damage die rolls a ‘6’ or better.",
+     "Harvesting - If properly harvested, a mimic yields 3d6 charges of psychic materia."
     ],
     "origin": "fey monster"
    }
@@ -2334,8 +2329,7 @@
     "special": [
      "Improved Critical Hit. Battle-Trance with the Wolf initiation: other attacks on her target this round are easier.",
      "Feat: Defender.",
-     "Pucca: a wolf is her natural shape and she shifts at will (innate, not magic). Wolf form: Medium, Armor 2, HP 4d6+24, Con +4 Str +4 Dex +0, attack 7+: bite (3d6 piercing), drag down (grapple 3d6+4 blunt).",
-     "Kept collared in iron in wolf form; she sleeps in the drawing room and wakes if anyone fails a Stealth check passing her."
+     "Pucca: a wolf is her natural shape and she shifts at will (innate, not magic). Wolf form: Medium, Armor 2, HP 4d6+24, Con +4 Str +4 Dex +0, attack 7+: bite (3d6 piercing), drag down (grapple 3d6+4 blunt)."
     ],
     "origin": "wolf pucca",
     "classId": "champion"
@@ -2408,8 +2402,8 @@
     "special": [
      "Warlock: a priest sworn to Crom Cruach, Nature domain. Still alive.",
      "Dark prayers prepared (2 first, 2 second, 1 third circle; Nature): Protection from Elements, Sense the Divine; Speak With Animals, Bless; Create Water.",
-     "The Croidhe mo Mhaistir (a dragon pearl in her chest): she may try any spell, prayer or glamour at will. Roll d6: first circle works on 3-6, second on 4-6, third on 5-6. On a failure the magic twists as on the Misty Moor.",
-     "The roses' stupor: everyone else's rolls are harder in the throneroom. Whoever wears the matching silver locket is immune, but obeys her every order."
+     "While in posession of the Croidhe mo Mhaistir, Dame Kyteler and has effectively unlimited power, and can attempt to perform any spell, miracle, or glamour at-will.",
+     "Shaping a magic with the dragon pearl is a d6 check; first-circle effects happen correctly on a roll of 3-6, while second-circle effects happen correctly on a roll of 4-6, and any third-circle effect is correctly cast on a roll of 5-6. On a failure, the magic is twisted following the rules for the Misty Moor on pg. 6."
     ],
     "origin": "human",
     "classId": "priest"
@@ -2478,8 +2472,7 @@
     "talentThreshold": 4,
     "special": [
      "Improved Critical Hit. Battle-Trance with the Boar initiation: a frenzied charge is a critical hit if any damage die matches or beats the target's Agility.",
-     "Pucca: a boar is its natural shape and it shifts at will (innate, not magic).",
-     "Kept loyal to Lady d'Meath with beguiling glamours."
+     "Pucca: a boar is its natural shape and it shifts at will (innate, not magic)."
     ],
     "origin": "boar pucca",
     "classId": "champion"
@@ -2511,8 +2504,7 @@
     "talentThreshold": 5,
     "special": [
      "Improved Critical Hit. Battle-Trance with the Boar initiation: a frenzied charge is a critical hit if any damage die matches or beats the target's Agility.",
-     "Pucca: a boar is its natural shape and it shifts at will (innate, not magic).",
-     "Kept loyal to Lady d'Meath with beguiling glamours."
+     "Pucca: a boar is its natural shape and it shifts at will (innate, not magic)."
     ],
     "origin": "boar pucca",
     "classId": "champion"
@@ -2546,8 +2538,7 @@
     "talentThreshold": 5,
     "special": [
      "Hunter's Expertise; Sneak Attack.",
-     "Pucca: a boar is its natural shape and it shifts at will (innate, not magic).",
-     "Kept loyal to Lady d'Meath with beguiling glamours."
+     "Pucca: a boar is its natural shape and it shifts at will (innate, not magic)."
     ],
     "origin": "boar pucca",
     "classId": "hunter"
@@ -2581,8 +2572,7 @@
     "talentThreshold": 3,
     "special": [
      "Dweomers prepared (2 common, 2 uncommon, 1 rare): Magic Ink, Elixir of Health; Amulet of Protection, Barkskin Elixir; his Folding Carriage.",
-     "Common +1 chainmail.",
-     "Forges common and uncommon magic items to order in his shop."
+     "Common +1 chainmail."
     ],
     "origin": "dwarf",
     "classId": "dweomersmith"

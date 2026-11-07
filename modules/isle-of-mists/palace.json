@@ -9,8 +9,7 @@
      "site": "seacht-gcaislean-the-palace",
      "room": "grounds"
     },
-    "description": "Pale thorny roses strangling the palace walls and the shrine. They drink blood, and their blooms blush from white to pink to deep red as they feed.",
-    "wants": "Blood, and more wall to climb."
+    "description": "The rosebushes entwining the palace are fey abominations that drink blood."
    },
    "palace-redcap-hunter": {
     "name": "Redcap hunter",
@@ -23,8 +22,7 @@
     "troupe": {
      "lair": 12
     },
-    "description": "A dozen redcaps feasting at the palace banquet table, shortswords in their belts and crossbows propped by their chairs. They sleep in the wrecked north barracks.",
-    "wants": "To eat well and keep the palace larder for themselves.",
+    "description": "The dining hall is laid out for an exquisite banquet, and smells delicious. Sitting around the table are a dozen redcap goblins, enjoying a gourmet feast. A larger, fatter redcap in an apron and a chef's cap is standing in the corner of the room with his arms crossed, smiling smugly; he's holding a cleaver (treat as an ax). The other goblins are wearing shortswords in their belts, and have set their crossbows beside their chairs as they eat.\n\nThe northern barracks room is open, and is being used as quarters by the redcaps that are currently occupying the dining hall. They have thoroughly wrecked the beds, lockers, glaives, and chainmail that they found, but are using the crossbows and shortswords.",
     "faction": "palace-redcaps"
    },
    "palace-redcap-chef": {
@@ -35,8 +33,7 @@
      "site": "seacht-gcaislean-the-palace",
      "room": "dining-hall"
     },
-    "description": "A fat redcap in an apron and chef's cap, cleaver in hand, smiling smugly from the corner. Tonight's roast was a young Faoladh boy named Maddy.",
-    "wants": "Praise for his cooking, and fresh meat for the next feast.",
+    "description": "The dining hall is laid out for an exquisite banquet, and smells delicious. Sitting around the table are a dozen redcap goblins, enjoying a gourmet feast. A larger, fatter redcap in an apron and a chef's cap is standing in the corner of the room with his arms crossed, smiling smugly; he's holding a cleaver (treat as an ax). The other goblins are wearing shortswords in their belts, and have set their crossbows beside their chairs as they eat.",
     "faction": "palace-redcaps"
    },
    "mairead": {
@@ -47,8 +44,7 @@
      "site": "seacht-gcaislean-the-palace",
      "room": "northern-cavern"
     },
-    "description": "A seven-year-old Faoladh girl, chained in wolf-cub shape in the northern cavern, starved into a frenzy, an iron collar rubbing her neck raw. Clever, strong-willed and stubborn. Her twin Maddy was cooked by the redcaps; her sister Aine was given to the bugbears upstairs.",
-    "wants": "Her sister Aine back, and to go home.",
+    "description": "If the party can subdue the wolf cub without killing it, and manages to remove the collar, the wolf cub will turn out to be a young pucca girl named Mairead. She will tell the party that her twin brother Maddy and older sister Aine were taken by the redcaps months ago, and that Aine was given to the bugbears that live in the upper levels. The redcaps had been trying to fatten her and her brother up before eating them, but finally gave up and decided to cook them as they are when they refused to eat anything offered to them.\n\nMairead is severely malnourished, and in poor health. If taken care of and allowed to heal, her Constitution will slowly return to its original value of +0 over the course of a few months. She is seven years old, clever, and incredibly strong-willed and stubborn.",
     "faction": "faoladh-sisters"
    },
    "palace-bloodstirge": {
@@ -62,8 +58,7 @@
     "troupe": {
      "lair": 5
     },
-    "description": "A swarm of giant bloated mosquitoes (d6+2) nesting in the upper corner of the sunken bath. They stir the moment anyone comes in.",
-    "wants": "Warm blood."
+    "description": "Bloodstirges are giant, bloated mosquitoes with powerful gripping claws on their forelegs. While not particularly dangerous alone, a large swarm of bloodstirges can drain a mortal of blood in seconds."
    },
    "palace-oreiad": {
     "name": "Oreiad caryatid",
@@ -76,8 +71,7 @@
     "troupe": {
      "lair": 2
     },
-    "description": "Two caryatid statues of young women holding up the anteroom. They are living oreiad nymphs, bound by fey oaths to keep intruders out of the palace.",
-    "wants": "To keep their oath. Like all Fair Folk, they can be impressed and bargained with."
+    "description": "These are actually living oreiad nymphs, bound by fey oaths to protect the palace from intruders.\n\nOreiades are nymphs that bind themselves to the earth itself, usually to a particular large boulder, vein of crystal, or precious metal."
    },
    "rowena": {
     "name": "Rowena",
@@ -87,8 +81,7 @@
      "site": "seacht-gcaislean-the-palace",
      "room": "lounge"
     },
-    "description": "A bard of remarkable skill, taken to Faerie when the palace fell and kept a century unaged to play for the Fair Folk courts. Her grandmother had an elf lover, and it shows. Pluck her quartz harp in the lounge and a portal opens: she steps out with two elf bodyguards for one hour only.",
-    "wants": "Good company, a fair hearing for what happened to the palace, and one hour that is her own."
+    "description": "The harp is a legendary primal artifact, and is bound to a human bard of remarkable skill who was taken to Faerie when the castle fell. She has been entertaining the Fair Folk courts for the past century, having never aged a day. If the harp is plucked, a portal into deeper Faerie will open, and the bard Rowena will step out, accompanied by two elf bodyguards."
    },
    "rowenas-elf-bodyguard": {
     "name": "Rowena's elf bodyguard",
@@ -101,8 +94,7 @@
     "troupe": {
      "lair": 2
     },
-    "description": "Two elf champions in feysilver chain. At the first hostility or insult they push Rowena back through the portal, then turn on the party.",
-    "wants": "To keep the court's bard safe and bring her back on time."
+    "description": "Rowena will happily discuss the events that led to the palace's current state, but she will only be allowed to stay in the material world for a single hour; if the party shows her any hostility or offence, her two elven bodyguards will immediately push her back through the portal, then attack the party."
    },
    "palace-kobold-hunter": {
     "name": "Kobold hunter",
@@ -115,8 +107,7 @@
     "troupe": {
      "lair": 7
     },
-    "description": "Kobolds (2d6) nesting in straw and filthy fine cloth in a room they have dug out into the bare rock, around a finely wrought silver dragon they worship as Lig na Péiste.",
-    "wants": "To heap offerings before the silver dragon and be noticed by the Péist herself.",
+    "description": "At the far southeast corner of the castle, a small room appears to have been expanded by removing the south wall and carving crudely into the bare rock. In one corner of the room is an finely-wrought silver statue of a dragon, with what appears to be crude offerings of worship piled around it; against the opposite corner is a heaped nest of straw and filthy but high-quality cloth, which serves as a nest for 2d6 kobolds and their \"bonemother\" druid.",
     "faction": "silver-dragon-cult"
    },
    "palace-kobold-bone-mother": {
@@ -127,8 +118,7 @@
      "site": "seacht-gcaislean-the-palace",
      "room": "lizardfolk-lair"
     },
-    "description": "The kobolds' druid and priestess of their tiny Lig na Péiste cult. She tends the silver dragon statue and its crude offerings.",
-    "wants": "A sign from the dragon, and fresh offerings to earn one.",
+    "description": "At the far southeast corner of the castle, a small room appears to have been expanded by removing the south wall and carving crudely into the bare rock. In one corner of the room is an finely-wrought silver statue of a dragon, with what appears to be crude offerings of worship piled around it; against the opposite corner is a heaped nest of straw and filthy but high-quality cloth, which serves as a nest for 2d6 kobolds and their \"bonemother\" druid.",
     "faction": "silver-dragon-cult"
    },
    "travis": {
@@ -139,8 +129,7 @@
      "site": "seacht-gcaislean-the-palace",
      "room": "guardpost"
     },
-    "description": "The last palace guard. He holed up in the guardpost when the bloodroses closed every way out, and Faerie has kept him alive and ageless for a century. He has gone quite mad. Rubies, an emerald, a wedding ring and the keys are hidden in his straw bed.",
-    "wants": "To hold his post until relieved. Nobody has come."
+    "description": "This room was originally a guardpost. There is a slit along the eastern wall of the room, where guards could fire at invaders from the hallway. The last surviving palace guard, Travis, holed up here when the bloodroses choked out every available escape route. He has been kept alive and ageless by the magic of Faerie, but in the intervening decades he has gone quite mad.\n\nTravis has made a straw bed in one corner of the room, and there is a table with a plate from the dining hall, a pewter goblet, and a pair of knives. If the party approaches the room from the north, Travis will use his +2 flying dagger to attack them once they are within 10 paces of the hallway's corner."
    },
    "palace-rustgrub": {
     "name": "Rustgrub",
@@ -153,8 +142,7 @@
     "troupe": {
      "lair": 4
     },
-    "description": "Dog-sized feathered crickets (1d6+1) that crawl from a crevice behind anyone approaching the purple ink pool and swarm steel armour, shields and heavy weapons.",
-    "wants": "Iron and steel to rust and eat."
+    "description": "Upon approaching the pool, 1d6+1 insect-like creatures will crawl out of a recessed crevice behind the party. Each of these creatures is the size of a small dog, and resembles a cricket with a long feathered tail and feathered antennae. They will immediately swarm anyone wearing steel armor or wielding a heavy steel weapon or steel shield, and begin covering it with corrosive spittle; then they will devour the rusted and pitted metal that results.\n\nRustgrubs are the larvae of rust hulks, which are capable of chewing through and digesting metal."
    },
    "chaplains-haunt": {
     "name": "The chaplain's haunt",
@@ -164,8 +152,7 @@
      "site": "seacht-gcaislean-the-palace",
      "room": "chaplains-bedroom"
     },
-    "description": "The palace chaplain, cursed to lash out in impotent rage. Furniture and odds and ends fly at anyone who enters his bedroom. Calmed with Speak With Dead, he will tell his story of the palace and its curse.",
-    "wants": "Peace, and someone to hear how the palace fell."
+    "description": "When the party enters the room, they will immediately be attacked by flying furniture and other odds-and-ends. The chaplain of the palace still haunts the room, cursed to lash out in impotent rage at anyone who passes by. The chaplain cannot manifest enough of a body to be harmed by any kind of attack; he can only make ranged attacks with a 13+ attack throw threshold. Thrown odds-and- ends each deal 1d6 blunt damage, while heavy furniture (like the desk or chair) has a harder attack throw but 2d6 blunt damage.\n\nThe speak with dead miracle can be used to calm the chaplain down, in which case he can be interrogated to hear his story about the palace and its curse."
    },
    "palace-bugbear": {
     "name": "Bugbear champion",
@@ -179,8 +166,7 @@
      "lair": 5
     },
     "faction": "cathbads-bugbears",
-    "description": "A small bugbear tribe camped in the desecrated chapel, burning sacrifices to Crom Cruach before the altar. Three sleep on the pews; two take turns guarding Cathbad.",
-    "wants": "Meat, a fire, and a week off from guarding the old man."
+    "description": "If the party has been stealthy up until this point, there are three bugbear champions sleeping on the pews. If not, the bugbears should roll Alertness to see if they hear the party coming; prepared bugbears will be laying in wait in the sanctuary, ready to ambush the party when they enter.\n\nCathbad will usually be accompanied by two bugbear guards, which come from the same \"tribe\" as the three goblins from the chapel and the poor wretch from the lounge. He will switch up which two goblins are serving as his lackeys from week to week, letting the others \"take a break and blow off steam\"."
    },
    "palace-bugbear-outcast": {
     "name": "The outcast bugbear",
@@ -191,8 +177,7 @@
      "room": "lounge-upper"
     },
     "faction": "cathbads-bugbears",
-    "description": "A huge bugbear smashing up the upper lounge. The Cleasaí has tormented him for nights; everything he eats, sits on or picks up turns out to be the squid. His tribe threw him out. He charges anyone, yelling \"STOP MAKING FUN OF ME!\", \"IT'S NOT FUNNY ANYMORE, CLEASAÍ!\" and \"I WANT TO GO HOME!\"",
-    "wants": "To kill the Cleasaí, sleep, and go home."
+    "description": "The room directly south of the great hall was a lounge, but all of the furniture has been smashed by a large, enraged bugbear. When the party opens the door, the bugbear will yell \"STOP MAKING FUN OF ME\\!\" and charge the party, swinging. It will intersperse its attacks with \"IT'S NOT FUNNY ANYMORE, CLEASAÍ\\!\" and \"I WANT TO GO HOME\\!\"\n\n(The bugbear has spent the past few nights being harassed non-stop by the Cleasaí, and can't get a moment's rest. Everything it has tried to eat, drink, sit on, or wield as a weapon has turned out to be the Cleasaí in disguise, and the bugbear is now absolutely paranoid and completely obsessed with finding and killing its tormenter. Nothing the party does or says will convince the bugbear that they aren't just another illusion created by the mimic to mess with its tiny mind. This bugbear used to be part of the small tribe that inhabits the chapel, but the Cleasaí has so thoroughly bullied it that it is convinced that its once-friends are also actually the Cleasaí in disguise, so they kicked him out and abandoned him to wander the halls alone.)"
    },
    "an-deichlamhach": {
     "name": "An Deichlámhach, the Cleasaí",
@@ -202,8 +187,7 @@
      "site": "seacht-gcaislean-the-palace",
      "room": "great-hall"
     },
-    "description": "A ten-armed air-breathing squid, made unnaturally clever by the fey magic of the Croidhe mo Mhaistir. It reads thoughts and spins fey illusions; its favourite is a gnome girl hung by her own hair while nine redcaps prod her with spears. Once met, it stalks the party for sport.",
-    "wants": "Good sport: the cruellest, funniest joke it can play on whoever is nearest."
+    "description": "An Deichlámhach is a mimic, a strange kind of air- breathing cephalopod which can adjust its coloration and shape to match nearly any small or medium object. Normally, a mimic in a dungeon will often transform itself into the appearance of a valuable treasure, in order to lure unwary adventurers close. Once its prey is close enough, it lashes out with six long, rope-like tentacles to try to draw the victim towards its beak. The mimic that haunts the palace is An Deichlámhach, known to the palace's inhabitants as \"the Cleasaí\"; it is unusually intelligent for its species, probably due to the strange fey magics unleashed by the Croidhe mo Mhaistir. Whatever the reason, the Cleasaí has learned how to cast fey illusions.\n\nThe Cleasaí often uses its powers to produce illusions of scenes or images it has seen before. For some reason, one of its favorite illusions is that of a young gnome woman tied up by her own exceptionally long hair and harassed by nine redcaps."
    },
    "aine": {
     "name": "Aine",
@@ -213,8 +197,7 @@
      "site": "seacht-gcaislean-the-palace",
      "room": "drawing-room"
     },
-    "description": "Mairead and Maddy's older sister, an Ossory Faoladh. The redcaps gave her to the bugbears; Cathbad keeps her collared in iron as a great sleeping wolf in the drawing room and tells visitors she is cursed. Her ruby-bladed sword lies in his study.",
-    "wants": "Her collar off, her sword back, and her little sister safe.",
+    "description": "Aine doesn't remember much about her childhood; she only remembers fleeing her village when it was overrun by plague- shamblers, with her baby brother and sister in her arms, and a glowing red sword at her hip. Some kind of fey curse overtook them, and transformed them all into enormous white wolves; it was only the kindness of Cathbad that saved them, when he took them in and began trying to undo the curse.\n\nIn truth, Cathbad has been manipulating Aine the whole time, using her as his bodyguard and enforcer while telling her that he is looking for a cure to her \"condition\". She and her brother and sister are all wolf puccas, and are perfectly capable of learning how to control their shapeshifting abilities; Cathbad uses various beguiling curses to convince them that they become violent, bloodthirsty beasts while transformed, and only their iron collars keep them safe.\n\nAine is, at this point, not psychologically suited for the kind of responsibilities that ruling Kilkenny would entail. An Intuition check (which will be easy for a Priest, or normal difficulty for anyone else) will uncover this if the party chooses to engage with Aine at length about what she's endured and how she feels about all the hardships she's endured. Her little sister will be a much better candidate once she comes of age; Aine would be much happier acting as her sister's protector than trying to rule an entire county herself.",
     "faction": "faoladh-sisters"
    },
    "cathbad": {
@@ -226,8 +209,7 @@
      "room": "cathbads-chambers"
     },
     "faction": "cathbads-bugbears",
-    "description": "A warlock sworn to Crom Cruach who presents himself as a kindly old priest trying to lift Aine's 'curse'. He studies ancient manuscripts and the secrets of her ruby-bladed sword, with two bugbears always at his side.",
-    "wants": "To unlock the ruby-bladed sword, and to keep Aine as his proof and his pet."
+    "description": "The next room has been claimed by Cathbad. It is a reasonably well-kept bedchamber, and gives all the appearances of \"civilized\" living. Cathbad is usually here, studying translations of ancient manuscripts or trying to find a way to unlock the secrets of the ruby-bladed sword that was found in Aine's possession. If he can, he will present himself as a kindly old priest, who is trying to find a way to break the \"curse\" that has turned Aine into a wolf.\n\nCathbad will usually be accompanied by two bugbear guards, which come from the same \"tribe\" as the three goblins from the chapel and the poor wretch from the lounge. He will switch up which two goblins are serving as his lackeys from week to week, letting the others \"take a break and blow off steam\"."
    },
    "alice-kyteler": {
     "name": "Dame Alice Kyteler",
@@ -237,8 +219,7 @@
      "site": "seacht-gcaislean-the-palace",
      "room": "throneroom"
     },
-    "description": "Hung above the throne, still alive, her ribcage torn open and the Croidhe mo Mhaistir pulsing in her chest where her heart should be. Rose vines run through her in place of veins and spread across the throneroom. She wears a gold locket; the silver one that matches it lies in the palace.",
-    "wants": "To wield the Croidhe and finish what she and Lady d'Meath began: the Isle reclaimed from Albion and its Church.",
+    "description": "Suspended above the throne is the body of Dame Alice Kyteler, her ribcage torn open and the Croidhe mo Mhaistir sitting in her chest where her heart should be. The gem emits a brilliant red light that pulses with what would be her heartbeat, if only she still had a heart.\n\nInstead of veins, thorny rosevines snake around the gem and pierce her flesh, before winding around her limbs and spreading out across the throneroom. The roses here are in full bloom, and emit a heady and soporific fragrance that dulls the senses; everyone but Dame Kyteler finds all their rolls harder while in the throneroom. She is wearing a gold locket around her neck; if someone in the party is wearing the corresponding silver locket from the spa room, that character will find that they are also immune to the roses' stupor. However, while in Dame Kyteler's presence, they automatically obey any order that she gives without question.",
     "faction": "kyteler-palace"
    },
    "petronella-dmeath": {
@@ -250,8 +231,7 @@
      "room": "court"
     },
     "faction": "dmeath-court",
-    "description": "The self-styled Lady of Cill Chainnigh, a human woman who has ruled the county with an iron fist for a century, kept unaged by her pacts with the Fair Folk. She and Dame Kyteler called Lig na Péiste with blood and old Pictish rites; when the bloodroses swallowed the palace she took the county for herself. Kyteler's goblin raids let her pose as the just ruler keeping the peace.",
-    "wants": "To keep the county, keep Kyteler caged in her thorns, and keep the Church and the Silver Knight from learning what she did."
+    "description": "D'Meath is a sixth-level warlock who has made various pacts with the local fair folk to secure her rule, and her youth, over the past century.\n\nThe resulting chaos left Dame Kyteler trapped within the tangled thorns of the bloodrose vines she summoned, while d'Meath went on to rule the county from Cill-Chainigh. Dame Kyteler feels that she has been betrayed, and is constantly sending goblin raiding parties to capture or kill d'Meath, but thus far d'Meath's own beastfolk guards have managed to protect her - and the attacks let d'Meath claim that she is a necessary and just ruler who is merely trying to \"keep the peace\" under constant goblin invasion."
    },
    "dmeath-boar-captain": {
     "name": "Boar pucca captain",
@@ -265,8 +245,7 @@
      "lair": 5
     },
     "faction": "dmeath-court",
-    "description": "Leaders of Lady d'Meath's pack of boar pucca henchmen.",
-    "wants": "Their lady's favour, and the town kept in line."
+    "description": "She is attended to by a pack of boar pucca, all kept loyal with the judicious use of beguiling glamours."
    },
    "dmeath-boar-guard": {
     "name": "Boar pucca guard",
@@ -280,8 +259,7 @@
      "lair": 25
     },
     "faction": "dmeath-court",
-    "description": "Lady d'Meath's boar pucca spearmen. They guard the castle and drive off Kyteler's goblin raiders.",
-    "wants": "Orders, meat and a good fight."
+    "description": "She is attended to by a pack of boar pucca, all kept loyal with the judicious use of beguiling glamours."
    },
    "dmeath-boar-archer": {
     "name": "Boar pucca archer",
@@ -295,8 +273,7 @@
      "lair": 10
     },
     "faction": "dmeath-court",
-    "description": "Lady d'Meath's boar pucca bowmen and scouts.",
-    "wants": "To catch goblins, and anyone else, before they reach the castle."
+    "description": "She is attended to by a pack of boar pucca, all kept loyal with the judicious use of beguiling glamours."
    },
    "tinker-gabhan": {
     "name": "Tinker Gabhan",
@@ -306,8 +283,7 @@
      "site": "cill-chainnigh-lady-d-meath",
      "room": "tinkers-shop"
     },
-    "description": "A cheerful dwarf dweomersmith whose shop is the one bright spot in Cill Chainnigh. Married to a gnome; travels the county with his daughter Fiona in an elaborate covered stagecoach that is really a Folding Carriage. In his shop two days a week; otherwise any road encounter with a mortal has a 1 in 6 chance to be him or Fiona.",
-    "wants": "Good trade, good company, and his daughter safe on the roads."
+    "description": "The tinker's shop in Cill-Chainnigh stands out for its unusually cheery atmosphere, given the dreary oppression of the rest of the shire. The tinker and his daughter are dwarves who are usually found traveling the countryside in an elaborate covered stagecoach (actually a Folding Carriage), although they can be found in their shop at least two days out of each week. Any non-stealthy mortal NPC encounter on the road has a 1 in 6 chance of being Gabhan or Fiona. Gabhan is a fifth-level dweomersmith, while Fiona (who takes after her gnomish mother) is a third-level druid. Both of them have exceptional Charisma, and Fiona is an incorrigible flirt."
    },
    "goodwitch-fiona": {
     "name": "Goodwitch Fiona",
@@ -317,15 +293,13 @@
      "site": "cill-chainnigh-lady-d-meath",
      "room": "tinkers-shop"
     },
-    "description": "Gabhan's daughter, who takes after her gnome mother: a druid with a wood wisp and a flame wisp, exceptional charm, and an incorrigible flirt.",
-    "wants": "Adventure on the road, and a handsome stranger or two."
+    "description": "The tinker's shop in Cill-Chainnigh stands out for its unusually cheery atmosphere, given the dreary oppression of the rest of the shire. The tinker and his daughter are dwarves who are usually found traveling the countryside in an elaborate covered stagecoach (actually a Folding Carriage), although they can be found in their shop at least two days out of each week. Any non-stealthy mortal NPC encounter on the road has a 1 in 6 chance of being Gabhan or Fiona. Gabhan is a fifth-level dweomersmith, while Fiona (who takes after her gnomish mother) is a third-level druid. Both of them have exceptional Charisma, and Fiona is an incorrigible flirt."
    },
    "lig-na-peiste": {
     "name": "Lig na Péiste, the Silver Knight",
     "kind": "monster",
     "is": "celestial-dragon",
-    "description": "An ancient celestial dragon who has long tried to tame the Misty Isle's wild fey energies, and a silver dragon pearl set in his brow. He goes among mortals as the Silver Knight, an elven noble named Robin Artson. A pact with the Numen who guards the isle binds him to serve her direct female line; Kyteler tricked him into thinking she was its heir, and he gave her the Croidhe mo Mhaistir. He forged it and the twin blades both called Claíomh Solais. Neither good nor evil: a force of nature. Negotiable, and could swear as a Seelie numen.",
-    "wants": "To keep his oath to the true heir. Once he learns Aine was the maiden he came for, his vengeance on Kyteler will be swift and brutal.",
+    "description": "The Silver Knight is Lig na Péiste, an ancient celestial dragon, who has tried from time to time to tame the Misty Isle's wild fey energies. So far, he has failed at each attempt.\n\nHe has a fey pact with a fair folk Numen that has protected the isle for millenia; part of the terms of this pact require that he work his efforts alongside her direct female descendants. When Dame Alice Kyteler summoned him, she convinced him that she was one of those descendents, calling on him to fulfill his ancient oath; all of the chaos that has ensued since is the direct result of that deception.\n\nThe Silver Knight is not a particularly Good or Bad being, from the Church's perspective; he is much more a primal force of nature, like all of the fey influences within the Isle of Mists. It was he who originally forged Croidhe mo Mhaistir, and the twin blades named Claíomh Solais; when used in tandem, the blades can open a portal to his home nest within the Elemental Chaos, where they (and his own dragon pearl) were first forged.\n\nLig na Péiste normally inhabits the far northern shores of the Isle of Mists; before being summoned by Dame Kyteler, he had not been this far south in ten thousand years. As such, he is quite unfamiliar with local geography and customs. If the Croidhe mo Mhaistir is somehow destroyed, Lig na Péiste will be banished back to the northern lake he once called home. Otherwise, he might become an ally or an adversary, based on the party's goals and how they act towards him.",
     "faction": "lig-na-peiste"
    }
   },
@@ -414,374 +388,57 @@
    }
   ],
   "scenes": {
-   "palace-bridge": {
-    "title": "The bridge and the jammed portcullis",
+   "palace-crossing-the-barrow": {
+    "title": "Crossing the Barrow",
     "where": {
-     "site": "seacht-gcaislean-the-palace",
-     "room": "bridge"
-    },
-    "who": [
-     {
-      "creature": "palace-bloodrose",
-      "count": "d6"
-     }
-    ],
-    "players": "An ornate stone bridge over the King's River, its statues and lanterns wound with white roses. Beyond it the white marble palace, built in 3278, is choked with rosevines; its whole eastern half has been pulled down to rubble.",
-    "description": "Everyone crossing saves against the bloodroses. The outer portcullis is jammed: each helper adds 1d6 + Strength per round and it opens on a combined 10, while the vines keep grabbing (no initiative; the party just splits gate duty and vine duty). Inside, it crashes down behind them; a lever in each gatehouse must both be up to open the gates. A hard check (normal for a dwarf) shows the vines undermined the east wing."
-   },
-   "palace-dining-hall": {
-    "title": "The redcaps' banquet",
-    "where": {
-     "site": "seacht-gcaislean-the-palace",
-     "room": "dining-hall"
-    },
-    "who": [
-     {
-      "creature": "palace-redcap-hunter",
-      "count": 12
-     },
-     {
-      "creature": "palace-redcap-chef",
-      "count": 1
-     }
-    ],
-    "players": "A banquet laid out in the dining hall, and it smells delicious. A dozen redcaps feast, crossbows propped by their chairs, while a fat redcap in an apron watches smugly from the corner.",
-    "description": "It is goblin cooking: the roast was Mairead's twin brother Maddy. The kitchen next door is ransacked, with an easy Survival check showing recent redcap tracks. The redcaps sleep in the wrecked north barracks.",
-    "disposition": "hostile"
-   },
-   "palace-barracks": {
-    "title": "The locked barracks",
-    "where": {
-     "site": "seacht-gcaislean-the-palace",
-     "room": "barracks"
+     "site": "seacht-gcaislean-the-palace"
     },
     "who": [],
-    "description": "The south barracks is locked (normal lock; the goblins never picked it). The pantry holds 2d6 × 30 rations.",
-    "treasure": "Six suits of chainmail, six shortswords, six medium shields, four crossbows and two glaives, all of exceptional (not masterwork) quality."
+    "description": "The Palace of Silver and Crimson is to the south of the Pale Keep, across the Barrow. It was once considered subject to the crown, but fell faerie magics have since reclaimed the territory.\n\nOnce the troubles with the Caves are sorted out, the Palace is a logical next step for the adventuring party to explore.\n\nThe Palace of Silver and Crimson was a keep and priory at Ceanannas, originally built by the Crown of Albion in 3278 to fortify the bordermarch of the Pale against the Eire barbarians and their fey allies. It fell into ruin a century ago, when the Plague decimated the garrison and the mists of Faerie reclaimed the land. The magics of Faerie have since warped the palace into a dreamlike mockery of its original form.\n\nA century ago, as the keep and its surrouding village succumbed to plague, the druidess Dame Alice Kyteler and her coven turned to a legendary Faerie artifact called \"Croidhe mo Mhaistir\" to attempt to protect the land from the disease and the hordes of shambling undead that it spawned. Legends say that \"Croidhe mo Mhaistir\" is a legendary dragon pearl in the form of a deep crimson ruby, cut and polished into a fist-sized faceted globe.\n\nWhatever the intent of their magic, the actual effect was the encroachment of the Fey mists deep into the bordermarch. Most of the keep's mortal inhabitants fled during the initial fey incursion, and no one who has ventured into the area since has returned to report what they have seen; those first refugees claimed that thick vines with razor-sharp thorns began growing over every possible surface, choking out all avenues of escape.\n\nThe Faerie wilds leading up to the palace are unusually dangerous, even for Faerie. The first obstacle to surmount is the Misty Moor, a vast enchanted wetland with a strange curse."
    },
-   "palace-northern-cavern": {
-    "title": "The chained cub",
+   "misty-moor-wild-magic": {
+    "title": "The Misty Moor",
     "where": {
-     "site": "seacht-gcaislean-the-palace",
-     "room": "northern-cavern"
-    },
-    "who": [
-     {
-      "creature": "mairead",
-      "count": 1
-     }
-    ],
-    "players": "A straw bed and a chain bolted to the wall. A starving wolf cub in a wrought-iron collar strains at it in a frenzy, a raw bald ring worn round its neck.",
-    "description": "Subdue her without killing her and take off the collar, and she becomes Mairead, seven years old. She tells the party the redcaps took her, her twin Maddy and her sister Aine months ago, and that Aine was given to the bugbears upstairs."
-   },
-   "palace-southern-cavern": {
-    "title": "The strangled shrine",
-    "where": {
-     "site": "seacht-gcaislean-the-palace",
-     "room": "southern-cavern"
-    },
-    "who": [
-     {
-      "creature": "palace-bloodrose",
-      "count": 1
-     }
-    ],
-    "players": "A stone statue of a mother and infant, once the shrine of the local Numen-saint, strangled by pale vines with blood-red thorns and ghost-white roses. Twelve votive statues lie crushed around it."
-   },
-   "palace-sunken-bath": {
-    "title": "The sunken bath",
-    "where": {
-     "site": "seacht-gcaislean-the-palace",
-     "room": "sunken-bath"
-    },
-    "who": [
-     {
-      "creature": "palace-bloodstirge",
-      "count": "d6+2"
-     }
-    ],
-    "players": "A warm, humid room with a sunken marble bath and frescoes of swans, naiads and mermaids. Seven flasks of semiprecious stone and a peacock fan sit on a marble table. Something buzzes overhead.",
-    "treasure": "Five flasks are bath oils; one is a love potion and one a potion of shared sensations."
-   },
-   "palace-mosaic-room": {
-    "title": "The courtship mosaic",
-    "where": {
-     "site": "seacht-gcaislean-the-palace",
-     "room": "mosaic-room"
+     "site": "the-misty-moor"
     },
     "who": [],
-    "players": "Mosaics of a silver knight on a silver dragon courting a woman in white with a red heart on her gown. On the floor all three sleep around a gold-and-obsidian star with a brass keyhole.",
-    "description": "Picking the lock needs expertise and is hard; failing banishes the thief into the Elemental Chaos. The gold-and-iron key from the changing-room drawer (pressure lock, poisoned needle) opens it.",
-    "treasure": "The silver Claíomh Solais: a rare feysilver longsword with a ruby pommel, an aetheric blade, twin of Aine's ruby blade."
+    "description": "Any magic attempted within the moor's mists will become twisted by the chaotic energies of Faerie, producing any number of unintended effects. Anyone attempting magic must make a saving throw vs. curses; if they fail, they roll a d6 and consult the following chart:\n\nD6 Wild Magic Effect 1 The target of the magic is determined randomly. If a magic effect can only target the caster or a creature touched by the caster, the magic instead reverses its normal effect.\n\n2 A random primal glamour of the same circle as the magic being attempted is cast instead.\n\n3 The magic fails to cast at all. The referee should note the circle of the magic, and add it to a running total of all magics absorbed by the swamp in this manner.\n\n4 The magic's effective circle is amplified by the total amount of magic absorbed by the swamp from result '3' up until this point, up to the effect of a third-circle magic. Any remaining absorbed magic is released in the form of random primal glamours, cast at random targets.\n\n5 The caster and target must both save vs. Curse; this roll is hard if the swamp has absorbed any magic. On a failure, that creature is caught in between the Material and Faerie until the next sunrise or sunset. They appear insubstantial and unable to affect either plane of existence, but are still affected by either (and can be damaged from attacks originating from either).\n\n6 The caster is involuntarily transformed into a 1d6 hit die creature, as per the effects of the polymorph potion."
    },
-   "palace-pink-pedestal": {
-    "title": "The silver locket",
+   "moorfoul-mountains": {
+    "title": "The Moorfoul Mountains",
     "where": {
-     "site": "seacht-gcaislean-the-palace",
-     "room": "pink-pedestal"
+     "site": "the-moorfoul-mountains"
     },
     "who": [],
-    "players": "In the small square room at the heart of the bathhouse, a rose-quartz pedestal and a pink satin pillow hold a closed silver locket.",
-    "description": "An Amulet of Friendship, cursed so it cannot be taken off. Kyteler wears its golden match and knows the moment anyone puts it on: she Beguiles the wearer, then binds them with a Primal Oath to serve her and hide it. The party has a traitor. In the throneroom the wearer is immune to the roses' stupor but obeys her every order."
+    "description": "The Moorfoul Mountains were once called the Deerpeak Mines, until the faerie mists made mining too dangerous. Various caves and abandoned mines dot the barren crags, many of which now serve as dens for dangerous fey beasts, fey monsters, or goblin orcs.\n\nThe palace itself lies south of Cill-Chainnigh, in the valley of the King's River (Abhainn na Rí), a tributary of the Nore. The palace's towers are visible from the northern slopes of the Stormpeaks."
    },
-   "palace-anteroom": {
-    "title": "The caryatids",
+   "palace-approach": {
+    "title": "Approaching the Palace",
     "where": {
      "site": "seacht-gcaislean-the-palace",
-     "room": "anteroom"
-    },
-    "who": [
-     {
-      "creature": "palace-oreiad",
-      "count": 2
-     }
-    ],
-    "players": "A semicircular alcove off the fountain room, held up by two beautiful caryatids of young women.",
-    "description": "They are living oreiads bound by fey oaths to stop intruders. Like all Fair Folk they can be impressed and bargained with.",
-    "disposition": "hostile"
-   },
-   "palace-secret-room": {
-    "title": "Kyteler's study",
-    "where": {
-     "site": "seacht-gcaislean-the-palace",
-     "room": "secret-room"
+     "room": "grounds"
     },
     "who": [],
-    "description": "Behind the tapestry of the white princess in the fountain room a loose stone opens a passage east into a study.",
-    "treasure": "On a red velvet chair: the private diary of Dame Alice Kyteler (the whole Timeline of Disaster in her own words)."
+    "description": "The palace is a stunning sight, carved from white marble towers with beautiful silver filigree inlaid into the architecture. Winding around the towers and covering the walls is a tangled mass of thick rosebushes, with blooms in every shade from white to pink to a deep crimson. Various parts of the castle walls have been penetrated and even broken open by the thorns, even collapsing a few of the towers.\n\nThe rosevines spread out across the ground for a full half-league around the keep itself, with vicious-looking thorns jutting out in every direction in between the beautiful flowers. When viewed at night, the roses and thorns can be seen to emit a faint red glow, and a brighter glow can be seen to emanate from the windows of the tallest tower."
    },
-   "palace-schoolroom": {
-    "title": "The schoolroom",
+   "south-of-the-mountains": {
+    "title": "South of the Mountains",
     "where": {
-     "site": "seacht-gcaislean-the-palace",
-     "room": "schoolroom"
+     "site": "moinin-rua"
     },
     "who": [],
-    "description": "Apprentice wizards' desks and strewn notes. A wizard spending an exploration round and passing a hard Science check pieces together one random first-circle spell to copy. The southern library holds 1d6-1 wizard spells and one magic item blueprint."
+    "description": "The party can choose to explore the areas south of the Moorfoul mountains first, instead of heading directly into the palace. These were once prosperous lands, and still struggle to eke out a living amongst the daily chaos of the feymists.\n\nThe village of Moinin-Rua was once a prosperous agricultural settlement, where gnome farmers supplied the dwarven miners in the Deerpeak mountains with food in exchange for gems and precious metals. The town is still barely prosperous enough to support two taverns, one with an inn; it also has a small general store and smithy. The blacksmith is a first-level dweomersmith, a descendant of the dwarves who used to mine the Deerpeaks."
    },
-   "palace-harp": {
-    "title": "The quartz harp",
+   "caislean-an-chomair": {
+    "title": "Castlecomer",
     "where": {
-     "site": "seacht-gcaislean-the-palace",
-     "room": "lounge"
-    },
-    "who": [
-     {
-      "creature": "rowena",
-      "count": 1
-     },
-     {
-      "creature": "rowenas-elf-bodyguard",
-      "count": 2
-     }
-    ],
-    "players": "An elegant lounge of velvet couches and tapestries. In the middle stands a harp carved from one piece of quartz crystal, strung with fine feysilver wire.",
-    "description": "Pluck it and a portal into deeper Faerie opens: Rowena steps out with two elf bodyguards. She will gladly tell how the palace fell, but may stay only one hour. At any hostility or insult the elves push her back through and attack. Nearby: a fitting room of harmless mannequins whose lamp-shadows lunge, and a cold larder with a trapdoor dropping 30 ft into a shallow river.",
-    "disposition": "friendly"
-   },
-   "palace-kobold-nest": {
-    "title": "The silver dragon's nest",
-    "where": {
-     "site": "seacht-gcaislean-the-palace",
-     "room": "lizardfolk-lair"
-    },
-    "who": [
-     {
-      "creature": "palace-kobold-hunter",
-      "count": "2d6"
-     },
-     {
-      "creature": "palace-kobold-bone-mother",
-      "count": 1
-     }
-    ],
-    "players": "A room dug crudely out into the bare rock. A finely wrought silver dragon statue stands in one corner, heaped with crude offerings; a nest of straw and filthy fine cloth fills the other.",
-    "description": "The kobolds worship the statue as Lig na Péiste. Survivors regroup in the first watchroom; if they haven't been met, check each exploration round there for a patrol of d6 kobolds.",
-    "treasure": "A finely wrought silver dragon statue."
-   },
-   "palace-guardpost": {
-    "title": "The last guard",
-    "where": {
-     "site": "seacht-gcaislean-the-palace",
-     "room": "guardpost"
-    },
-    "who": [
-     {
-      "creature": "travis",
-      "count": 1
-     }
-    ],
-    "players": "A guardpost with an arrow-slit facing the hallway, a straw bed, and a table set with a plate, a pewter goblet and a pair of knives.",
-    "description": "Travis throws his flying dagger at anyone within 10 paces of the north corner. Next door, the captain's quarters show a grisly murder, and a hard Alertness check finds a secret escape room (lever in the brazier) with a trapdoor up to the upper palace. The armoury holds a dozen masterwork glaives, longswords and shields and two dozen masterwork chainmail (re-fitting: hard Finesse and a day, or easy for a dweomersmith).",
-    "treasure": "In his mattress: a small chest with two rubies (300 drakh each) and an emerald (2000 drakh), a gold wedding ring (10 gp) and a ring of iron keys.",
-    "disposition": "hostile"
-   },
-   "palace-ink-pool": {
-    "title": "The purple ink pool",
-    "where": {
-     "site": "seacht-gcaislean-the-palace",
-     "room": "ink-pool"
-    },
-    "who": [
-     {
-      "creature": "palace-rustgrub",
-      "count": "d6+1"
-     }
-    ],
-    "players": "At the far end of the twisting caverns, a pool of vivid purple ink and a large silver statue of a knight.",
-    "description": "The ink dyes cloth, leather and skin royal purple and works as magic ink for aetheric spells (hard Science or Identify Magic to notice). The rustgrubs crawl out of a crevice behind the party and swarm steel.",
-    "treasure": "A ring of protection on the knight's left pinky, silver like the statue; magic detection only works adjacent to it."
-   },
-   "palace-laboratory": {
-    "title": "The alchemist's laboratory",
-    "where": {
-     "site": "seacht-gcaislean-the-palace",
-     "room": "laboratory"
+     "site": "caislean-an-chomair"
     },
     "who": [],
-    "description": "Search the books (one exploration round each) for up to five arcane scrolls: 3 in 6 for the first, 2 in 6 for the second and third, then 1 in 6.",
-    "treasure": "A formula book (elixirs of healing, regeneration, antivenin, enhanced Constitution and Charisma; love potion, truth serum, sovereign glue, salve of slipperiness, shared sensations); d6 materia charges of each kind and d6 bottles of each magic ink; fine tools that make brewing easier. In the private chambers: a wand of fireball with three charges."
-   },
-   "palace-chaplains-bedroom": {
-    "title": "The chaplain's rage",
-    "where": {
-     "site": "seacht-gcaislean-the-palace",
-     "room": "chaplains-bedroom"
-    },
-    "who": [
-     {
-      "creature": "chaplains-haunt",
-      "count": 1
-     }
-    ],
-    "players": "A canopy bed with red velvet curtains and a long stained-oak dresser. The moment you enter, the furniture flies at you.",
-    "description": "Cathbad, his pupil, burned the chaplain alive to Crom Cruach. Speak With Dead calms him to tell the whole story.",
-    "disposition": "hostile"
-   },
-   "palace-chapel": {
-    "title": "The desecrated chapel",
-    "where": {
-     "site": "seacht-gcaislean-the-palace",
-     "room": "chapel"
-    },
-    "who": [
-     {
-      "creature": "palace-bugbear",
-      "count": 3
-     }
-    ],
-    "players": "The altar smeared with blood and turned into a shrine to Crom Cruach. A bonfire between altar and pews burns the remains of the sacrificed.",
-    "description": "If the party has been stealthy, three bugbears sleep on the pews. If not, they roll Alertness; if they hear the party, they lie in wait in the sanctuary and charge screaming.",
-    "disposition": "hostile"
-   },
-   "palace-great-hall": {
-    "title": "The gnome girl and the nine redcaps",
-    "where": {
-     "site": "seacht-gcaislean-the-palace",
-     "room": "great-hall"
-    },
-    "who": [
-     {
-      "creature": "an-deichlamhach",
-      "count": 1
-     }
-    ],
-    "players": "A rustic hall of oak beams and stuffed trophies, with a U-shaped table for nineteen. A small gnome girl hangs from the rafters by her own hair while nine redcaps prod her with spears.",
-    "description": "The first hit on a 'goblin' breaks the glamour: it is An Deichlámhach. It squirts a 5-pace sphere of darkness and vanishes, then stalks the party for sport, reading their thoughts to choose new illusions. Play it as good sport. It likes to hide as bath towels in the washroom behind."
-   },
-   "palace-upper-lounge": {
-    "title": "The bugbear who wants to go home",
-    "where": {
-     "site": "seacht-gcaislean-the-palace",
-     "room": "lounge-upper"
-    },
-    "who": [
-     {
-      "creature": "palace-bugbear-outcast",
-      "count": 1
-     }
-    ],
-    "players": "Every stick of furniture in the lounge has been smashed. A huge bugbear charges, roaring \"STOP MAKING FUN OF ME!\"",
-    "description": "Nothing will convince him the party is real and not the Cleasaí again.",
-    "disposition": "hostile"
-   },
-   "palace-drawing-room": {
-    "title": "The sleeping wolf",
-    "where": {
-     "site": "seacht-gcaislean-the-palace",
-     "room": "drawing-room"
-    },
-    "who": [
-     {
-      "creature": "aine",
-      "count": 1
-     }
-    ],
-    "players": "An empty drawing room with a woven rug and tapestries. On the rug sleeps an immense wolf in an iron collar.",
-    "description": "Each must pass a Stealth check to sneak past or she wakes and attacks. This is Aine, whom Cathbad keeps collared and calls cursed."
-   },
-   "palace-cathbads-chambers": {
-    "title": "Cathbad's chambers",
-    "where": {
-     "site": "seacht-gcaislean-the-palace",
-     "room": "cathbads-chambers"
-    },
-    "who": [
-     {
-      "creature": "cathbad",
-      "count": 1
-     },
-     {
-      "creature": "palace-bugbear",
-      "count": 2
-     }
-    ],
-    "players": "A well-kept bedchamber with every sign of civilised living. An old priest looks up from his manuscripts, two bugbears behind him.",
-    "description": "Cathbad plays the kindly priest trying to lift Aine's 'curse'. His notes reveal that her ruby blade is Claíomh Solais, cut from one dragon-pearl crystal with the Croidhe mo Mhaistir and in resonance with it; that only Aine and Mairead's line can wield it; that the Silver Knight is the dragon itself; and that he means to buy Mairead from the redcaps tomorrow to train her as a druid.",
-    "treasure": "Aine's ruby-bladed sword, the red Claíomh Solais (legendary primal aetheric blade).",
-    "disposition": "wary"
-   },
-   "palace-bath": {
-    "title": "The healing bath",
-    "where": {
-     "site": "seacht-gcaislean-the-palace",
-     "room": "palace-bath"
-    },
-    "who": [],
-    "description": "Fill the tub with hot water from the faucet: anyone soaking regains one hit die of hit points per exploration round. Beyond it, the hearthroom, and Kyteler's bedroom with her and d'Meath's annotated books of 'druid' lore: following them makes Nature-domain warlocks sworn to Crom, not druids."
-   },
-   "palace-throne-hallway": {
-    "title": "The living thorns",
-    "where": {
-     "site": "seacht-gcaislean-the-palace",
-     "room": "throne-hallway"
-    },
-    "who": [
-     {
-      "creature": "palace-bloodrose",
-      "count": "d6"
-     }
-    ],
-    "description": "The animated vines fill 5 paces of the north-south corridor as soon as anyone turns the corner: save vs. Blast or take 2d6 piercing and be restrained. Their shadows move on the wall first; a party that prepares saves easily, and those who fail still get a save vs. Hold against the grab. The aleroom beyond is all but choked off."
-   },
-   "palace-throneroom": {
-    "title": "The Princess in Silver and Crimson",
-    "where": {
-     "site": "seacht-gcaislean-the-palace",
-     "room": "throneroom"
-    },
-    "who": [
-     {
-      "creature": "alice-kyteler",
-      "count": 1
-     }
-    ],
-    "players": "Beautiful and horrifying: Dame Alice Kyteler hangs above the throne, her ribcage torn open and a crimson gem pulsing like a heartbeat where her heart should be. Rose vines run from it through her limbs and across the room in full bloom.",
-    "description": "Everyone but Kyteler makes all rolls harder in the roses' scent. Cutting or burning her only makes her regrow, each time less human. The ways out: shatter the Croidhe with both Claíomh Solais (frees and banishes Lig na Péiste); attune it to Aine or Mairead by cutting her hand on the red blade and pressing her palm to the gem (Kyteler and the roses wither; the Silver Knight pledges to the heir); or, rarely, lead Kyteler to genuine atonement so she gives it up and lives.",
-    "disposition": "hostile"
+    "description": "West of Moinin-Rua, on the Moorfoul plateau about 11 miles north of Cill-Chainnigh, is the dwarven mining settlement of Castlecomer. The dwarves are long gone, so Lady d'Meath's henchmen run the town, while the gnomish townsfolk try to distract themselves with the breeding and training of thoroughbred horses."
    },
    "dmeath-court": {
-    "title": "Lady d'Meath's court",
+    "title": "Cill-Chainnigh",
     "where": {
      "site": "cill-chainnigh-lady-d-meath",
      "room": "court"
@@ -804,9 +461,7 @@
       "count": 10
      }
     ],
-    "players": "Cill Chainnigh castle, where the Lady rules with an iron fist and her boar-pucca guards watch every street. The townsfolk are all fauns.",
-    "description": "A well-kept secret: the fauns descend from the town's human folk, changed by the mists. Kyteler's goblin raids let d'Meath pose as the just ruler. She sends any 'troublemakers' to the palace for Cathbad. If the gem is shattered, the Church's inquisitors will try her for witchcraft; that is kinder than the Silver Knight's wrath if Mairead does not temper it.",
-    "disposition": "wary"
+    "description": "The current seat of power in the region is the castle at Cill-Chainnigh, where the self-styled Lady d'Meath rules with an iron fist. D'Meath is a sixth-level warlock who has made various pacts with the local fair folk to secure her rule, and her youth, over the past century. She is attended to by a pack of boar pucca, all kept loyal with the judicious use of beguiling glamours. These henchmen are all second level champions or hunters; their leaders are third-level. The \"common folk\" of the surrounding town are all various forms of faun beastfolk; it is a well- kept secret that most of them are descended from the original human inhabitants of the town, who were transformed into beastfolk by the encroaching fey mists."
    },
    "tinkers-shop": {
     "title": "The tinker's shop",
@@ -824,50 +479,7 @@
       "count": 1
      }
     ],
-    "players": "The one cheerful shop in Cill Chainnigh.",
-    "description": "Gabhan and Fiona are here two days a week; otherwise they roam the county in a covered stagecoach (a Folding Carriage), and any non-stealthy mortal encounter on the road is them on a 1 in 6.",
-    "disposition": "friendly"
-   },
-   "misty-moor-wild-magic": {
-    "title": "Wild magic on the Misty Moor",
-    "where": {
-     "site": "the-misty-moor"
-    },
-    "who": [],
-    "players": "A vast enchanted wetland of drifting mist.",
-    "description": "Any magic in the mists: the caster saves vs. Curse or rolls d6. 1: target chosen at random (self or touch magic reverses instead). 2: a random primal glamour of the same circle goes off instead. 3: the magic fails and the moor absorbs it (keep a running total of circles). 4: the magic is amplified by the absorbed total, up to third circle; any excess bursts out as random glamours at random targets. 5: caster and target save vs. Curse (hard if the moor holds any magic) or are caught between Material and Faerie until the next sunrise or sunset, insubstantial but still harmable from both. 6: the caster is polymorphed into a 1d6 HD creature, as the potion."
-   },
-   "moorfoul-mines": {
-    "title": "The old Deerpeak Mines",
-    "where": {
-     "site": "the-moorfoul-mountains"
-    },
-    "who": [],
-    "description": "Once the Deerpeak Mines, abandoned when the mists made mining too dangerous. Caves and old shafts in the barren crags are dens for fey beasts, fey monsters and goblins. The palace's towers can be seen from the northern slopes of the Stormpeaks, not from here."
-   },
-   "stormpeaks": {
-    "title": "The Stormpeaks",
-    "where": {
-     "site": "the-stormpeaks"
-    },
-    "who": [],
-    "description": "Hills south of the county wreathed in storm and lightning since Kyteler and d'Meath tried to change the weather with the Croidhe. Auriad nymphs and hags fight each other; the thyrs trolls who lived here hide in their caves. The palace's towers are visible from the northern slopes."
-   },
-   "moinin-rua": {
-    "title": "Móinín Rua",
-    "where": {
-     "site": "moinin-rua"
-    },
-    "who": [],
-    "description": "A gnome farming village that once fed the dwarf miners of the Deerpeaks for gems and metal. Still just prosperous enough for two taverns (one an inn), a general store and a smithy; the smith is a first-level dweomersmith descended from the old miners."
-   },
-   "caislean-an-chomair": {
-    "title": "Caisleán an Chomair",
-    "where": {
-     "site": "caislean-an-chomair"
-    },
-    "who": [],
-    "description": "The old dwarven mining town on the Moorfoul plateau, west of Móinín Rua and about 11 miles north of Cill Chainnigh. The dwarves are long gone; Lady d'Meath's henchmen run it, while the gnome townsfolk breed and train thoroughbred horses to keep their minds off it."
+    "description": "The tinker's shop in Cill-Chainnigh stands out for its unusually cheery atmosphere, given the dreary oppression of the rest of the shire. The tinker and his daughter are dwarves who are usually found traveling the countryside in an elaborate covered stagecoach (actually a Folding Carriage), although they can be found in their shop at least two days out of each week. Any non-stealthy mortal NPC encounter on the road has a 1 in 6 chance of being Gabhan or Fiona. Gabhan is a fifth-level dweomersmith, while Fiona (who takes after her gnomish mother) is a third-level druid. Both of them have exceptional Charisma, and Fiona is an incorrigible flirt."
    },
    "feywoods": {
     "title": "The Feywoods",
@@ -875,7 +487,795 @@
      "site": "the-feywoods"
     },
     "who": [],
-    "description": "Dark forest west of Cill Chainnigh, thick with fey beasts and monsters: roll for a wandering encounter every 100 paces."
+    "description": "To the west of Cill-Chainnigh are a patch of dark forest called the Feywoods. This forest is densely populated by all kinds of fey beasts and monsters; the referee should roll for a random encounter for each 100 paces of travel through the woods, using the encounter tables on page 38 of the Referee's Guide."
+   },
+   "stormpeaks": {
+    "title": "The Stormpeaks",
+    "where": {
+     "site": "the-stormpeaks"
+    },
+    "who": [],
+    "description": "South of Cill-Chainnigh are the Stormpeaks, a range of mountains perpetually wreathed by stormclouds and lightning. Dame Kyteler and Lady d'Meath once attempted to use the Croidhe mo Mhaistir to alter the weather of this region; the result is an ungovernable chaos of auriad nymphs and hags fighting amongst each other, while the thyrsa trolls who originally inhabited the region hide away in their caves."
+   },
+   "palace-bridge": {
+    "title": "Arriving at the Palace",
+    "where": {
+     "site": "seacht-gcaislean-the-palace",
+     "room": "bridge"
+    },
+    "who": [
+     {
+      "creature": "palace-bloodrose",
+      "count": "d6"
+     }
+    ],
+    "description": "The path to the palace gates is an ornate stone bridge over the King's River. White rosebush vines with unusually long and sharp thorns wind their way around the statues and lanterns on the bridge, and completely cover the marble walls of the palace keep.\n\nThe entire eastern half of the palace has been pulled down; a hard skill check (or normal difficulty if rolled by a dwarf) will notice that the weight and crushing power of the vines has essentially undermined the foundations of the eastern palace, then pulled down the ramparts and crushed them to rubble. The process seems to be slowly encroaching onto the western half of the palace, but it looks sturdy enough that there is no immediate danger of collapse.\n\nCrossing the bridge will require a saving throw from each member of the party, to avoid triggering the bloodrose vines. Once everyone has reached the other side, the portcullis gates are jammed shut, and will require multiple party members to lift. Each member of the party that aids in the attempt contributes 1d6 + their Strength, and each attempt takes one combat round; the portcullis opens once the party rolls a combined total of 10 or more.\n\nOf course, the bloodroses will be attempting to grapple the party the whole time, so they will need to split their efforts between lifting the gate and hacking or burning the vines back. The bloodroses aren't really mobile or capable of strategy, so this doesn't require initiative rolls the way normal combat encounters do; simply let the party decide each round who is on gate duty and who is fighting the bushes.\n\nOnce the party is inside the first portcullis, it will crash back down. There are two doors on either side of the archway; each leads to a small gatehouse with a lever. Putting both levers to the 'up' or 'down' position will raise or lower the inner and outer gates.\n\nThe western room has a small, hard-to-find secret door that is hidden behind two barrels; behind it is a room with two wooden chests and a weapon rack; within are two suits of chainmail, two crossbows, and two shields."
+   },
+   "palace-bloodroses": {
+    "title": "Bloodrose",
+    "where": {
+     "site": "seacht-gcaislean-the-palace",
+     "room": "grounds"
+    },
+    "who": [
+     {
+      "creature": "palace-bloodrose",
+      "count": "d6"
+     }
+    ],
+    "description": "A creature that fails this saving throw immediately suffers 1d6+1 piercing damage and ongoing bleeding damage, as the vines twist and lash to drive the thorns deeper into their flesh. If this damage die rolls a '6', that creature is grabbed and restrained by the thornbushes unless they succeed at a save vs. Hold, suffering another d6 piercing damage as they are grabbed. A restrained creature suffers another d6 piercing damage each round, and must use their action to make a hard save vs. Hold until they manage to free themselves.\n\nAs the bloodroses inflict damage, the flowers around them change color from white, to pink, to deep red. Whenever a creature critically fails their saving throw vs. a bush, that creature suffers a critical hit and all the petals fall off of the blooms on that 5' patch of bush. The next round, each of the exposed rose hips explode, sending razor-sharp shrapnel in a blast 4 paces in radius that deals 3d6+1 piercing damage and ongoing bleeding damage. The next round after that, every inch of exposed surface within the blast area starts growing new rosevines, which continue to grow and mature over 1d6 rounds until they produce their own thorns and flowers.\n\nEach 5' patch of bloodrose is treated as a separate large \"creature\" with 1d6 structure points, although they have no abilities and cannot move or perform actions. Attack throws against a bloodrose are easy, since it fills a 5' space and can't move or dodge.\n\nAttacks from an ax weapon or fire inflict direct structure damage, while other attacks follow the normal rules for attacking a structure. If a bloodrose is lit on fire, it has a 1- in-6 chance of spreading the flames to each adjacent bush."
+   },
+   "palace-west-wing": {
+    "title": "The West Wing",
+    "where": {
+     "site": "seacht-gcaislean-the-palace",
+     "room": "west-wing"
+    },
+    "who": [],
+    "description": "Heading down the western corridor leads to a long hallway with series of doors on the left. Everything in these hallways and rooms looks incredibly expensive and well-decorated, with thick velvet tapestries, black-and-white tile floors, and brass braziers mounted into the oak-and-limestone walls."
+   },
+   "palace-schoolroom": {
+    "title": "The Schoolroom",
+    "where": {
+     "site": "seacht-gcaislean-the-palace",
+     "room": "schoolroom"
+    },
+    "who": [],
+    "description": "This room appears to have been a laboratory for training apprentice wizards; there are several desks with inkwells and quill pens, and papers are strewn about the floor. Any wizard character can spend an exploration round making a hard Science check to attempt to make any sense of the notes and formulae strewn about; on a success, they manage to piece together one random first-circle spell that they can then copy into their spellbook."
+   },
+   "palace-pantry": {
+    "title": "The Pantry",
+    "where": {
+     "site": "seacht-gcaislean-the-palace",
+     "room": "pantry"
+    },
+    "who": [],
+    "description": "The pantry contains numerous sacks of grain and barrels of ale, as well as various salted meats and dried fruits - there is enough fare provisioned here to produce 2d6 x 30 daily rations of food, if necessary."
+   },
+   "palace-kitchen": {
+    "title": "The Kitchen",
+    "where": {
+     "site": "seacht-gcaislean-the-palace",
+     "room": "kitchen"
+    },
+    "who": [],
+    "description": "The next room is a well-stocked kitchen. The stove is still warm, and cooking implements and ingredients are strewn about as if dinner had just been prepared. Some of the pots have been ransacked and smashed against the floor, with smeared footprints leading out of the room. An easy Survival check will determine that these were made by redcaps, and somewhat recently at that."
+   },
+   "palace-dining-hall": {
+    "title": "The Dining Hall",
+    "where": {
+     "site": "seacht-gcaislean-the-palace",
+     "room": "dining-hall"
+    },
+    "who": [
+     {
+      "creature": "palace-redcap-hunter",
+      "count": 12
+     },
+     {
+      "creature": "palace-redcap-chef",
+      "count": 1
+     }
+    ],
+    "description": "The dining hall is laid out for an exquisite banquet, and smells delicious. Sitting around the table are a dozen redcap goblins, enjoying a gourmet feast. A larger, fatter redcap in an apron and a chef's cap is standing in the corner of the room with his arms crossed, smiling smugly; he's holding a cleaver (treat as an ax). The other goblins are wearing shortswords in their belts, and have set their crossbows beside their chairs as they eat.\n\nAs wonderful as the meal smells, it is goblin cooking; the meat was recently a young wolf pucca named Maddy."
+   },
+   "palace-barracks": {
+    "title": "The Barracks",
+    "where": {
+     "site": "seacht-gcaislean-the-palace",
+     "room": "barracks"
+    },
+    "who": [],
+    "description": "The hallway loops around, then branches into a natural cavern to the west and a second, smaller hallway to the north. The left-hand wall of this hallway has two doors, each of which open into a barracks room.\n\nThe southern barracks room is locked; the lock is of normal complexity, but the goblins still haven't managed to pick it. Opening it reveals six pristine bunk beds with a locker at the foot of each bed, as well as two weapon racks against the southern wall. Opening the lockers and searching the weapon racks will reveal six suits of chainmail, six shortswords, six medium shields, four crossbows, and two glaives. All are of exceptional quality, but do not count as masterwork weapons or armor.\n\nThe northern barracks room is open, and is being used as quarters by the redcaps that are currently occupying the dining hall. They have thoroughly wrecked the beds, lockers, glaives, and chainmail that they found, but are using the crossbows and shortswords."
+   },
+   "palace-caves": {
+    "title": "The Caves",
+    "where": {
+     "site": "seacht-gcaislean-the-palace",
+     "room": "caves"
+    },
+    "who": [],
+    "description": "The cavern walls are smooth and dry stone, with thin veins of precious metals streaked throughout. Rather than mine them, the keep's architects chose to make this entire cavern into a causeway that leads to a bath house powered by geothermal vents."
+   },
+   "palace-northern-cavern": {
+    "title": "The Northern Cavern",
+    "where": {
+     "site": "seacht-gcaislean-the-palace",
+     "room": "northern-cavern"
+    },
+    "who": [
+     {
+      "creature": "mairead",
+      "count": 1
+     }
+    ],
+    "description": "There is a straw bed laid out and a chain bolted into the wall here; a young wolf cub is chained here, which someone appears to have been trying to train. It is emaciated and starving, which has put it in a state of perpetual frenzy. Its wrought-iron collar has worn a raw, red bald patch around its neck.\n\nIf the party can subdue the wolf cub without killing it, and manages to remove the collar, the wolf cub will turn out to be a young pucca girl named Mairead. She will tell the party that her twin brother Maddy and older sister Aine were taken by the redcaps months ago, and that Aine was given to the bugbears that live in the upper levels. The redcaps had been trying to fatten her and her brother up before eating them, but finally gave up and decided to cook them as they are when they refused to eat anything offered to them.\n\nMairead is severely malnourished, and in poor health. If taken care of and allowed to heal, her Constitution will slowly return to its original value of +0 over the course of a few months. She is seven years old, clever, and incredibly strong-willed and stubborn."
+   },
+   "palace-southern-cavern": {
+    "title": "The Southern Cavern",
+    "where": {
+     "site": "seacht-gcaislean-the-palace",
+     "room": "southern-cavern"
+    },
+    "who": [],
+    "description": "The southern half of the cave has a shrine, originally devoted to the local Numen-saint that watched over these lands. A stone statue of mother-and-infant stands here; sickly pale vines with sharp blood-red thorns wind tight around all of the stonework, with ghostly white roses blooming in between the thorns. The vines give the impression of strangling the statues of the mother and child. There are twelve smaller votive statues that originally encircled the shrine, but the vines have pulled them down and crushed them."
+   },
+   "palace-bathhouse": {
+    "title": "The Bathhouse",
+    "where": {
+     "site": "seacht-gcaislean-the-palace",
+     "room": "bathhouse"
+    },
+    "who": [],
+    "description": "Each of these four rooms is shaped like an oblong hexagon; together, they fill the octagonal tower and surround a smaller square room."
+   },
+   "palace-changing-room": {
+    "title": "Changing Room",
+    "where": {
+     "site": "seacht-gcaislean-the-palace",
+     "room": "changing-room"
+    },
+    "who": [],
+    "description": "This room contains two large oak cabinets full of drawers, both ornately carved with scenes of springtime and inlaid with mother-of-pearl. The wall opposite them has a large mirror and two marble washbasins. The floor is white and black marble, flecked with gold and mica. There are a few small wooden chairs and benches of fine quality along the smaller side walls, some with towels folded neatly and laid on top of them.\n\nIf the players search the cabinets, they will find various bath towels and bathrobes made from expensive cloth, as well as many bars of perfumed soap carved into the shapes of mermaids and leaping dolphins. One small drawer in the center of the farther cabinet is locked with a complex pressure-lock, which can only be picked by someone with expertise; even then, attempting to pick it is hard, and failure activates a poisoned needle trap. (The drawer can be properly opened with the silver locket in the central room of the tower, but that solution has its own set of problems.) Inside this drawer is a small gold-and-iron key, worth 150 gp if sold."
+   },
+   "palace-sunken-bath": {
+    "title": "Sunken Bath",
+    "where": {
+     "site": "seacht-gcaislean-the-palace",
+     "room": "sunken-bath"
+    },
+    "who": [
+     {
+      "creature": "palace-bloodstirge",
+      "count": "d6+2"
+     }
+    ],
+    "description": "This room is quite warm and humid. The majority of the room is taken up by a sunken bath of white marble, filled with warm water. There are lavish alabaster frescoes on the walls of swans, neiads, and mermaids. In the far corner of the room is a marble table with seven flasks made of various semiprecious stones, and a large peacock feather fan. There is a buzzing sound coming from above.\n\nA large bloodstirge nest has formed in the upper corner above the table; at any given time there are 1d6+2 bloodstirges roosting. They will immediately stir if anyone enters the room, and move to attack and feed.\n\nFive of the flasks on the table contain bath oils. The last two contain actual alchemical concoctions - one is a love potion, and the other is a potion of shared sensations."
+   },
+   "palace-mosaic-room": {
+    "title": "Mosaic Room",
+    "where": {
+     "site": "seacht-gcaislean-the-palace",
+     "room": "mosaic-room"
+    },
+    "who": [],
+    "description": "This room is covered in mosaic frescoes made from small hexagonal tiles of obsidian, lapis lazuli, agate, and other colorful stones, inlaid with gold and silver. They show a knight in silver plate armor riding a silver dragon, and a woman in white wearing a golden crown with a red heart emblazoned on the chest of her gown. The scenes progress through a courtship tryptich, with the floor depicting the dragon, knight, and woman all lying asleep around a central gold-and-obsidian star motif, with a brass keyhole in the center of the star.\n\nPicking the keyhole requires expertise, and is hard even then; failure activates a magic trap which banishes a would-be thief directly into the Elemental Chaos (see pg. 21). The gold key hidden in the changing room unlocks the safe; inside is a rare feysilver longsword with a ruby pommel, enchanted as an aetheric blade."
+   },
+   "palace-steam-room": {
+    "title": "Steam Room",
+    "where": {
+     "site": "seacht-gcaislean-the-palace",
+     "room": "steam-room"
+    },
+    "who": [],
+    "description": "This room is hot and humid, and filled with a thick mist that obscures vision.\n\nIt is actually a sauna, with wooden benches along the walls and vents in the floor that release steam from a geothermal spring deep below the keep."
+   },
+   "palace-pink-pedestal": {
+    "title": "Pink Pedestal",
+    "where": {
+     "site": "seacht-gcaislean-the-palace",
+     "room": "pink-pedestal"
+    },
+    "who": [],
+    "description": "This small square room sits in the center of the four hexagonal rooms. In the middle of this room is a carved stone pedestal, apparently made of rose quartz. Upon the pedestal is a small pink satin pillow, and resting on the pillow is an ornate oval locket made of silver, on a silver chain. The locket is closed.\n\nThis locket is an Amulet of Friendship, worn by Dame Kyteler's betrothed; its match is still a golden locket that is still around the Dame's neck. If anyone puts on the locket, she will immediately be aware of it, and can instantly begin casting glamours on the wearer. The locket is cursed so that it cannot be removed.\n\nThe first glamour that Dame Kyteler will cast on the wearer is Beguile, attempting to bend the wearer to her will. Once she has eroded the victim's mental defenses, she will compel them to make a Primal Oath to her, to serve her unquestioningly and hide their betrayal from their companions. The party will now have a traitor in their midst."
+   },
+   "palace-east-wing": {
+    "title": "The East Wing",
+    "where": {
+     "site": "seacht-gcaislean-the-palace",
+     "room": "east-wing"
+    },
+    "who": [],
+    "description": "From the portcullis, the east wing corridor loops around a 30' wide square pillar, before branching off to the south and east. There is a single door in the middle of the easternmost corridor of the loop."
+   },
+   "palace-hothouse": {
+    "title": "Hothouse Garden",
+    "where": {
+     "site": "seacht-gcaislean-the-palace",
+     "room": "hothouse"
+    },
+    "who": [
+     {
+      "creature": "palace-bloodrose",
+      "count": 1
+     }
+    ],
+    "description": "This room was originally a garden atrium for growing delicate exotic plants; the roof of the room is made of stained glass and naturally lets in enough light for plants to survive. It has been completely taken over by bloodrose bushes; as soon as the door is opened, vines burst outwards in a 5-pace cone and deal 1d6 piercing damage to anyone who fails to save."
+   },
+   "palace-cavern-pool-east": {
+    "title": "Cavern Pool",
+    "where": {
+     "site": "seacht-gcaislean-the-palace",
+     "room": "cavern-pool"
+    },
+    "who": [],
+    "description": "To the north of the hothouse garden door is a staircase carved out of raw rock; it leads down into a small cavern with a still pool of fresh water, which the architects deemed too pretty to destroy. Sunlight filters in softly from holes in the cavern roof, and glitters off of small rainbow-hued crystals that grow on the cavern walls. A stream flows in from above, feeding the pool; there are clay-covered iron pipes submerged in the water at the southern edge of the pool, which appear to run undergroud beneath the palace."
+   },
+   "palace-sulfrous-pool": {
+    "title": "Sulfrous Pool",
+    "where": {
+     "site": "seacht-gcaislean-the-palace",
+     "room": "sulfrous-pool"
+    },
+    "who": [],
+    "description": "The cavern directly south of the hothouse garden contains a pool of hot, sulfrous water. An ingenious dwarven apparatus sits here, apparently of Old Imperial design; it heats and pumps the water for the entire palace through a series of thick, clay-covered iron pipes. The air in this room is poisonous; anyone who stays in the room more than a few minutes must save vs. Doom at the end of each exploration round, or suffer 1d6 damage and be rendered unconscious."
+   },
+   "palace-storeroom": {
+    "title": "Storeroom",
+    "where": {
+     "site": "seacht-gcaislean-the-palace",
+     "room": "storeroom"
+    },
+    "who": [],
+    "description": "South of the pools is a storeroom, full of crates of salted and jerked meat, dried fruits and nuts, and other preserved foods. Several boxes are full of prepared and packaged ration satchels, for guards to take on long patrols. Altogether, there are 2d6 x 10 days' worth of rations prepared, and enough supplies to make another 2d6 x 100 days' worth."
+   },
+   "palace-blocked-passage": {
+    "title": "Blocked Passage",
+    "where": {
+     "site": "seacht-gcaislean-the-palace",
+     "room": "blocked-passage"
+    },
+    "who": [
+     {
+      "creature": "palace-bloodrose",
+      "count": 1
+     }
+    ],
+    "description": "Past the storeroom, the hallway turns eastward, ending at a large arched doorway. Past that doorway is another small corridor that used to serve as an exit into the palace gardens; it has become completely overgrown with bloodroses, which will immediately burst outwards in a 5-pace cone and deal 1d6 piercing damage to anyone who fails to save."
+   },
+   "palace-fountain-room": {
+    "title": "Fountain Room",
+    "where": {
+     "site": "seacht-gcaislean-the-palace",
+     "room": "fountain-room"
+    },
+    "who": [],
+    "description": "This room contains an ornamental fountain in the corner, as well as two tapestries - one of a woman in white with a golden crown and a red heart on her chest, the other of a silver knight riding a silver dragon."
+   },
+   "palace-secret-room": {
+    "title": "Secret Room",
+    "where": {
+     "site": "seacht-gcaislean-the-palace",
+     "room": "secret-room"
+    },
+    "who": [],
+    "description": "If the party searches behind the tapestry of the white princess, they will notice a loose stone; pressing it causes a hidden passageway to open, which leads eastward into a secret room furnished as a study. On an expensive red velvet chair is a leather-bound book; the first page of the book identifies it as the private diary of Dame Alice Kyteler."
+   },
+   "palace-anteroom": {
+    "title": "Anteroom",
+    "where": {
+     "site": "seacht-gcaislean-the-palace",
+     "room": "anteroom"
+    },
+    "who": [
+     {
+      "creature": "palace-oreiad",
+      "count": 2
+     }
+    ],
+    "description": "The western door of the fountain room leads to an anteroom, which can also be reached from the southernmost corridor of the West Wing. This room is a semicircular alcove, with a two beautiful caryatid statues of young women acting as pillars. These are actually living oreiad nymphs, bound by fey oaths to protect the palace from intruders."
+   },
+   "palace-southeast-wing": {
+    "title": "The Southeast Wing",
+    "where": {
+     "site": "seacht-gcaislean-the-palace",
+     "room": "southeast-wing"
+    },
+    "who": [],
+    "description": "South of the antechamber is a set of hallways leading to the southern wings of the palace."
+   },
+   "palace-schoolroom-library": {
+    "title": "Schoolroom and Library",
+    "where": {
+     "site": "seacht-gcaislean-the-palace",
+     "room": "library"
+    },
+    "who": [],
+    "description": "The first two rooms in the southern wing are a schoolroom and library, connected by a short hallway. The schoolroom contains nothing of interest, but the library contains 1d6-1 wizard spells and one magic item blueprint; you can use Appendix E of the Referee's Guide to roll for which spells and blueprint are found."
+   },
+   "palace-fitting-room": {
+    "title": "Fitting Room",
+    "where": {
+     "site": "seacht-gcaislean-the-palace",
+     "room": "fitting-room"
+    },
+    "who": [],
+    "description": "As you open the door to this room, the party immediately sees 1d6 vaguely humanoid shadows lunging menacingly towards them.\n\nThe shadows are being cast from a flickering lamp that is behind a folding privacy screen; behind it are six harmless mannequins."
+   },
+   "palace-larder": {
+    "title": "Larder",
+    "where": {
+     "site": "seacht-gcaislean-the-palace",
+     "room": "larder"
+    },
+    "who": [],
+    "description": "This large room is a butcher's room and larder. There is a trap door in the floor, which falls 30 feet into a shallow river; this is used to dispose of offal and other rubbish from the castle. The larder itself is a natural cave kept magically cold through elemental faerie magic - meat is butchered, then packed in ice and stored here until it is ready to be cooked."
+   },
+   "palace-harp": {
+    "title": "Lounge",
+    "where": {
+     "site": "seacht-gcaislean-the-palace",
+     "room": "lounge"
+    },
+    "who": [
+     {
+      "creature": "rowena",
+      "count": 1
+     },
+     {
+      "creature": "rowenas-elf-bodyguard",
+      "count": 2
+     }
+    ],
+    "description": "South of the larder is an elegant lounge, with plush velvet couches and expensive-looking tapestries. In the center of the room is a harp, which appears to have been carved from a single piece of quartz crystal and strung with thin feysilver wire.\n\nThe harp is a legendary primal artifact, and is bound to a human bard of remarkable skill who was taken to Faerie when the castle fell. She has been entertaining the Fair Folk courts for the past century, having never aged a day. If the harp is plucked, a portal into deeper Faerie will open, and the bard Rowena will step out, accompanied by two elf bodyguards.\n\nRowena will happily discuss the events that led to the palace's current state, but she will only be allowed to stay in the material world for a single hour; if the party shows her any hostility or offence, her two elven bodyguards will immediately push her back through the portal, then attack the party."
+   },
+   "palace-kobold-nest": {
+    "title": "Lizardfolk Lair",
+    "where": {
+     "site": "seacht-gcaislean-the-palace",
+     "room": "lizardfolk-lair"
+    },
+    "who": [
+     {
+      "creature": "palace-kobold-hunter",
+      "count": "2d6"
+     },
+     {
+      "creature": "palace-kobold-bone-mother",
+      "count": 1
+     }
+    ],
+    "description": "At the far southeast corner of the castle, a small room appears to have been expanded by removing the south wall and carving crudely into the bare rock. In one corner of the room is an finely-wrought silver statue of a dragon, with what appears to be crude offerings of worship piled around it; against the opposite corner is a heaped nest of straw and filthy but high-quality cloth, which serves as a nest for 2d6 kobolds and their \"bonemother\" druid."
+   },
+   "palace-southwest-wing": {
+    "title": "The Southwest Wing",
+    "where": {
+     "site": "seacht-gcaislean-the-palace",
+     "room": "southwest-wing"
+    },
+    "who": [],
+    "description": "The hallways turn south behind the dining hall, leading down a long corridor with a few doors before turning west."
+   },
+   "palace-captains-quarters": {
+    "title": "Captain's Quarters",
+    "where": {
+     "site": "seacht-gcaislean-the-palace",
+     "room": "captains-quarters"
+    },
+    "who": [],
+    "description": "The first room of the southwest wing was the quarters for the captain of the guard, and is the scene of a grisly murder. The bedsheets are soaked with blood, the tables and chairs have been upturned and smashed, and the captain's footlocker has been broken open.\n\nScattered across the floor are various bloody papers; they contain ledgers and timetables, detailing the logistics of the captain's job."
+   },
+   "palace-sw-barracks": {
+    "title": "Barracks",
+    "where": {
+     "site": "seacht-gcaislean-the-palace",
+     "room": "sw-barracks"
+    },
+    "who": [],
+    "description": "These barracks contain five double bunk beds and footlockers, as well as a weapon rack against the opposite wall. All are empty."
+   },
+   "palace-escape-room": {
+    "title": "Escape Room",
+    "where": {
+     "site": "seacht-gcaislean-the-palace",
+     "room": "escape-room"
+    },
+    "who": [],
+    "description": "Opposite the barracks door is a secret door that requires a hard Alertness check to notice. The brazier opposite this secret door has a small lever hidden among the ornamentation; pulling that lever will open the door. As the door is solid stone and flush with the wall, there is no easy way to brute-force it open.\n\nThis room contains a chair, a brazier, a flask of lamp oil, and a lever which locks the secret door when pulled down, or opens it when pulled up. On the ceiling of the room is a trapdoor hidden by the stonework, which leads to the palace's upper level. Climbing through the trapdoor is an easy Agility feat, which is automatic for anyone with expertise."
+   },
+   "palace-armory": {
+    "title": "Armory",
+    "where": {
+     "site": "seacht-gcaislean-the-palace",
+     "room": "armory"
+    },
+    "who": [],
+    "description": "The armory to the south contains a dozen masterwork glaives, a dozen masterwork longswords, a dozen masterwork medium shields, and two dozen masterwork suits of chainmail. This chainmail will only provide its masterwork bonus if it is re-fitted to its new wearer, which is requires a hard Finesse check and a day's effort for a human or fey armorer, or an easy Finesse check and an exploration round for a dweomersmith."
+   },
+   "palace-guardpost": {
+    "title": "Guardpost",
+    "where": {
+     "site": "seacht-gcaislean-the-palace",
+     "room": "guardpost"
+    },
+    "who": [
+     {
+      "creature": "travis",
+      "count": 1
+     }
+    ],
+    "description": "This room was originally a guardpost. There is a slit along the eastern wall of the room, where guards could fire at invaders from the hallway. The last surviving palace guard, Travis, holed up here when the bloodroses choked out every available escape route. He has been kept alive and ageless by the magic of Faerie, but in the intervening decades he has gone quite mad.\n\nTravis has made a straw bed in one corner of the room, and there is a table with a plate from the dining hall, a pewter goblet, and a pair of knives. If the party approaches the room from the north, Travis will use his +2 flying dagger to attack them once they are within 10 paces of the hallway's corner.\n\nHidden within the straw of Travis's mattress are various treasures that he has scavenged from the lower levels. A small chest contains a pair of rubies and a large emerald; each ruby is worth 300 drakh and the emerald is worth 2000 drakh. There is also a gold wedding ring worth 10 gp, and a ring with a set of iron keys."
+   },
+   "palace-bailiffs-room": {
+    "title": "Bailiff's Room",
+    "where": {
+     "site": "seacht-gcaislean-the-palace",
+     "room": "bailiffs-room"
+    },
+    "who": [],
+    "description": "South of the guardpost is the bailiff's room, where prisoners were checked in and processed. It contains a thick oak table, a finely crafted wooden chair, a brass candelabra, inkwell, and several reams of parchment."
+   },
+   "palace-bailiffs-quarters": {
+    "title": "Bailiff's Quarters",
+    "where": {
+     "site": "seacht-gcaislean-the-palace",
+     "room": "bailiffs-quarters"
+    },
+    "who": [],
+    "description": "Further along this corridor is a door to the bailiff and gaolers' quarters. It contains four beds, a small table, and a long set of drawers full of clothes. There is a weapon rack along the back wall with four shortswords, four iron maces, four helmets, and four heavy shields."
+   },
+   "palace-gaol": {
+    "title": "Gaol",
+    "where": {
+     "site": "seacht-gcaislean-the-palace",
+     "room": "gaol"
+    },
+    "who": [],
+    "description": "The jail itself is mostly a natural cavern, with a series of 10' x 10' cells built into the back with stonework, mortar, and iron bars."
+   },
+   "palace-cavern": {
+    "title": "The Cavern",
+    "where": {
+     "site": "seacht-gcaislean-the-palace",
+     "room": "cavern"
+    },
+    "who": [
+     {
+      "creature": "palace-bloodrose",
+      "count": 1
+     }
+    ],
+    "description": "North of the gaol, the cavern opens up into a network of twisty passages. Further along into these passages are a set of clay pots, each containing a whithered tropical plant. These plants were 'rescued' from the hothouse when the bloodroses began to bloom, but have since died from lack of sunlight. Against the back wall of this passage is a wall completely covered in bloodrose vines, which seems somehow unaffected by the lack of sunlight."
+   },
+   "palace-ink-pool": {
+    "title": "Cavern Pool",
+    "where": {
+     "site": "seacht-gcaislean-the-palace",
+     "room": "ink-pool"
+    },
+    "who": [
+     {
+      "creature": "palace-rustgrub",
+      "count": "d6+1"
+     }
+    ],
+    "description": "At the far end of the cavern network is a small pool, filled with what looks like a vivid purple ink. Any cloth, leather, or skin dipped into this ink will be dyed a deep royal purple by the minerals that have leached into the water here. The minerals in the pool also have enough ambient materia to serve as magic ink for aetheric arcane spells; noticing this is a hard Science check, or a trivial application of the identify magic spell. At the far end of the pool is a large silver statue of a knight.\n\nUpon approaching the pool, 1d6+1 insect-like creatures will crawl out of a recessed crevice behind the party. Each of these creatures is the size of a small dog, and resembles a cricket with a long feathered tail and feathered antennae. They will immediately swarm anyone wearing steel armor or wielding a heavy steel weapon or steel shield, and begin covering it with corrosive spittle; then they will devour the rusted and pitted metal that results.\n\nThe left pinky finger of the knight statue has a ring of protection on its last knuckle, which can be slipped off easily. Detect magic or identify magic effects will fail unless they are directly adjacent to the statue, because of the ambient energies emanating from the ink pool itself. The ring is the same color of silver as the statue, so noticing it at all requires an up- close inspection."
+   },
+   "palace-watchrooms": {
+    "title": "Watchrooms",
+    "where": {
+     "site": "seacht-gcaislean-the-palace",
+     "room": "watchrooms"
+    },
+    "who": [],
+    "description": "At the other far end of the caverns are a pair of large square room, where guards could gather and mount defenses. The first room has been converted into a secondary nest for the kobold pack in the southeast wing; if any kobolds escape, they will regroup here. If the kobolds haven't been encountered yet, a random encounter check should be made at the end of each exploration round that the party spends in this room to see if a patrol of 1d6 kobolds stumbles onto the party.\n\nThe further of the two rooms is empty except for an iron ladder in the middle of the room, which leads up to the upper levels of the palace. Bloodrose vines wrap their way around the ladder."
+   },
+   "palace-upper-levels": {
+    "title": "The Upper Levels",
+    "where": {
+     "site": "seacht-gcaislean-the-palace",
+     "room": "upper-levels"
+    },
+    "who": [],
+    "description": "The upper levels of the keep are the palace proper, where the lord of the keep entertains visitors and attends to matters of state. It has suffered extensive damage from the bloodrose infestation; only the western half of the palace is still standing. Entry is only possible through an iron ladder leading up a watchtower along the western wall."
+   },
+   "palace-watchtower": {
+    "title": "Watchtower",
+    "where": {
+     "site": "seacht-gcaislean-the-palace",
+     "room": "watchtower"
+    },
+    "who": [],
+    "description": "The upper level of the watchtower is empty except for the trapdoor leading back down to the lower level, and the bloodrose vines that cover every square inch of the walls.\n\nAn L-shaped hallway leads northeast from the watchtower; at the far end of that hallway is a hard-to-detect stone trapdoor in the floor. This leads to the escape room on the lower levels."
+   },
+   "palace-laboratory": {
+    "title": "Laboratory",
+    "where": {
+     "site": "seacht-gcaislean-the-palace",
+     "room": "laboratory"
+    },
+    "who": [],
+    "description": "The keep's chief alchemist kept a research laboratory here. The books along the walls can be searched to discover up to five arcane spell scrolls; searching takes one exploration round and has a 3-in-6 chance of discovering a scroll if no scrolls have been found yet, a 2-in-6 chance if one or two scrolls have already been found, or a 1-in-6 chance if three or more scrolls have been found. You can determine which spell scrolls are discovered randomly.\n\nThe alchemist's formula book is displayed much more prominently; it contains the alchemical procedures for brewing elixirs of healing, regeneration, antivenin, enhanced Constitution, and enhanced Charisma, as well as love potions, truth serum, sovereign glue, salve of slipperiness, and an experimental uncommon potion which allows two imbibers to share each other's emotions and sensations for 1d6 hours, followed by 1d6 days of each imbiber finding the other utterly repulsive to be around. Next to the formula book are 1d6 charges of each kind of materia, plus 1d6 bottles of each kind of magic ink (roll for each element). There are also high-quality tools and equipment, which make the brewing of any alchemies easier when used in a laboratory.\n\nAcross a small hallway from the laboratory itself is the alchemist's private chambers, including a storeroom and a washroom. Sitting on the alchemist's desk is a wand of fireball with three charges."
+   },
+   "palace-chaplains-bedroom": {
+    "title": "Chaplain's Bedroom",
+    "where": {
+     "site": "seacht-gcaislean-the-palace",
+     "room": "chaplains-bedroom"
+    },
+    "who": [
+     {
+      "creature": "chaplains-haunt",
+      "count": 1
+     }
+    ],
+    "description": "Next along the hallway is the chaplain's bedroom, where the high priest of the palace's chapel slept and meditated. There is a large canopy bed with heavy red velvet curtains, a long stained oak dresser and matching desk- of-drawers and chair.\n\nWhen the party enters the room, they will immediately be attacked by flying furniture and other odds-and-ends. The chaplain of the palace still haunts the room, cursed to lash out in impotent rage at anyone who passes by. The chaplain cannot manifest enough of a body to be harmed by any kind of attack; he can only make ranged attacks with a 13+ attack throw threshold. Thrown odds-and- ends each deal 1d6 blunt damage, while heavy furniture (like the desk or chair) has a harder attack throw but 2d6 blunt damage.\n\nThe speak with dead miracle can be used to calm the chaplain down, in which case he can be interrogated to hear his story about the palace and its curse."
+   },
+   "palace-chapel": {
+    "title": "The Chapel and Sanctuary",
+    "where": {
+     "site": "seacht-gcaislean-the-palace",
+     "room": "chapel"
+    },
+    "who": [
+     {
+      "creature": "palace-bugbear",
+      "count": 3
+     }
+    ],
+    "description": "There is a small alcove between the chapel and the chaplain's chambers, which contains two chairs and a prayer book. Beyond it is the chapel itself, which has been thoroughly desecrated. The devotional altar has been smeared with blood, and a small shrine to Crom Cruach has been set up around the altar. A bonfire between the altar and the pews appears to be used to make burnt offerings of the remains of those sacrificed.\n\nIf the party has been stealthy up until this point, there are three bugbear champions sleeping on the pews. If not, the bugbears should roll Alertness to see if they hear the party coming; prepared bugbears will be laying in wait in the sanctuary, ready to ambush the party when they enter."
+   },
+   "palace-ballroom": {
+    "title": "The Grand Ballroom",
+    "where": {
+     "site": "seacht-gcaislean-the-palace",
+     "room": "ballroom"
+    },
+    "who": [],
+    "description": "This vast ballroom is decorated in silver and crimson tapestries, with seven sturdy oak dining tables, an open floor, and a silver- inlaid grand piano. The room is eerliy quiet, and the party's footsteps echo from the walls as they cross it."
+   },
+   "palace-gardens": {
+    "title": "The Palace Gardens",
+    "where": {
+     "site": "seacht-gcaislean-the-palace",
+     "room": "gardens"
+    },
+    "who": [
+     {
+      "creature": "palace-bloodrose",
+      "count": "d6"
+     }
+    ],
+    "description": "The palace gardens are, of course, completely overgrown with bloodrose vines. Each pace of movement along the path requires a saving throw to avoid being slashed by the thorns; the party might reasonably decide that it would be simpler to just slash or burn their way through. Unfortunately, these bloodroses are being fed directly by unholy energies, and will regrow within one combat round of being burned or slashed. This same energy makes the plants vulnerable to the rebuke the unholy miracle, which inflicts 1d6 structure damage to each plant within 10 paces, and prevents those plants from regenerating when further damage is inflicted on them."
+   },
+   "palace-great-hall": {
+    "title": "The Great Hall",
+    "where": {
+     "site": "seacht-gcaislean-the-palace",
+     "room": "great-hall"
+    },
+    "who": [
+     {
+      "creature": "an-deichlamhach",
+      "count": 1
+     }
+    ],
+    "description": "This large dining room features a decor that seems almost jarringly out-of-place for the rest of the palace, full of rugged oak beams and stuffed trophies like a rustic hunting lodge. There is a large U-shaped wooden table that fills most of the room, with seats for 19 guests.\n\nSuspended from the rafters is a small gnomish girl, tied up by her own hair. Surrounding her are nine redcap goblins, each stabbing at her lightly with spears.\n\nIf the party attempts to intervene, the first attack that successfully hits a goblin will pierce the glamour, revealing all nine goblins and the gnome to be an illusion. In their place will be a large octopus-like creature, which immediately squirts a jet of pure darkness that fills a 5-pace diameter sphere, then vanishes.\n\nOnce the Cleasaí has been encountered, it will continue to \"stalk\" and harass the party for sport, reading their thoughts and using the information gleaned to choose new illusions to fool them. The Cleasaí is intelligent and has a wicked sense of humor; you should use this opportunity to play whatever head-games you can think of, within the boundaries of what your players will consider \"good sport\"."
+   },
+   "palace-washroom": {
+    "title": "Washroom",
+    "where": {
+     "site": "seacht-gcaislean-the-palace",
+     "room": "washroom"
+    },
+    "who": [],
+    "description": "Behind the great hall is a washroom, with a similar rustic decor. There are bars of soap, towels, and running water; if the Cleasaí enters this room, it will most likely disguise itself as a pile of bath towels."
+   },
+   "palace-upper-lounge": {
+    "title": "Lounge",
+    "where": {
+     "site": "seacht-gcaislean-the-palace",
+     "room": "lounge-upper"
+    },
+    "who": [
+     {
+      "creature": "palace-bugbear-outcast",
+      "count": 1
+     }
+    ],
+    "description": "The room directly south of the great hall was a lounge, but all of the furniture has been smashed by a large, enraged bugbear. When the party opens the door, the bugbear will yell \"STOP MAKING FUN OF ME\\!\" and charge the party, swinging. It will intersperse its attacks with \"IT'S NOT FUNNY ANYMORE, CLEASAÍ\\!\" and \"I WANT TO GO HOME\\!\"\n\n(The bugbear has spent the past few nights being harassed non-stop by the Cleasaí, and can't get a moment's rest. Everything it has tried to eat, drink, sit on, or wield as a weapon has turned out to be the Cleasaí in disguise, and the bugbear is now absolutely paranoid and completely obsessed with finding and killing its tormenter. Nothing the party does or says will convince the bugbear that they aren't just another illusion created by the mimic to mess with its tiny mind. This bugbear used to be part of the small tribe that inhabits the chapel, but the Cleasaí has so thoroughly bullied it that it is convinced that its once-friends are also actually the Cleasaí in disguise, so they kicked him out and abandoned him to wander the halls alone.)"
+   },
+   "palace-drawing-room": {
+    "title": "Drawing Room",
+    "where": {
+     "site": "seacht-gcaislean-the-palace",
+     "room": "drawing-room"
+    },
+    "who": [
+     {
+      "creature": "aine",
+      "count": 1
+     }
+    ],
+    "description": "The next room is empty except for a large woven rug, chairs and tapestries along the walls, and an immense sleeping wolf laying in the middle of the rug, with an iron collar locked around its neck. The party must each pass a Stealth check to sneak past the wolf, or it will wake up and attack."
+   },
+   "palace-cathbads-chambers": {
+    "title": "Cathbad's Chambers",
+    "where": {
+     "site": "seacht-gcaislean-the-palace",
+     "room": "cathbads-chambers"
+    },
+    "who": [
+     {
+      "creature": "cathbad",
+      "count": 1
+     },
+     {
+      "creature": "palace-bugbear",
+      "count": 2
+     }
+    ],
+    "description": "The next room has been claimed by Cathbad. It is a reasonably well-kept bedchamber, and gives all the appearances of \"civilized\" living. Cathbad is usually here, studying translations of ancient manuscripts or trying to find a way to unlock the secrets of the ruby-bladed sword that was found in Aine's possession. If he can, he will present himself as a kindly old priest, who is trying to find a way to break the \"curse\" that has turned Aine into a wolf.\n\nCathbad will usually be accompanied by two bugbear guards, which come from the same \"tribe\" as the three goblins from the chapel and the poor wretch from the lounge. He will switch up which two goblins are serving as his lackeys from week to week, letting the others \"take a break and blow off steam\"."
+   },
+   "palace-bath": {
+    "title": "The Palace Bath",
+    "where": {
+     "site": "seacht-gcaislean-the-palace",
+     "room": "palace-bath"
+    },
+    "who": [],
+    "description": "This ornate bathroom has a faucet that can supply hot and cold running water. It has also been enchanted with healing magic; if filled with hot water from the faucet, anyone who soaks in the tub rolls and regains one hit die worth of hit points per exploration round."
+   },
+   "palace-hearthroom": {
+    "title": "Hearthroom",
+    "where": {
+     "site": "seacht-gcaislean-the-palace",
+     "room": "hearthroom"
+    },
+    "who": [],
+    "description": "This is a private chamber for the lord or lady of the palace to entertain guests or discuss matters of state; it holds three tables with chairs and a wide, warm fireplace."
+   },
+   "palace-bedroom": {
+    "title": "Palace Bedroom",
+    "where": {
+     "site": "seacht-gcaislean-the-palace",
+     "room": "palace-bedroom"
+    },
+    "who": [],
+    "description": "This was the palacial bedroom for the lord or lady of the palace; its last occupant was Dame Kyteler. The room is quite well-decorated, and contains various books of lore about the Isle of Mists and druidic practices, annotated by her and Lady d'Meath. Anyone following these notes will not initiate as a druid, but instead become Nature-domain warlocks."
+   },
+   "palace-throne-hallway": {
+    "title": "Hallway to the Throneroom",
+    "where": {
+     "site": "seacht-gcaislean-the-palace",
+     "room": "throne-hallway"
+    },
+    "who": [
+     {
+      "creature": "palace-bloodrose",
+      "count": "d6"
+     }
+    ],
+    "description": "The hallway to the throneroom is completely overgrown with bloodrose vines, which are animated. They writhe and lash, seeking to grab and drain the blood from anything alive. When anyone first turns the corner, the vines will immediately fill the north-south corridor of the hallway for 5 paces, forcing everyone in that space to save vs. Blast or suffer 2d6 piercing damage and be grappled and restrained.\n\nLuckily, their motion casts strange moving shadows across the wall before the hallway bends, allowing the party time to prepare themselves. If the party is prepared before turning the corner, their saves become easy, and those who fail their save vs. Blast get a second save vs. Hold to avoid being grappled by the vines."
+   },
+   "palace-aleroom": {
+    "title": "Aleroom",
+    "where": {
+     "site": "seacht-gcaislean-the-palace",
+     "room": "aleroom"
+    },
+    "who": [],
+    "description": "At the end of the hallway, past the grand entrance to the throneroom, is a small aleroom where guards were stationed and where visitors could wait for an audience with the lord of the keep. It is nearly impossible to enter, as the thorns from the throneroom choke out the hallway."
+   },
+   "palace-throneroom": {
+    "title": "Throneroom",
+    "where": {
+     "site": "seacht-gcaislean-the-palace",
+     "room": "throneroom"
+    },
+    "who": [
+     {
+      "creature": "alice-kyteler",
+      "count": 1
+     }
+    ],
+    "description": "The scene in the throneroom is beautiful and horrifying all at once.\n\nSuspended above the throne is the body of Dame Alice Kyteler, her ribcage torn open and the Croidhe mo Mhaistir sitting in her chest where her heart should be. The gem emits a brilliant red light that pulses with what would be her heartbeat, if only she still had a heart.\n\nInstead of veins, thorny rosevines snake around the gem and pierce her flesh, before winding around her limbs and spreading out across the throneroom. The roses here are in full bloom, and emit a heady and soporific fragrance that dulls the senses; everyone but Dame Kyteler finds all their rolls harder while in the throneroom. She is wearing a gold locket around her neck; if someone in the party is wearing the corresponding silver locket from the spa room, that character will find that they are also immune to the roses' stupor. However, while in Dame Kyteler's presence, they automatically obey any order that she gives without question."
+   },
+   "timeline-of-disaster": {
+    "title": "Timeline of Disaster",
+    "where": {
+     "site": "seacht-gcaislean-the-palace"
+    },
+    "who": [],
+    "description": "If the party finds Dame Kyteler's diary, they can read this entire timeline in her own words; otherwise, this chapter serves as background notes for the referee.\n\nDame Kyteler and Lady Petronella d'Meath self-initiated into an eclectic form of worship that they believe to be \"authentic druidism\", but has been corrupted by various infernal notions into something more akin to warlock priesthood. They used blood sacrifice and various ancient Pictish rites to call on an ancient power, the great wyrm Lig na Péiste, and convince it that they were part of an ancient pagan bloodline ready to reclaim the Isle and banish the Albions and their Church.\n\nLig na Péiste arrived at roughly the same time that the plague struck the county, in the guise of a silver knight riding on a silver dragon, and gifted Dame Kyteler the ancient artifact called Croidhe mo Mhaistir. In the following days, Dame Kyteler discovered that the silver knight was actually a disguise, and that Lig na Péiste was in fact the dragon itself, although he could take the form of the knight for the sake of diplomacy or romance.\n\nShe slowly fell in love with the knight's mortal guise, who she introduced to subjects as \"Sir Robin Artisson\"; many of the diary's entries describe lurid trysts between herself, the Lady d'Meath, and the \"brave, brave Sir Robin\". The diary also describes Lady Petronella weaving a \"bond of life\" between the two of them and the land itself, restoring both of their youth and beauty, and tying their health and vitality to that of the county for as long as they laid claim to rule over it.\n\nIn the following months, Dame Kyteler tried in vain to master the artifact's magic. Her experiments first cursed the Misty Moor, then the Stormpeaks, before she finally learned to focus its power through blood and pain. She wove a glamour into the entire span of the county, which allowed her to exert her will through every living plant whose roots grew from the county's soil.\n\nThe diary ends here, but what happened next was depressingly predictable: the bloodroses grew beyond her ability to control them, and merged with her and the artifact to create the fey abomination that now inhabits the throne room of the palace.\n\nThe tone and contents of Dame Kyteler's diary paint a portrait of victims more than a villains; two women in far over their heads, reaching for powers far beyond their understanding in a time of genuine need and harship, before being tragically overwhelmed and corrupted by those same powers."
+   },
+   "referee-note": {
+    "title": "A Quick Note to the Referee",
+    "where": {
+     "site": "seacht-gcaislean-the-palace"
+    },
+    "who": [],
+    "description": "All of the following information should be revealed as the party researches the situation. Everything here is presented for backstory; what happens once the party arrives is entirely up to them. There is no default expected \"happy ending\" to this tale; if the players manage to resolve the situation, they might do so in a way that makes friends or enemies, and the palace might become a new base of operation for them or be left a smoking ruin in their wake.\n\nTry not to \"railroad\" the players into a particular outcome. The characters and locales placed here can provide a good basis for an ongoing campaign, if you can make them come alive in the players' minds. Even if the players manage to defeat or rescue Dame Kyteler, befriend or banish the Silver Knight, and restore order to the surrounding countryside, there will still be plenty of work to do for a proper band of intrepid heroes."
+   },
+   "kytelers-story": {
+    "title": "Dame Alice Kyteler's Story",
+    "where": {
+     "site": "seacht-gcaislean-the-palace"
+    },
+    "who": [],
+    "description": "Dame Alice Kyteler and her friend, the Lady Petronella d'Meath, hatched a plan to defend the county between the Barrow and Nore rivers from the chaos of the Great Plague.\n\nThey used ancient druidic magic to summon a creature of myth and legend - the great wyrm Lig na Péiste - and then asked it to grant them the power to rule, a request which it was bound by oath to fulfill. Unfortunately, that oath was to a fey bloodline descended from one of the great Tuatha de Danaan; through no fault of their own, neither of them exactly fit the bill."
+   },
+   "dmeaths-story": {
+    "title": "Lady Petronella d'Meath's Story",
+    "where": {
+     "site": "cill-chainnigh-lady-d-meath"
+    },
+    "who": [],
+    "description": "The resulting chaos left Dame Kyteler trapped within the tangled thorns of the bloodrose vines she summoned, while d'Meath went on to rule the county from Cill-Chainigh. Dame Kyteler feels that she has been betrayed, and is constantly sending goblin raiding parties to capture or kill d'Meath, but thus far d'Meath's own beastfolk guards have managed to protect her - and the attacks let d'Meath claim that she is a necessary and just ruler who is merely trying to \"keep the peace\" under constant goblin invasion."
+   },
+   "rowenas-story": {
+    "title": "Rowena's Story",
+    "where": {
+     "site": "seacht-gcaislean-the-palace"
+    },
+    "who": [],
+    "description": "Rowena remembers when the plague first began to strike the region. The peasants were affected first, followed quickly by the keep's lord and guards. Dame Kyteler and her associate, the Lady Petronella d'Meath, brought in a \"champion\" who they claimed could help protect the survivors from the plague.\n\nThis champion was the Silver Knight, an elven noble named Robin Artson. He arrived riding a silver dragon, and declared that Dame Kyteler was now the Princess in Silver and Crimson, who would restore the ancient pagan pacts between mortals and the fair folk that had been sundered when the Chuch came to the Misty Isles. As a token of his love and loyalty, he offered her Croidhe mo Mhaistir, an unfathomably powerful dragon pearl of pure crimson ruby.\n\nThe Silver Knight began tutoring Dame Kyteler in the most powerful magics of Faerie and Dragonkind, teaching her to ward the land against the creeping tendrils of Shadow that followed the plague. Victims of the disease sometimes even survived, and those who died were offered up in sacrificial bonfires to the pagan fey who protected the land.\n\nFor a time, all was well. Rowena became Dame Kyteler's bard, entertaining her and the Silver Knight each evening for many years. She barely noticed at first that she had stopped aging. As children began to be born with the telltell signs of the fey, the locals began to wonder what kind of bargain they had struck; but even a few odd-shaped ears and tails here and there weren't enough to worry them.\n\nOnly after the victims of the plague began rising as mindless undead, did the Dame Kyteler and her coven begin to worry that they didn't have the power to stop the epidemic. Burned skeletons rose up with fierce red flames in their eyes, and those who had not yet been offered up to the fire rose as shamblers so quickly that their loved ones scarcely noticed they had succumbed.\n\nDame Kyteler was desperate. Though her Knight begged her not to, she reached deep into Faerie for a glamour that could fight the rising tide, and Faerie answered. Blood-red thorny bushes sprouted from every patch of bare earth, covering every inch of farmland and field with choking vines and fragrant rosebuds. Elves in the Silver Knight's entourage appeared and ferried Rowena deeper into Faerie, and she never set foot back into the Material."
+   },
+   "sisters-story": {
+    "title": "Aine and Mairead's Story",
+    "where": {
+     "site": "seacht-gcaislean-the-palace"
+    },
+    "who": [],
+    "description": "Aine doesn't remember much about her childhood; she only remembers fleeing her village when it was overrun by plague- shamblers, with her baby brother and sister in her arms, and a glowing red sword at her hip. Some kind of fey curse overtook them, and transformed them all into enormous white wolves; it was only the kindness of Cathbad that saved them, when he took them in and began trying to undo the curse.\n\nIn truth, Cathbad has been manipulating Aine the whole time, using her as his bodyguard and enforcer while telling her that he is looking for a cure to her \"condition\". She and her brother and sister are all wolf puccas, and are perfectly capable of learning how to control their shapeshifting abilities; Cathbad uses various beguiling curses to convince them that they become violent, bloodthirsty beasts while transformed, and only their iron collars keep them safe.\n\nCathbad recently decided that Aine's bonds to her brother and sister were interfering with his influence over her, so he sold them to the tribe of redcaps that infest the lower levels of the palace, while telling Aine that they are there to 'train' alongside the goblins; Aine only believes this because she believes the redcaps to be the children of the bugbears that accompanied her and Cathbad into the palace. When she finds out that the redcaps have eaten her little brother, she will likely go on a bloody rampage, tearing Cathbad, the bugbears, and all the redcaps to shreds in her rage and grief.\n\nAine was the \"maiden fair\" that the Silver Knight was originally looking for when he came to Kilkenny, but Dame Kyteler used fey glamour to trick him into thinking she was his fated queen instead. Once he understands the deception, the devastation wrought by Dame Kyteler's magics will finally make sense to him, and his vengeance will be swift and brutal.\n\nAine is, at this point, not psychologically suited for the kind of responsibilities that ruling Kilkenny would entail. An Intuition check (which will be easy for a Priest, or normal difficulty for anyone else) will uncover this if the party chooses to engage with Aine at length about what she's endured and how she feels about all the hardships she's endured. Her little sister will be a much better candidate once she comes of age; Aine would be much happier acting as her sister's protector than trying to rule an entire county herself."
+   },
+   "silver-knights-story": {
+    "title": "The Silver Knight's Story",
+    "where": {
+     "site": "seacht-gcaislean-the-palace"
+    },
+    "who": [],
+    "description": "The Silver Knight is Lig na Péiste, an ancient celestial dragon, who has tried from time to time to tame the Misty Isle's wild fey energies. So far, he has failed at each attempt.\n\nHe has a fey pact with a fair folk Numen that has protected the isle for millenia; part of the terms of this pact require that he work his efforts alongside her direct female descendants. When Dame Alice Kyteler summoned him, she convinced him that she was one of those descendents, calling on him to fulfill his ancient oath; all of the chaos that has ensued since is the direct result of that deception.\n\nThe Silver Knight is not a particularly Good or Bad being, from the Church's perspective; he is much more a primal force of nature, like all of the fey influences within the Isle of Mists. It was he who originally forged Croidhe mo Mhaistir, and the twin blades named Claíomh Solais; when used in tandem, the blades can open a portal to his home nest within the Elemental Chaos, where they (and his own dragon pearl) were first forged.\n\nLig na Péiste normally inhabits the far northern shores of the Isle of Mists; before being summoned by Dame Kyteler, he had not been this far south in ten thousand years. As such, he is quite unfamiliar with local geography and customs. If the Croidhe mo Mhaistir is somehow destroyed, Lig na Péiste will be banished back to the northern lake he once called home. Otherwise, he might become an ally or an adversary, based on the party's goals and how they act towards him."
+   },
+   "chaplains-story": {
+    "title": "The Chaplain's Story",
+    "where": {
+     "site": "seacht-gcaislean-the-palace"
+    },
+    "who": [],
+    "description": "The chaplain of the palace was worried for the souls of Dame Alice and Lady Petronella; he was murdered for his troubles by his pupil Cathbad, who burned him alive in a sacrificial rite to Crom Cruach that summoned the goblin army from faerie that Dame Alice and Lady d'Meath now struggle to command.\n\nSince his murder, he has been forced to watch from Shadow as Cathbad counciled Dame Kyteler into using the Croidhe mo Mhaistir in more and more inadvisable ways, culminating in her transformation into the monstrosity in the throne room. He watched as Cathbad counciled Petronella d'Meath to flee the palace and take up residence in Cill-Chainnigh, and to send any \"troublemakers\" to the palace for him to deal with. He watched as Cathbad picked from among those sent to the castle by Lady d'Meath, selling those that failed to interest him to the redcaps and keeping those who showed any potential of being genuine heirs to the Croidhe mo Mhaistir's power. And he watched as Cathbad tricked and enslaved Aine and her siblings, then sold her brother and sister to the redcaps when her love for them threatened his control over her.\n\nThe chaplain has a lot to be angry about."
+   },
+   "claiomh-solais": {
+    "title": "Claíomh Solais, the Ruby Blade",
+    "where": {
+     "site": "seacht-gcaislean-the-palace"
+    },
+    "who": [],
+    "description": "Aine barely remembers anything of her early childhood before becoming a wolf pucca, but she remembers that her mother gave her a thin, elegantly crafted fey longsword with a blade seeminly carved from a single bright crimson ruby. The blade is a legendary primal aetheric blade, and is a \"matched pair\" with the silver blade from the bathhouse - which is confusingly also called \"Claíomh Solais\" in manuscripts. Unlike most aetheric blades, this weapon can cut a path directly into the elemental chaos - but only when slicing open a rift into faerie already made by its silver \"brother\". If both blades are used in this fashion, one after the other, the portal opens to a basalt altar in the middle of a sea of lava, with an anvil atop the altar which can be used by 9th-level magic-users to craft legendary magic items after sufficient study. (Learning how to do this is certainly going to be an adventure all of its own; it's best if this is kept as a \"story hook\" for future adventures, once the party is experienced enough to start experimenting.)\n\nStudying Cathbad's notes will reveal that the blade is actually a legendary primal artifact called Claíomh Solais, and it was crafted as part of a set from a single, vast crystal of \"dragon pearl\" along with Croidhe mo Mhaistir. As such, both artifacts remain \"in resonance\" with each other, and glamours, spells or miracles that target one will also affect the other.\n\nCathbad wants to use this resonance to gain control of Dame Kyteler, and therefore the bloodrose infestation - and then use that power to wrest control of the region from Lady d'Meath. Unfortunately, the sword's powers only work for the direct matrilineal descendents of an ancient druidess; Aine and Mairead happen to be her last great-great-great-great-great- (great?)-granddaughters. If Aine or Mairead can be convinced to help the party, they might allow any of the party's magic- users to channel and amplify their magics through the sword while they wield it, quickly solving everyone's problems.\n\nAccording to Cathbad's notes, the white blade also has a corresponding \"heart\", which currently serves as a genuine \"dragon pearl\" set into the forehead of the celestial dragon that taught Dame Kyteler how to use the ruby. The notes also indicate that the \"Silver Knight\" was actually an illusion or polymorph-form of the dragon itself, who was Dame Kyteler's actual lover. The notes further speculate that the failure of the ruby's magic was due to Dame Kyteler not actually being of the proper bloodline to control the ruby, and that either Aine or Mairead might be able to wrest control and repair the damage wrought by Kyteler's miscast glamours. This would only be possible, he muses, by a properly-trained druid; his diary suggests that he plans to go below and buy Mairead off of the redcaps tomorrow, as he deems Aine too old and \"set in her ways\" to begin proper druidic initiation."
+   },
+   "solutions": {
+    "title": "Solutions",
+    "where": {
+     "site": "seacht-gcaislean-the-palace"
+    },
+    "who": [],
+    "description": "There are several ways that the party could undo Dame Kyteler's curse.\n\nThe most straightforward approach won't work; trying to cut or burn the thorns out of Dame Kyteler's heart, or trying to destroy her body or the roses, will simply reduce them to ash, after which they will regenerate as if the reincarnation primal ritual was performed. The Croidhe mo Mhaistir will ensure that the new body is still that of Dame Kyteler, but each time she regenerates she becomes less and less human, and more and more a thing of twisting thorns and vines.\n\nDestroying the Croidhe mo Mhaistir If the Croidhe mo Mhaistir is pierced by both blades, it will shatter, and the resonance will also destroy the red Claíomh Solais. This will free Lig na Péiste completely from his oath, which will also cut him off from any further ability to enter or affect the material plane - in effect, he will be banished into the Faerie echoes of a small lake along the isle's northern shores, where he will strive in vain to escape his prison until the end of time.\n\nAttuning to an Heir The Croidhe mo Mhaistir could instead be de- attuned from Dame Kyteler, and attuned to either Aine or Mairead. Properly attuning the gem requires that the druidess cut her hand with the red Claíomh Solais, then place her bloody palm on the surface of the stone.\n\nDame Kyteler will fight to the death to stop this process, because a successful atunement will cause her and all the bloodroses to immediately wither to dust. If Aine succeeds at this, the Silver Knight will appear and pledge his service to her, declare that she is the ruler of the land, and ask for her bidding.\n\nIf Mairead attunes to the stone instead, the Silver Knight will recognize that she is a child, and will offer to act as her steward and tutor until such time as she feels she is prepared to rule. As steward, Lig na Péiste is surprisingly sensible and fair, and is willing to discuss the notion of becoming a guardian Numen with the party's priest if the matter is broached respectfully.\n\nRescuing Dame Kyteler It might be possible to attune to the stone without killing Dame Kyteler, if the Silver Knight can be convinced that she deserves to be saved. Dame Kyteler herself must also be convinced to willingly give up the stone to Aine or Mairead, and genuinely atone for the harm she has wrought on the county.\n\nIf guided to atonement by a priest before she gives up the gem, she might be able to use its last vestiges of power to repair the damage the bloodroses have done to her body. She will be in critical condition and will require months of bedrest, but she will survive. Such a feat should not be handled lightly; genuine atonement for the desecration of miles of land and the deaths of thousands of mortals is no easy feat. An atoned Dame Kyteler might choose to become a nun in the chapel, or might leave the Isle of Mists altogether."
+   },
+   "restoring-the-county": {
+    "title": "Restoring the County",
+    "where": {
+     "site": "seacht-gcaislean-the-palace"
+    },
+    "who": [],
+    "description": "Once the curse has been lifted, the county will still show signs of supernatural scarring. The mortal inhabitants will still continue to give birth to beastfolk children far more often than normal, and the landscape will continue to be a dreamlike blend of Faerie and the Material.\n\nUsurping the Lady Petronella d'Meath will be easy, if the Croidhe mo Mhaistir and Lig na Péiste remain in the couty. If the party solves the problem by shattering the gem, she will be handled by local authorities - most likely inquisitors sent from the Church via Albion, who will try and convict her for witchcraft and heresy as soon as a new lord takes control of the keep. As harsh as this is, it is much kinder than what the Silver Knight would have in store for her, if his wrath goes un- tempered by Mairead's counsel."
+   },
+   "now-what": {
+    "title": "Now What?",
+    "where": {
+     "site": "seacht-gcaislean-the-palace"
+    },
+    "who": [],
+    "description": "From here, the party might choose to use Kilkenny County as their base of operations, or they might return to the Pale Keep; they might also be offered a chance to join the Albion-Francia war on the Europa mainland, if the crown receives word of their deeds and they have made a sufficiently heroic showing.\n\nAs vassals of Contessa Aine or Contessa Mairead, the party might spend their time clearing out the Stormpeaks, the Misty Moor, and the Feywoods of any lingering dangers; once the wilds have been tamed, they will find Kilkenny to be a sensible little county.\n\nThe Croidhe mo Mhaistir is an absurdly powerful artifact, but also wild and untamed. Even in the hands of a proper heir, its magic will often cause as much trouble as it solves.\n\nIf Aine is contessa of Kilkenny, she will never let on that there is a problem; instead, she will simply become more and more frustrated by her inability to control the artifact's power, until a new disaster strikes. Talking her down from this will be a difficult balancing act for even the most level-headed party of advisors; eventually, only her sister will be able to truly talk sense into her. (This will eventually lead to Aine abdicating her title, and ordering her sister Mairead to rule in her stead.\n\nMairead will prove to be a much smarter and more capable ruler, who will take a good deal of interest in the well-being of her people, and especially in using technology to improve it. She will pay large sums from the treasury to entice human and dwarven engineers from Albion and Aeterna into her court, and will eagerly try all sorts of schemes to harness the gem's power for good.\n\nUltimately, the safest use for the gem will turn out to be the tried-and-true military solution: as a legendary dragon pearl, the gem is quite well-suited for powering a golem armor the likes of which have not been seen since the fall of the Old Empire, or possibly even the days of Azlanteos. With a functioning golem armor to protect her county, Mairead will declare her land free from the Albion crown, and be free to govern it as she sees fit."
    }
   }
  }
