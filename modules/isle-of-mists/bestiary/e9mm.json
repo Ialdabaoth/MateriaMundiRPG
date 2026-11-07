@@ -680,6 +680,198 @@
     "origin": "human",
     "classId": "fighter"
    }
+  },
+  "peistduine-bone-mother": {
+   "from": "blank",
+   "replace": {
+    "level": 3,
+    "size": "Small",
+    "movement": "Normal",
+    "armor": "2 / 1",
+    "hp": "3d6÷2",
+    "abilities": {
+     "con": 0,
+     "str": 0,
+     "dex": 1,
+     "int": 0,
+     "wis": 1,
+     "cha": 0
+    },
+    "attacks": [
+     "Quarterstaff (2d6 blunt)"
+    ],
+    "talents": [
+     "science",
+     "lore",
+     "medicine",
+     "intuition",
+     "survival",
+     "wit"
+    ],
+    "talentThreshold": 4,
+    "special": [
+     "Talismans (2 first, 1 second circle): Cleansing Waters, Fey Luck; Misty Step.",
+     "Carries an uncommon bag of holding full of severed heads."
+    ],
+    "origin": "kobold",
+    "classId": "druid"
+   }
+  },
+  "peistduine-hunter": {
+   "from": "blank",
+   "replace": {
+    "level": 1,
+    "size": "Small",
+    "movement": "Normal",
+    "armor": "0",
+    "hp": "3",
+    "abilities": {
+     "con": 0,
+     "str": 1,
+     "dex": 1,
+     "int": -1,
+     "wis": 0,
+     "cha": 0
+    },
+    "attacks": [
+     "Shortbow (d6+1 piercing, range 10)"
+    ],
+    "talents": [
+     "agility",
+     "stealth",
+     "alertness",
+     "survival"
+    ],
+    "talentThreshold": 4,
+    "special": [
+     "Hunter's Expertise; Sneak Attack."
+    ],
+    "origin": "kobold",
+    "classId": "expert"
+   }
+  },
+  "peistduine-champion": {
+   "from": "blank",
+   "replace": {
+    "level": 1,
+    "size": "Small",
+    "movement": "Normal",
+    "armor": "0",
+    "hp": "4",
+    "abilities": {
+     "con": 0,
+     "str": 1,
+     "dex": 1,
+     "int": -1,
+     "wis": 0,
+     "cha": 0
+    },
+    "attacks": [
+     "Javelin (2d6, or d6 thrown, range 5)"
+    ],
+    "talents": [
+     "stealth"
+    ],
+    "talentThreshold": 5,
+    "special": [
+     "Improved Critical Hit."
+    ],
+    "origin": "kobold",
+    "classId": "fighter"
+   }
+  },
+  "peistduine-young": {
+   "from": "blank",
+   "replace": {
+    "level": 0,
+    "size": "Small",
+    "movement": "Normal",
+    "armor": "0",
+    "hp": "1",
+    "abilities": {
+     "con": 0,
+     "str": -1,
+     "dex": 1,
+     "int": -1,
+     "wis": 0,
+     "cha": 0
+    },
+    "attacks": [],
+    "talents": [
+     "stealth"
+    ],
+    "talentThreshold": 5,
+    "special": [
+     "Non-combatant: flees or hides."
+    ],
+    "origin": "kobold"
+   }
+  },
+  "ettercap-champion": {
+   "from": "blank",
+   "replace": {
+    "level": 3,
+    "size": "Medium",
+    "movement": "Climb",
+    "armor": "1 / 0",
+    "hp": "3d6+9",
+    "abilities": {
+     "con": 1,
+     "str": 1,
+     "dex": 0,
+     "int": -1,
+     "wis": 0,
+     "cha": 0
+    },
+    "attacks": [
+     "Two poisoned daggers (2d6 piercing + d6 ongoing poison)"
+    ],
+    "talents": [
+     "agility",
+     "stealth",
+     "survival"
+    ],
+    "talentThreshold": 5,
+    "special": [
+     "Improved Critical Hit.",
+     "Battle-Trance with the Serpent initiation: in frenzy can sneak and hide, sneak attack while hidden, and charge from hiding."
+    ],
+    "origin": "ettercap",
+    "classId": "fighter"
+   }
+  },
+  "ettercap-hunter": {
+   "from": "blank",
+   "replace": {
+    "level": 2,
+    "size": "Medium",
+    "movement": "Climb",
+    "armor": "1 / 0",
+    "hp": "3d6+6",
+    "abilities": {
+     "con": 1,
+     "str": 1,
+     "dex": 0,
+     "int": -1,
+     "wis": 0,
+     "cha": 0
+    },
+    "attacks": [
+     "Two poisoned daggers (2d6 piercing + d6 ongoing poison)"
+    ],
+    "talents": [
+     "agility",
+     "stealth",
+     "alertness",
+     "survival"
+    ],
+    "talentThreshold": 5,
+    "special": [
+     "Hunter's Expertise; Sneak Attack."
+    ],
+    "origin": "ettercap",
+    "classId": "expert"
+   }
   }
  }
 }

@@ -712,9 +712,11 @@
     ],
     "talentThreshold": 4,
     "special": [
-     "Magic: water ①, fey ①.",
+     "Talismans (2 first, 1 second circle): Cleansing Waters, Fey Luck; Misty Step.",
      "Carries an uncommon bag of holding full of severed heads."
-    ]
+    ],
+    "origin": "kobold",
+    "classId": "druid"
    }
   },
   "peistduine-hunter": {
@@ -744,8 +746,10 @@
     ],
     "talentThreshold": 4,
     "special": [
-     "Feats: Slay Quarry, Evasion."
-    ]
+     "Hunter's Expertise; Sneak Attack."
+    ],
+    "origin": "kobold",
+    "classId": "hunter"
    }
   },
   "peistduine-champion": {
@@ -772,8 +776,10 @@
     ],
     "talentThreshold": 5,
     "special": [
-     "Feats: Snake Frenzy ×1, Evasion."
-    ]
+     "Improved Critical Hit."
+    ],
+    "origin": "kobold",
+    "classId": "champion"
    }
   },
   "peistduine-young": {
@@ -799,7 +805,8 @@
     "talentThreshold": 5,
     "special": [
      "Non-combatant: flees or hides."
-    ]
+    ],
+    "origin": "kobold"
    }
   },
   "ettercap-champion": {
@@ -828,8 +835,11 @@
     ],
     "talentThreshold": 5,
     "special": [
-     "Feats: Snake Frenzy ×2, Evasion."
-    ]
+     "Improved Critical Hit.",
+     "Battle-Trance with the Serpent initiation: in frenzy can sneak and hide, sneak attack while hidden, and charge from hiding."
+    ],
+    "origin": "ettercap",
+    "classId": "champion"
    }
   },
   "ettercap-hunter": {
@@ -859,8 +869,10 @@
     ],
     "talentThreshold": 5,
     "special": [
-     "Feats: Slay Quarry, Evasion."
-    ]
+     "Hunter's Expertise; Sneak Attack."
+    ],
+    "origin": "ettercap",
+    "classId": "hunter"
    }
   },
   "faoladh-chieftain": {
