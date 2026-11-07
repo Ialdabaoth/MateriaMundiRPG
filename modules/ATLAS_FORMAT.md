@@ -129,7 +129,7 @@ Sections appear in this order: base terrain, then rivers and roads, then region 
 {
   "format": "e9-atlas/1",
   "id": "isle-of-mists",
-  "title": "Beyond the Pale: Leinster, 1422",
+  "title": "Beyond the Pale: The Isle of Mists, 1422",
   "names": {"An Life": {"en": "Liffey"}},
   "origin": {"projection": "dymaxion", "centroid": {"name": "Uisneach", "lat": 53.489, "lon": -7.561}, "x_ft": 0, "y_ft": 0},
   "labels": {"march": [-7, -7], "league": [-55, -49]},

@@ -2,6 +2,10 @@
 
 The module's own version (WORKFLOWS.md). Tool and app changes never bump it.
 
+## 0.2.2 (2026-11-07)
+
+- `languages` in module.json: Deutsch (the names as drawn), Polski and English, for the Language box (Atlas 0.5.3). The `names` table that translates them is still empty, so switching changes nothing yet.
+
 ## 0.2.1 (2026-11-07)
 
 - Credits: `credits` in module.json lists the data sources the map uses (ESA WorldCover, SRTM, Natural Earth). The Atlas and the module viewer show them.

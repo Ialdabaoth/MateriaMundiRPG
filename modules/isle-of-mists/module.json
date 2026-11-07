@@ -3,10 +3,11 @@
  "moved_from": [
   "season-1"
  ],
- "title": "Beyond the Pale: Leinster, 1422",
- "short": "Beyond the Pale · Leinster, 1422",
- "version": "0.4.9",
+ "title": "Beyond the Pale: The Isle of Mists, 1422",
+ "short": "Beyond the Pale · The Isle of Mists, 1422",
+ "version": "0.4.10",
  "license": "CC0-1.0",
+ "languages": {"ga": "Gaeilge", "en": "English"},
  "credits": [
   {
    "what": "Land cover",
