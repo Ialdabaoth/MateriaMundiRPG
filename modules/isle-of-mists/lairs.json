@@ -1222,7 +1222,7 @@
       "count": 1
      }
     ],
-    "description": "The Blacktooth chieftain’s lair is at ⑯; she always has a redcap hunter guard posted at (g) who actually takes their watch seriously. The room the guard is posted in also serves as the larder for the tribe; among the typical goblin offal is an actually high-quality cask of wine worth 55 drac.",
+    "description": "The Bloodhand chieftain’s lair is at ⑯; she always has a redcap hunter guard posted at (g) who actually takes their watch seriously. The room the guard is posted in also serves as the larder for the tribe; among the typical goblin offal is an actually high-quality cask of wine worth 55 drac.",
     "treasure": "Among the offal, a cask of genuinely good wine worth 55 drac.",
     "map": {
      "map": "crom-caves-b-c",
@@ -1246,7 +1246,7 @@
      "map": "crom-caves-b-c",
      "area": "c-chief-16"
     },
-    "description": "The Blacktooth chieftain’s lair is at ⑯; she always has a redcap hunter guard posted at (g) who actually takes their watch seriously. The room the guard is posted in also serves as the larder for the tribe; among the typical goblin offal is an actually high-quality cask of wine worth 55 drac.\n\nThe chieftain is a 3hd goblin redcap champion who wields a handaxe enchanted as a common (+1) flying blade, as well as a light steel shield. She is wearing banded armor originally intended for a dwarf, which is in slight need of repair. She is also adorned with various bits of expensive dwarven jewelry – a silver and gold belt worth 160 drac, an ivory bracelet worth 100 drac, and a gold and garnet signet ring worth 100 drac.\n\nThe room is well furnished with finely crafted dwarven furniture in slight disrepair, and contains a locked chest with 500 gold pieces inside."
+    "description": "The Bloodhand chieftain’s lair is at ⑯; she always has a redcap hunter guard posted at (g) who actually takes their watch seriously. The room the guard is posted in also serves as the larder for the tribe; among the typical goblin offal is an actually high-quality cask of wine worth 55 drac.\n\nThe chieftain is a 3hd goblin redcap champion who wields a handaxe enchanted as a common (+1) flying blade, as well as a light steel shield. She is wearing banded armor originally intended for a dwarf, which is in slight need of repair. She is also adorned with various bits of expensive dwarven jewelry – a silver and gold belt worth 160 drac, an ivory bracelet worth 100 drac, and a gold and garnet signet ring worth 100 drac.\n\nThe room is well furnished with finely crafted dwarven furniture in slight disrepair, and contains a locked chest with 500 gold pieces inside."
    },
    "cave-d-patrol": {
     "title": "D · Redcap patrol",
@@ -1619,7 +1619,7 @@
      "site": "cnoc-na-teamhrach"
     },
     "who": [],
-    "description": "The source of the recent orc raids is a cavern system located in a deep ravine east of the Pale Keep, on the Albian side of the Boyne river. An ancient shrine to Orcus, known to the locals as Crom-Cruach, has languished here for centuries; a barbarian tribe has recently re-discovered the ruins, and are performing dark rituals to Crom-Cruach in return for power to drive off the Albians. In their endeavors, they have recruited local tribes of goblins, beastfolk, and lizardfolk to join their cause; each tribe has claimed and taken up residence in their own area of the cave network.\n\nThere are eleven different cavern entrances, referred to here as Ⓐ through Ⓚ."
+    "description": "The source of the recent orc raids is a cavern system located in a deep ravine east of the Pale Keep, on the Albian side of the Boyne river. An ancient shrine to Crom-Cruach, has languished here for centuries; a barbarian tribe has recently re-discovered the ruins, and are performing dark rituals to Crom-Cruach in return for power to drive off the Albians. In their endeavors, they have recruited local tribes of goblins, beastfolk, and lizardfolk to join their cause; each tribe has claimed and taken up residence in their own area of the cave network.\n\nThere are eleven different cavern entrances, referred to here as Ⓐ through Ⓚ."
    },
    "caves-inter-clan": {
     "title": "Inter-Clan Relations",
@@ -1957,7 +1957,7 @@
      "site": "tlachtga"
     },
     "who": [],
-    "description": "The mad hermit druid from ❹ originally worshipped here with her circle of fellow druids, who established this grove long before the coming of the Albions. In response to the Albion threat, the druids used a powerful group ritual to cast a potent mirage enchantment over the entire grove, then convened to decide whether to use the shrine to Crom Cruach to fight the Albions, or offer their guidance and council to the newcomers.\n\nThe argument quickly grew heated; the vote was strongly in favor of allying, which the hermit could not abide — so they waited till nightfall, slit the throats of their fellow druids, and abandoned the grove for a small hovel south of the river. Dame MacGearalt was the only other survivor of that night, and her vows to the druid circle continue to prevent her from speaking of it or from raising her hand against the hermit.\n\nThe grove is still defended by twelve huge treants, who have maintained their vigil since the massacre. It is also haunted by the wraiths of the eleven druids who were slaughtered here. They are severely weakened, both from neglect and from the miasma of evil coming from Crom Cruach’s temple; thus they only fight as 2hd huge creatures."
+    "description": "The mad hermit druid from ❹ originally worshipped here with her circle of fellow druids, who established this grove long before the coming of the Albions. In response to the Albion threat, the druids used a powerful group ritual to cast a potent mirage enchantment over the entire grove, then convened to decide whether to use the shrine to Crom Cruach to fight the Albions, or offer their guidance and council to the newcomers.\n\nThe argument quickly grew heated; the vote was strongly in favor of allying, which the hermit could not abide — so they waited till nightfall, slit the throats of their fellow druids, and abandoned the grove for a small hovel south of the river. Dame MacGearailt was the only other survivor of that night, and her vows to the druid circle continue to prevent her from speaking of it or from raising her hand against the hermit.\n\nThe grove is still defended by twelve huge treants, who have maintained their vigil since the massacre. It is also haunted by the wraiths of the eleven druids who were slaughtered here. They are severely weakened, both from neglect and from the miasma of evil coming from Crom Cruach’s temple; thus they only fight as 2hd huge creatures."
    }
   }
  }
