@@ -1,0 +1,200 @@
+{
+ "format": "e9-bestiary/1",
+ "rules": [
+  "e9mm"
+ ],
+ "creatures": {
+  "blacksmith": {
+   "from": "blank",
+   "replace": {
+    "level": 5,
+    "size": "Medium",
+    "movement": "Normal",
+    "armor": "2",
+    "hp": "5d6+15",
+    "abilities": {
+     "con": 1,
+     "str": 1,
+     "dex": 0,
+     "int": 1,
+     "wis": 0,
+     "cha": -1
+    },
+    "attacks": [
+     "Thundering warhammer (3d6+1 blunt)"
+    ],
+    "talents": [
+     "finesse",
+     "science",
+     "lore",
+     "medicine"
+    ],
+    "talentThreshold": 2,
+    "special": [
+     "Dweomers prepared (2 common, 2 uncommon, 1 rare): Dwarven Apron, Potion of Elemental Fury; Amulet of Protection, Barkskin Elixir; his thunderhammer.",
+     "Forges common and uncommon arcane magic items to order.",
+     "Rituals: analyze or recharge a magic item (two turns), unbind cursed item (four turns), hallow (six turns)."
+    ],
+    "origin": "dwarf",
+    "classId": "fighter+dweomersmith"
+   }
+  },
+  "banker": {
+   "from": "blank",
+   "replace": {
+    "level": 2,
+    "size": "Medium",
+    "movement": "Normal",
+    "armor": "1",
+    "hp": "2d6+4",
+    "abilities": {
+     "con": 1,
+     "str": 1,
+     "dex": -1,
+     "int": 1,
+     "wis": 1,
+     "cha": -1
+    },
+    "attacks": [
+     "Revolver (d6 piercing + d6 thunder)"
+    ],
+    "talents": [
+     "finesse",
+     "science",
+     "lore",
+     "medicine"
+    ],
+    "talentThreshold": 4,
+    "special": [
+     "Dweomers prepared (2 common): Elixir of Health, Magic Ink (for the ledgers).",
+     "Analyzes magic items brought to the bank (dweomersmith ritual, two turns)."
+    ],
+    "origin": "dwarf",
+    "classId": "fighter+dweomersmith"
+   }
+  },
+  "bank-guard": {
+   "from": "blank",
+   "replace": {
+    "level": 2,
+    "size": "Medium",
+    "movement": "Normal",
+    "armor": "4",
+    "hp": "2d6+6",
+    "abilities": {
+     "con": 1,
+     "str": 1,
+     "dex": 0,
+     "int": 0,
+     "wis": 0,
+     "cha": 0
+    },
+    "attacks": [
+     "Thundermace (d6+1 blunt + d6 thunder )"
+    ],
+    "talents": [
+     "alertness"
+    ],
+    "talentThreshold": 4,
+    "special": [
+     "Dweomers prepared (2 common): Potion of Entanglement, Potion of Bottled Fog."
+    ],
+    "origin": "dwarf",
+    "classId": "fighter+dweomersmith"
+   }
+  },
+  "bankers-wife": {
+   "from": "blank",
+   "replace": {
+    "level": 1,
+    "size": "Medium",
+    "movement": "Normal",
+    "armor": "3 / 1",
+    "hp": "8",
+    "abilities": {
+     "con": 1,
+     "str": 1,
+     "dex": 1,
+     "int": 0,
+     "wis": 0,
+     "cha": 0
+    },
+    "attacks": [
+     "Musket (d6+1 piercing + d6+1 thunder)"
+    ],
+    "talents": [
+     "agility",
+     "finesse",
+     "stealth",
+     "survival"
+    ],
+    "talentThreshold": 4,
+    "special": [
+     "Dweomer prepared (1 common): Boots of Traceless Passage, which she wears."
+    ],
+    "origin": "dwarf",
+    "classId": "fighter+dweomersmith"
+   }
+  },
+  "barkeep": {
+   "from": "blank",
+   "replace": {
+    "level": 1,
+    "size": "Medium",
+    "movement": "Normal",
+    "armor": "0",
+    "hp": "6",
+    "abilities": {
+     "con": 0,
+     "str": 0,
+     "dex": 0,
+     "int": 0,
+     "wis": 0,
+     "cha": 1
+    },
+    "attacks": [
+     "Unarmed (d6 blunt)"
+    ],
+    "talents": [
+     "charm"
+    ],
+    "talentThreshold": 5,
+    "origin": "human",
+    "classId": "expert"
+   }
+  },
+  "barkeeps-wife": {
+   "from": "blank",
+   "replace": {
+    "level": 2,
+    "size": "Medium",
+    "movement": "Normal",
+    "armor": "0",
+    "hp": "2d6",
+    "abilities": {
+     "con": 0,
+     "str": 0,
+     "dex": 1,
+     "int": 0,
+     "wis": 0,
+     "cha": 2
+    },
+    "attacks": [
+     "Unarmed (d6 blunt)"
+    ],
+    "talents": [
+     "finesse",
+     "lore",
+     "wit",
+     "charm"
+    ],
+    "talentThreshold": 4,
+    "special": [
+     "Talismans prepared (2 first-circle): Fascinate, Sleep."
+    ],
+    "origin": "gnome",
+    "classId": "expert+druid"
+   }
+  }
+ }
+}

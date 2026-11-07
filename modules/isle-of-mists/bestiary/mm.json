@@ -31,8 +31,12 @@
     ],
     "talentThreshold": 2,
     "special": [
-     "Forges common or uncommon arcane magic items, and prepares and maintains one common and one uncommon arcane formula or enchantment."
-    ]
+     "Dweomers prepared (2 common, 2 uncommon, 1 rare): Dwarven Apron, Potion of Elemental Fury; Amulet of Protection, Barkskin Elixir; his thunderhammer.",
+     "Forges common and uncommon arcane magic items to order.",
+     "Rituals: analyze or recharge a magic item (two turns), unbind cursed item (four turns), hallow (six turns)."
+    ],
+    "origin": "dwarf",
+    "classId": "dweomersmith"
    }
   },
   "banker": {
@@ -62,8 +66,11 @@
     ],
     "talentThreshold": 4,
     "special": [
-     "The banker can cast identify magic as a ritual, and usually has one volatile common elixir of health prepared."
-    ]
+     "Dweomers prepared (2 common): Elixir of Health, Magic Ink (for the ledgers).",
+     "Analyzes magic items brought to the bank (dweomersmith ritual, two turns)."
+    ],
+    "origin": "dwarf",
+    "classId": "dweomersmith"
    }
   },
   "bank-guard": {
@@ -86,15 +93,14 @@
      "Thundermace (d6+1 blunt + d6 thunder )"
     ],
     "talents": [
-     "finesse",
-     "science",
-     "lore",
-     "medicine"
+     "alertness"
     ],
     "talentThreshold": 4,
     "special": [
-     "Each bank guard has one volatile potion of entanglement prepared."
-    ]
+     "Carries one Potion of Entanglement."
+    ],
+    "origin": "dwarf",
+    "classId": "stalwart"
    }
   },
   "bankers-wife": {
@@ -124,8 +130,11 @@
     ],
     "talentThreshold": 4,
     "special": [
-     "The banker’s wife can cast the traceless passage glamour as a ritual."
-    ]
+     "Armored Stealth; Stonesense.",
+     "Wears Boots of Traceless Passage."
+    ],
+    "origin": "dwarf",
+    "classId": "delver"
    }
   },
   "barkeep": {
@@ -150,7 +159,9 @@
     "talents": [
      "charm"
     ],
-    "talentThreshold": 5
+    "talentThreshold": 5,
+    "origin": "human",
+    "classId": "scout"
    }
   },
   "barkeeps-wife": {
@@ -180,8 +191,11 @@
     ],
     "talentThreshold": 4,
     "special": [
-     "The barkeep’s wife has one glamour , which she can spend to cast any first-circle bardsong."
-    ]
+     "Bardsong: weaves a first-circle Dream or Song glamour (Fascinate, Sleep) into a performance, one Charm check per circle, one round each.",
+     "Magical Intuition."
+    ],
+    "origin": "gnome",
+    "classId": "bard"
    }
   },
   "brother-james": {
