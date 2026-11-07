@@ -431,6 +431,255 @@
     "origin": "human",
     "classId": "priest"
    }
+  },
+  "sir-edward-the-castellan": {
+   "from": "blank",
+   "replace": {
+    "level": 6,
+    "size": "Medium",
+    "movement": "Normal",
+    "armor": "5",
+    "hp": "6d6+12",
+    "abilities": {
+     "con": 0,
+     "str": 0,
+     "dex": 2,
+     "int": 0,
+     "wis": 1,
+     "cha": 1
+    },
+    "attacks": [
+     "Keen longsword (4d6)"
+    ],
+    "talents": [
+     "agility",
+     "lore",
+     "medicine",
+     "survival",
+     "charm",
+     "bearing",
+     "wit"
+    ],
+    "talentThreshold": 3,
+    "special": [
+     "Warrior 6 / priest 6, a knight sworn to the Church.",
+     "Prayer strips (2 first, 2 second, 2 third circle; War): Heroism, Sense the Divine; Smite, True Strike; Enhance Strength, Divine Guidance."
+    ],
+    "origin": "human",
+    "classId": "fighter+priest"
+   }
+  },
+  "dame-macgeralt": {
+   "from": "blank",
+   "replace": {
+    "level": 3,
+    "size": "Medium",
+    "movement": "Normal",
+    "armor": "3 / 1",
+    "hp": "3d6",
+    "abilities": {
+     "con": 0,
+     "str": 0,
+     "dex": 1,
+     "int": 0,
+     "wis": 1,
+     "cha": 1
+    },
+    "attacks": [
+     "windbow (1d6+1 piercing / 20 paces)"
+    ],
+    "talents": [
+     "lore",
+     "medicine",
+     "intuition",
+     "survival"
+    ],
+    "talentThreshold": 3,
+    "special": [
+     "Talismans (2 first, 1 second circle): Fey Luck and Fog Cloud, invested in her fey wisp and air wisp; Misty Step.",
+     "Her two wisps are always with her."
+    ],
+    "origin": "elf",
+    "classId": "fighter+expert+druid"
+   }
+  },
+  "chief-engineer": {
+   "from": "blank",
+   "replace": {
+    "level": 5,
+    "size": "Medium",
+    "movement": "Normal",
+    "armor": "3",
+    "hp": "3d6+6",
+    "abilities": {
+     "con": 0,
+     "str": -1,
+     "dex": 1,
+     "int": 2,
+     "wis": 1,
+     "cha": 0
+    },
+    "attacks": [
+     "stormcannon (3D6 structural lightning)"
+    ],
+    "talents": [
+     "finesse",
+     "science",
+     "bearing"
+    ],
+    "talentThreshold": 2,
+    "special": [
+     "Spells prepared (2 first, 2 second, 1 third circle): Shield, Arcane Bolts; Arcane Sight ×2; Lightning Bolt.",
+     "Keeps the finicky storm cannon working; he spends his Arcane Sight on it most days."
+    ],
+    "origin": "human",
+    "classId": "wizard"
+   }
+  },
+  "apprentice-engineer": {
+   "from": "blank",
+   "replace": {
+    "level": 3,
+    "size": "Medium",
+    "movement": "Normal",
+    "armor": "3",
+    "hp": "3d6+6",
+    "abilities": {
+     "con": 0,
+     "str": 1,
+     "dex": 0,
+     "int": 0,
+     "wis": 0,
+     "cha": 0
+    },
+    "attacks": [
+     "magic missile (d6 at 20 paces)"
+    ],
+    "talents": [
+     "science"
+    ],
+    "talentThreshold": 2,
+    "special": [
+     "Spells prepared (2 first, 1 second circle): Arcane Bolts ×2; Arcane Sight."
+    ],
+    "origin": "human",
+    "classId": "wizard"
+   }
+  },
+  "captain-of-the-guard": {
+   "from": "blank",
+   "replace": {
+    "level": 3,
+    "size": "Medium",
+    "movement": "Normal",
+    "armor": "3 / 2",
+    "hp": "3d6+6",
+    "abilities": {
+     "con": 0,
+     "str": 1,
+     "dex": 0,
+     "int": 0,
+     "wis": 0,
+     "cha": 0
+    },
+    "attacks": [
+     "+1 longsword (d6+1)"
+    ],
+    "talents": [
+     "agility",
+     "survival",
+     "bearing"
+    ],
+    "talentThreshold": 5,
+    "origin": "human",
+    "classId": "fighter"
+   }
+  },
+  "sergeant-at-arms": {
+   "from": "blank",
+   "replace": {
+    "level": 2,
+    "size": "Medium",
+    "movement": "Normal",
+    "armor": "3 / 2",
+    "hp": "2d6+6",
+    "abilities": {
+     "con": 1,
+     "str": 0,
+     "dex": 0,
+     "int": 0,
+     "wis": 0,
+     "cha": 0
+    },
+    "attacks": [
+     "+1 longsword (d6+1)"
+    ],
+    "talents": [
+     "agility",
+     "survival",
+     "bearing"
+    ],
+    "talentThreshold": 5,
+    "special": [
+     "Wears an amulet of protection (shield once a day)."
+    ],
+    "origin": "human",
+    "classId": "fighter"
+   }
+  },
+  "ranger-of-the-pale": {
+   "from": "blank",
+   "replace": {
+    "level": 2,
+    "size": "Medium",
+    "movement": "Normal",
+    "armor": "1",
+    "hp": "6",
+    "abilities": {
+     "con": 0,
+     "str": 0,
+     "dex": 1,
+     "int": 0,
+     "wis": 0,
+     "cha": 0
+    },
+    "attacks": [
+     "longbow (d6)"
+    ],
+    "talents": [
+     "agility",
+     "finesse",
+     "stealth",
+     "alertness"
+    ],
+    "talentThreshold": 4,
+    "origin": "human",
+    "classId": "expert"
+   }
+  },
+  "guard": {
+   "from": "blank",
+   "replace": {
+    "level": 1,
+    "size": "Medium",
+    "movement": "Normal",
+    "armor": "2 / 1",
+    "hp": "9",
+    "abilities": {
+     "con": 1,
+     "str": 0,
+     "dex": 0,
+     "int": 0,
+     "wis": 0,
+     "cha": 0
+    },
+    "attacks": [
+     "longsword (d6)"
+    ],
+    "talents": [],
+    "origin": "human",
+    "classId": "fighter"
+   }
   }
  }
 }
