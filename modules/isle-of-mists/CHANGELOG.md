@@ -8,7 +8,7 @@ NPC and monster pass with Heph (rules: the early-playtest "N faith / glamour / f
 - Every creature now has an `origin` and a `classId`, and casters prepare from their class's slot table (prayer strips, spells, talismans, dweomers).
 - New `bestiary/e9mm.json` for E9 for Materia Mundi. People use the race-as-class builds (dwarf fighter+dweomersmith, elf fighter+expert+druid, gnome expert+druid, human single class). Monster tribes use the app's class renames (champion becomes fighter; hunter and bard become expert).
 - Keep: the bank is a dwarf family; the barkeep is human and his wife a gnome bard; Sir Edward is warrior 6 / war priest 6; Brother "James" is a warlock whose prayer strips are prayers to the Baalim, so a true priest who copies one gets nothing; Dame MacGeralt is an elf druid with her two wisps.
-- Lairs: champions get Improved Critical Hit and, from level 2, Battle-Trance with an initiation (Serpent for ambushers such as ettercaps and the Skitterglint redcaps, Boar for the Blacktooth and Bloodhand, Bear for the hobgoblins and the bugbear); hunters get Hunter's Expertise and Sneak Attack. The Faoladh are wolf pucca. The hermit's leopard is now a barrow-cat (`hermits-barrow-cat`).
+- Lairs: champions get Improved Critical Hit and, from level 2, Battle-Trance with an initiation (Serpent for ambushers such as ettercaps and the Skitterglint redcaps, Boar for the Blacktooth and Bloodhand, Bear for the hobgoblins, the bugbear and the ogre); hunters get Hunter's Expertise and Sneak Attack. The Faoladh are wolf pucca. The hermit's leopard is now a barrow-cat (`hermits-barrow-cat`).
 - Fixed copy-paste errors: Bank Guard talents; HP for Brother Sean, Brother John and Sister Penelope; Sister Penelope gets a quarterstaff.
 
 ## 0.4.2 (2026-11-06)

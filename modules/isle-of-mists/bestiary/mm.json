@@ -1608,6 +1608,8 @@
     ],
     "talentThreshold": 3,
     "special": [
+     "Improved Critical Hit.",
+     "Battle-Trance with the Bear initiation: halves all damage taken while frenzying unarmoured.",
      "Huge size: hit points are split by body section; on any hit that was not easy, roll 2d6: 3-4 left leg [hp], 5 left arm [hp], 6-8 body 4×[hp], 9 right arm [hp], 10-11 right leg [hp], 2 or 12 head ½[hp].",
      "Duck: reaction to make a head hit re-roll its location; any damage to the head stuns it.",
      "Cripple: a critical to a location drops it to 0. Head or body at 0 kills; a leg at 0 hobbles; an arm at 0 makes attacks harder except reckless ones.",
@@ -1615,7 +1617,8 @@
      "Senses: smells fresh demihuman blood from nearly a mile.",
      "Gear: bearskin hides enchanted as an uncommon +2 belt of feral might; rare +3 earthbreaker maul."
     ],
-    "origin": "ogre"
+    "origin": "ogre",
+    "classId": "champion"
    }
   },
   "skitterglint-bugbear": {
