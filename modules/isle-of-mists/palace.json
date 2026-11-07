@@ -487,7 +487,7 @@
      "site": "the-feywoods"
     },
     "who": [],
-    "description": "To the west of Cill-Chainnigh are a patch of dark forest called the Feywoods. This forest is densely populated by all kinds of fey beasts and monsters; the referee should roll for a random encounter for each 100 paces of travel through the woods, using the encounter tables on page 38 of the Referee's Guide."
+    "description": "To the west of Cill-Chainnigh are a patch of dark forest called the Feywoods. This forest is densely populated by all kinds of fey beasts and monsters; the referee should roll for a random encounter for each 100 paces of travel through the woods, using the wilderness encounter tables in Appendix C of the Compendium (pp. 255–257)."
    },
    "stormpeaks": {
     "title": "The Stormpeaks",
@@ -659,7 +659,7 @@
      "room": "mosaic-room"
     },
     "who": [],
-    "description": "This room is covered in mosaic frescoes made from small hexagonal tiles of obsidian, lapis lazuli, agate, and other colorful stones, inlaid with gold and silver. They show a knight in silver plate armor riding a silver dragon, and a woman in white wearing a golden crown with a red heart emblazoned on the chest of her gown. The scenes progress through a courtship tryptich, with the floor depicting the dragon, knight, and woman all lying asleep around a central gold-and-obsidian star motif, with a brass keyhole in the center of the star.\n\nPicking the keyhole requires expertise, and is hard even then; failure activates a magic trap which banishes a would-be thief directly into the Elemental Chaos (see pg. 21). The gold key hidden in the changing room unlocks the safe; inside is a rare feysilver longsword with a ruby pommel, enchanted as an aetheric blade."
+    "description": "This room is covered in mosaic frescoes made from small hexagonal tiles of obsidian, lapis lazuli, agate, and other colorful stones, inlaid with gold and silver. They show a knight in silver plate armor riding a silver dragon, and a woman in white wearing a golden crown with a red heart emblazoned on the chest of her gown. The scenes progress through a courtship tryptich, with the floor depicting the dragon, knight, and woman all lying asleep around a central gold-and-obsidian star motif, with a brass keyhole in the center of the star.\n\nPicking the keyhole requires expertise, and is hard even then; failure activates a magic trap which banishes a would-be thief directly into the Elemental Chaos (see Compendium p. 216). The gold key hidden in the changing room unlocks the safe; inside is a rare feysilver longsword with a ruby pommel, enchanted as an aetheric blade."
    },
    "palace-steam-room": {
     "title": "Steam Room",
@@ -791,7 +791,7 @@
      "room": "library"
     },
     "who": [],
-    "description": "The first two rooms in the southern wing are a schoolroom and library, connected by a short hallway. The schoolroom contains nothing of interest, but the library contains 1d6-1 wizard spells and one magic item blueprint; you can use Appendix E of the Referee's Guide to roll for which spells and blueprint are found."
+    "description": "The first two rooms in the southern wing are a schoolroom and library, connected by a short hallway. The schoolroom contains nothing of interest, but the library contains 1d6-1 wizard spells and one magic item blueprint; you can use Appendix E of the Compendium (pp. 259–261) to roll for which spells and blueprint are found."
    },
    "palace-fitting-room": {
     "title": "Fitting Room",
