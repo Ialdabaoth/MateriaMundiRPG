@@ -2,6 +2,12 @@
 
 This module's version is its own. It does not follow the E9 Atlas (`modules/tools/ATLAS_VERSION`) or the E9 Companion; a change to the tools or apps alone never bumps it. Bump it only for changes to this module's content (text, sites, creatures, encounters, maps), using the rules in [WORKFLOWS.md](../WORKFLOWS.md#versioning).
 
+## 0.4.9 (2026-11-07)
+
+- B3 palace maps: two new encounter maps traced from the original palace layouts Heph supplied, with 10-ft squares doubled to 5-ft. The look follows the redraws he supplied, but the art is our own. `palace-entrance` is the Entrance Level, 88 by 106 squares, with 59 doors and 41 named areas. `palace-upper` is the Upper Level, 58 by 96 squares, with 41 doors and 10 named areas. Rooms carry their scene names. Upper Level rooms whose scene is not settled yet keep their original numbers.
+- 51 palace scenes point at their room on these maps. These scenes have no map yet: the grounds and bridge (outdoors), the escape room (it has no room on the original Entrance Level), and eight Upper Level rooms (laboratory, chaplain's bedroom, chapel, drawing room, Cathbad's chambers, palace bath, hearthroom, palace bedroom) until Heph matches them to rooms.
+- The Upper Level stairs are drawn choked with rubble, because the text says the iron ladder in the watchroom is the only way up.
+
 ## 0.4.8 (2026-11-07)
 
 - Credits: `credits` in module.json lists the data sources the map uses (castle positions, CC BY 4.0, from the Archaeological Survey of Ireland; ESA WorldCover; SRTM; Natural Earth). The Atlas and the module viewer show them.
