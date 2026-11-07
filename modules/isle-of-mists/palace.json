@@ -75,6 +75,81 @@
     },
     "description": "Two caryatid statues of young women holding up the anteroom. They are living oreiad nymphs, bound by fey oaths to keep intruders out of the palace.",
     "wants": "To keep their oath. Like all Fair Folk, they can be impressed and bargained with."
+   },
+   "rowena": {
+    "name": "Rowena",
+    "kind": "npc",
+    "is": "human",
+    "lair": {
+     "site": "seacht-gcaislean-the-palace",
+     "room": "lounge"
+    },
+    "description": "A bard of remarkable skill, taken to Faerie when the palace fell and kept a century unaged to play for the Fair Folk courts. Her grandmother had an elf lover, and it shows. Pluck her quartz harp in the lounge and a portal opens: she steps out with two elf bodyguards for one hour only.",
+    "wants": "Good company, a fair hearing for what happened to the palace, and one hour that is her own."
+   },
+   "rowenas-elf-bodyguard": {
+    "name": "Rowena's elf bodyguard",
+    "kind": "monster",
+    "is": "elf",
+    "lair": {
+     "site": "seacht-gcaislean-the-palace",
+     "room": "lounge"
+    },
+    "troupe": {
+     "lair": 2
+    },
+    "description": "Two elf champions in feysilver chain. At the first hostility or insult they push Rowena back through the portal, then turn on the party.",
+    "wants": "To keep the court's bard safe and bring her back on time."
+   },
+   "palace-kobold-hunter": {
+    "name": "Kobold hunter",
+    "kind": "monster",
+    "is": "kobold",
+    "lair": {
+     "site": "seacht-gcaislean-the-palace",
+     "room": "lizardfolk-lair"
+    },
+    "troupe": {
+     "lair": 7
+    },
+    "description": "Kobolds (2d6) nesting in straw and filthy fine cloth in a room they have dug out into the bare rock, around a finely wrought silver dragon they worship as Lig na Péiste.",
+    "wants": "To heap offerings before the silver dragon and be noticed by the Péist herself."
+   },
+   "palace-kobold-bone-mother": {
+    "name": "Kobold bone mother",
+    "kind": "monster",
+    "is": "kobold",
+    "lair": {
+     "site": "seacht-gcaislean-the-palace",
+     "room": "lizardfolk-lair"
+    },
+    "description": "The kobolds' druid and priestess of their tiny Lig na Péiste cult. She tends the silver dragon statue and its crude offerings.",
+    "wants": "A sign from the dragon, and fresh offerings to earn one."
+   },
+   "travis": {
+    "name": "Travis",
+    "kind": "npc",
+    "is": "human",
+    "lair": {
+     "site": "seacht-gcaislean-the-palace",
+     "room": "guardpost"
+    },
+    "description": "The last palace guard. He holed up in the guardpost when the bloodroses closed every way out, and Faerie has kept him alive and ageless for a century. He has gone quite mad. Rubies, an emerald, a wedding ring and the keys are hidden in his straw bed.",
+    "wants": "To hold his post until relieved. Nobody has come."
+   },
+   "palace-rustgrub": {
+    "name": "Rustgrub",
+    "kind": "monster",
+    "is": "rustgrub",
+    "lair": {
+     "site": "seacht-gcaislean-the-palace",
+     "room": "cavern-pool"
+    },
+    "troupe": {
+     "lair": 4
+    },
+    "description": "Dog-sized feathered crickets (1d6+1) that crawl from a crevice behind anyone approaching the purple ink pool and swarm steel armour, shields and heavy weapons.",
+    "wants": "Iron and steel to rust and eat."
    }
   },
   "factions": [],

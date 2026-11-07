@@ -1992,6 +1992,185 @@
     ],
     "origin": "wolf pucca"
    }
+  },
+  "rowena": {
+   "from": "blank",
+   "replace": {
+    "level": 9,
+    "size": "Medium",
+    "movement": "Normal",
+    "armor": "3 (2)",
+    "hp": "9d6",
+    "abilities": {
+     "con": 0,
+     "str": 0,
+     "dex": 1,
+     "int": 1,
+     "wis": 1,
+     "cha": 3
+    },
+    "attacks": [
+     "Rapier (d6 piercing)"
+    ],
+    "talents": [
+     "agility",
+     "finesse",
+     "stealth",
+     "lore",
+     "medicine",
+     "science",
+     "alertness",
+     "intuition",
+     "survival",
+     "bearing",
+     "charm",
+     "wit"
+    ],
+    "talentThreshold": 2,
+    "special": [
+     "Human bard (her grandmother had an elf lover). A century in Faerie has trained her in every talent.",
+     "Bardsong: weaves a Dream or Song glamour of up to fourth circle into a performance (Fascinate, Sleep; Beguile, Phantasm; Inspiration, Suggestion; Confusion, Irresistible Dance), one Charm check per circle, one round each.",
+     "Feysilver chainmail.",
+     "Bound to her quartz harp (legendary primal artifact): she may stay in the material world only one hour per summoning."
+    ],
+    "origin": "human",
+    "classId": "bard"
+   }
+  },
+  "rowenas-elf-bodyguard": {
+   "from": "blank",
+   "replace": {
+    "level": 7,
+    "size": "Medium",
+    "movement": "Normal",
+    "armor": "2",
+    "hp": "7d6+21",
+    "abilities": {
+     "con": 1,
+     "str": 1,
+     "dex": 2,
+     "int": 1,
+     "wis": 1,
+     "cha": 1
+    },
+    "attacks": [
+     "Rare keen longsword (3d6, +7 in battle-trance)"
+    ],
+    "talents": [
+     "agility",
+     "finesse",
+     "alertness",
+     "intuition",
+     "bearing"
+    ],
+    "talentThreshold": 3,
+    "special": [
+     "Improved Critical Hit. Battle-Trance with the Mystic initiation: while guarding, an Agility roll deflects an attack passing within reach and redirects it.",
+     "Feats: Defender, Riposte.",
+     "Feysilver chainmail (counts as light armour)."
+    ],
+    "origin": "elf",
+    "classId": "champion"
+   }
+  },
+  "palace-kobold-hunter": {
+   "from": "blank",
+   "replace": {
+    "level": 1,
+    "size": "Small",
+    "movement": "Normal",
+    "armor": "2",
+    "hp": "3",
+    "abilities": {
+     "con": 0,
+     "str": 1,
+     "dex": 1,
+     "int": -1,
+     "wis": 0,
+     "cha": 0
+    },
+    "attacks": [
+     "Shortbow (d6 piercing, range 10)"
+    ],
+    "talents": [
+     "agility",
+     "finesse",
+     "stealth",
+     "alertness"
+    ],
+    "talentThreshold": 5,
+    "special": [
+     "Hunter's Expertise; Sneak Attack.",
+     "Natural scales."
+    ],
+    "origin": "kobold",
+    "classId": "hunter"
+   }
+  },
+  "palace-kobold-bone-mother": {
+   "from": "blank",
+   "replace": {
+    "level": 3,
+    "size": "Small",
+    "movement": "Normal",
+    "armor": "2",
+    "hp": "3d6÷2",
+    "abilities": {
+     "con": 0,
+     "str": 0,
+     "dex": 1,
+     "int": 0,
+     "wis": 1,
+     "cha": 0
+    },
+    "attacks": [
+     "Quarterstaff (2d6 blunt)"
+    ],
+    "talents": [
+     "lore",
+     "survival",
+     "intuition",
+     "wit"
+    ],
+    "talentThreshold": 4,
+    "special": [
+     "Talismans (2 first, 1 second circle): Call Beasts, Iron Ward; Tremorsense.",
+     "Natural scales.",
+     "Keeper of the silver dragon: a little cult of Lig na Péiste."
+    ],
+    "origin": "kobold",
+    "classId": "druid"
+   }
+  },
+  "travis": {
+   "from": "blank",
+   "replace": {
+    "level": 3,
+    "size": "Medium",
+    "movement": "Normal",
+    "armor": "3 (2)",
+    "hp": "3d6+9",
+    "abilities": {
+     "con": 1,
+     "str": 1,
+     "dex": 0,
+     "int": 0,
+     "wis": 0,
+     "cha": -1
+    },
+    "attacks": [
+     "Dagger, uncommon +2 flying blade (d6+2 piercing, range 5)"
+    ],
+    "talents": [],
+    "talentThreshold": 6,
+    "special": [
+     "Feat: Cleave.",
+     "Common +1 chainmail.",
+     "Mad and ageless: attacks anyone coming round the north corner within 10 paces."
+    ],
+    "origin": "human",
+    "classId": "warrior"
+   }
   }
  }
 }
