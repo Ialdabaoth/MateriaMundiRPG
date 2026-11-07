@@ -12,7 +12,7 @@
     "description": "The rosebushes entwining the palace are fey abominations that drink blood."
    },
    "palace-redcap-hunter": {
-    "name": "Redcap hunter",
+    "name": "Fear Dearg hunter",
     "kind": "monster",
     "is": "redcap",
     "lair": {
@@ -22,7 +22,7 @@
     "troupe": {
      "lair": 12
     },
-    "description": "The dining hall is laid out for an exquisite banquet, and smells delicious. Sitting around the table are a dozen redcap goblins, enjoying a gourmet feast. A larger, fatter redcap in an apron and a chef's cap is standing in the corner of the room with his arms crossed, smiling smugly; he's holding a cleaver (treat as an ax). The other goblins are wearing shortswords in their belts, and have set their crossbows beside their chairs as they eat.\n\nThe northern barracks room is open, and is being used as quarters by the redcaps that are currently occupying the dining hall. They have thoroughly wrecked the beds, lockers, glaives, and chainmail that they found, but are using the crossbows and shortswords.",
+    "description": "The dining hall is laid out for an exquisite banquet, and smells delicious. Sitting around the table are a dozen Fear Dearg (redcap) goblins, enjoying a gourmet feast. A larger, fatter Fear Dearg in an apron and a chef's cap is standing in the corner of the room with his arms crossed, smiling smugly; he's holding a cleaver (treat as an ax). The other goblins are wearing shortswords in their belts, and have set their crossbows beside their chairs as they eat.\n\nThe northern barracks room is open, and is being used as quarters by the Fir Dhearga that are currently occupying the dining hall. They have thoroughly wrecked the beds, lockers, glaives, and chainmail that they found, but are using the crossbows and shortswords.",
     "faction": "palace-redcaps"
    },
    "palace-redcap-chef": {
@@ -33,7 +33,7 @@
      "site": "seacht-gcaislean-palace",
      "room": "dining-hall"
     },
-    "description": "The dining hall is laid out for an exquisite banquet, and smells delicious. Sitting around the table are a dozen redcap goblins, enjoying a gourmet feast. A larger, fatter redcap in an apron and a chef's cap is standing in the corner of the room with his arms crossed, smiling smugly; he's holding a cleaver (treat as an ax). The other goblins are wearing shortswords in their belts, and have set their crossbows beside their chairs as they eat.",
+    "description": "The dining hall is laid out for an exquisite banquet, and smells delicious. Sitting around the table are a dozen Fear Dearg (redcap) goblins, enjoying a gourmet feast. A larger, fatter Fear Dearg in an apron and a chef's cap is standing in the corner of the room with his arms crossed, smiling smugly; he's holding a cleaver (treat as an ax). The other goblins are wearing shortswords in their belts, and have set their crossbows beside their chairs as they eat.",
     "faction": "palace-redcaps"
    },
    "mairead": {
@@ -44,7 +44,7 @@
      "site": "seacht-gcaislean-palace",
      "room": "northern-cavern"
     },
-    "description": "If the party can subdue the wolf cub without killing it, and manages to remove the collar, the wolf cub will turn out to be a young pucca girl named Mairead. She will tell the party that her twin brother Maddy and older sister Aine were taken by the redcaps months ago, and that Aine was given to the bugbears that live in the upper levels. The redcaps had been trying to fatten her and her brother up before eating them, but finally gave up and decided to cook them as they are when they refused to eat anything offered to them.\n\nMairead is severely malnourished, and in poor health. If taken care of and allowed to heal, her Constitution will slowly return to its original value of +0 over the course of a few months. She is seven years old, clever, and incredibly strong-willed and stubborn.",
+    "description": "If the party can subdue the wolf cub without killing it, and manages to remove the collar, the wolf cub will turn out to be a young Púca (pucca) girl named Mairead. She will tell the party that her twin brother Maddy and older sister Aine were taken by the Fir Dhearga (redcaps) months ago, and that Aine was given to the Bodaigh (bugbears) that live in the upper levels. The Fir Dhearga had been trying to fatten her and her brother up before eating them, but finally gave up and decided to cook them as they are when they refused to eat anything offered to them.\n\nMairead is severely malnourished, and in poor health. If taken care of and allowed to heal, her Constitution will slowly return to its original value of +0 over the course of a few months. She is seven years old, clever, and incredibly strong-willed and stubborn.",
     "faction": "faoladh-sisters"
    },
    "palace-bloodstirge": {
@@ -97,7 +97,7 @@
     "description": "Rowena will happily discuss the events that led to the palace's current state, but she will only be allowed to stay in the material world for a single hour; if the party shows her any hostility or offence, her two elven bodyguards will immediately push her back through the portal, then attack the party."
    },
    "palace-kobold-hunter": {
-    "name": "Kobold hunter",
+    "name": "Péistduine hunter",
     "kind": "monster",
     "is": "kobold",
     "lair": {
@@ -107,18 +107,18 @@
     "troupe": {
      "lair": 7
     },
-    "description": "At the far southeast corner of the castle, a small room appears to have been expanded by removing the south wall and carving crudely into the bare rock. In one corner of the room is an finely-wrought silver statue of a dragon, with what appears to be crude offerings of worship piled around it; against the opposite corner is a heaped nest of straw and filthy but high-quality cloth, which serves as a nest for 2d6 kobolds and their \"bonemother\" druid.",
+    "description": "At the far southeast corner of the castle, a small room appears to have been expanded by removing the south wall and carving crudely into the bare rock. In one corner of the room is an finely-wrought silver statue of a dragon, with what appears to be crude offerings of worship piled around it; against the opposite corner is a heaped nest of straw and filthy but high-quality cloth, which serves as a nest for 2d6 Péistdaoine (kobolds) and their \"bonemother\" druid.",
     "faction": "silver-dragon-cult"
    },
    "palace-kobold-bone-mother": {
-    "name": "Kobold bone mother",
+    "name": "Péistduine bone mother",
     "kind": "monster",
     "is": "kobold",
     "lair": {
      "site": "seacht-gcaislean-palace",
      "room": "lizardfolk-lair"
     },
-    "description": "At the far southeast corner of the castle, a small room appears to have been expanded by removing the south wall and carving crudely into the bare rock. In one corner of the room is an finely-wrought silver statue of a dragon, with what appears to be crude offerings of worship piled around it; against the opposite corner is a heaped nest of straw and filthy but high-quality cloth, which serves as a nest for 2d6 kobolds and their \"bonemother\" druid.",
+    "description": "At the far southeast corner of the castle, a small room appears to have been expanded by removing the south wall and carving crudely into the bare rock. In one corner of the room is an finely-wrought silver statue of a dragon, with what appears to be crude offerings of worship piled around it; against the opposite corner is a heaped nest of straw and filthy but high-quality cloth, which serves as a nest for 2d6 Péistdaoine (kobolds) and their \"bonemother\" druid.",
     "faction": "silver-dragon-cult"
    },
    "travis": {
@@ -155,7 +155,7 @@
     "description": "When the party enters the room, they will immediately be attacked by flying furniture and other odds-and-ends. The chaplain of the palace still haunts the room, cursed to lash out in impotent rage at anyone who passes by. The chaplain cannot manifest enough of a body to be harmed by any kind of attack; he can only make ranged attacks with a 13+ attack throw threshold. Thrown odds-and- ends each deal 1d6 blunt damage, while heavy furniture (like the desk or chair) has a harder attack throw but 2d6 blunt damage.\n\nThe speak with dead miracle can be used to calm the chaplain down, in which case he can be interrogated to hear his story about the palace and its curse."
    },
    "palace-bugbear": {
-    "name": "Bugbear champion",
+    "name": "Bodach champion",
     "kind": "monster",
     "is": "bugbear",
     "lair": {
@@ -166,10 +166,10 @@
      "lair": 5
     },
     "faction": "cathbads-bugbears",
-    "description": "If the party has been stealthy up until this point, there are three bugbear champions sleeping on the pews. If not, the bugbears should roll Alertness to see if they hear the party coming; prepared bugbears will be laying in wait in the sanctuary, ready to ambush the party when they enter.\n\nCathbad will usually be accompanied by two bugbear guards, which come from the same \"tribe\" as the three goblins from the chapel and the poor wretch from the lounge. He will switch up which two goblins are serving as his lackeys from week to week, letting the others \"take a break and blow off steam\"."
+    "description": "If the party has been stealthy up until this point, there are three Bodach (bugbear) champions sleeping on the pews. If not, the Bodaigh should roll Alertness to see if they hear the party coming; prepared Bodaigh will be laying in wait in the sanctuary, ready to ambush the party when they enter.\n\nCathbad will usually be accompanied by two Bodach guards, which come from the same \"tribe\" as the three goblins from the chapel and the poor wretch from the lounge. He will switch up which two goblins are serving as his lackeys from week to week, letting the others \"take a break and blow off steam\"."
    },
    "palace-bugbear-outcast": {
-    "name": "The outcast bugbear",
+    "name": "The outcast Bodach",
     "kind": "monster",
     "is": "bugbear",
     "lair": {
@@ -177,7 +177,7 @@
      "room": "lounge-upper"
     },
     "faction": "cathbads-bugbears",
-    "description": "The room directly south of the great hall was a lounge, but all of the furniture has been smashed by a large, enraged bugbear. When the party opens the door, the bugbear will yell \"STOP MAKING FUN OF ME\\!\" and charge the party, swinging. It will intersperse its attacks with \"IT'S NOT FUNNY ANYMORE, CLEASAÍ\\!\" and \"I WANT TO GO HOME\\!\"\n\n(The bugbear has spent the past few nights being harassed non-stop by the Cleasaí, and can't get a moment's rest. Everything it has tried to eat, drink, sit on, or wield as a weapon has turned out to be the Cleasaí in disguise, and the bugbear is now absolutely paranoid and completely obsessed with finding and killing its tormenter. Nothing the party does or says will convince the bugbear that they aren't just another illusion created by the mimic to mess with its tiny mind. This bugbear used to be part of the small tribe that inhabits the chapel, but the Cleasaí has so thoroughly bullied it that it is convinced that its once-friends are also actually the Cleasaí in disguise, so they kicked him out and abandoned him to wander the halls alone.)"
+    "description": "The room directly south of the great hall was a lounge, but all of the furniture has been smashed by a large, enraged Bodach (bugbear). When the party opens the door, the Bodach will yell \"STOP MAKING FUN OF ME\\!\" and charge the party, swinging. It will intersperse its attacks with \"IT'S NOT FUNNY ANYMORE, CLEASAÍ\\!\" and \"I WANT TO GO HOME\\!\"\n\n(The Bodach has spent the past few nights being harassed non-stop by the Cleasaí, and can't get a moment's rest. Everything it has tried to eat, drink, sit on, or wield as a weapon has turned out to be the Cleasaí in disguise, and the Bodach is now absolutely paranoid and completely obsessed with finding and killing its tormenter. Nothing the party does or says will convince the Bodach that they aren't just another illusion created by the mimic to mess with its tiny mind. This Bodach used to be part of the small tribe that inhabits the chapel, but the Cleasaí has so thoroughly bullied it that it is convinced that its once-friends are also actually the Cleasaí in disguise, so they kicked him out and abandoned him to wander the halls alone.)"
    },
    "an-deichlamhach": {
     "name": "An Deichlámhach, the Cleasaí",
@@ -187,7 +187,7 @@
      "site": "seacht-gcaislean-palace",
      "room": "great-hall"
     },
-    "description": "An Deichlámhach is a mimic, a strange kind of air- breathing cephalopod which can adjust its coloration and shape to match nearly any small or medium object. Normally, a mimic in a dungeon will often transform itself into the appearance of a valuable treasure, in order to lure unwary adventurers close. Once its prey is close enough, it lashes out with six long, rope-like tentacles to try to draw the victim towards its beak. The mimic that haunts the palace is An Deichlámhach, known to the palace's inhabitants as \"the Cleasaí\"; it is unusually intelligent for its species, probably due to the strange fey magics unleashed by the Croidhe mo Mhaistir. Whatever the reason, the Cleasaí has learned how to cast fey illusions.\n\nThe Cleasaí often uses its powers to produce illusions of scenes or images it has seen before. For some reason, one of its favorite illusions is that of a young gnome woman tied up by her own exceptionally long hair and harassed by nine redcaps."
+    "description": "An Deichlámhach is a mimic, a strange kind of air- breathing cephalopod which can adjust its coloration and shape to match nearly any small or medium object. Normally, a mimic in a dungeon will often transform itself into the appearance of a valuable treasure, in order to lure unwary adventurers close. Once its prey is close enough, it lashes out with six long, rope-like tentacles to try to draw the victim towards its beak. The mimic that haunts the palace is An Deichlámhach, known to the palace's inhabitants as \"the Cleasaí\"; it is unusually intelligent for its species, probably due to the strange fey magics unleashed by the Croidhe mo Mhaistir. Whatever the reason, the Cleasaí has learned how to cast fey illusions.\n\nThe Cleasaí often uses its powers to produce illusions of scenes or images it has seen before. For some reason, one of its favorite illusions is that of a young gnome woman tied up by her own exceptionally long hair and harassed by nine Fir Dhearga (redcaps)."
    },
    "aine": {
     "name": "Aine",
@@ -197,7 +197,7 @@
      "site": "seacht-gcaislean-palace",
      "room": "drawing-room"
     },
-    "description": "Aine doesn't remember much about her childhood; she only remembers fleeing her village when it was overrun by plague- shamblers, with her baby brother and sister in her arms, and a glowing red sword at her hip. Some kind of fey curse overtook them, and transformed them all into enormous white wolves; it was only the kindness of Cathbad that saved them, when he took them in and began trying to undo the curse.\n\nIn truth, Cathbad has been manipulating Aine the whole time, using her as his bodyguard and enforcer while telling her that he is looking for a cure to her \"condition\". She and her brother and sister are all wolf puccas, and are perfectly capable of learning how to control their shapeshifting abilities; Cathbad uses various beguiling curses to convince them that they become violent, bloodthirsty beasts while transformed, and only their iron collars keep them safe.\n\nAine is, at this point, not psychologically suited for the kind of responsibilities that ruling Kilkenny would entail. An Intuition check (which will be easy for a Priest, or normal difficulty for anyone else) will uncover this if the party chooses to engage with Aine at length about what she's endured and how she feels about all the hardships she's endured. Her little sister will be a much better candidate once she comes of age; Aine would be much happier acting as her sister's protector than trying to rule an entire county herself.",
+    "description": "Aine doesn't remember much about her childhood; she only remembers fleeing her village when it was overrun by plague- Mairbh Bheo (shamblers), with her baby brother and sister in her arms, and a glowing red sword at her hip. Some kind of fey curse overtook them, and transformed them all into enormous white wolves; it was only the kindness of Cathbad that saved them, when he took them in and began trying to undo the curse.\n\nIn truth, Cathbad has been manipulating Aine the whole time, using her as his bodyguard and enforcer while telling her that he is looking for a cure to her \"condition\". She and her brother and sister are all wolf Púcaí (puccas), and are perfectly capable of learning how to control their shapeshifting abilities; Cathbad uses various beguiling curses to convince them that they become violent, bloodthirsty beasts while transformed, and only their iron collars keep them safe.\n\nAine is, at this point, not psychologically suited for the kind of responsibilities that ruling Kilkenny would entail. An Intuition check (which will be easy for a Priest, or normal difficulty for anyone else) will uncover this if the party chooses to engage with Aine at length about what she's endured and how she feels about all the hardships she's endured. Her little sister will be a much better candidate once she comes of age; Aine would be much happier acting as her sister's protector than trying to rule an entire county herself.",
     "faction": "faoladh-sisters"
    },
    "cathbad": {
@@ -209,7 +209,7 @@
      "room": "cathbads-chambers"
     },
     "faction": "cathbads-bugbears",
-    "description": "The next room has been claimed by Cathbad. It is a reasonably well-kept bedchamber, and gives all the appearances of \"civilized\" living. Cathbad is usually here, studying translations of ancient manuscripts or trying to find a way to unlock the secrets of the ruby-bladed sword that was found in Aine's possession. If he can, he will present himself as a kindly old priest, who is trying to find a way to break the \"curse\" that has turned Aine into a wolf.\n\nCathbad will usually be accompanied by two bugbear guards, which come from the same \"tribe\" as the three goblins from the chapel and the poor wretch from the lounge. He will switch up which two goblins are serving as his lackeys from week to week, letting the others \"take a break and blow off steam\"."
+    "description": "The next room has been claimed by Cathbad. It is a reasonably well-kept bedchamber, and gives all the appearances of \"civilized\" living. Cathbad is usually here, studying translations of ancient manuscripts or trying to find a way to unlock the secrets of the ruby-bladed sword that was found in Aine's possession. If he can, he will present himself as a kindly old priest, who is trying to find a way to break the \"curse\" that has turned Aine into a wolf.\n\nCathbad will usually be accompanied by two Bodach (bugbear) guards, which come from the same \"tribe\" as the three goblins from the chapel and the poor wretch from the lounge. He will switch up which two goblins are serving as his lackeys from week to week, letting the others \"take a break and blow off steam\"."
    },
    "alice-kyteler": {
     "name": "Dame Alice Kyteler",
@@ -234,7 +234,7 @@
     "description": "D'Meath is a sixth-level elven druidess who has made various pacts with the local fair folk to secure her rule over the past century.\n\nThe resulting chaos left Dame Kyteler trapped within the tangled thorns of the bloodrose vines she summoned, while d'Meath went on to rule the county from Cill-Chainigh. Dame Kyteler feels that she has been betrayed, and is constantly sending goblin raiding parties to capture or kill d'Meath, but thus far d'Meath's own beastfolk guards have managed to protect her - and the attacks let d'Meath claim that she is a necessary and just ruler who is merely trying to \"keep the peace\" under constant goblin invasion."
    },
    "dmeath-boar-captain": {
-    "name": "Boar pucca captain",
+    "name": "Boar Púca captain",
     "kind": "monster",
     "is": "werewolf",
     "lair": {
@@ -245,10 +245,10 @@
      "lair": 5
     },
     "faction": "dmeath-court",
-    "description": "She is attended to by a pack of boar pucca, all kept loyal with the judicious use of beguiling glamours."
+    "description": "She is attended to by a pack of boar Púca (pucca), all kept loyal with the judicious use of beguiling glamours."
    },
    "dmeath-boar-guard": {
-    "name": "Boar pucca guard",
+    "name": "Boar Púca guard",
     "kind": "monster",
     "is": "werewolf",
     "lair": {
@@ -259,10 +259,10 @@
      "lair": 25
     },
     "faction": "dmeath-court",
-    "description": "She is attended to by a pack of boar pucca, all kept loyal with the judicious use of beguiling glamours."
+    "description": "She is attended to by a pack of boar Púca (pucca), all kept loyal with the judicious use of beguiling glamours."
    },
    "dmeath-boar-archer": {
-    "name": "Boar pucca archer",
+    "name": "Boar Púca archer",
     "kind": "monster",
     "is": "werewolf",
     "lair": {
@@ -273,7 +273,7 @@
      "lair": 10
     },
     "faction": "dmeath-court",
-    "description": "She is attended to by a pack of boar pucca, all kept loyal with the judicious use of beguiling glamours."
+    "description": "She is attended to by a pack of boar Púca (pucca), all kept loyal with the judicious use of beguiling glamours."
    },
    "tinker-gabhan": {
     "name": "Tinker Gabhan",
@@ -461,7 +461,7 @@
       "count": 10
      }
     ],
-    "description": "The current seat of power in the region is the castle at Cill-Chainnigh, where the self-styled Lady d'Meath rules with an iron fist. D'Meath is a sixth-level elven druidess who has made various pacts with the local fair folk to secure her rule over the past century. She is attended to by a pack of boar pucca, all kept loyal with the judicious use of beguiling glamours. These henchmen are all second level champions or hunters; their leaders are third-level. The \"common folk\" of the surrounding town are all various forms of faun beastfolk; it is a well- kept secret that most of them are descended from the original human inhabitants of the town, who were transformed into beastfolk by the encroaching fey mists."
+    "description": "The current seat of power in the region is the castle at Cill-Chainnigh, where the self-styled Lady d'Meath rules with an iron fist. D'Meath is a sixth-level elven druidess who has made various pacts with the local fair folk to secure her rule over the past century. She is attended to by a pack of boar Púca (pucca), all kept loyal with the judicious use of beguiling glamours. These henchmen are all second level champions or hunters; their leaders are third-level. The \"common folk\" of the surrounding town are all various forms of faun beastfolk; it is a well- kept secret that most of them are descended from the original human inhabitants of the town, who were transformed into beastfolk by the encroaching fey mists."
    },
    "tinkers-shop": {
     "title": "The tinker's shop",
@@ -487,7 +487,7 @@
      "site": "the-feywoods"
     },
     "who": [],
-    "description": "To the west of Cill-Chainnigh are a patch of dark forest called the Feywoods. This forest is densely populated by all kinds of fey beasts and monsters; the referee should roll for a random encounter for each 100 paces of travel through the woods, using the encounter tables on page 38 of the Referee's Guide."
+    "description": "To the west of Cill-Chainnigh are a patch of dark forest called the Feywoods. This forest is densely populated by all kinds of fey beasts and monsters; the referee should roll for a random encounter for each 100 paces of travel through the woods, using the wilderness encounter tables in Appendix C of the Compendium (pp. 255–257)."
    },
    "stormpeaks": {
     "title": "The Stormpeaks",
@@ -495,7 +495,7 @@
      "site": "the-stormpeaks"
     },
     "who": [],
-    "description": "South of Cill-Chainnigh are the Stormpeaks, a range of mountains perpetually wreathed by stormclouds and lightning. Dame Kyteler and Lady d'Meath once attempted to use the Croidhe mo Mhaistir to alter the weather of this region; the result is an ungovernable chaos of auriad nymphs and hags fighting amongst each other, while the thyrsa trolls who originally inhabited the region hide away in their caves."
+    "description": "South of Cill-Chainnigh are the Stormpeaks, a range of mountains perpetually wreathed by stormclouds and lightning. Dame Kyteler and Lady d'Meath once attempted to use the Croidhe mo Mhaistir to alter the weather of this region; the result is an ungovernable chaos of auriad nymphs and Cailleacha (hags) fighting amongst each other, while the thyrsa trolls who originally inhabited the region hide away in their caves."
    },
    "palace-bridge": {
     "title": "Arriving at the Palace",
@@ -559,7 +559,7 @@
      "room": "kitchen"
     },
     "who": [],
-    "description": "The next room is a well-stocked kitchen. The stove is still warm, and cooking implements and ingredients are strewn about as if dinner had just been prepared. Some of the pots have been ransacked and smashed against the floor, with smeared footprints leading out of the room. An easy Survival check will determine that these were made by redcaps, and somewhat recently at that."
+    "description": "The next room is a well-stocked kitchen. The stove is still warm, and cooking implements and ingredients are strewn about as if dinner had just been prepared. Some of the pots have been ransacked and smashed against the floor, with smeared footprints leading out of the room. An easy Survival check will determine that these were made by Fir Dhearga (redcaps), and somewhat recently at that."
    },
    "palace-dining-hall": {
     "title": "The Dining Hall",
@@ -577,7 +577,7 @@
       "count": 1
      }
     ],
-    "description": "The dining hall is laid out for an exquisite banquet, and smells delicious. Sitting around the table are a dozen redcap goblins, enjoying a gourmet feast. A larger, fatter redcap in an apron and a chef's cap is standing in the corner of the room with his arms crossed, smiling smugly; he's holding a cleaver (treat as an ax). The other goblins are wearing shortswords in their belts, and have set their crossbows beside their chairs as they eat.\n\nAs wonderful as the meal smells, it is goblin cooking; the meat was recently a young wolf pucca named Maddy."
+    "description": "The dining hall is laid out for an exquisite banquet, and smells delicious. Sitting around the table are a dozen Fear Dearg (redcap) goblins, enjoying a gourmet feast. A larger, fatter Fear Dearg in an apron and a chef's cap is standing in the corner of the room with his arms crossed, smiling smugly; he's holding a cleaver (treat as an ax). The other goblins are wearing shortswords in their belts, and have set their crossbows beside their chairs as they eat.\n\nAs wonderful as the meal smells, it is goblin cooking; the meat was recently a young wolf Púca (pucca) named Maddy."
    },
    "palace-barracks": {
     "title": "The Barracks",
@@ -586,7 +586,7 @@
      "room": "barracks"
     },
     "who": [],
-    "description": "The hallway loops around, then branches into a natural cavern to the west and a second, smaller hallway to the north. The left-hand wall of this hallway has two doors, each of which open into a barracks room.\n\nThe southern barracks room is locked; the lock is of normal complexity, but the goblins still haven't managed to pick it. Opening it reveals six pristine bunk beds with a locker at the foot of each bed, as well as two weapon racks against the southern wall. Opening the lockers and searching the weapon racks will reveal six suits of chainmail, six shortswords, six medium shields, four crossbows, and two glaives. All are of exceptional quality, but do not count as masterwork weapons or armor.\n\nThe northern barracks room is open, and is being used as quarters by the redcaps that are currently occupying the dining hall. They have thoroughly wrecked the beds, lockers, glaives, and chainmail that they found, but are using the crossbows and shortswords."
+    "description": "The hallway loops around, then branches into a natural cavern to the west and a second, smaller hallway to the north. The left-hand wall of this hallway has two doors, each of which open into a barracks room.\n\nThe southern barracks room is locked; the lock is of normal complexity, but the goblins still haven't managed to pick it. Opening it reveals six pristine bunk beds with a locker at the foot of each bed, as well as two weapon racks against the southern wall. Opening the lockers and searching the weapon racks will reveal six suits of chainmail, six shortswords, six medium shields, four crossbows, and two glaives. All are of exceptional quality, but do not count as masterwork weapons or armor.\n\nThe northern barracks room is open, and is being used as quarters by the Fir Dhearga (redcaps) that are currently occupying the dining hall. They have thoroughly wrecked the beds, lockers, glaives, and chainmail that they found, but are using the crossbows and shortswords."
    },
    "palace-caves": {
     "title": "The Caves",
@@ -609,7 +609,7 @@
       "count": 1
      }
     ],
-    "description": "There is a straw bed laid out and a chain bolted into the wall here; a young wolf cub is chained here, which someone appears to have been trying to train. It is emaciated and starving, which has put it in a state of perpetual frenzy. Its wrought-iron collar has worn a raw, red bald patch around its neck.\n\nIf the party can subdue the wolf cub without killing it, and manages to remove the collar, the wolf cub will turn out to be a young pucca girl named Mairead. She will tell the party that her twin brother Maddy and older sister Aine were taken by the redcaps months ago, and that Aine was given to the bugbears that live in the upper levels. The redcaps had been trying to fatten her and her brother up before eating them, but finally gave up and decided to cook them as they are when they refused to eat anything offered to them.\n\nMairead is severely malnourished, and in poor health. If taken care of and allowed to heal, her Constitution will slowly return to its original value of +0 over the course of a few months. She is seven years old, clever, and incredibly strong-willed and stubborn."
+    "description": "There is a straw bed laid out and a chain bolted into the wall here; a young wolf cub is chained here, which someone appears to have been trying to train. It is emaciated and starving, which has put it in a state of perpetual frenzy. Its wrought-iron collar has worn a raw, red bald patch around its neck.\n\nIf the party can subdue the wolf cub without killing it, and manages to remove the collar, the wolf cub will turn out to be a young Púca (pucca) girl named Mairead. She will tell the party that her twin brother Maddy and older sister Aine were taken by the Fir Dhearga (redcaps) months ago, and that Aine was given to the Bodaigh (bugbears) that live in the upper levels. The Fir Dhearga had been trying to fatten her and her brother up before eating them, but finally gave up and decided to cook them as they are when they refused to eat anything offered to them.\n\nMairead is severely malnourished, and in poor health. If taken care of and allowed to heal, her Constitution will slowly return to its original value of +0 over the course of a few months. She is seven years old, clever, and incredibly strong-willed and stubborn."
    },
    "palace-southern-cavern": {
     "title": "The Southern Cavern",
@@ -659,7 +659,7 @@
      "room": "mosaic-room"
     },
     "who": [],
-    "description": "This room is covered in mosaic frescoes made from small hexagonal tiles of obsidian, lapis lazuli, agate, and other colorful stones, inlaid with gold and silver. They show a knight in silver plate armor riding a silver dragon, and a woman in white wearing a golden crown with a red heart emblazoned on the chest of her gown. The scenes progress through a courtship tryptich, with the floor depicting the dragon, knight, and woman all lying asleep around a central gold-and-obsidian star motif, with a brass keyhole in the center of the star.\n\nPicking the keyhole requires expertise, and is hard even then; failure activates a magic trap which banishes a would-be thief directly into the Elemental Chaos (see pg. 21). The gold key hidden in the changing room unlocks the safe; inside is a rare feysilver longsword with a ruby pommel, enchanted as an aetheric blade."
+    "description": "This room is covered in mosaic frescoes made from small hexagonal tiles of obsidian, lapis lazuli, agate, and other colorful stones, inlaid with gold and silver. They show a knight in silver plate armor riding a silver dragon, and a woman in white wearing a golden crown with a red heart emblazoned on the chest of her gown. The scenes progress through a courtship tryptich, with the floor depicting the dragon, knight, and woman all lying asleep around a central gold-and-obsidian star motif, with a brass keyhole in the center of the star.\n\nPicking the keyhole requires expertise, and is hard even then; failure activates a magic trap which banishes a would-be thief directly into the Elemental Chaos (see Compendium p. 216). The gold key hidden in the changing room unlocks the safe; inside is a rare feysilver longsword with a ruby pommel, enchanted as an aetheric blade."
    },
    "palace-steam-room": {
     "title": "Steam Room",
@@ -791,7 +791,7 @@
      "room": "library"
     },
     "who": [],
-    "description": "The first two rooms in the southern wing are a schoolroom and library, connected by a short hallway. The schoolroom contains nothing of interest, but the library contains 1d6-1 wizard spells and one magic item blueprint; you can use Appendix E of the Referee's Guide to roll for which spells and blueprint are found."
+    "description": "The first two rooms in the southern wing are a schoolroom and library, connected by a short hallway. The schoolroom contains nothing of interest, but the library contains 1d6-1 wizard spells and one magic item blueprint; you can use Appendix E of the Compendium (pp. 259–261) to roll for which spells and blueprint are found."
    },
    "palace-fitting-room": {
     "title": "Fitting Room",
@@ -830,7 +830,7 @@
     "description": "South of the larder is an elegant lounge, with plush velvet couches and expensive-looking tapestries. In the center of the room is a harp, which appears to have been carved from a single piece of quartz crystal and strung with thin feysilver wire.\n\nThe harp is a legendary primal artifact, and is bound to a human bard of remarkable skill who was taken to Faerie when the castle fell. She has been entertaining the Fair Folk courts for the past century, having never aged a day. If the harp is plucked, a portal into deeper Faerie will open, and the bard Rowena will step out, accompanied by two elf bodyguards.\n\nRowena will happily discuss the events that led to the palace's current state, but she will only be allowed to stay in the material world for a single hour; if the party shows her any hostility or offence, her two elven bodyguards will immediately push her back through the portal, then attack the party."
    },
    "palace-kobold-nest": {
-    "title": "Lizardfolk Lair",
+    "title": "Péistdaoine Lair",
     "where": {
      "site": "seacht-gcaislean-palace",
      "room": "lizardfolk-lair"
@@ -845,7 +845,7 @@
       "count": 1
      }
     ],
-    "description": "At the far southeast corner of the castle, a small room appears to have been expanded by removing the south wall and carving crudely into the bare rock. In one corner of the room is an finely-wrought silver statue of a dragon, with what appears to be crude offerings of worship piled around it; against the opposite corner is a heaped nest of straw and filthy but high-quality cloth, which serves as a nest for 2d6 kobolds and their \"bonemother\" druid."
+    "description": "At the far southeast corner of the castle, a small room appears to have been expanded by removing the south wall and carving crudely into the bare rock. In one corner of the room is an finely-wrought silver statue of a dragon, with what appears to be crude offerings of worship piled around it; against the opposite corner is a heaped nest of straw and filthy but high-quality cloth, which serves as a nest for 2d6 Péistdaoine (kobolds) and their \"bonemother\" druid."
    },
    "palace-southwest-wing": {
     "title": "The Southwest Wing",
@@ -968,7 +968,7 @@
      "room": "watchrooms"
     },
     "who": [],
-    "description": "At the other far end of the caverns are a pair of large square room, where guards could gather and mount defenses. The first room has been converted into a secondary nest for the kobold pack in the southeast wing; if any kobolds escape, they will regroup here. If the kobolds haven't been encountered yet, a random encounter check should be made at the end of each exploration round that the party spends in this room to see if a patrol of 1d6 kobolds stumbles onto the party.\n\nThe further of the two rooms is empty except for an iron ladder in the middle of the room, which leads up to the upper levels of the palace. Bloodrose vines wrap their way around the ladder."
+    "description": "At the other far end of the caverns are a pair of large square room, where guards could gather and mount defenses. The first room has been converted into a secondary nest for the Péistduine (kobold) pack in the southeast wing; if any Péistdaoine escape, they will regroup here. If the Péistdaoine haven't been encountered yet, a random encounter check should be made at the end of each exploration round that the party spends in this room to see if a patrol of 1d6 Péistdaoine stumbles onto the party.\n\nThe further of the two rooms is empty except for an iron ladder in the middle of the room, which leads up to the upper levels of the palace. Bloodrose vines wrap their way around the ladder."
    },
    "palace-upper-levels": {
     "title": "The Upper Levels",
@@ -1023,7 +1023,7 @@
       "count": 3
      }
     ],
-    "description": "There is a small alcove between the chapel and the chaplain's chambers, which contains two chairs and a prayer book. Beyond it is the chapel itself, which has been thoroughly desecrated. The devotional altar has been smeared with blood, and a small shrine to Crom Cruach has been set up around the altar. A bonfire between the altar and the pews appears to be used to make burnt offerings of the remains of those sacrificed.\n\nIf the party has been stealthy up until this point, there are three bugbear champions sleeping on the pews. If not, the bugbears should roll Alertness to see if they hear the party coming; prepared bugbears will be laying in wait in the sanctuary, ready to ambush the party when they enter."
+    "description": "There is a small alcove between the chapel and the chaplain's chambers, which contains two chairs and a prayer book. Beyond it is the chapel itself, which has been thoroughly desecrated. The devotional altar has been smeared with blood, and a small shrine to Crom Cruach has been set up around the altar. A bonfire between the altar and the pews appears to be used to make burnt offerings of the remains of those sacrificed.\n\nIf the party has been stealthy up until this point, there are three Bodach (bugbear) champions sleeping on the pews. If not, the Bodaigh should roll Alertness to see if they hear the party coming; prepared Bodaigh will be laying in wait in the sanctuary, ready to ambush the party when they enter."
    },
    "palace-ballroom": {
     "title": "The Grand Ballroom",
@@ -1060,7 +1060,7 @@
       "count": 1
      }
     ],
-    "description": "This large dining room features a decor that seems almost jarringly out-of-place for the rest of the palace, full of rugged oak beams and stuffed trophies like a rustic hunting lodge. There is a large U-shaped wooden table that fills most of the room, with seats for 19 guests.\n\nSuspended from the rafters is a small gnomish girl, tied up by her own hair. Surrounding her are nine redcap goblins, each stabbing at her lightly with spears.\n\nIf the party attempts to intervene, the first attack that successfully hits a goblin will pierce the glamour, revealing all nine goblins and the gnome to be an illusion. In their place will be a large octopus-like creature, which immediately squirts a jet of pure darkness that fills a 5-pace diameter sphere, then vanishes.\n\nOnce the Cleasaí has been encountered, it will continue to \"stalk\" and harass the party for sport, reading their thoughts and using the information gleaned to choose new illusions to fool them. The Cleasaí is intelligent and has a wicked sense of humor; you should use this opportunity to play whatever head-games you can think of, within the boundaries of what your players will consider \"good sport\"."
+    "description": "This large dining room features a decor that seems almost jarringly out-of-place for the rest of the palace, full of rugged oak beams and stuffed trophies like a rustic hunting lodge. There is a large U-shaped wooden table that fills most of the room, with seats for 19 guests.\n\nSuspended from the rafters is a small gnomish girl, tied up by her own hair. Surrounding her are nine Fear Dearg (redcap) goblins, each stabbing at her lightly with spears.\n\nIf the party attempts to intervene, the first attack that successfully hits a goblin will pierce the glamour, revealing all nine goblins and the gnome to be an illusion. In their place will be a large octopus-like creature, which immediately squirts a jet of pure darkness that fills a 5-pace diameter sphere, then vanishes.\n\nOnce the Cleasaí has been encountered, it will continue to \"stalk\" and harass the party for sport, reading their thoughts and using the information gleaned to choose new illusions to fool them. The Cleasaí is intelligent and has a wicked sense of humor; you should use this opportunity to play whatever head-games you can think of, within the boundaries of what your players will consider \"good sport\"."
    },
    "palace-washroom": {
     "title": "Washroom",
@@ -1083,7 +1083,7 @@
       "count": 1
      }
     ],
-    "description": "The room directly south of the great hall was a lounge, but all of the furniture has been smashed by a large, enraged bugbear. When the party opens the door, the bugbear will yell \"STOP MAKING FUN OF ME\\!\" and charge the party, swinging. It will intersperse its attacks with \"IT'S NOT FUNNY ANYMORE, CLEASAÍ\\!\" and \"I WANT TO GO HOME\\!\"\n\n(The bugbear has spent the past few nights being harassed non-stop by the Cleasaí, and can't get a moment's rest. Everything it has tried to eat, drink, sit on, or wield as a weapon has turned out to be the Cleasaí in disguise, and the bugbear is now absolutely paranoid and completely obsessed with finding and killing its tormenter. Nothing the party does or says will convince the bugbear that they aren't just another illusion created by the mimic to mess with its tiny mind. This bugbear used to be part of the small tribe that inhabits the chapel, but the Cleasaí has so thoroughly bullied it that it is convinced that its once-friends are also actually the Cleasaí in disguise, so they kicked him out and abandoned him to wander the halls alone.)"
+    "description": "The room directly south of the great hall was a lounge, but all of the furniture has been smashed by a large, enraged Bodach (bugbear). When the party opens the door, the Bodach will yell \"STOP MAKING FUN OF ME\\!\" and charge the party, swinging. It will intersperse its attacks with \"IT'S NOT FUNNY ANYMORE, CLEASAÍ\\!\" and \"I WANT TO GO HOME\\!\"\n\n(The Bodach has spent the past few nights being harassed non-stop by the Cleasaí, and can't get a moment's rest. Everything it has tried to eat, drink, sit on, or wield as a weapon has turned out to be the Cleasaí in disguise, and the Bodach is now absolutely paranoid and completely obsessed with finding and killing its tormenter. Nothing the party does or says will convince the Bodach that they aren't just another illusion created by the mimic to mess with its tiny mind. This Bodach used to be part of the small tribe that inhabits the chapel, but the Cleasaí has so thoroughly bullied it that it is convinced that its once-friends are also actually the Cleasaí in disguise, so they kicked him out and abandoned him to wander the halls alone.)"
    },
    "palace-drawing-room": {
     "title": "Drawing Room",
@@ -1115,7 +1115,7 @@
       "count": 2
      }
     ],
-    "description": "The next room has been claimed by Cathbad. It is a reasonably well-kept bedchamber, and gives all the appearances of \"civilized\" living. Cathbad is usually here, studying translations of ancient manuscripts or trying to find a way to unlock the secrets of the ruby-bladed sword that was found in Aine's possession. If he can, he will present himself as a kindly old priest, who is trying to find a way to break the \"curse\" that has turned Aine into a wolf.\n\nCathbad will usually be accompanied by two bugbear guards, which come from the same \"tribe\" as the three goblins from the chapel and the poor wretch from the lounge. He will switch up which two goblins are serving as his lackeys from week to week, letting the others \"take a break and blow off steam\"."
+    "description": "The next room has been claimed by Cathbad. It is a reasonably well-kept bedchamber, and gives all the appearances of \"civilized\" living. Cathbad is usually here, studying translations of ancient manuscripts or trying to find a way to unlock the secrets of the ruby-bladed sword that was found in Aine's possession. If he can, he will present himself as a kindly old priest, who is trying to find a way to break the \"curse\" that has turned Aine into a wolf.\n\nCathbad will usually be accompanied by two Bodach (bugbear) guards, which come from the same \"tribe\" as the three goblins from the chapel and the poor wretch from the lounge. He will switch up which two goblins are serving as his lackeys from week to week, letting the others \"take a break and blow off steam\"."
    },
    "palace-bath": {
     "title": "The Palace Bath",
@@ -1219,7 +1219,7 @@
      "site": "seacht-gcaislean-palace"
     },
     "who": [],
-    "description": "Rowena remembers when the plague first began to strike the region. The peasants were affected first, followed quickly by the keep's lord and guards. Dame Kyteler and her associate, the Lady Petronella d'Meath, brought in a \"champion\" who they claimed could help protect the survivors from the plague.\n\nThis champion was the Silver Knight, an elven noble named Robin Artson. He arrived riding a silver dragon, and declared that Dame Kyteler was now the Princess in Silver and Crimson, who would restore the ancient pagan pacts between mortals and the fair folk that had been sundered when the Chuch came to the Misty Isles. As a token of his love and loyalty, he offered her Croidhe mo Mhaistir, an unfathomably powerful dragon pearl of pure crimson ruby.\n\nThe Silver Knight began tutoring Dame Kyteler in the most powerful magics of Faerie and Dragonkind, teaching her to ward the land against the creeping tendrils of Shadow that followed the plague. Victims of the disease sometimes even survived, and those who died were offered up in sacrificial bonfires to the pagan fey who protected the land.\n\nFor a time, all was well. Rowena became Dame Kyteler's bard, entertaining her and the Silver Knight each evening for many years. She barely noticed at first that she had stopped aging. As children began to be born with the telltell signs of the fey, the locals began to wonder what kind of bargain they had struck; but even a few odd-shaped ears and tails here and there weren't enough to worry them.\n\nOnly after the victims of the plague began rising as mindless undead, did the Dame Kyteler and her coven begin to worry that they didn't have the power to stop the epidemic. Burned skeletons rose up with fierce red flames in their eyes, and those who had not yet been offered up to the fire rose as shamblers so quickly that their loved ones scarcely noticed they had succumbed.\n\nDame Kyteler was desperate. Though her Knight begged her not to, she reached deep into Faerie for a glamour that could fight the rising tide, and Faerie answered. Blood-red thorny bushes sprouted from every patch of bare earth, covering every inch of farmland and field with choking vines and fragrant rosebuds. Elves in the Silver Knight's entourage appeared and ferried Rowena deeper into Faerie, and she never set foot back into the Material."
+    "description": "Rowena remembers when the plague first began to strike the region. The peasants were affected first, followed quickly by the keep's lord and guards. Dame Kyteler and her associate, the Lady Petronella d'Meath, brought in a \"champion\" who they claimed could help protect the survivors from the plague.\n\nThis champion was the Silver Knight, an elven noble named Robin Artson. He arrived riding a silver dragon, and declared that Dame Kyteler was now the Princess in Silver and Crimson, who would restore the ancient pagan pacts between mortals and the fair folk that had been sundered when the Chuch came to the Misty Isles. As a token of his love and loyalty, he offered her Croidhe mo Mhaistir, an unfathomably powerful dragon pearl of pure crimson ruby.\n\nThe Silver Knight began tutoring Dame Kyteler in the most powerful magics of Faerie and Dragonkind, teaching her to ward the land against the creeping tendrils of Shadow that followed the plague. Victims of the disease sometimes even survived, and those who died were offered up in sacrificial bonfires to the pagan fey who protected the land.\n\nFor a time, all was well. Rowena became Dame Kyteler's bard, entertaining her and the Silver Knight each evening for many years. She barely noticed at first that she had stopped aging. As children began to be born with the telltell signs of the fey, the locals began to wonder what kind of bargain they had struck; but even a few odd-shaped ears and tails here and there weren't enough to worry them.\n\nOnly after the victims of the plague began rising as mindless undead, did the Dame Kyteler and her coven begin to worry that they didn't have the power to stop the epidemic. Burned Cnámharlaigh (skeletons) rose up with fierce red flames in their eyes, and those who had not yet been offered up to the fire rose as Mairbh Bheo (shamblers) so quickly that their loved ones scarcely noticed they had succumbed.\n\nDame Kyteler was desperate. Though her Knight begged her not to, she reached deep into Faerie for a glamour that could fight the rising tide, and Faerie answered. Blood-red thorny bushes sprouted from every patch of bare earth, covering every inch of farmland and field with choking vines and fragrant rosebuds. Elves in the Silver Knight's entourage appeared and ferried Rowena deeper into Faerie, and she never set foot back into the Material."
    },
    "sisters-story": {
     "title": "Aine and Mairead's Story",
@@ -1227,7 +1227,7 @@
      "site": "seacht-gcaislean-palace"
     },
     "who": [],
-    "description": "Aine doesn't remember much about her childhood; she only remembers fleeing her village when it was overrun by plague- shamblers, with her baby brother and sister in her arms, and a glowing red sword at her hip. Some kind of fey curse overtook them, and transformed them all into enormous white wolves; it was only the kindness of Cathbad that saved them, when he took them in and began trying to undo the curse.\n\nIn truth, Cathbad has been manipulating Aine the whole time, using her as his bodyguard and enforcer while telling her that he is looking for a cure to her \"condition\". She and her brother and sister are all wolf puccas, and are perfectly capable of learning how to control their shapeshifting abilities; Cathbad uses various beguiling curses to convince them that they become violent, bloodthirsty beasts while transformed, and only their iron collars keep them safe.\n\nCathbad recently decided that Aine's bonds to her brother and sister were interfering with his influence over her, so he sold them to the tribe of redcaps that infest the lower levels of the palace, while telling Aine that they are there to 'train' alongside the goblins; Aine only believes this because she believes the redcaps to be the children of the bugbears that accompanied her and Cathbad into the palace. When she finds out that the redcaps have eaten her little brother, she will likely go on a bloody rampage, tearing Cathbad, the bugbears, and all the redcaps to shreds in her rage and grief.\n\nAine was the \"maiden fair\" that the Silver Knight was originally looking for when he came to Kilkenny, but Dame Kyteler used fey glamour to trick him into thinking she was his fated queen instead. Once he understands the deception, the devastation wrought by Dame Kyteler's magics will finally make sense to him, and his vengeance will be swift and brutal.\n\nAine is, at this point, not psychologically suited for the kind of responsibilities that ruling Kilkenny would entail. An Intuition check (which will be easy for a Priest, or normal difficulty for anyone else) will uncover this if the party chooses to engage with Aine at length about what she's endured and how she feels about all the hardships she's endured. Her little sister will be a much better candidate once she comes of age; Aine would be much happier acting as her sister's protector than trying to rule an entire county herself."
+    "description": "Aine doesn't remember much about her childhood; she only remembers fleeing her village when it was overrun by plague- Mairbh Bheo (shamblers), with her baby brother and sister in her arms, and a glowing red sword at her hip. Some kind of fey curse overtook them, and transformed them all into enormous white wolves; it was only the kindness of Cathbad that saved them, when he took them in and began trying to undo the curse.\n\nIn truth, Cathbad has been manipulating Aine the whole time, using her as his bodyguard and enforcer while telling her that he is looking for a cure to her \"condition\". She and her brother and sister are all wolf Púcaí (puccas), and are perfectly capable of learning how to control their shapeshifting abilities; Cathbad uses various beguiling curses to convince them that they become violent, bloodthirsty beasts while transformed, and only their iron collars keep them safe.\n\nCathbad recently decided that Aine's bonds to her brother and sister were interfering with his influence over her, so he sold them to the tribe of Fir Dhearga (redcaps) that infest the lower levels of the palace, while telling Aine that they are there to 'train' alongside the goblins; Aine only believes this because she believes the Fir Dhearga to be the children of the Bodaigh (bugbears) that accompanied her and Cathbad into the palace. When she finds out that the Fir Dhearga have eaten her little brother, she will likely go on a bloody rampage, tearing Cathbad, the Bodaigh, and all the Fir Dhearga to shreds in her rage and grief.\n\nAine was the \"maiden fair\" that the Silver Knight was originally looking for when he came to Kilkenny, but Dame Kyteler used fey glamour to trick him into thinking she was his fated queen instead. Once he understands the deception, the devastation wrought by Dame Kyteler's magics will finally make sense to him, and his vengeance will be swift and brutal.\n\nAine is, at this point, not psychologically suited for the kind of responsibilities that ruling Kilkenny would entail. An Intuition check (which will be easy for a Priest, or normal difficulty for anyone else) will uncover this if the party chooses to engage with Aine at length about what she's endured and how she feels about all the hardships she's endured. Her little sister will be a much better candidate once she comes of age; Aine would be much happier acting as her sister's protector than trying to rule an entire county herself."
    },
    "silver-knights-story": {
     "title": "The Silver Knight's Story",
@@ -1243,7 +1243,7 @@
      "site": "seacht-gcaislean-palace"
     },
     "who": [],
-    "description": "The chaplain of the palace was worried for the souls of Dame Alice and Lady Petronella; he was murdered for his troubles by his pupil Cathbad, who burned him alive in a sacrificial rite to Crom Cruach that summoned the goblin army from faerie that Dame Alice and Lady d'Meath now struggle to command.\n\nSince his murder, he has been forced to watch from Shadow as Cathbad counciled Dame Kyteler into using the Croidhe mo Mhaistir in more and more inadvisable ways, culminating in her transformation into the monstrosity in the throne room. He watched as Cathbad counciled Petronella d'Meath to flee the palace and take up residence in Cill-Chainnigh, and to send any \"troublemakers\" to the palace for him to deal with. He watched as Cathbad picked from among those sent to the castle by Lady d'Meath, selling those that failed to interest him to the redcaps and keeping those who showed any potential of being genuine heirs to the Croidhe mo Mhaistir's power. And he watched as Cathbad tricked and enslaved Aine and her siblings, then sold her brother and sister to the redcaps when her love for them threatened his control over her.\n\nThe chaplain has a lot to be angry about."
+    "description": "The chaplain of the palace was worried for the souls of Dame Alice and Lady Petronella; he was murdered for his troubles by his pupil Cathbad, who burned him alive in a sacrificial rite to Crom Cruach that summoned the goblin army from faerie that Dame Alice and Lady d'Meath now struggle to command.\n\nSince his murder, he has been forced to watch from Shadow as Cathbad counciled Dame Kyteler into using the Croidhe mo Mhaistir in more and more inadvisable ways, culminating in her transformation into the monstrosity in the throne room. He watched as Cathbad counciled Petronella d'Meath to flee the palace and take up residence in Cill-Chainnigh, and to send any \"troublemakers\" to the palace for him to deal with. He watched as Cathbad picked from among those sent to the castle by Lady d'Meath, selling those that failed to interest him to the Fir Dhearga (redcaps) and keeping those who showed any potential of being genuine heirs to the Croidhe mo Mhaistir's power. And he watched as Cathbad tricked and enslaved Aine and her siblings, then sold her brother and sister to the Fir Dhearga when her love for them threatened his control over her.\n\nThe chaplain has a lot to be angry about."
    },
    "claiomh-solais": {
     "title": "Claíomh Solais, the Ruby Blade",
@@ -1251,7 +1251,7 @@
      "site": "seacht-gcaislean-palace"
     },
     "who": [],
-    "description": "Aine barely remembers anything of her early childhood before becoming a wolf pucca, but she remembers that her mother gave her a thin, elegantly crafted fey longsword with a blade seeminly carved from a single bright crimson ruby. The blade is a legendary primal aetheric blade, and is a \"matched pair\" with the silver blade from the bathhouse - which is confusingly also called \"Claíomh Solais\" in manuscripts. Unlike most aetheric blades, this weapon can cut a path directly into the elemental chaos - but only when slicing open a rift into faerie already made by its silver \"brother\". If both blades are used in this fashion, one after the other, the portal opens to a basalt altar in the middle of a sea of lava, with an anvil atop the altar which can be used by 9th-level magic-users to craft legendary magic items after sufficient study. (Learning how to do this is certainly going to be an adventure all of its own; it's best if this is kept as a \"story hook\" for future adventures, once the party is experienced enough to start experimenting.)\n\nStudying Cathbad's notes will reveal that the blade is actually a legendary primal artifact called Claíomh Solais, and it was crafted as part of a set from a single, vast crystal of \"dragon pearl\" along with Croidhe mo Mhaistir. As such, both artifacts remain \"in resonance\" with each other, and glamours, spells or miracles that target one will also affect the other.\n\nCathbad wants to use this resonance to gain control of Dame Kyteler, and therefore the bloodrose infestation - and then use that power to wrest control of the region from Lady d'Meath. Unfortunately, the sword's powers only work for the direct matrilineal descendents of an ancient druidess; Aine and Mairead happen to be her last great-great-great-great-great- (great?)-granddaughters. If Aine or Mairead can be convinced to help the party, they might allow any of the party's magic- users to channel and amplify their magics through the sword while they wield it, quickly solving everyone's problems.\n\nAccording to Cathbad's notes, the white blade also has a corresponding \"heart\", which currently serves as a genuine \"dragon pearl\" set into the forehead of the celestial dragon that taught Dame Kyteler how to use the ruby. The notes also indicate that the \"Silver Knight\" was actually an illusion or polymorph-form of the dragon itself, who was Dame Kyteler's actual lover. The notes further speculate that the failure of the ruby's magic was due to Dame Kyteler not actually being of the proper bloodline to control the ruby, and that either Aine or Mairead might be able to wrest control and repair the damage wrought by Kyteler's miscast glamours. This would only be possible, he muses, by a properly-trained druid; his diary suggests that he plans to go below and buy Mairead off of the redcaps tomorrow, as he deems Aine too old and \"set in her ways\" to begin proper druidic initiation."
+    "description": "Aine barely remembers anything of her early childhood before becoming a wolf Púca (pucca), but she remembers that her mother gave her a thin, elegantly crafted fey longsword with a blade seeminly carved from a single bright crimson ruby. The blade is a legendary primal aetheric blade, and is a \"matched pair\" with the silver blade from the bathhouse - which is confusingly also called \"Claíomh Solais\" in manuscripts. Unlike most aetheric blades, this weapon can cut a path directly into the elemental chaos - but only when slicing open a rift into faerie already made by its silver \"brother\". If both blades are used in this fashion, one after the other, the portal opens to a basalt altar in the middle of a sea of lava, with an anvil atop the altar which can be used by 9th-level magic-users to craft legendary magic items after sufficient study. (Learning how to do this is certainly going to be an adventure all of its own; it's best if this is kept as a \"story hook\" for future adventures, once the party is experienced enough to start experimenting.)\n\nStudying Cathbad's notes will reveal that the blade is actually a legendary primal artifact called Claíomh Solais, and it was crafted as part of a set from a single, vast crystal of \"dragon pearl\" along with Croidhe mo Mhaistir. As such, both artifacts remain \"in resonance\" with each other, and glamours, spells or miracles that target one will also affect the other.\n\nCathbad wants to use this resonance to gain control of Dame Kyteler, and therefore the bloodrose infestation - and then use that power to wrest control of the region from Lady d'Meath. Unfortunately, the sword's powers only work for the direct matrilineal descendents of an ancient druidess; Aine and Mairead happen to be her last great-great-great-great-great- (great?)-granddaughters. If Aine or Mairead can be convinced to help the party, they might allow any of the party's magic- users to channel and amplify their magics through the sword while they wield it, quickly solving everyone's problems.\n\nAccording to Cathbad's notes, the white blade also has a corresponding \"heart\", which currently serves as a genuine \"dragon pearl\" set into the forehead of the celestial dragon that taught Dame Kyteler how to use the ruby. The notes also indicate that the \"Silver Knight\" was actually an illusion or polymorph-form of the dragon itself, who was Dame Kyteler's actual lover. The notes further speculate that the failure of the ruby's magic was due to Dame Kyteler not actually being of the proper bloodline to control the ruby, and that either Aine or Mairead might be able to wrest control and repair the damage wrought by Kyteler's miscast glamours. This would only be possible, he muses, by a properly-trained druid; his diary suggests that he plans to go below and buy Mairead off of the Fir Dhearga (redcaps) tomorrow, as he deems Aine too old and \"set in her ways\" to begin proper druidic initiation."
    },
    "solutions": {
     "title": "Solutions",

@@ -2,6 +2,11 @@
 
 This module's version is its own. It does not follow the E9 Atlas (`modules/tools/ATLAS_VERSION`) or the E9 Companion; a change to the tools or apps alone never bumps it. Bump it only for changes to this module's content (text, sites, creatures, encounters, maps), using the rules in [WORKFLOWS.md](../WORKFLOWS.md#versioning).
 
+## 0.4.7 (2026-11-07)
+
+- Local creature names (Heph): B2 and B3 text uses the Irish names from the story bible's Bestiary palette, with the Materia Mundi rules name in parentheses at the first mention in each scene or creature entry, for example "Péistduine (kobold)", "Fear Dearg (redcap)", "Athach (ogre)". Creature names, scene titles and cave map labels use the local name alone. Owlbear becomes the MM ursagryph. Ids are unchanged. Every change is listed in `adventure/local-names-changes.md`.
+- Rules references point at the Compendium instead of the old Referee's Guide (Heph): wilderness encounters Appendix C, Elemental Chaos p. 216, random spells and blueprints Appendix E, mass combat Appendix G. Listed in `adventure/rg-refs-changes.md`.
+
 ## 0.4.6 (2026-11-07)
 
 - B2 matches Heph's latest draft: scene and creature descriptions in `keep.json`, `lairs.json` and `encounters.json` use his Google Doc of 10 October 2026 word for word. The only edits are agreed canon and rules words (the Boyne at Trim, barrow-cat, feysilver, save vs. Doom and Fear, Alertness checks), listed before and after in `adventure/b2-text-changes.md`.

@@ -719,7 +719,7 @@
     12.17,
     50.43
    ],
-   "text": "Ogre",
+   "text": "Athach",
    "rot": 85
   },
   {
@@ -728,7 +728,7 @@
     32.17,
     47.39
    ],
-   "text": "Kobolds",
+   "text": "Péistdaoine",
    "rot": -85
   },
   {
@@ -803,7 +803,7 @@
     4,
     4
    ],
-   "title": "Lámh Fhuilteach bugbears"
+   "title": "Lámh Fhuilteach Bodaigh"
   },
   "cave-c": {
    "squares": [
@@ -830,7 +830,7 @@
     4,
     4
    ],
-   "title": "The ogre's cave"
+   "title": "The Athach's cave"
   },
   "cave-a": {
    "squares": [
@@ -839,7 +839,7 @@
     4,
     4
    ],
-   "title": "Kobolds"
+   "title": "Péistdaoine"
   },
   "cave-f": {
    "squares": [
@@ -892,7 +892,7 @@
     "map": "crom-caves-d-e-f",
     "area": "e-ogre-22"
    },
-   "label": "The ogre's cave"
+   "label": "The Athach's cave"
   },
   {
    "from": [
@@ -902,7 +902,7 @@
    "to": {
     "map": "crom-cave-a"
    },
-   "label": "Kobolds"
+   "label": "Péistdaoine"
   },
   {
    "from": [
