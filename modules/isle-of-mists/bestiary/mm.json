@@ -902,9 +902,13 @@
     ],
     "talentThreshold": 5,
     "special": [
-     "Feats: Wolf Frenzy ×2, Evasion.",
+     "Improved Critical Hit.",
+     "Battle-Trance with the Wolf initiation: when it declares a melee attack in frenzy, all other attacks on that target this round are easier.",
+     "Pucca: wolf is its natural shape and it shifts at will (innate, not magic); it struggles to hold human form when hurt or startled, and has a tell an observant mortal may spot.",
      "Wolf form (3 HD): Str +2, Dex +2, Con +1, Int -3, Wis +1, Cha +1; Fast; armor 1 / 0; HP 3d6+3; bite (d6+2 piercing), grapple (2d6); Stealth, Perception, Survival 3+; smell (superior)."
-    ]
+    ],
+    "origin": "wolf pucca",
+    "classId": "champion"
    }
   },
   "faoladh-champion": {
@@ -934,9 +938,13 @@
     ],
     "talentThreshold": 5,
     "special": [
-     "Feats: Wolf Frenzy ×1, Evasion.",
+     "Improved Critical Hit.",
+     "Battle-Trance with the Wolf initiation: when it declares a melee attack in frenzy, all other attacks on that target this round are easier.",
+     "Pucca: wolf is its natural shape and it shifts at will (innate, not magic); it struggles to hold human form when hurt or startled, and has a tell an observant mortal may spot.",
      "Fights as a wolf when attacked (see the chieftain's wolf form)."
-    ]
+    ],
+    "origin": "wolf pucca",
+    "classId": "champion"
    }
   },
   "faoladh-hunter": {
@@ -966,9 +974,12 @@
     ],
     "talentThreshold": 4,
     "special": [
-     "Feats: Slay Quarry, Evasion.",
+     "Hunter's Expertise; Sneak Attack.",
+     "Pucca: wolf is its natural shape and it shifts at will (innate, not magic); it struggles to hold human form when hurt or startled, and has a tell an observant mortal may spot.",
      "Fights as a wolf when attacked."
-    ]
+    ],
+    "origin": "wolf pucca",
+    "classId": "hunter"
    }
   },
   "wolf-faun-champion": {
@@ -996,8 +1007,10 @@
     ],
     "talentThreshold": 5,
     "special": [
-     "Feats: Wolf Frenzy ×1, Evasion."
-    ]
+     "Improved Critical Hit."
+    ],
+    "origin": "faun",
+    "classId": "champion"
    }
   },
   "wolf-faun-hunter": {
@@ -1028,8 +1041,10 @@
     ],
     "talentThreshold": 5,
     "special": [
-     "Feats: Slay Quarry, Evasion."
-    ]
+     "Hunter's Expertise; Sneak Attack."
+    ],
+    "origin": "faun",
+    "classId": "hunter"
    }
   },
   "wolf-faun-druid": {
@@ -1060,9 +1075,11 @@
     ],
     "talentThreshold": 5,
     "special": [
-     "Magic: fey ①.",
+     "Talisman (1 first circle): Fey Luck.",
      "Wears common +1 thornweave hide."
-    ]
+    ],
+    "origin": "faun",
+    "classId": "druid"
    }
   },
   "the-hermit": {
@@ -1096,42 +1113,12 @@
     ],
     "talentThreshold": 3,
     "special": [
-     "Magic: wood ①, fey ①. Wears common +1 thornweave hide.",
-     "Wild shape, horned owl (1 HD): Fly, Small, armor 0, HP 3, bite (d6 piercing).",
-     "Wild shape, black bear (2 HD): Large, armor 1 (0), HP (2d6+6)×2, bite (d6+3 piercing), claws (2d6), grapple (2d6+3 blunt)."
-    ]
-   }
-  },
-  "hermits-leopard": {
-   "from": "blank",
-   "replace": {
-    "level": 3,
-    "size": "Medium",
-    "movement": "Normal",
-    "armor": "0",
-    "hp": "(3d6+3)×2",
-    "abilities": {
-     "con": 1,
-     "str": 3,
-     "dex": 3,
-     "int": -4,
-     "wis": 1,
-     "cha": 0
-    },
-    "attacks": [
-     "Bite (2d6 piercing)",
-     "Claws (2d6+3), 2 per action"
+     "Talismans (2 first, 1 second circle): Lifesense, Fey Luck; Protection from Poison. May invest them in her two wisps.",
+     "Wears common +1 thornweave hide.",
+     "Wild-shape talismans: horned owl (1 HD: Fly, Small, armor 0, HP 3, bite d6 piercing) and black bear (2 HD: Large, armor 1 (0), HP (2d6+6)×2, bite d6+3 piercing, claws 2d6, grapple 2d6+3 blunt)."
     ],
-    "talents": [
-     "agility",
-     "stealth",
-     "alertness",
-     "survival"
-    ],
-    "talentThreshold": 3,
-    "special": [
-     "Senses: smell (superior)."
-    ]
+    "origin": "elf",
+    "classId": "druid"
    }
   },
   "warren-bone-mother": {

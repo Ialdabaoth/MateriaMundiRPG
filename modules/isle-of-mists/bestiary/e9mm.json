@@ -872,6 +872,252 @@
     "origin": "ettercap",
     "classId": "expert"
    }
+  },
+  "faoladh-chieftain": {
+   "from": "blank",
+   "replace": {
+    "level": 3,
+    "size": "Medium",
+    "movement": "Normal",
+    "armor": "2 / 1",
+    "hp": "3d6+6",
+    "abilities": {
+     "con": 0,
+     "str": 2,
+     "dex": 1,
+     "int": -1,
+     "wis": 0,
+     "cha": 0
+    },
+    "attacks": [
+     "Venom scythe, common +1 (2d6+2 + d6 poison)"
+    ],
+    "talents": [
+     "agility",
+     "stealth",
+     "alertness",
+     "survival"
+    ],
+    "talentThreshold": 5,
+    "special": [
+     "Improved Critical Hit.",
+     "Battle-Trance with the Wolf initiation: when it declares a melee attack in frenzy, all other attacks on that target this round are easier.",
+     "Pucca: wolf is its natural shape and it shifts at will (innate, not magic); it struggles to hold human form when hurt or startled, and has a tell an observant mortal may spot.",
+     "Wolf form (3 HD): Str +2, Dex +2, Con +1, Int -3, Wis +1, Cha +1; Fast; armor 1 / 0; HP 3d6+3; bite (d6+2 piercing), grapple (2d6); Stealth, Perception, Survival 3+; smell (superior)."
+    ],
+    "origin": "wolf pucca",
+    "classId": "fighter"
+   }
+  },
+  "faoladh-champion": {
+   "from": "blank",
+   "replace": {
+    "level": 2,
+    "size": "Medium",
+    "movement": "Normal",
+    "armor": "2 / 1",
+    "hp": "2d6+4",
+    "abilities": {
+     "con": 0,
+     "str": 1,
+     "dex": 1,
+     "int": -1,
+     "wis": 0,
+     "cha": 0
+    },
+    "attacks": [
+     "Greatsword (2d6+1)"
+    ],
+    "talents": [
+     "agility",
+     "stealth",
+     "alertness",
+     "survival"
+    ],
+    "talentThreshold": 5,
+    "special": [
+     "Improved Critical Hit.",
+     "Battle-Trance with the Wolf initiation: when it declares a melee attack in frenzy, all other attacks on that target this round are easier.",
+     "Pucca: wolf is its natural shape and it shifts at will (innate, not magic); it struggles to hold human form when hurt or startled, and has a tell an observant mortal may spot.",
+     "Fights as a wolf when attacked (see the chieftain's wolf form)."
+    ],
+    "origin": "wolf pucca",
+    "classId": "fighter"
+   }
+  },
+  "faoladh-hunter": {
+   "from": "blank",
+   "replace": {
+    "level": 2,
+    "size": "Medium",
+    "movement": "Normal",
+    "armor": "1",
+    "hp": "2d6+2",
+    "abilities": {
+     "con": 0,
+     "str": 1,
+     "dex": 1,
+     "int": -1,
+     "wis": 0,
+     "cha": 0
+    },
+    "attacks": [
+     "Two daggers (2d6 piercing)"
+    ],
+    "talents": [
+     "agility",
+     "stealth",
+     "alertness",
+     "survival"
+    ],
+    "talentThreshold": 4,
+    "special": [
+     "Hunter's Expertise; Sneak Attack.",
+     "Pucca: wolf is its natural shape and it shifts at will (innate, not magic); it struggles to hold human form when hurt or startled, and has a tell an observant mortal may spot.",
+     "Fights as a wolf when attacked."
+    ],
+    "origin": "wolf pucca",
+    "classId": "expert"
+   }
+  },
+  "wolf-faun-champion": {
+   "from": "blank",
+   "replace": {
+    "level": 1,
+    "size": "Medium",
+    "movement": "Normal",
+    "armor": "1",
+    "hp": "8",
+    "abilities": {
+     "con": 0,
+     "str": 1,
+     "dex": 0,
+     "int": 0,
+     "wis": 0,
+     "cha": 0
+    },
+    "attacks": [
+     "Greataxe (2d6+1, sundering)"
+    ],
+    "talents": [
+     "agility",
+     "stealth"
+    ],
+    "talentThreshold": 5,
+    "special": [
+     "Improved Critical Hit."
+    ],
+    "origin": "faun",
+    "classId": "fighter"
+   }
+  },
+  "wolf-faun-hunter": {
+   "from": "blank",
+   "replace": {
+    "level": 1,
+    "size": "Medium",
+    "movement": "Normal",
+    "armor": "1",
+    "hp": "7",
+    "abilities": {
+     "con": 0,
+     "str": 1,
+     "dex": 0,
+     "int": 0,
+     "wis": 0,
+     "cha": 0
+    },
+    "attacks": [
+     "Two daggers (2d6 piercing)",
+     "Greatbow"
+    ],
+    "talents": [
+     "agility",
+     "stealth",
+     "alertness",
+     "survival"
+    ],
+    "talentThreshold": 5,
+    "special": [
+     "Hunter's Expertise; Sneak Attack."
+    ],
+    "origin": "faun",
+    "classId": "expert"
+   }
+  },
+  "wolf-faun-druid": {
+   "from": "blank",
+   "replace": {
+    "level": 1,
+    "size": "Medium",
+    "movement": "Normal",
+    "armor": "3 (thornweave)",
+    "hp": "d6",
+    "abilities": {
+     "con": 0,
+     "str": 1,
+     "dex": 0,
+     "int": 0,
+     "wis": 0,
+     "cha": 0
+    },
+    "attacks": [
+     "Quarterstaff (2d6 blunt)",
+     "Dagger"
+    ],
+    "talents": [
+     "alertness",
+     "intuition",
+     "survival",
+     "wit"
+    ],
+    "talentThreshold": 5,
+    "special": [
+     "Talisman (1 first circle): Fey Luck.",
+     "Wears common +1 thornweave hide."
+    ],
+    "origin": "faun",
+    "classId": "druid"
+   }
+  },
+  "the-hermit": {
+   "from": "blank",
+   "replace": {
+    "level": 3,
+    "size": "Medium",
+    "movement": "Normal",
+    "armor": "3 / 2",
+    "hp": "3d6",
+    "abilities": {
+     "con": 0,
+     "str": -1,
+     "dex": 2,
+     "int": 0,
+     "wis": 1,
+     "cha": 1
+    },
+    "attacks": [
+     "Two daggers coated in death poison (2d6 piercing + d6 ongoing poison)"
+    ],
+    "talents": [
+     "stealth",
+     "science",
+     "lore",
+     "medicine",
+     "intuition",
+     "survival",
+     "wit",
+     "charm"
+    ],
+    "talentThreshold": 3,
+    "special": [
+     "Talismans (2 first, 1 second circle): Lifesense, Fey Luck; Protection from Poison. May invest them in her two wisps.",
+     "Wears common +1 thornweave hide.",
+     "Wild-shape talismans: horned owl (1 HD: Fly, Small, armor 0, HP 3, bite d6 piercing) and black bear (2 HD: Large, armor 1 (0), HP (2d6+6)×2, bite d6+3 piercing, claws 2d6, grapple 2d6+3 blunt)."
+    ],
+    "origin": "elf",
+    "classId": "fighter+expert+druid"
+   }
   }
  }
 }

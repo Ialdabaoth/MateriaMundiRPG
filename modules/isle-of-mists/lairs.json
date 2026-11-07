@@ -158,10 +158,10 @@
     "description": "An elf druid who passes as a devout nature hermit. Violently set against the Albians; she will try to murder the party at the first chance.",
     "wants": "To drive the Albians off \"her island\"."
    },
-   "hermits-leopard": {
-    "name": "The hermit's leopard",
+   "hermits-barrow-cat": {
+    "name": "The hermit's barrow-cat",
     "kind": "beast",
-    "is": "leopard",
+    "is": "barrow-cat",
     "lair": {
      "site": "sliabh-na-cailli",
      "room": "oak"
@@ -804,7 +804,7 @@
       "count": 1
      },
      {
-      "creature": "hermits-leopard",
+      "creature": "hermits-barrow-cat",
       "count": 1
      },
      {
