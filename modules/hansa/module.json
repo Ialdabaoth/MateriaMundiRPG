@@ -2,7 +2,7 @@
  "id": "hansa",
  "title": "Hansa: The Lübeck–Danzig Coast, 1422",
  "short": "Hansa · Baltic coast, 1422",
- "version": "0.1.0",
+ "version": "0.2.0",
  "license": "CC0-1.0",
  "dem": [
   52,
@@ -739,5 +739,13 @@
     ]
    ]
   }
+ },
+ "site_encounters": {
+  "Lübeck": [
+   {
+    "map": "lubeck-markt",
+    "label": "The Markt and the Rathaus"
+   }
+  ]
  }
 }
