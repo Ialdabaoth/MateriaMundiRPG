@@ -2,8 +2,27 @@
  "id": "hansa",
  "title": "Hansa: The Lübeck–Danzig Coast, 1422",
  "short": "Hansa · Baltic coast, 1422",
- "version": "0.2.0",
+ "version": "0.2.1",
  "license": "CC0-1.0",
+ "credits": [
+  {
+   "what": "Land cover",
+   "by": "ESA WorldCover 2021 v200 (© ESA WorldCover project / contains modified Copernicus Sentinel data)",
+   "license": "CC BY 4.0",
+   "url": "https://esa-worldcover.org/"
+  },
+  {
+   "what": "Elevation",
+   "by": "SRTM, NASA",
+   "license": "public domain"
+  },
+  {
+   "what": "Region and county outlines",
+   "by": "Natural Earth",
+   "license": "public domain",
+   "url": "https://www.naturalearthdata.com/"
+  }
+ ],
  "dem": [
   52,
   55,

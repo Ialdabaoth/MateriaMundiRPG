@@ -2,6 +2,10 @@
 
 This module's version is its own. It does not follow the E9 Atlas (`modules/tools/ATLAS_VERSION`) or the E9 Companion; a change to the tools or apps alone never bumps it. Bump it only for changes to this module's content (text, sites, creatures, encounters, maps), using the rules in [WORKFLOWS.md](../WORKFLOWS.md#versioning).
 
+## 0.4.8 (2026-11-07)
+
+- Credits: `credits` in module.json lists the data sources the map uses (castle positions, CC BY 4.0, from the Archaeological Survey of Ireland; ESA WorldCover; SRTM; Natural Earth). The Atlas and the module viewer show them.
+
 ## 0.4.7 (2026-11-07)
 
 - Local creature names (Heph): B2 and B3 text uses the Irish names from the story bible's Bestiary palette, with the Materia Mundi rules name in parentheses at the first mention in each scene or creature entry, for example "Péistduine (kobold)", "Fear Dearg (redcap)", "Athach (ogre)". Creature names, scene titles and cave map labels use the local name alone. Owlbear becomes the MM ursagryph. Ids are unchanged. Every change is listed in `adventure/local-names-changes.md`.
