@@ -2,6 +2,15 @@
 
 This module's version is its own. It does not follow the E9 Atlas (`modules/tools/ATLAS_VERSION`) or the E9 Companion; a change to the tools or apps alone never bumps it. Bump it only for changes to this module's content (text, sites, creatures, encounters, maps), using the rules in [WORKFLOWS.md](../WORKFLOWS.md#versioning).
 
+## 0.4.5 (2026-11-07)
+
+B3, the Palace of Silver and Crimson, brought in from Heph's February 2026 draft, with stat blocks brought up to the current rules with him, in the new `palace.json` (an `encounters` block) and both bestiaries.
+- Cast (26 creature records): the lower palace (bloodroses, the redcaps and Chef, Mairead, bloodstirges, the oreiad caryatids), the southern wings (Rowena, a human bard with an elf grandmother, and her elf bodyguards; the kobolds and their bone mother; Travis; rustgrubs), the upper palace (the chaplain's haunt, Boar-champion bugbears and their outcast, the Cleasaí, Aine, Cathbad, Dame Alice Kyteler) and Cill Chainnigh (Lady Petronella d'Meath, an elven druidess, her boar pucca, Tinker Gabhan and Goodwitch Fiona), plus Lig na Péiste, the Silver Knight.
+- Rules: warlocks are priests sworn to Crom Cruach (Kyteler takes the Nature domain, Cathbad Death); Lady d'Meath is an elf druid; true fey keep a glamour pool; book monsters (bloodstirge, oreiad, rustgrub) use the Compendium entries.
+- Canon fixes: the "Decapus" is now An Deichlámhach, called the Cleasaí; Aine, Mairead and Maddy are Faoladh (wolf pucca); the kobolds' silver dragon is a little cult of Lig na Péiste; the palace is at Kells Priory on the King's River, built in 3278 (Materia Mundi years run AD + 2085, so 1422 is 3507).
+- Seven factions (Kyteler's court, d'Meath's court, Cathbad and his bugbears, the palace redcaps, the silver-dragon kobolds, the Faoladh sisters, Lig na Péiste) and 84 scenes: every palace room, Cill Chainnigh, the wilds and the background chapters.
+- Heph writes all the prose. Scenes and creature descriptions are his February 2026 text word for word, apart from the agreed edits listed in project-files adventure/b3-text-changes.md. The palace scenes point at encounter maps once his palace map pages are traced.
+
 ## 0.4.4 (2026-11-07)
 
 Roads of 1422 (`atlas.roads`, Atlas 0.4.18): 28 roads, about 1,925 miles, routed over the terrain by the Atlas, with 121 river crossings.

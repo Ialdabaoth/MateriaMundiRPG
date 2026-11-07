@@ -1860,6 +1860,762 @@
     "origin": "human",
     "classId": "warrior"
    }
+  },
+  "palace-bloodrose": {
+   "from": "blank",
+   "replace": {
+    "level": 5,
+    "size": "Large",
+    "movement": "Immobile",
+    "armor": "0",
+    "hp": "1d6",
+    "abilities": {
+     "con": 0,
+     "str": 0,
+     "dex": 0,
+     "int": 0,
+     "wis": 0,
+     "cha": 0
+    },
+    "attacks": [
+     "Thorns (1d6+1 piercing)"
+    ],
+    "talents": [],
+    "talentThreshold": 6,
+    "special": [
+     "Whenever a creature attempts to move through a space adjacent to them, that creature must save vs. Blast to avoid being scratched; the referee should make these saving throws in secret the first time a creature passes by a rosebush. Attempting to touch a rosebush, even on an apparently non-thorny part of a vine, is treated as failing this saving throw.",
+     "A creature that fails this saving throw immediately suffers 1d6+1 piercing damage and ongoing bleeding damage, as the vines twist and lash to drive the thorns deeper into their flesh. If this damage die rolls a '6', that creature is grabbed and restrained by the thornbushes unless they succeed at a save vs. Hold, suffering another d6 piercing damage as they are grabbed. A restrained creature suffers another d6 piercing damage each round, and must use their action to make a hard save vs. Hold until they manage to free themselves.",
+     "As the bloodroses inflict damage, the flowers around them change color from white, to pink, to deep red. Whenever a creature critically fails their saving throw vs. a bush, that creature suffers a critical hit and all the petals fall off of the blooms on that 5' patch of bush. The next round, each of the exposed rose hips explode, sending razor-sharp shrapnel in a blast 4 paces in radius that deals 3d6+1 piercing damage and ongoing bleeding damage. The next round after that, every inch of exposed surface within the blast area starts growing new rosevines, which continue to grow and mature over 1d6 rounds until they produce their own thorns and flowers.",
+     "Each 5' patch of bloodrose is treated as a separate large \"creature\" with 1d6 structure points, although they have no abilities and cannot move or perform actions. Attack throws against a bloodrose are easy, since it fills a 5' space and can't move or dodge.",
+     "Attacks from an ax weapon or fire inflict direct structure damage, while other attacks follow the normal rules for attacking a structure. If a bloodrose is lit on fire, it has a 1- in-6 chance of spreading the flames to each adjacent bush.",
+     "This same energy makes the plants vulnerable to the rebuke the unholy miracle, which inflicts 1d6 structure damage to each plant within 10 paces, and prevents those plants from regenerating when further damage is inflicted on them."
+    ],
+    "origin": "infernal plant"
+   }
+  },
+  "palace-redcap-hunter": {
+   "from": "blank",
+   "replace": {
+    "level": 1,
+    "size": "Small",
+    "movement": "Normal",
+    "armor": "1 (0)",
+    "hp": "4",
+    "abilities": {
+     "con": 1,
+     "str": 0,
+     "dex": 1,
+     "int": -1,
+     "wis": 0,
+     "cha": 0
+    },
+    "attacks": [
+     "Crossbow (d6+1 piercing, range 15)",
+     "Shortsword (d6)"
+    ],
+    "talents": [
+     "agility",
+     "stealth",
+     "alertness",
+     "survival"
+    ],
+    "talentThreshold": 5,
+    "special": [
+     "Hunter's Expertise; Sneak Attack."
+    ],
+    "origin": "redcap",
+    "classId": "hunter"
+   }
+  },
+  "palace-redcap-chef": {
+   "from": "blank",
+   "replace": {
+    "level": 1,
+    "size": "Small",
+    "movement": "Normal",
+    "armor": "2 (1)",
+    "hp": "4",
+    "abilities": {
+     "con": 1,
+     "str": 0,
+     "dex": 1,
+     "int": -1,
+     "wis": 0,
+     "cha": 0
+    },
+    "attacks": [
+     "Cleaver (2d6, sundering)"
+    ],
+    "talents": [
+     "stealth",
+     "alertness",
+     "survival",
+     "medicine"
+    ],
+    "talentThreshold": 5,
+    "special": [
+     "Talisman (1 first circle): Cleansing Waters.",
+     "Hide armour; the cleaver counts as an axe."
+    ],
+    "origin": "redcap",
+    "classId": "druid"
+   }
+  },
+  "mairead": {
+   "from": "blank",
+   "replace": {
+    "level": 1,
+    "size": "Small",
+    "movement": "Normal",
+    "armor": "0",
+    "hp": "2",
+    "abilities": {
+     "con": -2,
+     "str": 0,
+     "dex": 0,
+     "int": 1,
+     "wis": 2,
+     "cha": 1
+    },
+    "attacks": [],
+    "talents": [
+     "alertness",
+     "survival",
+     "intuition"
+    ],
+    "talentThreshold": 4,
+    "special": [
+     "Pucca: a wolf is her natural shape and she shifts at will (innate, not magic).",
+     "Con -2 and 2 hp (max 4) while starved; Con returns to +0 over a few months of care.",
+     "Wolf-cub form: Medium, Armor 2, HP 2d6+2, Con +1 Str +3 Dex +1 Int +1 Wis +2 Cha -1, attack 10+: claws (2d6), grapple (2d6+3 blunt); talents Alertness, Survival."
+    ],
+    "origin": "wolf pucca"
+   }
+  },
+  "rowena": {
+   "from": "blank",
+   "replace": {
+    "level": 9,
+    "size": "Medium",
+    "movement": "Normal",
+    "armor": "3 (2)",
+    "hp": "9d6",
+    "abilities": {
+     "con": 0,
+     "str": 0,
+     "dex": 1,
+     "int": 1,
+     "wis": 1,
+     "cha": 3
+    },
+    "attacks": [
+     "Rapier (d6 piercing)"
+    ],
+    "talents": [
+     "agility",
+     "finesse",
+     "stealth",
+     "lore",
+     "medicine",
+     "science",
+     "alertness",
+     "intuition",
+     "survival",
+     "bearing",
+     "charm",
+     "wit"
+    ],
+    "talentThreshold": 2,
+    "special": [
+     "Human bard; trained in every talent.",
+     "Bardsong: weaves a Dream or Song glamour of up to fourth circle into a performance (Fascinate, Sleep; Beguile, Phantasm; Inspiration, Suggestion; Confusion, Irresistible Dance), one Charm check per circle, one round each.",
+     "Feysilver chainmail."
+    ],
+    "origin": "human",
+    "classId": "bard"
+   }
+  },
+  "rowenas-elf-bodyguard": {
+   "from": "blank",
+   "replace": {
+    "level": 7,
+    "size": "Medium",
+    "movement": "Normal",
+    "armor": "2",
+    "hp": "7d6+21",
+    "abilities": {
+     "con": 1,
+     "str": 1,
+     "dex": 2,
+     "int": 1,
+     "wis": 1,
+     "cha": 1
+    },
+    "attacks": [
+     "Rare keen longsword (3d6, +7 in battle-trance)"
+    ],
+    "talents": [
+     "agility",
+     "finesse",
+     "alertness",
+     "intuition",
+     "bearing"
+    ],
+    "talentThreshold": 3,
+    "special": [
+     "Improved Critical Hit. Battle-Trance with the Mystic initiation: while guarding, an Agility roll deflects an attack passing within reach and redirects it.",
+     "Feats: Defender, Riposte.",
+     "Feysilver chainmail (counts as light armour)."
+    ],
+    "origin": "elf",
+    "classId": "champion"
+   }
+  },
+  "palace-kobold-hunter": {
+   "from": "blank",
+   "replace": {
+    "level": 1,
+    "size": "Small",
+    "movement": "Normal",
+    "armor": "2",
+    "hp": "3",
+    "abilities": {
+     "con": 0,
+     "str": 1,
+     "dex": 1,
+     "int": -1,
+     "wis": 0,
+     "cha": 0
+    },
+    "attacks": [
+     "Shortbow (d6 piercing, range 10)"
+    ],
+    "talents": [
+     "agility",
+     "finesse",
+     "stealth",
+     "alertness"
+    ],
+    "talentThreshold": 5,
+    "special": [
+     "Hunter's Expertise; Sneak Attack.",
+     "Natural scales."
+    ],
+    "origin": "kobold",
+    "classId": "hunter"
+   }
+  },
+  "palace-kobold-bone-mother": {
+   "from": "blank",
+   "replace": {
+    "level": 3,
+    "size": "Small",
+    "movement": "Normal",
+    "armor": "2",
+    "hp": "3d6÷2",
+    "abilities": {
+     "con": 0,
+     "str": 0,
+     "dex": 1,
+     "int": 0,
+     "wis": 1,
+     "cha": 0
+    },
+    "attacks": [
+     "Quarterstaff (2d6 blunt)"
+    ],
+    "talents": [
+     "lore",
+     "survival",
+     "intuition",
+     "wit"
+    ],
+    "talentThreshold": 4,
+    "special": [
+     "Talismans (2 first, 1 second circle): Call Beasts, Iron Ward; Tremorsense.",
+     "Natural scales."
+    ],
+    "origin": "kobold",
+    "classId": "druid"
+   }
+  },
+  "travis": {
+   "from": "blank",
+   "replace": {
+    "level": 3,
+    "size": "Medium",
+    "movement": "Normal",
+    "armor": "3 (2)",
+    "hp": "3d6+9",
+    "abilities": {
+     "con": 1,
+     "str": 1,
+     "dex": 0,
+     "int": 0,
+     "wis": 0,
+     "cha": -1
+    },
+    "attacks": [
+     "Dagger, uncommon +2 flying blade (d6+2 piercing, range 5)"
+    ],
+    "talents": [],
+    "talentThreshold": 6,
+    "special": [
+     "Feat: Cleave.",
+     "Common +1 chainmail."
+    ],
+    "origin": "human",
+    "classId": "warrior"
+   }
+  },
+  "chaplains-haunt": {
+   "from": "blank",
+   "replace": {
+    "level": 3,
+    "size": "Medium",
+    "movement": "Fly",
+    "armor": "immaterial",
+    "hp": "—",
+    "abilities": {
+     "con": 0,
+     "str": 0,
+     "dex": 0,
+     "int": 0,
+     "wis": 1,
+     "cha": 0
+    },
+    "attacks": [
+     "Thrown odds and ends (d6 blunt, 13+)",
+     "Thrown furniture (2d6 blunt, harder)"
+    ],
+    "talents": [],
+    "talentThreshold": 6,
+    "special": [
+     "The chaplain cannot manifest enough of a body to be harmed by any kind of attack; he can only make ranged attacks with a 13+ attack throw threshold. Thrown odds-and- ends each deal 1d6 blunt damage, while heavy furniture (like the desk or chair) has a harder attack throw but 2d6 blunt damage.",
+     "The speak with dead miracle can be used to calm the chaplain down, in which case he can be interrogated to hear his story about the palace and its curse."
+    ],
+    "origin": "undead"
+   }
+  },
+  "palace-bugbear": {
+   "from": "blank",
+   "replace": {
+    "level": 4,
+    "size": "Large",
+    "movement": "Normal",
+    "armor": "2 (0)",
+    "hp": "(4d6+20)×2",
+    "abilities": {
+     "con": 3,
+     "str": 3,
+     "dex": 1,
+     "int": -2,
+     "wis": 0,
+     "cha": 0
+    },
+    "attacks": [
+     "Oversized greatsword (3d6+3)"
+    ],
+    "talents": [
+     "stealth",
+     "alertness",
+     "survival"
+    ],
+    "talentThreshold": 4,
+    "special": [
+     "Improved Critical Hit. Battle-Trance with the Boar initiation: a frenzied charge is a critical hit if any damage die matches or beats the target's Agility.",
+     "Feat: Cleave.",
+     "Hide armour."
+    ],
+    "origin": "bugbear",
+    "classId": "champion"
+   }
+  },
+  "palace-bugbear-outcast": {
+   "from": "blank",
+   "replace": {
+    "level": 4,
+    "size": "Large",
+    "movement": "Normal",
+    "armor": "2 (0)",
+    "hp": "(4d6+20)×2",
+    "abilities": {
+     "con": 3,
+     "str": 3,
+     "dex": 1,
+     "int": -2,
+     "wis": 0,
+     "cha": 0
+    },
+    "attacks": [
+     "Oversized greatsword (3d6+3)"
+    ],
+    "talents": [
+     "stealth",
+     "alertness",
+     "survival"
+    ],
+    "talentThreshold": 4,
+    "special": [
+     "Improved Critical Hit. Battle-Trance with the Boar initiation: a frenzied charge is a critical hit if any damage die matches or beats the target's Agility.",
+     "Feat: Cleave.",
+     "Hide armour."
+    ],
+    "origin": "bugbear",
+    "classId": "champion"
+   }
+  },
+  "an-deichlamhach": {
+   "from": "blank",
+   "replace": {
+    "level": 6,
+    "size": "Small",
+    "movement": "Normal",
+    "armor": "0",
+    "hp": "3d6",
+    "abilities": {
+     "con": 0,
+     "str": -1,
+     "dex": 3,
+     "int": 1,
+     "wis": 0,
+     "cha": -2
+    },
+    "attacks": [
+     "Grapple (reach 2)",
+     "Bite (2d6 piercing)"
+    ],
+    "talents": [
+     "agility",
+     "finesse",
+     "stealth"
+    ],
+    "talentThreshold": 3,
+    "special": [
+     "Magic: The Cleasaí has 6 glamour, which it can use to cast the beguile, fey illusion, or mirage glamours, or the invisibility, darkness, or read thoughts spells.",
+     "Crushing Hug - A mimic’s tentacles begin squeezing once they grapple a target, dealing 1d6 bashing damage per round. Biting any target that it has already grappled is easier.",
+     "Poison Bite - Any creature bitten by a mimic is poisoned, reducing the victim's initiative by 1d6 per round until they make a successful save vs. Doom.",
+     "Camouflage - Detecting a camouflaged mimic is a hard Alertness check; detecting the Cleasaí while it is actively hidden within a fey illusion is impossible for anyone without the Hunter's Expertise feat. Mimics prefer to attack from ambush with their grappling tentacles; a hidden mimic makes sneak attacks. Any attack from ambush hobbles its target whenever any damage die rolls a ‘6’ or better.",
+     "Harvesting - If properly harvested, a mimic yields 3d6 charges of psychic materia."
+    ],
+    "origin": "fey monster"
+   }
+  },
+  "aine": {
+   "from": "blank",
+   "replace": {
+    "level": 4,
+    "size": "Medium",
+    "movement": "Normal",
+    "armor": "2 (1)",
+    "hp": "4d6+12",
+    "abilities": {
+     "con": 1,
+     "str": 1,
+     "dex": 0,
+     "int": 0,
+     "wis": 2,
+     "cha": 1
+    },
+    "attacks": [
+     "Ruby-bladed keen longsword (2d6, +4 in battle-trance)"
+    ],
+    "talents": [
+     "alertness",
+     "survival",
+     "charm"
+    ],
+    "talentThreshold": 4,
+    "special": [
+     "Improved Critical Hit. Battle-Trance with the Wolf initiation: other attacks on her target this round are easier.",
+     "Feat: Defender.",
+     "Pucca: a wolf is her natural shape and she shifts at will (innate, not magic). Wolf form: Medium, Armor 2, HP 4d6+24, Con +4 Str +4 Dex +0, attack 7+: bite (3d6 piercing), drag down (grapple 3d6+4 blunt)."
+    ],
+    "origin": "wolf pucca",
+    "classId": "champion"
+   }
+  },
+  "cathbad": {
+   "from": "blank",
+   "replace": {
+    "level": 5,
+    "size": "Medium",
+    "movement": "Normal",
+    "armor": "3 (2)",
+    "hp": "5d6",
+    "abilities": {
+     "con": 0,
+     "str": 0,
+     "dex": 0,
+     "int": 1,
+     "wis": 2,
+     "cha": 2
+    },
+    "attacks": [
+     "Quarterstaff (2d6 blunt)"
+    ],
+    "talents": [
+     "lore",
+     "intuition",
+     "survival",
+     "bearing",
+     "wit"
+    ],
+    "talentThreshold": 3,
+    "special": [
+     "Warlock: a priest sworn to Crom Cruach.",
+     "Dark prayers prepared (2 first, 2 second, 1 third circle; Death): Cause Fear, Sense the Divine; Speak With Dead, Bless; Curse Ability.",
+     "Feysilver chainmail."
+    ],
+    "origin": "human",
+    "classId": "priest"
+   }
+  },
+  "alice-kyteler": {
+   "from": "blank",
+   "replace": {
+    "level": 5,
+    "size": "Medium",
+    "movement": "Slow",
+    "armor": "10 (aetheric shield)",
+    "hp": "5d6-10",
+    "abilities": {
+     "con": -2,
+     "str": -1,
+     "dex": 1,
+     "int": 1,
+     "wis": 2,
+     "cha": 2
+    },
+    "attacks": [
+     "Lashing vine whip (2d6-1 piercing, reach 20)"
+    ],
+    "talents": [
+     "finesse",
+     "lore",
+     "intuition",
+     "survival",
+     "bearing",
+     "charm"
+    ],
+    "talentThreshold": 3,
+    "special": [
+     "Warlock: a priest sworn to Crom Cruach, Nature domain. Still alive.",
+     "Dark prayers prepared (2 first, 2 second, 1 third circle; Nature): Protection from Elements, Sense the Divine; Speak With Animals, Bless; Create Water.",
+     "While in posession of the Croidhe mo Mhaistir, Dame Kyteler and has effectively unlimited power, and can attempt to perform any spell, miracle, or glamour at-will.",
+     "Shaping a magic with the dragon pearl is a d6 check; first-circle effects happen correctly on a roll of 3-6, while second-circle effects happen correctly on a roll of 4-6, and any third-circle effect is correctly cast on a roll of 5-6. On a failure, the magic is twisted following the rules for the Misty Moor on pg. 6.",
+     "While in posession of the Croidhe mo Mhaistir, Dame Kyteler and has effectively unlimited power, and can attempt to perform any spell, miracle, or glamour at-will.",
+     "Shaping a magic with the dragon pearl is a d6 check; first-circle effects happen correctly on a roll of 3-6, while second-circle effects happen correctly on a roll of 4-6, and any third-circle effect is correctly cast on a roll of 5-6. On a failure, the magic is twisted following the rules for the Misty Moor on pg. 6."
+    ],
+    "origin": "human",
+    "classId": "priest"
+   }
+  },
+  "petronella-dmeath": {
+   "from": "blank",
+   "replace": {
+    "level": 6,
+    "size": "Medium",
+    "movement": "Normal",
+    "armor": "1",
+    "hp": "6d6-6",
+    "abilities": {
+     "con": -1,
+     "str": 0,
+     "dex": 1,
+     "int": 0,
+     "wis": 1,
+     "cha": 1
+    },
+    "attacks": [
+     "Common +1 feysilver longsword (d6+1)"
+    ],
+    "talents": [
+     "stealth",
+     "lore",
+     "intuition",
+     "survival",
+     "bearing"
+    ],
+    "talentThreshold": 3,
+    "special": [
+     "Talismans (2 first, 2 second, 2 third circle): Fey Luck, Faerie Grove; Misty Step, Beguile; Primal Geas, Leyline Travel.",
+     "Pacts with the local Fair Folk; keeps her boar pucca loyal with Beguile.",
+     "Jack vest; no iron on her person."
+    ],
+    "origin": "elf",
+    "classId": "druid"
+   }
+  },
+  "dmeath-boar-captain": {
+   "from": "blank",
+   "replace": {
+    "level": 3,
+    "size": "Medium",
+    "movement": "Normal",
+    "armor": "2 (0) +shield",
+    "hp": "3d6+3",
+    "abilities": {
+     "con": 1,
+     "str": 1,
+     "dex": 1,
+     "int": -1,
+     "wis": 0,
+     "cha": -1
+    },
+    "attacks": [
+     "Spear (d6+1)"
+    ],
+    "talents": [
+     "agility",
+     "alertness",
+     "survival"
+    ],
+    "talentThreshold": 4,
+    "special": [
+     "Improved Critical Hit. Battle-Trance with the Boar initiation: a frenzied charge is a critical hit if any damage die matches or beats the target's Agility.",
+     "Pucca: a boar is its natural shape and it shifts at will (innate, not magic)."
+    ],
+    "origin": "boar pucca",
+    "classId": "champion"
+   }
+  },
+  "dmeath-boar-guard": {
+   "from": "blank",
+   "replace": {
+    "level": 2,
+    "size": "Medium",
+    "movement": "Normal",
+    "armor": "2 (1) +shield",
+    "hp": "2d6+2",
+    "abilities": {
+     "con": 1,
+     "str": 1,
+     "dex": 1,
+     "int": -1,
+     "wis": 0,
+     "cha": -1
+    },
+    "attacks": [
+     "Spear (d6+1)"
+    ],
+    "talents": [
+     "alertness",
+     "survival"
+    ],
+    "talentThreshold": 5,
+    "special": [
+     "Improved Critical Hit. Battle-Trance with the Boar initiation: a frenzied charge is a critical hit if any damage die matches or beats the target's Agility.",
+     "Pucca: a boar is its natural shape and it shifts at will (innate, not magic)."
+    ],
+    "origin": "boar pucca",
+    "classId": "champion"
+   }
+  },
+  "dmeath-boar-archer": {
+   "from": "blank",
+   "replace": {
+    "level": 2,
+    "size": "Medium",
+    "movement": "Normal",
+    "armor": "2 (1)",
+    "hp": "2d6+2",
+    "abilities": {
+     "con": 1,
+     "str": 1,
+     "dex": 1,
+     "int": -1,
+     "wis": 0,
+     "cha": -1
+    },
+    "attacks": [
+     "Shortbow (d6 piercing, range 10)",
+     "Spear (d6+1)"
+    ],
+    "talents": [
+     "stealth",
+     "alertness",
+     "survival"
+    ],
+    "talentThreshold": 5,
+    "special": [
+     "Hunter's Expertise; Sneak Attack.",
+     "Pucca: a boar is its natural shape and it shifts at will (innate, not magic)."
+    ],
+    "origin": "boar pucca",
+    "classId": "hunter"
+   }
+  },
+  "tinker-gabhan": {
+   "from": "blank",
+   "replace": {
+    "level": 5,
+    "size": "Medium",
+    "movement": "Normal",
+    "armor": "3 (2)",
+    "hp": "5d6+10",
+    "abilities": {
+     "con": 1,
+     "str": 1,
+     "dex": 0,
+     "int": 1,
+     "wis": 0,
+     "cha": 2
+    },
+    "attacks": [
+     "Thundering warhammer (3d6+1 blunt)"
+    ],
+    "talents": [
+     "finesse",
+     "science",
+     "charm",
+     "wit"
+    ],
+    "talentThreshold": 3,
+    "special": [
+     "Dweomers prepared (2 common, 2 uncommon, 1 rare): Magic Ink, Elixir of Health; Amulet of Protection, Barkskin Elixir; his Folding Carriage.",
+     "Common +1 chainmail."
+    ],
+    "origin": "dwarf",
+    "classId": "dweomersmith"
+   }
+  },
+  "goodwitch-fiona": {
+   "from": "blank",
+   "replace": {
+    "level": 3,
+    "size": "Small",
+    "movement": "Normal",
+    "armor": "1",
+    "hp": "3d6",
+    "abilities": {
+     "con": 0,
+     "str": 0,
+     "dex": 1,
+     "int": 0,
+     "wis": 1,
+     "cha": 3
+    },
+    "attacks": [
+     "Quarterstaff (2d6 blunt)"
+    ],
+    "talents": [
+     "medicine",
+     "intuition",
+     "survival",
+     "bearing",
+     "charm",
+     "wit"
+    ],
+    "talentThreshold": 4,
+    "special": [
+     "Talismans (2 first, 1 second circle): Lifesense, Protection from Heat and Cold; Protection from Poison. May invest them in her wood wisp and flame wisp.",
+     "Her two wisps are always with her.",
+     "Jack vest."
+    ],
+    "origin": "gnome",
+    "classId": "druid"
+   }
   }
  }
 }
