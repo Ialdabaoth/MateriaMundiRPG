@@ -1976,5 +1976,11 @@
    "title": "The secret lift beneath the mountain"
   }
  },
+ "anchor": {
+  "square": [
+   37,
+   47
+  ]
+ },
  "notes": "Rebuilt to the dimensions of the reference keep plan Heph supplied (2026-11-06, 10-ft squares doubled to 5-ft), in the E9 ink style; names and roofs as before."
 }

@@ -927,5 +927,11 @@
    "label": "Blacktooth goblins"
   }
  ],
+ "anchor": {
+  "square": [
+   22.5,
+   35
+  ]
+ },
  "notes": "Traced from the grotto layout Heph supplied (2026-11-06) and redrawn in the E9 ink style; cave names from Heph's labelled copy. Terraced cliffs ring a wooded ravine floor; each cave opens at the foot of a cliff."
 }
