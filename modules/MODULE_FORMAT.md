@@ -4,7 +4,7 @@ An open way to publish adventures, regions and campaigns for **Materia Mundi** a
 
 The rules are simple. A module is a **git repository**. Building it produces a **static website**: a map viewer, print-ready PDFs and a `module.json` manifest the Companion reads. GitHub with GitHub Pages is the default host, but any git host and any static web host will do. A referee runs a **campaign by forking** a module repository. The campaign's live record (sessions, explored hexes, character sheets) is committed to the fork, so git history becomes the campaign chronicle.
 
-This repository is the reference implementation: `modules/isle-of-mists` (Beyond the Pale: Leinster, 1422) and the build tools in `modules/tools`.
+This repository is the reference implementation: `modules/isle-of-mists` (Beyond the Pale: The Isle of Mists, 1422) and the build tools in `modules/tools`.
 
 ---
 
@@ -60,7 +60,8 @@ The Companion adds a repository from its published URL. It reads `mm.json` and t
 | `site_icons` | Optional `{site name: icon}` overrides; an icon is a file name (without `.png`) in `assets/tiles/icons/`. Without one, a site uses its kind's icon (grove = great tree, abbey = church). |
 | `site_ranks` | Optional `{site name: 1, 2 or 3}`: the zoom a place first shows at in the Atlas. 1 = major (Region view), 2 = notable (March view), 3 = minor (League view down). Without one, towns are 1, abbeys 2 and other sites 3 (ATLAS_FORMAT.md, Place ranks). |
 | `site_parents` | Optional `{sub-place name: parent name}`: PoI hierarchies (ATLAS_FORMAT.md). A sub-place (a cave mouth, a city gate) collapses into its parent when zoomed out, and the Atlas key lists it under its parent. Any depth; both names must be sites of the module. |
-| `names` | Optional label translations `{name as drawn: {"en": "...", "ga": "..."}}`. The viewer's Language box swaps every map label, page title and list entry that matches a key; names without an entry stay as drawn. Copied to the built `module.json`. |
+| `languages` | Optional `{code: label}`, e.g. `{"ga": "Gaeilge", "en": "English"}`, the language the names are drawn in first. The Language box in the Atlas, the viewer and the Companion offers these, and hides itself with fewer than two. Without it, a module with `names` gets the old Gaeilge/English pair. Changing it does not redraw the maps. |
+| `names` | Optional label translations `{name as drawn: {<language code>: "..."}}`. The viewer's Language box swaps every map label, page title and list entry that matches a key; names without an entry stay as drawn. Copied to the built `module.json`. |
 | `regions` | Named map regions. Each has `sites: [[name, lat, lon, kind, note?]]` plus terrain settings. |
 
 Site `kind` is one of `castle town abbey tomb hill cave ruin grove camp lair mist dead`. A new kind needs an icon in `assets/tiles/icons` and an entry in the build's icon table.

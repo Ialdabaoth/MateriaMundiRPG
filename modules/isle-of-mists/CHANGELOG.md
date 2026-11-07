@@ -1,6 +1,11 @@
-# Beyond the Pale: Leinster, 1422 — changelog
+# Beyond the Pale: The Isle of Mists, 1422 — changelog
 
 This module's version is its own. It does not follow the E9 Atlas (`modules/tools/ATLAS_VERSION`) or the E9 Companion; a change to the tools or apps alone never bumps it. Bump it only for changes to this module's content (text, sites, creatures, encounters, maps), using the rules in [WORKFLOWS.md](../WORKFLOWS.md#versioning).
+
+## 0.4.10 (2026-11-07)
+
+- Title is now "Beyond the Pale: The Isle of Mists, 1422" (Heph), since the module covers the whole island, not only Leinster.
+- `languages` in module.json: Gaeilge (the names as drawn) and English, for the Language box (Atlas 0.5.3).
 
 ## 0.4.9 (2026-11-07)
 
