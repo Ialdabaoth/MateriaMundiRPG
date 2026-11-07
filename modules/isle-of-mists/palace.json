@@ -233,6 +233,85 @@
     },
     "description": "Hung above the throne, still alive, her ribcage torn open and the Croidhe mo Mhaistir pulsing in her chest where her heart should be. Rose vines run through her in place of veins and spread across the throneroom. She wears a gold locket; the silver one that matches it lies in the palace.",
     "wants": "To wield the Croidhe and finish what she and Lady d'Meath began: the Isle reclaimed from Albion and its Church."
+   },
+   "petronella-dmeath": {
+    "name": "Lady Petronella d'Meath",
+    "kind": "npc",
+    "is": "elf",
+    "lair": {
+     "site": "cill-chainnigh-lady-d-meath",
+     "room": "court"
+    },
+    "faction": "dmeath-court",
+    "description": "The self-styled Lady of Cill Chainnigh, an elf who has ruled the county with an iron fist for a century. She and Dame Kyteler called Lig na Péiste with blood and old Pictish rites; when the bloodroses swallowed the palace she took the county for herself. Kyteler's goblin raids let her pose as the just ruler keeping the peace.",
+    "wants": "To keep the county, keep Kyteler caged in her thorns, and keep the Church and the Silver Knight from learning what she did."
+   },
+   "dmeath-boar-captain": {
+    "name": "Boar pucca captain",
+    "kind": "monster",
+    "is": "werewolf",
+    "lair": {
+     "site": "cill-chainnigh-lady-d-meath",
+     "room": "court"
+    },
+    "troupe": {
+     "lair": 5
+    },
+    "faction": "dmeath-court",
+    "description": "Leaders of Lady d'Meath's pack of boar pucca henchmen.",
+    "wants": "Their lady's favour, and the town kept in line."
+   },
+   "dmeath-boar-guard": {
+    "name": "Boar pucca guard",
+    "kind": "monster",
+    "is": "werewolf",
+    "lair": {
+     "site": "cill-chainnigh-lady-d-meath",
+     "room": "court"
+    },
+    "troupe": {
+     "lair": 25
+    },
+    "faction": "dmeath-court",
+    "description": "Lady d'Meath's boar pucca spearmen. They guard the castle and drive off Kyteler's goblin raiders.",
+    "wants": "Orders, meat and a good fight."
+   },
+   "dmeath-boar-archer": {
+    "name": "Boar pucca archer",
+    "kind": "monster",
+    "is": "werewolf",
+    "lair": {
+     "site": "cill-chainnigh-lady-d-meath",
+     "room": "court"
+    },
+    "troupe": {
+     "lair": 10
+    },
+    "faction": "dmeath-court",
+    "description": "Lady d'Meath's boar pucca bowmen and scouts.",
+    "wants": "To catch goblins, and anyone else, before they reach the castle."
+   },
+   "tinker-gabhan": {
+    "name": "Tinker Gabhan",
+    "kind": "npc",
+    "is": "dweomersmith",
+    "lair": {
+     "site": "cill-chainnigh-lady-d-meath",
+     "room": "tinkers-shop"
+    },
+    "description": "A cheerful dwarf dweomersmith whose shop is the one bright spot in Cill Chainnigh. Married to a gnome; travels the county with his daughter Fiona in an elaborate covered stagecoach that is really a Folding Carriage. In his shop two days a week; otherwise any road encounter with a mortal has a 1 in 6 chance to be him or Fiona.",
+    "wants": "Good trade, good company, and his daughter safe on the roads."
+   },
+   "goodwitch-fiona": {
+    "name": "Goodwitch Fiona",
+    "kind": "npc",
+    "is": "gnome",
+    "lair": {
+     "site": "cill-chainnigh-lady-d-meath",
+     "room": "tinkers-shop"
+    },
+    "description": "Gabhan's daughter, who takes after her gnome mother: a druid with a wood wisp and a flame wisp, exceptional charm, and an incorrigible flirt.",
+    "wants": "Adventure on the road, and a handsome stranger or two."
    }
   },
   "factions": [],

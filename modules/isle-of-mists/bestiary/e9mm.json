@@ -2413,6 +2413,216 @@
     "origin": "human",
     "classId": "priest"
    }
+  },
+  "petronella-dmeath": {
+   "from": "blank",
+   "replace": {
+    "level": 6,
+    "size": "Medium",
+    "movement": "Normal",
+    "armor": "1",
+    "hp": "6d6-6",
+    "abilities": {
+     "con": -1,
+     "str": 0,
+     "dex": 1,
+     "int": 0,
+     "wis": 1,
+     "cha": 1
+    },
+    "attacks": [
+     "Common +1 longsword (d6+1)"
+    ],
+    "talents": [
+     "stealth",
+     "lore",
+     "intuition",
+     "survival",
+     "bearing"
+    ],
+    "talentThreshold": 3,
+    "special": [
+     "Warlock: a priest sworn to Crom Cruach, Nature domain.",
+     "Dark prayers prepared (2 first, 2 second, 2 third circle; Nature): Protection from Elements, Sense the Divine; Speak With Animals, Bless; Create Water, Divine Guidance.",
+     "Jack vest."
+    ],
+    "origin": "elf",
+    "classId": "priest"
+   }
+  },
+  "dmeath-boar-captain": {
+   "from": "blank",
+   "replace": {
+    "level": 3,
+    "size": "Medium",
+    "movement": "Normal",
+    "armor": "2 (0) +shield",
+    "hp": "3d6+3",
+    "abilities": {
+     "con": 1,
+     "str": 1,
+     "dex": 1,
+     "int": -1,
+     "wis": 0,
+     "cha": -1
+    },
+    "attacks": [
+     "Spear (d6+1)"
+    ],
+    "talents": [
+     "agility",
+     "alertness",
+     "survival"
+    ],
+    "talentThreshold": 4,
+    "special": [
+     "Improved Critical Hit. Battle-Trance with the Boar initiation: a frenzied charge is a critical hit if any damage die matches or beats the target's Agility.",
+     "Pucca: a boar is its natural shape and it shifts at will (innate, not magic).",
+     "Kept loyal to Lady d'Meath with beguiling glamours."
+    ],
+    "origin": "boar pucca",
+    "classId": "fighter"
+   }
+  },
+  "dmeath-boar-guard": {
+   "from": "blank",
+   "replace": {
+    "level": 2,
+    "size": "Medium",
+    "movement": "Normal",
+    "armor": "2 (1) +shield",
+    "hp": "2d6+2",
+    "abilities": {
+     "con": 1,
+     "str": 1,
+     "dex": 1,
+     "int": -1,
+     "wis": 0,
+     "cha": -1
+    },
+    "attacks": [
+     "Spear (d6+1)"
+    ],
+    "talents": [
+     "alertness",
+     "survival"
+    ],
+    "talentThreshold": 5,
+    "special": [
+     "Improved Critical Hit. Battle-Trance with the Boar initiation: a frenzied charge is a critical hit if any damage die matches or beats the target's Agility.",
+     "Pucca: a boar is its natural shape and it shifts at will (innate, not magic).",
+     "Kept loyal to Lady d'Meath with beguiling glamours."
+    ],
+    "origin": "boar pucca",
+    "classId": "fighter"
+   }
+  },
+  "dmeath-boar-archer": {
+   "from": "blank",
+   "replace": {
+    "level": 2,
+    "size": "Medium",
+    "movement": "Normal",
+    "armor": "2 (1)",
+    "hp": "2d6+2",
+    "abilities": {
+     "con": 1,
+     "str": 1,
+     "dex": 1,
+     "int": -1,
+     "wis": 0,
+     "cha": -1
+    },
+    "attacks": [
+     "Shortbow (d6 piercing, range 10)",
+     "Spear (d6+1)"
+    ],
+    "talents": [
+     "stealth",
+     "alertness",
+     "survival"
+    ],
+    "talentThreshold": 5,
+    "special": [
+     "Hunter's Expertise; Sneak Attack.",
+     "Pucca: a boar is its natural shape and it shifts at will (innate, not magic).",
+     "Kept loyal to Lady d'Meath with beguiling glamours."
+    ],
+    "origin": "boar pucca",
+    "classId": "expert"
+   }
+  },
+  "tinker-gabhan": {
+   "from": "blank",
+   "replace": {
+    "level": 5,
+    "size": "Medium",
+    "movement": "Normal",
+    "armor": "3 (2)",
+    "hp": "5d6+10",
+    "abilities": {
+     "con": 1,
+     "str": 1,
+     "dex": 0,
+     "int": 1,
+     "wis": 0,
+     "cha": 2
+    },
+    "attacks": [
+     "Thundering warhammer (3d6+1 blunt)"
+    ],
+    "talents": [
+     "finesse",
+     "science",
+     "charm",
+     "wit"
+    ],
+    "talentThreshold": 3,
+    "special": [
+     "Dweomers prepared (2 common, 2 uncommon, 1 rare): Magic Ink, Elixir of Health; Amulet of Protection, Barkskin Elixir; his Folding Carriage.",
+     "Common +1 chainmail.",
+     "Forges common and uncommon magic items to order in his shop."
+    ],
+    "origin": "dwarf",
+    "classId": "fighter+dweomersmith"
+   }
+  },
+  "goodwitch-fiona": {
+   "from": "blank",
+   "replace": {
+    "level": 3,
+    "size": "Small",
+    "movement": "Normal",
+    "armor": "1",
+    "hp": "3d6",
+    "abilities": {
+     "con": 0,
+     "str": 0,
+     "dex": 1,
+     "int": 0,
+     "wis": 1,
+     "cha": 3
+    },
+    "attacks": [
+     "Quarterstaff (2d6 blunt)"
+    ],
+    "talents": [
+     "medicine",
+     "intuition",
+     "survival",
+     "bearing",
+     "charm",
+     "wit"
+    ],
+    "talentThreshold": 4,
+    "special": [
+     "Talismans (2 first, 1 second circle): Lifesense, Protection from Heat and Cold; Protection from Poison. May invest them in her wood wisp and flame wisp.",
+     "Her two wisps are always with her.",
+     "Jack vest."
+    ],
+    "origin": "gnome",
+    "classId": "expert+druid"
+   }
   }
  }
 }
