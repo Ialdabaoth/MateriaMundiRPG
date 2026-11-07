@@ -1,0 +1,18 @@
+{
+  "source": "../.cache/ne/ne_10m_admin_1_states_provinces.geojson",
+  "admin": "Hansa",
+  "bbox": [10.3, 52.8, 20.0, 55.35],
+  "lands": [
+    {"name": "Holstein", "from": ["Schleswig-Holstein", "Hamburg"]},
+    {"name": "Lüneburg", "from": ["Niedersachsen"]},
+    {"name": "Mark Brandenburg", "from": ["Brandenburg", "Sachsen-Anhalt"]},
+    {"name": "Mecklenburg", "from": ["Mecklenburg-Vorpommern"], "lon": [0, 12.6]},
+    {"name": "Pommern", "from": ["Mecklenburg-Vorpommern", "West Pomeranian", "Pomeranian"], "lon": [12.6, 17.55]},
+    {"name": "Pomerellen", "from": ["Pomeranian"], "lon": [17.55, 18.95]},
+    {"name": "Preussen", "from": ["Pomeranian", "Warmian-Masurian", "Kaliningrad"], "lon": [18.95, 30]},
+    {"name": "Kulmerland", "from": ["Kuyavian-Pomeranian"]},
+    {"name": "Grosspolen", "from": ["Greater Poland", "Lubusz", "Masovian"]},
+    {"name": "Danemarch", "from": ["Syddanmark", "Sjaælland"]},
+    {"name": "Bornholm", "from": ["Hovedstaden"]}
+  ]
+}

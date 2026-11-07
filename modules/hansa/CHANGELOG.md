@@ -1,0 +1,9 @@
+# Hansa: changelog
+
+The module's own version (WORKFLOWS.md). Tool and app changes never bump it.
+
+## 0.1.0 (2026-11-06)
+
+- First real-data map: the coast from Lübeck to the Vistula Lagoon, with Bornholm offshore, pushed back to 1422 (REALMAP.md). Centroid Bornholm, fixed extent Holstein to Livonia plus western Poland.
+- Period lands (Holstein, Mecklenburg, Pommern, Pomerellen, Preussen, Kulmerland ...) cut from Natural Earth with tools/admin_lands.py.
+- Gazetteer of about 100 towns, castles and abbeys of 1422, positions approximate.
