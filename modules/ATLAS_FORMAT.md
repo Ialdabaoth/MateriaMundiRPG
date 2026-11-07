@@ -56,7 +56,7 @@ Those are 2112, 528, 88, 11 and 1 bottom hexes across. The default ladder is the
 - **Storage: one picture per hex of a chosen level (Heph 2026-11-07).** `scales.tile` names a level `id`, and the module has one terrain PNG per hex of that level, each with one pixel per bottom hex. The default ladder's tile level is `march` (the 1600 x 1200 pictures below). For a level of `n` bottom hexes the picture is about `4n/3` wide and `n` tall, as 1600 x 1200 shows for n = 1200. So with a 60-ft bottom hex and a 6-mile tile level (`"tile": "hex6"`, Heph 2026-11-07), each picture is about 704 x 528 pixels, and a 24-mile hex is 16 of them. The tile level can be any level, so a module picks whatever size suits it; the picture size is never fixed by the format.
 - **Summaries in the pictures' dead corners** belong to the default ladder. Other ladders use computed summaries, as above.
 
-Open question: whether Atlas print pages follow the default ladder or the module's.
+- **Print pages follow the module's ladder (Heph 2026-11-07).** The atlas PDF is cut by the module's own levels, not the default ones. For the 24 / 6 / 1 mile / 660 ft / 60 ft setup that means pages such as one 6-mile hex showing its 1-mile hexes.
 
 ## The lattice
 
