@@ -31,8 +31,12 @@
     ],
     "talentThreshold": 2,
     "special": [
-     "Forges common or uncommon arcane magic items, and prepares and maintains one common and one uncommon arcane formula or enchantment."
-    ]
+     "Dweomers prepared (2 common, 2 uncommon, 1 rare): Dwarven Apron, Potion of Elemental Fury; Amulet of Protection, Barkskin Elixir; his thunderhammer.",
+     "Forges common and uncommon arcane magic items to order.",
+     "Rituals: analyze or recharge a magic item (two turns), unbind cursed item (four turns), hallow (six turns)."
+    ],
+    "origin": "dwarf",
+    "classId": "dweomersmith"
    }
   },
   "banker": {
@@ -62,8 +66,11 @@
     ],
     "talentThreshold": 4,
     "special": [
-     "The banker can cast identify magic as a ritual, and usually has one volatile common elixir of health prepared."
-    ]
+     "Dweomers prepared (2 common): Elixir of Health, Magic Ink (for the ledgers).",
+     "Analyzes magic items brought to the bank (dweomersmith ritual, two turns)."
+    ],
+    "origin": "dwarf",
+    "classId": "dweomersmith"
    }
   },
   "bank-guard": {
@@ -86,15 +93,14 @@
      "Thundermace (d6+1 blunt + d6 thunder )"
     ],
     "talents": [
-     "finesse",
-     "science",
-     "lore",
-     "medicine"
+     "alertness"
     ],
     "talentThreshold": 4,
     "special": [
-     "Each bank guard has one volatile potion of entanglement prepared."
-    ]
+     "Carries one Potion of Entanglement."
+    ],
+    "origin": "dwarf",
+    "classId": "stalwart"
    }
   },
   "bankers-wife": {
@@ -124,8 +130,11 @@
     ],
     "talentThreshold": 4,
     "special": [
-     "The banker’s wife can cast the traceless passage glamour as a ritual."
-    ]
+     "Armored Stealth; Stonesense.",
+     "Wears Boots of Traceless Passage."
+    ],
+    "origin": "dwarf",
+    "classId": "delver"
    }
   },
   "barkeep": {
@@ -150,7 +159,9 @@
     "talents": [
      "charm"
     ],
-    "talentThreshold": 5
+    "talentThreshold": 5,
+    "origin": "human",
+    "classId": "scout"
    }
   },
   "barkeeps-wife": {
@@ -180,8 +191,11 @@
     ],
     "talentThreshold": 4,
     "special": [
-     "The barkeep’s wife has one glamour , which she can spend to cast any first-circle bardsong."
-    ]
+     "Bardsong: weaves a first-circle Dream or Song glamour (Fascinate, Sleep) into a performance, one Charm check per circle, one round each.",
+     "Magical Intuition."
+    ],
+    "origin": "gnome",
+    "classId": "bard"
    }
   },
   "brother-james": {
@@ -213,8 +227,12 @@
     ],
     "talentThreshold": 3,
     "special": [
-     "James has three favor, which he can use to perform any first- or second- circle miracle from the death domain, or prepare any other first- or second- circle miracle into a prayer strip."
-    ]
+     "Warlock: sworn in secret to the Baalim (Crom Cruach). Passes as an ordinary brother of the keep chapel.",
+     "Dark prayers prepared (2 first, 2 second, 1 third circle): Cause Fear, Command; Speak With Dead, Beguile; Curse Ability.",
+     "His prayer strips are prayers to the Baalim: a true priest who copies or reads one gets no miracle, which is one way to unmask him."
+    ],
+    "origin": "human",
+    "classId": "priest"
    }
   },
   "abbot-costello": {
@@ -247,8 +265,10 @@
     ],
     "talentThreshold": 3,
     "special": [
-     "Costello has three faith, which he can use to perform any first- or second- circle miracle from the beauty domain, or prepare any other first- or second- circle miracle into a prayer strip."
-    ]
+     "Prayer strips (2 first, 2 second, 1 third circle; Beauty): Inspire, Heal Minor Wounds; Beguile, Cure Poison or Disease; Enhance Charisma."
+    ],
+    "origin": "human",
+    "classId": "priest"
    }
   },
   "sister-wendy": {
@@ -279,8 +299,11 @@
     ],
     "talentThreshold": 4,
     "special": [
-     "Wendy has two faith, which she can use to perform any first-circle miracle from the death domain, or prepare any other first-circle miracle into a prayer strip."
-    ]
+     "Keeps the graves and gives the last rites.",
+     "Prayer strips (2 first, 1 second circle; Death): Cause Fear, Sense the Divine; Speak With Dead."
+    ],
+    "origin": "human",
+    "classId": "priest"
    }
   },
   "sister-abigail": {
@@ -310,8 +333,11 @@
     ],
     "talentThreshold": 5,
     "special": [
-     "Abigail has one faith, which she can use to perform any first-circle miracle from the life domain."
-    ]
+     "Runs the chapel kitchen.",
+     "Prayer strips (2 first circle; Life): Heal Minor Wounds ×2."
+    ],
+    "origin": "human",
+    "classId": "priest"
    }
   },
   "brother-sean": {
@@ -321,7 +347,7 @@
     "size": "Medium",
     "movement": "Normal",
     "armor": "1",
-    "hp": "5d6-5",
+    "hp": "2d6-2",
     "abilities": {
      "con": -1,
      "str": 0,
@@ -340,8 +366,10 @@
     ],
     "talentThreshold": 5,
     "special": [
-     "Sean has one faith, which he can use to perform any first-circle miracle from the fate domain."
-    ]
+     "Prayer strips (2 first circle; Fate): Command, Sense the Divine."
+    ],
+    "origin": "human",
+    "classId": "priest"
    }
   },
   "brother-john": {
@@ -351,7 +379,7 @@
     "size": "Medium",
     "movement": "Normal",
     "armor": "1",
-    "hp": "5d6-5",
+    "hp": "1d6",
     "abilities": {
      "con": 0,
      "str": 0,
@@ -369,8 +397,10 @@
     ],
     "talentThreshold": 5,
     "special": [
-     "John has one faith, which he can use to perform any first-circle miracle from the truth domain."
-    ]
+     "Prayer strip (1 first circle; Truth): Holy Light."
+    ],
+    "origin": "human",
+    "classId": "priest"
    }
   },
   "sister-penelope": {
@@ -380,7 +410,7 @@
     "size": "Medium",
     "movement": "Normal",
     "armor": "1",
-    "hp": "5d6-5",
+    "hp": "1d6-1",
     "abilities": {
      "con": -1,
      "str": 0,
@@ -389,15 +419,19 @@
      "wis": 1,
      "cha": 2
     },
-    "attacks": [],
+    "attacks": [
+     "Quarterstaff (1d6 blunt)"
+    ],
     "talents": [
      "bearing",
      "medicine"
     ],
     "talentThreshold": 5,
     "special": [
-     "Penelope has one faith, which she can use to perform any first-circle miracle from the life domain."
-    ]
+     "Prayer strip (1 first circle; Life): Heal Minor Wounds."
+    ],
+    "origin": "human",
+    "classId": "priest"
    }
   },
   "sir-edward-the-castellan": {
@@ -430,8 +464,11 @@
     ],
     "talentThreshold": 3,
     "special": [
-     "Edward has three faith, which he can use to perform any first- or second- circle miracle from the War domain, or prepare any other first- or second- circle miracle into a prayer strip."
-    ]
+     "Warrior 6 / priest 6, a knight sworn to the Church.",
+     "Prayer strips (2 first, 2 second, 2 third circle; War): Heroism, Sense the Divine; Smite, True Strike; Enhance Strength, Divine Guidance."
+    ],
+    "origin": "human",
+    "classId": "warrior+priest"
    }
   },
   "dame-macgeralt": {
@@ -461,8 +498,11 @@
     ],
     "talentThreshold": 3,
     "special": [
-     "Dame MacGeralt is always attuned to her two wisp companions, a fey wisp and an air wisp."
-    ]
+     "Talismans (2 first, 1 second circle): Fey Luck and Fog Cloud, invested in her fey wisp and air wisp; Misty Step.",
+     "Her two wisps are always with her."
+    ],
+    "origin": "elf",
+    "classId": "druid"
    }
   },
   "chief-engineer": {
@@ -491,8 +531,11 @@
     ],
     "talentThreshold": 2,
     "special": [
-     "The chief engineer usually has the enchant uncommon magic item spell prepared and two copies of identify magic prepared, all used to keep the exceptionally finicky storm cannon operational."
-    ]
+     "Spells prepared (2 first, 2 second, 1 third circle): Shield, Arcane Bolts; Arcane Sight ×2; Lightning Bolt.",
+     "Keeps the finicky storm cannon working; he spends his Arcane Sight on it most days."
+    ],
+    "origin": "human",
+    "classId": "wizard"
    }
   },
   "apprentice-engineer": {
@@ -519,8 +562,10 @@
     ],
     "talentThreshold": 2,
     "special": [
-     "Each assistant engineer usually has the identify magic and arcane bolt spells prepared."
-    ]
+     "Spells prepared (2 first, 1 second circle): Arcane Bolts ×2; Arcane Sight."
+    ],
+    "origin": "human",
+    "classId": "wizard"
    }
   },
   "captain-of-the-guard": {
@@ -547,7 +592,9 @@
      "survival",
      "bearing"
     ],
-    "talentThreshold": 5
+    "talentThreshold": 5,
+    "origin": "human",
+    "classId": "warrior"
    }
   },
   "sergeant-at-arms": {
@@ -576,8 +623,10 @@
     ],
     "talentThreshold": 5,
     "special": [
-     "Carries a common amulet of protection, which casts shield once per day."
-    ]
+     "Wears an amulet of protection (shield once a day)."
+    ],
+    "origin": "human",
+    "classId": "warrior"
    }
   },
   "ranger-of-the-pale": {
@@ -605,7 +654,9 @@
      "stealth",
      "alertness"
     ],
-    "talentThreshold": 4
+    "talentThreshold": 4,
+    "origin": "human",
+    "classId": "scout"
    }
   },
   "guard": {
@@ -627,7 +678,9 @@
     "attacks": [
      "longsword (d6)"
     ],
-    "talents": []
+    "talents": [],
+    "origin": "human",
+    "classId": "warrior"
    }
   },
   "peistduine-bone-mother": {
@@ -659,9 +712,11 @@
     ],
     "talentThreshold": 4,
     "special": [
-     "Magic: water ①, fey ①.",
+     "Talismans (2 first, 1 second circle): Cleansing Waters, Fey Luck; Misty Step.",
      "Carries an uncommon bag of holding full of severed heads."
-    ]
+    ],
+    "origin": "kobold",
+    "classId": "druid"
    }
   },
   "peistduine-hunter": {
@@ -691,8 +746,10 @@
     ],
     "talentThreshold": 4,
     "special": [
-     "Feats: Slay Quarry, Evasion."
-    ]
+     "Hunter's Expertise; Sneak Attack."
+    ],
+    "origin": "kobold",
+    "classId": "hunter"
    }
   },
   "peistduine-champion": {
@@ -719,8 +776,10 @@
     ],
     "talentThreshold": 5,
     "special": [
-     "Feats: Snake Frenzy ×1, Evasion."
-    ]
+     "Improved Critical Hit."
+    ],
+    "origin": "kobold",
+    "classId": "champion"
    }
   },
   "peistduine-young": {
@@ -746,7 +805,8 @@
     "talentThreshold": 5,
     "special": [
      "Non-combatant: flees or hides."
-    ]
+    ],
+    "origin": "kobold"
    }
   },
   "ettercap-champion": {
@@ -775,8 +835,11 @@
     ],
     "talentThreshold": 5,
     "special": [
-     "Feats: Snake Frenzy ×2, Evasion."
-    ]
+     "Improved Critical Hit.",
+     "Battle-Trance with the Serpent initiation: in frenzy can sneak and hide, sneak attack while hidden, and charge from hiding."
+    ],
+    "origin": "ettercap",
+    "classId": "champion"
    }
   },
   "ettercap-hunter": {
@@ -806,8 +869,10 @@
     ],
     "talentThreshold": 5,
     "special": [
-     "Feats: Slay Quarry, Evasion."
-    ]
+     "Hunter's Expertise; Sneak Attack."
+    ],
+    "origin": "ettercap",
+    "classId": "hunter"
    }
   },
   "faoladh-chieftain": {
@@ -837,9 +902,13 @@
     ],
     "talentThreshold": 5,
     "special": [
-     "Feats: Wolf Frenzy ×2, Evasion.",
+     "Improved Critical Hit.",
+     "Battle-Trance with the Wolf initiation: when it declares a melee attack in frenzy, all other attacks on that target this round are easier.",
+     "Pucca: wolf is its natural shape and it shifts at will (innate, not magic); it struggles to hold human form when hurt or startled, and has a tell an observant mortal may spot.",
      "Wolf form (3 HD): Str +2, Dex +2, Con +1, Int -3, Wis +1, Cha +1; Fast; armor 1 / 0; HP 3d6+3; bite (d6+2 piercing), grapple (2d6); Stealth, Perception, Survival 3+; smell (superior)."
-    ]
+    ],
+    "origin": "wolf pucca",
+    "classId": "champion"
    }
   },
   "faoladh-champion": {
@@ -869,9 +938,13 @@
     ],
     "talentThreshold": 5,
     "special": [
-     "Feats: Wolf Frenzy ×1, Evasion.",
+     "Improved Critical Hit.",
+     "Battle-Trance with the Wolf initiation: when it declares a melee attack in frenzy, all other attacks on that target this round are easier.",
+     "Pucca: wolf is its natural shape and it shifts at will (innate, not magic); it struggles to hold human form when hurt or startled, and has a tell an observant mortal may spot.",
      "Fights as a wolf when attacked (see the chieftain's wolf form)."
-    ]
+    ],
+    "origin": "wolf pucca",
+    "classId": "champion"
    }
   },
   "faoladh-hunter": {
@@ -901,9 +974,12 @@
     ],
     "talentThreshold": 4,
     "special": [
-     "Feats: Slay Quarry, Evasion.",
+     "Hunter's Expertise; Sneak Attack.",
+     "Pucca: wolf is its natural shape and it shifts at will (innate, not magic); it struggles to hold human form when hurt or startled, and has a tell an observant mortal may spot.",
      "Fights as a wolf when attacked."
-    ]
+    ],
+    "origin": "wolf pucca",
+    "classId": "hunter"
    }
   },
   "wolf-faun-champion": {
@@ -931,8 +1007,10 @@
     ],
     "talentThreshold": 5,
     "special": [
-     "Feats: Wolf Frenzy ×1, Evasion."
-    ]
+     "Improved Critical Hit."
+    ],
+    "origin": "faun",
+    "classId": "champion"
    }
   },
   "wolf-faun-hunter": {
@@ -963,8 +1041,10 @@
     ],
     "talentThreshold": 5,
     "special": [
-     "Feats: Slay Quarry, Evasion."
-    ]
+     "Hunter's Expertise; Sneak Attack."
+    ],
+    "origin": "faun",
+    "classId": "hunter"
    }
   },
   "wolf-faun-druid": {
@@ -995,9 +1075,11 @@
     ],
     "talentThreshold": 5,
     "special": [
-     "Magic: fey ①.",
+     "Talisman (1 first circle): Fey Luck.",
      "Wears common +1 thornweave hide."
-    ]
+    ],
+    "origin": "faun",
+    "classId": "druid"
    }
   },
   "the-hermit": {
@@ -1031,42 +1113,12 @@
     ],
     "talentThreshold": 3,
     "special": [
-     "Magic: wood ①, fey ①. Wears common +1 thornweave hide.",
-     "Wild shape, horned owl (1 HD): Fly, Small, armor 0, HP 3, bite (d6 piercing).",
-     "Wild shape, black bear (2 HD): Large, armor 1 (0), HP (2d6+6)×2, bite (d6+3 piercing), claws (2d6), grapple (2d6+3 blunt)."
-    ]
-   }
-  },
-  "hermits-leopard": {
-   "from": "blank",
-   "replace": {
-    "level": 3,
-    "size": "Medium",
-    "movement": "Normal",
-    "armor": "0",
-    "hp": "(3d6+3)×2",
-    "abilities": {
-     "con": 1,
-     "str": 3,
-     "dex": 3,
-     "int": -4,
-     "wis": 1,
-     "cha": 0
-    },
-    "attacks": [
-     "Bite (2d6 piercing)",
-     "Claws (2d6+3), 2 per action"
+     "Talismans (2 first, 1 second circle): Lifesense, Fey Luck; Protection from Poison. May invest them in her two wisps.",
+     "Wears common +1 thornweave hide.",
+     "Wild-shape talismans: horned owl (1 HD: Fly, Small, armor 0, HP 3, bite d6 piercing) and black bear (2 HD: Large, armor 1 (0), HP (2d6+6)×2, bite d6+3 piercing, claws 2d6, grapple 2d6+3 blunt)."
     ],
-    "talents": [
-     "agility",
-     "stealth",
-     "alertness",
-     "survival"
-    ],
-    "talentThreshold": 3,
-    "special": [
-     "Senses: smell (superior)."
-    ]
+    "origin": "elf",
+    "classId": "druid"
    }
   },
   "warren-bone-mother": {
@@ -1082,8 +1134,10 @@
      "wit"
     ],
     "special": [
-     "Magic: water ①, fey ①."
-    ]
+     "Talismans (2 first, 1 second circle): Cleansing Waters, Fey Luck; Misty Step."
+    ],
+    "origin": "kobold",
+    "classId": "druid"
    }
   },
   "warren-hunter": {
@@ -1135,8 +1189,10 @@
     ],
     "talentThreshold": 5,
     "special": [
-     "Feats: Slay Quarry, Evasion."
-    ]
+     "Hunter's Expertise; Sneak Attack."
+    ],
+    "origin": "troglodyte",
+    "classId": "hunter"
    }
   },
   "giant-rat": {
@@ -1198,8 +1254,11 @@
     ],
     "talentThreshold": 5,
     "special": [
-     "Feats: Boar Frenzy ×2, Evasion."
-    ]
+     "Improved Critical Hit.",
+     "Battle-Trance with the Boar initiation: a charge in frenzy is a critical hit if any damage die matches or beats its Agility."
+    ],
+    "origin": "hobgoblin",
+    "classId": "champion"
    }
   },
   "blacktooth-champion": {
@@ -1227,8 +1286,11 @@
     ],
     "talentThreshold": 5,
     "special": [
-     "Feats: Boar Frenzy ×1, Evasion."
-    ]
+     "Improved Critical Hit.",
+     "Battle-Trance with the Boar initiation: a charge in frenzy is a critical hit if any damage die matches or beats its Agility."
+    ],
+    "origin": "hobgoblin",
+    "classId": "champion"
    }
   },
   "blacktooth-hunter": {
@@ -1258,8 +1320,10 @@
     ],
     "talentThreshold": 4,
     "special": [
-     "Feats: Slay Quarry, Evasion."
-    ]
+     "Hunter's Expertise; Sneak Attack."
+    ],
+    "origin": "hobgoblin",
+    "classId": "hunter"
    }
   },
   "goblin-young": {
@@ -1285,7 +1349,8 @@
     "talentThreshold": 5,
     "special": [
      "Non-combatant: flees or hides."
-    ]
+    ],
+    "origin": "redcap"
    }
   },
   "bloodhand-chieftain": {
@@ -1315,8 +1380,11 @@
     ],
     "talentThreshold": 5,
     "special": [
-     "Feats: Boar Frenzy ×2, Evasion."
-    ]
+     "Improved Critical Hit.",
+     "Battle-Trance with the Boar initiation: a charge in frenzy is a critical hit if any damage die matches or beats its Agility."
+    ],
+    "origin": "redcap",
+    "classId": "champion"
    }
   },
   "bloodhand-hunter": {
@@ -1348,8 +1416,10 @@
     ],
     "talentThreshold": 5,
     "special": [
-     "Feats: Slay Quarry, Evasion."
-    ]
+     "Hunter's Expertise; Sneak Attack."
+    ],
+    "origin": "redcap",
+    "classId": "hunter"
    }
   },
   "skitterglint-subchief": {
@@ -1378,8 +1448,11 @@
     ],
     "talentThreshold": 5,
     "special": [
-     "Feats: Snake Frenzy ×2, Evasion."
-    ]
+     "Improved Critical Hit.",
+     "Battle-Trance with the Serpent initiation: in frenzy can sneak and hide, sneak attack while hidden, and charge from hiding."
+    ],
+    "origin": "redcap",
+    "classId": "champion"
    }
   },
   "skitterglint-redcap-champion": {
@@ -1409,8 +1482,11 @@
     ],
     "talentThreshold": 5,
     "special": [
-     "Feats: Snake Frenzy ×1, Evasion."
-    ]
+     "Improved Critical Hit.",
+     "Battle-Trance with the Serpent initiation: in frenzy can sneak and hide, sneak attack while hidden, and charge from hiding."
+    ],
+    "origin": "redcap",
+    "classId": "champion"
    }
   },
   "skitterglint-redcap-hunter": {
@@ -1441,8 +1517,10 @@
     ],
     "talentThreshold": 5,
     "special": [
-     "Feats: Slay Quarry, Evasion."
-    ]
+     "Hunter's Expertise; Sneak Attack."
+    ],
+    "origin": "redcap",
+    "classId": "hunter"
    }
   },
   "skitterglint-redcap-druid": {
@@ -1472,8 +1550,10 @@
     ],
     "talentThreshold": 5,
     "special": [
-     "Magic: stone ①."
-    ]
+     "Talisman (1 first circle): Iron Ward."
+    ],
+    "origin": "redcap",
+    "classId": "druid"
    }
   },
   "goblin-noncombatant": {
@@ -1528,13 +1608,17 @@
     ],
     "talentThreshold": 3,
     "special": [
+     "Improved Critical Hit.",
+     "Battle-Trance with the Bear initiation: halves all damage taken while frenzying unarmoured.",
      "Huge size: hit points are split by body section; on any hit that was not easy, roll 2d6: 3-4 left leg [hp], 5 left arm [hp], 6-8 body 4×[hp], 9 right arm [hp], 10-11 right leg [hp], 2 or 12 head ½[hp].",
      "Duck: reaction to make a head hit re-roll its location; any damage to the head stuns it.",
      "Cripple: a critical to a location drops it to 0. Head or body at 0 kills; a leg at 0 hobbles; an arm at 0 makes attacks harder except reckless ones.",
      "Frenzy and sweep: when a location drops to 0 it regains all 3 rage and may sweep as a reaction. Sweep (1 rage, action): 3d6 burst vs. everyone within 3 paces; save vs. blast or knockdown for half; failures are knocked prone and flung d6 paces.",
      "Senses: smells fresh demihuman blood from nearly a mile.",
      "Gear: bearskin hides enchanted as an uncommon +2 belt of feral might; rare +3 earthbreaker maul."
-    ]
+    ],
+    "origin": "ogre",
+    "classId": "champion"
    }
   },
   "skitterglint-bugbear": {
@@ -1564,8 +1648,11 @@
     ],
     "talentThreshold": 5,
     "special": [
-     "Feats: Bear Frenzy ×2, Evasion."
-    ]
+     "Improved Critical Hit.",
+     "Battle-Trance with the Bear initiation: halves all damage taken while frenzying unarmoured."
+    ],
+    "origin": "bugbear",
+    "classId": "champion"
    }
   },
   "hobgoblin-jailer": {
@@ -1596,9 +1683,12 @@
     ],
     "talentThreshold": 5,
     "special": [
-     "Feats: Bear Frenzy ×2, Evasion.",
+     "Improved Critical Hit.",
+     "Battle-Trance with the Bear initiation: halves all damage taken while frenzying unarmoured.",
      "Practised at combat stunts with the whip (Finesse 3+)."
-    ]
+    ],
+    "origin": "hobgoblin",
+    "classId": "champion"
    }
   },
   "hobgoblin-jail-guard": {
@@ -1628,8 +1718,11 @@
     ],
     "talentThreshold": 5,
     "special": [
-     "Feats: Bear Frenzy ×2, Evasion."
-    ]
+     "Improved Critical Hit.",
+     "Battle-Trance with the Bear initiation: halves all damage taken while frenzying unarmoured."
+    ],
+    "origin": "hobgoblin",
+    "classId": "champion"
    }
   },
   "skitterglint-hobgoblin-champion": {
@@ -1658,8 +1751,11 @@
     ],
     "talentThreshold": 5,
     "special": [
-     "Feats: Bear Frenzy ×2, Evasion."
-    ]
+     "Improved Critical Hit.",
+     "Battle-Trance with the Bear initiation: halves all damage taken while frenzying unarmoured."
+    ],
+    "origin": "hobgoblin",
+    "classId": "champion"
    }
   },
   "skitterglint-hobgoblin-hunter": {
@@ -1690,8 +1786,10 @@
     ],
     "talentThreshold": 4,
     "special": [
-     "Feats: Slay Quarry, Evasion."
-    ]
+     "Hunter's Expertise; Sneak Attack."
+    ],
+    "origin": "hobgoblin",
+    "classId": "hunter"
    }
   },
   "captive-merchant": {
@@ -1712,7 +1810,8 @@
     },
     "attacks": [],
     "talents": [],
-    "talentThreshold": 5
+    "talentThreshold": 5,
+    "origin": "human"
    }
   },
   "merchants-wife": {
@@ -1733,7 +1832,8 @@
     },
     "attacks": [],
     "talents": [],
-    "talentThreshold": 5
+    "talentThreshold": 5,
+    "origin": "human"
    }
   },
   "merchants-bodyguard": {
@@ -1756,7 +1856,9 @@
      "Per weapon"
     ],
     "talents": [],
-    "talentThreshold": 5
+    "talentThreshold": 5,
+    "origin": "human",
+    "classId": "warrior"
    }
   }
  }

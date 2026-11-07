@@ -1,0 +1,1863 @@
+{
+ "format": "e9-bestiary/1",
+ "rules": [
+  "e9mm"
+ ],
+ "creatures": {
+  "blacksmith": {
+   "from": "blank",
+   "replace": {
+    "level": 5,
+    "size": "Medium",
+    "movement": "Normal",
+    "armor": "2",
+    "hp": "5d6+15",
+    "abilities": {
+     "con": 1,
+     "str": 1,
+     "dex": 0,
+     "int": 1,
+     "wis": 0,
+     "cha": -1
+    },
+    "attacks": [
+     "Thundering warhammer (3d6+1 blunt)"
+    ],
+    "talents": [
+     "finesse",
+     "science",
+     "lore",
+     "medicine"
+    ],
+    "talentThreshold": 2,
+    "special": [
+     "Dweomers prepared (2 common, 2 uncommon, 1 rare): Dwarven Apron, Potion of Elemental Fury; Amulet of Protection, Barkskin Elixir; his thunderhammer.",
+     "Forges common and uncommon arcane magic items to order.",
+     "Rituals: analyze or recharge a magic item (two turns), unbind cursed item (four turns), hallow (six turns)."
+    ],
+    "origin": "dwarf",
+    "classId": "fighter+dweomersmith"
+   }
+  },
+  "banker": {
+   "from": "blank",
+   "replace": {
+    "level": 2,
+    "size": "Medium",
+    "movement": "Normal",
+    "armor": "1",
+    "hp": "2d6+4",
+    "abilities": {
+     "con": 1,
+     "str": 1,
+     "dex": -1,
+     "int": 1,
+     "wis": 1,
+     "cha": -1
+    },
+    "attacks": [
+     "Revolver (d6 piercing + d6 thunder)"
+    ],
+    "talents": [
+     "finesse",
+     "science",
+     "lore",
+     "medicine"
+    ],
+    "talentThreshold": 4,
+    "special": [
+     "Dweomers prepared (2 common): Elixir of Health, Magic Ink (for the ledgers).",
+     "Analyzes magic items brought to the bank (dweomersmith ritual, two turns)."
+    ],
+    "origin": "dwarf",
+    "classId": "fighter+dweomersmith"
+   }
+  },
+  "bank-guard": {
+   "from": "blank",
+   "replace": {
+    "level": 2,
+    "size": "Medium",
+    "movement": "Normal",
+    "armor": "4",
+    "hp": "2d6+6",
+    "abilities": {
+     "con": 1,
+     "str": 1,
+     "dex": 0,
+     "int": 0,
+     "wis": 0,
+     "cha": 0
+    },
+    "attacks": [
+     "Thundermace (d6+1 blunt + d6 thunder )"
+    ],
+    "talents": [
+     "alertness"
+    ],
+    "talentThreshold": 4,
+    "special": [
+     "Dweomers prepared (2 common): Potion of Entanglement, Potion of Bottled Fog."
+    ],
+    "origin": "dwarf",
+    "classId": "fighter+dweomersmith"
+   }
+  },
+  "bankers-wife": {
+   "from": "blank",
+   "replace": {
+    "level": 1,
+    "size": "Medium",
+    "movement": "Normal",
+    "armor": "3 / 1",
+    "hp": "8",
+    "abilities": {
+     "con": 1,
+     "str": 1,
+     "dex": 1,
+     "int": 0,
+     "wis": 0,
+     "cha": 0
+    },
+    "attacks": [
+     "Musket (d6+1 piercing + d6+1 thunder)"
+    ],
+    "talents": [
+     "agility",
+     "finesse",
+     "stealth",
+     "survival"
+    ],
+    "talentThreshold": 4,
+    "special": [
+     "Dweomer prepared (1 common): Boots of Traceless Passage, which she wears."
+    ],
+    "origin": "dwarf",
+    "classId": "fighter+dweomersmith"
+   }
+  },
+  "barkeep": {
+   "from": "blank",
+   "replace": {
+    "level": 1,
+    "size": "Medium",
+    "movement": "Normal",
+    "armor": "0",
+    "hp": "6",
+    "abilities": {
+     "con": 0,
+     "str": 0,
+     "dex": 0,
+     "int": 0,
+     "wis": 0,
+     "cha": 1
+    },
+    "attacks": [
+     "Unarmed (d6 blunt)"
+    ],
+    "talents": [
+     "charm"
+    ],
+    "talentThreshold": 5,
+    "origin": "human",
+    "classId": "expert"
+   }
+  },
+  "barkeeps-wife": {
+   "from": "blank",
+   "replace": {
+    "level": 2,
+    "size": "Medium",
+    "movement": "Normal",
+    "armor": "0",
+    "hp": "2d6",
+    "abilities": {
+     "con": 0,
+     "str": 0,
+     "dex": 1,
+     "int": 0,
+     "wis": 0,
+     "cha": 2
+    },
+    "attacks": [
+     "Unarmed (d6 blunt)"
+    ],
+    "talents": [
+     "finesse",
+     "lore",
+     "wit",
+     "charm"
+    ],
+    "talentThreshold": 4,
+    "special": [
+     "Talismans prepared (2 first-circle): Fascinate, Sleep."
+    ],
+    "origin": "gnome",
+    "classId": "expert+druid"
+   }
+  },
+  "brother-james": {
+   "from": "blank",
+   "replace": {
+    "level": 5,
+    "size": "Medium",
+    "movement": "Normal",
+    "armor": "3 / 1",
+    "hp": "5d6",
+    "abilities": {
+     "con": 0,
+     "str": 0,
+     "dex": 0,
+     "int": 2,
+     "wis": 1,
+     "cha": 2
+    },
+    "attacks": [
+     "thundermace (d6 blunt+d6 thunder)"
+    ],
+    "talents": [
+     "stealth",
+     "medicine",
+     "lore",
+     "charm",
+     "wit",
+     "bearing"
+    ],
+    "talentThreshold": 3,
+    "special": [
+     "Warlock: sworn in secret to the Baalim (Crom Cruach). Passes as an ordinary brother of the keep chapel.",
+     "Dark prayers prepared (2 first, 2 second, 1 third circle): Cause Fear, Command; Speak With Dead, Beguile; Curse Ability.",
+     "His prayer strips are prayers to the Baalim: a true priest who copies or reads one gets no miracle, which is one way to unmask him."
+    ],
+    "origin": "human",
+    "classId": "priest"
+   }
+  },
+  "abbot-costello": {
+   "from": "blank",
+   "replace": {
+    "level": 5,
+    "size": "Medium",
+    "movement": "Normal",
+    "armor": "1",
+    "hp": "5d6-5",
+    "abilities": {
+     "con": -1,
+     "str": 0,
+     "dex": 0,
+     "int": 0,
+     "wis": 1,
+     "cha": 2
+    },
+    "attacks": [
+     "healer’s staff quarterstaff (1d6 blunt)"
+    ],
+    "talents": [
+     "finesse",
+     "lore",
+     "medicine",
+     "survival",
+     "charm",
+     "bearing",
+     "wit"
+    ],
+    "talentThreshold": 3,
+    "special": [
+     "Prayer strips (2 first, 2 second, 1 third circle; Beauty): Inspire, Heal Minor Wounds; Beguile, Cure Poison or Disease; Enhance Charisma."
+    ],
+    "origin": "human",
+    "classId": "priest"
+   }
+  },
+  "sister-wendy": {
+   "from": "blank",
+   "replace": {
+    "level": 3,
+    "size": "Medium",
+    "movement": "Normal",
+    "armor": "1",
+    "hp": "3d6-3",
+    "abilities": {
+     "con": -1,
+     "str": 0,
+     "dex": 0,
+     "int": 0,
+     "wis": 1,
+     "cha": 1
+    },
+    "attacks": [
+     "quarterstaff (1d6 blunt / reach)"
+    ],
+    "talents": [
+     "stealth",
+     "medicine",
+     "charm",
+     "wit",
+     "bearing"
+    ],
+    "talentThreshold": 4,
+    "special": [
+     "Keeps the graves and gives the last rites.",
+     "Prayer strips (2 first, 1 second circle; Death): Cause Fear, Sense the Divine; Speak With Dead."
+    ],
+    "origin": "human",
+    "classId": "priest"
+   }
+  },
+  "sister-abigail": {
+   "from": "blank",
+   "replace": {
+    "level": 2,
+    "size": "Medium",
+    "movement": "Normal",
+    "armor": "2 / 1",
+    "hp": "2d6",
+    "abilities": {
+     "con": 0,
+     "str": 0,
+     "dex": 0,
+     "int": 0,
+     "wis": 0,
+     "cha": 1
+    },
+    "attacks": [
+     "frying pan (1d6 blunt)"
+    ],
+    "talents": [
+     "medicine",
+     "survival",
+     "charm",
+     "bearing"
+    ],
+    "talentThreshold": 5,
+    "special": [
+     "Runs the chapel kitchen.",
+     "Prayer strips (2 first circle; Life): Heal Minor Wounds ×2."
+    ],
+    "origin": "human",
+    "classId": "priest"
+   }
+  },
+  "brother-sean": {
+   "from": "blank",
+   "replace": {
+    "level": 2,
+    "size": "Medium",
+    "movement": "Normal",
+    "armor": "1",
+    "hp": "2d6-2",
+    "abilities": {
+     "con": -1,
+     "str": 0,
+     "dex": 0,
+     "int": 0,
+     "wis": 1,
+     "cha": 2
+    },
+    "attacks": [
+     "mace (1d6 blunt)"
+    ],
+    "talents": [
+     "alertness",
+     "charm",
+     "bearing"
+    ],
+    "talentThreshold": 5,
+    "special": [
+     "Prayer strips (2 first circle; Fate): Command, Sense the Divine."
+    ],
+    "origin": "human",
+    "classId": "priest"
+   }
+  },
+  "brother-john": {
+   "from": "blank",
+   "replace": {
+    "level": 1,
+    "size": "Medium",
+    "movement": "Normal",
+    "armor": "1",
+    "hp": "1d6",
+    "abilities": {
+     "con": 0,
+     "str": 0,
+     "dex": 0,
+     "int": 0,
+     "wis": 1,
+     "cha": 1
+    },
+    "attacks": [
+     "mace (1d6 blunt)"
+    ],
+    "talents": [
+     "bearing",
+     "lore"
+    ],
+    "talentThreshold": 5,
+    "special": [
+     "Prayer strip (1 first circle; Truth): Holy Light."
+    ],
+    "origin": "human",
+    "classId": "priest"
+   }
+  },
+  "sister-penelope": {
+   "from": "blank",
+   "replace": {
+    "level": 1,
+    "size": "Medium",
+    "movement": "Normal",
+    "armor": "1",
+    "hp": "1d6-1",
+    "abilities": {
+     "con": -1,
+     "str": 0,
+     "dex": 0,
+     "int": 0,
+     "wis": 1,
+     "cha": 2
+    },
+    "attacks": [
+     "Quarterstaff (1d6 blunt)"
+    ],
+    "talents": [
+     "bearing",
+     "medicine"
+    ],
+    "talentThreshold": 5,
+    "special": [
+     "Prayer strip (1 first circle; Life): Heal Minor Wounds."
+    ],
+    "origin": "human",
+    "classId": "priest"
+   }
+  },
+  "sir-edward-the-castellan": {
+   "from": "blank",
+   "replace": {
+    "level": 6,
+    "size": "Medium",
+    "movement": "Normal",
+    "armor": "5",
+    "hp": "6d6+12",
+    "abilities": {
+     "con": 0,
+     "str": 0,
+     "dex": 2,
+     "int": 0,
+     "wis": 1,
+     "cha": 1
+    },
+    "attacks": [
+     "Keen longsword (4d6)"
+    ],
+    "talents": [
+     "agility",
+     "lore",
+     "medicine",
+     "survival",
+     "charm",
+     "bearing",
+     "wit"
+    ],
+    "talentThreshold": 3,
+    "special": [
+     "Warrior 6 / priest 6, a knight sworn to the Church.",
+     "Prayer strips (2 first, 2 second, 2 third circle; War): Heroism, Sense the Divine; Smite, True Strike; Enhance Strength, Divine Guidance."
+    ],
+    "origin": "human",
+    "classId": "fighter+priest"
+   }
+  },
+  "dame-macgeralt": {
+   "from": "blank",
+   "replace": {
+    "level": 3,
+    "size": "Medium",
+    "movement": "Normal",
+    "armor": "3 / 1",
+    "hp": "3d6",
+    "abilities": {
+     "con": 0,
+     "str": 0,
+     "dex": 1,
+     "int": 0,
+     "wis": 1,
+     "cha": 1
+    },
+    "attacks": [
+     "windbow (1d6+1 piercing / 20 paces)"
+    ],
+    "talents": [
+     "lore",
+     "medicine",
+     "intuition",
+     "survival"
+    ],
+    "talentThreshold": 3,
+    "special": [
+     "Talismans (2 first, 1 second circle): Fey Luck and Fog Cloud, invested in her fey wisp and air wisp; Misty Step.",
+     "Her two wisps are always with her."
+    ],
+    "origin": "elf",
+    "classId": "fighter+expert+druid"
+   }
+  },
+  "chief-engineer": {
+   "from": "blank",
+   "replace": {
+    "level": 5,
+    "size": "Medium",
+    "movement": "Normal",
+    "armor": "3",
+    "hp": "3d6+6",
+    "abilities": {
+     "con": 0,
+     "str": -1,
+     "dex": 1,
+     "int": 2,
+     "wis": 1,
+     "cha": 0
+    },
+    "attacks": [
+     "stormcannon (3D6 structural lightning)"
+    ],
+    "talents": [
+     "finesse",
+     "science",
+     "bearing"
+    ],
+    "talentThreshold": 2,
+    "special": [
+     "Spells prepared (2 first, 2 second, 1 third circle): Shield, Arcane Bolts; Arcane Sight ×2; Lightning Bolt.",
+     "Keeps the finicky storm cannon working; he spends his Arcane Sight on it most days."
+    ],
+    "origin": "human",
+    "classId": "wizard"
+   }
+  },
+  "apprentice-engineer": {
+   "from": "blank",
+   "replace": {
+    "level": 3,
+    "size": "Medium",
+    "movement": "Normal",
+    "armor": "3",
+    "hp": "3d6+6",
+    "abilities": {
+     "con": 0,
+     "str": 1,
+     "dex": 0,
+     "int": 0,
+     "wis": 0,
+     "cha": 0
+    },
+    "attacks": [
+     "magic missile (d6 at 20 paces)"
+    ],
+    "talents": [
+     "science"
+    ],
+    "talentThreshold": 2,
+    "special": [
+     "Spells prepared (2 first, 1 second circle): Arcane Bolts ×2; Arcane Sight."
+    ],
+    "origin": "human",
+    "classId": "wizard"
+   }
+  },
+  "captain-of-the-guard": {
+   "from": "blank",
+   "replace": {
+    "level": 3,
+    "size": "Medium",
+    "movement": "Normal",
+    "armor": "3 / 2",
+    "hp": "3d6+6",
+    "abilities": {
+     "con": 0,
+     "str": 1,
+     "dex": 0,
+     "int": 0,
+     "wis": 0,
+     "cha": 0
+    },
+    "attacks": [
+     "+1 longsword (d6+1)"
+    ],
+    "talents": [
+     "agility",
+     "survival",
+     "bearing"
+    ],
+    "talentThreshold": 5,
+    "origin": "human",
+    "classId": "fighter"
+   }
+  },
+  "sergeant-at-arms": {
+   "from": "blank",
+   "replace": {
+    "level": 2,
+    "size": "Medium",
+    "movement": "Normal",
+    "armor": "3 / 2",
+    "hp": "2d6+6",
+    "abilities": {
+     "con": 1,
+     "str": 0,
+     "dex": 0,
+     "int": 0,
+     "wis": 0,
+     "cha": 0
+    },
+    "attacks": [
+     "+1 longsword (d6+1)"
+    ],
+    "talents": [
+     "agility",
+     "survival",
+     "bearing"
+    ],
+    "talentThreshold": 5,
+    "special": [
+     "Wears an amulet of protection (shield once a day)."
+    ],
+    "origin": "human",
+    "classId": "fighter"
+   }
+  },
+  "ranger-of-the-pale": {
+   "from": "blank",
+   "replace": {
+    "level": 2,
+    "size": "Medium",
+    "movement": "Normal",
+    "armor": "1",
+    "hp": "6",
+    "abilities": {
+     "con": 0,
+     "str": 0,
+     "dex": 1,
+     "int": 0,
+     "wis": 0,
+     "cha": 0
+    },
+    "attacks": [
+     "longbow (d6)"
+    ],
+    "talents": [
+     "agility",
+     "finesse",
+     "stealth",
+     "alertness"
+    ],
+    "talentThreshold": 4,
+    "origin": "human",
+    "classId": "expert"
+   }
+  },
+  "guard": {
+   "from": "blank",
+   "replace": {
+    "level": 1,
+    "size": "Medium",
+    "movement": "Normal",
+    "armor": "2 / 1",
+    "hp": "9",
+    "abilities": {
+     "con": 1,
+     "str": 0,
+     "dex": 0,
+     "int": 0,
+     "wis": 0,
+     "cha": 0
+    },
+    "attacks": [
+     "longsword (d6)"
+    ],
+    "talents": [],
+    "origin": "human",
+    "classId": "fighter"
+   }
+  },
+  "peistduine-bone-mother": {
+   "from": "blank",
+   "replace": {
+    "level": 3,
+    "size": "Small",
+    "movement": "Normal",
+    "armor": "2 / 1",
+    "hp": "3d6÷2",
+    "abilities": {
+     "con": 0,
+     "str": 0,
+     "dex": 1,
+     "int": 0,
+     "wis": 1,
+     "cha": 0
+    },
+    "attacks": [
+     "Quarterstaff (2d6 blunt)"
+    ],
+    "talents": [
+     "science",
+     "lore",
+     "medicine",
+     "intuition",
+     "survival",
+     "wit"
+    ],
+    "talentThreshold": 4,
+    "special": [
+     "Talismans (2 first, 1 second circle): Cleansing Waters, Fey Luck; Misty Step.",
+     "Carries an uncommon bag of holding full of severed heads."
+    ],
+    "origin": "kobold",
+    "classId": "druid"
+   }
+  },
+  "peistduine-hunter": {
+   "from": "blank",
+   "replace": {
+    "level": 1,
+    "size": "Small",
+    "movement": "Normal",
+    "armor": "0",
+    "hp": "3",
+    "abilities": {
+     "con": 0,
+     "str": 1,
+     "dex": 1,
+     "int": -1,
+     "wis": 0,
+     "cha": 0
+    },
+    "attacks": [
+     "Shortbow (d6+1 piercing, range 10)"
+    ],
+    "talents": [
+     "agility",
+     "stealth",
+     "alertness",
+     "survival"
+    ],
+    "talentThreshold": 4,
+    "special": [
+     "Hunter's Expertise; Sneak Attack."
+    ],
+    "origin": "kobold",
+    "classId": "expert"
+   }
+  },
+  "peistduine-champion": {
+   "from": "blank",
+   "replace": {
+    "level": 1,
+    "size": "Small",
+    "movement": "Normal",
+    "armor": "0",
+    "hp": "4",
+    "abilities": {
+     "con": 0,
+     "str": 1,
+     "dex": 1,
+     "int": -1,
+     "wis": 0,
+     "cha": 0
+    },
+    "attacks": [
+     "Javelin (2d6, or d6 thrown, range 5)"
+    ],
+    "talents": [
+     "stealth"
+    ],
+    "talentThreshold": 5,
+    "special": [
+     "Improved Critical Hit."
+    ],
+    "origin": "kobold",
+    "classId": "fighter"
+   }
+  },
+  "peistduine-young": {
+   "from": "blank",
+   "replace": {
+    "level": 0,
+    "size": "Small",
+    "movement": "Normal",
+    "armor": "0",
+    "hp": "1",
+    "abilities": {
+     "con": 0,
+     "str": -1,
+     "dex": 1,
+     "int": -1,
+     "wis": 0,
+     "cha": 0
+    },
+    "attacks": [],
+    "talents": [
+     "stealth"
+    ],
+    "talentThreshold": 5,
+    "special": [
+     "Non-combatant: flees or hides."
+    ],
+    "origin": "kobold"
+   }
+  },
+  "ettercap-champion": {
+   "from": "blank",
+   "replace": {
+    "level": 3,
+    "size": "Medium",
+    "movement": "Climb",
+    "armor": "1 / 0",
+    "hp": "3d6+9",
+    "abilities": {
+     "con": 1,
+     "str": 1,
+     "dex": 0,
+     "int": -1,
+     "wis": 0,
+     "cha": 0
+    },
+    "attacks": [
+     "Two poisoned daggers (2d6 piercing + d6 ongoing poison)"
+    ],
+    "talents": [
+     "agility",
+     "stealth",
+     "survival"
+    ],
+    "talentThreshold": 5,
+    "special": [
+     "Improved Critical Hit.",
+     "Battle-Trance with the Serpent initiation: in frenzy can sneak and hide, sneak attack while hidden, and charge from hiding."
+    ],
+    "origin": "ettercap",
+    "classId": "fighter"
+   }
+  },
+  "ettercap-hunter": {
+   "from": "blank",
+   "replace": {
+    "level": 2,
+    "size": "Medium",
+    "movement": "Climb",
+    "armor": "1 / 0",
+    "hp": "3d6+6",
+    "abilities": {
+     "con": 1,
+     "str": 1,
+     "dex": 0,
+     "int": -1,
+     "wis": 0,
+     "cha": 0
+    },
+    "attacks": [
+     "Two poisoned daggers (2d6 piercing + d6 ongoing poison)"
+    ],
+    "talents": [
+     "agility",
+     "stealth",
+     "alertness",
+     "survival"
+    ],
+    "talentThreshold": 5,
+    "special": [
+     "Hunter's Expertise; Sneak Attack."
+    ],
+    "origin": "ettercap",
+    "classId": "expert"
+   }
+  },
+  "faoladh-chieftain": {
+   "from": "blank",
+   "replace": {
+    "level": 3,
+    "size": "Medium",
+    "movement": "Normal",
+    "armor": "2 / 1",
+    "hp": "3d6+6",
+    "abilities": {
+     "con": 0,
+     "str": 2,
+     "dex": 1,
+     "int": -1,
+     "wis": 0,
+     "cha": 0
+    },
+    "attacks": [
+     "Venom scythe, common +1 (2d6+2 + d6 poison)"
+    ],
+    "talents": [
+     "agility",
+     "stealth",
+     "alertness",
+     "survival"
+    ],
+    "talentThreshold": 5,
+    "special": [
+     "Improved Critical Hit.",
+     "Battle-Trance with the Wolf initiation: when it declares a melee attack in frenzy, all other attacks on that target this round are easier.",
+     "Pucca: wolf is its natural shape and it shifts at will (innate, not magic); it struggles to hold human form when hurt or startled, and has a tell an observant mortal may spot.",
+     "Wolf form (3 HD): Str +2, Dex +2, Con +1, Int -3, Wis +1, Cha +1; Fast; armor 1 / 0; HP 3d6+3; bite (d6+2 piercing), grapple (2d6); Stealth, Perception, Survival 3+; smell (superior)."
+    ],
+    "origin": "wolf pucca",
+    "classId": "fighter"
+   }
+  },
+  "faoladh-champion": {
+   "from": "blank",
+   "replace": {
+    "level": 2,
+    "size": "Medium",
+    "movement": "Normal",
+    "armor": "2 / 1",
+    "hp": "2d6+4",
+    "abilities": {
+     "con": 0,
+     "str": 1,
+     "dex": 1,
+     "int": -1,
+     "wis": 0,
+     "cha": 0
+    },
+    "attacks": [
+     "Greatsword (2d6+1)"
+    ],
+    "talents": [
+     "agility",
+     "stealth",
+     "alertness",
+     "survival"
+    ],
+    "talentThreshold": 5,
+    "special": [
+     "Improved Critical Hit.",
+     "Battle-Trance with the Wolf initiation: when it declares a melee attack in frenzy, all other attacks on that target this round are easier.",
+     "Pucca: wolf is its natural shape and it shifts at will (innate, not magic); it struggles to hold human form when hurt or startled, and has a tell an observant mortal may spot.",
+     "Fights as a wolf when attacked (see the chieftain's wolf form)."
+    ],
+    "origin": "wolf pucca",
+    "classId": "fighter"
+   }
+  },
+  "faoladh-hunter": {
+   "from": "blank",
+   "replace": {
+    "level": 2,
+    "size": "Medium",
+    "movement": "Normal",
+    "armor": "1",
+    "hp": "2d6+2",
+    "abilities": {
+     "con": 0,
+     "str": 1,
+     "dex": 1,
+     "int": -1,
+     "wis": 0,
+     "cha": 0
+    },
+    "attacks": [
+     "Two daggers (2d6 piercing)"
+    ],
+    "talents": [
+     "agility",
+     "stealth",
+     "alertness",
+     "survival"
+    ],
+    "talentThreshold": 4,
+    "special": [
+     "Hunter's Expertise; Sneak Attack.",
+     "Pucca: wolf is its natural shape and it shifts at will (innate, not magic); it struggles to hold human form when hurt or startled, and has a tell an observant mortal may spot.",
+     "Fights as a wolf when attacked."
+    ],
+    "origin": "wolf pucca",
+    "classId": "expert"
+   }
+  },
+  "wolf-faun-champion": {
+   "from": "blank",
+   "replace": {
+    "level": 1,
+    "size": "Medium",
+    "movement": "Normal",
+    "armor": "1",
+    "hp": "8",
+    "abilities": {
+     "con": 0,
+     "str": 1,
+     "dex": 0,
+     "int": 0,
+     "wis": 0,
+     "cha": 0
+    },
+    "attacks": [
+     "Greataxe (2d6+1, sundering)"
+    ],
+    "talents": [
+     "agility",
+     "stealth"
+    ],
+    "talentThreshold": 5,
+    "special": [
+     "Improved Critical Hit."
+    ],
+    "origin": "faun",
+    "classId": "fighter"
+   }
+  },
+  "wolf-faun-hunter": {
+   "from": "blank",
+   "replace": {
+    "level": 1,
+    "size": "Medium",
+    "movement": "Normal",
+    "armor": "1",
+    "hp": "7",
+    "abilities": {
+     "con": 0,
+     "str": 1,
+     "dex": 0,
+     "int": 0,
+     "wis": 0,
+     "cha": 0
+    },
+    "attacks": [
+     "Two daggers (2d6 piercing)",
+     "Greatbow"
+    ],
+    "talents": [
+     "agility",
+     "stealth",
+     "alertness",
+     "survival"
+    ],
+    "talentThreshold": 5,
+    "special": [
+     "Hunter's Expertise; Sneak Attack."
+    ],
+    "origin": "faun",
+    "classId": "expert"
+   }
+  },
+  "wolf-faun-druid": {
+   "from": "blank",
+   "replace": {
+    "level": 1,
+    "size": "Medium",
+    "movement": "Normal",
+    "armor": "3 (thornweave)",
+    "hp": "d6",
+    "abilities": {
+     "con": 0,
+     "str": 1,
+     "dex": 0,
+     "int": 0,
+     "wis": 0,
+     "cha": 0
+    },
+    "attacks": [
+     "Quarterstaff (2d6 blunt)",
+     "Dagger"
+    ],
+    "talents": [
+     "alertness",
+     "intuition",
+     "survival",
+     "wit"
+    ],
+    "talentThreshold": 5,
+    "special": [
+     "Talisman (1 first circle): Fey Luck.",
+     "Wears common +1 thornweave hide."
+    ],
+    "origin": "faun",
+    "classId": "druid"
+   }
+  },
+  "the-hermit": {
+   "from": "blank",
+   "replace": {
+    "level": 3,
+    "size": "Medium",
+    "movement": "Normal",
+    "armor": "3 / 2",
+    "hp": "3d6",
+    "abilities": {
+     "con": 0,
+     "str": -1,
+     "dex": 2,
+     "int": 0,
+     "wis": 1,
+     "cha": 1
+    },
+    "attacks": [
+     "Two daggers coated in death poison (2d6 piercing + d6 ongoing poison)"
+    ],
+    "talents": [
+     "stealth",
+     "science",
+     "lore",
+     "medicine",
+     "intuition",
+     "survival",
+     "wit",
+     "charm"
+    ],
+    "talentThreshold": 3,
+    "special": [
+     "Talismans (2 first, 1 second circle): Lifesense, Fey Luck; Protection from Poison. May invest them in her two wisps.",
+     "Wears common +1 thornweave hide.",
+     "Wild-shape talismans: horned owl (1 HD: Fly, Small, armor 0, HP 3, bite d6 piercing) and black bear (2 HD: Large, armor 1 (0), HP (2d6+6)×2, bite d6+3 piercing, claws 2d6, grapple 2d6+3 blunt)."
+    ],
+    "origin": "elf",
+    "classId": "fighter+expert+druid"
+   }
+  },
+  "warren-hunter": {
+   "from": "peistduine-hunter",
+   "replace": {
+    "attacks": [
+     "Shortbow (d6 piercing, range 10)",
+     "Javelin (d6, range 5)"
+    ],
+    "talents": [
+     "agility",
+     "finesse",
+     "stealth",
+     "alertness"
+    ],
+    "talentThreshold": 5
+   }
+  },
+  "warren-champion": {
+   "from": "peistduine-champion"
+  },
+  "warren-young": {
+   "from": "peistduine-young"
+  },
+  "goblin-noncombatant": {
+   "from": "goblin-young"
+  },
+  "giant-rat": {
+   "from": "blank",
+   "replace": {
+    "level": 1,
+    "size": "Small",
+    "movement": "Fast",
+    "armor": "0",
+    "hp": "2",
+    "abilities": {
+     "con": -2,
+     "str": -2,
+     "dex": 3,
+     "int": -4,
+     "wis": 1,
+     "cha": -1
+    },
+    "attacks": [
+     "Bite (d6 piercing)"
+    ],
+    "talents": [
+     "agility",
+     "stealth",
+     "alertness",
+     "survival"
+    ],
+    "talentThreshold": 3,
+    "special": [
+     "Senses: smell (superior).",
+     "Behaviour (d6): 1-2 fearful, 3-5 wary, 6 aggressive.",
+     "Critical bite: save vs. disease; on a 1 it is the Plague."
+    ]
+   }
+  },
+  "captive-hob": {
+   "from": "blank",
+   "replace": {
+    "level": 1,
+    "size": "Small",
+    "movement": "Normal",
+    "armor": "0",
+    "hp": "4",
+    "abilities": {
+     "con": 0,
+     "str": 0,
+     "dex": 0,
+     "int": 0,
+     "wis": 0,
+     "cha": 0
+    },
+    "attacks": [],
+    "talents": [],
+    "talentThreshold": 5,
+    "special": [
+     "Non-combatant."
+    ]
+   }
+  },
+  "warren-bone-mother": {
+   "from": "peistduine-bone-mother",
+   "replace": {
+    "attacks": [
+     "Greatsword (2d6+1)"
+    ],
+    "talents": [
+     "science",
+     "intuition",
+     "survival",
+     "wit"
+    ],
+    "special": [
+     "Talismans (2 first, 1 second circle): Cleansing Waters, Fey Luck; Misty Step."
+    ],
+    "origin": "kobold",
+    "classId": "druid"
+   }
+  },
+  "troglodyte-hunter": {
+   "from": "blank",
+   "replace": {
+    "level": 2,
+    "size": "Medium",
+    "movement": "Normal",
+    "armor": "0",
+    "hp": "2d6+4",
+    "abilities": {
+     "con": 0,
+     "str": 1,
+     "dex": 1,
+     "int": -1,
+     "wis": 0,
+     "cha": 0
+    },
+    "attacks": [
+     "Shortbow (d6 piercing, range 10)"
+    ],
+    "talents": [
+     "agility",
+     "finesse",
+     "stealth",
+     "alertness"
+    ],
+    "talentThreshold": 5,
+    "special": [
+     "Hunter's Expertise; Sneak Attack."
+    ],
+    "origin": "troglodyte",
+    "classId": "expert"
+   }
+  },
+  "blacktooth-chieftain": {
+   "from": "blank",
+   "replace": {
+    "level": 3,
+    "size": "Medium",
+    "movement": "Normal",
+    "armor": "2 (1)",
+    "hp": "3d6+12",
+    "abilities": {
+     "con": 2,
+     "str": 2,
+     "dex": 1,
+     "int": -1,
+     "wis": 0,
+     "cha": 0
+    },
+    "attacks": [
+     "Mace (d6+2 blunt)"
+    ],
+    "talents": [
+     "agility",
+     "stealth",
+     "survival"
+    ],
+    "talentThreshold": 5,
+    "special": [
+     "Improved Critical Hit.",
+     "Battle-Trance with the Boar initiation: a charge in frenzy is a critical hit if any damage die matches or beats its Agility."
+    ],
+    "origin": "hobgoblin",
+    "classId": "fighter"
+   }
+  },
+  "blacktooth-champion": {
+   "from": "blank",
+   "replace": {
+    "level": 2,
+    "size": "Medium",
+    "movement": "Normal",
+    "armor": "2 (1)",
+    "hp": "3d6+12",
+    "abilities": {
+     "con": 2,
+     "str": 2,
+     "dex": 1,
+     "int": -1,
+     "wis": 0,
+     "cha": 0
+    },
+    "attacks": [
+     "Spear (d6+2 piercing, reach)"
+    ],
+    "talents": [
+     "agility",
+     "survival"
+    ],
+    "talentThreshold": 5,
+    "special": [
+     "Improved Critical Hit.",
+     "Battle-Trance with the Boar initiation: a charge in frenzy is a critical hit if any damage die matches or beats its Agility."
+    ],
+    "origin": "hobgoblin",
+    "classId": "fighter"
+   }
+  },
+  "blacktooth-hunter": {
+   "from": "blank",
+   "replace": {
+    "level": 2,
+    "size": "Medium",
+    "movement": "Normal",
+    "armor": "1 (0)",
+    "hp": "3d6+9",
+    "abilities": {
+     "con": 2,
+     "str": 2,
+     "dex": 1,
+     "int": -1,
+     "wis": 0,
+     "cha": 0
+    },
+    "attacks": [
+     "Shortbow (d6 piercing, range 10)"
+    ],
+    "talents": [
+     "agility",
+     "stealth",
+     "alertness",
+     "survival"
+    ],
+    "talentThreshold": 4,
+    "special": [
+     "Hunter's Expertise; Sneak Attack."
+    ],
+    "origin": "hobgoblin",
+    "classId": "expert"
+   }
+  },
+  "goblin-young": {
+   "from": "blank",
+   "replace": {
+    "level": 1,
+    "size": "Small",
+    "movement": "Normal",
+    "armor": "0",
+    "hp": "2",
+    "abilities": {
+     "con": 0,
+     "str": -1,
+     "dex": 1,
+     "int": -1,
+     "wis": 0,
+     "cha": 0
+    },
+    "attacks": [],
+    "talents": [
+     "stealth"
+    ],
+    "talentThreshold": 5,
+    "special": [
+     "Non-combatant: flees or hides."
+    ],
+    "origin": "redcap"
+   }
+  },
+  "bloodhand-chieftain": {
+   "from": "blank",
+   "replace": {
+    "level": 3,
+    "size": "Small",
+    "movement": "Normal",
+    "armor": "2 (1)",
+    "hp": "(3d6+9)÷2",
+    "abilities": {
+     "con": 1,
+     "str": 0,
+     "dex": 1,
+     "int": -1,
+     "wis": 0,
+     "cha": 0
+    },
+    "attacks": [
+     "Handaxe, common +1 flying blade (d6+1, range 5)",
+     "Light steel shield"
+    ],
+    "talents": [
+     "agility",
+     "stealth",
+     "survival"
+    ],
+    "talentThreshold": 5,
+    "special": [
+     "Improved Critical Hit.",
+     "Battle-Trance with the Boar initiation: a charge in frenzy is a critical hit if any damage die matches or beats its Agility."
+    ],
+    "origin": "redcap",
+    "classId": "fighter"
+   }
+  },
+  "bloodhand-hunter": {
+   "from": "blank",
+   "replace": {
+    "level": 1,
+    "size": "Small",
+    "movement": "Normal",
+    "armor": "1 (0)",
+    "hp": "4",
+    "abilities": {
+     "con": 1,
+     "str": 0,
+     "dex": 1,
+     "int": -1,
+     "wis": 0,
+     "cha": 0
+    },
+    "attacks": [
+     "Light crossbow (d6 piercing, range 10)",
+     "Shortsword",
+     "Light wooden shield"
+    ],
+    "talents": [
+     "agility",
+     "stealth",
+     "alertness",
+     "survival"
+    ],
+    "talentThreshold": 5,
+    "special": [
+     "Hunter's Expertise; Sneak Attack."
+    ],
+    "origin": "redcap",
+    "classId": "expert"
+   }
+  },
+  "skitterglint-subchief": {
+   "from": "blank",
+   "replace": {
+    "level": 3,
+    "size": "Small",
+    "movement": "Normal",
+    "armor": "2 (1)",
+    "hp": "(3d6+9)÷2",
+    "abilities": {
+     "con": 1,
+     "str": 0,
+     "dex": 1,
+     "int": -1,
+     "wis": 0,
+     "cha": 0
+    },
+    "attacks": [
+     "Spear (2d6, reach)"
+    ],
+    "talents": [
+     "agility",
+     "stealth",
+     "survival"
+    ],
+    "talentThreshold": 5,
+    "special": [
+     "Improved Critical Hit.",
+     "Battle-Trance with the Serpent initiation: in frenzy can sneak and hide, sneak attack while hidden, and charge from hiding."
+    ],
+    "origin": "redcap",
+    "classId": "fighter"
+   }
+  },
+  "skitterglint-redcap-champion": {
+   "from": "blank",
+   "replace": {
+    "level": 2,
+    "size": "Small",
+    "movement": "Normal",
+    "armor": "2 (1)",
+    "hp": "(2d6+4)÷2",
+    "abilities": {
+     "con": 1,
+     "str": 0,
+     "dex": 1,
+     "int": -1,
+     "wis": 0,
+     "cha": 0
+    },
+    "attacks": [
+     "Javelin (d6 piercing, range 5)"
+    ],
+    "talents": [
+     "agility",
+     "stealth",
+     "alertness",
+     "survival"
+    ],
+    "talentThreshold": 5,
+    "special": [
+     "Improved Critical Hit.",
+     "Battle-Trance with the Serpent initiation: in frenzy can sneak and hide, sneak attack while hidden, and charge from hiding."
+    ],
+    "origin": "redcap",
+    "classId": "fighter"
+   }
+  },
+  "skitterglint-redcap-hunter": {
+   "from": "blank",
+   "replace": {
+    "level": 1,
+    "size": "Small",
+    "movement": "Normal",
+    "armor": "1 (0)",
+    "hp": "4",
+    "abilities": {
+     "con": 1,
+     "str": 0,
+     "dex": 1,
+     "int": -1,
+     "wis": 0,
+     "cha": 0
+    },
+    "attacks": [
+     "Crossbow (d6+1 piercing, range 15)",
+     "Two hand axes"
+    ],
+    "talents": [
+     "agility",
+     "stealth",
+     "alertness",
+     "survival"
+    ],
+    "talentThreshold": 5,
+    "special": [
+     "Hunter's Expertise; Sneak Attack."
+    ],
+    "origin": "redcap",
+    "classId": "expert"
+   }
+  },
+  "skitterglint-redcap-druid": {
+   "from": "blank",
+   "replace": {
+    "level": 1,
+    "size": "Small",
+    "movement": "Normal",
+    "armor": "2 (1)",
+    "hp": "4",
+    "abilities": {
+     "con": 1,
+     "str": 0,
+     "dex": 1,
+     "int": -1,
+     "wis": 0,
+     "cha": 0
+    },
+    "attacks": [
+     "Quarterstaff (2d6 blunt)"
+    ],
+    "talents": [
+     "stealth",
+     "alertness",
+     "survival",
+     "wit"
+    ],
+    "talentThreshold": 5,
+    "special": [
+     "Talisman (1 first circle): Iron Ward."
+    ],
+    "origin": "redcap",
+    "classId": "druid"
+   }
+  },
+  "skitterglint-ogre": {
+   "from": "blank",
+   "replace": {
+    "level": 6,
+    "size": "Huge",
+    "movement": "Normal",
+    "armor": "2",
+    "hp": "[3d6+12] per section",
+    "abilities": {
+     "con": 4,
+     "str": 6,
+     "dex": -2,
+     "int": -3,
+     "wis": 0,
+     "cha": 0
+    },
+    "attacks": [
+     "Earthbreaker maul, rare +3 (3d6+9 structure damage, reach 2)"
+    ],
+    "talents": [
+     "alertness",
+     "survival"
+    ],
+    "talentThreshold": 3,
+    "special": [
+     "Improved Critical Hit.",
+     "Battle-Trance with the Bear initiation: halves all damage taken while frenzying unarmoured.",
+     "Huge size: hit points are split by body section; on any hit that was not easy, roll 2d6: 3-4 left leg [hp], 5 left arm [hp], 6-8 body 4×[hp], 9 right arm [hp], 10-11 right leg [hp], 2 or 12 head ½[hp].",
+     "Duck: reaction to make a head hit re-roll its location; any damage to the head stuns it.",
+     "Cripple: a critical to a location drops it to 0. Head or body at 0 kills; a leg at 0 hobbles; an arm at 0 makes attacks harder except reckless ones.",
+     "Frenzy and sweep: when a location drops to 0 it regains all 3 rage and may sweep as a reaction. Sweep (1 rage, action): 3d6 burst vs. everyone within 3 paces; save vs. blast or knockdown for half; failures are knocked prone and flung d6 paces.",
+     "Senses: smells fresh demihuman blood from nearly a mile.",
+     "Gear: bearskin hides enchanted as an uncommon +2 belt of feral might; rare +3 earthbreaker maul."
+    ],
+    "origin": "ogre",
+    "classId": "fighter"
+   }
+  },
+  "skitterglint-bugbear": {
+   "from": "blank",
+   "replace": {
+    "level": 4,
+    "size": "Large",
+    "movement": "Normal",
+    "armor": "2 (1)",
+    "hp": "(4d6+20)×2",
+    "abilities": {
+     "con": 3,
+     "str": 3,
+     "dex": 1,
+     "int": -1,
+     "wis": 0,
+     "cha": 0
+    },
+    "attacks": [
+     "Oversized greatsword (3d6+3)"
+    ],
+    "talents": [
+     "agility",
+     "stealth",
+     "survival",
+     "bearing"
+    ],
+    "talentThreshold": 5,
+    "special": [
+     "Improved Critical Hit.",
+     "Battle-Trance with the Bear initiation: halves all damage taken while frenzying unarmoured."
+    ],
+    "origin": "bugbear",
+    "classId": "fighter"
+   }
+  },
+  "hobgoblin-jailer": {
+   "from": "blank",
+   "replace": {
+    "level": 3,
+    "size": "Medium",
+    "movement": "Normal",
+    "armor": "3 (thornweave)",
+    "hp": "3d6+12",
+    "abilities": {
+     "con": 2,
+     "str": 2,
+     "dex": 1,
+     "int": -1,
+     "wis": 0,
+     "cha": 0
+    },
+    "attacks": [
+     "Whip (d6, reach 2)",
+     "Shortsword",
+     "Light wooden shield"
+    ],
+    "talents": [
+     "stealth",
+     "alertness",
+     "wit"
+    ],
+    "talentThreshold": 5,
+    "special": [
+     "Improved Critical Hit.",
+     "Battle-Trance with the Bear initiation: halves all damage taken while frenzying unarmoured.",
+     "Practised at combat stunts with the whip (Finesse 3+)."
+    ],
+    "origin": "hobgoblin",
+    "classId": "fighter"
+   }
+  },
+  "hobgoblin-jail-guard": {
+   "from": "blank",
+   "replace": {
+    "level": 3,
+    "size": "Medium",
+    "movement": "Normal",
+    "armor": "3 (thornweave)",
+    "hp": "3d6+12",
+    "abilities": {
+     "con": 2,
+     "str": 1,
+     "dex": 1,
+     "int": -1,
+     "wis": 0,
+     "cha": 0
+    },
+    "attacks": [
+     "Shortsword (d6)",
+     "Light wooden shield"
+    ],
+    "talents": [
+     "agility",
+     "alertness",
+     "wit"
+    ],
+    "talentThreshold": 5,
+    "special": [
+     "Improved Critical Hit.",
+     "Battle-Trance with the Bear initiation: halves all damage taken while frenzying unarmoured."
+    ],
+    "origin": "hobgoblin",
+    "classId": "fighter"
+   }
+  },
+  "skitterglint-hobgoblin-champion": {
+   "from": "blank",
+   "replace": {
+    "level": 3,
+    "size": "Medium",
+    "movement": "Normal",
+    "armor": "2 (1)",
+    "hp": "3d6+12",
+    "abilities": {
+     "con": 2,
+     "str": 2,
+     "dex": 1,
+     "int": -1,
+     "wis": 0,
+     "cha": 0
+    },
+    "attacks": [
+     "Greataxe (2d6+2, sundering)"
+    ],
+    "talents": [
+     "agility",
+     "survival",
+     "bearing"
+    ],
+    "talentThreshold": 5,
+    "special": [
+     "Improved Critical Hit.",
+     "Battle-Trance with the Bear initiation: halves all damage taken while frenzying unarmoured."
+    ],
+    "origin": "hobgoblin",
+    "classId": "fighter"
+   }
+  },
+  "skitterglint-hobgoblin-hunter": {
+   "from": "blank",
+   "replace": {
+    "level": 3,
+    "size": "Medium",
+    "movement": "Normal",
+    "armor": "1 (0)",
+    "hp": "3d6+9",
+    "abilities": {
+     "con": 2,
+     "str": 2,
+     "dex": 1,
+     "int": -1,
+     "wis": 0,
+     "cha": 0
+    },
+    "attacks": [
+     "Shortbow (d6, range 10)",
+     "Two shortswords or two daggers"
+    ],
+    "talents": [
+     "agility",
+     "stealth",
+     "alertness",
+     "survival"
+    ],
+    "talentThreshold": 4,
+    "special": [
+     "Hunter's Expertise; Sneak Attack."
+    ],
+    "origin": "hobgoblin",
+    "classId": "expert"
+   }
+  },
+  "captive-merchant": {
+   "from": "blank",
+   "replace": {
+    "level": 1,
+    "size": "Medium",
+    "movement": "Normal",
+    "armor": "0",
+    "hp": "6",
+    "abilities": {
+     "con": 0,
+     "str": 0,
+     "dex": 0,
+     "int": 0,
+     "wis": 0,
+     "cha": 1
+    },
+    "attacks": [],
+    "talents": [],
+    "talentThreshold": 5,
+    "origin": "human"
+   }
+  },
+  "merchants-wife": {
+   "from": "blank",
+   "replace": {
+    "level": 1,
+    "size": "Medium",
+    "movement": "Normal",
+    "armor": "0",
+    "hp": "6",
+    "abilities": {
+     "con": 0,
+     "str": 0,
+     "dex": 0,
+     "int": 0,
+     "wis": 0,
+     "cha": 1
+    },
+    "attacks": [],
+    "talents": [],
+    "talentThreshold": 5,
+    "origin": "human"
+   }
+  },
+  "merchants-bodyguard": {
+   "from": "blank",
+   "replace": {
+    "level": 1,
+    "size": "Medium",
+    "movement": "Normal",
+    "armor": "0",
+    "hp": "8",
+    "abilities": {
+     "con": 0,
+     "str": 1,
+     "dex": 0,
+     "int": 0,
+     "wis": 0,
+     "cha": 0
+    },
+    "attacks": [
+     "Per weapon"
+    ],
+    "talents": [],
+    "talentThreshold": 5,
+    "origin": "human",
+    "classId": "fighter"
+   }
+  }
+ }
+}
