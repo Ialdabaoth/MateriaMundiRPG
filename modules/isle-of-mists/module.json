@@ -145,10 +145,31 @@
   "Nead an Damháin Alla": [{"map": "nead-an-damhain-alla", "label": "The web across the road"}],
   "Dúnad Faoladh": [{"map": "dunad-faoladh", "label": "The wolf camp"}],
   "Sliabh na Caillí": [{"map": "hermits-hollow", "label": "The hermit's hollow oak"}],
-  "Cnoc na Teamhrach": [
-   {"map": "crom-grotto", "label": "The grotto"},
-   {"map": "crom-caves", "entrance": "a", "label": "The caves of Crom Cruach"}
-  ]
+  "Cnoc na Teamhrach": [{"map": "crom-grotto", "label": "The grotto"}],
+  "Péistdaoine cave": [{"map": "crom-caves", "entrance": "a", "label": "Péistdaoine cave"}],
+  "Dubhfhiacail cave": [{"map": "crom-caves", "entrance": "b", "label": "Dubhfhiacail cave"}],
+  "Lámh Fhuilteach goblin cave": [{"map": "crom-caves", "entrance": "c", "label": "Lámh Fhuilteach goblin cave"}],
+  "Drithleoga lair": [{"map": "crom-caves", "entrance": "d", "label": "Drithleoga lair"}],
+  "The Athach's cave": [{"map": "crom-caves", "entrance": "e", "label": "The Athach's cave"}],
+  "Drithleoga warrens": [{"map": "crom-caves", "entrance": "f", "label": "Drithleoga warrens"}],
+  "The ursagryph's cave": [{"map": "crom-caves", "entrance": "g", "label": "The ursagryph's cave"}],
+  "Lámh Fhuilteach Bodaigh cave": [{"map": "crom-caves", "entrance": "h", "label": "Lámh Fhuilteach Bodaigh cave"}],
+  "The demon's labyrinth": [{"map": "crom-caves", "entrance": "i", "label": "The demon's labyrinth"}],
+  "Boar beastfolk cave": [{"map": "crom-caves", "entrance": "j", "label": "Boar beastfolk cave"}],
+  "Shrine of Crom Cruach": [{"map": "crom-caves", "entrance": "k", "label": "Shrine of Crom Cruach"}]
+ },
+ "site_parents": {
+  "Péistdaoine cave": "Cnoc na Teamhrach",
+  "Dubhfhiacail cave": "Cnoc na Teamhrach",
+  "Lámh Fhuilteach goblin cave": "Cnoc na Teamhrach",
+  "Drithleoga lair": "Cnoc na Teamhrach",
+  "The Athach's cave": "Cnoc na Teamhrach",
+  "Drithleoga warrens": "Cnoc na Teamhrach",
+  "The ursagryph's cave": "Cnoc na Teamhrach",
+  "Lámh Fhuilteach Bodaigh cave": "Cnoc na Teamhrach",
+  "The demon's labyrinth": "Cnoc na Teamhrach",
+  "Boar beastfolk cave": "Cnoc na Teamhrach",
+  "Shrine of Crom Cruach": "Cnoc na Teamhrach"
  },
  "site_ranks": {
   "Baile Átha Troim": 1,
@@ -257,6 +278,72 @@
      53.578,
      -6.612,
      "hill"
+    ],
+    [
+     "Péistdaoine cave",
+     53.578194,
+     -6.611459,
+     "cave"
+    ],
+    [
+     "Dubhfhiacail cave",
+     53.57778,
+     -6.611069,
+     "cave"
+    ],
+    [
+     "Lámh Fhuilteach goblin cave",
+     53.578328,
+     -6.611055,
+     "cave"
+    ],
+    [
+     "Drithleoga lair",
+     53.577791,
+     -6.612669,
+     "cave"
+    ],
+    [
+     "The Athach's cave",
+     53.577925,
+     -6.612266,
+     "cave"
+    ],
+    [
+     "Drithleoga warrens",
+     53.578339,
+     -6.612655,
+     "cave"
+    ],
+    [
+     "The ursagryph's cave",
+     53.578742,
+     -6.611444,
+     "cave"
+    ],
+    [
+     "Lámh Fhuilteach Bodaigh cave",
+     53.578602,
+     -6.611048,
+     "cave"
+    ],
+    [
+     "The demon's labyrinth",
+     53.579016,
+     -6.611437,
+     "cave"
+    ],
+    [
+     "Boar beastfolk cave",
+     53.578887,
+     -6.612641,
+     "cave"
+    ],
+    [
+     "Shrine of Crom Cruach",
+     53.579156,
+     -6.611834,
+     "cave"
     ],
     [
      "Brú na Bóinne",
