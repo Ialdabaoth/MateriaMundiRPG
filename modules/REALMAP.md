@@ -29,7 +29,7 @@ The tools are CC0 (tools/LICENSE.md): use them for your own modules freely.
 ## Run it
 
 ```
-python3 -I modules/tools/build.py modules/<id> /tmp/out --no-pdf      # builds the old-style maps and the rivers, sites and regions
+python3 -I modules/tools/build.py modules/<id> /tmp/out               # builds the old-style maps and the rivers, sites and regions
 KEEP_WORK=1 ... (same)                                                 # keep /tmp/out/_work for the next step
 python3 modules/tools/atlas_convert.py modules/<id>/module.json /tmp/out/_work /tmp/out/atlas --real
 ```
