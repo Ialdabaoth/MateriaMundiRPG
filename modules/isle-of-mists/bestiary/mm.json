@@ -2403,6 +2403,8 @@
      "Warlock: a priest sworn to Crom Cruach, Nature domain. Still alive.",
      "Dark prayers prepared (2 first, 2 second, 1 third circle; Nature): Protection from Elements, Sense the Divine; Speak With Animals, Bless; Create Water.",
      "While in posession of the Croidhe mo Mhaistir, Dame Kyteler and has effectively unlimited power, and can attempt to perform any spell, miracle, or glamour at-will.",
+     "Shaping a magic with the dragon pearl is a d6 check; first-circle effects happen correctly on a roll of 3-6, while second-circle effects happen correctly on a roll of 4-6, and any third-circle effect is correctly cast on a roll of 5-6. On a failure, the magic is twisted following the rules for the Misty Moor on pg. 6.",
+     "While in posession of the Croidhe mo Mhaistir, Dame Kyteler and has effectively unlimited power, and can attempt to perform any spell, miracle, or glamour at-will.",
      "Shaping a magic with the dragon pearl is a d6 check; first-circle effects happen correctly on a roll of 3-6, while second-circle effects happen correctly on a roll of 4-6, and any third-circle effect is correctly cast on a roll of 5-6. On a failure, the magic is twisted following the rules for the Misty Moor on pg. 6."
     ],
     "origin": "human",
@@ -2426,7 +2428,7 @@
      "cha": 1
     },
     "attacks": [
-     "Common +1 longsword (d6+1)"
+     "Common +1 feysilver longsword (d6+1)"
     ],
     "talents": [
      "stealth",
@@ -2437,12 +2439,12 @@
     ],
     "talentThreshold": 3,
     "special": [
-     "Warlock: a priest sworn to Crom Cruach, Nature domain.",
-     "Dark prayers prepared (2 first, 2 second, 2 third circle; Nature): Protection from Elements, Sense the Divine; Speak With Animals, Bless; Create Water, Divine Guidance.",
-     "Jack vest."
+     "Talismans (2 first, 2 second, 2 third circle): Fey Luck, Faerie Grove; Misty Step, Beguile; Primal Geas, Leyline Travel.",
+     "Pacts with the local Fair Folk; keeps her boar pucca loyal with Beguile.",
+     "Jack vest; no iron on her person."
     ],
-    "origin": "human",
-    "classId": "priest"
+    "origin": "elf",
+    "classId": "druid"
    }
   },
   "dmeath-boar-captain": {

@@ -225,13 +225,13 @@
    "petronella-dmeath": {
     "name": "Lady Petronella d'Meath",
     "kind": "npc",
-    "is": "human",
+    "is": "elf",
     "lair": {
      "site": "cill-chainnigh-lady-d-meath",
      "room": "court"
     },
     "faction": "dmeath-court",
-    "description": "D'Meath is a sixth-level warlock who has made various pacts with the local fair folk to secure her rule, and her youth, over the past century.\n\nThe resulting chaos left Dame Kyteler trapped within the tangled thorns of the bloodrose vines she summoned, while d'Meath went on to rule the county from Cill-Chainigh. Dame Kyteler feels that she has been betrayed, and is constantly sending goblin raiding parties to capture or kill d'Meath, but thus far d'Meath's own beastfolk guards have managed to protect her - and the attacks let d'Meath claim that she is a necessary and just ruler who is merely trying to \"keep the peace\" under constant goblin invasion."
+    "description": "D'Meath is a sixth-level elven druidess who has made various pacts with the local fair folk to secure her rule over the past century.\n\nThe resulting chaos left Dame Kyteler trapped within the tangled thorns of the bloodrose vines she summoned, while d'Meath went on to rule the county from Cill-Chainigh. Dame Kyteler feels that she has been betrayed, and is constantly sending goblin raiding parties to capture or kill d'Meath, but thus far d'Meath's own beastfolk guards have managed to protect her - and the attacks let d'Meath claim that she is a necessary and just ruler who is merely trying to \"keep the peace\" under constant goblin invasion."
    },
    "dmeath-boar-captain": {
     "name": "Boar pucca captain",
@@ -461,7 +461,7 @@
       "count": 10
      }
     ],
-    "description": "The current seat of power in the region is the castle at Cill-Chainnigh, where the self-styled Lady d'Meath rules with an iron fist. D'Meath is a sixth-level warlock who has made various pacts with the local fair folk to secure her rule, and her youth, over the past century. She is attended to by a pack of boar pucca, all kept loyal with the judicious use of beguiling glamours. These henchmen are all second level champions or hunters; their leaders are third-level. The \"common folk\" of the surrounding town are all various forms of faun beastfolk; it is a well- kept secret that most of them are descended from the original human inhabitants of the town, who were transformed into beastfolk by the encroaching fey mists."
+    "description": "The current seat of power in the region is the castle at Cill-Chainnigh, where the self-styled Lady d'Meath rules with an iron fist. D'Meath is a sixth-level elven druidess who has made various pacts with the local fair folk to secure her rule over the past century. She is attended to by a pack of boar pucca, all kept loyal with the judicious use of beguiling glamours. These henchmen are all second level champions or hunters; their leaders are third-level. The \"common folk\" of the surrounding town are all various forms of faun beastfolk; it is a well- kept secret that most of them are descended from the original human inhabitants of the town, who were transformed into beastfolk by the encroaching fey mists."
    },
    "tinkers-shop": {
     "title": "The tinker's shop",
