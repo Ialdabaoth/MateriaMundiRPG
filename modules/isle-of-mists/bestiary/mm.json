@@ -1860,6 +1860,138 @@
     "origin": "human",
     "classId": "warrior"
    }
+  },
+  "palace-bloodrose": {
+   "from": "blank",
+   "replace": {
+    "level": 5,
+    "size": "Large",
+    "movement": "Immobile",
+    "armor": "0",
+    "hp": "1d6",
+    "abilities": {
+     "con": 0,
+     "str": 0,
+     "dex": 0,
+     "int": 0,
+     "wis": 0,
+     "cha": 0
+    },
+    "attacks": [
+     "Thorns (1d6+1 piercing)"
+    ],
+    "talents": [],
+    "talentThreshold": 6,
+    "special": [
+     "Infernal plant. Each 5-ft patch is a separate Large creature with 1d6 structure points and no abilities; it cannot move or act. Attack throws against it are easy.",
+     "Thorns: a creature moving next to a patch saves vs. Blast (the referee rolls in secret the first time). Touching it counts as failing. On a fail: 1d6+1 piercing plus ongoing bleeding.",
+     "Grab: if the damage die shows 6, the victim is restrained unless it saves vs. Hold, taking another d6 piercing, and d6 piercing each round after. Breaking free takes an action and a hard save vs. Hold.",
+     "Rose-hip burst: on a critical fail the victim takes a critical hit and the patch drops its petals. Next round its hips explode: 3d6+1 piercing plus bleeding in a 4-pace blast. The round after, new vines sprout over everything in the blast.",
+     "Axes and fire deal structure damage; other attacks follow the rules for structures. A burning patch spreads fire to each adjacent patch on a 1 in 6.",
+     "Rebuke the Unholy and holy water harm it as an infernal creature."
+    ],
+    "origin": "infernal plant"
+   }
+  },
+  "palace-redcap-hunter": {
+   "from": "blank",
+   "replace": {
+    "level": 1,
+    "size": "Small",
+    "movement": "Normal",
+    "armor": "1 (0)",
+    "hp": "4",
+    "abilities": {
+     "con": 1,
+     "str": 0,
+     "dex": 1,
+     "int": -1,
+     "wis": 0,
+     "cha": 0
+    },
+    "attacks": [
+     "Crossbow (d6+1 piercing, range 15)",
+     "Shortsword (d6)"
+    ],
+    "talents": [
+     "agility",
+     "stealth",
+     "alertness",
+     "survival"
+    ],
+    "talentThreshold": 5,
+    "special": [
+     "Hunter's Expertise; Sneak Attack."
+    ],
+    "origin": "redcap",
+    "classId": "hunter"
+   }
+  },
+  "palace-redcap-chef": {
+   "from": "blank",
+   "replace": {
+    "level": 1,
+    "size": "Small",
+    "movement": "Normal",
+    "armor": "2 (1)",
+    "hp": "4",
+    "abilities": {
+     "con": 1,
+     "str": 0,
+     "dex": 1,
+     "int": -1,
+     "wis": 0,
+     "cha": 0
+    },
+    "attacks": [
+     "Cleaver (2d6, sundering)"
+    ],
+    "talents": [
+     "stealth",
+     "alertness",
+     "survival",
+     "medicine"
+    ],
+    "talentThreshold": 5,
+    "special": [
+     "Talisman (1 first circle): Cleansing Waters.",
+     "Hide armour; the cleaver counts as an axe."
+    ],
+    "origin": "redcap",
+    "classId": "druid"
+   }
+  },
+  "mairead": {
+   "from": "blank",
+   "replace": {
+    "level": 1,
+    "size": "Small",
+    "movement": "Normal",
+    "armor": "0",
+    "hp": "2",
+    "abilities": {
+     "con": -2,
+     "str": 0,
+     "dex": 0,
+     "int": 1,
+     "wis": 2,
+     "cha": 1
+    },
+    "attacks": [],
+    "talents": [
+     "alertness",
+     "survival",
+     "intuition"
+    ],
+    "talentThreshold": 4,
+    "special": [
+     "Pucca: a wolf is her natural shape and she shifts at will (innate, not magic).",
+     "Starved: Con -2 and 2 hp (max 4). With care her Con returns to +0 over a few months.",
+     "Wolf-cub form: Medium, Armor 2, HP 2d6+2, Con +1 Str +3 Dex +1 Int +1 Wis +2 Cha -1, attack 10+: claws (2d6), grapple (2d6+3 blunt); talents Alertness, Survival.",
+     "Chained in frenzy: subdue her without killing her and take off the iron collar, and she turns back into a girl."
+    ],
+    "origin": "wolf pucca"
+   }
   }
  }
 }

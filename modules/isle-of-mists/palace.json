@@ -1,0 +1,83 @@
+{
+ "encounters": {
+  "creatures": {
+   "palace-bloodrose": {
+    "name": "Bloodrose",
+    "kind": "monster",
+    "is": "bloodrose",
+    "lair": {
+     "site": "seacht-gcaislean-the-palace",
+     "room": "grounds"
+    },
+    "description": "Pale thorny roses strangling the palace walls and the shrine. They drink blood, and their blooms blush from white to pink to deep red as they feed.",
+    "wants": "Blood, and more wall to climb."
+   },
+   "palace-redcap-hunter": {
+    "name": "Redcap hunter",
+    "kind": "monster",
+    "is": "redcap",
+    "lair": {
+     "site": "seacht-gcaislean-the-palace",
+     "room": "dining-hall"
+    },
+    "troupe": {
+     "lair": 12
+    },
+    "description": "A dozen redcaps feasting at the palace banquet table, shortswords in their belts and crossbows propped by their chairs. They sleep in the wrecked north barracks.",
+    "wants": "To eat well and keep the palace larder for themselves."
+   },
+   "palace-redcap-chef": {
+    "name": "Chef",
+    "kind": "monster",
+    "is": "redcap",
+    "lair": {
+     "site": "seacht-gcaislean-the-palace",
+     "room": "dining-hall"
+    },
+    "description": "A fat redcap in an apron and chef's cap, cleaver in hand, smiling smugly from the corner. Tonight's roast was a young Faoladh boy named Maddy.",
+    "wants": "Praise for his cooking, and fresh meat for the next feast."
+   },
+   "mairead": {
+    "name": "Mairead",
+    "kind": "npc",
+    "is": "werewolf",
+    "lair": {
+     "site": "seacht-gcaislean-the-palace",
+     "room": "northern-cavern"
+    },
+    "description": "A seven-year-old Faoladh girl, chained in wolf-cub shape in the northern cavern, starved into a frenzy, an iron collar rubbing her neck raw. Clever, strong-willed and stubborn. Her twin Maddy was cooked by the redcaps; her sister Aine was given to the bugbears upstairs.",
+    "wants": "Her sister Aine back, and to go home."
+   },
+   "palace-bloodstirge": {
+    "name": "Bloodstirge",
+    "kind": "monster",
+    "is": "bloodstirge",
+    "lair": {
+     "site": "seacht-gcaislean-the-palace",
+     "room": "southern-cavern"
+    },
+    "troupe": {
+     "lair": 5
+    },
+    "description": "A swarm of giant bloated mosquitoes (d6+2) nesting around the strangled shrine of the mother and child.",
+    "wants": "Warm blood."
+   },
+   "palace-oreiad": {
+    "name": "Oreiad caryatid",
+    "kind": "monster",
+    "is": "oreiad",
+    "lair": {
+     "site": "seacht-gcaislean-the-palace",
+     "room": "anteroom"
+    },
+    "troupe": {
+     "lair": 2
+    },
+    "description": "Two caryatid statues of young women holding up the anteroom. They are living oreiad nymphs, bound by fey oaths to keep intruders out of the palace.",
+    "wants": "To keep their oath. Like all Fair Folk, they can be impressed and bargained with."
+   }
+  },
+  "factions": [],
+  "scenes": {}
+ }
+}
