@@ -2,6 +2,14 @@
 
 This module's version is its own. It does not follow the E9 Atlas (`modules/tools/ATLAS_VERSION`) or the E9 Companion; a change to the tools or apps alone never bumps it. Bump it only for changes to this module's content (text, sites, creatures, encounters, maps), using the rules in [WORKFLOWS.md](../WORKFLOWS.md#versioning).
 
+## 0.4.4 (2026-11-07)
+
+Roads of 1422 (`atlas.roads`, Atlas 0.4.18): 28 roads, about 1,925 miles, routed over the terrain by the Atlas, with 121 river crossings.
+- Roman class: the five slighe out of Tara (Slí Midluachra, Slí Asail, Slí Mhór, Slí Dála, Slí Chualann). They have bridges.
+- Local: 20 town roads, among them the Barrow, Nore and Suir roads, the south coast road, the Cork and Kerry roads, the Thomond and Connacht roads, and the Ulster and Lecale roads. They have fords.
+- Trails: Tóchar Phádraig to Croagh Patrick, St Kevin's Way to Glendalough, and the Lough Derg path, which ends at the shore because pilgrims take the boat to Station Island.
+- The courses are general history (Claude); the slighe follow their traditional lines only roughly.
+
 ## 0.4.3 (2026-11-07)
 
 NPC and monster pass with Heph (rules: the early-playtest "N faith / glamour / favor" and "Feats: X Frenzy, Evasion, Slay Quarry" lines are gone).
