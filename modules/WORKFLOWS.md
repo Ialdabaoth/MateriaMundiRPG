@@ -1,6 +1,6 @@
 # E9 Workflows and Module Versioning
 
-Status: agreed design, 2026-11-05 (Heph). Not yet built. Living copy for markup: [Claude Doc](https://claude.ai/artifact/UpHCiv8Spi32u4nv3jDeDu).
+Status: agreed design, 2026-11-05 and 2026-11-07 (Heph). Not yet built. First draft: [Claude Doc](https://claude.ai/artifact/UpHCiv8Spi32u4nv3jDeDu).
 
 ## Summary
 
@@ -142,6 +142,108 @@ A character from another campaign or ruleset arrives as an Inbox request, and th
 
 The sheet's own history (creation and level-ups) is kept, so a ported character can be traced back. Gear on its own (a magic sword handed between campaigns) goes through the same check.
 
+## Playing a campaign
+
+Agreed with Heph, 2026-11-07. Everything a referee does at or between sessions runs on **one engine: Procedures** ([EVENTS_FORMAT.md](EVENTS_FORMAT.md)). Opening and closing a session, advancing the clock by hand, downtime and pushing a handout are all procedures, and each game defines its own.
+
+### Devices: the phone is your hand, the laptop is your table
+
+One person can be signed in on several devices at once. Pairing: the laptop shows a QR code, the phone scans it.
+
+| Device | Role | Holds |
+| --- | --- | --- |
+| Referee laptop | Command centre, and the session host | Atlas (full map), Events log and trigger queue, open encounter, Inbox, clock |
+| Referee phone | Remote | Dice, private notes, one-tap "run next trigger", "advance a turn", "call for a roll", rules lookup |
+| Player phone | Hand (must be complete on its own) | Character sheet, dice, roll prompts, live HP, conditions, slots |
+| Player laptop | Window (bigger views only, nothing laptop-only) | Player Atlas view, party, journal, rules wiki, session notes |
+| Any screen (optional) | Table view, signed out | Shared map and roll log |
+
+### Accounts
+
+| Who | Account | Used for | Substitute |
+| --- | --- | --- | --- |
+| Everyone | Gmail | Sign-in, session calendar invites and RSVPs, the campaign Drive folder | Any email sign-in or passkey, later |
+| Everyone, if online | Discord | Voice; webhook roll log; pushed descriptions and handouts where Discord fits best | none needed in person |
+| Referee | GitHub | Campaign repo (the archive) and module library | Codeberg / Forgejo via the host adapter |
+| Referee | A VTT | Tactical maps and tokens for fights | Foundry, Owlbear Rodeo or gTove |
+
+Players need no GitHub account.
+
+### Mailbox and archive
+
+- **Mailbox:** a shared Google Drive folder per campaign. The referee's app creates it and shares it with the players' Gmail addresses when it sends invites. A player's request is a small file the app drops into the folder's inbox; the referee's app picks it up and removes it once handled. Each Update campaign also writes the current campaign snapshot here, so players can read a private campaign without GitHub.
+- **Archive:** the campaign git repo. **Only the referee writes to it.**
+- **Request states:** Sent → Approved (waiting in the batch) → Live, or Sent back with a note. Approvals collect in a batch; **Update campaign** commits the batch as one commit with a readable message. Closing a session is one more Update campaign plus the session tag.
+- A small relay (Cloudflare) is added later only for players without Google.
+
+### Live channel (remote play is a must)
+
+- The **referee's laptop hosts the session**. Every other device connects straight to it, peer to peer (WebRTC).
+- The **handshake goes through the Drive folder**: a joining device drops a "here I am" file and the host answers. No server of ours.
+- **Fallback:** if a direct connection fails, that device sends its messages through the Drive folder (a few seconds each).
+- **Discord** carries voice; the webhook mirrors every roll into the campaign channel.
+- The session runs while the referee's laptop has the campaign open.
+
+### VTTs
+
+The Atlas already exports every encounter map as .uvtt plus a picture-only PNG ([ENCOUNTER_FORMAT.md](ENCOUNTER_FORMAT.md)). Foundry is the first adapter. Owlbear Rodeo takes the PNG, with walls and fog via an extension. **gTove** (no .uvtt) stores its maps in Google Drive, so the Atlas can drop the PNG into the gTove folder and the referee sets the grid once to the known scale; fog is painted by hand. To check before building: whether gTove can read the grid from the file.
+
+### Downtime
+
+Downtime actions are procedures, and each game sets its own (including any limits).
+
+1. The player picks a downtime procedure in the Companion; the app rolls.
+2. The roll posts at once to the campaign's Discord channel, marked pending ("Aoife carouses in Ceanannas Mór: 14 (pending referee)"). The post is a public witness: a reroll is a second post.
+3. The same roll goes into the Drive mailbox as a request, with the Discord message id.
+4. When the referee approves or sends it back, their app edits the Discord post to say so, and the result joins the Update campaign batch.
+
+### The loops
+
+```mermaid
+flowchart TD
+  A[Initial prep: build the campaign from modules, resolve dependencies and conflicts] --> B
+  subgraph B[Campaign loop]
+    B1[Send invites] --> B2[Help with characters and downtime] --> B3[Tweak modules for player choices] --> B4[Confirm who is coming] --> B5[Prepare next session]
+  end
+  B5 --> C
+  subgraph C[Session start]
+    C1[Open session procedure] --> C2[Referee packet] --> C3[Player packets] --> C4[Settle open downtime and cleanup]
+  end
+  C4 --> D
+  subgraph D[Session loop]
+    D1[Apps build player and referee views] --> D2[Referee describes] --> D3[Players act, clarify] --> D4[Referee picks procedures] --> D5[Walk through: difficulty, tables, branches] --> D6[Referee describes results] --> D1
+  end
+  D --> E[Close session procedure: XP, loot, map and clock, Update campaign, session tag]
+  E --> B
+```
+
+**Initial prep.** Install modules, resolve dependencies and conflicts (Campaign stack, above).
+
+**Campaign loop.**
+- Send invites (link or QR code; shares the Drive folder).
+- Help players with character creation and downtime (requests in the Inbox).
+- Tweak modules for player choices (house-rules layer).
+- Confirm who is coming: RSVPs on the session's calendar invite feed the next roll call.
+- Prepare the next session.
+
+**Session start.** The **Open session** procedure starts the clock and builds the hand-off packets:
+- Referee: recap of the last session's log, pending requests, party position, scheduled events, prepared encounters.
+- Each player: their character, the recap, handouts.
+- Any unresolved downtime or cleanup is settled before play.
+
+**Session loop.**
+1. Atlas and Companion build the player-visible and referee-visible views of the current world state.
+2. The referee describes the world.
+3. Players describe their actions; back and forth to clarify.
+4. The referee decides which procedures apply. The app shortlists them from context (in a hex: exploration turn, forage, get lost; at a door: listen, force, pick); the referee taps one.
+5. The referee walks the players through it, choosing difficulty, tables and branches as they come up. Rolls go to players' phones or are rolled by the referee (EVENTS_FORMAT section 9).
+6. The referee describes the results, and can **push** a description or handout to players, in the app or in Discord, whichever does the job best.
+7. Loop.
+
+**Session end.** The **Close session** procedure runs the game's XP and loot rules and proposes map and clock changes; the referee edits and approves; Update campaign commits it with the session tag. Back to the campaign loop.
+
+**Advancing the clock by hand** is a deterministic procedure, not a special control.
+
 ## Decisions and build order
 
 **Decided by Heph (2026-11-05)**
@@ -153,6 +255,17 @@ The sheet's own history (creation and level-ups) is kept, so a ported character 
 - Porting characters and gear flags every mismatch to the referee, who decides the patch.
 - The creator app (WYSIWYG module editor) is post-MVP.
 
+**Decided by Heph (2026-11-07), campaign play**
+
+- Devices: referee laptop + phone; each player a phone, ideally a laptop too. The phone is complete on its own.
+- Accounts: Gmail for everyone, Discord when online, GitHub and a VTT for the referee (substitutes later).
+- Players send requests; the referee approves into a batch and commits it with Update campaign. Only the referee writes git.
+- The Drive folder is the mailbox, git is the archive.
+- Remote play is required; the referee laptop hosts, peers connect directly.
+- VTTs: Foundry, Owlbear Rodeo and gTove.
+- Downtime rolls post to Discord as pending until the referee approves.
+- One engine: session open/close, clock advance, downtime and pushes are all procedures, defined per game.
+
 **Suggested build order** (each step is one PR, after the Full Sheet cleanup and campaigns-as-git steps already queued)
 
 1. Add ids, version, relationships, contents list and release notes to the manifest spec ([MODULE_FORMAT.md](MODULE_FORMAT.md)), and stamp them on Beyond the Pale.
@@ -161,4 +274,9 @@ The sheet's own history (creation and level-ups) is kept, so a ported character 
 4. Conflict review and update cards in the Inbox.
 5. Invites by link or QR code.
 6. Porting characters and gear.
-7. Bundles, author signatures and checkers. Then, post-MVP, the creator app.
+7. Bundles, author signatures and checkers.
+8. Campaign Drive folder: invites share it, requests and snapshots go through it, Update campaign batch.
+9. Device pairing and the live channel (WebRTC with Drive handshake), roll prompts to phones.
+10. Open session and Close session procedures, packets, recap; procedure shortlist; push to app or Discord.
+11. Downtime procedures with Discord witness posts.
+12. gTove export. Then, post-MVP, the creator app.
