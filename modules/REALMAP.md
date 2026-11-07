@@ -7,6 +7,7 @@ How to start a new mytho-historical campaign module's E9 Atlas map (ATLAS_FORMAT
 The tools are CC0 (tools/LICENSE.md): use them for your own modules freely.
 
 - Python 3.10+ with `pip install -r modules/requirements.txt tifffile`
+- About 6 GB of free memory: the tools hold up to four WorldCover tiles (1.3 GB each) and a dozen elevation tiles at once. A region the size of Hansa (154 Marches) takes about an hour on four cores.
 - A module folder with a `module.json` (see MODULE_FORMAT.md): books, regions with sites, `dem` (the 1° elevation tiles to fetch), `admin` (county borders), and the `atlas` block below.
 - Internet access to `elevation-tiles-prod.s3.amazonaws.com` (SRTM) and `esa-worldcover.s3.eu-central-1.amazonaws.com` (WorldCover). The tools fetch and cache the tiles in `modules/.cache/`. WorldCover tiles cover 3° × 3° and are 30–50 MB each.
 
@@ -22,6 +23,7 @@ The tools are CC0 (tools/LICENSE.md): use them for your own modules freely.
 ```
 
 - `centroid` is the region's Dymaxion face centre: a traditional or geographic centre, with every coast of the region within about 20° of it. Separate landmasses get their own module and centroid.
+- `admin` can point at a file of period lands instead of modern counties. `tools/admin_lands.py` cuts one from Natural Earth's admin-1 file: list each land's modern regions and an optional longitude or latitude band (Hansa's `lands.json` splits Mecklenburg-Vorpommern into Mecklenburg and Pommern this way). With `"land": "island"`, the Atlas covers every land in the file.
 - `extent` is the whole land the region could ever cover (`[minlon, minlat, maxlon, maxlat]`). It fixes where the labels `00` and `0000` sit, so addresses never shift as the map grows. Choose it once.
 - `land` (optional): `"island"` makes the Atlas cover every county in the `admin` file, not just the books' counties; the print maps stay on the books' counties. Beyond the Pale uses it for all of Ireland.
 - `real` (optional) tunes the period rules for this region. It takes any key of `RULES` in `tools/realmap.py`, and `modern_water`, which lists reservoirs and other water that did not exist in the period as `[lat, lon, radius in miles]`.
