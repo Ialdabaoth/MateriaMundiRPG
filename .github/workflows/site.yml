@@ -41,11 +41,16 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
+      # modules/.cache holds the elevation tiles and each module's built maps (build.py "build cache": keyed on every
+      # input the map steps read, so a module whose maps did not change is copied, not redrawn). A new entry each run,
+      # restored from the newest one, so the cache always follows the latest build
       - uses: actions/cache@v4
         with:
           path: modules/.cache
-          key: module-terrain-${{ hashFiles('modules/*/module.json') }}
-          restore-keys: module-terrain-
+          key: module-build-${{ github.run_id }}-${{ github.run_attempt }}
+          restore-keys: |
+            module-build-
+            module-terrain-
       # no print PDFs for now (Heph 2026-11-07: until the print process is discussed); build.py --pdf makes them, with Playwright
       - name: Modules (maps, manifests)
         run: |
