@@ -59,6 +59,7 @@ The Companion adds a repository from its published URL. It reads `mm.json` and t
 | `league` | `{hex_mi: 0.5, overrides: {county: {terrain settings}}}`. |
 | `site_icons` | Optional `{site name: icon}` overrides; an icon is a file name (without `.png`) in `assets/tiles/icons/`. Without one, a site uses its kind's icon (grove = great tree, abbey = church). |
 | `site_ranks` | Optional `{site name: 1, 2 or 3}`: the zoom a place first shows at in the Atlas. 1 = major (Region view), 2 = notable (March view), 3 = minor (League view down). Without one, towns are 1, abbeys 2 and other sites 3 (ATLAS_FORMAT.md, Place ranks). |
+| `site_parents` | Optional `{sub-place name: parent name}`: PoI hierarchies (ATLAS_FORMAT.md). A sub-place (a cave mouth, a city gate) collapses into its parent when zoomed out, and the Atlas key lists it under its parent. Any depth; both names must be sites of the module. |
 | `names` | Optional label translations `{name as drawn: {"en": "...", "ga": "..."}}`. The viewer's Language box swaps every map label, page title and list entry that matches a key; names without an entry stay as drawn. Copied to the built `module.json`. |
 | `regions` | Named map regions. Each has `sites: [[name, lat, lon, kind, note?]]` plus terrain settings. |
 
