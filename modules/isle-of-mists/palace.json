@@ -6,7 +6,7 @@
     "kind": "monster",
     "is": "bloodrose",
     "lair": {
-     "site": "seacht-gcaislean-the-palace",
+     "site": "seacht-gcaislean-palace",
      "room": "grounds"
     },
     "description": "The rosebushes entwining the palace are fey abominations that drink blood."
@@ -16,7 +16,7 @@
     "kind": "monster",
     "is": "redcap",
     "lair": {
-     "site": "seacht-gcaislean-the-palace",
+     "site": "seacht-gcaislean-palace",
      "room": "dining-hall"
     },
     "troupe": {
@@ -30,7 +30,7 @@
     "kind": "monster",
     "is": "redcap",
     "lair": {
-     "site": "seacht-gcaislean-the-palace",
+     "site": "seacht-gcaislean-palace",
      "room": "dining-hall"
     },
     "description": "The dining hall is laid out for an exquisite banquet, and smells delicious. Sitting around the table are a dozen redcap goblins, enjoying a gourmet feast. A larger, fatter redcap in an apron and a chef's cap is standing in the corner of the room with his arms crossed, smiling smugly; he's holding a cleaver (treat as an ax). The other goblins are wearing shortswords in their belts, and have set their crossbows beside their chairs as they eat.",
@@ -41,7 +41,7 @@
     "kind": "npc",
     "is": "werewolf",
     "lair": {
-     "site": "seacht-gcaislean-the-palace",
+     "site": "seacht-gcaislean-palace",
      "room": "northern-cavern"
     },
     "description": "If the party can subdue the wolf cub without killing it, and manages to remove the collar, the wolf cub will turn out to be a young pucca girl named Mairead. She will tell the party that her twin brother Maddy and older sister Aine were taken by the redcaps months ago, and that Aine was given to the bugbears that live in the upper levels. The redcaps had been trying to fatten her and her brother up before eating them, but finally gave up and decided to cook them as they are when they refused to eat anything offered to them.\n\nMairead is severely malnourished, and in poor health. If taken care of and allowed to heal, her Constitution will slowly return to its original value of +0 over the course of a few months. She is seven years old, clever, and incredibly strong-willed and stubborn.",
@@ -52,7 +52,7 @@
     "kind": "monster",
     "is": "bloodstirge",
     "lair": {
-     "site": "seacht-gcaislean-the-palace",
+     "site": "seacht-gcaislean-palace",
      "room": "sunken-bath"
     },
     "troupe": {
@@ -65,7 +65,7 @@
     "kind": "monster",
     "is": "oreiad",
     "lair": {
-     "site": "seacht-gcaislean-the-palace",
+     "site": "seacht-gcaislean-palace",
      "room": "anteroom"
     },
     "troupe": {
@@ -78,7 +78,7 @@
     "kind": "npc",
     "is": "human",
     "lair": {
-     "site": "seacht-gcaislean-the-palace",
+     "site": "seacht-gcaislean-palace",
      "room": "lounge"
     },
     "description": "The harp is a legendary primal artifact, and is bound to a human bard of remarkable skill who was taken to Faerie when the castle fell. She has been entertaining the Fair Folk courts for the past century, having never aged a day. If the harp is plucked, a portal into deeper Faerie will open, and the bard Rowena will step out, accompanied by two elf bodyguards."
@@ -88,7 +88,7 @@
     "kind": "monster",
     "is": "elf",
     "lair": {
-     "site": "seacht-gcaislean-the-palace",
+     "site": "seacht-gcaislean-palace",
      "room": "lounge"
     },
     "troupe": {
@@ -101,7 +101,7 @@
     "kind": "monster",
     "is": "kobold",
     "lair": {
-     "site": "seacht-gcaislean-the-palace",
+     "site": "seacht-gcaislean-palace",
      "room": "lizardfolk-lair"
     },
     "troupe": {
@@ -115,7 +115,7 @@
     "kind": "monster",
     "is": "kobold",
     "lair": {
-     "site": "seacht-gcaislean-the-palace",
+     "site": "seacht-gcaislean-palace",
      "room": "lizardfolk-lair"
     },
     "description": "At the far southeast corner of the castle, a small room appears to have been expanded by removing the south wall and carving crudely into the bare rock. In one corner of the room is an finely-wrought silver statue of a dragon, with what appears to be crude offerings of worship piled around it; against the opposite corner is a heaped nest of straw and filthy but high-quality cloth, which serves as a nest for 2d6 kobolds and their \"bonemother\" druid.",
@@ -126,7 +126,7 @@
     "kind": "npc",
     "is": "human",
     "lair": {
-     "site": "seacht-gcaislean-the-palace",
+     "site": "seacht-gcaislean-palace",
      "room": "guardpost"
     },
     "description": "This room was originally a guardpost. There is a slit along the eastern wall of the room, where guards could fire at invaders from the hallway. The last surviving palace guard, Travis, holed up here when the bloodroses choked out every available escape route. He has been kept alive and ageless by the magic of Faerie, but in the intervening decades he has gone quite mad.\n\nTravis has made a straw bed in one corner of the room, and there is a table with a plate from the dining hall, a pewter goblet, and a pair of knives. If the party approaches the room from the north, Travis will use his +2 flying dagger to attack them once they are within 10 paces of the hallway's corner."
@@ -136,7 +136,7 @@
     "kind": "monster",
     "is": "rustgrub",
     "lair": {
-     "site": "seacht-gcaislean-the-palace",
+     "site": "seacht-gcaislean-palace",
      "room": "ink-pool"
     },
     "troupe": {
@@ -149,7 +149,7 @@
     "kind": "monster",
     "is": "shade",
     "lair": {
-     "site": "seacht-gcaislean-the-palace",
+     "site": "seacht-gcaislean-palace",
      "room": "chaplains-bedroom"
     },
     "description": "When the party enters the room, they will immediately be attacked by flying furniture and other odds-and-ends. The chaplain of the palace still haunts the room, cursed to lash out in impotent rage at anyone who passes by. The chaplain cannot manifest enough of a body to be harmed by any kind of attack; he can only make ranged attacks with a 13+ attack throw threshold. Thrown odds-and- ends each deal 1d6 blunt damage, while heavy furniture (like the desk or chair) has a harder attack throw but 2d6 blunt damage.\n\nThe speak with dead miracle can be used to calm the chaplain down, in which case he can be interrogated to hear his story about the palace and its curse."
@@ -159,7 +159,7 @@
     "kind": "monster",
     "is": "bugbear",
     "lair": {
-     "site": "seacht-gcaislean-the-palace",
+     "site": "seacht-gcaislean-palace",
      "room": "chapel"
     },
     "troupe": {
@@ -173,7 +173,7 @@
     "kind": "monster",
     "is": "bugbear",
     "lair": {
-     "site": "seacht-gcaislean-the-palace",
+     "site": "seacht-gcaislean-palace",
      "room": "lounge-upper"
     },
     "faction": "cathbads-bugbears",
@@ -184,7 +184,7 @@
     "kind": "monster",
     "is": "mimic",
     "lair": {
-     "site": "seacht-gcaislean-the-palace",
+     "site": "seacht-gcaislean-palace",
      "room": "great-hall"
     },
     "description": "An Deichlámhach is a mimic, a strange kind of air- breathing cephalopod which can adjust its coloration and shape to match nearly any small or medium object. Normally, a mimic in a dungeon will often transform itself into the appearance of a valuable treasure, in order to lure unwary adventurers close. Once its prey is close enough, it lashes out with six long, rope-like tentacles to try to draw the victim towards its beak. The mimic that haunts the palace is An Deichlámhach, known to the palace's inhabitants as \"the Cleasaí\"; it is unusually intelligent for its species, probably due to the strange fey magics unleashed by the Croidhe mo Mhaistir. Whatever the reason, the Cleasaí has learned how to cast fey illusions.\n\nThe Cleasaí often uses its powers to produce illusions of scenes or images it has seen before. For some reason, one of its favorite illusions is that of a young gnome woman tied up by her own exceptionally long hair and harassed by nine redcaps."
@@ -194,7 +194,7 @@
     "kind": "npc",
     "is": "werewolf",
     "lair": {
-     "site": "seacht-gcaislean-the-palace",
+     "site": "seacht-gcaislean-palace",
      "room": "drawing-room"
     },
     "description": "Aine doesn't remember much about her childhood; she only remembers fleeing her village when it was overrun by plague- shamblers, with her baby brother and sister in her arms, and a glowing red sword at her hip. Some kind of fey curse overtook them, and transformed them all into enormous white wolves; it was only the kindness of Cathbad that saved them, when he took them in and began trying to undo the curse.\n\nIn truth, Cathbad has been manipulating Aine the whole time, using her as his bodyguard and enforcer while telling her that he is looking for a cure to her \"condition\". She and her brother and sister are all wolf puccas, and are perfectly capable of learning how to control their shapeshifting abilities; Cathbad uses various beguiling curses to convince them that they become violent, bloodthirsty beasts while transformed, and only their iron collars keep them safe.\n\nAine is, at this point, not psychologically suited for the kind of responsibilities that ruling Kilkenny would entail. An Intuition check (which will be easy for a Priest, or normal difficulty for anyone else) will uncover this if the party chooses to engage with Aine at length about what she's endured and how she feels about all the hardships she's endured. Her little sister will be a much better candidate once she comes of age; Aine would be much happier acting as her sister's protector than trying to rule an entire county herself.",
@@ -205,7 +205,7 @@
     "kind": "npc",
     "is": "human",
     "lair": {
-     "site": "seacht-gcaislean-the-palace",
+     "site": "seacht-gcaislean-palace",
      "room": "cathbads-chambers"
     },
     "faction": "cathbads-bugbears",
@@ -216,7 +216,7 @@
     "kind": "npc",
     "is": "human",
     "lair": {
-     "site": "seacht-gcaislean-the-palace",
+     "site": "seacht-gcaislean-palace",
      "room": "throneroom"
     },
     "description": "Suspended above the throne is the body of Dame Alice Kyteler, her ribcage torn open and the Croidhe mo Mhaistir sitting in her chest where her heart should be. The gem emits a brilliant red light that pulses with what would be her heartbeat, if only she still had a heart.\n\nInstead of veins, thorny rosevines snake around the gem and pierce her flesh, before winding around her limbs and spreading out across the throneroom. The roses here are in full bloom, and emit a heady and soporific fragrance that dulls the senses; everyone but Dame Kyteler finds all their rolls harder while in the throneroom. She is wearing a gold locket around her neck; if someone in the party is wearing the corresponding silver locket from the spa room, that character will find that they are also immune to the roses' stupor. However, while in Dame Kyteler's presence, they automatically obey any order that she gives without question.",
@@ -308,7 +308,7 @@
     "id": "kyteler-palace",
     "name": "The Princess in Silver and Crimson",
     "kind": "court",
-    "seat": "seacht-gcaislean-the-palace",
+    "seat": "seacht-gcaislean-palace",
     "leader": "alice-kyteler",
     "relations": {
      "dmeath-court": "enemy (betrayed her)",
@@ -333,7 +333,7 @@
     "id": "cathbads-bugbears",
     "name": "Cathbad and his bugbears",
     "kind": "cult",
-    "seat": "seacht-gcaislean-the-palace",
+    "seat": "seacht-gcaislean-palace",
     "leader": "cathbad",
     "relations": {
      "kyteler-palace": "schemes to control her",
@@ -346,7 +346,7 @@
     "id": "palace-redcaps",
     "name": "The palace redcaps",
     "kind": "clan",
-    "seat": "seacht-gcaislean-the-palace",
+    "seat": "seacht-gcaislean-palace",
     "leader": "palace-redcap-chef",
     "relations": {
      "cathbads-bugbears": "buy captives from",
@@ -358,7 +358,7 @@
     "id": "silver-dragon-cult",
     "name": "The kobolds of the silver dragon",
     "kind": "cult",
-    "seat": "seacht-gcaislean-the-palace",
+    "seat": "seacht-gcaislean-palace",
     "leader": "palace-kobold-bone-mother",
     "relations": {
      "lig-na-peiste": "worship"
@@ -368,7 +368,7 @@
     "id": "faoladh-sisters",
     "name": "Aine and Mairead",
     "kind": "family",
-    "seat": "seacht-gcaislean-the-palace",
+    "seat": "seacht-gcaislean-palace",
     "leader": "aine",
     "relations": {
      "cathbads-bugbears": "enslaved by (unknowing)",
@@ -391,7 +391,7 @@
    "palace-crossing-the-barrow": {
     "title": "Crossing the Barrow",
     "where": {
-     "site": "seacht-gcaislean-the-palace"
+     "site": "seacht-gcaislean-palace"
     },
     "who": [],
     "description": "The Palace of Silver and Crimson is to the south of the Pale Keep, across the Barrow. It was once considered subject to the crown, but fell faerie magics have since reclaimed the territory.\n\nOnce the troubles with the Caves are sorted out, the Palace is a logical next step for the adventuring party to explore.\n\nThe Palace of Silver and Crimson was a keep and priory at Ceanannas, originally built by the Crown of Albion in 3278 to fortify the bordermarch of the Pale against the Eire barbarians and their fey allies. It fell into ruin a century ago, when the Plague decimated the garrison and the mists of Faerie reclaimed the land. The magics of Faerie have since warped the palace into a dreamlike mockery of its original form.\n\nA century ago, as the keep and its surrouding village succumbed to plague, the druidess Dame Alice Kyteler and her coven turned to a legendary Faerie artifact called \"Croidhe mo Mhaistir\" to attempt to protect the land from the disease and the hordes of shambling undead that it spawned. Legends say that \"Croidhe mo Mhaistir\" is a legendary dragon pearl in the form of a deep crimson ruby, cut and polished into a fist-sized faceted globe.\n\nWhatever the intent of their magic, the actual effect was the encroachment of the Fey mists deep into the bordermarch. Most of the keep's mortal inhabitants fled during the initial fey incursion, and no one who has ventured into the area since has returned to report what they have seen; those first refugees claimed that thick vines with razor-sharp thorns began growing over every possible surface, choking out all avenues of escape.\n\nThe Faerie wilds leading up to the palace are unusually dangerous, even for Faerie. The first obstacle to surmount is the Misty Moor, a vast enchanted wetland with a strange curse."
@@ -415,7 +415,7 @@
    "palace-approach": {
     "title": "Approaching the Palace",
     "where": {
-     "site": "seacht-gcaislean-the-palace",
+     "site": "seacht-gcaislean-palace",
      "room": "grounds"
     },
     "who": [],
@@ -500,7 +500,7 @@
    "palace-bridge": {
     "title": "Arriving at the Palace",
     "where": {
-     "site": "seacht-gcaislean-the-palace",
+     "site": "seacht-gcaislean-palace",
      "room": "bridge"
     },
     "who": [
@@ -514,7 +514,7 @@
    "palace-bloodroses": {
     "title": "Bloodrose",
     "where": {
-     "site": "seacht-gcaislean-the-palace",
+     "site": "seacht-gcaislean-palace",
      "room": "grounds"
     },
     "who": [
@@ -528,7 +528,7 @@
    "palace-west-wing": {
     "title": "The West Wing",
     "where": {
-     "site": "seacht-gcaislean-the-palace",
+     "site": "seacht-gcaislean-palace",
      "room": "west-wing"
     },
     "who": [],
@@ -537,7 +537,7 @@
    "palace-schoolroom": {
     "title": "The Schoolroom",
     "where": {
-     "site": "seacht-gcaislean-the-palace",
+     "site": "seacht-gcaislean-palace",
      "room": "schoolroom"
     },
     "who": [],
@@ -546,7 +546,7 @@
    "palace-pantry": {
     "title": "The Pantry",
     "where": {
-     "site": "seacht-gcaislean-the-palace",
+     "site": "seacht-gcaislean-palace",
      "room": "pantry"
     },
     "who": [],
@@ -555,7 +555,7 @@
    "palace-kitchen": {
     "title": "The Kitchen",
     "where": {
-     "site": "seacht-gcaislean-the-palace",
+     "site": "seacht-gcaislean-palace",
      "room": "kitchen"
     },
     "who": [],
@@ -564,7 +564,7 @@
    "palace-dining-hall": {
     "title": "The Dining Hall",
     "where": {
-     "site": "seacht-gcaislean-the-palace",
+     "site": "seacht-gcaislean-palace",
      "room": "dining-hall"
     },
     "who": [
@@ -582,7 +582,7 @@
    "palace-barracks": {
     "title": "The Barracks",
     "where": {
-     "site": "seacht-gcaislean-the-palace",
+     "site": "seacht-gcaislean-palace",
      "room": "barracks"
     },
     "who": [],
@@ -591,7 +591,7 @@
    "palace-caves": {
     "title": "The Caves",
     "where": {
-     "site": "seacht-gcaislean-the-palace",
+     "site": "seacht-gcaislean-palace",
      "room": "caves"
     },
     "who": [],
@@ -600,7 +600,7 @@
    "palace-northern-cavern": {
     "title": "The Northern Cavern",
     "where": {
-     "site": "seacht-gcaislean-the-palace",
+     "site": "seacht-gcaislean-palace",
      "room": "northern-cavern"
     },
     "who": [
@@ -614,7 +614,7 @@
    "palace-southern-cavern": {
     "title": "The Southern Cavern",
     "where": {
-     "site": "seacht-gcaislean-the-palace",
+     "site": "seacht-gcaislean-palace",
      "room": "southern-cavern"
     },
     "who": [],
@@ -623,7 +623,7 @@
    "palace-bathhouse": {
     "title": "The Bathhouse",
     "where": {
-     "site": "seacht-gcaislean-the-palace",
+     "site": "seacht-gcaislean-palace",
      "room": "bathhouse"
     },
     "who": [],
@@ -632,7 +632,7 @@
    "palace-changing-room": {
     "title": "Changing Room",
     "where": {
-     "site": "seacht-gcaislean-the-palace",
+     "site": "seacht-gcaislean-palace",
      "room": "changing-room"
     },
     "who": [],
@@ -641,7 +641,7 @@
    "palace-sunken-bath": {
     "title": "Sunken Bath",
     "where": {
-     "site": "seacht-gcaislean-the-palace",
+     "site": "seacht-gcaislean-palace",
      "room": "sunken-bath"
     },
     "who": [
@@ -655,7 +655,7 @@
    "palace-mosaic-room": {
     "title": "Mosaic Room",
     "where": {
-     "site": "seacht-gcaislean-the-palace",
+     "site": "seacht-gcaislean-palace",
      "room": "mosaic-room"
     },
     "who": [],
@@ -664,7 +664,7 @@
    "palace-steam-room": {
     "title": "Steam Room",
     "where": {
-     "site": "seacht-gcaislean-the-palace",
+     "site": "seacht-gcaislean-palace",
      "room": "steam-room"
     },
     "who": [],
@@ -673,7 +673,7 @@
    "palace-pink-pedestal": {
     "title": "Pink Pedestal",
     "where": {
-     "site": "seacht-gcaislean-the-palace",
+     "site": "seacht-gcaislean-palace",
      "room": "pink-pedestal"
     },
     "who": [],
@@ -682,7 +682,7 @@
    "palace-east-wing": {
     "title": "The East Wing",
     "where": {
-     "site": "seacht-gcaislean-the-palace",
+     "site": "seacht-gcaislean-palace",
      "room": "east-wing"
     },
     "who": [],
@@ -691,7 +691,7 @@
    "palace-hothouse": {
     "title": "Hothouse Garden",
     "where": {
-     "site": "seacht-gcaislean-the-palace",
+     "site": "seacht-gcaislean-palace",
      "room": "hothouse"
     },
     "who": [
@@ -705,7 +705,7 @@
    "palace-cavern-pool-east": {
     "title": "Cavern Pool",
     "where": {
-     "site": "seacht-gcaislean-the-palace",
+     "site": "seacht-gcaislean-palace",
      "room": "cavern-pool"
     },
     "who": [],
@@ -714,7 +714,7 @@
    "palace-sulfrous-pool": {
     "title": "Sulfrous Pool",
     "where": {
-     "site": "seacht-gcaislean-the-palace",
+     "site": "seacht-gcaislean-palace",
      "room": "sulfrous-pool"
     },
     "who": [],
@@ -723,7 +723,7 @@
    "palace-storeroom": {
     "title": "Storeroom",
     "where": {
-     "site": "seacht-gcaislean-the-palace",
+     "site": "seacht-gcaislean-palace",
      "room": "storeroom"
     },
     "who": [],
@@ -732,7 +732,7 @@
    "palace-blocked-passage": {
     "title": "Blocked Passage",
     "where": {
-     "site": "seacht-gcaislean-the-palace",
+     "site": "seacht-gcaislean-palace",
      "room": "blocked-passage"
     },
     "who": [
@@ -746,7 +746,7 @@
    "palace-fountain-room": {
     "title": "Fountain Room",
     "where": {
-     "site": "seacht-gcaislean-the-palace",
+     "site": "seacht-gcaislean-palace",
      "room": "fountain-room"
     },
     "who": [],
@@ -755,7 +755,7 @@
    "palace-secret-room": {
     "title": "Secret Room",
     "where": {
-     "site": "seacht-gcaislean-the-palace",
+     "site": "seacht-gcaislean-palace",
      "room": "secret-room"
     },
     "who": [],
@@ -764,7 +764,7 @@
    "palace-anteroom": {
     "title": "Anteroom",
     "where": {
-     "site": "seacht-gcaislean-the-palace",
+     "site": "seacht-gcaislean-palace",
      "room": "anteroom"
     },
     "who": [
@@ -778,7 +778,7 @@
    "palace-southeast-wing": {
     "title": "The Southeast Wing",
     "where": {
-     "site": "seacht-gcaislean-the-palace",
+     "site": "seacht-gcaislean-palace",
      "room": "southeast-wing"
     },
     "who": [],
@@ -787,7 +787,7 @@
    "palace-schoolroom-library": {
     "title": "Schoolroom and Library",
     "where": {
-     "site": "seacht-gcaislean-the-palace",
+     "site": "seacht-gcaislean-palace",
      "room": "library"
     },
     "who": [],
@@ -796,7 +796,7 @@
    "palace-fitting-room": {
     "title": "Fitting Room",
     "where": {
-     "site": "seacht-gcaislean-the-palace",
+     "site": "seacht-gcaislean-palace",
      "room": "fitting-room"
     },
     "who": [],
@@ -805,7 +805,7 @@
    "palace-larder": {
     "title": "Larder",
     "where": {
-     "site": "seacht-gcaislean-the-palace",
+     "site": "seacht-gcaislean-palace",
      "room": "larder"
     },
     "who": [],
@@ -814,7 +814,7 @@
    "palace-harp": {
     "title": "Lounge",
     "where": {
-     "site": "seacht-gcaislean-the-palace",
+     "site": "seacht-gcaislean-palace",
      "room": "lounge"
     },
     "who": [
@@ -832,7 +832,7 @@
    "palace-kobold-nest": {
     "title": "Lizardfolk Lair",
     "where": {
-     "site": "seacht-gcaislean-the-palace",
+     "site": "seacht-gcaislean-palace",
      "room": "lizardfolk-lair"
     },
     "who": [
@@ -850,7 +850,7 @@
    "palace-southwest-wing": {
     "title": "The Southwest Wing",
     "where": {
-     "site": "seacht-gcaislean-the-palace",
+     "site": "seacht-gcaislean-palace",
      "room": "southwest-wing"
     },
     "who": [],
@@ -859,7 +859,7 @@
    "palace-captains-quarters": {
     "title": "Captain's Quarters",
     "where": {
-     "site": "seacht-gcaislean-the-palace",
+     "site": "seacht-gcaislean-palace",
      "room": "captains-quarters"
     },
     "who": [],
@@ -868,7 +868,7 @@
    "palace-sw-barracks": {
     "title": "Barracks",
     "where": {
-     "site": "seacht-gcaislean-the-palace",
+     "site": "seacht-gcaislean-palace",
      "room": "sw-barracks"
     },
     "who": [],
@@ -877,7 +877,7 @@
    "palace-escape-room": {
     "title": "Escape Room",
     "where": {
-     "site": "seacht-gcaislean-the-palace",
+     "site": "seacht-gcaislean-palace",
      "room": "escape-room"
     },
     "who": [],
@@ -886,7 +886,7 @@
    "palace-armory": {
     "title": "Armory",
     "where": {
-     "site": "seacht-gcaislean-the-palace",
+     "site": "seacht-gcaislean-palace",
      "room": "armory"
     },
     "who": [],
@@ -895,7 +895,7 @@
    "palace-guardpost": {
     "title": "Guardpost",
     "where": {
-     "site": "seacht-gcaislean-the-palace",
+     "site": "seacht-gcaislean-palace",
      "room": "guardpost"
     },
     "who": [
@@ -909,7 +909,7 @@
    "palace-bailiffs-room": {
     "title": "Bailiff's Room",
     "where": {
-     "site": "seacht-gcaislean-the-palace",
+     "site": "seacht-gcaislean-palace",
      "room": "bailiffs-room"
     },
     "who": [],
@@ -918,7 +918,7 @@
    "palace-bailiffs-quarters": {
     "title": "Bailiff's Quarters",
     "where": {
-     "site": "seacht-gcaislean-the-palace",
+     "site": "seacht-gcaislean-palace",
      "room": "bailiffs-quarters"
     },
     "who": [],
@@ -927,7 +927,7 @@
    "palace-gaol": {
     "title": "Gaol",
     "where": {
-     "site": "seacht-gcaislean-the-palace",
+     "site": "seacht-gcaislean-palace",
      "room": "gaol"
     },
     "who": [],
@@ -936,7 +936,7 @@
    "palace-cavern": {
     "title": "The Cavern",
     "where": {
-     "site": "seacht-gcaislean-the-palace",
+     "site": "seacht-gcaislean-palace",
      "room": "cavern"
     },
     "who": [
@@ -950,7 +950,7 @@
    "palace-ink-pool": {
     "title": "Cavern Pool",
     "where": {
-     "site": "seacht-gcaislean-the-palace",
+     "site": "seacht-gcaislean-palace",
      "room": "ink-pool"
     },
     "who": [
@@ -964,7 +964,7 @@
    "palace-watchrooms": {
     "title": "Watchrooms",
     "where": {
-     "site": "seacht-gcaislean-the-palace",
+     "site": "seacht-gcaislean-palace",
      "room": "watchrooms"
     },
     "who": [],
@@ -973,7 +973,7 @@
    "palace-upper-levels": {
     "title": "The Upper Levels",
     "where": {
-     "site": "seacht-gcaislean-the-palace",
+     "site": "seacht-gcaislean-palace",
      "room": "upper-levels"
     },
     "who": [],
@@ -982,7 +982,7 @@
    "palace-watchtower": {
     "title": "Watchtower",
     "where": {
-     "site": "seacht-gcaislean-the-palace",
+     "site": "seacht-gcaislean-palace",
      "room": "watchtower"
     },
     "who": [],
@@ -991,7 +991,7 @@
    "palace-laboratory": {
     "title": "Laboratory",
     "where": {
-     "site": "seacht-gcaislean-the-palace",
+     "site": "seacht-gcaislean-palace",
      "room": "laboratory"
     },
     "who": [],
@@ -1000,7 +1000,7 @@
    "palace-chaplains-bedroom": {
     "title": "Chaplain's Bedroom",
     "where": {
-     "site": "seacht-gcaislean-the-palace",
+     "site": "seacht-gcaislean-palace",
      "room": "chaplains-bedroom"
     },
     "who": [
@@ -1014,7 +1014,7 @@
    "palace-chapel": {
     "title": "The Chapel and Sanctuary",
     "where": {
-     "site": "seacht-gcaislean-the-palace",
+     "site": "seacht-gcaislean-palace",
      "room": "chapel"
     },
     "who": [
@@ -1028,7 +1028,7 @@
    "palace-ballroom": {
     "title": "The Grand Ballroom",
     "where": {
-     "site": "seacht-gcaislean-the-palace",
+     "site": "seacht-gcaislean-palace",
      "room": "ballroom"
     },
     "who": [],
@@ -1037,7 +1037,7 @@
    "palace-gardens": {
     "title": "The Palace Gardens",
     "where": {
-     "site": "seacht-gcaislean-the-palace",
+     "site": "seacht-gcaislean-palace",
      "room": "gardens"
     },
     "who": [
@@ -1051,7 +1051,7 @@
    "palace-great-hall": {
     "title": "The Great Hall",
     "where": {
-     "site": "seacht-gcaislean-the-palace",
+     "site": "seacht-gcaislean-palace",
      "room": "great-hall"
     },
     "who": [
@@ -1065,7 +1065,7 @@
    "palace-washroom": {
     "title": "Washroom",
     "where": {
-     "site": "seacht-gcaislean-the-palace",
+     "site": "seacht-gcaislean-palace",
      "room": "washroom"
     },
     "who": [],
@@ -1074,7 +1074,7 @@
    "palace-upper-lounge": {
     "title": "Lounge",
     "where": {
-     "site": "seacht-gcaislean-the-palace",
+     "site": "seacht-gcaislean-palace",
      "room": "lounge-upper"
     },
     "who": [
@@ -1088,7 +1088,7 @@
    "palace-drawing-room": {
     "title": "Drawing Room",
     "where": {
-     "site": "seacht-gcaislean-the-palace",
+     "site": "seacht-gcaislean-palace",
      "room": "drawing-room"
     },
     "who": [
@@ -1102,7 +1102,7 @@
    "palace-cathbads-chambers": {
     "title": "Cathbad's Chambers",
     "where": {
-     "site": "seacht-gcaislean-the-palace",
+     "site": "seacht-gcaislean-palace",
      "room": "cathbads-chambers"
     },
     "who": [
@@ -1120,7 +1120,7 @@
    "palace-bath": {
     "title": "The Palace Bath",
     "where": {
-     "site": "seacht-gcaislean-the-palace",
+     "site": "seacht-gcaislean-palace",
      "room": "palace-bath"
     },
     "who": [],
@@ -1129,7 +1129,7 @@
    "palace-hearthroom": {
     "title": "Hearthroom",
     "where": {
-     "site": "seacht-gcaislean-the-palace",
+     "site": "seacht-gcaislean-palace",
      "room": "hearthroom"
     },
     "who": [],
@@ -1138,7 +1138,7 @@
    "palace-bedroom": {
     "title": "Palace Bedroom",
     "where": {
-     "site": "seacht-gcaislean-the-palace",
+     "site": "seacht-gcaislean-palace",
      "room": "palace-bedroom"
     },
     "who": [],
@@ -1147,7 +1147,7 @@
    "palace-throne-hallway": {
     "title": "Hallway to the Throneroom",
     "where": {
-     "site": "seacht-gcaislean-the-palace",
+     "site": "seacht-gcaislean-palace",
      "room": "throne-hallway"
     },
     "who": [
@@ -1161,7 +1161,7 @@
    "palace-aleroom": {
     "title": "Aleroom",
     "where": {
-     "site": "seacht-gcaislean-the-palace",
+     "site": "seacht-gcaislean-palace",
      "room": "aleroom"
     },
     "who": [],
@@ -1170,7 +1170,7 @@
    "palace-throneroom": {
     "title": "Throneroom",
     "where": {
-     "site": "seacht-gcaislean-the-palace",
+     "site": "seacht-gcaislean-palace",
      "room": "throneroom"
     },
     "who": [
@@ -1184,7 +1184,7 @@
    "timeline-of-disaster": {
     "title": "Timeline of Disaster",
     "where": {
-     "site": "seacht-gcaislean-the-palace"
+     "site": "seacht-gcaislean-palace"
     },
     "who": [],
     "description": "If the party finds Dame Kyteler's diary, they can read this entire timeline in her own words; otherwise, this chapter serves as background notes for the referee.\n\nDame Kyteler and Lady Petronella d'Meath self-initiated into an eclectic form of worship that they believe to be \"authentic druidism\", but has been corrupted by various infernal notions into something more akin to warlock priesthood. They used blood sacrifice and various ancient Pictish rites to call on an ancient power, the great wyrm Lig na Péiste, and convince it that they were part of an ancient pagan bloodline ready to reclaim the Isle and banish the Albions and their Church.\n\nLig na Péiste arrived at roughly the same time that the plague struck the county, in the guise of a silver knight riding on a silver dragon, and gifted Dame Kyteler the ancient artifact called Croidhe mo Mhaistir. In the following days, Dame Kyteler discovered that the silver knight was actually a disguise, and that Lig na Péiste was in fact the dragon itself, although he could take the form of the knight for the sake of diplomacy or romance.\n\nShe slowly fell in love with the knight's mortal guise, who she introduced to subjects as \"Sir Robin Artisson\"; many of the diary's entries describe lurid trysts between herself, the Lady d'Meath, and the \"brave, brave Sir Robin\". The diary also describes Lady Petronella weaving a \"bond of life\" between the two of them and the land itself, restoring both of their youth and beauty, and tying their health and vitality to that of the county for as long as they laid claim to rule over it.\n\nIn the following months, Dame Kyteler tried in vain to master the artifact's magic. Her experiments first cursed the Misty Moor, then the Stormpeaks, before she finally learned to focus its power through blood and pain. She wove a glamour into the entire span of the county, which allowed her to exert her will through every living plant whose roots grew from the county's soil.\n\nThe diary ends here, but what happened next was depressingly predictable: the bloodroses grew beyond her ability to control them, and merged with her and the artifact to create the fey abomination that now inhabits the throne room of the palace.\n\nThe tone and contents of Dame Kyteler's diary paint a portrait of victims more than a villains; two women in far over their heads, reaching for powers far beyond their understanding in a time of genuine need and harship, before being tragically overwhelmed and corrupted by those same powers."
@@ -1192,7 +1192,7 @@
    "referee-note": {
     "title": "A Quick Note to the Referee",
     "where": {
-     "site": "seacht-gcaislean-the-palace"
+     "site": "seacht-gcaislean-palace"
     },
     "who": [],
     "description": "All of the following information should be revealed as the party researches the situation. Everything here is presented for backstory; what happens once the party arrives is entirely up to them. There is no default expected \"happy ending\" to this tale; if the players manage to resolve the situation, they might do so in a way that makes friends or enemies, and the palace might become a new base of operation for them or be left a smoking ruin in their wake.\n\nTry not to \"railroad\" the players into a particular outcome. The characters and locales placed here can provide a good basis for an ongoing campaign, if you can make them come alive in the players' minds. Even if the players manage to defeat or rescue Dame Kyteler, befriend or banish the Silver Knight, and restore order to the surrounding countryside, there will still be plenty of work to do for a proper band of intrepid heroes."
@@ -1200,7 +1200,7 @@
    "kytelers-story": {
     "title": "Dame Alice Kyteler's Story",
     "where": {
-     "site": "seacht-gcaislean-the-palace"
+     "site": "seacht-gcaislean-palace"
     },
     "who": [],
     "description": "Dame Alice Kyteler and her friend, the Lady Petronella d'Meath, hatched a plan to defend the county between the Barrow and Nore rivers from the chaos of the Great Plague.\n\nThey used ancient druidic magic to summon a creature of myth and legend - the great wyrm Lig na Péiste - and then asked it to grant them the power to rule, a request which it was bound by oath to fulfill. Unfortunately, that oath was to a fey bloodline descended from one of the great Tuatha de Danaan; through no fault of their own, neither of them exactly fit the bill."
@@ -1216,7 +1216,7 @@
    "rowenas-story": {
     "title": "Rowena's Story",
     "where": {
-     "site": "seacht-gcaislean-the-palace"
+     "site": "seacht-gcaislean-palace"
     },
     "who": [],
     "description": "Rowena remembers when the plague first began to strike the region. The peasants were affected first, followed quickly by the keep's lord and guards. Dame Kyteler and her associate, the Lady Petronella d'Meath, brought in a \"champion\" who they claimed could help protect the survivors from the plague.\n\nThis champion was the Silver Knight, an elven noble named Robin Artson. He arrived riding a silver dragon, and declared that Dame Kyteler was now the Princess in Silver and Crimson, who would restore the ancient pagan pacts between mortals and the fair folk that had been sundered when the Chuch came to the Misty Isles. As a token of his love and loyalty, he offered her Croidhe mo Mhaistir, an unfathomably powerful dragon pearl of pure crimson ruby.\n\nThe Silver Knight began tutoring Dame Kyteler in the most powerful magics of Faerie and Dragonkind, teaching her to ward the land against the creeping tendrils of Shadow that followed the plague. Victims of the disease sometimes even survived, and those who died were offered up in sacrificial bonfires to the pagan fey who protected the land.\n\nFor a time, all was well. Rowena became Dame Kyteler's bard, entertaining her and the Silver Knight each evening for many years. She barely noticed at first that she had stopped aging. As children began to be born with the telltell signs of the fey, the locals began to wonder what kind of bargain they had struck; but even a few odd-shaped ears and tails here and there weren't enough to worry them.\n\nOnly after the victims of the plague began rising as mindless undead, did the Dame Kyteler and her coven begin to worry that they didn't have the power to stop the epidemic. Burned skeletons rose up with fierce red flames in their eyes, and those who had not yet been offered up to the fire rose as shamblers so quickly that their loved ones scarcely noticed they had succumbed.\n\nDame Kyteler was desperate. Though her Knight begged her not to, she reached deep into Faerie for a glamour that could fight the rising tide, and Faerie answered. Blood-red thorny bushes sprouted from every patch of bare earth, covering every inch of farmland and field with choking vines and fragrant rosebuds. Elves in the Silver Knight's entourage appeared and ferried Rowena deeper into Faerie, and she never set foot back into the Material."
@@ -1224,7 +1224,7 @@
    "sisters-story": {
     "title": "Aine and Mairead's Story",
     "where": {
-     "site": "seacht-gcaislean-the-palace"
+     "site": "seacht-gcaislean-palace"
     },
     "who": [],
     "description": "Aine doesn't remember much about her childhood; she only remembers fleeing her village when it was overrun by plague- shamblers, with her baby brother and sister in her arms, and a glowing red sword at her hip. Some kind of fey curse overtook them, and transformed them all into enormous white wolves; it was only the kindness of Cathbad that saved them, when he took them in and began trying to undo the curse.\n\nIn truth, Cathbad has been manipulating Aine the whole time, using her as his bodyguard and enforcer while telling her that he is looking for a cure to her \"condition\". She and her brother and sister are all wolf puccas, and are perfectly capable of learning how to control their shapeshifting abilities; Cathbad uses various beguiling curses to convince them that they become violent, bloodthirsty beasts while transformed, and only their iron collars keep them safe.\n\nCathbad recently decided that Aine's bonds to her brother and sister were interfering with his influence over her, so he sold them to the tribe of redcaps that infest the lower levels of the palace, while telling Aine that they are there to 'train' alongside the goblins; Aine only believes this because she believes the redcaps to be the children of the bugbears that accompanied her and Cathbad into the palace. When she finds out that the redcaps have eaten her little brother, she will likely go on a bloody rampage, tearing Cathbad, the bugbears, and all the redcaps to shreds in her rage and grief.\n\nAine was the \"maiden fair\" that the Silver Knight was originally looking for when he came to Kilkenny, but Dame Kyteler used fey glamour to trick him into thinking she was his fated queen instead. Once he understands the deception, the devastation wrought by Dame Kyteler's magics will finally make sense to him, and his vengeance will be swift and brutal.\n\nAine is, at this point, not psychologically suited for the kind of responsibilities that ruling Kilkenny would entail. An Intuition check (which will be easy for a Priest, or normal difficulty for anyone else) will uncover this if the party chooses to engage with Aine at length about what she's endured and how she feels about all the hardships she's endured. Her little sister will be a much better candidate once she comes of age; Aine would be much happier acting as her sister's protector than trying to rule an entire county herself."
@@ -1232,7 +1232,7 @@
    "silver-knights-story": {
     "title": "The Silver Knight's Story",
     "where": {
-     "site": "seacht-gcaislean-the-palace"
+     "site": "seacht-gcaislean-palace"
     },
     "who": [],
     "description": "The Silver Knight is Lig na Péiste, an ancient celestial dragon, who has tried from time to time to tame the Misty Isle's wild fey energies. So far, he has failed at each attempt.\n\nHe has a fey pact with a fair folk Numen that has protected the isle for millenia; part of the terms of this pact require that he work his efforts alongside her direct female descendants. When Dame Alice Kyteler summoned him, she convinced him that she was one of those descendents, calling on him to fulfill his ancient oath; all of the chaos that has ensued since is the direct result of that deception.\n\nThe Silver Knight is not a particularly Good or Bad being, from the Church's perspective; he is much more a primal force of nature, like all of the fey influences within the Isle of Mists. It was he who originally forged Croidhe mo Mhaistir, and the twin blades named Claíomh Solais; when used in tandem, the blades can open a portal to his home nest within the Elemental Chaos, where they (and his own dragon pearl) were first forged.\n\nLig na Péiste normally inhabits the far northern shores of the Isle of Mists; before being summoned by Dame Kyteler, he had not been this far south in ten thousand years. As such, he is quite unfamiliar with local geography and customs. If the Croidhe mo Mhaistir is somehow destroyed, Lig na Péiste will be banished back to the northern lake he once called home. Otherwise, he might become an ally or an adversary, based on the party's goals and how they act towards him."
@@ -1240,7 +1240,7 @@
    "chaplains-story": {
     "title": "The Chaplain's Story",
     "where": {
-     "site": "seacht-gcaislean-the-palace"
+     "site": "seacht-gcaislean-palace"
     },
     "who": [],
     "description": "The chaplain of the palace was worried for the souls of Dame Alice and Lady Petronella; he was murdered for his troubles by his pupil Cathbad, who burned him alive in a sacrificial rite to Crom Cruach that summoned the goblin army from faerie that Dame Alice and Lady d'Meath now struggle to command.\n\nSince his murder, he has been forced to watch from Shadow as Cathbad counciled Dame Kyteler into using the Croidhe mo Mhaistir in more and more inadvisable ways, culminating in her transformation into the monstrosity in the throne room. He watched as Cathbad counciled Petronella d'Meath to flee the palace and take up residence in Cill-Chainnigh, and to send any \"troublemakers\" to the palace for him to deal with. He watched as Cathbad picked from among those sent to the castle by Lady d'Meath, selling those that failed to interest him to the redcaps and keeping those who showed any potential of being genuine heirs to the Croidhe mo Mhaistir's power. And he watched as Cathbad tricked and enslaved Aine and her siblings, then sold her brother and sister to the redcaps when her love for them threatened his control over her.\n\nThe chaplain has a lot to be angry about."
@@ -1248,7 +1248,7 @@
    "claiomh-solais": {
     "title": "Claíomh Solais, the Ruby Blade",
     "where": {
-     "site": "seacht-gcaislean-the-palace"
+     "site": "seacht-gcaislean-palace"
     },
     "who": [],
     "description": "Aine barely remembers anything of her early childhood before becoming a wolf pucca, but she remembers that her mother gave her a thin, elegantly crafted fey longsword with a blade seeminly carved from a single bright crimson ruby. The blade is a legendary primal aetheric blade, and is a \"matched pair\" with the silver blade from the bathhouse - which is confusingly also called \"Claíomh Solais\" in manuscripts. Unlike most aetheric blades, this weapon can cut a path directly into the elemental chaos - but only when slicing open a rift into faerie already made by its silver \"brother\". If both blades are used in this fashion, one after the other, the portal opens to a basalt altar in the middle of a sea of lava, with an anvil atop the altar which can be used by 9th-level magic-users to craft legendary magic items after sufficient study. (Learning how to do this is certainly going to be an adventure all of its own; it's best if this is kept as a \"story hook\" for future adventures, once the party is experienced enough to start experimenting.)\n\nStudying Cathbad's notes will reveal that the blade is actually a legendary primal artifact called Claíomh Solais, and it was crafted as part of a set from a single, vast crystal of \"dragon pearl\" along with Croidhe mo Mhaistir. As such, both artifacts remain \"in resonance\" with each other, and glamours, spells or miracles that target one will also affect the other.\n\nCathbad wants to use this resonance to gain control of Dame Kyteler, and therefore the bloodrose infestation - and then use that power to wrest control of the region from Lady d'Meath. Unfortunately, the sword's powers only work for the direct matrilineal descendents of an ancient druidess; Aine and Mairead happen to be her last great-great-great-great-great- (great?)-granddaughters. If Aine or Mairead can be convinced to help the party, they might allow any of the party's magic- users to channel and amplify their magics through the sword while they wield it, quickly solving everyone's problems.\n\nAccording to Cathbad's notes, the white blade also has a corresponding \"heart\", which currently serves as a genuine \"dragon pearl\" set into the forehead of the celestial dragon that taught Dame Kyteler how to use the ruby. The notes also indicate that the \"Silver Knight\" was actually an illusion or polymorph-form of the dragon itself, who was Dame Kyteler's actual lover. The notes further speculate that the failure of the ruby's magic was due to Dame Kyteler not actually being of the proper bloodline to control the ruby, and that either Aine or Mairead might be able to wrest control and repair the damage wrought by Kyteler's miscast glamours. This would only be possible, he muses, by a properly-trained druid; his diary suggests that he plans to go below and buy Mairead off of the redcaps tomorrow, as he deems Aine too old and \"set in her ways\" to begin proper druidic initiation."
@@ -1256,7 +1256,7 @@
    "solutions": {
     "title": "Solutions",
     "where": {
-     "site": "seacht-gcaislean-the-palace"
+     "site": "seacht-gcaislean-palace"
     },
     "who": [],
     "description": "There are several ways that the party could undo Dame Kyteler's curse.\n\nThe most straightforward approach won't work; trying to cut or burn the thorns out of Dame Kyteler's heart, or trying to destroy her body or the roses, will simply reduce them to ash, after which they will regenerate as if the reincarnation primal ritual was performed. The Croidhe mo Mhaistir will ensure that the new body is still that of Dame Kyteler, but each time she regenerates she becomes less and less human, and more and more a thing of twisting thorns and vines.\n\nDestroying the Croidhe mo Mhaistir If the Croidhe mo Mhaistir is pierced by both blades, it will shatter, and the resonance will also destroy the red Claíomh Solais. This will free Lig na Péiste completely from his oath, which will also cut him off from any further ability to enter or affect the material plane - in effect, he will be banished into the Faerie echoes of a small lake along the isle's northern shores, where he will strive in vain to escape his prison until the end of time.\n\nAttuning to an Heir The Croidhe mo Mhaistir could instead be de- attuned from Dame Kyteler, and attuned to either Aine or Mairead. Properly attuning the gem requires that the druidess cut her hand with the red Claíomh Solais, then place her bloody palm on the surface of the stone.\n\nDame Kyteler will fight to the death to stop this process, because a successful atunement will cause her and all the bloodroses to immediately wither to dust. If Aine succeeds at this, the Silver Knight will appear and pledge his service to her, declare that she is the ruler of the land, and ask for her bidding.\n\nIf Mairead attunes to the stone instead, the Silver Knight will recognize that she is a child, and will offer to act as her steward and tutor until such time as she feels she is prepared to rule. As steward, Lig na Péiste is surprisingly sensible and fair, and is willing to discuss the notion of becoming a guardian Numen with the party's priest if the matter is broached respectfully.\n\nRescuing Dame Kyteler It might be possible to attune to the stone without killing Dame Kyteler, if the Silver Knight can be convinced that she deserves to be saved. Dame Kyteler herself must also be convinced to willingly give up the stone to Aine or Mairead, and genuinely atone for the harm she has wrought on the county.\n\nIf guided to atonement by a priest before she gives up the gem, she might be able to use its last vestiges of power to repair the damage the bloodroses have done to her body. She will be in critical condition and will require months of bedrest, but she will survive. Such a feat should not be handled lightly; genuine atonement for the desecration of miles of land and the deaths of thousands of mortals is no easy feat. An atoned Dame Kyteler might choose to become a nun in the chapel, or might leave the Isle of Mists altogether."
@@ -1264,7 +1264,7 @@
    "restoring-the-county": {
     "title": "Restoring the County",
     "where": {
-     "site": "seacht-gcaislean-the-palace"
+     "site": "seacht-gcaislean-palace"
     },
     "who": [],
     "description": "Once the curse has been lifted, the county will still show signs of supernatural scarring. The mortal inhabitants will still continue to give birth to beastfolk children far more often than normal, and the landscape will continue to be a dreamlike blend of Faerie and the Material.\n\nUsurping the Lady Petronella d'Meath will be easy, if the Croidhe mo Mhaistir and Lig na Péiste remain in the couty. If the party solves the problem by shattering the gem, she will be handled by local authorities - most likely inquisitors sent from the Church via Albion, who will try and convict her for witchcraft and heresy as soon as a new lord takes control of the keep. As harsh as this is, it is much kinder than what the Silver Knight would have in store for her, if his wrath goes un- tempered by Mairead's counsel."
@@ -1272,7 +1272,7 @@
    "now-what": {
     "title": "Now What?",
     "where": {
-     "site": "seacht-gcaislean-the-palace"
+     "site": "seacht-gcaislean-palace"
     },
     "who": [],
     "description": "From here, the party might choose to use Kilkenny County as their base of operations, or they might return to the Pale Keep; they might also be offered a chance to join the Albion-Francia war on the Europa mainland, if the crown receives word of their deeds and they have made a sufficiently heroic showing.\n\nAs vassals of Contessa Aine or Contessa Mairead, the party might spend their time clearing out the Stormpeaks, the Misty Moor, and the Feywoods of any lingering dangers; once the wilds have been tamed, they will find Kilkenny to be a sensible little county.\n\nThe Croidhe mo Mhaistir is an absurdly powerful artifact, but also wild and untamed. Even in the hands of a proper heir, its magic will often cause as much trouble as it solves.\n\nIf Aine is contessa of Kilkenny, she will never let on that there is a problem; instead, she will simply become more and more frustrated by her inability to control the artifact's power, until a new disaster strikes. Talking her down from this will be a difficult balancing act for even the most level-headed party of advisors; eventually, only her sister will be able to truly talk sense into her. (This will eventually lead to Aine abdicating her title, and ordering her sister Mairead to rule in her stead.\n\nMairead will prove to be a much smarter and more capable ruler, who will take a good deal of interest in the well-being of her people, and especially in using technology to improve it. She will pay large sums from the treasury to entice human and dwarven engineers from Albion and Aeterna into her court, and will eagerly try all sorts of schemes to harness the gem's power for good.\n\nUltimately, the safest use for the gem will turn out to be the tried-and-true military solution: as a legendary dragon pearl, the gem is quite well-suited for powering a golem armor the likes of which have not been seen since the fall of the Old Empire, or possibly even the days of Azlanteos. With a functioning golem armor to protect her county, Mairead will declare her land free from the Albion crown, and be free to govern it as she sees fit."
