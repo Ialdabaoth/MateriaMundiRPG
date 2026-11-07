@@ -53,9 +53,10 @@ Those are 2112, 528, 88, 11 and 1 bottom hexes across. The default ladder is the
 - **Paint where you like (proposal).** `scales.paint` may name any level `id`. The author paints at that level, and finer levels get seeded procedural detail from it, as the converter does now from the League pages. Hand overrides still apply. Nobody should have to paint 2112 pixels across a 24-mile hex.
 - **Lattices need not match between modules (proposal).** Two modules on the same region with different `unit_ft` have hexes that do not line up. Porting terrain from one to the other is a resample (nearest centre), done by a tool; a real-terrain module is instead rebuilt from its source data. Addresses are per module: `#world:CCRR:CCRR` means the level named by `scales.address_level` (default `league`) and then the bottom hex inside it.
 
-Open questions:
-- **Storage tiles.** Terrain PNGs are 1600 x 1200 with one pixel per bottom hex, centred on a March. At 60 ft a 24-mile hex is 2112 hexes across, so it no longer fits. Proposal: tiles become a fixed 1600 x 1200 rectangle grid aligned to the lattice, independent of any level.
-- Whether Atlas print pages follow the default ladder or the module's.
+- **Storage: one picture per hex of a chosen level (Heph 2026-11-07).** `scales.tile` names a level `id`, and the module has one terrain PNG per hex of that level, each with one pixel per bottom hex. The default ladder's tile level is `march` (the 1600 x 1200 pictures below). For a level of `n` bottom hexes the picture is about `4n/3` wide and `n` tall, as 1600 x 1200 shows for n = 1200. So with a 60-ft bottom hex and a 1-mile tile level (`"tile": "mile"`), each picture is about 118 x 88 pixels. The tile level can be any level, so a module picks whatever size suits it; the picture size is never fixed by the format.
+- **Summaries in the pictures' dead corners** belong to the default ladder. Other ladders use computed summaries, as above.
+
+Open question: whether Atlas print pages follow the default ladder or the module's.
 
 ## The lattice
 
