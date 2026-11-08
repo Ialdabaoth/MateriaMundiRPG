@@ -111,6 +111,7 @@ A referee **forks** a module repository and adds a `campaign/` folder. Module au
 campaign/
   campaign.json              {"format": "mm-campaign/1", "modules": ["isle-of-mists"], "start": "1422-05-01", "referee": "…"}
   chronicle/2026-11-08-session-01.md   what happened, written after each session
+  state.json                 the campaign state file: party, clock, reveals, session, characters (STATE_FORMAT.md)
   state/hexes.json           {"<map>:<hex>": {"explored": true, "notes": "…"}}   map = "world" or a League key
   state/sites.json           {"<slug>": {"status": "cleared", "notes": "…"}}
   state/ratchets.json        {"<region>": 7}   the d20 region ratchets
