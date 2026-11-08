@@ -2,7 +2,7 @@
 
 An open way to publish adventures, regions and campaigns for **Materia Mundi** and **E9** so they can be played entirely in a web browser or the Companion app, with no VTT, and printed as books from the same source.
 
-The rules are simple. A module is a **git repository**. Building it produces a **static website**: a map viewer, print-ready PDFs and a `module.json` manifest the Companion reads. GitHub with GitHub Pages is the default host, but any git host and any static web host will do. A referee runs a **campaign by forking** a module repository. The campaign's live record (sessions, explored hexes, character sheets) is committed to the fork, so git history becomes the campaign chronicle.
+The rules are simple. A module is a **git repository**. Building it produces a **static website**: a module page (its text and reference, each place linked into the E9 Atlas), the module's E9 Atlas map, print-ready PDFs on request and a `module.json` manifest the Companion reads. GitHub with GitHub Pages is the default host, but any git host and any static web host will do. A referee runs a **campaign by forking** a module repository. The campaign's live record (sessions, explored hexes, character sheets) is committed to the fork, so git history becomes the campaign chronicle.
 
 This repository is the reference implementation: `modules/isle-of-mists` (Beyond the Pale: The Isle of Mists, 1422) and the build tools in `modules/tools`.
 
@@ -50,7 +50,7 @@ The Companion adds a repository from its published URL. It reads `mm.json` and t
 | --- | --- |
 | `id`, `title`, `short`, `version` | `version` is semver. Breaking changes to ids (section 5) need a new major version. |
 | `license` | SPDX id. Required. |
-| `credits` | Optional list of the data sources the module's maps use, `[{what, by, license, url?}]` (for example castle positions, CC BY 4.0). Copied to the built `module.json`; the E9 Atlas shows them under Credits in its footer and the module viewer in its footer (Atlas 0.5.0). Any CC BY source must be listed here. |
+| `credits` | Optional list of the data sources the module's maps use, `[{what, by, license, url?}]` (for example castle positions, CC BY 4.0). Copied to the built `module.json`; the E9 Atlas shows them under Credits in its footer and the module page under Credits (Atlas 0.5.0). Any CC BY source must be listed here. |
 | `dem` | `[lat0, lat1, lon0, lon1]`: the SRTM 1° tiles (south-west corners) the terrain comes from. The build fetches them. |
 | `admin` | Path to the GeoJSON boundaries (`properties.name` is the region name). |
 | `books` | Ordered list: `{id, title, county, region, detail}`. `region` names the book's 3-mile region and `detail` its half-mile overview. |
@@ -60,8 +60,8 @@ The Companion adds a repository from its published URL. It reads `mm.json` and t
 | `site_icons` | Optional `{site name: icon}` overrides; an icon is a file name (without `.png`) in `assets/tiles/icons/`. Without one, a site uses its kind's icon (grove = great tree, abbey = church). |
 | `site_ranks` | Optional `{site name: 1, 2 or 3}`: the zoom a place first shows at in the Atlas. 1 = major (Region view), 2 = notable (March view), 3 = minor (League view down). Without one, towns are 1, abbeys 2 and other sites 3 (ATLAS_FORMAT.md, Place ranks). |
 | `site_parents` | Optional `{sub-place name: parent name}`: PoI hierarchies (ATLAS_FORMAT.md). A sub-place (a cave mouth, a city gate) collapses into its parent when zoomed out, and the Atlas key lists it under its parent. Any depth; both names must be sites of the module. |
-| `languages` | Optional `{code: label}`, e.g. `{"ga": "Gaeilge", "en": "English"}`, the language the names are drawn in first. The Language box in the Atlas, the viewer and the Companion offers these, and hides itself with fewer than two. Without it, a module with `names` gets the old Gaeilge/English pair. Changing it does not redraw the maps. |
-| `names` | Optional label translations `{name as drawn: {<language code>: "..."}}`. The viewer's Language box swaps every map label, page title and list entry that matches a key; names without an entry stay as drawn. Copied to the built `module.json`. |
+| `languages` | Optional `{code: label}`, e.g. `{"ga": "Gaeilge", "en": "English"}`, the language the names are drawn in first. The Language box in the Atlas, the module page and the Companion offers these, and hides itself with fewer than two. Without it, a module with `names` gets the old Gaeilge/English pair. Changing it does not redraw the maps. |
+| `names` | Optional label translations `{name as drawn: {<language code>: "..."}}`. The Language box swaps every map label and place name that matches a key; names without an entry stay as drawn. Copied to the built `module.json`. |
 | `regions` | Named map regions. Each has `sites: [[name, lat, lon, kind, note?]]` plus terrain settings. |
 
 Site `kind` is one of `castle town abbey tomb hill cave ruin grove camp lair mist dead`. A new kind needs an icon in `assets/tiles/icons` and an entry in the build's icon table.
@@ -91,10 +91,9 @@ Travel: forest and light woods both double travel time, and a Survival roll find
 - **Site slug**: the site name, accents stripped, lowercase, non-alphanumerics → `-` (`Dinn Ríg` → `dinn-rig`).
 - **League key**: `l-` + the number of its 3-mile hex (`l-1330`).
 - **March page**: its number, `1…n`, ordered north to south and then west to east.
-- **Viewer links**: `#world`, `#march-7`, `#l-1330`, `#l-1330--droichead-leithghlinne`. Links from version 0.1 (`#atlas-7`, `#p-<site>`, `#p-<site>--<site>`) still open the matching page, through the manifest's `aliases`.
-- **Hex addresses**: `<map>:<hex>`, where map is `world` or a League key: `#world:1330` (a 3-mile hex), `#l-1330:0607` (a half-mile hex in that League; the League's centre hex is 0907 on every League page). These are the same keys as `campaign/state/hexes.json`. Every map uses the world map's hex geometry (`world.hex_px`, `world.col_px`, `world.origin_px`).
-- **Render modes**: `?mode=map` shows only the map, with zoom buttons; `?mode=atlas` shows only the page list and search. The plain viewer shows both. An app could show the two modes in separate frames (the Companion did until 0.5.2; it now embeds the E9 Atlas, and the viewer forwards to the Atlas when the module has an Atlas map unless `?mode=` or `?viewer=` is set): a pick in the atlas frame posts `{"event": "select", "hash"}` instead of navigating, the app sends `{"show": hash}` to the map frame, and sends `{"current": hash}` back to the atlas frame so it highlights the page being shown. `?mode=key` shows only the map key, drawn like the Atlas app's side panel (terrain in view, places in view with their icons, creatures here); the map frame posts `{"event": "key", "hash", "terrain", "places", "creatures"}` whenever the view changes, the app forwards `{"key": {...}}` to the key frame, and a place picked there posts `{"event": "select", "hash"}`. Adding `&tools=host` to a map frame hides its own language, hex-edge and zoom controls so the app can draw them: the viewer posts `{"event": "tools", "lang", "langs": [{"value", "label"}], "edges", "zoom"}` (zoom in percent) on load and on every change, and takes `{"tools": true}` (send state now), `{"lang": "en"}`, `{"edges": false}` and `{"zoom": "in" | "out"}`.
-- **Embedding**: the viewer can sit in an iframe. It posts `{"type": "mm-viewer", "event": "view" | "hex" | "select", "module", "version", "hash", "map"?, "title"?, "small"?, "hex"?, "scale"?, "sites"?, "terrain"?, "terrainName"?}` to its parent whenever the reader moves or taps a hex. The parent may post `{"type": "mm-viewer", "show": "#world:0706"}` to open a link, and `{"type": "mm-viewer", "marks": [{"map": "world", "hex": "0706", "label": "P"}]}` to place markers, such as where a party stands.
+- **Module page links** (Atlas 0.5.7): `#places`, `#scenes`, `#creatures`, `#factions`, `#credits`, `#changes`, and one entry: `#site-<slug>`, `#scenes-<slug>` (a place's scenes), `#scene-<id>` (opens it), `#faction-<id>`. A place in the E9 Atlas is `<site>/atlas/?module=<id>#site:<slug>`.
+- **Old map links**: the module viewer's `#world`, `#march-7`, `#l-1330`, `#l-1330--droichead-leithghlinne`, `#atlas-7` and `#p-<site>` links still work: the module page forwards them to the E9 Atlas, which reads them through map.json's `legacy` table (ATLAS_FORMAT.md, "Old links").
+- **Hex addresses** on the old grid (`#world:1330`, `#l-1330:0607`) are the keys of `campaign/state/hexes.json` from before the E9 Atlas; the Atlas opens them as `#legacy:world:1330` and `#l-1330:0607`. New addresses are the Atlas's (`#world:LLLL:HHHH`, ATLAS_FORMAT.md).
 
 If a later version renames a site, add `"aliases": {"old-slug": "new-slug"}` to `module.json` so old links and campaign notes keep working. If a module changes its id, list the old ids in `"moved_from"`: the build leaves a page at each old address that forwards to the new one, with its query and link intact.
 
@@ -120,7 +119,7 @@ campaign/
 
 - **One commit per session** (`Session 1: the bridge at Leighlin`), plus a tag `session-01`. The git log is the chronicle, and any earlier state is a checkout away.
 - **Players** can keep their sheets in the fork and send changes as pull requests, or the referee commits sheets exported from the Companion.
-- **Publishing the fork** with the same Action gives the table a live campaign site. A later viewer version will overlay `state/` (explored hexes, cleared sites) on the module maps.
+- **Publishing the fork** with the same Action gives the table a live campaign site. A later Atlas version will overlay `state/` (explored hexes, cleared sites) on the module maps.
 - **Privacy**: a fork can be private. Referee-only notes go in `campaign/secret/`, and the build never publishes that folder.
 
 ## 8. The built site
@@ -128,18 +127,19 @@ campaign/
 Building `modules/<id>` writes:
 
 ```
-<id>/index.html              the viewer
+<id>/index.html              the module page: places, scenes, creatures and NPCs, factions, credits and changes, each place linked into the E9 Atlas
 <id>/module.json             the manifest (format "mm-module/1")
-<id>/maps/world.svg, maps/l-*.svg
 <id>/print/atlas.pdf (March pages), print/leagues.pdf  (only with build.py --pdf: print PDFs are paused until the print process is settled, Heph 2026-11-07)
 <id>/atlas/map.json, atlas/terrain/<march>.png (E9 Atlas format, when atlas.centroid is set)
 <id>/atlas/tiles/ (the tiles the E9 Atlas draws this module with)
 <id>/atlas/index.html       forwards to the E9 Atlas app at <site>/atlas/?module=<id>, keeping the #link
 ```
 
+A module publishes **no map renders** (Heph 2026-11-08, Atlas 0.5.7): every map is the Atlas's to draw, so the build no longer writes `maps/*.svg`. The March and League page drawings stay in the build's work folder, where the print PDFs (`--pdf`) and the manifest's `marches`, `leagues` and `sites` come from. The module page carries its text and reference, and its encounter maps open in the same encounter viewer the Atlas uses.
+
 The **E9 Atlas** (Atlas 0.3.0) is one app for the whole site, at `<site>/atlas/` (`tools/atlas_app.py` writes it). It reads the site's `mm.json`, shows which module is loaded, and its Modules button loads another one. `?module=<id>` picks a module; links are `#world`, `#march:MMMM`, `#world:LLLL[:HHHH]`.
 
-The manifest contains `format`, `id`, `title`, `version`, `license`, `scales`, `books`, `world`, `marches`, `leagues`, `sites`, `aliases`, `links` and `print`, and `atlas_map` (`atlas/map.json`) when the module has an E9 Atlas map. `scales` gives `mile_ft` (5000) and the hex size of each zoom level. `world` holds the Region map, its pixel geometry and every 3-mile hex's terrain. `marches` has one entry per atlas page, with its 24-mile hex, centre, radius, neighbours and sites. `leagues` has one entry per League page, with its 3-mile hex, map, title, book, March terrain, centre and sites with their pixel positions. `sites` gives each site's slug, kind, book, county, latitude and longitude, world hex, March page and League. `aliases` maps old page keys to League keys. A module with creatures (CREATURES_FORMAT.md) also has `encounters` (the merged fiction file, `encounters.json`) and `bestiary` (`{"<ruleset>": "bestiary/<ruleset>.json"}`); the Companion's Creatures › Add list offers them, and the viewer and the E9 Atlas list who lives in a tapped hex, each name opening an index card (`atlas/creatures.json` holds the resolved list for the Atlas). The web viewer, the PDFs and the manifest come from one build and carry the same `version` (semver, plus the commit and the date), printed in each page footer. If the versions match, the three agree.
+The manifest contains `format`, `id`, `title`, `version`, `license`, `scales`, `books`, `world`, `marches`, `leagues`, `sites`, `aliases`, `links` and `print`, and `atlas_map` (`atlas/map.json`) when the module has an E9 Atlas map. `scales` gives `mile_ft` (5000) and the hex size of each zoom level. `world` holds the old Region grid's pixel geometry and every 3-mile hex's terrain. `marches` has one entry per atlas page, with its 24-mile hex, centre, radius, neighbours and sites. `leagues` has one entry per League page, with its 3-mile hex, title, book, March terrain, centre and sites with their pixel positions. `sites` gives each site's slug, kind, book, county, latitude and longitude, world hex, March page and League. `aliases` maps old page keys to League keys. A module with creatures (CREATURES_FORMAT.md) also has `encounters` (the merged fiction file, `encounters.json`) and `bestiary` (`{"<ruleset>": "bestiary/<ruleset>.json"}`); the Companion's Creatures › Add list offers them, and the viewer and the E9 Atlas list who lives in a tapped hex, each name opening an index card (`atlas/creatures.json` holds the resolved list for the Atlas). The web viewer, the PDFs and the manifest come from one build and carry the same `version` (semver, plus the commit and the date), printed in each page footer. If the versions match, the three agree.
 
 Build locally:
 
@@ -152,5 +152,5 @@ python3 -I modules/tools/build.py modules/isle-of-mists dist/modules/isle-of-mis
 
 A module states its licence in `mm.json` and `module.json`. Materia Mundi's own modules are **CC BY 4.0**: fork, change and republish freely, as long as you credit Heph (Bakagaijin Productions). A third-party module may use any licence, but a module that says it is "Materia Mundi compatible" must follow sections 3 to 6, so that the Companion and the viewer can read it.
 
-The map icons in `assets/tiles` are [Hex Tiles: Fantasy](https://cmartins.itch.io/hex-tiles-fantasy) by cmartins, licensed CC BY-SA 4.0. The viewer and the Companion credit them; keep that credit in anything built from them.
+The map icons in `assets/tiles` are [Hex Tiles: Fantasy](https://cmartins.itch.io/hex-tiles-fantasy) by cmartins, licensed CC BY-SA 4.0. The Atlas, the module page and the Companion credit them; keep that credit in anything built from them.
 The bonus Desert, Forest, Mountain and Tundra packs in `assets/tiles/packs` (and their keyed-out copies in `assets/tiles/features`) are art by C. Martins, licensed CC BY. Credit "Art by C. Martins" wherever they appear.
