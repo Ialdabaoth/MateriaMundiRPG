@@ -4,7 +4,7 @@ Ideas under discussion that are not yet agreed. When Heph agrees to one, it move
 
 | Proposal | Status | Would change |
 | --- | --- | --- |
-| [P1. Open service adapters](#p1-open-service-adapters) | Proposed 2026-11-08 (Heph thinking out loud) | WORKFLOWS.md "Mailbox and archive", "Live channel", "Accounts" |
+| [P1. Open service adapters](#p1-open-service-adapters) | Proposed 2026-11-08 (Heph thinking out loud) | WORKFLOWS.md "Mailbox and archive", "Live channel", "Accounts", "VTTs"; invite links |
 
 ## P1. Open service adapters
 
@@ -83,6 +83,52 @@ A free Cloudflare Worker, owned by Heph, that does only what a browser can't:
 
 It keeps no campaign data, which always lives in services the referee picked. If the handler goes away, tables using Google or Discord directly keep working. It is the same Worker WORKFLOWS.md already plans for the sign-in relay.
 
+### Resilience (Heph, 2026-11-08)
+
+Assume any service can vanish overnight (shutdown, API or price change, banned account, new policy). Nothing may be lost, and switching must be cheap.
+
+| If this goes | What stops | What survives | Fix in advance |
+| --- | --- | --- | --- |
+| **GitHub** | Hosting of the apps and modules (new players can't load them); the campaign archive host | Installed apps run offline from cache; the referee's laptop holds a complete git copy | Custom domain, so moving the site is a DNS change; a Codeberg mirror of the repo |
+| **Google** | Mailbox, snapshots, Apps Script bot, calendar | Characters on players' devices; full state on the referee's | Campaign pointer (below), so invites survive an adapter switch |
+| **Discord** | Voice, roll log, a Discord mailbox | Everything else | A second voice option; mailbox on another adapter |
+| **Our handler** | Features that lean on it | Tables on Google or Discord directly | Keep it stateless and optional |
+
+Three rules make each of these survivable:
+
+1. **Local first.** Every device keeps its own full copy and works offline. (True today.)
+2. **The custom domain** is the one address we control. Every printed QR code and app link uses it, never a service's own address.
+3. **Campaign pointer.** Invites point at `<our domain>/c/<campaign id>`, a small file naming the adapters the campaign uses right now. If a service dies, the referee switches adapters, the pointer updates, and every player's app follows it without a new invite. The pointer can live in the campaign repo and be mirrored on our domain.
+
+### Alternatives
+
+**To Discord** (chat, webhooks, bots, voice):
+
+| Service | Fit | Notes |
+| --- | --- | --- |
+| **Matrix** (Element and others) | Best | Open, federated protocol. Its API is plain HTTPS and the spec requires servers to allow browser pages, so the apps can read and post directly with no bot server. Many public servers, or self-host. Voice via Element Call. The natural open twin of the Discord adapter. |
+| **Zulip** | Good | Open source, cloud or self-hosted; REST API and incoming webhooks. Threaded chat suits play-by-post. |
+| **Mattermost, Rocket.Chat** | Good, self-hosted | Open source Slack-likes with webhooks and APIs. Need a server the referee or a group runs. |
+| **Telegram** | Possible | HTTPS bot API; every user needs an account tied to a phone number. |
+| **Slack** | Weak | Webhooks and API, but the free plan hides old history and the API refuses browser pages. |
+| **IRC** (last resort) | Text only | Open and ancient. Browsers can't speak IRC directly, so it needs a network or server with a WebSocket gateway (for example a self-hosted Ergo server, which also keeps history). No webhooks, no voice. |
+
+For **voice**, Jitsi Meet fits the first principle exactly: a meeting is a URL, with no account. Mumble is the open fallback for groups that run their own.
+
+**To GitHub** (archive host, module and app hosting):
+
+| Service | Fit | Notes |
+| --- | --- | --- |
+| **Codeberg** (Forgejo) | Best | Non-profit host with Pages. Its API is the same family as self-hosted **Forgejo** and **Gitea**, so one adapter covers all three. |
+| **GitLab.com** | Good | Git, API and Pages; a separate adapter. Can also be self-hosted. |
+| **SourceHut** | Possible | Minimal git host with static pages; small, paid, very stable. |
+| **Plain git over HTTP** | Fallback | A browser git library (isomorphic-git) can push and pull to any git host. Hosts that refuse browser pages need our handler as a relay. |
+| **Radicle** | Later | Peer-to-peer git with no host at all. Worth watching. |
+
+For the **app and module site** itself, any static host works: Cloudflare Pages, Netlify, Codeberg Pages, GitLab Pages, even Neocities. With the custom domain, moving is a DNS change.
+
+**Suggested order** if an alternative is ever built: Matrix (the open protocol among the chat options), then the Forgejo API adapter (Codeberg and self-hosted), then plain git as the catch-all. Jitsi can be named in the campaign file today, since it needs no code.
+
 ### Build order if agreed
 
 1. Write the job interfaces and the `e9-mail/1` envelope into WORKFLOWS.md, and add the Manual adapter (needed anyway for testing).
@@ -101,3 +147,4 @@ It keeps no campaign data, which always lives in services the referee picked. If
 5. Can a browser page read an Apps Script web app's reply, and can the referee's app set the script up in one step? (Test both.)
 6. Can an Apps Script web app answer Discord slash commands and buttons in time? (Expect no; test before ruling it out.)
 7. Can a browser page hold Discord's gateway connection, and post through the REST API? (Decides whether the live bot posts itself or through the script.)
+8. Campaign pointer: in the campaign repo, on our domain, or both?
