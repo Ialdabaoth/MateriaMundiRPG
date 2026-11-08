@@ -24,6 +24,8 @@ The player side is utterly tech-agnostic: **if a player can open URLs, they're i
   - the **live channel** straight to the referee's laptop during a session.
 - **Identity** is a key, not an account. Each device makes its own key pair and signs its envelopes; the referee approves that key when the player joins. A player is "the device holding this key".
 - **The invite link carries everything:** where to read, where to post, and the campaign's id. Tap or scan it and you're in.
+- **Receipts close the loop.** Every envelope has an id. Whenever the referee's app runs, it collects new requests and writes a receipt list (the ids it has seen) into the public snapshot. The player's app reads it and shows **Sent → Received → Approved** (or Sent back). If an envelope is still missing after the referee's next sync, the player's app sends it again, and the id stops it from being counted twice. Nobody confirms anything by hand. With a post URL that can't answer (a Google Form), "Received" only appears once the referee's app has run, which can be hours between sessions.
+- **Apps Script web app (likely better than a Form).** A small script in the referee's own Google account, hosted free by Google, gives a post URL that answers. The player sees "Received" at once, even with the referee's laptop closed. It can also hold the live channel's handshake for remote players, closing the gap below. It runs on the referee's account, so it is still not a server of ours. **To check:** that a browser page can read its reply, and how simple the one-time setup can be for a referee.
 - **One gap:** the live channel's handshake for remote players needs a meeting point both devices can write to (the handler, the webhook, or a pasted code). In person, a QR code covers it.
 - **Apple:** an iPhone user without Google has iCloud Drive, but a web app can't use it. Apple's web route (CloudKit JS) only reaches a container our app owns and needs a $99/year developer account. Under this principle it isn't needed on the player side; it could become a referee-side adapter later.
 
@@ -51,7 +53,7 @@ The campaign file says which adapter does each job, so a table can mix them. For
 
 | Adapter | Who | Mail | Store | Signal | Schedule | Notes |
 | --- | --- | --- | --- | --- | --- | --- |
-| **Google** | Gmail sign-in (referee) | Drive folder inbox (players post through a Google Form) | Drive folder | Drive files (slow) | Calendar invites and RSVPs | No server of ours. Needs a Google Cloud OAuth client (`drive.file`). The current default. |
+| **Google** | Gmail sign-in (referee) | Drive folder inbox (players post to an Apps Script web app, or a Google Form) | Drive folder | Apps Script web app, or Drive files (slow) | Calendar invites and RSVPs | No server of ours. Needs a Google Cloud OAuth client (`drive.file`). The current default. |
 | **Discord** | Discord sign-in | Channel messages (players post through a webhook) | Channel attachments | Channel messages | Scheduled events ("Interested") | Discord keeps the messages, so the channel itself is the mailbox. The referee's open app acts as the bot, with the token on that device only. **To test:** whether Discord's API lets a browser page read channel messages. If not, reads go through our handler. |
 | **GitHub** | GitHub sign-in | Issues | Repo files | Issues (slow, rate-limited) | none | Every user needs a GitHub account, so it fits referees and sub-refs best. |
 | **VTT** (Owlbear Rodeo, Foundry) | Room or world members | During a session only | none | Strong: Owlbear broadcasts, Foundry sockets | none | Live channel only. A table already in a VTT can skip WebRTC. |
@@ -85,4 +87,5 @@ It keeps no campaign data, which always lives in services the referee picked. If
 1. Does Discord let a browser page read channel messages? (A five-minute test from a real browser.)
 2. Which adapter is the default for a new campaign?
 3. Can one campaign mix adapters for the same job? Under the first principle the referee picks the services and players only get URLs, so this is now a referee-side question: e.g. Drive for reading plus a Discord webhook for posting.
-4. Is a Google Form's no-confirmation post good enough for requests, or should posts always go to something that answers (webhook, handler)?
+4. Is a Google Form's no-confirmation post (with receipts in the snapshot) good enough as a fallback, or should the Google adapter always set up an Apps Script web app?
+5. Can a browser page read an Apps Script web app's reply, and can the referee's app set the script up in one step? (Test both.)
