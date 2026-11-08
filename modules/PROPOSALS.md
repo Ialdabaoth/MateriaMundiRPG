@@ -28,6 +28,14 @@ The player side is utterly tech-agnostic: **if a player can open URLs, they're i
 - **Apps Script web app (likely better than a Form).** A small script in the referee's own Google account, hosted free by Google, gives a post URL that answers. The player sees "Received" at once, even with the referee's laptop closed. It can also hold the live channel's handshake for remote players, closing the gap below. It runs on the referee's account, so it is still not a server of ours. **To check:** that a browser page can read its reply, and how simple the one-time setup can be for a referee.
 - **The same script as a polling Discord bot.** A time trigger runs it with nobody online, as often as once a minute. It calls Discord's API from Google's servers with the bot token kept in the script, so browser limits don't apply (this also sidesteps the Discord browser-read test). Each run it reads new channel messages, posts receipts and replies, edits pending downtime posts once the referee's app approves them, and posts session events. Every 5 minutes uses about 15 of a free account's 90 trigger minutes a day. **It can't:** hold Discord's live gateway connection (runs stop after 6 minutes), and probably can't serve slash commands or buttons, which need an answer within 3 seconds plus a signature check that Apps Script lacks (untested). Live features and buttons stay with the referee's open app or our handler.
 - So **one script in the referee's Google account** can be the instant post URL, the remote handshake, and a 1–5 minute Discord bot.
+- **Handover between the script and the referee's app (Heph, 2026-11-08).** With the referee online, their Companion or Atlas is the live Discord bot; offline, the script batches every few minutes. The script can't call the app (a browser app has no address), so the app announces itself:
+  1. The referee's app opens and checks in with the script: "I'm here; give me everything since message X."
+  2. The script hands over its backlog and the **cursor** (the last Discord message handled).
+  3. The app takes a **lease**, checking in about once a minute. While the lease is fresh, the script's runs do nothing.
+  4. Live mode: the app handles Discord in real time.
+  5. When the app closes or crashes, the lease runs out after a few minutes and the script carries on from the cursor.
+
+  One cursor plus one lease means nothing is handled twice and nothing falls through the gap. Only one device holds the lease, normally the referee's laptop (the session host). **To test:** whether a browser can hold Discord's live gateway connection (a WebSocket, which browsers usually allow even when the REST API is blocked). If it can listen but not post, the app listens live and posts through the script.
 - **One gap:** the live channel's handshake for remote players needs a meeting point both devices can write to (the handler, the webhook, or a pasted code). In person, a QR code covers it.
 - **Apple:** an iPhone user without Google has iCloud Drive, but a web app can't use it. Apple's web route (CloudKit JS) only reaches a container our app owns and needs a $99/year developer account. Under this principle it isn't needed on the player side; it could become a referee-side adapter later.
 
@@ -92,3 +100,4 @@ It keeps no campaign data, which always lives in services the referee picked. If
 4. Is a Google Form's no-confirmation post (with receipts in the snapshot) good enough as a fallback, or should the Google adapter always set up an Apps Script web app?
 5. Can a browser page read an Apps Script web app's reply, and can the referee's app set the script up in one step? (Test both.)
 6. Can an Apps Script web app answer Discord slash commands and buttons in time? (Expect no; test before ruling it out.)
+7. Can a browser page hold Discord's gateway connection, and post through the REST API? (Decides whether the live bot posts itself or through the script.)
