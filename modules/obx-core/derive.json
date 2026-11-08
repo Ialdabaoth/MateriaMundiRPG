@@ -1,0 +1,2270 @@
+{
+ "format": "e9-derive/1",
+ "id": "obx",
+ "source": "B/X SRD text, Markdown copy github.com/oldmanumby/ose.srd at 7bd995b; Open Game Content under the OGL 1.0a",
+ "license": "OGL-1.0a",
+ "tables": {
+  "ability.str": {
+   "by": "range",
+   "ref": "Ability Scores > Strength (STR)",
+   "columns": [
+    "melee",
+    "open_doors"
+   ],
+   "rows": [
+    {
+     "min": 3,
+     "max": 3,
+     "melee": -3,
+     "open_doors": "1-in-6"
+    },
+    {
+     "min": 4,
+     "max": 5,
+     "melee": -2,
+     "open_doors": "1-in-6"
+    },
+    {
+     "min": 6,
+     "max": 8,
+     "melee": -1,
+     "open_doors": "1-in-6"
+    },
+    {
+     "min": 9,
+     "max": 12,
+     "melee": 0,
+     "open_doors": "2-in-6"
+    },
+    {
+     "min": 13,
+     "max": 15,
+     "melee": 1,
+     "open_doors": "3-in-6"
+    },
+    {
+     "min": 16,
+     "max": 17,
+     "melee": 2,
+     "open_doors": "4-in-6"
+    },
+    {
+     "min": 18,
+     "max": 18,
+     "melee": 3,
+     "open_doors": "5-in-6"
+    }
+   ]
+  },
+  "ability.int": {
+   "by": "range",
+   "ref": "Ability Scores > Intelligence (INT)",
+   "columns": [
+    "spoken_languages",
+    "literacy"
+   ],
+   "rows": [
+    {
+     "min": 3,
+     "max": 3,
+     "spoken_languages": "Native (broken speech)",
+     "literacy": "Illiterate"
+    },
+    {
+     "min": 4,
+     "max": 5,
+     "spoken_languages": "Native",
+     "literacy": "Illiterate"
+    },
+    {
+     "min": 6,
+     "max": 8,
+     "spoken_languages": "Native",
+     "literacy": "Basic"
+    },
+    {
+     "min": 9,
+     "max": 12,
+     "spoken_languages": "Native",
+     "literacy": "Literate"
+    },
+    {
+     "min": 13,
+     "max": 15,
+     "spoken_languages": "Native + 1 additional",
+     "literacy": "Literate"
+    },
+    {
+     "min": 16,
+     "max": 17,
+     "spoken_languages": "Native + 2 additional",
+     "literacy": "Literate"
+    },
+    {
+     "min": 18,
+     "max": 18,
+     "spoken_languages": "Native + 3 additional",
+     "literacy": "Literate"
+    }
+   ]
+  },
+  "ability.wis": {
+   "by": "range",
+   "ref": "Ability Scores > Wisdom (WIS)",
+   "columns": [
+    "magic_saves"
+   ],
+   "rows": [
+    {
+     "min": 3,
+     "max": 3,
+     "magic_saves": -3
+    },
+    {
+     "min": 4,
+     "max": 5,
+     "magic_saves": -2
+    },
+    {
+     "min": 6,
+     "max": 8,
+     "magic_saves": -1
+    },
+    {
+     "min": 9,
+     "max": 12,
+     "magic_saves": 0
+    },
+    {
+     "min": 13,
+     "max": 15,
+     "magic_saves": 1
+    },
+    {
+     "min": 16,
+     "max": 17,
+     "magic_saves": 2
+    },
+    {
+     "min": 18,
+     "max": 18,
+     "magic_saves": 3
+    }
+   ]
+  },
+  "ability.dex": {
+   "by": "range",
+   "ref": "Ability Scores > Dexterity (DEX)",
+   "columns": [
+    "ac",
+    "missile",
+    "initiative"
+   ],
+   "rows": [
+    {
+     "min": 3,
+     "max": 3,
+     "ac": -3,
+     "missile": -3,
+     "initiative": -2
+    },
+    {
+     "min": 4,
+     "max": 5,
+     "ac": -2,
+     "missile": -2,
+     "initiative": -1
+    },
+    {
+     "min": 6,
+     "max": 8,
+     "ac": -1,
+     "missile": -1,
+     "initiative": -1
+    },
+    {
+     "min": 9,
+     "max": 12,
+     "ac": 0,
+     "missile": 0,
+     "initiative": 0
+    },
+    {
+     "min": 13,
+     "max": 15,
+     "ac": 1,
+     "missile": 1,
+     "initiative": 1
+    },
+    {
+     "min": 16,
+     "max": 17,
+     "ac": 2,
+     "missile": 2,
+     "initiative": 1
+    },
+    {
+     "min": 18,
+     "max": 18,
+     "ac": 3,
+     "missile": 3,
+     "initiative": 2
+    }
+   ]
+  },
+  "ability.con": {
+   "by": "range",
+   "ref": "Ability Scores > Constitution (CON)",
+   "columns": [
+    "hit_points"
+   ],
+   "rows": [
+    {
+     "min": 3,
+     "max": 3,
+     "hit_points": -3
+    },
+    {
+     "min": 4,
+     "max": 5,
+     "hit_points": -2
+    },
+    {
+     "min": 6,
+     "max": 8,
+     "hit_points": -1
+    },
+    {
+     "min": 9,
+     "max": 12,
+     "hit_points": 0
+    },
+    {
+     "min": 13,
+     "max": 15,
+     "hit_points": 1
+    },
+    {
+     "min": 16,
+     "max": 17,
+     "hit_points": 2
+    },
+    {
+     "min": 18,
+     "max": 18,
+     "hit_points": 3
+    }
+   ]
+  },
+  "ability.cha": {
+   "by": "range",
+   "ref": "Ability Scores > Charisma (CHA)",
+   "columns": [
+    "npc_reactions",
+    "max_retainers",
+    "retainer_loyalty"
+   ],
+   "rows": [
+    {
+     "min": 3,
+     "max": 3,
+     "npc_reactions": -2,
+     "max_retainers": 1,
+     "retainer_loyalty": 4
+    },
+    {
+     "min": 4,
+     "max": 5,
+     "npc_reactions": -1,
+     "max_retainers": 2,
+     "retainer_loyalty": 5
+    },
+    {
+     "min": 6,
+     "max": 8,
+     "npc_reactions": -1,
+     "max_retainers": 3,
+     "retainer_loyalty": 6
+    },
+    {
+     "min": 9,
+     "max": 12,
+     "npc_reactions": 0,
+     "max_retainers": 4,
+     "retainer_loyalty": 7
+    },
+    {
+     "min": 13,
+     "max": 15,
+     "npc_reactions": 1,
+     "max_retainers": 5,
+     "retainer_loyalty": 8
+    },
+    {
+     "min": 16,
+     "max": 17,
+     "npc_reactions": 1,
+     "max_retainers": 6,
+     "retainer_loyalty": 9
+    },
+    {
+     "min": 18,
+     "max": 18,
+     "npc_reactions": 2,
+     "max_retainers": 7,
+     "retainer_loyalty": 10
+    }
+   ]
+  },
+  "ability.primeXp": {
+   "by": "range",
+   "ref": "Ability Scores > Prime Requisite",
+   "columns": [
+    "xp_modifier"
+   ],
+   "rows": [
+    {
+     "min": 3,
+     "max": 5,
+     "xp_modifier": -20
+    },
+    {
+     "min": 6,
+     "max": 8,
+     "xp_modifier": -10
+    },
+    {
+     "min": 9,
+     "max": 12,
+     "xp_modifier": 0
+    },
+    {
+     "min": 13,
+     "max": 15,
+     "xp_modifier": 5
+    },
+    {
+     "min": 16,
+     "max": 18,
+     "xp_modifier": 10
+    }
+   ]
+  },
+  "progression.cleric": {
+   "ref": "Classes > Cleric Level Progression",
+   "rows": [
+    {
+     "level": 1,
+     "xp": 0,
+     "hd": "1d6",
+     "conApplies": true,
+     "thac0": 19,
+     "attackBonus": 0,
+     "saves": {
+      "death": 11,
+      "wands": 12,
+      "paralysis": 14,
+      "breath": 16,
+      "spells": 15
+     },
+     "spellSlots": [
+      0,
+      0,
+      0,
+      0,
+      0
+     ]
+    },
+    {
+     "level": 2,
+     "xp": 1500,
+     "hd": "2d6",
+     "conApplies": true,
+     "thac0": 19,
+     "attackBonus": 0,
+     "saves": {
+      "death": 11,
+      "wands": 12,
+      "paralysis": 14,
+      "breath": 16,
+      "spells": 15
+     },
+     "spellSlots": [
+      1,
+      0,
+      0,
+      0,
+      0
+     ]
+    },
+    {
+     "level": 3,
+     "xp": 3000,
+     "hd": "3d6",
+     "conApplies": true,
+     "thac0": 19,
+     "attackBonus": 0,
+     "saves": {
+      "death": 11,
+      "wands": 12,
+      "paralysis": 14,
+      "breath": 16,
+      "spells": 15
+     },
+     "spellSlots": [
+      2,
+      0,
+      0,
+      0,
+      0
+     ]
+    },
+    {
+     "level": 4,
+     "xp": 6000,
+     "hd": "4d6",
+     "conApplies": true,
+     "thac0": 19,
+     "attackBonus": 0,
+     "saves": {
+      "death": 11,
+      "wands": 12,
+      "paralysis": 14,
+      "breath": 16,
+      "spells": 15
+     },
+     "spellSlots": [
+      2,
+      1,
+      0,
+      0,
+      0
+     ]
+    },
+    {
+     "level": 5,
+     "xp": 12000,
+     "hd": "5d6",
+     "conApplies": true,
+     "thac0": 17,
+     "attackBonus": 2,
+     "saves": {
+      "death": 9,
+      "wands": 10,
+      "paralysis": 12,
+      "breath": 14,
+      "spells": 12
+     },
+     "spellSlots": [
+      2,
+      2,
+      0,
+      0,
+      0
+     ]
+    },
+    {
+     "level": 6,
+     "xp": 25000,
+     "hd": "6d6",
+     "conApplies": true,
+     "thac0": 17,
+     "attackBonus": 2,
+     "saves": {
+      "death": 9,
+      "wands": 10,
+      "paralysis": 12,
+      "breath": 14,
+      "spells": 12
+     },
+     "spellSlots": [
+      2,
+      2,
+      1,
+      1,
+      0
+     ]
+    },
+    {
+     "level": 7,
+     "xp": 50000,
+     "hd": "7d6",
+     "conApplies": true,
+     "thac0": 17,
+     "attackBonus": 2,
+     "saves": {
+      "death": 9,
+      "wands": 10,
+      "paralysis": 12,
+      "breath": 14,
+      "spells": 12
+     },
+     "spellSlots": [
+      2,
+      2,
+      2,
+      1,
+      1
+     ]
+    },
+    {
+     "level": 8,
+     "xp": 100000,
+     "hd": "8d6",
+     "conApplies": true,
+     "thac0": 17,
+     "attackBonus": 2,
+     "saves": {
+      "death": 9,
+      "wands": 10,
+      "paralysis": 12,
+      "breath": 14,
+      "spells": 12
+     },
+     "spellSlots": [
+      3,
+      3,
+      2,
+      2,
+      1
+     ]
+    },
+    {
+     "level": 9,
+     "xp": 200000,
+     "hd": "9d6",
+     "conApplies": true,
+     "thac0": 14,
+     "attackBonus": 5,
+     "saves": {
+      "death": 6,
+      "wands": 7,
+      "paralysis": 9,
+      "breath": 11,
+      "spells": 9
+     },
+     "spellSlots": [
+      3,
+      3,
+      3,
+      2,
+      2
+     ]
+    },
+    {
+     "level": 10,
+     "xp": 300000,
+     "hd": "9d6+1",
+     "conApplies": false,
+     "thac0": 14,
+     "attackBonus": 5,
+     "saves": {
+      "death": 6,
+      "wands": 7,
+      "paralysis": 9,
+      "breath": 11,
+      "spells": 9
+     },
+     "spellSlots": [
+      4,
+      4,
+      3,
+      3,
+      2
+     ]
+    },
+    {
+     "level": 11,
+     "xp": 400000,
+     "hd": "9d6+2",
+     "conApplies": false,
+     "thac0": 14,
+     "attackBonus": 5,
+     "saves": {
+      "death": 6,
+      "wands": 7,
+      "paralysis": 9,
+      "breath": 11,
+      "spells": 9
+     },
+     "spellSlots": [
+      4,
+      4,
+      4,
+      3,
+      3
+     ]
+    },
+    {
+     "level": 12,
+     "xp": 500000,
+     "hd": "9d6+3",
+     "conApplies": false,
+     "thac0": 14,
+     "attackBonus": 5,
+     "saves": {
+      "death": 6,
+      "wands": 7,
+      "paralysis": 9,
+      "breath": 11,
+      "spells": 9
+     },
+     "spellSlots": [
+      5,
+      5,
+      4,
+      4,
+      3
+     ]
+    },
+    {
+     "level": 13,
+     "xp": 600000,
+     "hd": "9d6+4",
+     "conApplies": false,
+     "thac0": 12,
+     "attackBonus": 7,
+     "saves": {
+      "death": 3,
+      "wands": 5,
+      "paralysis": 7,
+      "breath": 8,
+      "spells": 7
+     },
+     "spellSlots": [
+      5,
+      5,
+      5,
+      4,
+      4
+     ]
+    },
+    {
+     "level": 14,
+     "xp": 700000,
+     "hd": "9d6+5",
+     "conApplies": false,
+     "thac0": 12,
+     "attackBonus": 7,
+     "saves": {
+      "death": 3,
+      "wands": 5,
+      "paralysis": 7,
+      "breath": 8,
+      "spells": 7
+     },
+     "spellSlots": [
+      6,
+      5,
+      5,
+      5,
+      4
+     ]
+    }
+   ]
+  },
+  "progression.dwarf": {
+   "ref": "Classes > Dwarf Level Progression",
+   "rows": [
+    {
+     "level": 1,
+     "xp": 0,
+     "hd": "1d8",
+     "conApplies": true,
+     "thac0": 19,
+     "attackBonus": 0,
+     "saves": {
+      "death": 8,
+      "wands": 9,
+      "paralysis": 10,
+      "breath": 13,
+      "spells": 12
+     }
+    },
+    {
+     "level": 2,
+     "xp": 2200,
+     "hd": "2d8",
+     "conApplies": true,
+     "thac0": 19,
+     "attackBonus": 0,
+     "saves": {
+      "death": 8,
+      "wands": 9,
+      "paralysis": 10,
+      "breath": 13,
+      "spells": 12
+     }
+    },
+    {
+     "level": 3,
+     "xp": 4400,
+     "hd": "3d8",
+     "conApplies": true,
+     "thac0": 19,
+     "attackBonus": 0,
+     "saves": {
+      "death": 8,
+      "wands": 9,
+      "paralysis": 10,
+      "breath": 13,
+      "spells": 12
+     }
+    },
+    {
+     "level": 4,
+     "xp": 8800,
+     "hd": "4d8",
+     "conApplies": true,
+     "thac0": 17,
+     "attackBonus": 2,
+     "saves": {
+      "death": 6,
+      "wands": 7,
+      "paralysis": 8,
+      "breath": 10,
+      "spells": 10
+     }
+    },
+    {
+     "level": 5,
+     "xp": 17000,
+     "hd": "5d8",
+     "conApplies": true,
+     "thac0": 17,
+     "attackBonus": 2,
+     "saves": {
+      "death": 6,
+      "wands": 7,
+      "paralysis": 8,
+      "breath": 10,
+      "spells": 10
+     }
+    },
+    {
+     "level": 6,
+     "xp": 35000,
+     "hd": "6d8",
+     "conApplies": true,
+     "thac0": 17,
+     "attackBonus": 2,
+     "saves": {
+      "death": 6,
+      "wands": 7,
+      "paralysis": 8,
+      "breath": 10,
+      "spells": 10
+     }
+    },
+    {
+     "level": 7,
+     "xp": 70000,
+     "hd": "7d8",
+     "conApplies": true,
+     "thac0": 14,
+     "attackBonus": 5,
+     "saves": {
+      "death": 4,
+      "wands": 5,
+      "paralysis": 6,
+      "breath": 7,
+      "spells": 8
+     }
+    },
+    {
+     "level": 8,
+     "xp": 140000,
+     "hd": "8d8",
+     "conApplies": true,
+     "thac0": 14,
+     "attackBonus": 5,
+     "saves": {
+      "death": 4,
+      "wands": 5,
+      "paralysis": 6,
+      "breath": 7,
+      "spells": 8
+     }
+    },
+    {
+     "level": 9,
+     "xp": 270000,
+     "hd": "9d8",
+     "conApplies": true,
+     "thac0": 14,
+     "attackBonus": 5,
+     "saves": {
+      "death": 4,
+      "wands": 5,
+      "paralysis": 6,
+      "breath": 7,
+      "spells": 8
+     }
+    },
+    {
+     "level": 10,
+     "xp": 400000,
+     "hd": "9d8+3",
+     "conApplies": false,
+     "thac0": 12,
+     "attackBonus": 7,
+     "saves": {
+      "death": 2,
+      "wands": 3,
+      "paralysis": 4,
+      "breath": 4,
+      "spells": 6
+     }
+    },
+    {
+     "level": 11,
+     "xp": 530000,
+     "hd": "9d8+6",
+     "conApplies": false,
+     "thac0": 12,
+     "attackBonus": 7,
+     "saves": {
+      "death": 2,
+      "wands": 3,
+      "paralysis": 4,
+      "breath": 4,
+      "spells": 6
+     }
+    },
+    {
+     "level": 12,
+     "xp": 660000,
+     "hd": "9d8+9",
+     "conApplies": false,
+     "thac0": 12,
+     "attackBonus": 7,
+     "saves": {
+      "death": 2,
+      "wands": 3,
+      "paralysis": 4,
+      "breath": 4,
+      "spells": 6
+     }
+    }
+   ]
+  },
+  "progression.elf": {
+   "ref": "Classes > Elf Level Progression",
+   "rows": [
+    {
+     "level": 1,
+     "xp": 0,
+     "hd": "1d6",
+     "conApplies": true,
+     "thac0": 19,
+     "attackBonus": 0,
+     "saves": {
+      "death": 12,
+      "wands": 13,
+      "paralysis": 13,
+      "breath": 15,
+      "spells": 15
+     },
+     "spellSlots": [
+      1,
+      0,
+      0,
+      0,
+      0
+     ]
+    },
+    {
+     "level": 2,
+     "xp": 4000,
+     "hd": "2d6",
+     "conApplies": true,
+     "thac0": 19,
+     "attackBonus": 0,
+     "saves": {
+      "death": 12,
+      "wands": 13,
+      "paralysis": 13,
+      "breath": 15,
+      "spells": 15
+     },
+     "spellSlots": [
+      2,
+      0,
+      0,
+      0,
+      0
+     ]
+    },
+    {
+     "level": 3,
+     "xp": 8000,
+     "hd": "3d6",
+     "conApplies": true,
+     "thac0": 19,
+     "attackBonus": 0,
+     "saves": {
+      "death": 12,
+      "wands": 13,
+      "paralysis": 13,
+      "breath": 15,
+      "spells": 15
+     },
+     "spellSlots": [
+      2,
+      1,
+      0,
+      0,
+      0
+     ]
+    },
+    {
+     "level": 4,
+     "xp": 16000,
+     "hd": "4d6",
+     "conApplies": true,
+     "thac0": 17,
+     "attackBonus": 2,
+     "saves": {
+      "death": 10,
+      "wands": 11,
+      "paralysis": 11,
+      "breath": 13,
+      "spells": 12
+     },
+     "spellSlots": [
+      2,
+      2,
+      0,
+      0,
+      0
+     ]
+    },
+    {
+     "level": 5,
+     "xp": 32000,
+     "hd": "5d6",
+     "conApplies": true,
+     "thac0": 17,
+     "attackBonus": 2,
+     "saves": {
+      "death": 10,
+      "wands": 11,
+      "paralysis": 11,
+      "breath": 13,
+      "spells": 12
+     },
+     "spellSlots": [
+      2,
+      2,
+      1,
+      0,
+      0
+     ]
+    },
+    {
+     "level": 6,
+     "xp": 64000,
+     "hd": "6d6",
+     "conApplies": true,
+     "thac0": 17,
+     "attackBonus": 2,
+     "saves": {
+      "death": 10,
+      "wands": 11,
+      "paralysis": 11,
+      "breath": 13,
+      "spells": 12
+     },
+     "spellSlots": [
+      2,
+      2,
+      2,
+      0,
+      0
+     ]
+    },
+    {
+     "level": 7,
+     "xp": 120000,
+     "hd": "7d6",
+     "conApplies": true,
+     "thac0": 14,
+     "attackBonus": 5,
+     "saves": {
+      "death": 8,
+      "wands": 9,
+      "paralysis": 9,
+      "breath": 10,
+      "spells": 10
+     },
+     "spellSlots": [
+      3,
+      2,
+      2,
+      1,
+      0
+     ]
+    },
+    {
+     "level": 8,
+     "xp": 250000,
+     "hd": "8d6",
+     "conApplies": true,
+     "thac0": 14,
+     "attackBonus": 5,
+     "saves": {
+      "death": 8,
+      "wands": 9,
+      "paralysis": 9,
+      "breath": 10,
+      "spells": 10
+     },
+     "spellSlots": [
+      3,
+      3,
+      2,
+      2,
+      0
+     ]
+    },
+    {
+     "level": 9,
+     "xp": 400000,
+     "hd": "9d6",
+     "conApplies": true,
+     "thac0": 14,
+     "attackBonus": 5,
+     "saves": {
+      "death": 8,
+      "wands": 9,
+      "paralysis": 9,
+      "breath": 10,
+      "spells": 10
+     },
+     "spellSlots": [
+      3,
+      3,
+      3,
+      2,
+      1
+     ]
+    },
+    {
+     "level": 10,
+     "xp": 600000,
+     "hd": "9d6+2",
+     "conApplies": false,
+     "thac0": 12,
+     "attackBonus": 7,
+     "saves": {
+      "death": 6,
+      "wands": 7,
+      "paralysis": 8,
+      "breath": 8,
+      "spells": 8
+     },
+     "spellSlots": [
+      3,
+      3,
+      3,
+      3,
+      2
+     ]
+    }
+   ]
+  },
+  "progression.fighter": {
+   "ref": "Classes > Fighter Level Progression",
+   "rows": [
+    {
+     "level": 1,
+     "xp": 0,
+     "hd": "1d8",
+     "conApplies": true,
+     "thac0": 19,
+     "attackBonus": 0,
+     "saves": {
+      "death": 12,
+      "wands": 13,
+      "paralysis": 14,
+      "breath": 15,
+      "spells": 16
+     }
+    },
+    {
+     "level": 2,
+     "xp": 2000,
+     "hd": "2d8",
+     "conApplies": true,
+     "thac0": 19,
+     "attackBonus": 0,
+     "saves": {
+      "death": 12,
+      "wands": 13,
+      "paralysis": 14,
+      "breath": 15,
+      "spells": 16
+     }
+    },
+    {
+     "level": 3,
+     "xp": 4000,
+     "hd": "3d8",
+     "conApplies": true,
+     "thac0": 19,
+     "attackBonus": 0,
+     "saves": {
+      "death": 12,
+      "wands": 13,
+      "paralysis": 14,
+      "breath": 15,
+      "spells": 16
+     }
+    },
+    {
+     "level": 4,
+     "xp": 8000,
+     "hd": "4d8",
+     "conApplies": true,
+     "thac0": 17,
+     "attackBonus": 2,
+     "saves": {
+      "death": 10,
+      "wands": 11,
+      "paralysis": 12,
+      "breath": 13,
+      "spells": 14
+     }
+    },
+    {
+     "level": 5,
+     "xp": 16000,
+     "hd": "5d8",
+     "conApplies": true,
+     "thac0": 17,
+     "attackBonus": 2,
+     "saves": {
+      "death": 10,
+      "wands": 11,
+      "paralysis": 12,
+      "breath": 13,
+      "spells": 14
+     }
+    },
+    {
+     "level": 6,
+     "xp": 32000,
+     "hd": "6d8",
+     "conApplies": true,
+     "thac0": 17,
+     "attackBonus": 2,
+     "saves": {
+      "death": 10,
+      "wands": 11,
+      "paralysis": 12,
+      "breath": 13,
+      "spells": 14
+     }
+    },
+    {
+     "level": 7,
+     "xp": 64000,
+     "hd": "7d8",
+     "conApplies": true,
+     "thac0": 14,
+     "attackBonus": 5,
+     "saves": {
+      "death": 8,
+      "wands": 9,
+      "paralysis": 10,
+      "breath": 10,
+      "spells": 12
+     }
+    },
+    {
+     "level": 8,
+     "xp": 120000,
+     "hd": "8d8",
+     "conApplies": true,
+     "thac0": 14,
+     "attackBonus": 5,
+     "saves": {
+      "death": 8,
+      "wands": 9,
+      "paralysis": 10,
+      "breath": 10,
+      "spells": 12
+     }
+    },
+    {
+     "level": 9,
+     "xp": 240000,
+     "hd": "9d8",
+     "conApplies": true,
+     "thac0": 14,
+     "attackBonus": 5,
+     "saves": {
+      "death": 8,
+      "wands": 9,
+      "paralysis": 10,
+      "breath": 10,
+      "spells": 12
+     }
+    },
+    {
+     "level": 10,
+     "xp": 360000,
+     "hd": "9d8+2",
+     "conApplies": false,
+     "thac0": 12,
+     "attackBonus": 7,
+     "saves": {
+      "death": 6,
+      "wands": 7,
+      "paralysis": 8,
+      "breath": 8,
+      "spells": 10
+     }
+    },
+    {
+     "level": 11,
+     "xp": 480000,
+     "hd": "9d8+4",
+     "conApplies": false,
+     "thac0": 12,
+     "attackBonus": 7,
+     "saves": {
+      "death": 6,
+      "wands": 7,
+      "paralysis": 8,
+      "breath": 8,
+      "spells": 10
+     }
+    },
+    {
+     "level": 12,
+     "xp": 600000,
+     "hd": "9d8+6",
+     "conApplies": false,
+     "thac0": 12,
+     "attackBonus": 7,
+     "saves": {
+      "death": 6,
+      "wands": 7,
+      "paralysis": 8,
+      "breath": 8,
+      "spells": 10
+     }
+    },
+    {
+     "level": 13,
+     "xp": 720000,
+     "hd": "9d8+8",
+     "conApplies": false,
+     "thac0": 10,
+     "attackBonus": 9,
+     "saves": {
+      "death": 4,
+      "wands": 5,
+      "paralysis": 6,
+      "breath": 5,
+      "spells": 8
+     }
+    },
+    {
+     "level": 14,
+     "xp": 840000,
+     "hd": "9d8+10",
+     "conApplies": false,
+     "thac0": 10,
+     "attackBonus": 9,
+     "saves": {
+      "death": 4,
+      "wands": 5,
+      "paralysis": 6,
+      "breath": 5,
+      "spells": 8
+     }
+    }
+   ]
+  },
+  "progression.halfling": {
+   "ref": "Classes > Halfling Level Progression",
+   "rows": [
+    {
+     "level": 1,
+     "xp": 0,
+     "hd": "1d6",
+     "conApplies": true,
+     "thac0": 19,
+     "attackBonus": 0,
+     "saves": {
+      "death": 8,
+      "wands": 9,
+      "paralysis": 10,
+      "breath": 13,
+      "spells": 12
+     }
+    },
+    {
+     "level": 2,
+     "xp": 2000,
+     "hd": "2d6",
+     "conApplies": true,
+     "thac0": 19,
+     "attackBonus": 0,
+     "saves": {
+      "death": 8,
+      "wands": 9,
+      "paralysis": 10,
+      "breath": 13,
+      "spells": 12
+     }
+    },
+    {
+     "level": 3,
+     "xp": 4000,
+     "hd": "3d6",
+     "conApplies": true,
+     "thac0": 19,
+     "attackBonus": 0,
+     "saves": {
+      "death": 8,
+      "wands": 9,
+      "paralysis": 10,
+      "breath": 13,
+      "spells": 12
+     }
+    },
+    {
+     "level": 4,
+     "xp": 8000,
+     "hd": "4d6",
+     "conApplies": true,
+     "thac0": 17,
+     "attackBonus": 2,
+     "saves": {
+      "death": 6,
+      "wands": 7,
+      "paralysis": 8,
+      "breath": 10,
+      "spells": 10
+     }
+    },
+    {
+     "level": 5,
+     "xp": 16000,
+     "hd": "5d6",
+     "conApplies": true,
+     "thac0": 17,
+     "attackBonus": 2,
+     "saves": {
+      "death": 6,
+      "wands": 7,
+      "paralysis": 8,
+      "breath": 10,
+      "spells": 10
+     }
+    },
+    {
+     "level": 6,
+     "xp": 32000,
+     "hd": "6d6",
+     "conApplies": true,
+     "thac0": 17,
+     "attackBonus": 2,
+     "saves": {
+      "death": 6,
+      "wands": 7,
+      "paralysis": 8,
+      "breath": 10,
+      "spells": 10
+     }
+    },
+    {
+     "level": 7,
+     "xp": 64000,
+     "hd": "7d6",
+     "conApplies": true,
+     "thac0": 14,
+     "attackBonus": 5,
+     "saves": {
+      "death": 4,
+      "wands": 5,
+      "paralysis": 6,
+      "breath": 7,
+      "spells": 8
+     }
+    },
+    {
+     "level": 8,
+     "xp": 120000,
+     "hd": "8d6",
+     "conApplies": true,
+     "thac0": 14,
+     "attackBonus": 5,
+     "saves": {
+      "death": 4,
+      "wands": 5,
+      "paralysis": 6,
+      "breath": 7,
+      "spells": 8
+     }
+    }
+   ]
+  },
+  "progression.magic-user": {
+   "ref": "Classes > Magic-User Level Progression",
+   "rows": [
+    {
+     "level": 1,
+     "xp": 0,
+     "hd": "1d4",
+     "conApplies": true,
+     "thac0": 19,
+     "attackBonus": 0,
+     "saves": {
+      "death": 13,
+      "wands": 14,
+      "paralysis": 13,
+      "breath": 16,
+      "spells": 15
+     },
+     "spellSlots": [
+      1,
+      0,
+      0,
+      0,
+      0,
+      0
+     ]
+    },
+    {
+     "level": 2,
+     "xp": 2500,
+     "hd": "2d4",
+     "conApplies": true,
+     "thac0": 19,
+     "attackBonus": 0,
+     "saves": {
+      "death": 13,
+      "wands": 14,
+      "paralysis": 13,
+      "breath": 16,
+      "spells": 15
+     },
+     "spellSlots": [
+      2,
+      0,
+      0,
+      0,
+      0,
+      0
+     ]
+    },
+    {
+     "level": 3,
+     "xp": 5000,
+     "hd": "3d4",
+     "conApplies": true,
+     "thac0": 19,
+     "attackBonus": 0,
+     "saves": {
+      "death": 13,
+      "wands": 14,
+      "paralysis": 13,
+      "breath": 16,
+      "spells": 15
+     },
+     "spellSlots": [
+      2,
+      1,
+      0,
+      0,
+      0,
+      0
+     ]
+    },
+    {
+     "level": 4,
+     "xp": 10000,
+     "hd": "4d4",
+     "conApplies": true,
+     "thac0": 19,
+     "attackBonus": 0,
+     "saves": {
+      "death": 13,
+      "wands": 14,
+      "paralysis": 13,
+      "breath": 16,
+      "spells": 15
+     },
+     "spellSlots": [
+      2,
+      2,
+      0,
+      0,
+      0,
+      0
+     ]
+    },
+    {
+     "level": 5,
+     "xp": 20000,
+     "hd": "5d4",
+     "conApplies": true,
+     "thac0": 19,
+     "attackBonus": 0,
+     "saves": {
+      "death": 13,
+      "wands": 14,
+      "paralysis": 13,
+      "breath": 16,
+      "spells": 15
+     },
+     "spellSlots": [
+      2,
+      2,
+      1,
+      0,
+      0,
+      0
+     ]
+    },
+    {
+     "level": 6,
+     "xp": 40000,
+     "hd": "6d4",
+     "conApplies": true,
+     "thac0": 17,
+     "attackBonus": 2,
+     "saves": {
+      "death": 11,
+      "wands": 12,
+      "paralysis": 11,
+      "breath": 14,
+      "spells": 12
+     },
+     "spellSlots": [
+      2,
+      2,
+      2,
+      0,
+      0,
+      0
+     ]
+    },
+    {
+     "level": 7,
+     "xp": 80000,
+     "hd": "7d4",
+     "conApplies": true,
+     "thac0": 17,
+     "attackBonus": 2,
+     "saves": {
+      "death": 11,
+      "wands": 12,
+      "paralysis": 11,
+      "breath": 14,
+      "spells": 12
+     },
+     "spellSlots": [
+      3,
+      2,
+      2,
+      1,
+      0,
+      0
+     ]
+    },
+    {
+     "level": 8,
+     "xp": 150000,
+     "hd": "8d4",
+     "conApplies": true,
+     "thac0": 17,
+     "attackBonus": 2,
+     "saves": {
+      "death": 11,
+      "wands": 12,
+      "paralysis": 11,
+      "breath": 14,
+      "spells": 12
+     },
+     "spellSlots": [
+      3,
+      3,
+      2,
+      2,
+      0,
+      0
+     ]
+    },
+    {
+     "level": 9,
+     "xp": 300000,
+     "hd": "9d4",
+     "conApplies": true,
+     "thac0": 17,
+     "attackBonus": 2,
+     "saves": {
+      "death": 11,
+      "wands": 12,
+      "paralysis": 11,
+      "breath": 14,
+      "spells": 12
+     },
+     "spellSlots": [
+      3,
+      3,
+      3,
+      2,
+      1,
+      0
+     ]
+    },
+    {
+     "level": 10,
+     "xp": 450000,
+     "hd": "9d4+1",
+     "conApplies": false,
+     "thac0": 17,
+     "attackBonus": 2,
+     "saves": {
+      "death": 11,
+      "wands": 12,
+      "paralysis": 11,
+      "breath": 14,
+      "spells": 12
+     },
+     "spellSlots": [
+      3,
+      3,
+      3,
+      3,
+      2,
+      0
+     ]
+    },
+    {
+     "level": 11,
+     "xp": 600000,
+     "hd": "9d4+2",
+     "conApplies": false,
+     "thac0": 14,
+     "attackBonus": 5,
+     "saves": {
+      "death": 8,
+      "wands": 9,
+      "paralysis": 8,
+      "breath": 11,
+      "spells": 8
+     },
+     "spellSlots": [
+      4,
+      3,
+      3,
+      3,
+      2,
+      1
+     ]
+    },
+    {
+     "level": 12,
+     "xp": 750000,
+     "hd": "9d4+3",
+     "conApplies": false,
+     "thac0": 14,
+     "attackBonus": 5,
+     "saves": {
+      "death": 8,
+      "wands": 9,
+      "paralysis": 8,
+      "breath": 11,
+      "spells": 8
+     },
+     "spellSlots": [
+      4,
+      4,
+      3,
+      3,
+      3,
+      2
+     ]
+    },
+    {
+     "level": 13,
+     "xp": 900000,
+     "hd": "9d4+4",
+     "conApplies": false,
+     "thac0": 14,
+     "attackBonus": 5,
+     "saves": {
+      "death": 8,
+      "wands": 9,
+      "paralysis": 8,
+      "breath": 11,
+      "spells": 8
+     },
+     "spellSlots": [
+      4,
+      4,
+      4,
+      3,
+      3,
+      3
+     ]
+    },
+    {
+     "level": 14,
+     "xp": 1050000,
+     "hd": "9d4+5",
+     "conApplies": false,
+     "thac0": 14,
+     "attackBonus": 5,
+     "saves": {
+      "death": 8,
+      "wands": 9,
+      "paralysis": 8,
+      "breath": 11,
+      "spells": 8
+     },
+     "spellSlots": [
+      4,
+      4,
+      4,
+      4,
+      3,
+      3
+     ]
+    }
+   ]
+  },
+  "progression.thief": {
+   "ref": "Classes > Thief Level Progression",
+   "rows": [
+    {
+     "level": 1,
+     "xp": 0,
+     "hd": "1d4",
+     "conApplies": true,
+     "thac0": 19,
+     "attackBonus": 0,
+     "saves": {
+      "death": 13,
+      "wands": 14,
+      "paralysis": 13,
+      "breath": 16,
+      "spells": 15
+     }
+    },
+    {
+     "level": 2,
+     "xp": 1200,
+     "hd": "2d4",
+     "conApplies": true,
+     "thac0": 19,
+     "attackBonus": 0,
+     "saves": {
+      "death": 13,
+      "wands": 14,
+      "paralysis": 13,
+      "breath": 16,
+      "spells": 15
+     }
+    },
+    {
+     "level": 3,
+     "xp": 2400,
+     "hd": "3d4",
+     "conApplies": true,
+     "thac0": 19,
+     "attackBonus": 0,
+     "saves": {
+      "death": 13,
+      "wands": 14,
+      "paralysis": 13,
+      "breath": 16,
+      "spells": 15
+     }
+    },
+    {
+     "level": 4,
+     "xp": 4800,
+     "hd": "4d4",
+     "conApplies": true,
+     "thac0": 19,
+     "attackBonus": 0,
+     "saves": {
+      "death": 13,
+      "wands": 14,
+      "paralysis": 13,
+      "breath": 16,
+      "spells": 15
+     }
+    },
+    {
+     "level": 5,
+     "xp": 9600,
+     "hd": "5d4",
+     "conApplies": true,
+     "thac0": 17,
+     "attackBonus": 2,
+     "saves": {
+      "death": 12,
+      "wands": 13,
+      "paralysis": 11,
+      "breath": 14,
+      "spells": 13
+     }
+    },
+    {
+     "level": 6,
+     "xp": 20000,
+     "hd": "6d4",
+     "conApplies": true,
+     "thac0": 17,
+     "attackBonus": 2,
+     "saves": {
+      "death": 12,
+      "wands": 13,
+      "paralysis": 11,
+      "breath": 14,
+      "spells": 13
+     }
+    },
+    {
+     "level": 7,
+     "xp": 40000,
+     "hd": "7d4",
+     "conApplies": true,
+     "thac0": 17,
+     "attackBonus": 2,
+     "saves": {
+      "death": 12,
+      "wands": 13,
+      "paralysis": 11,
+      "breath": 14,
+      "spells": 13
+     }
+    },
+    {
+     "level": 8,
+     "xp": 80000,
+     "hd": "8d4",
+     "conApplies": true,
+     "thac0": 17,
+     "attackBonus": 2,
+     "saves": {
+      "death": 12,
+      "wands": 13,
+      "paralysis": 11,
+      "breath": 14,
+      "spells": 13
+     }
+    },
+    {
+     "level": 9,
+     "xp": 160000,
+     "hd": "9d4",
+     "conApplies": true,
+     "thac0": 14,
+     "attackBonus": 5,
+     "saves": {
+      "death": 10,
+      "wands": 11,
+      "paralysis": 9,
+      "breath": 12,
+      "spells": 10
+     }
+    },
+    {
+     "level": 10,
+     "xp": 280000,
+     "hd": "9d4+2",
+     "conApplies": false,
+     "thac0": 14,
+     "attackBonus": 5,
+     "saves": {
+      "death": 10,
+      "wands": 11,
+      "paralysis": 9,
+      "breath": 12,
+      "spells": 10
+     }
+    },
+    {
+     "level": 11,
+     "xp": 400000,
+     "hd": "9d4+4",
+     "conApplies": false,
+     "thac0": 14,
+     "attackBonus": 5,
+     "saves": {
+      "death": 10,
+      "wands": 11,
+      "paralysis": 9,
+      "breath": 12,
+      "spells": 10
+     }
+    },
+    {
+     "level": 12,
+     "xp": 520000,
+     "hd": "9d4+6",
+     "conApplies": false,
+     "thac0": 14,
+     "attackBonus": 5,
+     "saves": {
+      "death": 10,
+      "wands": 11,
+      "paralysis": 9,
+      "breath": 12,
+      "spells": 10
+     }
+    },
+    {
+     "level": 13,
+     "xp": 640000,
+     "hd": "9d4+8",
+     "conApplies": false,
+     "thac0": 12,
+     "attackBonus": 7,
+     "saves": {
+      "death": 8,
+      "wands": 9,
+      "paralysis": 7,
+      "breath": 10,
+      "spells": 8
+     }
+    },
+    {
+     "level": 14,
+     "xp": 760000,
+     "hd": "9d4+10",
+     "conApplies": false,
+     "thac0": 12,
+     "attackBonus": 7,
+     "saves": {
+      "death": 8,
+      "wands": 9,
+      "paralysis": 7,
+      "breath": 10,
+      "spells": 8
+     }
+    }
+   ]
+  },
+  "thiefSkills": {
+   "ref": "Classes > Thief > Thief Skills",
+   "columns": [
+    "CS",
+    "TR",
+    "HN",
+    "HS",
+    "MS",
+    "OL",
+    "PP"
+   ],
+   "rows": [
+    {
+     "level": 1,
+     "CS": 87,
+     "TR": 10,
+     "HN": "1-2",
+     "HS": 10,
+     "MS": 20,
+     "OL": 15,
+     "PP": 20
+    },
+    {
+     "level": 2,
+     "CS": 88,
+     "TR": 15,
+     "HN": "1-2",
+     "HS": 15,
+     "MS": 25,
+     "OL": 20,
+     "PP": 25
+    },
+    {
+     "level": 3,
+     "CS": 89,
+     "TR": 20,
+     "HN": "1-3",
+     "HS": 20,
+     "MS": 30,
+     "OL": 25,
+     "PP": 30
+    },
+    {
+     "level": 4,
+     "CS": 90,
+     "TR": 25,
+     "HN": "1-3",
+     "HS": 25,
+     "MS": 35,
+     "OL": 30,
+     "PP": 35
+    },
+    {
+     "level": 5,
+     "CS": 91,
+     "TR": 30,
+     "HN": "1-3",
+     "HS": 30,
+     "MS": 40,
+     "OL": 35,
+     "PP": 40
+    },
+    {
+     "level": 6,
+     "CS": 92,
+     "TR": 40,
+     "HN": "1-3",
+     "HS": 36,
+     "MS": 45,
+     "OL": 45,
+     "PP": 45
+    },
+    {
+     "level": 7,
+     "CS": 93,
+     "TR": 50,
+     "HN": "1-4",
+     "HS": 45,
+     "MS": 55,
+     "OL": 55,
+     "PP": 55
+    },
+    {
+     "level": 8,
+     "CS": 94,
+     "TR": 60,
+     "HN": "1-4",
+     "HS": 55,
+     "MS": 65,
+     "OL": 65,
+     "PP": 65
+    },
+    {
+     "level": 9,
+     "CS": 95,
+     "TR": 70,
+     "HN": "1-4",
+     "HS": 65,
+     "MS": 75,
+     "OL": 75,
+     "PP": 75
+    },
+    {
+     "level": 10,
+     "CS": 96,
+     "TR": 80,
+     "HN": "1-4",
+     "HS": 75,
+     "MS": 85,
+     "OL": 85,
+     "PP": 85
+    },
+    {
+     "level": 11,
+     "CS": 97,
+     "TR": 90,
+     "HN": "1-5",
+     "HS": 85,
+     "MS": 95,
+     "OL": 95,
+     "PP": 95
+    },
+    {
+     "level": 12,
+     "CS": 98,
+     "TR": 95,
+     "HN": "1-5",
+     "HS": 90,
+     "MS": 96,
+     "OL": 96,
+     "PP": 105
+    },
+    {
+     "level": 13,
+     "CS": 99,
+     "TR": 97,
+     "HN": "1-5",
+     "HS": 95,
+     "MS": 98,
+     "OL": 97,
+     "PP": 115
+    },
+    {
+     "level": 14,
+     "CS": 99,
+     "TR": 99,
+     "HN": "1-5",
+     "HS": 99,
+     "MS": 99,
+     "OL": 99,
+     "PP": 125
+    }
+   ]
+  },
+  "turning": {
+   "ref": "Classes > Cleric > Turning the Undead",
+   "columns": [
+    "1",
+    "2",
+    "2*",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7-9"
+   ],
+   "rows": [
+    {
+     "level": "1",
+     "1": 7,
+     "2": 9,
+     "2*": 11,
+     "3": null,
+     "4": null,
+     "5": null,
+     "6": null,
+     "7-9": null
+    },
+    {
+     "level": "2",
+     "1": "T",
+     "2": 7,
+     "2*": 9,
+     "3": 11,
+     "4": null,
+     "5": null,
+     "6": null,
+     "7-9": null
+    },
+    {
+     "level": "3",
+     "1": "T",
+     "2": "T",
+     "2*": 7,
+     "3": 9,
+     "4": 11,
+     "5": null,
+     "6": null,
+     "7-9": null
+    },
+    {
+     "level": "4",
+     "1": "D",
+     "2": "T",
+     "2*": "T",
+     "3": 7,
+     "4": 9,
+     "5": 11,
+     "6": null,
+     "7-9": null
+    },
+    {
+     "level": "5",
+     "1": "D",
+     "2": "D",
+     "2*": "T",
+     "3": "T",
+     "4": 7,
+     "5": 9,
+     "6": 11,
+     "7-9": null
+    },
+    {
+     "level": "6",
+     "1": "D",
+     "2": "D",
+     "2*": "D",
+     "3": "T",
+     "4": "T",
+     "5": 7,
+     "6": 9,
+     "7-9": 11
+    },
+    {
+     "level": "7",
+     "1": "D",
+     "2": "D",
+     "2*": "D",
+     "3": "D",
+     "4": "T",
+     "5": "T",
+     "6": 7,
+     "7-9": 9
+    },
+    {
+     "level": "8",
+     "1": "D",
+     "2": "D",
+     "2*": "D",
+     "3": "D",
+     "4": "D",
+     "5": "T",
+     "6": "T",
+     "7-9": 7
+    },
+    {
+     "level": "9",
+     "1": "D",
+     "2": "D",
+     "2*": "D",
+     "3": "D",
+     "4": "D",
+     "5": "D",
+     "6": "T",
+     "7-9": "T"
+    },
+    {
+     "level": "10",
+     "1": "D",
+     "2": "D",
+     "2*": "D",
+     "3": "D",
+     "4": "D",
+     "5": "D",
+     "6": "D",
+     "7-9": "T"
+    },
+    {
+     "level": "11+",
+     "1": "D",
+     "2": "D",
+     "2*": "D",
+     "3": "D",
+     "4": "D",
+     "5": "D",
+     "6": "D",
+     "7-9": "D"
+    }
+   ]
+  }
+ },
+ "values": {
+  "d.mod.str.melee": "lookup(ability.str, stats.abilities.str).melee",
+  "d.mod.str.openDoors": "lookup(ability.str, stats.abilities.str).open_doors",
+  "d.mod.int.languages": "lookup(ability.int, stats.abilities.int).spoken_languages",
+  "d.mod.int.literacy": "lookup(ability.int, stats.abilities.int).literacy",
+  "d.mod.wis.magicSaves": "lookup(ability.wis, stats.abilities.wis).magic_saves",
+  "d.mod.dex.ac": "lookup(ability.dex, stats.abilities.dex).ac",
+  "d.mod.dex.missile": "lookup(ability.dex, stats.abilities.dex).missile",
+  "d.mod.dex.initiative": "lookup(ability.dex, stats.abilities.dex).initiative",
+  "d.mod.con.hp": "lookup(ability.con, stats.abilities.con).hit_points",
+  "d.mod.cha.reactions": "lookup(ability.cha, stats.abilities.cha).npc_reactions",
+  "d.mod.cha.maxRetainers": "lookup(ability.cha, stats.abilities.cha).max_retainers",
+  "d.mod.cha.loyalty": "lookup(ability.cha, stats.abilities.cha).retainer_loyalty",
+  "d.thac0": "lookup(progression[stats.class], stats.level).thac0",
+  "d.attackBonus": "lookup(progression[stats.class], stats.level).attackBonus",
+  "d.hitDice": "lookup(progression[stats.class], stats.level).hd",
+  "d.saves": "lookup(progression[stats.class], stats.level).saves",
+  "d.spellSlots": "lookup(progression[stats.class], stats.level).spellSlots",
+  "d.xpNext": "try(lookup(progression[stats.class], stats.level + 1).xp, null)",
+  "d.thiefSkills": "if(stats.class == \"thief\", lookup(thiefSkills, stats.level), null)"
+ }
+}

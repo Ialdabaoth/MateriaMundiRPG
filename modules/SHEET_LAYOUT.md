@@ -102,7 +102,8 @@ A layout can only show values that exist. They come from two places.
 }
 ```
 
-- **Expressions:** numbers, strings, named values, `+ - * /`, comparisons, `and or not`, `if(c, a, b)`, `min max floor ceil`, `sum(list, expr)`, `count(list)`, `lookup(table, …keys)`.
+- **Expressions:** numbers, strings, `null`, named values, `+ - * /`, comparisons, `and or not`, `if(c, a, b)`, `min max floor ceil`, `sum(list, expr)`, `count(list)`, `lookup(table, …keys)`, and `try(expr, fallback)`, which gives the fallback where a lookup finds no row (the last level, say).
+- `lookup` returns the matching row; `.column` reads one cell of it (`lookup(ability.str, stats.abilities.str).melee`). `name[expr]` picks the table `name.<value>`, so `progression[stats.class]` is `progression.fighter` for a fighter.
 - No loops beyond `sum`/`count`, and no recursion. A value may use other `d.*` values, but a cycle is an error reported on load.
 - **Range tables** (`"by": "range"`) find the row whose `min`–`max` holds the key. **Keyed tables** match exact keys. A missing row is an error shown on the sheet, never a silent zero.
 - Every table and value comes from the root's licensed source and keeps its page or section reference (`"ref"`), as `rules.json` does today. A layout never introduces numbers of its own.

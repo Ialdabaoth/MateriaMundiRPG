@@ -1,0 +1,14 @@
+{
+ "format": "e9-rules/1",
+ "kind": "rules",
+ "id": "obx-core",
+ "title": "OBX",
+ "version": "0.1.0",
+ "provides": "obx",
+ "license": "OGL-1.0a",
+ "licenseFile": "LICENSE.OGL.md",
+ "source": "B/X SRD text (Markdown copy, github.com/oldmanumby/ose.srd), Open Game Content under the OGL 1.0a; rules text in Heph's own words",
+ "rules": "rules.json",
+ "derive": "derive.json",
+ "equipment": "equipment.json"
+}
