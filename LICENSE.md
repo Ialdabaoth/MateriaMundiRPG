@@ -20,6 +20,7 @@ Heph's rule: anything AI-assisted that Bakagaijin Productions releases is always
 
 - **The Materia Mundi books and their files** (the PDFs and Affinity `.af` files at the top of the repo, and `Art/`): © Heph, all rights reserved unless the book itself says otherwise.
 - **Third-party rules material in the Companion data**: parts come from the E9 System Reference Handbook (CC BY-SA 4.0) and the System Reference Document 5.2 (CC BY 4.0), which require credit and, for CC BY-SA, share-alike. See [companion-app/LICENSE.md](companion-app/LICENSE.md).
+- **The OBX rules module** in `modules/obx-core/`: Open Game License 1.0a, because its tables are Open Game Content from the B/X SRD (Heph's choice, 2026-11-08). Its licence text, Open Game Content designation and copyright notice are in [modules/obx-core/LICENSE.OGL.md](modules/obx-core/LICENSE.OGL.md). Its rules text is Heph's own wording, released as Open Game Content under the same licence.
 - **Hex tile art** in `modules/assets/tiles`: C. Martins, CC BY-SA 4.0 (edited icons: "Art by C. Martins, edited by Heph", same licence).
 - **Outside data a module uses**: the sources each `module.json` lists under `credits` (for example the Ireland castle dataset, CC BY 4.0), which keep their own licences.
 - **Third-party libraries** the apps install (for example three.js): their own licences, as listed in `companion-app/package-lock.json`.

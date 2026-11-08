@@ -1,0 +1,117 @@
+{
+ "format": "obx-rules/1",
+ "id": "obx",
+ "source": "B/X SRD text, Markdown copy github.com/oldmanumby/ose.srd at 7bd995b; Open Game Content under the OGL 1.0a",
+ "license": "OGL-1.0a",
+ "name": "OBX",
+ "abilities": [
+  "str",
+  "int",
+  "wis",
+  "dex",
+  "con",
+  "cha"
+ ],
+ "saves": [
+  "death",
+  "wands",
+  "paralysis",
+  "breath",
+  "spells"
+ ],
+ "classes": [
+  {
+   "id": "cleric",
+   "name": "Cleric",
+   "ref": "Classes > Cleric",
+   "requirements": {},
+   "primes": [
+    "wis"
+   ],
+   "hitDie": "1d6",
+   "maxLevel": 14,
+   "text": "pending"
+  },
+  {
+   "id": "dwarf",
+   "name": "Dwarf",
+   "ref": "Classes > Dwarf",
+   "requirements": {
+    "con": 9
+   },
+   "primes": [
+    "str"
+   ],
+   "hitDie": "1d8",
+   "maxLevel": 12,
+   "text": "pending"
+  },
+  {
+   "id": "elf",
+   "name": "Elf",
+   "ref": "Classes > Elf",
+   "requirements": {
+    "int": 9
+   },
+   "primes": [
+    "int",
+    "str"
+   ],
+   "hitDie": "1d6",
+   "maxLevel": 10,
+   "text": "pending"
+  },
+  {
+   "id": "fighter",
+   "name": "Fighter",
+   "ref": "Classes > Fighter",
+   "requirements": {},
+   "primes": [
+    "str"
+   ],
+   "hitDie": "1d8",
+   "maxLevel": 14,
+   "text": "pending"
+  },
+  {
+   "id": "halfling",
+   "name": "Halfling",
+   "ref": "Classes > Halfling",
+   "requirements": {
+    "con": 9,
+    "dex": 9
+   },
+   "primes": [
+    "dex",
+    "str"
+   ],
+   "hitDie": "1d6",
+   "maxLevel": 8,
+   "text": "pending"
+  },
+  {
+   "id": "magic-user",
+   "name": "Magic-User",
+   "ref": "Classes > Magic-User",
+   "requirements": {},
+   "primes": [
+    "int"
+   ],
+   "hitDie": "1d4",
+   "maxLevel": 14,
+   "text": "pending"
+  },
+  {
+   "id": "thief",
+   "name": "Thief",
+   "ref": "Classes > Thief",
+   "requirements": {},
+   "primes": [
+    "dex"
+   ],
+   "hitDie": "1d4",
+   "maxLevel": 14,
+   "text": "pending"
+  }
+ ]
+}

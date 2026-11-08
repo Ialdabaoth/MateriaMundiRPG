@@ -22,7 +22,7 @@ WORKFLOWS.md "Dependencies" already gives `requires`, `recommends`, `conflicts`,
 
 ```json
 { "id": "e9-core", "kind": "rules", "provides": "e9", "version": "0.1.0" }
-{ "id": "ose-core", "kind": "rules", "provides": "ose", "version": "0.1.0" }
+{ "id": "obx-core", "kind": "rules", "provides": "obx", "version": "0.1.0" }
 ```
 
 A content module's `system` list then means "works with any root that provides one of these". `requires` still names an exact module when it needs one, e.g. a spell list that patches `e9-core` ids.
@@ -44,7 +44,7 @@ A root carries another publisher's rules, so its `license` field and credits mus
 1. Add `provides` to `e9-core` (and `mm-core` when it lands); the Companion maps its ruleset ids (`e9`, `e9mm`, `mm`) to roots.
 2. Campaigns record their root; the module picker filters by `system`.
 3. Resolver: walk `requires` from the root, check ranges, write `campaign.lock.json`.
-4. The first non-E9 root (OSE is the likeliest, given Beyond the Pale's OSE stat blocks).
+4. The first non-E9 root: **`obx-core`** (classic B/X under the OGL 1.0a, no trademarked name; Heph 2026-11-08). Beyond the Pale's planned OSE stat blocks become `bestiary/obx.json`.
 
 ### Open questions
 

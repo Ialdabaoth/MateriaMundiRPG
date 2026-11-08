@@ -1,0 +1,368 @@
+{
+ "format": "obx-equipment/1",
+ "id": "obx",
+ "source": "B/X SRD text, Markdown copy github.com/oldmanumby/ose.srd at 7bd995b; Open Game Content under the OGL 1.0a",
+ "license": "OGL-1.0a",
+ "ref": "Equipment > Weapons and Armor",
+ "items": [
+  {
+   "id": "battle-axe",
+   "name": "Battle axe",
+   "kind": "weapon",
+   "cost": 7,
+   "weight": 50,
+   "damage": "1d8",
+   "qualities": [
+    "Melee",
+    "Slow",
+    "Two-handed"
+   ]
+  },
+  {
+   "id": "club",
+   "name": "Club",
+   "kind": "weapon",
+   "cost": 3,
+   "weight": 50,
+   "damage": "1d4",
+   "qualities": [
+    "Blunt",
+    "Melee"
+   ]
+  },
+  {
+   "id": "crossbow",
+   "name": "Crossbow",
+   "kind": "weapon",
+   "cost": 30,
+   "weight": 50,
+   "damage": "1d6",
+   "qualities": [
+    "Missile (5’–80’ / 81’–160’ / 161’–240’)",
+    "Reload",
+    "Slow",
+    "Two-handed"
+   ],
+   "ranges": [
+    "5’–80’",
+    "81’–160’",
+    "161’–240’"
+   ]
+  },
+  {
+   "id": "dagger",
+   "name": "Dagger",
+   "kind": "weapon",
+   "cost": 3,
+   "weight": 10,
+   "damage": "1d4",
+   "qualities": [
+    "Melee",
+    "Missile (5’–10’ / 11’–20’ / 21’–30’)"
+   ],
+   "ranges": [
+    "5’–10’",
+    "11’–20’",
+    "21’–30’"
+   ]
+  },
+  {
+   "id": "hand-axe",
+   "name": "Hand axe",
+   "kind": "weapon",
+   "cost": 4,
+   "weight": 30,
+   "damage": "1d6",
+   "qualities": [
+    "Melee",
+    "Missile (5’–10’ / 11’–20’ / 21’–30’)"
+   ],
+   "ranges": [
+    "5’–10’",
+    "11’–20’",
+    "21’–30’"
+   ]
+  },
+  {
+   "id": "holy-water-vial",
+   "name": "Holy water (vial)",
+   "kind": "weapon",
+   "cost": 25,
+   "weight": null,
+   "damage": "1d8",
+   "qualities": [
+    "Missile (5’–10’ / 11’–30’ / 31’–50’)",
+    "Splash weapon"
+   ],
+   "ranges": [
+    "5’–10’",
+    "11’–30’",
+    "31’–50’"
+   ]
+  },
+  {
+   "id": "javelin",
+   "name": "Javelin",
+   "kind": "weapon",
+   "cost": 1,
+   "weight": 20,
+   "damage": "1d4",
+   "qualities": [
+    "Missile (5’–30’ / 31’–60’ / 61’–90’)"
+   ],
+   "ranges": [
+    "5’–30’",
+    "31’–60’",
+    "61’–90’"
+   ]
+  },
+  {
+   "id": "lance",
+   "name": "Lance",
+   "kind": "weapon",
+   "cost": 5,
+   "weight": 120,
+   "damage": "1d6",
+   "qualities": [
+    "Charge",
+    "Melee"
+   ]
+  },
+  {
+   "id": "long-bow",
+   "name": "Long bow",
+   "kind": "weapon",
+   "cost": 40,
+   "weight": 30,
+   "damage": "1d6",
+   "qualities": [
+    "Missile (5’–70’ / 71’–140’ / 141’–210’)",
+    "Two-handed"
+   ],
+   "ranges": [
+    "5’–70’",
+    "71’–140’",
+    "141’–210’"
+   ]
+  },
+  {
+   "id": "mace",
+   "name": "Mace",
+   "kind": "weapon",
+   "cost": 5,
+   "weight": 30,
+   "damage": "1d6",
+   "qualities": [
+    "Blunt",
+    "Melee"
+   ]
+  },
+  {
+   "id": "oil-flask-burning",
+   "name": "Oil (flask), burning",
+   "kind": "weapon",
+   "cost": 2,
+   "weight": null,
+   "damage": "1d8",
+   "qualities": [
+    "Missile (5’–10’ / 11’–30’ / 31’–50’)",
+    "Splash weapon"
+   ],
+   "ranges": [
+    "5’–10’",
+    "11’–30’",
+    "31’–50’"
+   ]
+  },
+  {
+   "id": "pole-arm",
+   "name": "Pole arm",
+   "kind": "weapon",
+   "cost": 7,
+   "weight": 150,
+   "damage": "1d10",
+   "qualities": [
+    "Brace",
+    "Melee",
+    "Slow",
+    "Two-handed"
+   ]
+  },
+  {
+   "id": "short-bow",
+   "name": "Short bow",
+   "kind": "weapon",
+   "cost": 25,
+   "weight": 30,
+   "damage": "1d6",
+   "qualities": [
+    "Missile (5’–50’ / 51’–100’ / 101’–150’)",
+    "Two-handed"
+   ],
+   "ranges": [
+    "5’–50’",
+    "51’–100’",
+    "101’–150’"
+   ]
+  },
+  {
+   "id": "short-sword",
+   "name": "Short sword",
+   "kind": "weapon",
+   "cost": 7,
+   "weight": 30,
+   "damage": "1d6",
+   "qualities": [
+    "Melee"
+   ]
+  },
+  {
+   "id": "silver-dagger",
+   "name": "Silver dagger",
+   "kind": "weapon",
+   "cost": 30,
+   "weight": 10,
+   "damage": "1d4",
+   "qualities": [
+    "Melee",
+    "Missile (5’–10’ / 11’–20’ / 21’–30’)"
+   ],
+   "ranges": [
+    "5’–10’",
+    "11’–20’",
+    "21’–30’"
+   ]
+  },
+  {
+   "id": "sling",
+   "name": "Sling",
+   "kind": "weapon",
+   "cost": 2,
+   "weight": 20,
+   "damage": "1d4",
+   "qualities": [
+    "Blunt",
+    "Missile (5’–40’ / 41’–80’ / 81’–160’)"
+   ],
+   "ranges": [
+    "5’–40’",
+    "41’–80’",
+    "81’–160’"
+   ]
+  },
+  {
+   "id": "spear",
+   "name": "Spear",
+   "kind": "weapon",
+   "cost": 3,
+   "weight": 30,
+   "damage": "1d6",
+   "qualities": [
+    "Brace",
+    "Melee",
+    "Missile (5’–20’ / 21’–40’ / 41’–60’)"
+   ],
+   "ranges": [
+    "5’–20’",
+    "21’–40’",
+    "41’–60’"
+   ]
+  },
+  {
+   "id": "staff",
+   "name": "Staff",
+   "kind": "weapon",
+   "cost": 2,
+   "weight": 40,
+   "damage": "1d4",
+   "qualities": [
+    "Blunt",
+    "Melee",
+    "Slow",
+    "Two-handed"
+   ]
+  },
+  {
+   "id": "sword",
+   "name": "Sword",
+   "kind": "weapon",
+   "cost": 10,
+   "weight": 60,
+   "damage": "1d8",
+   "qualities": [
+    "Melee"
+   ]
+  },
+  {
+   "id": "torch",
+   "name": "Torch",
+   "kind": "weapon",
+   "cost": "1 (for 6)",
+   "weight": null,
+   "damage": "1d4",
+   "qualities": [
+    "Melee"
+   ]
+  },
+  {
+   "id": "two-handed-sword",
+   "name": "Two-handed sword",
+   "kind": "weapon",
+   "cost": 15,
+   "weight": 150,
+   "damage": "1d10",
+   "qualities": [
+    "Melee",
+    "Slow",
+    "Two-handed"
+   ]
+  },
+  {
+   "id": "war-hammer",
+   "name": "War hammer",
+   "kind": "weapon",
+   "cost": 5,
+   "weight": 30,
+   "damage": "1d6",
+   "qualities": [
+    "Blunt",
+    "Melee"
+   ]
+  },
+  {
+   "id": "leather",
+   "name": "Leather",
+   "kind": "armor",
+   "cost": 20,
+   "weight": 200,
+   "ac": 7,
+   "ascendingAc": 12
+  },
+  {
+   "id": "chainmail",
+   "name": "Chainmail",
+   "kind": "armor",
+   "cost": 40,
+   "weight": 400,
+   "ac": 5,
+   "ascendingAc": 14
+  },
+  {
+   "id": "plate-mail",
+   "name": "Plate mail",
+   "kind": "armor",
+   "cost": 60,
+   "weight": 500,
+   "ac": 3,
+   "ascendingAc": 16
+  },
+  {
+   "id": "shield",
+   "name": "Shield",
+   "kind": "shield",
+   "cost": 10,
+   "weight": 100,
+   "acBonus": 1
+  }
+ ]
+}
