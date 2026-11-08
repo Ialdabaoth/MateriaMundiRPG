@@ -5,9 +5,22 @@
  ],
  "title": "Beyond the Pale: The Isle of Mists, 1422",
  "short": "Beyond the Pale · The Isle of Mists, 1422",
- "version": "0.4.10",
+ "version": "0.4.11",
  "license": "CC-BY-4.0",
  "languages": {"ga": "Gaeilge", "en": "English"},
+ "starts": [
+  {
+   "id": "arrive-at-the-keep",
+   "title": "Arriving in the Pale",
+   "date": "3507-05-01",
+   "hour": 8,
+   "site": "Baile Átha Troim",
+   "scenes": ["keep-arrival", "keep-east-gate"],
+   "revealed": {"places": ["Baile Átha Troim"]},
+   "levels": [1, 3],
+   "uses": ["B2"]
+  }
+ ],
  "credits": [
   {
    "what": "Land cover",
