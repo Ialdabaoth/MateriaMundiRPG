@@ -7,6 +7,7 @@ Ideas under discussion that are not yet agreed. When Heph agrees to one, it move
 | P1. Open service adapters | **Agreed 2026-11-08**, now WORKFLOWS.md [Services and adapters](WORKFLOWS.md#services-and-adapters) | |
 | [P2. Several root modules](#p2-several-root-modules) | Proposed 2026-11-08 (Heph asked for it) | WORKFLOWS.md "Dependencies" (`system`, new `provides`), "Campaign stack"; rules module manifests |
 | [P4. Self-hosting everything](#p4-self-hosting-everything) | Proposed 2026-11-08 (Heph asked for the write-up) | The apps repo (site config, handler); WORKFLOWS.md "Services and adapters"; a new SELF_HOSTING.md |
+| P5. Sheet layouts from modules | **Agreed in outline 2026-11-08** (Heph), now [SHEET_LAYOUT.md](SHEET_LAYOUT.md) | Companion sheet renderers (Postcard, PageSheet); rules module manifests (`layout`, `derive`) |
 | P3. A campaign is a private module | **Agreed 2026-11-08**, now WORKFLOWS.md [Campaigns are private modules](WORKFLOWS.md#campaigns-are-private-modules) | |
 
 ## P2. Several root modules
