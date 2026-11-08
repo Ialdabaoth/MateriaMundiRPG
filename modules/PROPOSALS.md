@@ -258,9 +258,16 @@ Suggested: option 1, with option 2 as the Manual adapter's fallback.
 
 The Atlas player view and the Companion's player mode both take the viewer's audience set and show only that.
 
-### 5. Publishing a campaign later
+### 5. Campaigns are made in Scribe (Heph, 2026-11-08: Scribe joins the MVP)
 
-Because a campaign is a module, a referee can later publish it as a public one: a shared West Marches world, or a finished campaign with its chronicle as an actual-play record (good for streamers). Its state can be kept, trimmed or removed before release. A sequel campaign simply requires the old one.
+Because a campaign is a module, it is made in **E9 Scribe**, the module editor. Campaign creation is a simplified view of Scribe's full creator suite: pick a root, add modules, settle conflicts, write house rules and add the referee's own sites.
+
+- **One editing engine** as a shared library, with several views: Scribe's full creator view, Scribe's campaign view, and the small in-play edits (a quick house rule, a reveal) inside the Companion and the Atlas, so a referee never switches apps mid-session.
+- **Scribe is part of the MVP**, starting with the campaign view. **Gutenberg** (working name), Scribe's publisher module (releases, signing, QR codes, print), is post-MVP.
+
+### 6. Publishing a campaign later
+
+Because a campaign is a module, a referee can later publish it (with Gutenberg, once it exists) as a public one: a shared West Marches world, or a finished campaign with its chronicle as an actual-play record (good for streamers). Its state can be kept, trimmed or removed before release. A sequel campaign simply requires the old one.
 
 ### Open questions
 

@@ -14,9 +14,10 @@ A module travels as one link. The referee stacks modules into a campaign that pi
 | Atlas and Companion ingest from one link or QR code | MVP |
 | Campaign lockfile, updates and conflict review | MVP |
 | Invites and porting characters | MVP |
-| Creator app (WYSIWYG module editor and publisher for other creators) | Post-MVP |
+| E9 Scribe, the creator app: its campaign view (pick a root, stitch modules, settle conflicts, house rules) on a shared editing engine | MVP (Heph 2026-11-08) |
+| Gutenberg (working name), Scribe's publisher module: releases, signing, QR codes, print | Post-MVP |
 
-Until the creator app exists, modules are made with our repo tools (`tools/build.py` and the format specs).
+Until Scribe's full module editing exists, modules are made with our repo tools (`tools/build.py` and the format specs).
 
 ## Three workflows
 
@@ -268,7 +269,7 @@ Agreed with Heph, 2026-11-07. A West Marches campaign has several referees, a pa
 - Players see the campaign's decisions, unless the referee marks one as a spoiler.
 - Anyone can publish overrides. Trust comes from signed bundles by curators the referee follows, plus checkers the referee chooses to run.
 - Porting characters and gear flags every mismatch to the referee, who decides the patch.
-- The creator app (WYSIWYG module editor) is post-MVP.
+- ~~The creator app (WYSIWYG module editor) is post-MVP.~~ Changed 2026-11-08: E9 Scribe is part of the MVP, starting with its campaign view; Gutenberg, Scribe's publisher module, is post-MVP.
 
 **Decided by Heph (2026-11-07), campaign play**
 
@@ -296,4 +297,4 @@ Agreed with Heph, 2026-11-07. A West Marches campaign has several referees, a pa
 10. Open session and Close session procedures, packets, recap; procedure shortlist; push to app or Discord.
 11. Downtime procedures with Discord witness posts.
 12. gTove export.
-13. Sub-refs and West Marches: scoped referee roles, session branches with head-ref merge, per-session parties, shared player map layer. Then, post-MVP, the creator app.
+13. Sub-refs and West Marches: scoped referee roles, session branches with head-ref merge, per-session parties, shared player map layer. Scribe's campaign view is MVP (see the table above); Gutenberg, its publisher, comes after.
