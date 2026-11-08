@@ -57,6 +57,8 @@ jobs:
           pip install -r modules/requirements.txt
           for m in modules/*/module.json; do
             id=$(basename "$(dirname "$m")")
+            # rules modules ("kind": "rules", e.g. modules/e9-core) have no maps; the Companion bundles them
+            python3 -I -c 'import json,sys; sys.exit(json.load(open(sys.argv[1])).get("kind") != "rules")' "$m" && continue
             python3 -I modules/tools/build.py "modules/$id" "companion-app/dist/modules/$id"
           done
           cp mm.json companion-app/dist/mm.json
