@@ -35,6 +35,7 @@ Today a module says nothing about how play begins. A new optional field in the m
     "hour": 8,
     "site": "<site name>",
     "revealed": { "places": ["<site name>", "<site name>"], "hexes": [] },
+    "scenes": ["<scene id>"],
     "handouts": ["<handout id>"],
     "levels": [1, 3],
     "uses": ["<part id>"],
@@ -50,6 +51,7 @@ Today a module says nothing about how play begins. A new optional field in the m
 | `date`, `hour` | The first day (`YYYY-MM-DD` in the setting's years) and hour; they become `clock.start` and `clock.hours`. |
 | `site` | Where the party begins; the party marker goes on that site's hex. A hex address may be given instead. |
 | `revealed` | Common knowledge at the start: becomes the `all` audience. |
+| `scenes` | The module's own scenes (encounters.json `scenes` ids) that open play, in order. The start's words come from these, so the text stays the author's and is never copied into the start. |
 | `handouts` | Handouts every player gets at the first session. |
 | `levels` | Suggested character levels, lowest and highest. |
 | `uses` | Optional: the parts of the module this start plays, for a module made of several adventures (Beyond the Pale's B2 to B5). Parts not listed are excluded in the campaign (step 4 slicing), and the referee can add them back at any time. Without it, the whole module is used. (Heph 2026-11-08) |

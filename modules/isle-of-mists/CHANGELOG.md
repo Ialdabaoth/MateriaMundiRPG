@@ -2,6 +2,10 @@
 
 This module's version is its own. It does not follow the E9 Atlas (`modules/tools/ATLAS_VERSION`) or the E9 Companion; a change to the tools or apps alone never bumps it. Bump it only for changes to this module's content (text, sites, creatures, encounters, maps), using the rules in [WORKFLOWS.md](../WORKFLOWS.md#versioning).
 
+## 0.4.11 (2026-11-08)
+
+- The first campaign start (`starts` in module.json, SCRIBE.md section 2): "Arriving in the Pale", at the drawbridge of the Pale Keep (Baile Átha Troim), playing B2 only, for levels 1 to 3. Its text is the module's own scenes `keep-arrival` and `keep-east-gate`, by reference. The date, 1 May 3507 (1422 AD) at 08:00, is a placeholder until Heph picks one.
+
 ## 0.4.10 (2026-11-07)
 
 - Title is now "Beyond the Pale: The Isle of Mists, 1422" (Heph), since the module covers the whole island, not only Leinster.
