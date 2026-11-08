@@ -10,7 +10,22 @@ Ideas under discussion that are not yet agreed. When Heph agrees to one, it move
 
 **Idea (Heph, 2026-11-08):** don't tie campaign play to one outside service. Make it an open, flexible system: Google is one option, Discord another, and so on, plus a small handler on our end.
 
-Today WORKFLOWS.md uses Google for the mailbox, snapshots, the live-channel handshake and the session calendar, with GitHub as the referee's archive. This proposal keeps those as defaults but makes each one swappable, the same way the git host adapter already plans for GitHub first and Codeberg or Forgejo later.
+Today WORKFLOWS.md uses Google (with Gmail sign-in for everyone) for the mailbox, snapshots, the live-channel handshake and the session calendar, with GitHub as the referee's archive. This proposal keeps those as defaults but makes each one swappable, the same way the git host adapter already plans for GitHub first and Codeberg or Forgejo later.
+
+### First principle: players need only URLs (Heph, 2026-11-08)
+
+The player side is utterly tech-agnostic: **if a player can open URLs, they're in.** No account anywhere, no particular phone. Accounts (Google, Discord, GitHub, a VTT) are a **referee-side** choice only. Every adapter therefore has two halves: the referee half may sign in to a service, and the player half may only fetch and post to URLs.
+
+- **Reading** is any public URL the referee's adapter publishes: a Drive "anyone with the link" file read through Google's API with no sign-in, GitHub Pages, or any static host. Snapshots hold only player-visible content, and the link is unguessable.
+- **Writing** is a URL the player's app can post to:
+  - a **Discord webhook** (just a URL; the player needs no Discord account),
+  - a **Google Form** (anonymous submissions into a Sheet the referee owns; the app can't confirm delivery, and Google could change it),
+  - **our handler** (a per-campaign mailbox URL),
+  - the **live channel** straight to the referee's laptop during a session.
+- **Identity** is a key, not an account. Each device makes its own key pair and signs its envelopes; the referee approves that key when the player joins. A player is "the device holding this key".
+- **The invite link carries everything:** where to read, where to post, and the campaign's id. Tap or scan it and you're in.
+- **One gap:** the live channel's handshake for remote players needs a meeting point both devices can write to (the handler, the webhook, or a pasted code). In person, a QR code covers it.
+- **Apple:** an iPhone user without Google has iCloud Drive, but a web app can't use it. Apple's web route (CloudKit JS) only reaches a container our app owns and needs a $99/year developer account. Under this principle it isn't needed on the player side; it could become a referee-side adapter later.
 
 ### Jobs, not services
 
@@ -18,7 +33,7 @@ The apps ask for only five things. Each one is a small interface, and any servic
 
 | Job | What the apps need | Used for |
 | --- | --- | --- |
-| **Who** | Sign in; say who a person is | Invites, request authors, scoped referee roles |
+| **Who** | Sign in (referee side); say who a person is (a device key on the player side) | Invites, request authors, scoped referee roles |
 | **Mail** | Send a request; list waiting ones; mark one handled | Player requests, approvals, downtime, sub-ref requests |
 | **Store** | Write and read a campaign snapshot | Players reading a private campaign between sessions |
 | **Signal** | Pass a few small messages so two devices can find each other | The live channel's handshake, and its slow fallback |
@@ -36,7 +51,7 @@ The campaign file says which adapter does each job, so a table can mix them. For
 
 | Adapter | Who | Mail | Store | Signal | Schedule | Notes |
 | --- | --- | --- | --- | --- | --- | --- |
-| **Google** | Gmail sign-in | Drive folder inbox | Drive folder | Drive files (slow) | Calendar invites and RSVPs | No server of ours. Needs a Google Cloud OAuth client (`drive.file`). The current default. |
+| **Google** | Gmail sign-in (referee) | Drive folder inbox (players post through a Google Form) | Drive folder | Drive files (slow) | Calendar invites and RSVPs | No server of ours. Needs a Google Cloud OAuth client (`drive.file`). The current default. |
 | **Discord** | Discord sign-in | Channel messages (players post through a webhook) | Channel attachments | Channel messages | Scheduled events ("Interested") | Discord keeps the messages, so the channel itself is the mailbox. The referee's open app acts as the bot, with the token on that device only. **To test:** whether Discord's API lets a browser page read channel messages. If not, reads go through our handler. |
 | **GitHub** | GitHub sign-in | Issues | Repo files | Issues (slow, rate-limited) | none | Every user needs a GitHub account, so it fits referees and sub-refs best. |
 | **VTT** (Owlbear Rodeo, Foundry) | Room or world members | During a session only | none | Strong: Owlbear broadcasts, Foundry sockets | none | Live channel only. A table already in a VTT can skip WebRTC. |
@@ -69,4 +84,5 @@ It keeps no campaign data, which always lives in services the referee picked. If
 
 1. Does Discord let a browser page read channel messages? (A five-minute test from a real browser.)
 2. Which adapter is the default for a new campaign?
-3. Can one campaign mix adapters for the same job (some players on Google, some on Discord), or is it one adapter per job?
+3. Can one campaign mix adapters for the same job? Under the first principle the referee picks the services and players only get URLs, so this is now a referee-side question: e.g. Drive for reading plus a Discord webhook for posting.
+4. Is a Google Form's no-confirmation post good enough for requests, or should posts always go to something that answers (webhook, handler)?
