@@ -446,16 +446,24 @@ The Atlas and the Companion open a campaign exactly as they open a module (`?mod
 
 A campaign builds into a **referee build** (everything) and **player builds**: the content filtered through what each viewer may see. Players read their build by URL ("Services and adapters").
 
-**The primitive is one creature (Heph, 2026-11-08): "what does this one creature know?"** Every piece of knowledge (a hex seen, a place found, a handout, a secret door, a rumour) is recorded against the **creatures** who know it: player characters, but equally NPCs, followers, beast companions and monsters. A referee can ask the same question of an NPC ("what does the captured goblin know?") as of a player's character.
+**The primitive is one creature (Heph, 2026-11-08): "what does this one creature know?"** Every piece of knowledge (a hex seen, a place found, a handout, a secret door, a rumour) belongs to the **creatures** who know it: player characters, but equally NPCs, followers, beast companions and monsters. A referee can ask the same question of an NPC ("what does the captured goblin know?") as of a player's character.
 
-```json
-"known": {
-  "c-aldric":  { "isle-of-mists": { "hexes": ["world:6950:2611"], "places": ["crom-cave-g"], "handouts": ["traitor-locket"] } },
-  "npc-james": { "isle-of-mists": { "places": ["crom-cave-g", "crom-grotto"] } }
-}
-```
+**Knowledge is stored by the creature, not by the map** (Heph, 2026-11-08):
 
-Keys are creature ids (character sheet ids, campaign creature ids). STATE_FORMAT.md's existing `revealed` set stays as "common knowledge", known to everyone, so existing files read the same.
+- **It lives in the creature's own record:** the character sheet ([CHARACTER_FORMAT.md](../companion-app/CHARACTER_FORMAT.md) in the apps repo), or the campaign's creature record for NPCs and monsters ([CREATURES_FORMAT.md](CREATURES_FORMAT.md)). Each entry points into the world by id, and the map only reads those pointers.
+- **It follows the sheet's rule.** A sheet is a chronicle with no derived values, so knowledge is a list of dated entries ("learned X in session 3"), not a computed set:
+
+  ```json
+  "knowledge": [
+    { "session": 3, "module": "isle-of-mists", "place": "crom-cave-g", "how": "scouted alone" },
+    { "session": 3, "module": "isle-of-mists", "hex": "world:6950:2611" },
+    { "session": 4, "module": "isle-of-mists", "handout": "traitor-locket" }
+  ]
+  ```
+
+- **It travels with the creature.** A character moving to another campaign brings what they know, and the porting check flags knowledge about places that campaign doesn't have.
+- **Secrets follow the record.** Each player's sheet is already theirs, so the creature record is the natural unit for encrypting and sharing.
+- **Common knowledge stays in the campaign state.** What everyone knows (the town on the road) is nobody's personal knowledge: it stays in STATE_FORMAT.md's `revealed` set, so existing files read the same.
 
 **Character mode in the Atlas.** The Atlas gets a **character mode** that shows one creature's knowledge only: what Aldric knows, nothing more. It is the first and simplest player view, and also a referee tool (open the map as the goblin sees it).
 
@@ -464,7 +472,7 @@ Keys are creature ids (character sheet ids, campaign creature ids). STATE_FORMAT
 **Keeping secrets secret.** Two ways to deliver the builds:
 
 1. **One snapshot, private parts encrypted** to the device keys of the players whose creatures know them ("Services and adapters" identity). One file and one URL for the whole table. A player's app decrypts only what is theirs. Others can see that something secret exists, but not what it is, which matches the spoiler rule players already accepted for conflict decisions.
-2. **One snapshot per creature**, each at its own unguessable URL. Simpler to build, but a referee juggles many files, and anyone handed a URL sees those secrets.
+2. **One file per creature record**, each at its own unguessable URL. Simpler to build, but a referee juggles many files, and anyone handed a URL sees those secrets.
 
 Suggested: option 1, with option 2 as the Manual adapter's fallback.
 
@@ -510,7 +518,7 @@ Because a campaign is a module, a referee can later publish it (with Gutenberg, 
 
 - Open service adapters are agreed: players need only URLs, accounts are referee-side, and the mailbox, store, signal and schedule jobs run on whichever adapters the referee picks ([Services and adapters](#services-and-adapters)).
 - A campaign is a private module stitched from public modules, plus a history and state dataset ([Campaigns are private modules](#campaigns-are-private-modules)).
-- Knowledge is recorded per creature ("what does this one creature know?"), for NPCs and monsters as well as characters. The Atlas gets a character mode showing one creature's knowledge. Compositing several creatures' views comes later.
+- Knowledge is recorded per creature ("what does this one creature know?"), for NPCs and monsters as well as characters, and **stored in the creature's own record** (sheet or creature record) as dated entries, not in the map or the campaign state. Common knowledge stays in the state's `revealed` set. The Atlas gets a character mode showing one creature's knowledge. Compositing several creatures' views comes later.
 - The Google adapter uses the referee's own **Apps Script** (no Google Cloud OAuth client needed).
 - For now, choose cheap and free options wherever possible: free tiers, the referee's own accounts, static hosting, no paid services.
 
