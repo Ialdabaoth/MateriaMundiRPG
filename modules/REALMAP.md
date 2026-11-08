@@ -4,7 +4,7 @@ How to start a new mytho-historical campaign module's E9 Atlas map (ATLAS_FORMAT
 
 ## What you need
 
-The tools are CC0 (tools/LICENSE.md): use them for your own modules freely.
+The tools are CC BY 4.0 (tools/LICENSE.md): use them for your own modules, with credit.
 
 - Python 3.10+ with `pip install -r modules/requirements.txt tifffile`
 - About 6 GB of free memory: the tools hold up to four WorldCover tiles (1.3 GB each) and a dozen elevation tiles at once. A region the size of Hansa (154 Marches) takes about an hour on four cores.

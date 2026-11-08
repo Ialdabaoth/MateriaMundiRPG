@@ -42,7 +42,7 @@ One map per file keeps git diffs small and lets a referee drop in a single map. 
   },
   "links": [{"from": [60, 12], "to": {"map": "kells-priory-cellars", "square": [4, 4]}, "label": "Stair down"}],
   "walls": [], "doors": [], "lights": [], "environment": {},
-  "licence": "CC0", "credit": ""
+  "licence": "CC BY 4.0", "credit": ""
 }
 ```
 
@@ -92,7 +92,7 @@ When `ground` is `"generate"`, the Atlas draws the squares from the world under 
 - The scatter is **seeded by the square's world position**, so every viewer and every reload draws the same ground, and two overlapping maps agree where they overlap.
 - Scatter comes from **d6/d20 tables** per terrain (d6 picks the subtable, d20 the feature), in an ordinary `events`-style table that a module can override. The generator rolls them with a seeded die, so a referee with the printed table can scatter a clearing by hand in the same way.
 - An unanchored map has no world under it, so `"generate"` there uses the map's own `terrain` field (`"terrain": "forest"`) as if the whole map stood in one hex.
-- Art for generated ground is drawn by the Atlas in its own simple top-down ink style. The cmartins hex tiles are hex-scale icons, not battle-map art, so they are not used at this level. The Atlas code and its drawing style are CC0 like the rest of the tools.
+- Art for generated ground is drawn by the Atlas in its own simple top-down ink style. The cmartins hex tiles are hex-scale icons, not battle-map art, so they are not used at this level. The Atlas code and its drawing style are CC BY 4.0 like the rest of the tools.
 
 ## 7. Room to grow: Universal VTT
 

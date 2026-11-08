@@ -3,7 +3,7 @@
   "name": "Materia Mundi",
   "publisher": "Heph",
   "systems": ["materia-mundi", "e9"],
-  "license": "CC0-1.0",
+  "license": "CC-BY-4.0",
   "modules": [
     { "id": "isle-of-mists", "path": "modules/isle-of-mists/" },
     { "id": "hansa", "path": "modules/hansa/" }
