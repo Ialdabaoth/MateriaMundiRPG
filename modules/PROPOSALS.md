@@ -6,6 +6,7 @@ Ideas under discussion that are not yet agreed. When Heph agrees to one, it move
 | --- | --- | --- |
 | [P1. Open service adapters](#p1-open-service-adapters) | Proposed 2026-11-08 (Heph thinking out loud) | WORKFLOWS.md "Mailbox and archive", "Live channel", "Accounts", "VTTs"; invite links |
 | [P2. Several root modules](#p2-several-root-modules) | Proposed 2026-11-08 (Heph asked for it) | WORKFLOWS.md "Dependencies" (`system`, new `provides`), "Campaign stack"; rules module manifests |
+| [P3. A campaign is a private module](#p3-a-campaign-is-a-private-module) | Proposed 2026-11-08 (Heph) | WORKFLOWS.md "Campaign stack"; MODULE_FORMAT.md section 7; STATE_FORMAT.md `revealed`; the Atlas player view |
 
 ## P1. Open service adapters
 
@@ -191,3 +192,86 @@ A root carries another publisher's rules, so its `license` field and credits mus
 1. ~~Is `e9mm` a system of its own, or an option inside `mm`?~~ **Decided (Heph, 2026-11-08):** E9 for Materia Mundi is an option inside MM. `mm-core` provides one system, `mm`, with an E9 option, and requires `e9-core`.
 2. ~~Can a campaign ever mix roots?~~ **Decided (Heph, 2026-11-08):** a campaign chooses one root, then patches it with ideas from other systems. Those ideas come in as ordinary modules written for the campaign's root (overrides and additions to its ids), never as a second root.
 3. ~~Should the apps (`e9-companion`, `e9-atlas`) be required by version from the first release?~~ **Decided (Heph, 2026-11-08):** yes, modules declare app compatibility from the start, but the referee can override it. Guideline for authors: only require the app features you actually use, at the lowest version that has them, so a module isn't locked out of older or newer apps for no reason.
+
+## P3. A campaign is a private module
+
+**Idea (Heph, 2026-11-08):** a campaign is just a **private module**, stitched together out of public modules, plus a **history and state dataset**. Different players may need **different visibility sets**.
+
+This is "everything is a module" carried through to campaigns. Most of what WORKFLOWS.md "Campaign stack" describes becomes ordinary module machinery.
+
+### 1. The stack is the module's dependencies
+
+| Campaign idea today | As a private module |
+| --- | --- |
+| Core rules layer | The one root in `requires` (P2: a campaign picks exactly one root) |
+| Module layers, in order | Further `requires`, in order |
+| Lockfile | Those `requires`, pinned to exact versions (still written out as `campaign.lock.json` with manifest hashes) |
+| House-rules layer | The campaign module's own content |
+| Conflict decisions | Its `overrides`, each with the referee's note and an optional spoiler flag |
+| Slicing a module | An exclusion list in its manifest |
+
+Nothing new is needed to resolve, update or check a campaign: it is the same code that resolves any module.
+
+### 2. Two parts that change at different speeds
+
+- **Content** (the stitching, house rules, added sites, NPCs and handouts): changes now and then, and follows semver like any module.
+- **History and state** (party, clock, reveals, sessions, the chronicle, approved characters): changes every session. It lives in the same repository under `campaign/` (`state.json` per [STATE_FORMAT.md](STATE_FORMAT.md), plus `characters/` and `chronicle/`), is marked by session tags, and is outside semver.
+
+### 3. One loader
+
+The Atlas and the Companion open a campaign exactly as they open a module (`?module=<campaign>`): they load what it requires, apply its overrides, and show the stitched world. A referee's own house content is just more module content.
+
+### 4. Builds per audience (different visibility sets)
+
+A campaign builds into a **referee build** (everything) and **player builds**: the content filtered through what each audience may see. Players read their build by URL (P1).
+
+**Audiences.** Every reveal says who it is for:
+
+| Audience | Example |
+| --- | --- |
+| `all` | Everyone in the campaign: the town everyone has heard of |
+| `party:<id>` | One party, when several share a world (West Marches) |
+| `character:<id>` | One character: the scout who went ahead alone, a dream, a secret patron |
+| `player:<id>` | One player, whatever character they play: a private handout or a note from the referee |
+| `ref:<id>` | A sub-ref's scope (WORKFLOWS "Sub-refs"): referee-only material inside their region or session |
+
+**What a player sees** is the union of `all`, their party, their own player audience, and their characters' audiences. A campaign setting could make it stricter (only the character currently played), as an open question below.
+
+**State file change.** STATE_FORMAT.md today has one party-wide `revealed` set per module. That set becomes the `all` audience (so existing files still read the same), and a new optional field holds the rest:
+
+```json
+"revealed": { "isle-of-mists": { "hexes": ["world:6947:25B2"], "places": ["cnoc-na-teamhrach"] } },
+"private": {
+  "character:c-aldric": { "isle-of-mists": { "places": ["crom-cave-g"], "handouts": ["traitor-locket"] } },
+  "party:wolves": { "isle-of-mists": { "hexes": ["world:6950:2611"] } }
+}
+```
+
+**Keeping secrets secret.** Two ways to deliver per-audience builds:
+
+1. **One snapshot, private parts encrypted** to each recipient's device key (P1 identity). One file and one URL for the whole table. A player's app decrypts only what is theirs. Others can see that something secret exists, but not what it is, which matches the spoiler rule players already accepted for conflict decisions.
+2. **One snapshot per audience**, each at its own unguessable URL. Simpler to build, but a referee juggles many files, and anyone handed a URL sees that audience's secrets.
+
+Suggested: option 1, with option 2 as the Manual adapter's fallback.
+
+**Telling others.** A character's secret becomes shared when the referee moves it to a wider audience. A player can ask for that ("show the party my map") as an ordinary request in the Inbox.
+
+The Atlas player view and the Companion's player mode both take the viewer's audience set and show only that.
+
+### 5. Campaigns are made in Scribe (Heph, 2026-11-08: Scribe joins the MVP)
+
+Because a campaign is a module, it is made in **E9 Scribe**, the module editor. Campaign creation is a simplified view of Scribe's full creator suite: pick a root, add modules, settle conflicts, write house rules and add the referee's own sites.
+
+- **One editing engine** as a shared library, with several views: Scribe's full creator view, Scribe's campaign view, and the small in-play edits (a quick house rule, a reveal) inside the Companion and the Atlas, so a referee never switches apps mid-session.
+- **Scribe is part of the MVP**, starting with the campaign view, as **its own app at `/scribe/`** from day one (Heph 2026-11-08). **Gutenberg** (working name), Scribe's publisher module (releases, signing, QR codes, print), is post-MVP.
+
+### 6. Publishing a campaign later
+
+Because a campaign is a module, a referee can later publish it (with Gutenberg, once it exists) as a public one: a shared West Marches world, or a finished campaign with its chronicle as an actual-play record (good for streamers). Its state can be kept, trimmed or removed before release. A sequel campaign simply requires the old one.
+
+### Open questions
+
+1. Does a player see the union of all their characters' secrets, or only the character they're playing now? (Suggested: union by default, stricter per campaign.)
+2. Encrypted parts in one snapshot (suggested), or one snapshot per audience?
+3. When a campaign is published, what happens to its private audiences: dropped, or kept as an "everything revealed" chronicle?
+4. Does the campaign module get a `kind` of its own (`"kind": "campaign"`), so the apps know to look for `campaign/` state and audiences?
