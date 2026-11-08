@@ -62,9 +62,9 @@ Data is fine to write: stats, ids, relations, coordinates, rules mechanics, UI l
 
 ## Licences and credit
 
-The suite and its modules are **CC0 1.0** (see [LICENSE.md](LICENSE.md)). Anything AI-assisted that Bakagaijin Productions releases is always CC0.
+The suite and its modules are **CC BY 4.0** (see [LICENSE.md](LICENSE.md)): anyone may reuse them with credit. Anything AI-assisted that Bakagaijin Productions releases is always CC BY 4.0.
 
-- **Your own work** is yours to license, and the terms are agreed when you're invited. Anything that goes into the suite or into a CC0 module becomes CC0.
+- **Your own work** is yours to license, and the terms are agreed when you're invited. Anything that goes into the suite or into one of its modules is released under CC BY 4.0, with you credited.
 - **Purely human work** that the suite uses without changing it (for example an artist's finished piece shown as-is) can be agreed case by case.
 - **Third-party material** keeps its licence: E9 System Reference Handbook data (CC BY-SA 4.0), SRD 5.2 data (CC BY 4.0), C. Martins hex tiles in `modules/assets/tiles` (CC BY-SA 4.0; edits stay CC BY-SA and are credited "Art by C. Martins, edited by …"), and map data sources.
 - Only bring in material you made yourself or that has a licence that allows it. List every outside source under `credits` in the module's `module.json` (shown in the Atlas Credits dialog) with its licence.

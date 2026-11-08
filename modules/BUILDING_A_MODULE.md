@@ -2,7 +2,7 @@
 
 A hands-on procedure for making your own hexcrawl that opens in the **E9 Atlas** (zoomable maps) and the **E9 Companion** (characters, creatures, dice). It describes the tools **as they exist today** (E9 Atlas 0.5.1). It is written for people who are comfortable on a command line, or who will hand it to an AI coding assistant.
 
-The reference implementations are `modules/isle-of-mists` (Beyond the Pale: The Isle of Mists, 1422) and `modules/hansa`. The formats are in [MODULE_FORMAT.md](MODULE_FORMAT.md), [ATLAS_FORMAT.md](ATLAS_FORMAT.md) and [REALMAP.md](REALMAP.md); this file ties them into one path. The tools are CC0 ([tools/LICENSE.md](tools/LICENSE.md)).
+The reference implementations are `modules/isle-of-mists` (Beyond the Pale: The Isle of Mists, 1422) and `modules/hansa`. The formats are in [MODULE_FORMAT.md](MODULE_FORMAT.md), [ATLAS_FORMAT.md](ATLAS_FORMAT.md) and [REALMAP.md](REALMAP.md); this file ties them into one path. The tools are CC BY 4.0 ([tools/LICENSE.md](tools/LICENSE.md)).
 
 ## What works today, and what does not
 
@@ -53,7 +53,7 @@ Make `modules/<id>/module.json`. The id is lowercase letters, digits and hyphens
   "title": "Louth Test",
   "short": "Louth test",
   "version": "0.1.0",
-  "license": "CC0-1.0",
+  "license": "CC-BY-4.0",
   "credits": [
     {"what": "Elevation", "by": "SRTM, NASA", "license": "public domain"},
     {"what": "County outlines", "by": "Natural Earth", "license": "public domain"}
