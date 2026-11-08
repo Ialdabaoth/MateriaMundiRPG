@@ -512,6 +512,7 @@ Because a campaign is a module, a referee can later publish it (with Gutenberg, 
 - A campaign is a private module stitched from public modules, plus a history and state dataset ([Campaigns are private modules](#campaigns-are-private-modules)).
 - Knowledge is recorded per creature ("what does this one creature know?"), for NPCs and monsters as well as characters. The Atlas gets a character mode showing one creature's knowledge. Compositing several creatures' views comes later.
 - The Google adapter uses the referee's own **Apps Script** (no Google Cloud OAuth client needed).
+- For now, choose cheap and free options wherever possible: free tiers, the referee's own accounts, static hosting, no paid services.
 
 **Decided by Heph (2026-11-07), campaign play**
 
