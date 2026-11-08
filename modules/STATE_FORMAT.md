@@ -3,6 +3,7 @@
 One small JSON file holds the campaign's shared record between sessions: where the party stands, the game clock, what the party has found, the current session and who is playing. The E9 Companion and the E9 Atlas both read it. Only the referee writes it.
 
 - **Where it lives.** For now each device keeps one per campaign (the Companion has one for "This device" too), and the referee can save and load it by hand (Campaign › State). With referee sign-in, **Update campaign** commits it to the campaign repository as `campaign/state.json` (MODULE_FORMAT.md section 7), and players read it from there.
+- **The E9 Atlas** (0.5.11) reads it from the Companion that embeds it: the Companion sends `{"type": "e9-atlas", "state": <the file>}` when the map opens and after every change. On its own, the Atlas reads the Companion's saved file for the campaign in use on this device, since both apps share the site. Failing that, it keeps its own copy in the browser: a file loaded with **Load state file…**, or a party placed before 0.5.11. Party moves made in the Atlas follow "How it changes" below. They are written back to the device's file, or posted to the embedding app as party events. **Save state file** downloads the file. When the Companion's tab comes back into view, it reads the file again if a newer revision was saved meanwhile.
 - **Since Companion 0.5.6** it replaces the Companion's `partyAt` setting. A party placed earlier moves into This device's state the first time the app opens.
 
 ```json
