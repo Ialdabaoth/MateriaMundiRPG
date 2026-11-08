@@ -188,6 +188,6 @@ A root carries another publisher's rules, so its `license` field and credits mus
 
 ### Open questions
 
-1. Is `e9mm` a system of its own (provided by `mm-core`), or an option inside `mm`?
-2. Can a campaign ever mix roots, e.g. OSE monsters converted on the fly into E9? (Proposed: no, convert at build time into a per-system file.)
-3. Should the apps themselves (`e9-companion`, `e9-atlas`) be required by version, as WORKFLOWS suggests, from the first release?
+1. ~~Is `e9mm` a system of its own, or an option inside `mm`?~~ **Decided (Heph, 2026-11-08):** E9 for Materia Mundi is an option inside MM. `mm-core` provides one system, `mm`, with an E9 option, and requires `e9-core`.
+2. ~~Can a campaign ever mix roots?~~ **Decided (Heph, 2026-11-08):** a campaign chooses one root, then patches it with ideas from other systems. Those ideas come in as ordinary modules written for the campaign's root (overrides and additions to its ids), never as a second root.
+3. ~~Should the apps (`e9-companion`, `e9-atlas`) be required by version from the first release?~~ **Decided (Heph, 2026-11-08):** yes, modules declare app compatibility from the start, but the referee can override it. Guideline for authors: only require the app features you actually use, at the lowest version that has them, so a module isn't locked out of older or newer apps for no reason.
