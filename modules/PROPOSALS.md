@@ -5,6 +5,7 @@ Ideas under discussion that are not yet agreed. When Heph agrees to one, it move
 | Proposal | Status | Would change |
 | --- | --- | --- |
 | [P1. Open service adapters](#p1-open-service-adapters) | Proposed 2026-11-08 (Heph thinking out loud) | WORKFLOWS.md "Mailbox and archive", "Live channel", "Accounts", "VTTs"; invite links |
+| [P2. Several root modules](#p2-several-root-modules) | Proposed 2026-11-08 (Heph asked for it) | WORKFLOWS.md "Dependencies" (`system`, new `provides`), "Campaign stack"; rules module manifests |
 
 ## P1. Open service adapters
 
@@ -148,3 +149,45 @@ For the **app and module site** itself, any static host works: Cloudflare Pages,
 6. Can an Apps Script web app answer Discord slash commands and buttons in time? (Expect no; test before ruling it out.)
 7. Can a browser page hold Discord's gateway connection, and post through the REST API? (Decides whether the live bot posts itself or through the script.)
 8. Campaign pointer: in the campaign repo, on our domain, or both?
+
+## P2. Several root modules
+
+**Idea (Heph, 2026-11-08):** `e9-core` is the first **root module**, the rules every other module points at. Other roots will follow: OSE, ACKS, LotFP, Shadowdark, maybe 4E and 5E. So modules need dependency resolution that copes with more than one root.
+
+WORKFLOWS.md "Dependencies" already gives `requires`, `recommends`, `conflicts`, `overrides` and `system`, npm-style version ranges, a lockfile, one version per module, and the referee settling clashes (no automatic solver). This proposal keeps all of that and changes four things.
+
+### 1. Roots say which system they provide
+
+`system` today is a list of names (`e9`, `mm`). Instead, each root module declares the system it provides, and other modules name systems, not particular roots:
+
+```json
+{ "id": "e9-core", "kind": "rules", "provides": "e9", "version": "0.1.0" }
+{ "id": "ose-core", "kind": "rules", "provides": "ose", "version": "0.1.0" }
+```
+
+A content module's `system` list then means "works with any root that provides one of these". `requires` still names an exact module when it needs one, e.g. a spell list that patches `e9-core` ids.
+
+### 2. A campaign picks exactly one root
+
+The campaign stack's first layer is one root. A module written for several systems keeps one file per system, as `bestiary/<ruleset>.json` already does in Beyond the Pale (OSE and MM stat blocks side by side), and the app loads only the files for the campaign's root. A module whose `system` list doesn't include the campaign's root can't be added; the app says why.
+
+### 3. Roots can require roots
+
+A root can build on another. `mm-core` (with its E9-for-MM option, `e9mm`) requires `e9-core`. So the resolver walks a chain: campaign root, then whatever it requires, each at one locked version. A cycle is an error.
+
+### 4. Each root's licence is checked before it ships
+
+A root carries another publisher's rules, so its `license` field and credits must match that publisher's terms, and the build refuses a root without them. Known terms to check: OSE and Shadowdark each have a third-party licence; 5E has the SRD 5.2 under CC BY 4.0; E9 is CC BY-SA 4.0; 4E's GSL is the hard case. ACKS and LotFP need checking.
+
+### Build order if agreed
+
+1. Add `provides` to `e9-core` (and `mm-core` when it lands); the Companion maps its ruleset ids (`e9`, `e9mm`, `mm`) to roots.
+2. Campaigns record their root; the module picker filters by `system`.
+3. Resolver: walk `requires` from the root, check ranges, write `campaign.lock.json`.
+4. The first non-E9 root (OSE is the likeliest, given Beyond the Pale's OSE stat blocks).
+
+### Open questions
+
+1. Is `e9mm` a system of its own (provided by `mm-core`), or an option inside `mm`?
+2. Can a campaign ever mix roots, e.g. OSE monsters converted on the fly into E9? (Proposed: no, convert at build time into a per-system file.)
+3. Should the apps themselves (`e9-companion`, `e9-atlas`) be required by version, as WORKFLOWS suggests, from the first release?
