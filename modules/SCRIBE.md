@@ -37,6 +37,7 @@ Today a module says nothing about how play begins. A new optional field in the m
     "revealed": { "places": ["<site name>", "<site name>"], "hexes": [] },
     "handouts": ["<handout id>"],
     "levels": [1, 3],
+    "uses": ["<part id>"],
     "note": "<author's note to the referee>"
   }
 ]
@@ -51,6 +52,7 @@ Today a module says nothing about how play begins. A new optional field in the m
 | `revealed` | Common knowledge at the start: becomes the `all` audience. |
 | `handouts` | Handouts every player gets at the first session. |
 | `levels` | Suggested character levels, lowest and highest. |
+| `uses` | Optional: the parts of the module this start plays, for a module made of several adventures (Beyond the Pale's B2 to B5). Parts not listed are excluded in the campaign (step 4 slicing), and the referee can add them back at any time. Without it, the whole module is used. (Heph 2026-11-08) |
 
 A module may offer any number of starts, or none. With none, or when the referee prefers, step 3 is done by hand.
 
@@ -111,5 +113,4 @@ Nothing changes until the referee accepts. Accepting rewrites the lockfile, upda
 ## 5. Open questions
 
 1. Does `kind: "campaign"` become a manifest value of its own (P3 open question 4)? Scribe's campaign view would open only for those.
-2. Should a start be able to name its own module subset (for example a start that uses only B2 of the Beyond the Pale quartet)?
-3. Should the update checker also run on a schedule in the referee's Apps Script (P1), so the Inbox shows "needs a decision" before Scribe is opened?
+2. Should the update checker also run on a schedule in the referee's Apps Script (P1), so the Inbox shows "needs a decision" before Scribe is opened?
