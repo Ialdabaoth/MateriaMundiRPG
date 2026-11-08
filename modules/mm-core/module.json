@@ -1,0 +1,23 @@
+{
+ "format": "e9-rules/1",
+ "kind": "rules",
+ "id": "mm-core",
+ "title": "Materia Mundi",
+ "version": "0.1.0",
+ "license": "CC-BY-4.0",
+ "ruleset": "mm",
+ "source": "Materia Mundi Compendium, first edition (Heph, Bakagaijin Productions), with material from the SRD 5.2 (CC BY 4.0) and E9 (CC BY-SA 4.0)",
+ "rules": "rules.json",
+ "equipment": "equipment.json",
+ "bestiary": "bestiary.json",
+ "options": [
+  {
+   "id": "e9",
+   "title": "Materia Mundi for E9",
+   "ruleset": "e9mm",
+   "requires": { "e9-core": "^0.1" },
+   "rules": "e9/rules.json",
+   "equipment": "e9/equipment.json"
+  }
+ ]
+}

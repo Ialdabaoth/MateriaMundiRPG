@@ -15,7 +15,7 @@ modules/<module-id>/
   bestiary/<ruleset-id>.json       mechanics: this module's stat blocks for one ruleset
   bestiary/<ruleset-id>/<id>.json  full character sheets for PC-level NPCs (CHARACTER_FORMAT.md)
 companion-app/src/rules/
-  bestiary/<ruleset-id>.json       the ruleset's own bestiary (today's mm-bestiary.json moves here)
+  (a core rules module, such as modules/mm-core/, keeps its own bestiary in bestiary.json)
 campaign/                          in a referee's fork (MODULE_FORMAT.md section 7)
   encounters.json                  the referee's own creatures and changes, same format
   bestiary/<ruleset-id>.json       their stats; per-creature play state in creatures/<id>.json
