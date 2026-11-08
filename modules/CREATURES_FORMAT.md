@@ -18,8 +18,24 @@ companion-app/src/rules/
   (a core rules module, such as modules/mm-core/, keeps its own bestiary in bestiary.json)
 campaign/                          in a referee's fork (MODULE_FORMAT.md section 7)
   encounters.json                  the referee's own creatures and changes, same format
-  bestiary/<ruleset-id>.json       their stats; per-creature play state in creatures/<id>.json
+  bestiary/<ruleset-id>.json       their stats
+  creatures/<id>/                  one creature in play, in four parts (section 2.1)
+    stats.json  gear.json  knowledge.json  flavor.json
+  characters/<id>/                 a player's character, the same four parts (CHARACTER_FORMAT.md)
 ```
+
+### 2.1 Four parts per creature
+
+Every creature, whether a player's character, an NPC, a follower, a beast or a monster, is kept in **four parts that can each be exported and imported on its own** (Heph 2026-11-08):
+
+| Part | Holds | In a module | For a creature in play (`campaign/creatures/<id>/`) and a character |
+|---|---|---|---|
+| **stats** | the base numbers: template and differences, or class, level-ups and abilities | the `bestiary/<ruleset>.json` entry (section 4) | `stats.json` |
+| **gear** | what it carries, wears and wields; its treasure | an optional `gear` list on the bestiary entry, items in EQUIPMENT_FORMAT.md's item shape | `gear.json` |
+| **knowledge** | what it knows | the fiction's `knows` list (section 3) | `knowledge.json`: dated entries (WORKFLOWS.md, "Knowledge per creature") |
+| **flavor** | name, names, look, portrait, wants, fears, relations, notes | the fiction entry in `encounters.json` (section 3) | `flavor.json` |
+
+Each part file holds the same header (`format`, `version`, `id`, `rules`, and `campaign` and `owner` when set) and one part keyed by its name, so it finds its creature by `id`. A file with all four parts is the whole creature. Loading a part replaces only that part; the rest of the creature is unchanged, and a file without `stats` needs the creature to exist already. So a referee can hand a player an NPC's flavor (the portrait and description) without its stats, move a creature's knowledge without touching its gear, or keep secrets in one part while the rest is shared. The Companion does this for character sheets from 0.5.10 (CHARACTER_FORMAT.md, "Four parts", in the apps repo); the referee's creature cards follow when creatures get their own export.
 
 A campaign's entry overrides a module's entry with the same id, in both layers, so a referee can change an NPC without touching the module and still pull upstream fixes.
 
