@@ -70,7 +70,9 @@ Every piece of content has a permanent id, and each module's version number says
 
 Each module, each app (E9 Companion, E9 Atlas) and the tools keep their own version (Heph 2026-11-06). A change to the tools or an app alone never bumps a module's version, and a module's content change never bumps an app. Each module keeps a `CHANGELOG.md` next to its `module.json`.
 
-Versions before 1.0.0 make no promises, as in semver. The Compendium's revised edition (January 2027 at the earliest) would be a major version of `mm-core`.
+Versions before 1.0.0 make no promises, as in semver.
+
+**The apps' road to 1.0 (Heph, 2026-11-08).** The MVP is reached by all the apps together (E9 Companion, E9 Atlas, E9 Scribe), in three coordinated steps: **alpha**, then **beta**, then **1.0.0**. Written in semver as `1.0.0-alpha`, `1.0.0-beta` and `1.0.0`; the apps may show them as a1.0.0, b1.0.0 and 1.0.0. The semver spelling keeps npm, version ranges and sorting working (`1.0.0-alpha` < `1.0.0-beta` < `1.0.0`). Further alpha or beta builds count up: `1.0.0-alpha.1`, `1.0.0-alpha.2`. The Compendium's revised edition (January 2027 at the earliest) would be a major version of `mm-core`.
 
 **Release notes.** Every release lists its added, changed and removed ids. The apps use this list to show the referee what an update does.
 
