@@ -442,42 +442,33 @@ Nothing new is needed to resolve, update or check a campaign: it is the same cod
 
 The Atlas and the Companion open a campaign exactly as they open a module (`?module=<campaign>`): they load what it requires, apply its overrides, and show the stitched world. A referee's own house content is just more module content.
 
-### 4. Builds per audience (different visibility sets)
+### 4. Knowledge per creature (different visibility sets)
 
-A campaign builds into a **referee build** (everything) and **player builds**: the content filtered through what each audience may see. Players read their build by URL ("Services and adapters").
+A campaign builds into a **referee build** (everything) and **player builds**: the content filtered through what each viewer may see. Players read their build by URL ("Services and adapters").
 
-**Audiences.** Every reveal says who it is for:
-
-| Audience | Example |
-| --- | --- |
-| `all` | Everyone in the campaign: the town everyone has heard of |
-| `party:<id>` | One party, when several share a world (West Marches) |
-| `character:<id>` | One character: the scout who went ahead alone, a dream, a secret patron |
-| `player:<id>` | One player, whatever character they play: a private handout or a note from the referee |
-| `ref:<id>` | A sub-ref's scope (WORKFLOWS "Sub-refs"): referee-only material inside their region or session |
-
-**What a player sees** is the union of `all`, their party, their own player audience, and their characters' audiences. A campaign setting could make it stricter (only the character currently played), as an open question below.
-
-**State file change.** STATE_FORMAT.md today has one party-wide `revealed` set per module. That set becomes the `all` audience (so existing files still read the same), and a new optional field holds the rest:
+**The primitive is one creature (Heph, 2026-11-08): "what does this one creature know?"** Every piece of knowledge (a hex seen, a place found, a handout, a secret door, a rumour) is recorded against the **creatures** who know it: player characters, but equally NPCs, followers, beast companions and monsters. A referee can ask the same question of an NPC ("what does the captured goblin know?") as of a player's character.
 
 ```json
-"revealed": { "isle-of-mists": { "hexes": ["world:6947:25B2"], "places": ["cnoc-na-teamhrach"] } },
-"private": {
-  "character:c-aldric": { "isle-of-mists": { "places": ["crom-cave-g"], "handouts": ["traitor-locket"] } },
-  "party:wolves": { "isle-of-mists": { "hexes": ["world:6950:2611"] } }
+"known": {
+  "c-aldric":  { "isle-of-mists": { "hexes": ["world:6950:2611"], "places": ["crom-cave-g"], "handouts": ["traitor-locket"] } },
+  "npc-james": { "isle-of-mists": { "places": ["crom-cave-g", "crom-grotto"] } }
 }
 ```
 
-**Keeping secrets secret.** Two ways to deliver per-audience builds:
+Keys are creature ids (character sheet ids, campaign creature ids). STATE_FORMAT.md's existing `revealed` set stays as "common knowledge", known to everyone, so existing files read the same.
 
-1. **One snapshot, private parts encrypted** to each recipient's device key ("Services and adapters" identity). One file and one URL for the whole table. A player's app decrypts only what is theirs. Others can see that something secret exists, but not what it is, which matches the spoiler rule players already accepted for conflict decisions.
-2. **One snapshot per audience**, each at its own unguessable URL. Simpler to build, but a referee juggles many files, and anyone handed a URL sees that audience's secrets.
+**Character mode in the Atlas.** The Atlas gets a **character mode** that shows one creature's knowledge only: what Aldric knows, nothing more. It is the first and simplest player view, and also a referee tool (open the map as the goblin sees it).
+
+**Compositing comes later.** Views over several creatures (a party's shared map, everything a player's characters know, a sub-ref's scope, West Marches' shared layer) are combinations of single-creature knowledge. How to composite them, and who sees which combination, is left for later. Knowledge spreads in play when the referee adds it to another creature ("Aldric shows the party his map"), which a player can ask for as an ordinary Inbox request.
+
+**Keeping secrets secret.** Two ways to deliver the builds:
+
+1. **One snapshot, private parts encrypted** to the device keys of the players whose creatures know them ("Services and adapters" identity). One file and one URL for the whole table. A player's app decrypts only what is theirs. Others can see that something secret exists, but not what it is, which matches the spoiler rule players already accepted for conflict decisions.
+2. **One snapshot per creature**, each at its own unguessable URL. Simpler to build, but a referee juggles many files, and anyone handed a URL sees those secrets.
 
 Suggested: option 1, with option 2 as the Manual adapter's fallback.
 
-**Telling others.** A character's secret becomes shared when the referee moves it to a wider audience. A player can ask for that ("show the party my map") as an ordinary request in the Inbox.
-
-The Atlas player view and the Companion's player mode both take the viewer's audience set and show only that.
+The Atlas character mode and the Companion's player mode both take the viewer's creature and show only what it knows.
 
 ### 5. Campaigns are made in Scribe (Heph, 2026-11-08: Scribe joins the MVP)
 
@@ -492,10 +483,10 @@ Because a campaign is a module, a referee can later publish it (with Gutenberg, 
 
 ### Still open
 
-1. Does a player see the union of all their characters' secrets, or only the character they're playing now? (Suggested: union by default, stricter per campaign.)
-2. Encrypted parts in one snapshot (suggested), or one snapshot per audience?
-3. When a campaign is published, what happens to its private audiences: dropped, or kept as an "everything revealed" chronicle?
-4. Does the campaign module get a `kind` of its own (`"kind": "campaign"`), so the apps know to look for `campaign/` state and audiences?
+1. ~~Does a player see the union of all their characters' secrets?~~ Reframed by Heph 2026-11-08: knowledge is per creature, the Atlas has a character mode, and compositing views over several creatures comes later.
+2. Encrypted parts in one snapshot (suggested), or one snapshot per creature?
+3. When a campaign is published, what happens to its private knowledge: dropped, or kept as an "everything revealed" chronicle?
+4. Does the campaign module get a `kind` of its own (`"kind": "campaign"`), so the apps know to look for `campaign/` state and per-creature knowledge?
 
 ## Decisions and build order
 
@@ -518,7 +509,9 @@ Because a campaign is a module, a referee can later publish it (with Gutenberg, 
 **Decided by Heph (2026-11-08), services and campaigns**
 
 - Open service adapters are agreed: players need only URLs, accounts are referee-side, and the mailbox, store, signal and schedule jobs run on whichever adapters the referee picks ([Services and adapters](#services-and-adapters)).
-- A campaign is a private module stitched from public modules, plus a history and state dataset, with per-audience visibility ([Campaigns are private modules](#campaigns-are-private-modules)).
+- A campaign is a private module stitched from public modules, plus a history and state dataset ([Campaigns are private modules](#campaigns-are-private-modules)).
+- Knowledge is recorded per creature ("what does this one creature know?"), for NPCs and monsters as well as characters. The Atlas gets a character mode showing one creature's knowledge. Compositing several creatures' views comes later.
+- The Google adapter uses the referee's own **Apps Script** (no Google Cloud OAuth client needed).
 
 **Decided by Heph (2026-11-07), campaign play**
 
