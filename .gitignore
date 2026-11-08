@@ -1,3 +1,6 @@
+# the module build tools, copied in from the apps repo (links.json "apps.repo") by the site workflow
+/modules/tools/
+/.apps/
 *.af~lock~
 *.af~lock~
 __pycache__/
