@@ -12,8 +12,11 @@ A module travels as one link. The referee stacks modules into a campaign that pi
 | --- | --- |
 | Module manifest with ids, versions and relationships | MVP |
 | Atlas and Companion ingest from one link or QR code | MVP |
-| Campaign lockfile, updates and conflict review | MVP |
-| Invites and porting characters | MVP |
+| Campaign lockfile and dependency check | MVP |
+| Updates: one "Update?" card with the release notes | MVP |
+| Invites | MVP |
+| Porting characters: a plain "made under different rules" warning | MVP |
+| Conflict review, per-id update review, full porting check, bundles and signatures | After the MVP, once a second author's module can join a campaign (Heph 2026-11-08) |
 | E9 Scribe, the creator app: its campaign view (pick a root, stitch modules, settle conflicts, house rules) on a shared editing engine | MVP (Heph 2026-11-08) |
 | Gutenberg (working name), Scribe's publisher module: releases, signing, QR codes, print | Post-MVP |
 
@@ -272,6 +275,13 @@ Agreed with Heph, 2026-11-07. A West Marches campaign has several referees, a pa
 - Anyone can publish overrides. Trust comes from signed bundles by curators the referee follows, plus checkers the referee chooses to run.
 - Porting characters and gear flags every mismatch to the referee, who decides the patch.
 - ~~The creator app (WYSIWYG module editor) is post-MVP.~~ Changed 2026-11-08: E9 Scribe is part of the MVP, starting with its campaign view; Gutenberg, Scribe's publisher module, is post-MVP.
+
+**Decided by Heph (2026-11-08), MVP line for the campaign stack**
+
+- In the MVP: the lockfile (exact versions plus manifest hashes) and the dependency check. A Beyond the Pale campaign is already three modules (`e9-core`, `mm-core`, `isle-of-mists`).
+- Updates in the MVP are one card: the new version's release notes and an Update button, with no per-id review.
+- Porting in the MVP is a plain warning that a character was made under different rules.
+- Conflict review, per-id update review, the full porting check, and bundles and signatures wait until a second author's module can join a campaign. Until then, a later module quietly wins over an earlier one.
 
 **Decided by Heph (2026-11-07), campaign play**
 
