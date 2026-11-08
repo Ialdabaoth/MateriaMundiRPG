@@ -20,12 +20,15 @@ Every piece of work has one home thread, named by what it is and which version i
 
 ## Apps and modules
 
-- **E9 Companion** (`companion-app/`): the player and referee PWA. Changelog: `companion-app/CHANGELOG.md`.
-- **E9 Atlas** (`modules/tools/`): the map builder and viewer, live at https://ialdabaoth.github.io/MateriaMundiRPG/atlas/. Changelog: `modules/tools/CHANGELOG.md`.
-- **Scribe** (planned): a WYSIWYG module creator.
-- **Modules** (`modules/<id>/`): Beyond the Pale: The Isle of Mists, 1422 (`isle-of-mists`), Hansa (`hansa`), and the E9, MM and MM-for-E9 core modules.
+The apps live in their own repo, named in `links.json` ("apps"), currently [Ialdabaoth/Hexmarch](https://github.com/Ialdabaoth/Hexmarch) (Heph 2026-11-08). This repo holds the data: rules, modules, specs and books.
 
-The data formats are specified next to the code: `modules/MODULE_FORMAT.md`, `ATLAS_FORMAT.md`, `CREATURES_FORMAT.md`, `ENCOUNTER_FORMAT.md`, `EVENTS_FORMAT.md`, `WORKFLOWS.md`, `BUILDING_A_MODULE.md`, and `companion-app/*_FORMAT.md`. Ideas that aren't agreed yet go in `modules/PROPOSALS.md`, not in the specs.
+- **E9 Companion** (apps repo `companion-app/`): the player and referee PWA.
+- **E9 Atlas** (apps repo `modules/tools/`): the map viewer and the module build tools. This repo's site workflow copies the tools in to build the module pages.
+- **Scribe** (planned, apps repo): a WYSIWYG module creator.
+- **E9 core rules** (apps repo `modules/e9-core/`, the example root module).
+- **Modules** (`modules/<id>/` here): Beyond the Pale: The Isle of Mists, 1422 (`isle-of-mists`), Hansa (`hansa`), and the MM core module with Materia Mundi for E9 inside it (`mm-core`).
+
+The data formats are specified next to the code: `modules/MODULE_FORMAT.md`, `ATLAS_FORMAT.md`, `CREATURES_FORMAT.md`, `ENCOUNTER_FORMAT.md`, `EVENTS_FORMAT.md`, `WORKFLOWS.md`, `BUILDING_A_MODULE.md`, `SCRIBE.md`, and the apps repo's `companion-app/*_FORMAT.md`. Ideas that aren't agreed yet go in `modules/PROPOSALS.md`, not in the specs.
 
 Every project goes through five phases in order: product design, Companion integration, Atlas integration, print layout (Affinity Publisher), and release and marketing.
 

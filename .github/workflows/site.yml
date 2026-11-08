@@ -1,11 +1,11 @@
-name: Site (companion app + modules)
+name: Site (modules)
 
 on:
   push:
     branches: [main]
-    paths: ['companion-app/**', 'modules/**', 'mm.json', '.github/workflows/site.yml']
+    paths: ['modules/**', 'mm.json', 'links.json', '.github/**']
   pull_request:
-    paths: ['companion-app/**', 'modules/**', 'mm.json', '.github/workflows/site.yml']
+    paths: ['modules/**', 'mm.json', 'links.json', '.github/**']
   workflow_dispatch:
 
 permissions:
@@ -24,20 +24,15 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
+      # The E9 apps and the module build tools live in the apps repo (links.json "apps.repo", Heph 2026-11-08);
+      # copy its modules/tools/ in, so build.py reads this repo's modules/assets, geo and requirements as before
+      - id: apps
+        run: echo "repo=$(jq -r .apps.repo links.json)" >> "$GITHUB_OUTPUT"
+      - uses: actions/checkout@v4
         with:
-          node-version: 22
-          cache: npm
-          cache-dependency-path: companion-app/package-lock.json
-      - name: Companion app
-        working-directory: companion-app
-        run: |
-          npm ci
-          npm run check
-          npm test
-          npm run build
-        env:
-          BASE_PATH: /${{ github.event.repository.name }}/
+          repository: ${{ steps.apps.outputs.repo }}
+          path: .apps
+      - run: cp -R .apps/modules/tools modules/tools
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
@@ -55,18 +50,20 @@ jobs:
       - name: Modules (maps, manifests)
         run: |
           pip install -r modules/requirements.txt
+          mkdir -p site
           for m in modules/*/module.json; do
             id=$(basename "$(dirname "$m")")
-            # rules modules ("kind": "rules", e.g. modules/e9-core) have no maps; the Companion bundles them
+            # rules modules ("kind": "rules", e.g. modules/mm-core) have no maps; the Companion bundles them
             python3 -I -c 'import json,sys; sys.exit(json.load(open(sys.argv[1])).get("kind") != "rules")' "$m" && continue
-            python3 -I modules/tools/build.py "modules/$id" "companion-app/dist/modules/$id"
+            python3 -I modules/tools/build.py "modules/$id" "site/modules/$id"
           done
-          cp mm.json companion-app/dist/mm.json
-          python3 -I modules/tools/atlas_app.py companion-app/dist
+          cp mm.json site/mm.json
+      - name: Forward the old app addresses to the apps site
+        run: python3 -I .github/scripts/forward.py site
       - uses: actions/upload-pages-artifact@v3
         if: github.event_name != 'pull_request'
         with:
-          path: companion-app/dist
+          path: site
 
   deploy:
     if: github.event_name != 'pull_request'
