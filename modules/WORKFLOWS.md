@@ -1,6 +1,6 @@
 # E9 Workflows and Module Versioning
 
-Status: agreed design, 2026-11-05 and 2026-11-07 (Heph). Not yet built. First draft: [Claude Doc](https://claude.ai/artifact/UpHCiv8Spi32u4nv3jDeDu).
+Status: agreed design, 2026-11-05 and 2026-11-07 (Heph). Not yet built. First draft: [Claude Doc](https://claude.ai/artifact/UpHCiv8Spi32u4nv3jDeDu). Ideas not yet agreed are in [PROPOSALS.md](PROPOSALS.md).
 
 ## Summary
 
@@ -170,6 +170,8 @@ One person can be signed in on several devices at once. Pairing: the laptop show
 Players need no GitHub account.
 
 ### Mailbox and archive
+
+> Proposed, not agreed: make the mailbox, snapshots, handshake and calendar swappable between Google, Discord and other services, with a small handler of ours ([PROPOSALS.md P1](PROPOSALS.md#p1-open-service-adapters)).
 
 - **Mailbox:** a shared Google Drive folder per campaign. The referee's app creates it and shares it with the players' Gmail addresses when it sends invites. A player's request is a small file the app drops into the folder's inbox; the referee's app picks it up and removes it once handled. Each Update campaign also writes the current campaign snapshot here, so players can read a private campaign without GitHub.
 - **Archive:** the campaign git repo. **Only the referee writes to it.**
