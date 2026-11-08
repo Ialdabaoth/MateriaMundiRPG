@@ -263,7 +263,7 @@ The Atlas player view and the Companion's player mode both take the viewer's aud
 Because a campaign is a module, it is made in **E9 Scribe**, the module editor. Campaign creation is a simplified view of Scribe's full creator suite: pick a root, add modules, settle conflicts, write house rules and add the referee's own sites.
 
 - **One editing engine** as a shared library, with several views: Scribe's full creator view, Scribe's campaign view, and the small in-play edits (a quick house rule, a reveal) inside the Companion and the Atlas, so a referee never switches apps mid-session.
-- **Scribe is part of the MVP**, starting with the campaign view. **Gutenberg** (working name), Scribe's publisher module (releases, signing, QR codes, print), is post-MVP.
+- **Scribe is part of the MVP**, starting with the campaign view, as **its own app at `/scribe/`** from day one (Heph 2026-11-08). **Gutenberg** (working name), Scribe's publisher module (releases, signing, QR codes, print), is post-MVP.
 
 ### 6. Publishing a campaign later
 
