@@ -80,8 +80,8 @@ Versions before 1.0.0 make no promises, as in semver.
 | Version | Sprint |
 | --- | --- |
 | 0.5.X | The first full walkthrough: create a campaign in Scribe, invite, accept, roll a character, approve it, explore the map as that character. Then Scribe makes other sample systems work. |
-| 0.6.X | Real-life tools in the workflow, only ones that cost nothing. Scribe skips ahead to 0.6 if needed. |
-| 0.7.X | UX pass, including privacy and encryption (seats, join codes, per-character secrets), content readiness and remote play. |
+| 0.6.X | Real-life tools in the workflow, only ones that cost nothing, including the fundamentals of remote play (the tools that carry it). Scribe skips ahead to 0.6 if needed. |
+| 0.7.X | UX pass, including privacy and encryption (seats, join codes, per-character secrets), content readiness and the remote-play experience. |
 | 0.8.X | **Private alpha:** real campaigns with invited tables, and their feedback. |
 | 0.9.X | **Public beta**, open to everyone. |
 | 1.0.0 | Release, once the beta is ready. |
