@@ -32,7 +32,11 @@ jobs:
         with:
           repository: ${{ steps.apps.outputs.repo }}
           path: .apps
-      - run: cp -R .apps/modules/tools modules/tools
+      # the apps number their versions from change notes (Hexmarch scripts/changes.py, 2026-11-09); stamp them first,
+      # so ATLAS_VERSION in the module stamps is the Atlas's real version (ATLAS_VERSION is not a map input: no redraw)
+      - run: |
+          if [ -f .apps/scripts/changes.py ]; then python3 -I .apps/scripts/changes.py stamp; fi
+          cp -R .apps/modules/tools modules/tools
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
