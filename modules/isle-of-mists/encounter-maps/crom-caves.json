@@ -1,5 +1,5 @@
 {
- "format": "e9-encounter-map/1",
+ "format": "hexmarch-encounter-map/1",
  "id": "crom-caves",
  "title": "Cnoc na Teamhrach: the caves of Crom Cruach",
  "size": [94, 142],
@@ -3182,5 +3182,5 @@
  "lights": [],
  "environment": {},
  "licence": "CC BY 4.0",
- "credit": "Drawn for Beyond the Pale with the E9 Atlas encounter tool"
+ "credit": "Drawn for Beyond the Pale with the Hexmarch Atlas encounter tool"
 }

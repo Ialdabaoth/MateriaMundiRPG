@@ -1,6 +1,6 @@
 # E9 Characters and Encounters format (draft)
 
-How a module describes *who* the party meets (creatures, named NPCs and the factions behind them) and *what* an encounter with them looks like, and how the E9 Companion runs them on the Referee tab.
+How a module describes *who* the party meets (creatures, named NPCs and the factions behind them) and *what* an encounter with them looks like, and how the Hexmarch Companion runs them on the Referee tab.
 Designed with Heph on 2026-11-05. Status: **draft, nothing built yet**. Companion to EVENTS_FORMAT.md, which decides *when* something happens and *how* it resolves, and to ENCOUNTER_FORMAT.md (the Encounter map level of the Atlas), which decides *where everyone stands*. This file replaces the draft referee creature spec (project files, `companion-app/referee-creatures-spec.md`), whose seven open questions are answered in section 8.
 
 ## 1. The idea in one paragraph
@@ -47,7 +47,7 @@ A campaign's entry overrides a module's entry with the same id, in both layers, 
 
 The collision rules are the same as for events: files load in path order; a duplicate id inside one layer (the module, or the campaign) is flagged on load and the first file in path order keeps it; the campaign layer replaces a module id on purpose, and the load report lists every replacement; to remove a module creature, faction or scene, the campaign gives the same id with `"off": true`.
 
-Every bestiary file declares the rulesets it serves, as procedures do: `{"format": "e9-bestiary/1", "rules": ["mm", "e9mm"], "creatures": {...}}`.
+Every bestiary file declares the rulesets it serves, as procedures do: `{"format": "hexmarch-bestiary/1", "rules": ["mm", "e9mm"], "creatures": {...}}`.
 
 ## 3. The fiction layer: creatures (`encounters.creatures`)
 
@@ -94,7 +94,7 @@ The names and story in the examples below are placeholders to show the fields, n
 ## 4. The mechanics layer: `bestiary/<ruleset>.json`
 
 ```json
-{"format": "e9-bestiary/1", "rules": ["mm", "e9mm"], "creatures": {
+{"format": "hexmarch-bestiary/1", "rules": ["mm", "e9mm"], "creatures": {
   "fomhoire-scout": {"from": "mm:goblin", "replace": {"movement": "Normal / Swim Normal"}, "adjust": {"saves": {"curse": -2}, "attacks": {"add": [{"name": "Hooked spear", "damage": "d6"}]}}},
   "brother-ailill": {"from": "pc", "sheet": "brother-ailill.json"}
 },

@@ -1,5 +1,5 @@
 {
- "format": "e9-encounter-map/1",
+ "format": "hexmarch-encounter-map/1",
  "id": "pale-keep",
  "title": "Baile Átha Troim: the Pale Keep",
  "size": [82, 108],
@@ -1043,5 +1043,5 @@
  "lights": [],
  "environment": {},
  "licence": "CC BY 4.0",
- "credit": "Drawn for Beyond the Pale with the E9 Atlas encounter tool"
+ "credit": "Drawn for Beyond the Pale with the Hexmarch Atlas encounter tool"
 }

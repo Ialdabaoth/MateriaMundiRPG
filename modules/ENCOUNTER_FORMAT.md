@@ -1,6 +1,6 @@
 # E9 Encounter map format (draft)
 
-How a module stores its **Encounter maps** (the 5-ft-square battle maps below the Furlong level of the E9 Atlas), how points of interest and scenes point into them, and how they can grow into a virtual tabletop later.
+How a module stores its **Encounter maps** (the 5-ft-square battle maps below the Furlong level of the Hexmarch Atlas), how points of interest and scenes point into them, and how they can grow into a virtual tabletop later.
 Designed with Heph on 2026-11-05. Status: **draft**. Map files, the drawing tool and the checker exist (section 12); the Atlas and the module viewer open maps from points of interest (Atlas 0.2.12). Atlas 0.4.x is VTT and referee-tool integration (Heph 2026-11-06): 0.4.0 fills in walls, doors and lights and tidies the format for Universal VTT import, export and links into VTTs (sections 7, 11 and 13). Sits under ATLAS_FORMAT.md (the hex levels) and beside CREATURES_FORMAT.md (who is there) and EVENTS_FORMAT.md (what happens).
 
 ## 1. The idea in one paragraph
@@ -25,7 +25,7 @@ One map per file keeps git diffs small and lets a referee drop in a single map. 
 
 ```json
 {
-  "format": "e9-encounter-map/1",
+  "format": "hexmarch-encounter-map/1",
   "id": "kells-priory",
   "title": "Kells Priory, the walled town",
   "size": [80, 60],
@@ -110,9 +110,9 @@ When `ground` is `"generate"`, the Atlas draws the squares from the world under 
 
 - **Coordinates** in these fields are in squares (fractions allowed), the same unit Universal VTT uses, so only the point shape changes (`[x, y]` against `{"x", "y"}`). Universal VTT colours are ARGB hex without `#`.
 - **Map origin.** Dungeondraft exports may start at a `map_origin` other than 0, 0. Import subtracts it from every point.
-- **Secret and locked doors** have no Universal VTT field, so they ride in the `"e9"` block and are exported as ordinary closed doors.
+- **Secret and locked doors** have no Universal VTT field, so they ride in the `"hexmarch"` block and are exported as ordinary closed doors.
 - The field names above were checked on 2026-11-06 against a sample Dungeondraft `.dd2vtt` (the uvtt2fgu project's `sampleMap.dd2vtt`) and the published Universal VTT notes. Check again against Foundry's Universal Battlemap Importer and Fantasy Grounds Unity's importer when the exporter is built.
-- **Export** (Atlas 0.4.1, `tools/vtt_export.html`): the **Export for VTT** button on the map view saves one `<module>-<map>.uvtt` (Heph 2026-11-06: E9 always writes `.uvtt`; the content is the same as a `.dd2vtt`): the players' layers flattened at the largest layer `px` (smaller if the picture would pass 16 megapixels, the iOS canvas limit), plus walls, doors and lights. Fields Universal VTT lacks (areas, links, anchor, secret and locked doors, licence and credit) go in an `"e9"` block that other tools ignore and E9 reads back. A second option saves the picture alone as PNG, named with its pixels per square, for VTTs that only take images (Roll20, Owlbear Rodeo). `E9VTT.uvtt(map)` gives the same object from script.
+- **Export** (Atlas 0.4.1, `tools/vtt_export.html`): the **Export for VTT** button on the map view saves one `<module>-<map>.uvtt` (Heph 2026-11-06: the Atlas always writes `.uvtt`; the content is the same as a `.dd2vtt`): the players' layers flattened at the largest layer `px` (smaller if the picture would pass 16 megapixels, the iOS canvas limit), plus walls, doors and lights. Fields Universal VTT lacks (areas, links, anchor, secret and locked doors, licence and credit) go in a `"hexmarch"` block that other tools ignore and the Atlas reads back. A second option saves the picture alone as PNG, named with its pixels per square, for VTTs that only take images (Roll20, Owlbear Rodeo). `HexmarchVTT.uvtt(map)` gives the same object from script.
 - **Import** (Atlas 0.4.2): `python3 -I modules/tools/uvtt_import.py <file.uvtt> modules/<module>/encounter-maps [--id <map-id>] [--title ...] [--ft 5]` reads a `.uvtt`, `.dd2vtt` or `.df2vtt` into `<id>.json` and saves its picture, bytes unchanged, as `<id>/map.png` (or `.jpg`, `.webp`). `line_of_sight` and `objects_line_of_sight` both become `walls`; points are moved by `map_origin`. An E9 export's `e9` block brings back title, grid, areas, links, anchor, secret and locked doors, licence and credit, so export then import gives the same map file. A file from elsewhere gets an empty `licence`, to set before publishing; areas, links, scenes and the `site_encounters` pointer are the module author's to add.
 
 ## 8. Play state (later)
@@ -154,7 +154,7 @@ Each slice is usable on its own:
 
 Done so far: 1 (spec), 2 (maps open in the Atlas and the module viewer, Atlas 0.2.12). **Atlas 0.4.x is slices 5 and 8** (Heph 2026-11-06: "VTT and referee-tool integration"):
 
-- **0.4.0, cleanup.** Walls, doors and lights from the drawing tool; `encounter_check.py` in the build; the viewer fills in the format's defaults in one place (`E9Map.load`), honours layer `rotate`, `opacity` and multi-rectangle areas, shows the play surface (Walls button) and has a hook for map buttons (`E9Map.actions`); the section 7 table checked against a real file; campaign links keyed by module (section 13).
+- **0.4.0, cleanup.** Walls, doors and lights from the drawing tool; `encounter_check.py` in the build; the viewer fills in the format's defaults in one place (`HexmarchMap.load`), honours layer `rotate`, `opacity` and multi-rectangle areas, shows the play surface (Walls button) and has a hook for map buttons (`HexmarchMap.actions`); the section 7 table checked against a real file; campaign links keyed by module (section 13).
 - **0.4.1** Export for VTT: `.uvtt` for Foundry, Fantasy Grounds Unity and Arkenforge, plus picture + grid size for Roll20 and Owlbear Rodeo. Done.
 - **0.4.2** Universal VTT import into a map file (`tools/uvtt_import.py`, a creator tool for now). Done.
 - **0.4.3** Entrances, spawn points and the VTT adapter protocol, spec only (section 14).
@@ -181,7 +181,7 @@ A referee who runs play in a VTT (Foundry, Roll20, Owlbear Rodeo, Fantasy Ground
 
 ```json
 {
-  "format": "e9-vtt-links/1",
+  "format": "hexmarch-vtt-links/1",
   "accounts": {
     "foundry": {"app": "foundry", "base": "https://my-table.example.com"},
     "owlbear": {"app": "owlbear"}
@@ -227,19 +227,19 @@ A map file may have a `spawns` block, keyed by id like `areas`:
 - **kind** is `entrance` (where the party arrives) or `spawn` (where creatures appear). An entrance can also take creatures, for an ambush that follows the party in.
 - **Where**: `squares` (a rectangle, or a list of them, as for areas) or `area` (an area id; the area's squares). A spawn with neither uses its scene's area.
 - **facing** (optional, `n`, `ne`, `e` … `nw`) is the way tokens face on arrival. **hidden** spawns put tokens down hidden from players, for the referee to reveal.
-- **Placement** is the same in every app and adapter (`E9Map.place`, Atlas 0.4.4): free squares nearest the rectangle's centre come first (ties: top to bottom, then left to right), a square is skipped if a wall crosses its middle (the central 0.4 × 0.4 of it; a wall may clip a corner) or a token already stands there, and a creature of `size` n (in squares, from the bestiary; default 1) takes an n × n block. When the rectangle is full, tokens spill into the ring of squares around it, then the next ring, but only into squares a token could walk to from the open square nearest the rectangle's centre, stepping square to square without a wall or closed door crossing the line between their centres, (so a cave spawn never spills into solid rock, and a rectangle drawn a little over the rock still fills only its floor). The same input always places the same way.
+- **Placement** is the same in every app and adapter (`HexmarchMap.place`, Atlas 0.4.4): free squares nearest the rectangle's centre come first (ties: top to bottom, then left to right), a square is skipped if a wall crosses its middle (the central 0.4 × 0.4 of it; a wall may clip a corner) or a token already stands there, and a creature of `size` n (in squares, from the bestiary; default 1) takes an n × n block. When the rectangle is full, tokens spill into the ring of squares around it, then the next ring, but only into squares a token could walk to from the open square nearest the rectangle's centre, stepping square to square without a wall or closed door crossing the line between their centres, (so a cave spawn never spills into solid rock, and a rectangle drawn a little over the rock still fills only its floor). The same input always places the same way.
 - **Pointers and links** may name an entrance: `{"map": "pale-keep", "entrance": "east-gate"}`. A PoI pointer with an entrance says where the party arrives when it opens the map from the world; a link (`links[].to`) with one says where a stair or path comes out on the other map.
 - **Scenes** (CREATURES_FORMAT.md section 7) may say where their `who` stand: `"map": {"map": "pale-keep", "area": "guard-tower", "spawn": "guard-room"}`, or per line, `{"creature": "fomhoire-scout", "count": "d6", "spawn": "wolf-den"}`. Without one, they spawn in the scene's area.
 - A map with no `spawns` still works: the party arrives in the pointed area (or the centre of the map) and creatures in their scene's area.
 - `encounter_check.py` checks `spawns` (kind, squares on the map, area ids) and every `entrance` and `spawn` reference. A Universal VTT export carries `spawns` in its `e9` block.
 
-### 14.2 The adapter protocol (`e9-vtt/1`)
+### 14.2 The adapter protocol (`hexmarch-vtt/1`)
 
 An adapter is a small piece of code inside one VTT: a Foundry module, an Owlbear Rodeo extension, a Roll20 API script, a Fantasy Grounds extension. The E9 app (Atlas map view, Companion Run encounter) sends it **commands** and gets back **results** and **events**, all JSON:
 
 | Command | What the adapter does | Result |
 |---|---|---|
-| `hello` `{"protocol": "e9-vtt/1", "app": "atlas", "campaign": id}` | says what it can do | `{"vtt": "foundry", "version", "can": ["scene", "walls", "lights", "tokens", "move", "hide", "activate"]}` |
+| `hello` `{"protocol": "hexmarch-vtt/1", "app": "atlas", "campaign": id}` | says what it can do | `{"vtt": "foundry", "version", "can": ["scene", "walls", "lights", "tokens", "move", "hide", "activate"]}` |
 | `scene.open` `{"map": "<module>:<map-id>", "uvtt": file or URL}` | finds the scene it made for this map before, or builds one from the `.uvtt` | `{"scene": vtt scene ref, "link": URL}`; the app saves the link in `vtt.json` (section 13) |
 | `scene.activate` `{"scene"}` | shows the scene to the players (Foundry: activate; Owlbear: open) | `ok` |
 | `tokens.spawn` `{"scene", "tokens": [{"id", "name", "creature", "img", "square": [x, y], "size": 1, "hidden": false, "disposition": "hostile"}]}` | creates tokens at those squares | `{"tokens": {e9 id: vtt token ref}}` |
@@ -258,14 +258,14 @@ An adapter is a small piece of code inside one VTT: a Foundry module, an Owlbear
 Heph: "Each PoI is an Entrance into an Encounter Map. One encounter map might correspond to multiple PoI." A vast underground megadungeon or underdark cavern can be **one map** with a mouth under each of several PoIs, each in its own hex.
 
 1. **A PoI enters through an entrance.** Its pointer is `{"map": "<map>", "entrance": "<spawn id>"}` (in `module.json` `site_encounters`). Opening the map from that PoI centres on that entrance, and Run encounter places the party there (14.1).
-2. **Entrances lead back out.** The map view lists **Ways out**: every place whose pointer enters this map, by entrance (or pointed area). "Out to <place>" closes the map and goes to that place: its 100-ft hex in the Atlas, its site in the module viewer. Leaving by another mouth comes out in another hex. Pages hand the places to the viewer as `E9Map.places` `[{name, pointers, go()}]`; the map file itself never names its PoIs, so the pointer in `site_encounters` is the one source of the link.
+2. **Entrances lead back out.** The map view lists **Ways out**: every place whose pointer enters this map, by entrance (or pointed area). "Out to <place>" closes the map and goes to that place: its 100-ft hex in the Atlas, its site in the module viewer. Leaving by another mouth comes out in another hex. Pages hand the places to the viewer as `HexmarchMap.places` `[{name, pointers, go()}]`; the map file itself never names its PoIs, so the pointer in `site_encounters` is the one source of the link.
 3. **One map, many entrances; one entrance, one place.** `encounter_check.py` warns when two places claim the same entrance, and when an entrance is used by no place and no link (maps in progress may have both, so these are warnings, not errors).
 4. **Size.** An entrance can be as big as the 100-ft hex its PoI stands in: up to **25 × 20 squares** (paces). The checker warns past that.
 5. **Where it sits in the world.** Each entrance stands under its own PoI: the entrance's centre is the centre of the PoI's hex (a PoI is always one whole 100-ft hex, ATLAS_FORMAT.md), north up. So a megadungeon needs no `anchor` for the whole map, and the Field view can outline each entrance's footprint in its own hex (to build with the Field outlines, section 11 slice 3). An entrance may set `"rotate"` (degrees clockwise) when the mouth faces another way on the map.
 
 ### 14.4 The Foundry adapter (Atlas 0.4.6)
 
-`vtt/foundry/e9-bridge/` is a Foundry VTT module (v12, v13; README there). The GM presses *Open the E9 Atlas* in Foundry's token controls; the Atlas opens with `?vtt=foundry&pair=<code>`, shows "Linked to Foundry · code …", and every encounter map gains **Send to Foundry** (`tools/vtt_bridge.html`): pick the scenes whose creatures to place and the entrance the party arrives at, then the Atlas sends `scene.open` (the `.uvtt`), `tokens.spawn`, `party.place` (`actors: "players"`, each player's assigned character) and `scene.activate`.
+`vtt/foundry/hexmarch-bridge/` is a Foundry VTT module (v12, v13; README there). The GM presses *Open the Hexmarch Atlas* in Foundry's token controls; the Atlas opens with `?vtt=foundry&pair=<code>`, shows "Linked to Foundry · code …", and every encounter map gains **Send to Foundry** (`tools/vtt_bridge.html`): pick the scenes whose creatures to place and the entrance the party arrives at, then the Atlas sends `scene.open` (the `.uvtt`), `tokens.spawn`, `party.place` (`actors: "players"`, each player's assigned character) and `scene.activate`.
 
 - **Counts.** The Atlas rolls each `who` line's dice (`3`, `d6`, `2d6`, `d6+1`, `d6÷2`) and its `chance` (`1-3 on d6`); a troupe word counts as 1 until the bestiary is wired in.
 - **Where.** A `who` line's `spawn`, else the scene's `map.spawn`, else its `map.area`, placed with 14.1; all tokens of one send avoid each other and the party.
@@ -276,7 +276,7 @@ Heph: "Each PoI is an Entrance into an Encounter Map. One encounter map might co
 ### 14.5 Order of work
 
 1. This spec. Atlas 0.4.3.
-2. `spawns` in the checker, the viewer (entrances and spawn points drawn with the Walls overlay) and the `.uvtt` `e9` block, and the shared placement function `E9Map.place`. Done in Atlas 0.4.4.
+2. `spawns` in the checker, the viewer (entrances and spawn points drawn with the Walls overlay) and the `.uvtt` `e9` block, and the shared placement function `HexmarchMap.place`. Done in Atlas 0.4.4.
 3. The first adapter: **Foundry VTT** (Heph 2026-11-06), an E9 Foundry module (14.4, Atlas 0.4.6). Open in links from section 13 still to come.
 4. More adapters, one VTT at a time.
 

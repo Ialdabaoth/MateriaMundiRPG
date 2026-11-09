@@ -3,9 +3,9 @@ name: Site (modules)
 on:
   push:
     branches: [main]
-    paths: ['modules/**', 'mm.json', 'links.json', '.github/**']
+    paths: ['modules/**', 'hexmarch.json', 'links.json', '.github/**']
   pull_request:
-    paths: ['modules/**', 'mm.json', 'links.json', '.github/**']
+    paths: ['modules/**', 'hexmarch.json', 'links.json', '.github/**']
   workflow_dispatch:
 
 permissions:
@@ -61,7 +61,7 @@ jobs:
             python3 -I -c 'import json,sys; sys.exit(json.load(open(sys.argv[1])).get("kind") != "rules")' "$m" && continue
             python3 -I modules/tools/build.py "modules/$id" "site/modules/$id"
           done
-          cp mm.json site/mm.json
+          cp hexmarch.json site/hexmarch.json
       - name: Forward the old app addresses to the apps site
         run: python3 -I .github/scripts/forward.py site
       - uses: actions/upload-pages-artifact@v3

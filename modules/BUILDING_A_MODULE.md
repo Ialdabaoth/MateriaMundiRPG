@@ -1,6 +1,6 @@
 # Building a hexcrawl module, step by step
 
-A hands-on procedure for making your own hexcrawl that opens in the **E9 Atlas** (zoomable maps) and the **E9 Companion** (characters, creatures, dice). It describes the tools **as they exist today** (E9 Atlas 0.5.1). It is written for people who are comfortable on a command line, or who will hand it to an AI coding assistant.
+A hands-on procedure for making your own hexcrawl that opens in the **Hexmarch Atlas** (zoomable maps) and the **Hexmarch Companion** (characters, creatures, dice). It describes the tools **as they exist today** (Hexmarch Atlas 0.5.1). It is written for people who are comfortable on a command line, or who will hand it to an AI coding assistant.
 
 The reference implementations are `modules/isle-of-mists` (Beyond the Pale: The Isle of Mists, 1422) and `modules/hansa`. The formats are in [MODULE_FORMAT.md](MODULE_FORMAT.md), [ATLAS_FORMAT.md](ATLAS_FORMAT.md) and [REALMAP.md](REALMAP.md); this file ties them into one path. The tools are CC BY 4.0 ([tools/LICENSE.md](tools/LICENSE.md)).
 
@@ -27,7 +27,7 @@ A fantasy map **may** be possible today by painting the March PNGs yourself over
 
 ## 1. Fork and clone
 
-Fork the repository on GitHub, clone your fork, and work from its root. Keep `modules/tools`, `modules/assets`, `modules/geo`, `companion-app/`, `.github/workflows/site.yml`, `mm.json` and `links.json`. You can delete the example modules later; leave them in for now as models.
+Fork the repository on GitHub, clone your fork, and work from its root. Keep `modules/tools`, `modules/assets`, `modules/geo`, `companion-app/`, `.github/workflows/site.yml`, `hexmarch.json` and `links.json`. You can delete the example modules later; leave them in for now as models.
 
 ## 2. Choose your region and its borders
 
@@ -94,7 +94,7 @@ Put the module in a site layout and open the Atlas through any local web server:
 
 ```
 python3 -I modules/tools/build.py modules/<id> dist/modules/<id>
-cp mm.json dist/mm.json
+cp hexmarch.json dist/hexmarch.json
 python3 -I modules/tools/atlas_app.py dist
 cd dist && python3 -m http.server 8000
 ```
@@ -103,7 +103,7 @@ Open `http://localhost:8000/atlas/?module=<id>` for the Atlas and `http://localh
 
 ## 6. Register the module
 
-Add it to the repository's `mm.json` so the apps can find it:
+Add it to the repository's `hexmarch.json` so the apps can find it:
 
 ```json
 { "id": "<id>", "path": "modules/<id>/" }
@@ -136,13 +136,13 @@ Everything below is optional and builds with the module:
 3. When it finishes you have:
    - Atlas: `https://<owner>.github.io/<repo>/atlas/?module=<id>`
    - Module viewer: `https://<owner>.github.io/<repo>/modules/<id>/`
-   - Module list: `https://<owner>.github.io/<repo>/mm.json`
+   - Module list: `https://<owner>.github.io/<repo>/hexmarch.json`
 
 Pull requests build the same site without deploying, so you can check a change first.
 
 ## 10. Use it in the Companion
 
-Open the Companion (your site's root, or the live app), go to **Campaign → Manage → Modules**, and paste your site address (`https://<owner>.github.io/<repo>/`, the place `mm.json` sits). The module's maps open under Campaign › Maps and stay usable offline once added.
+Open the Companion (your site's root, or the live app), go to **Campaign → Manage → Modules**, and paste your site address (`https://<owner>.github.io/<repo>/`, the place `hexmarch.json` sits). The module's maps open under Campaign › Maps and stay usable offline once added.
 
 ## 11. Release hygiene
 
@@ -162,6 +162,6 @@ Open the Companion (your site's root, or the live app), go to **Campaign → Man
 
 Hand it these files first: this one, [MODULE_FORMAT.md](MODULE_FORMAT.md), [ATLAS_FORMAT.md](ATLAS_FORMAT.md), [REALMAP.md](REALMAP.md) and `modules/hansa/module.json` as an example. Then give it a brief like:
 
-> Make a new module in this repository called `<id>`, set in `<place>` in `<year>`. Follow `modules/BUILDING_A_MODULE.md`. Create `module.json` with real coordinates for these places: `<list>`. Build it, preview it, fix any errors, add it to `mm.json`, and tell me the local preview address.
+> Make a new module in this repository called `<id>`, set in `<place>` in `<year>`. Follow `modules/BUILDING_A_MODULE.md`. Create `module.json` with real coordinates for these places: `<list>`. Build it, preview it, fix any errors, add it to `hexmarch.json`, and tell me the local preview address.
 
 Check what it produces: real coordinates, sensible site kinds, distances that agree with the map, credits for every data source, and a version bump when you change a published module.

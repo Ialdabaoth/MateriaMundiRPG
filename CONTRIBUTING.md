@@ -1,6 +1,6 @@
 # Contributing to E9 and Materia Mundi
 
-E9 is an old-school (B/X-family) fantasy RPG system, and Materia Mundi is its flagship setting. The project ships three things together: books, apps (E9 Companion and E9 Atlas, with a third, Scribe, planned) and modules (adventures and hexcrawls that run in both apps). Heph (GitHub `Ialdabaoth`) owns the game, writes the books and has the final say on canon and prose.
+E9 is an old-school (B/X-family) fantasy RPG system, and Materia Mundi is its flagship setting. The project ships three things together: books, apps (Hexmarch Companion and Hexmarch Atlas, with a third, Scribe, planned) and modules (adventures and hexcrawls that run in both apps). Heph (GitHub `Ialdabaoth`) owns the game, writes the books and has the final say on canon and prose.
 
 ## How work is organised
 
@@ -22,8 +22,8 @@ Every piece of work has one home thread, named by what it is and which version i
 
 The apps live in their own repo, named in `links.json` ("apps"), currently [Ialdabaoth/Hexmarch](https://github.com/Ialdabaoth/Hexmarch) (Heph 2026-11-08). This repo holds the data: rules, modules, specs and books.
 
-- **E9 Companion** (apps repo `companion-app/`): the player and referee PWA.
-- **E9 Atlas** (apps repo `modules/tools/`): the map viewer and the module build tools. This repo's site workflow copies the tools in to build the module pages.
+- **Hexmarch Companion** (apps repo `companion-app/`): the player and referee PWA.
+- **Hexmarch Atlas** (apps repo `modules/tools/`): the map viewer and the module build tools. This repo's site workflow copies the tools in to build the module pages.
 - **Scribe** (planned, apps repo): a WYSIWYG module creator.
 - **E9 core rules** (apps repo `modules/e9-core/`, the example root module).
 - **Modules** (`modules/<id>/` here): Beyond the Pale: The Isle of Mists, 1422 (`isle-of-mists`), Hansa (`hansa`), and the MM core module with Materia Mundi for E9 inside it (`mm-core`).

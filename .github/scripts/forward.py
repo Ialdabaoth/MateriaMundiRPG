@@ -3,7 +3,7 @@
 
 usage: python3 -I .github/scripts/forward.py <site dir>
 
-The E9 Companion used to live at this site's root and the E9 Atlas at /atlas/; both moved to the apps repo
+The Hexmarch Companion used to live at this site's root and the Hexmarch Atlas at /atlas/; both moved to the apps repo
 (Heph 2026-11-08). This writes:
   index.html        -> <apps>       (query and #hash kept)
   atlas/index.html  -> <apps>atlas/ (query and #hash kept; ?site= points the Atlas back at this site)
@@ -38,11 +38,11 @@ def page(path, title, target, extra=''):
     os.makedirs(os.path.dirname(path), exist_ok=True)
     open(path, 'w').write(PAGE.format(title=title, target=json.dumps(target), target_text=target, extra=extra))
 
-page(os.path.join(site, 'index.html'), 'The E9 Companion', apps)
+page(os.path.join(site, 'index.html'), 'The Hexmarch Companion', apps)
 # the Atlas loads this site's modules: say so unless the link already names a site
-page(os.path.join(site, 'atlas', 'index.html'), 'The E9 Atlas', apps + 'atlas/',
+page(os.path.join(site, 'atlas', 'index.html'), 'The Hexmarch Atlas', apps + 'atlas/',
      "if (!to.searchParams.has('site')) to.searchParams.set('site', new URL('../', location.href).href);")
-open(os.path.join(site, 'sw.js'), 'w').write("""// The E9 Companion moved (see index.html). Remove its old offline copy and reload open pages onto the forward.
+open(os.path.join(site, 'sw.js'), 'w').write("""// The Hexmarch Companion moved (see index.html). Remove its old offline copy and reload open pages onto the forward.
 self.addEventListener('install', function () { self.skipWaiting(); });
 self.addEventListener('activate', function (e) {
   e.waitUntil((async function () {

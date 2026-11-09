@@ -4,9 +4,9 @@ Status: agreed design, 2026-11-05 and 2026-11-07 (Heph). Not yet built. First dr
 
 ## Summary
 
-A module travels as one link. The referee stacks modules into a campaign that pins exact versions, and every conflict, update or ported character goes to the referee as a decision in the Inbox. This builds on what already exists: the mm-module/1 manifest ([MODULE_FORMAT.md](MODULE_FORMAT.md)), campaigns as git repos, and the Inbox approval flow.
+A module travels as one link. The referee stacks modules into a campaign that pins exact versions, and every conflict, update or ported character goes to the referee as a decision in the Inbox. This builds on what already exists: the hexmarch-module/1 manifest ([MODULE_FORMAT.md](MODULE_FORMAT.md)), campaigns as git repos, and the Inbox approval flow.
 
-**Everything is a module.** The core rules ship as modules (`e9-core`, `mm-core`), so the revised Compendium is a major update to `mm-core`. The apps are modules too (`e9-companion`, `e9-atlas`), so a module can require the app version it needs, and nothing exists outside the system.
+**Everything is a module.** The core rules ship as modules (`e9-core`, `mm-core`), so the revised Compendium is a major update to `mm-core`. The apps are modules too (`hexmarch-companion`, `hexmarch-atlas`), so a module can require the app version it needs, and nothing exists outside the system.
 
 | Piece | When |
 | --- | --- |
@@ -95,7 +95,7 @@ The 0.8 and 0.9 versions are plain semver minors (no `-alpha` or `-beta` suffix)
 
 The apps run any OSR hexcrawl core rules, so the names machines read say **hexmarch**, not E9 or MM. That covers format ids, the discovery file, messages between apps, browser storage keys, file extensions, app ids and sheet layout tags. Ids keep the name even if the apps are renamed later. Content stays as it is: module ids `e9-core` and `mm-core`, their content ids (`mm:longsword`, `e9-core/spell/sleep`), and a module's own data files.
 
-The rename lands in 0.6.X, before the 0.9.0 format lock. Until the 0.8.X private alpha the only users are Heph and Claude (Heph, 2026-11-09), so it is a clean rename with no compatibility layer: apps read and write only the new names, and old test files are rebuilt rather than migrated.
+The rename landed in 0.6.0, before the 0.9.0 format lock. Until the 0.8.X private alpha the only users are Heph and Claude (Heph, 2026-11-09), so it is a clean rename with no compatibility layer: apps read and write only the new names, and old test files are rebuilt rather than migrated.
 
 | Old | New |
 | --- | --- |
@@ -133,7 +133,7 @@ Version ranges use the npm style: `^1.2` means 1.2 or any later 1.x. An override
   "id": "beyond-the-pale",
   "version": "1.0.0",
   "system": ["e9", "mm"],
-  "requires": { "e9-core": "^1.0", "e9-companion": "^0.5" },
+  "requires": { "e9-core": "^1.0", "hexmarch-companion": "^0.5" },
   "recommends": { "e9-bestiary": "^1.0" },
   "overrides": ["e9-core/creature/goblin"]
 }
@@ -385,7 +385,7 @@ The **archive** (the campaign git repo, written only by the referee) stays as it
 
 ### One envelope
 
-Every request, approval, handout, snapshot notice and handshake travels as one small JSON message (working name `e9-mail/1`): who sent it, to whom, which campaign, a kind, a body, and an id. Adapters only move envelopes and never read the body, so a new service never touches game logic.
+Every request, approval, handout, snapshot notice and handshake travels as one small JSON message (working name `hexmarch-mail/1`): who sent it, to whom, which campaign, a kind, a body, and an id. Adapters only move envelopes and never read the body, so a new service never touches game logic.
 
 ### Adapters, mixed per campaign
 
@@ -416,7 +416,7 @@ A message small enough to fit in a link travels as one, so neither side needs a 
 
 ### Apps talk by links (Heph, 2026-11-09)
 
-The Companion, the Atlas and Scribe **do not rely on shared browser storage** to hand each other data. They send each other **messages, and a message is a link**: the Link adapter turned inward, with the same `e9-mail/1` envelope.
+The Companion, the Atlas and Scribe **do not rely on shared browser storage** to hand each other data. They send each other **messages, and a message is a link**: the Link adapter turned inward, with the same `hexmarch-mail/1` envelope.
 
 **Why.** In the first alpha walkthrough, Scribe and the Companion were installed from different browser profiles. Each kept its own storage, so the Companion never saw the campaign Scribe had made, and nothing said so. With shared storage, a second profile, a second browser, cleared site data or a new laptop all fail silently. A link either opens and delivers its data, or visibly doesn't.
 
@@ -509,7 +509,7 @@ For the **app and module site** itself, any static host works: Cloudflare Pages,
 
 ### Build order
 
-1. Write the job interfaces and the `e9-mail/1` envelope into WORKFLOWS.md, and add the Manual adapter (needed anyway for testing).
+1. Write the job interfaces and the `hexmarch-mail/1` envelope into WORKFLOWS.md, and add the Manual adapter (needed anyway for testing).
 2. Run the Discord browser read test.
 3. Build **one** real adapter: Discord if the test passes, Google if not.
 4. Add the others one at a time. The handler comes in when an adapter needs it.

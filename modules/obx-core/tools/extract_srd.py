@@ -173,7 +173,7 @@ def main(src: Path, out: Path):
     head = lambda fmt: {'format': fmt, 'id': 'obx', 'source': f'B/X SRD text, Markdown copy github.com/oldmanumby/ose.srd at {SOURCE_COMMIT}; Open Game Content under the OGL 1.0a',
                         'license': 'OGL-1.0a'}
     rules = dict(head('obx-rules/1'), name='OBX', abilities=ABILITIES, saves=[s for _, s in SAVES], classes=classes)
-    derive = dict(head('e9-derive/1'), tables={
+    derive = dict(head('hexmarch-derive/1'), tables={
         **{f'ability.{k}': v for k, v in abilities.items()},
         **{f'progression.{k}': v for k, v in prog.items()},
         'thiefSkills': thief_skills(read('2_Classes/7_Thief.md')),

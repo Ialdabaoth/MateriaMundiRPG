@@ -44,23 +44,23 @@ and names them in its manifest:
 
 A layout file is a fragment of plain HTML using a **whitelist** of elements, plus a few Companion elements. The Companion parses it on load and refuses anything off the list: no scripts, no event attributes, no links out, no images except the portrait slot. Modules come from other authors, so a layout can only arrange; it can't run code.
 
-**Plain elements allowed:** `div span p h1 h2 h3 h4 strong em b i small br hr ul ol li table thead tbody tr th td header footer section`. **Attributes allowed:** `class`, `data-print` and `e9-class` (below).
+**Plain elements allowed:** `div span p h1 h2 h3 h4 strong em b i small br hr ul ol li table thead tbody tr th td header footer section`. **Attributes allowed:** `class`, `data-print` and `hexmarch-class` (below).
 
 **Companion elements:**
 
 | Element | What it does |
 | --- | --- |
-| `<e9-value key="…">` | Shows a named value (section 4), e.g. `key="stats.name"` or `key="d.ac"`. Optional `format="signed"` shows +1 / −1; `empty="—"` is the text shown when the value is empty. |
-| `<e9-roll check="…" key="…" label="…" min="…">text</e9-roll>` | A value you tap to roll. `check` is one of the Companion's check kinds: `talent` and `save` take an id in `key`; `attack` takes its threshold; `damage` rolls the main-hand weapon; `dice` takes an expression; `ability` is reserved until it is defined. `label` names the roll in the log, `min` is the best possible target. The frame wires it to the dice tray and the roll log. On paper it prints as plain text. |
-| `<e9-action do="…" key="…" off="…">text</e9-action>` | A tap that opens one of the Companion's own editors: `do` is `hp`, `xp`, `armor`, `main`, `off`, `carry`, `prep`, `prepslot` or `equip`; `key` is passed to it; `off` names a value that disables it when set. On paper it prints as plain text. |
-| `<e9-each list="…" as="w">…</e9-each>` | Repeats its contents for each entry of a list, such as weapons, items, prepared magic or followers. Inside, `w.name` and the like are named values. Optional `max="6"` caps the count on a fixed surface; `min="3"` pads with blank entries (`{blank: true}`) for write-in rows. `more` is reserved. |
-| `<e9-if key="…">…</e9-if>` | Shows its contents only when the value is set and not zero, false or empty (for example a class with spells). `not` inverts it: `<e9-if key="…" not>`. |
-| `<e9-portrait>` | The one portrait slot. |
-| `<e9-page-ref ref="…">` | A rules page reference, linked to the wiki like `PageRef.svelte`. |
+| `<hexmarch-value key="…">` | Shows a named value (section 4), e.g. `key="stats.name"` or `key="d.ac"`. Optional `format="signed"` shows +1 / −1; `empty="—"` is the text shown when the value is empty. |
+| `<hexmarch-roll check="…" key="…" label="…" min="…">text</hexmarch-roll>` | A value you tap to roll. `check` is one of the Companion's check kinds: `talent` and `save` take an id in `key`; `attack` takes its threshold; `damage` rolls the main-hand weapon; `dice` takes an expression; `ability` is reserved until it is defined. `label` names the roll in the log, `min` is the best possible target. The frame wires it to the dice tray and the roll log. On paper it prints as plain text. |
+| `<hexmarch-action do="…" key="…" off="…">text</hexmarch-action>` | A tap that opens one of the Companion's own editors: `do` is `hp`, `xp`, `armor`, `main`, `off`, `carry`, `prep`, `prepslot` or `equip`; `key` is passed to it; `off` names a value that disables it when set. On paper it prints as plain text. |
+| `<hexmarch-each list="…" as="w">…</hexmarch-each>` | Repeats its contents for each entry of a list, such as weapons, items, prepared magic or followers. Inside, `w.name` and the like are named values. Optional `max="6"` caps the count on a fixed surface; `min="3"` pads with blank entries (`{blank: true}`) for write-in rows. `more` is reserved. |
+| `<hexmarch-if key="…">…</hexmarch-if>` | Shows its contents only when the value is set and not zero, false or empty (for example a class with spells). `not` inverts it: `<hexmarch-if key="…" not>`. |
+| `<hexmarch-portrait>` | The one portrait slot. |
+| `<hexmarch-page-ref ref="…">` | A rules page reference, linked to the wiki like `PageRef.svelte`. |
 
 **`data-print`** on any element: `only` means it appears only on paper or PDF, `never` means it appears only on screen.
 
-**`e9-class="cls:key"`** on any element adds the class `cls` while the value `key` is set.
+**`hexmarch-class="cls:key"`** on any element adds the class `cls` while the value `key` is set.
 
 **Frame values** the Companion supplies to every layout: `frame.live` (the sheet shows live state, such as current HP, rather than the printed record) and `frame.edit` (the card's editors are wired).
 
@@ -68,17 +68,17 @@ A layout file is a fragment of plain HTML using a **whitelist** of elements, plu
 
 ```html
 <div class="row">
-  <e9-portrait></e9-portrait>
+  <hexmarch-portrait></hexmarch-portrait>
   <div>
-    <h2><e9-value key="stats.name"></e9-value></h2>
-    <small><e9-value key="d.classLine"></e9-value></small>
+    <h2><hexmarch-value key="stats.name"></hexmarch-value></h2>
+    <small><hexmarch-value key="d.classLine"></hexmarch-value></small>
   </div>
 </div>
 <table class="saves">
-  <e9-each list="d.saves" as="s">
-    <tr><th><e9-value key="s.name"></e9-value></th>
-        <td><e9-roll check="save" key="s.id"><e9-value key="s.target"></e9-value></e9-roll></td></tr>
-  </e9-each>
+  <hexmarch-each list="d.saves" as="s">
+    <tr><th><hexmarch-value key="s.name"></hexmarch-value></th>
+        <td><hexmarch-roll check="save" key="s.id"><hexmarch-value key="s.target"></hexmarch-value></hexmarch-roll></td></tr>
+  </hexmarch-each>
 </table>
 <p data-print="never" class="hint">Tap a value to roll it.</p>
 ```
@@ -94,7 +94,7 @@ A layout can only show values that exist. They come from two places.
 
 ```json
 {
-  "format": "e9-derive/1",
+  "format": "hexmarch-derive/1",
   "tables": {
     "abilityMod": { "by": "range", "rows": [ { "min": 3, "max": 3, "value": "…" } ] },
     "saves":      { "by": ["class", "level"], "rows": [ "…" ] }
@@ -125,7 +125,7 @@ E9 and MM keep their current engine (`rules.ts`) at first, and the frame exposes
 When the Companion or Scribe opens a module with a layout, it checks:
 
 - that every element and attribute is on the whitelist
-- that every `key`, `list` and `check` resolves for that root and for every sheet, including keys inside an `e9-if`. So a root defines every value it names for every sheet: e9-core's `d.magic` is always an object, with empty strings when there is no magic.
+- that every `key`, `list` and `check` resolves for that root and for every sheet, including keys inside an `hexmarch-if`. So a root defines every value it names for every sheet: e9-core's `d.magic` is always an object, with empty strings when there is no magic.
 - that `derive.json` has no cycles or missing rows
 - that the content fits each fixed surface at default size
 
