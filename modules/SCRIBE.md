@@ -1,8 +1,8 @@
-# E9 Scribe: campaign view and update checker (draft)
+# Hexmarch Scribe: campaign view and update checker (draft)
 
-E9 Scribe is the module editor, the third app beside the E9 Atlas and the E9 Companion, at `/scribe/` from day one. It is part of the MVP. A campaign is a private module (PROPOSALS.md P3), so a campaign is made in Scribe, through a simplified **campaign view** of the full creator suite. This file covers that view, how a referee's edits to someone else's module are stored, and the **update checker** that runs whenever a module is opened.
+Hexmarch Scribe ("⬢ Scribe") is the module editor, the third app beside the Hexmarch Atlas and the Hexmarch Companion, at `/scribe/` from day one. It is part of the MVP. A campaign is a private module (PROPOSALS.md P3), so a campaign is made in Scribe, through a simplified **campaign view** of the full creator suite. This file covers that view, how a referee's edits to someone else's module are stored, and the **update checker** that runs whenever a module is opened.
 
-Status: agreed in outline with Heph on 2026-11-08. Steps 1 to 3 and 7 are built (Scribe 0.1.2 and 0.1.3). Steps 8 and 9 and the two files in section 5 follow WORKFLOWS.md "Invitations" (agreed 2026-11-09); their formats are proposed here. Builds on WORKFLOWS.md (Dependencies, Campaign stack, Trust, Invitations), PROPOSALS.md P1 to P3, MODULE_FORMAT.md and STATE_FORMAT.md.
+Status: agreed in outline with Heph on 2026-11-08. Built in Scribe 0.1.x: steps 1 to 3, 7, 8 and 9, the two files in section 5 (which follow WORKFLOWS.md "Invitations", agreed 2026-11-09), and the hand-over to the other apps by links. The alpha walkthrough worked end to end on 2026-11-09 and Scribe moved to 0.6.0 with the other apps. Still to build, in 0.6.x: steps 4 to 6 and the update checker (section 4). The format ids here (`e9-…`) move to `hexmarch-…` in 0.6.x (WORKFLOWS.md "Protocol names"). Builds on WORKFLOWS.md (Dependencies, Campaign stack, Trust, Invitations), PROPOSALS.md P1 to P3, MODULE_FORMAT.md and STATE_FORMAT.md.
 
 ## 1. From modules to a campaign
 
@@ -16,7 +16,7 @@ The campaign view is a short sequence of steps. Each step writes part of the cam
 | 4. Conflicts and slicing | Settle each id that two modules change without a declared override; leave out any id, group or system half. | `overrides` with the referee's note and optional spoiler flag; the exclusion list |
 | 5. Own content | House rules, plus the referee's own sites, NPCs, handouts and tables. Edits to another module's content are stored as patches (section 3). | The campaign module's own content and `patches` |
 | 6. Parties and secrets | One party, or several (West Marches). Seed each character's private reveals from their background. | `party:` and `character:` audiences in `private` (P3 section 4) |
-| 7. Ready | Save the campaign. Scribe makes the creator's **Referee invitation** to it (below), then "Open in Atlas" and "Open in Companion". | The campaign on this device and one Referee invitation for the creator. The apps load the campaign like any module (P3 "One loader"). |
+| 7. Ready | Save the campaign. Scribe makes the creator's **Referee invitation** to it (below), then "Open in Atlas" and "Open in Companion". | The campaign on this device and one Referee invitation for the creator. "Open in Companion" hands the campaign over in a link (WORKFLOWS.md "Apps talk by links"). The apps load the campaign like any module (P3 "One loader"). |
 | 8. Services | Say where the campaign lives for players: a **read URL** (where the player snapshot is published) and a **post URL** (where players send requests). The default will be the referee's own Apps Script (WORKFLOWS.md "Invitations", step 4); until it exists, any static host the referee can upload to (section 5). | `services` in Scribe's record of the campaign |
 | 9. Publish | Publish the first player snapshot and the campaign pointer. **Invite stays disabled in the Companion until this is done**, because until then the campaign exists only on the referee's device. | `snapshot.json` and `campaign.json` (section 5); `published` in Scribe's record of the campaign |
 
@@ -162,7 +162,7 @@ A player's Companion never sees the referee's device. It sees two small files, b
 
 **Services for now.** Until the Apps Script adapter is built, the referee gives Scribe a **folder URL** on any static host they can upload to (GitHub Pages, their own site), and optionally a post URL. Publish then hands them `campaign.json` and `snapshot.json` to upload into that folder. The read URL is `<folder>snapshot.json` and the pointer is `<folder>campaign.json`. This is the Manual adapter of PROPOSALS.md P1, and it costs nothing (WORKFLOWS.md: cheap and free options for now). A campaign published this way can be read by anyone who has the URL, so keep secrets out of it until `private` is encrypted.
 
-**What Scribe records.** Scribe's record of the campaign on the device (`scribe-campaign:<id>`) gains `services: {folder, read, post, pointer}` and, after Publish, `published: {revision, at}`. The Companion enables Invite for a campaign whose record has `published`, and its invite links name the pointer.
+**What Scribe records.** Scribe's record of the campaign on the device (`scribe-campaign:<id>`) gains `services: {folder, read, post, pointer}` and, after Publish, `published: {revision, at}`. The Companion enables Invite for a campaign whose record has `published`, and its invite links name the pointer. The record travels to the Companion in a `campaign` link, and the Companion sends play back to Scribe in an `update` link (state, each party member's knowledge, receipts), which Publish uses (WORKFLOWS.md "Apps talk by links").
 
 ## 6. Open questions
 
