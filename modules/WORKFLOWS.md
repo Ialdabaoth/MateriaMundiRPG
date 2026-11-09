@@ -14,7 +14,7 @@ A module travels as one link. The referee stacks modules into a campaign that pi
 | Atlas and Companion ingest from one link or QR code | MVP |
 | Campaign lockfile and dependency check | MVP |
 | Updates: one "Update?" card with the release notes | MVP |
-| Invites | MVP |
+| Invites: one seat per player, a join code becomes the invitation ([Invitations](#invitations)) | MVP |
 | Porting characters: a plain "made under different rules" warning | MVP |
 | Conflict review, per-id update review, full porting check, bundles and signatures | After the MVP, once a second author's module can join a campaign (Heph 2026-11-08) |
 | E9 Scribe, the creator app: its campaign view (pick a root, stitch modules, settle conflicts, house rules) on a shared editing engine | MVP (Heph 2026-11-08) |
@@ -496,6 +496,46 @@ Because a campaign is a module, a referee can later publish it (with Gutenberg, 
 3. When a campaign is published, what happens to its private knowledge: dropped, or kept as an "everything revealed" chronicle?
 4. Does the campaign module get a `kind` of its own (`"kind": "campaign"`), so the apps know to look for `campaign/` state and per-creature knowledge?
 
+## Invitations
+
+Agreed with Heph 2026-11-09. This is the referee-to-player handoff from [Three workflows](#three-workflows), on top of [Services and adapters](#services-and-adapters) and [Campaigns are private modules](#campaigns-are-private-modules).
+
+### Setup, before any invite (referee, in Scribe's campaign view)
+
+1. **New campaign:** a name, one root (`e9-core` or `mm-core`), then modules added by link. Scribe checks `requires` and writes the lockfile.
+2. **Settle:** the porting warning, house rules, exclusions.
+3. **Starting state:** the start point (a module's `starts` entry), the date on the clock, where the party stands.
+4. **Services:** the referee picks adapters. The default is the referee's own Apps Script, set up once, which gives a **read URL** (the published snapshot) and a **post URL** (player requests).
+5. **Publish:** writes the first player snapshot and the campaign pointer. **Invite stays disabled until the campaign is published**, because until then it exists only on the referee's device.
+
+Players can build characters before any of this, from the module link alone, with the tools that already exist. A character simply waits on their device until a seat is offered.
+
+### A seat becomes an invitation
+
+- The referee makes **one seat per player**, with a label of their own ("Dana"). A seat can carry limits (starting level, allowed classes) or a pregen.
+- Each seat has a **join code**. The invite link (or its QR code) carries the campaign pointer (read URL, post URL, campaign id) and that code.
+- **A join code becomes the invitation.** Before it is redeemed, the campaign switcher shows it as "Kells 1422 · (Roll a character)". Once the referee approves the character it reads "Kells 1422 · Playing Holly". There is nothing separate to expire: a redeemed code *is* the invitation, and an unused one can be revoked from the referee's seat list.
+- **One invitation is one character.** A player with two characters holds two invitations.
+- Per-seat links mean the referee knows who each request comes from, and a forwarded link can't let a stranger in.
+
+### Joining (player, Companion only, no account)
+
+1. Opening the link adds the seat to the campaign switcher. The device makes its key pair, and the player sees a card listing the root, modules and house rules.
+2. The player brings an existing character (with the porting warning) or rolls one under the campaign's rules and the seat's limits, then sends the join request: a signed envelope with the device key, the join code and the character.
+3. The player's app shows **Sent → Received** (receipts in the snapshot).
+4. The referee's Inbox shows the request. **Approve** puts it in the batch, and Update campaign publishes it. **Send back** returns it with a note, and the seat stays open.
+5. **A second device** (phone plus laptop): the player's first device shows a QR code that adds the second device's key to the same invitation. No new approval from the referee.
+
+### Who writes what
+
+- The **player** owns their character's stats, gear and flavour. Changes go in as requests for the referee's approval.
+- The **referee** alone writes knowledge entries and the campaign state.
+- A player who leaves or is removed keeps their invitation **read-only**, shown as "(left the campaign)".
+
+### Still open
+
+1. Can the referee reissue a seat's code (a lost phone with no second device), and does that drop the old device key?
+
 ## Decisions and build order
 
 **Decided by Heph (2026-11-05)**
@@ -521,6 +561,14 @@ Because a campaign is a module, a referee can later publish it (with Gutenberg, 
 - Knowledge is recorded per creature ("what does this one creature know?"), for NPCs and monsters as well as characters, and **stored in the creature's own record** (sheet or creature record) as dated entries, not in the map or the campaign state. Common knowledge stays in the state's `revealed` set. The Atlas gets a character mode showing one creature's knowledge. Compositing several creatures' views comes later.
 - The Google adapter uses the referee's own **Apps Script** (no Google Cloud OAuth client needed).
 - For now, choose cheap and free options wherever possible: free tiers, the referee's own accounts, static hosting, no paid services.
+
+**Decided by Heph (2026-11-09), invitations**
+
+- Invite is disabled until the campaign is published; the invite link carries the read URL, post URL and campaign id.
+- One seat per player; a join code becomes the invitation, so expiry needs no rule of its own. "(Roll a character)" is how an unredeemed code looks.
+- One invitation is one character.
+- Players may build characters before the campaign is published, with the existing tools.
+- The player owns their character's stats, gear and flavour (changes by request); the referee alone writes knowledge and state. A removed player's invitation stays read-only as "(left the campaign)".
 
 **Decided by Heph (2026-11-07), campaign play**
 
