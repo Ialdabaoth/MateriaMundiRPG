@@ -384,7 +384,7 @@ A message small enough to fit in a link travels as one, so neither side needs a 
 
 - **The data rides after `#`.** The app compresses the envelope and puts it in the link's fragment (`<app>/#m=<data>`). Browsers never send the fragment to the server, so the message goes straight from the link into the app on the device that opens it.
 - **Shared, not just emailed.** The app's **Share** button opens the device's share sheet, so the link can go by email, SMS, a chat app or Discord, whatever the table uses. On a laptop it copies the link.
-- **The 4096-byte rule.** A message whose link fits in **4096 bytes** may travel as a link. Anything larger needs a **publicly addressable URL** (the hosted snapshot, or a file on any static host), and the link then carries only that URL.
+- **The 4096-byte rule.** A message whose link fits in **4096 bytes** may travel as a link. Anything larger needs a **publicly addressable URL** (the hosted snapshot, or a file on any static host). The link is then still a small JSON envelope, whose body is just that URL (Heph): the app opens the link, sees a URL, and fetches the rest from there.
 - **What fits:** join requests (a character without its portrait), sent-back notes, receipts, and **per-player updates**: the shared state plus that one player's own knowledge. Each player gets only their own link, which keeps their secrets out of everyone else's hands even before encryption.
 - **What doesn't:** portraits, maps, a long history, a whole snapshot. These stay at the hosted URL.
 - **Limits:** the sender can't see that a link was opened until the other side sends something back. On Android a tapped link may open the browser rather than the installed app; both share the same storage, so the message still lands.
