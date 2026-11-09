@@ -1,6 +1,6 @@
 # E9 Encounter map format (draft)
 
-How a module stores its **Encounter maps** (the 5-ft-square battle maps below the Furlong level of the E9 Atlas), how points of interest and scenes point into them, and how they can grow into a virtual tabletop later.
+How a module stores its **Encounter maps** (the 5-ft-square battle maps below the Furlong level of the Hexmarch Atlas), how points of interest and scenes point into them, and how they can grow into a virtual tabletop later.
 Designed with Heph on 2026-11-05. Status: **draft**. Map files, the drawing tool and the checker exist (section 12); the Atlas and the module viewer open maps from points of interest (Atlas 0.2.12). Atlas 0.4.x is VTT and referee-tool integration (Heph 2026-11-06): 0.4.0 fills in walls, doors and lights and tidies the format for Universal VTT import, export and links into VTTs (sections 7, 11 and 13). Sits under ATLAS_FORMAT.md (the hex levels) and beside CREATURES_FORMAT.md (who is there) and EVENTS_FORMAT.md (what happens).
 
 ## 1. The idea in one paragraph
@@ -265,7 +265,7 @@ Heph: "Each PoI is an Entrance into an Encounter Map. One encounter map might co
 
 ### 14.4 The Foundry adapter (Atlas 0.4.6)
 
-`vtt/foundry/hexmarch-bridge/` is a Foundry VTT module (v12, v13; README there). The GM presses *Open the E9 Atlas* in Foundry's token controls; the Atlas opens with `?vtt=foundry&pair=<code>`, shows "Linked to Foundry · code …", and every encounter map gains **Send to Foundry** (`tools/vtt_bridge.html`): pick the scenes whose creatures to place and the entrance the party arrives at, then the Atlas sends `scene.open` (the `.uvtt`), `tokens.spawn`, `party.place` (`actors: "players"`, each player's assigned character) and `scene.activate`.
+`vtt/foundry/hexmarch-bridge/` is a Foundry VTT module (v12, v13; README there). The GM presses *Open the Hexmarch Atlas* in Foundry's token controls; the Atlas opens with `?vtt=foundry&pair=<code>`, shows "Linked to Foundry · code …", and every encounter map gains **Send to Foundry** (`tools/vtt_bridge.html`): pick the scenes whose creatures to place and the entrance the party arrives at, then the Atlas sends `scene.open` (the `.uvtt`), `tokens.spawn`, `party.place` (`actors: "players"`, each player's assigned character) and `scene.activate`.
 
 - **Counts.** The Atlas rolls each `who` line's dice (`3`, `d6`, `2d6`, `d6+1`, `d6÷2`) and its `chance` (`1-3 on d6`); a troupe word counts as 1 until the bestiary is wired in.
 - **Where.** A `who` line's `spawn`, else the scene's `map.spawn`, else its `map.area`, placed with 14.1; all tokens of one send avoid each other and the party.

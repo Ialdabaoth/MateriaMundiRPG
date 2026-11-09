@@ -1,6 +1,6 @@
 # E9 Events and Procedures format (draft)
 
-How a module says *what can happen* on its maps, and how each ruleset says *how it is resolved*, so the E9 Companion and E9 Atlas can run a hexcrawl at the table.
+How a module says *what can happen* on its maps, and how each ruleset says *how it is resolved*, so the Hexmarch Companion and Hexmarch Atlas can run a hexcrawl at the table.
 Designed with Heph on 2026-11-05. Status: **draft, nothing built yet**. Tables here extend the table format in MODULE_FORMAT.md section 6.
 
 ## 1. The idea in one paragraph

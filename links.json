@@ -1,5 +1,5 @@
 {
-  "_comment": "Links shared by the E9 apps (built in the apps repo, which copies this file in) and this repo's module build. \"apps\" is where the E9 Companion and E9 Atlas live: the module build fetches its tools from apps.repo, and the old app addresses here forward to apps.url. An empty value hides that link.",
+  "_comment": "Links shared by the Hexmarch apps (built in the apps repo, which copies this file in) and this repo's module build. \"apps\" is where the Hexmarch Companion and Hexmarch Atlas live: the module build fetches its tools from apps.repo, and the old app addresses here forward to apps.url. An empty value hides that link.",
   "patreon": "https://www.patreon.com/cw/BakagaijinProductions/membership",
   "apps": {
     "repo": "Ialdabaoth/Hexmarch",

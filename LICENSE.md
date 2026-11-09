@@ -6,9 +6,9 @@ Suggested credit: "E9 / Materia Mundi by Heph (Bakagaijin Productions), CC BY 4.
 
 | Part | Where | Licence |
 | --- | --- | --- |
-| E9 Companion app code | `companion-app/` (see [its LICENSE.md](companion-app/LICENSE.md) for the data files it carries) | CC BY 4.0 |
-| E9 Atlas app and map tools | `modules/tools/` ([LICENSE.md](modules/tools/LICENSE.md)) | CC BY 4.0 |
-| E9 Bridge for Foundry VTT | `vtt/foundry/hexmarch-bridge/` | CC BY 4.0 |
+| Hexmarch Companion app code | `companion-app/` (see [its LICENSE.md](companion-app/LICENSE.md) for the data files it carries) | CC BY 4.0 |
+| Hexmarch Atlas app and map tools | `modules/tools/` ([LICENSE.md](modules/tools/LICENSE.md)) | CC BY 4.0 |
+| Hexmarch Bridge for Foundry VTT | `vtt/foundry/hexmarch-bridge/` | CC BY 4.0 |
 | Build workflow and repo scripts | `.github/`, `hexmarch.json`, `links.json` | CC BY 4.0 |
 | Format specs | `modules/*.md`, `companion-app/*_FORMAT.md` | CC BY 4.0, so anyone can implement them |
 | Rules data written for the Companion, including the Materia Mundi rulesets, equipment, magic and bestiary JSON | `companion-app/src/` ([LICENSE.md](companion-app/LICENSE.md)) | CC BY 4.0, except the third-party parts listed there |

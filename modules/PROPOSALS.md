@@ -60,7 +60,7 @@ The licence already allows it: everything in the suite is CC BY 4.0 (see the rep
 
 ### What already works
 
-- **The apps are static files.** The E9 Companion, Atlas and Scribe are built in the apps repo (named in `links.json` → `apps`, currently Hexmarch) and served as plain files. Any web server (Caddy, nginx, Apache) can host them.
+- **The apps are static files.** The Hexmarch Companion, Atlas and Scribe are built in the apps repo (named in `links.json` → `apps`, currently Hexmarch) and served as plain files. Any web server (Caddy, nginx, Apache) can host them.
 - **Modules are static files too**, built from this repo with the module build. Any static host works.
 - **Every device keeps its own data** and works offline ("Services and adapters" → Resilience).
 - **The campaign archive is git**, which any git server can hold.

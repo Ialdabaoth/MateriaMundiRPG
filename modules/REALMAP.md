@@ -1,6 +1,6 @@
 # Making a campaign map from real-world data
 
-How to start a new mytho-historical campaign module's E9 Atlas map (ATLAS_FORMAT.md) from real land cover and elevation, pushed back to the module's period. This is the first step of every new campaign module in the E9 development arc. The tools are plain Python and the result is ordinary PNGs you can repaint.
+How to start a new mytho-historical campaign module's Hexmarch Atlas map (ATLAS_FORMAT.md) from real land cover and elevation, pushed back to the module's period. This is the first step of every new campaign module in the E9 development arc. The tools are plain Python and the result is ordinary PNGs you can repaint.
 
 ## What you need
 
@@ -36,7 +36,7 @@ KEEP_WORK=1 ... (same)                                                 # keep /t
 python3 modules/tools/atlas_convert.py modules/<id>/module.json /tmp/out/_work /tmp/out/atlas --real
 ```
 
-`/tmp/out/atlas` then holds `map.json` and `terrain/<march>.png`. To look at it in the E9 Atlas, build into a site layout (`build.py modules/<id> /tmp/site/modules/<id>`, `cp hexmarch.json /tmp/site/`, `python3 -I modules/tools/atlas_app.py /tmp/site`) and open `/atlas/` through any local web server, for example `python3 -m http.server` in `/tmp/site`.
+`/tmp/out/atlas` then holds `map.json` and `terrain/<march>.png`. To look at it in the Hexmarch Atlas, build into a site layout (`build.py modules/<id> /tmp/site/modules/<id>`, `cp hexmarch.json /tmp/site/`, `python3 -I modules/tools/atlas_app.py /tmp/site`) and open `/atlas/` through any local web server, for example `python3 -m http.server` in `/tmp/site`.
 
 ## The period rules (realmap.py)
 
