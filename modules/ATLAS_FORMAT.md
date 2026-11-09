@@ -58,6 +58,42 @@ Those are 2112, 528, 88, 11 and 1 bottom hexes across. The default ladder is the
 
 - **Print pages follow the module's ladder (Heph 2026-11-07).** The atlas PDF is cut by the module's own levels, not the default ones. For the 24 / 6 / 1 mile / 660 ft / 60 ft setup that means pages such as one 6-mile hex showing its 1-mile hexes.
 
+## Fantasy worlds: one painted level (Atlas 0.5.14)
+
+The first working form of the ladder above, built for Mystara (Heph 2026-11-08). It is a **flat** world: one plane, no projection, no real terrain behind it. Only one level is painted, and the Atlas works out the rest.
+
+**The module folder** holds `module.json` and one picture:
+
+- `scales`: `unit_ft`, `mile_ft` and **five** levels, coarse to fine, each with an `id`, a `name` ("8 mile") and a `hex` size ("8 mi", "660 ft"). The last level is the bottom hex, exactly `unit_ft`. `paint` names the level that is painted; for now it must be the second one. Mystara: 64 mi, 8 mi, 1 mi, 660 ft and 60 ft on a 5280-ft mile, painted at 8 mi (5632, 704, 88, 11 and 1 bottom hexes across).
+- `atlas.projection`: `"flat"`. `atlas.paint` names the picture. `atlas.terrain` lists the terrain types: `id`, `name`, `colors` (every colour in the picture that means this terrain), `tile`, `icon` and `travel` (time multiplier, `null` for no travel on foot). `atlas.travel` may set the pace and road multipliers as for real-terrain modules.
+- `places`: `id`, `name`, `kind`, `icon`, `rank`, and `hex` as `"<col>.<row>"` of the painted level. An optional `at: [dC, dR]` moves the place off the hex centre by that many bottom hexes.
+
+**The picture** has one pixel per painted hex. Pixel (x, y) is column x, row y, with odd columns half a hex lower, the same layout as the lattice. Black (`#000000`) is off the map. Every other colour must be listed under exactly one terrain; the tool stops on any it can't place.
+
+**Levels the Atlas works out.** The level above the painted one takes the most common terrain among the painted hexes it owns (nearest centre, as everywhere). Each finer hex takes the terrain of the painted hex under its centre, moved by seeded noise of up to about half a painted hex, so borders wander and coasts look natural. The noise is keyed to the lattice, so a hex looks the same every time and on every device. Nothing finer than the painted level is stored. Hand-painted detail at finer levels is for later.
+
+**Addresses** are plain numbers, because a painted hex can hold hundreds of bottom hexes across and the two-character labels below stop at 329:
+
+| Address | Opens |
+|---|---|
+| `#world:<col>.<row>` | a painted hex, by the painter's own grid (0-based) |
+| `#world:<col>.<row>:<C>.<R>` | a bottom hex, by its lattice column and row (the painted hex is for reading) |
+| `#field:<col>.<row>:<C>.<R>` | the hex one level below the painted one that holds that bottom hex |
+| `#march:<i>.<j>` | a hex of the level above |
+
+`#site:<id>` works as for any module. The campaign state file and character knowledge take these addresses as they are (`world:87.102:61248.72160`).
+
+**Map files.** `atlas_flat.py` (apps repo, `modules/tools/`) builds the folder into one self-contained file, `<id>.e9atlas.json`:
+
+```json
+{ "format": "e9-atlas-file", "version": 1,
+  "module": { "id", "title", "version", "credits", ... },
+  "map": { "flat": true, "scales": { "levels": [{ "id", "name", "n" }] }, "terrain", "paint": { "w", "h", "data": "<base64, one byte per hex>" }, "pois", ... },
+  "tiles": { "<name>": "data:image/png;base64,..." } }
+```
+
+The Atlas opens it with **Modules › Open a map file…**. It is kept in that browser only (IndexedDB), listed as "on this device" with a Remove button, and never uploaded. That is how private modules (Mystara, ACKS) are played without a public repo. A public flat module can be built into its module folder the same way later.
+
 ## The lattice
 
 The whole region shares one grid of 100-ft hexes, with flat tops and **odd columns shifted down half a hex**. A hex's global address is `(C, R)`, and its centre in feet is
