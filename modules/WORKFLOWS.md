@@ -403,6 +403,12 @@ The Companion, the Atlas and Scribe **do not rely on shared browser storage** to
 - **Each app owns its own data.** Scribe owns the campaign's definition (modules, lock, house rules, starts). The Companion owns characters, requests and answers. The Atlas owns what it draws from: the party's position and fog. Each sends the others the changes they need and keeps its own copy in its own storage.
 - **Storage is a cache.** An app's browser storage is a fast local copy, never the only one.
 
+**What goes where (Heph, 2026-11-09).**
+
+- **Big files, at a publicly addressable URL:** core rules and other modules (with their maps, tiles and bestiaries); campaign logs and history; images (portraits, handouts); and a **full snapshot** for a device that starts from nothing (a new player, a rescued seat, a new referee laptop).
+- **Everything else travels as a series of update links**, each a small JSON packet: every change, request, answer, reveal and knowledge entry. A character without its portrait is small; its portrait goes by URL.
+- **Updates are numbered.** Each update carries a running number per campaign. A device that receives update 43 without having seen 42 knows it missed one: it reads the full snapshot from the URL and carries on from there. A lost or out-of-order link costs one download, never a broken campaign.
+
 **The referee's durable copy is the campaign folder.** A campaign is a module, so its home is a folder of small files with a manifest that links to them:
 
 ```
