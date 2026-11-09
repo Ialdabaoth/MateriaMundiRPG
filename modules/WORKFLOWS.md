@@ -71,7 +71,7 @@ Every piece of content has a permanent id, and each module's version number says
 | Minor | 1.0.1 to 1.1.0 | New content added. Existing ids keep their meaning. |
 | Major | 1.1.0 to 2.0.0 | An id removed or renamed, a stat or rule changed in a way that changes existing characters or encounters. |
 
-Each module, each app (E9 Companion, E9 Atlas) and the tools keep their own version (Heph 2026-11-06). A change to the tools or an app alone never bumps a module's version, and a module's content change never bumps an app. Each module keeps a `CHANGELOG.md` next to its `module.json`.
+Each module, each app (Hexmarch Companion, Hexmarch Atlas, Hexmarch Scribe) and the tools keep their own version (Heph 2026-11-06). A change to the tools or an app alone never bumps a module's version, and a module's content change never bumps an app. Each module keeps a `CHANGELOG.md` next to its `module.json`.
 
 Versions before 1.0.0 make no promises, as in semver.
 
@@ -90,6 +90,29 @@ Versions before 1.0.0 make no promises, as in semver.
 The 0.8 and 0.9 versions are plain semver minors (no `-alpha` or `-beta` suffix), so npm, version ranges and sorting work as usual. The Compendium's revised edition (January 2027 at the earliest) would be a major version of `mm-core`.
 
 **Release notes.** Every release lists its added, changed and removed ids. The apps use this list to show the referee what an update does.
+
+### Protocol names (Heph, 2026-11-09)
+
+The apps run any OSR hexcrawl core rules, so the names machines read say **hexmarch**, not E9 or MM. That covers format ids, the discovery file, messages between apps, browser storage keys, file extensions, app ids and sheet layout tags. Ids keep the name even if the apps are renamed later. Content stays as it is: module ids `e9-core` and `mm-core`, their content ids (`mm:longsword`, `e9-core/spell/sleep`), and a module's own data files.
+
+The rename lands in 0.6.X, before the 0.9.0 format lock. Until the 0.8.X private alpha the only users are Heph and Claude (Heph, 2026-11-09), so it is a clean rename with no compatibility layer: apps read and write only the new names, and old test files are rebuilt rather than migrated.
+
+| Old | New |
+| --- | --- |
+| `e9-campaign-pointer/1`, `e9-snapshot/1`, `e9-campaign-state/1`, `e9-mail/1`, `e9-lock/1`, `e9-scribe-campaign/1` | `hexmarch-campaign-pointer/1`, `hexmarch-snapshot/1`, `hexmarch-campaign-state/1`, `hexmarch-mail/1`, `hexmarch-lock/1`, `hexmarch-scribe-campaign/1` |
+| `e9-rules/1`, `e9-derive/1`, `e9-procedures/1`, `e9-bestiary/1`, `e9-encounter-map/1` | `hexmarch-rules/1`, `hexmarch-derive/1`, `hexmarch-procedures/1`, `hexmarch-bestiary/1`, `hexmarch-encounter-map/1` |
+| `e9-atlas/1`, `e9-atlas-cache/1`, `e9-vtt/1`, `e9-vtt-links/1` | `hexmarch-atlas/1`, `hexmarch-atlas-cache/1`, `hexmarch-vtt/1`, `hexmarch-vtt-links/1` |
+| `mm-module/1`, `mm-module/2`, `mm-repo/1` | `hexmarch-module/1`, `hexmarch-module/2`, `hexmarch-repo/1` (version numbers carry over) |
+| `mm-campaign/1` | dropped |
+| `mm.json` (a repo's discovery file) | `hexmarch.json` |
+| messages `e9-atlas`, `e9-bridge` | `hexmarch-atlas`, `hexmarch-bridge` |
+| storage keys `e9-*`, `mm-lang` | `hexmarch-*`, `hexmarch-lang` |
+| `<id>.e9atlas.json` | `<id>.hexmarch-atlas.json` |
+| app ids `e9-companion`, `e9-atlas` | `hexmarch-companion`, `hexmarch-atlas`, `hexmarch-scribe` |
+| sheet tags `<e9-value>`, `<e9-each>`, `<e9-if>`, `e9-class`, `e9-action`, `e9-roll` | `<hexmarch-value>`, `<hexmarch-each>`, `<hexmarch-if>`, `hexmarch-class`, `hexmarch-action`, `hexmarch-roll` |
+| `web+e9:` (planned link scheme) | `web+hexmarch:` |
+
+The full scan is in the project files (strategy/protocol-names-scan.md).
 
 ## Dependencies
 
