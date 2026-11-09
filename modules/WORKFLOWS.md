@@ -390,6 +390,36 @@ A message small enough to fit in a link travels as one, so neither side needs a 
 - **Limits:** the sender can't see that a link was opened until the other side sends something back. On Android a tapped link may open the browser rather than the installed app; both share the same storage, so the message still lands.
 - **Cost:** none. No accounts, no server. Built in 0.6.X ("real tools that cost nothing").
 
+### Apps talk by links (Heph, 2026-11-09)
+
+The Companion, the Atlas and Scribe **do not rely on shared browser storage** to hand each other data. They send each other **messages, and a message is a link**: the Link adapter turned inward, with the same `e9-mail/1` envelope.
+
+**Why.** In the first alpha walkthrough, Scribe and the Companion were installed from different browser profiles. Each kept its own storage, so the Companion never saw the campaign Scribe had made, and nothing said so. With shared storage, a second profile, a second browser, cleared site data or a new laptop all fail silently. A link either opens and delivers its data, or visibly doesn't.
+
+- **The button is a link.** "Open in the Companion", "Update", "Show on the map" and the like are links to the other app (`<site>/scribe/#m=<data>`, `<site>/#m=<data>`, `<site>/atlas/#m=<data>`). On one machine the button opens the other app. Copied to another device, the same link does the same thing.
+- **The data rides after `#`**, compressed, so it never reaches the server or its logs.
+- **Send changes, not everything.** "Approved Meadowblossom" carries one character and one receipt. Between apps a link may be far longer than the 4096 bytes allowed for links sent through email or chat, because browsers accept links of about 2 MB. Still, anything that doesn't fit goes by publicly addressable URL or by file, and the link then carries only that URL.
+- **Safe to open twice.** Every message has an id; the receiving app ignores one it has already applied.
+- **Each app owns its own data.** Scribe owns the campaign's definition (modules, lock, house rules, starts). The Companion owns characters, requests and answers. The Atlas owns what it draws from: the party's position and fog. Each sends the others the changes they need and keeps its own copy in its own storage.
+- **Storage is a cache.** An app's browser storage is a fast local copy, never the only one.
+
+**The referee's durable copy is the campaign folder.** A campaign is a module, so its home is a folder of small files with a manifest that links to them:
+
+```
+kells-1422/
+  module.json            manifest: links to everything below
+  campaign.lock.json     the pinned modules
+  campaign/state.json    clock, party, common knowledge
+  campaign/characters/   one file per character or creature, with its knowledge
+  campaign/mail/         requests and answers
+  campaign.json          public pointer    } what players read
+  snapshot.json          public snapshot   }
+```
+
+A zip of the folder is how it travels in one piece, never its working form. On a laptop with Chrome or Edge, the apps can open the folder itself and read and write it. Elsewhere it lives in Drive or git, written through the referee's own sign-in. Players never need it: their devices hold only their own character and the snapshot, which the referee can always rebuild ([Rescuing a seat](#rescuing-a-seat-heph-2026-11-09)).
+
+**Still open:** where the referee's folder lives by default (on disk, Drive or git), and how often the apps remind the referee to save to it.
+
 ### Our handler
 
 A free Cloudflare Worker, owned by Heph, that does only what a browser can't:
@@ -621,6 +651,10 @@ The referee can rescue any seat, for any reason: a lost or broken phone, a wiped
 - Knowledge is recorded per creature ("what does this one creature know?"), for NPCs and monsters as well as characters, and **stored in the creature's own record** (sheet or creature record) as dated entries, not in the map or the campaign state. Common knowledge stays in the state's `revealed` set. The Atlas gets a character mode showing one creature's knowledge. Compositing several creatures' views comes later.
 - The Google adapter uses the referee's own **Apps Script** (no Google Cloud OAuth client needed).
 - For now, choose cheap and free options wherever possible: free tiers, the referee's own accounts, static hosting, no paid services.
+
+**Decided by Heph (2026-11-09), apps talk by links**
+
+- The apps hand each other data by links (`#m=` envelopes), not through shared browser storage; storage is only a cache. A campaign's durable home is a folder of small files, not one file ([Apps talk by links](#apps-talk-by-links-heph-2026-11-09)).
 
 **Decided by Heph (2026-11-09), the Link adapter**
 
