@@ -186,6 +186,38 @@ Players need no GitHub account.
 - **Request states:** Sent → Approved (waiting in the batch) → Live, or Sent back with a note. Approvals collect in a batch; **Update campaign** commits the batch as one commit with a readable message. Closing a session is one more Update campaign plus the session tag.
 - A small relay (Cloudflare) is added later only for players without Google.
 
+### Invitations, modes and who writes what
+
+Agreed with Heph, 2026-11-09. The Companion has two display modes, chosen by the invitation you pick in its campaign switcher.
+
+- **Invitations.** There are two kinds: **Referee** and **Player**. A Player invitation plays one character. One person may hold several invitations, and the switcher lists each one, so the same campaign can appear more than once. They are kept on the device under `invitations` (the Companion's `src/lib/invitations.ts`, in the apps repo).
+- **Modes.** Referee mode shows everything: every map, every creature and every party. Player mode shows:
+  - your character and its followers
+  - your party
+  - the NPCs your character has met or heard of
+  - the state file, read-only
+  - the Atlas locked to what your character knows
+
+  Met and heard of work like visited and rumoured hexes: a knowledge entry with `creature`, and `"rumour": true` while it is only hearsay.
+- **Labels.** A new Player invitation reads "Kells 1422 · (Roll a character)" until the player picks or makes one, then "Kells 1422 · Playing Holly". A Referee invitation reads "Kells 1422 · Referee".
+
+The round trip:
+
+1. **Scribe** saves a ready campaign on the creator's device and writes the creator's Referee invitation.
+2. **The referee's Companion invites players** with a link carrying the campaign's read address and, per P1, the mailbox address. A campaign kept only on the referee's device (one Scribe saved, not yet published) can't be opened by anyone else, so **Invite a player is unavailable until the campaign is published** (campaign repo or mailbox snapshot).
+3. **The player's Companion** adds the invitation as "(Roll a character)". The player picks or rolls a character, and the label becomes "Playing Holly". The character goes to the referee as a request (Sent → Approved → Live) and joins the party in the state file once approved.
+4. **Who writes what.** Every device that plays a character holds a copy of it. The four parts of a creature ([CREATURES_FORMAT.md](CREATURES_FORMAT.md) 2.1) say who writes each one:
+
+   | Part | Written by | How it reaches the other side |
+   | --- | --- | --- |
+   | stats, gear, flavor | the player | a request the referee approves |
+   | knowledge | the referee only (meetings, rumours, Atlas travel, the fog brush) | the next published snapshot |
+   | state file (clock, party position, what everyone knows) | the referee only | the next published snapshot |
+
+   Because the referee never writes a player's stats or gear, and the player never writes knowledge, the two never collide.
+5. **The player's Atlas** shows only what has reached the player's device. In player mode nothing changes the map until the referee's next update arrives.
+6. **Leaving.** When the referee removes a player, that player's invitation stays on their device, read-only, as "Kells 1422 · (left the campaign)". It does not vanish.
+
 ### Live channel (remote play is a must)
 
 - The **referee's laptop hosts the session**. Every other device connects straight to it, peer to peer (WebRTC).
