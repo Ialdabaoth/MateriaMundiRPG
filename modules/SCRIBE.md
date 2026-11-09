@@ -156,9 +156,9 @@ A player's Companion never sees the referee's device. It sees two small files, b
 | --- | --- |
 | `revision` | One more on every publish; a player's app takes a snapshot only if it is newer than the one it has. |
 | `ruleset`, `site` | What the player's Companion needs to open the campaign: the ruleset its root provides, and where its modules are published. |
-| `state` | The state file without anything only the referee may see. Today that is all of it: clock, party, `revealed` (common knowledge), session, characters. Referee-only parts and `ref:` audiences are dropped here when they exist. |
+| `state` | The state file as players may see it: clock, party position, `revealed` (common knowledge), session, and `characters` as `{id, name, player}` only. Anything referee-only (a `private` part, `ref:` audiences, creatures, other characters' knowledge) never goes in the shared part. |
 | `receipts` | The ids of player envelopes the referee's app has seen (WORKFLOWS.md "Receipts close the loop"). Empty at the first publish. |
-| `private` | Per-character secrets, encrypted to the players' device keys (P3 section 4). Empty until seats and keys exist. |
+| `private` | What only one player may read, keyed by recipient: `private[<recipient>].characters[<character id>].knowledge` is that character's knowledge part (CHARACTER_FORMAT.md "Knowledge", in the apps repo), which the player's Companion puts in place of that part of the sheet. Until device keys exist the recipient is the character id the invitation names; with keys, each recipient's part is encrypted to them (P3 section 4) and the shape stays the same. Approved stats, gear and flavour are not in the snapshot: the player already holds them, and receipts say what was approved. |
 
 **Services for now.** Until the Apps Script adapter is built, the referee gives Scribe a **folder URL** on any static host they can upload to (GitHub Pages, their own site), and optionally a post URL. Publish then hands them `campaign.json` and `snapshot.json` to upload into that folder. The read URL is `<folder>snapshot.json` and the pointer is `<folder>campaign.json`. This is the Manual adapter of PROPOSALS.md P1, and it costs nothing (WORKFLOWS.md: cheap and free options for now). A campaign published this way can be read by anyone who has the URL, so keep secrets out of it until `private` is encrypted.
 
