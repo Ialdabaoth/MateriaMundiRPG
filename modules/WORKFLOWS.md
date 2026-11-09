@@ -17,7 +17,7 @@ A module travels as one link. The referee stacks modules into a campaign that pi
 | Invites: one seat per player, a join code becomes the invitation ([Invitations](#invitations)) | MVP |
 | Porting characters: a plain "made under different rules" warning | MVP |
 | Conflict review, per-id update review, full porting check, bundles and signatures | After the MVP, once a second author's module can join a campaign (Heph 2026-11-08) |
-| E9 Scribe, the creator app: its campaign view (pick a root, stitch modules, settle conflicts, house rules) on a shared editing engine | MVP (Heph 2026-11-08) |
+| Hexmarch Scribe, the creator app: its campaign view (pick a root, stitch modules, settle conflicts, house rules) on a shared editing engine | MVP (Heph 2026-11-08) |
 | Gutenberg (working name), Scribe's publisher module: releases, signing, QR codes, print | Post-MVP |
 
 Until Scribe's full module editing exists, modules are made with our repo tools (`tools/build.py` and the format specs).
@@ -595,7 +595,7 @@ The Atlas character mode and the Companion's player mode both take the viewer's 
 
 ### 5. Campaigns are made in Scribe (Heph, 2026-11-08: Scribe joins the MVP)
 
-Because a campaign is a module, it is made in **E9 Scribe**, the module editor. Campaign creation is a simplified view of Scribe's full creator suite: pick a root, add modules, settle conflicts, write house rules and add the referee's own sites.
+Because a campaign is a module, it is made in **Hexmarch Scribe**, the module editor. Campaign creation is a simplified view of Scribe's full creator suite: pick a root, add modules, settle conflicts, write house rules and add the referee's own sites.
 
 - **One editing engine** as a shared library, with several views: Scribe's full creator view, Scribe's campaign view, and the small in-play edits (a quick house rule, a reveal) inside the Companion and the Atlas, so a referee never switches apps mid-session.
 - **Scribe is part of the MVP**, starting with the campaign view, as **its own app at `/scribe/`** from day one (Heph 2026-11-08). **Gutenberg** (working name), Scribe's publisher module (releases, signing, QR codes, print), is post-MVP.
@@ -665,7 +665,7 @@ The referee can rescue any seat, for any reason: a lost or broken phone, a wiped
 - Players see the campaign's decisions, unless the referee marks one as a spoiler.
 - Anyone can publish overrides. Trust comes from signed bundles by curators the referee follows, plus checkers the referee chooses to run.
 - Porting characters and gear flags every mismatch to the referee, who decides the patch.
-- ~~The creator app (WYSIWYG module editor) is post-MVP.~~ Changed 2026-11-08: E9 Scribe is part of the MVP, starting with its campaign view; Gutenberg, Scribe's publisher module, is post-MVP.
+- ~~The creator app (WYSIWYG module editor) is post-MVP.~~ Changed 2026-11-08: Hexmarch Scribe is part of the MVP, starting with its campaign view; Gutenberg, Scribe's publisher module, is post-MVP.
 
 **Decided by Heph (2026-11-08), MVP line for the campaign stack**
 
