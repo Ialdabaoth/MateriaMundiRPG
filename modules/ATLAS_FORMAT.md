@@ -94,7 +94,7 @@ The first working form of the ladder above, built for Mystara (Heph 2026-11-08).
 
 The Atlas opens it with **Modules › Open a map file…**. It is kept in that browser only (IndexedDB), listed as "on this device" with a Remove button, and never uploaded. That is how private modules (Mystara, ACKS) are played without a public repo. A public flat module can be built into its module folder the same way later.
 
-## Fog of war (Atlas 0.5.15, Heph 2026-11-09)
+## Fog of war (Atlas 0.5.17, Heph 2026-11-09)
 
 Each hex of the League (painted) level is in one of six states for the creature whose map it is:
 
