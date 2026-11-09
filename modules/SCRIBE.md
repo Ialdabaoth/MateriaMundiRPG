@@ -16,9 +16,9 @@ The campaign view is a short sequence of steps. Each step writes part of the cam
 | 4. Conflicts and slicing | Settle each id that two modules change without a declared override; leave out any id, group or system half. | `overrides` with the referee's note and optional spoiler flag; the exclusion list |
 | 5. Own content | House rules, plus the referee's own sites, NPCs, handouts and tables. Edits to another module's content are stored as patches (section 3). | The campaign module's own content and `patches` |
 | 6. Parties and secrets | One party, or several (West Marches). Seed each character's private reveals from their background. | `party:` and `character:` audiences in `private` (P3 section 4) |
-| 7. Open | "Open in Atlas" and "Open in Companion". | Nothing new. The apps load the campaign like any module (P3 "One loader"). |
+| 7. Ready | Save the campaign. Scribe makes the creator's **Referee invitation** to it (below), then "Open in Atlas" and "Open in Companion". | The campaign on this device and one Referee invitation for the creator. The apps load the campaign like any module (P3 "One loader"). |
 
-Invites, the mailbox and every other player-facing service stay in the Companion, where the service adapters live (PROPOSALS.md P1). Scribe stops at step 7.
+**Invitations (Heph 2026-11-09).** There are two kinds: a **Referee invitation** and a **Player invitation**. One person may hold several of either kind, for different campaigns or for the same one. The Companion's campaign switcher lists one entry per invitation, and picking it sets Referee or Player mode. When a campaign is ready, it automatically gets a Referee invitation for the person who made it, so the creator opens their own campaign the same way anyone else would: by an invitation. Scribe makes only that first one. Every other invitation (more referees, every player), the mailbox and the other player-facing services stay in the Companion, where the service adapters live (PROPOSALS.md P1). The invitation's format belongs to the Companion. Scribe 0.1.3 opens the campaign straight away, through a `scribe:<id>` link, until that format exists.
 
 The same steps work for an existing campaign: opening it in Scribe shows each step's current answer, and the referee changes any of them.
 
