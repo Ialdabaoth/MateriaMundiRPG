@@ -86,7 +86,7 @@ From the repository root:
 python3 -I modules/tools/build.py modules/<id> dist/modules/<id>
 ```
 
-It prints `Atlas 0.5.1 · <id> ...: N March pages, N League pages, N sites` when it works. The first run downloads the elevation tiles. Later runs reuse a build cache (`modules/.cache/build/`): editing creatures, bestiaries and encounter maps is fast, and editing `module.json` or the map inputs redraws the maps. `BUILD_CACHE=0` turns the cache off.
+It prints `Atlas 0.5.1 · <id> ...: N March pages, N League pages, N sites` when it works. The first run downloads the elevation tiles. Later runs reuse a build cache (`modules/.cache/build/`, see README "Build cache"): editing creatures, bestiaries, encounter maps or the version is fast, repainting one March PNG runs atlas_convert again (about a minute) but re-cuts only that March's tiles and those it shares with its neighbours, and editing the map settings in `module.json` or the elevation and admin data redraws the region. `BUILD_CACHE=0` turns the cache off.
 
 ## 5. Preview it
 
