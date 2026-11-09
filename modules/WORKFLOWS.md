@@ -532,9 +532,14 @@ Players can build characters before any of this, from the module link alone, wit
 - The **referee** alone writes knowledge entries and the campaign state.
 - A player who leaves or is removed keeps their invitation **read-only**, shown as "(left the campaign)".
 
-### Still open
+### Rescuing a seat (Heph, 2026-11-09)
 
-1. Can the referee reissue a seat's code (a lost phone with no second device), and does that drop the old device key?
+The referee can rescue any seat, for any reason: a lost or broken phone, a wiped browser, a player handing their character to a friend.
+
+1. From the seat list, the referee issues the seat a **new join code**. The old code, and every device key on the seat, stop working at once, so a lost phone can't keep posting.
+2. Whoever opens the new link takes the seat. Their device makes a new key and sends a join request; the referee approves it as usual.
+3. The new device **ingests the seat's data from the referee** and carries on: the character record (with its knowledge entries) and the player's part of the snapshot. The referee always holds enough to rebuild a player's state, because every approved change went through the referee's batch.
+4. Anything the old device sent that was never approved is lost, and the player can send it again.
 
 ## Decisions and build order
 
@@ -567,6 +572,7 @@ Players can build characters before any of this, from the module link alone, wit
 - Invite is disabled until the campaign is published; the invite link carries the read URL, post URL and campaign id.
 - One seat per player; a join code becomes the invitation, so expiry needs no rule of its own. "(Roll a character)" is how an unredeemed code looks.
 - One invitation is one character.
+- The referee can rescue a lost seat with a new join code; the old keys stop working and the new device ingests the seat's data from the referee and keeps going.
 - Players may build characters before the campaign is published, with the existing tools.
 - The player owns their character's stats, gear and flavour (changes by request); the referee alone writes knowledge and state. A removed player's invitation stays read-only as "(left the campaign)".
 
