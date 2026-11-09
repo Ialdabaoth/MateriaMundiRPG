@@ -2,7 +2,7 @@
 
 E9 Scribe is the module editor, the third app beside the E9 Atlas and the E9 Companion, at `/scribe/` from day one. It is part of the MVP. A campaign is a private module (PROPOSALS.md P3), so a campaign is made in Scribe, through a simplified **campaign view** of the full creator suite. This file covers that view, how a referee's edits to someone else's module are stored, and the **update checker** that runs whenever a module is opened.
 
-Status: agreed in outline with Heph on 2026-11-08. Nothing is built yet. Builds on WORKFLOWS.md (Dependencies, Campaign stack, Trust), PROPOSALS.md P2 and P3, MODULE_FORMAT.md and STATE_FORMAT.md.
+Status: agreed in outline with Heph on 2026-11-08. Steps 1 to 3 and 7 are built (Scribe 0.1.2 and 0.1.3). Steps 8 and 9 and the two files in section 5 follow WORKFLOWS.md "Invitations" (agreed 2026-11-09); their formats are proposed here. Builds on WORKFLOWS.md (Dependencies, Campaign stack, Trust, Invitations), PROPOSALS.md P1 to P3, MODULE_FORMAT.md and STATE_FORMAT.md.
 
 ## 1. From modules to a campaign
 
@@ -17,8 +17,10 @@ The campaign view is a short sequence of steps. Each step writes part of the cam
 | 5. Own content | House rules, plus the referee's own sites, NPCs, handouts and tables. Edits to another module's content are stored as patches (section 3). | The campaign module's own content and `patches` |
 | 6. Parties and secrets | One party, or several (West Marches). Seed each character's private reveals from their background. | `party:` and `character:` audiences in `private` (P3 section 4) |
 | 7. Ready | Save the campaign. Scribe makes the creator's **Referee invitation** to it (below), then "Open in Atlas" and "Open in Companion". | The campaign on this device and one Referee invitation for the creator. The apps load the campaign like any module (P3 "One loader"). |
+| 8. Services | Say where the campaign lives for players: a **read URL** (where the player snapshot is published) and a **post URL** (where players send requests). The default will be the referee's own Apps Script (WORKFLOWS.md "Invitations", step 4); until it exists, any static host the referee can upload to (section 5). | `services` in Scribe's record of the campaign |
+| 9. Publish | Publish the first player snapshot and the campaign pointer. **Invite stays disabled in the Companion until this is done**, because until then the campaign exists only on the referee's device. | `snapshot.json` and `campaign.json` (section 5); `published` in Scribe's record of the campaign |
 
-**Invitations (Heph 2026-11-09).** There are two kinds: a **Referee invitation** and a **Player invitation**. One person may hold several of either kind, for different campaigns or for the same one. The Companion's campaign switcher lists one entry per invitation, and picking it sets Referee or Player mode. When a campaign is ready, it automatically gets a Referee invitation for the person who made it, so the creator opens their own campaign the same way anyone else would: by an invitation. Scribe makes only that first one. Every other invitation (more referees, every player), the mailbox and the other player-facing services stay in the Companion, where the service adapters live (PROPOSALS.md P1). The invitation's format belongs to the Companion. Scribe 0.1.3 opens the campaign straight away, through a `scribe:<id>` link, until that format exists.
+**Invitations (Heph 2026-11-09).** There are two kinds: a **Referee invitation** and a **Player invitation**. One person may hold several of either kind, for different campaigns or for the same one. The Companion's campaign switcher lists one entry per invitation, and picking it sets Referee or Player mode. When a campaign is ready, it automatically gets a Referee invitation for the person who made it, so the creator opens their own campaign the same way anyone else would: by an invitation. Scribe makes only that first one. Every other invitation (more referees, every player: seats and join codes, WORKFLOWS.md "Invitations"), the mailbox and the request flow stay in the Companion, where the service adapters live (PROPOSALS.md P1). The invitation's format belongs to the Companion. Scribe's part ends at steps 8 and 9, which give the Companion something a player can open.
 
 The same steps work for an existing campaign: opening it in Scribe shows each step's current answer, and the referee changes any of them.
 
@@ -112,7 +114,57 @@ Nothing changes until the referee accepts. Accepting rewrites the lockfile, upda
 
 **Creators use it too.** A module author opening their own module sees the same report for the modules it requires, such as a new `e9-core`, before releasing.
 
-## 5. Open questions
+## 5. Services and Publish: the campaign pointer and the player snapshot
+
+A player's Companion never sees the referee's device. It sees two small files, both plain JSON, which Publish writes and every later "Update campaign" in the Companion writes again, with the same code (the shared editing engine).
+
+**The campaign pointer** (`campaign.json`) is what an invite link names. It says where the campaign lives right now, so if the referee moves to another service, the pointer changes and every invitation keeps working (WORKFLOWS.md "Resilience", campaign pointer).
+
+```json
+{
+  "format": "e9-campaign-pointer",
+  "version": 1,
+  "campaign": "kells-1422",
+  "title": "Kells, 1422",
+  "read": "https://<host>/kells-1422/snapshot.json",
+  "post": "https://<post URL>",
+  "adapters": { "store": "static", "mail": "manual" },
+  "updated": "2026-11-09T13:00:00Z"
+}
+```
+
+**The player snapshot** (`snapshot.json`, at the read URL) is everything a player's app reads: the campaign as a module, its lockfile, the shared part of the state file, and the receipts.
+
+```json
+{
+  "format": "e9-snapshot",
+  "version": 1,
+  "campaign": "kells-1422",
+  "revision": 1,
+  "published": "2026-11-09T13:00:00Z",
+  "ruleset": "e9mm",
+  "site": "https://<the modules' data site>/",
+  "module": { "...": "the campaign module.json" },
+  "lock": { "...": "campaign.lock.json" },
+  "state": { "...": "state.json, shared parts only" },
+  "receipts": [],
+  "private": {}
+}
+```
+
+| Field | Meaning |
+| --- | --- |
+| `revision` | One more on every publish; a player's app takes a snapshot only if it is newer than the one it has. |
+| `ruleset`, `site` | What the player's Companion needs to open the campaign: the ruleset its root provides, and where its modules are published. |
+| `state` | The state file without anything only the referee may see. Today that is all of it: clock, party, `revealed` (common knowledge), session, characters. Referee-only parts and `ref:` audiences are dropped here when they exist. |
+| `receipts` | The ids of player envelopes the referee's app has seen (WORKFLOWS.md "Receipts close the loop"). Empty at the first publish. |
+| `private` | Per-character secrets, encrypted to the players' device keys (P3 section 4). Empty until seats and keys exist. |
+
+**Services for now.** Until the Apps Script adapter is built, the referee gives Scribe a **folder URL** on any static host they can upload to (GitHub Pages, their own site), and optionally a post URL. Publish then hands them `campaign.json` and `snapshot.json` to upload into that folder. The read URL is `<folder>snapshot.json` and the pointer is `<folder>campaign.json`. This is the Manual adapter of PROPOSALS.md P1, and it costs nothing (WORKFLOWS.md: cheap and free options for now). A campaign published this way can be read by anyone who has the URL, so keep secrets out of it until `private` is encrypted.
+
+**What Scribe records.** Scribe's record of the campaign on the device (`scribe-campaign:<id>`) gains `services: {folder, read, post, pointer}` and, after Publish, `published: {revision, at}`. The Companion enables Invite for a campaign whose record has `published`, and its invite links name the pointer.
+
+## 6. Open questions
 
 1. Does `kind: "campaign"` become a manifest value of its own (P3 open question 4)? Scribe's campaign view would open only for those.
 2. Should the update checker also run on a schedule in the referee's Apps Script (P1), so the Inbox shows "needs a decision" before Scribe is opened?
