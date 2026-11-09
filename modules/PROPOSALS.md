@@ -50,7 +50,7 @@ A root carries another publisher's rules, so its `license` field and credits mus
 
 1. ~~Is `e9mm` a system of its own, or an option inside `mm`?~~ **Decided (Heph, 2026-11-08):** E9 for Materia Mundi is an option inside MM. `mm-core` provides one system, `mm`, with an E9 option, and requires `e9-core`.
 2. ~~Can a campaign ever mix roots?~~ **Decided (Heph, 2026-11-08):** a campaign chooses one root, then patches it with ideas from other systems. Those ideas come in as ordinary modules written for the campaign's root (overrides and additions to its ids), never as a second root.
-3. ~~Should the apps (`e9-companion`, `e9-atlas`) be required by version from the first release?~~ **Decided (Heph, 2026-11-08):** yes, modules declare app compatibility from the start, but the referee can override it. Guideline for authors: only require the app features you actually use, at the lowest version that has them, so a module isn't locked out of older or newer apps for no reason.
+3. ~~Should the apps (`hexmarch-companion`, `hexmarch-atlas`) be required by version from the first release?~~ **Decided (Heph, 2026-11-08):** yes, modules declare app compatibility from the start, but the referee can override it. Guideline for authors: only require the app features you actually use, at the lowest version that has them, so a module isn't locked out of older or newer apps for no reason.
 
 ## P4. Self-hosting everything
 
@@ -84,7 +84,7 @@ A fully self-hosted table is then "the open adapters, pointed at your own server
 1. **A site config instead of fixed addresses.** Today the apps carry our addresses: the default module site, the SRD wiki, the Patreon link (`links.json` holds some of these already). Every address a self-hoster would change moves into one `site.json` read at build time and at run time, with ours as the defaults. An empty value hides a link, as `links.json` does now.
 2. **A portable handler.** Write the handler as one standard web-request function with no Cloudflare-only features, so the same code runs on Cloudflare Workers, Deno, Node or in a container.
 3. **The open adapters.** Forgejo, Matrix and WebDAV/CalDAV, in the order "Services and adapters" → Alternatives already suggests (Matrix, then Forgejo, then plain git), with WebDAV/CalDAV added for Nextcloud.
-4. **A rule for forks so they still work together.** Fork freely. A changed app gets its own module id and name (the apps are modules too: `e9-companion`, `e9-atlas`), and says which protocol versions it speaks (`mm-module/1`, `e9-mail/1`, `e9-campaign-state/1`). Our apps and a fork can then share campaigns. The licence requires credit; whether the "E9" name itself is protected is a trademark question, separate from the licence.
+4. **A rule for forks so they still work together.** Fork freely. A changed app gets its own module id and name (the apps are modules too: `hexmarch-companion`, `hexmarch-atlas`), and says which protocol versions it speaks (`hexmarch-module/1`, `hexmarch-mail/1`, `hexmarch-campaign-state/1`). Our apps and a fork can then share campaigns. The licence requires credit; whether the "E9" name itself is protected is a trademark question, separate from the licence.
 5. **SELF_HOSTING.md with a docker-compose example** covering the whole stack: web server, Forgejo, a Matrix server, Nextcloud, Jitsi and the handler, with the `site.json` that points the apps at them. Written once the site config and the first open adapter exist, and tested by actually standing the stack up.
 
 ### Build order if agreed

@@ -36,7 +36,7 @@ KEEP_WORK=1 ... (same)                                                 # keep /t
 python3 modules/tools/atlas_convert.py modules/<id>/module.json /tmp/out/_work /tmp/out/atlas --real
 ```
 
-`/tmp/out/atlas` then holds `map.json` and `terrain/<march>.png`. To look at it in the E9 Atlas, build into a site layout (`build.py modules/<id> /tmp/site/modules/<id>`, `cp mm.json /tmp/site/`, `python3 -I modules/tools/atlas_app.py /tmp/site`) and open `/atlas/` through any local web server, for example `python3 -m http.server` in `/tmp/site`.
+`/tmp/out/atlas` then holds `map.json` and `terrain/<march>.png`. To look at it in the E9 Atlas, build into a site layout (`build.py modules/<id> /tmp/site/modules/<id>`, `cp hexmarch.json /tmp/site/`, `python3 -I modules/tools/atlas_app.py /tmp/site`) and open `/atlas/` through any local web server, for example `python3 -m http.server` in `/tmp/site`.
 
 ## The period rules (realmap.py)
 

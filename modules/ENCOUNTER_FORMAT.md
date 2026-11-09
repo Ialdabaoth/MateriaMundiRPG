@@ -25,7 +25,7 @@ One map per file keeps git diffs small and lets a referee drop in a single map. 
 
 ```json
 {
-  "format": "e9-encounter-map/1",
+  "format": "hexmarch-encounter-map/1",
   "id": "kells-priory",
   "title": "Kells Priory, the walled town",
   "size": [80, 60],
@@ -181,7 +181,7 @@ A referee who runs play in a VTT (Foundry, Roll20, Owlbear Rodeo, Fantasy Ground
 
 ```json
 {
-  "format": "e9-vtt-links/1",
+  "format": "hexmarch-vtt-links/1",
   "accounts": {
     "foundry": {"app": "foundry", "base": "https://my-table.example.com"},
     "owlbear": {"app": "owlbear"}
@@ -233,13 +233,13 @@ A map file may have a `spawns` block, keyed by id like `areas`:
 - A map with no `spawns` still works: the party arrives in the pointed area (or the centre of the map) and creatures in their scene's area.
 - `encounter_check.py` checks `spawns` (kind, squares on the map, area ids) and every `entrance` and `spawn` reference. A Universal VTT export carries `spawns` in its `e9` block.
 
-### 14.2 The adapter protocol (`e9-vtt/1`)
+### 14.2 The adapter protocol (`hexmarch-vtt/1`)
 
 An adapter is a small piece of code inside one VTT: a Foundry module, an Owlbear Rodeo extension, a Roll20 API script, a Fantasy Grounds extension. The E9 app (Atlas map view, Companion Run encounter) sends it **commands** and gets back **results** and **events**, all JSON:
 
 | Command | What the adapter does | Result |
 |---|---|---|
-| `hello` `{"protocol": "e9-vtt/1", "app": "atlas", "campaign": id}` | says what it can do | `{"vtt": "foundry", "version", "can": ["scene", "walls", "lights", "tokens", "move", "hide", "activate"]}` |
+| `hello` `{"protocol": "hexmarch-vtt/1", "app": "atlas", "campaign": id}` | says what it can do | `{"vtt": "foundry", "version", "can": ["scene", "walls", "lights", "tokens", "move", "hide", "activate"]}` |
 | `scene.open` `{"map": "<module>:<map-id>", "uvtt": file or URL}` | finds the scene it made for this map before, or builds one from the `.uvtt` | `{"scene": vtt scene ref, "link": URL}`; the app saves the link in `vtt.json` (section 13) |
 | `scene.activate` `{"scene"}` | shows the scene to the players (Foundry: activate; Owlbear: open) | `ok` |
 | `tokens.spawn` `{"scene", "tokens": [{"id", "name", "creature", "img", "square": [x, y], "size": 1, "hidden": false, "disposition": "hostile"}]}` | creates tokens at those squares | `{"tokens": {e9 id: vtt token ref}}` |
@@ -265,7 +265,7 @@ Heph: "Each PoI is an Entrance into an Encounter Map. One encounter map might co
 
 ### 14.4 The Foundry adapter (Atlas 0.4.6)
 
-`vtt/foundry/e9-bridge/` is a Foundry VTT module (v12, v13; README there). The GM presses *Open the E9 Atlas* in Foundry's token controls; the Atlas opens with `?vtt=foundry&pair=<code>`, shows "Linked to Foundry · code …", and every encounter map gains **Send to Foundry** (`tools/vtt_bridge.html`): pick the scenes whose creatures to place and the entrance the party arrives at, then the Atlas sends `scene.open` (the `.uvtt`), `tokens.spawn`, `party.place` (`actors: "players"`, each player's assigned character) and `scene.activate`.
+`vtt/foundry/hexmarch-bridge/` is a Foundry VTT module (v12, v13; README there). The GM presses *Open the E9 Atlas* in Foundry's token controls; the Atlas opens with `?vtt=foundry&pair=<code>`, shows "Linked to Foundry · code …", and every encounter map gains **Send to Foundry** (`tools/vtt_bridge.html`): pick the scenes whose creatures to place and the entrance the party arrives at, then the Atlas sends `scene.open` (the `.uvtt`), `tokens.spawn`, `party.place` (`actors: "players"`, each player's assigned character) and `scene.activate`.
 
 - **Counts.** The Atlas rolls each `who` line's dice (`3`, `d6`, `2d6`, `d6+1`, `d6÷2`) and its `chance` (`1-3 on d6`); a troupe word counts as 1 until the bestiary is wired in.
 - **Where.** A `who` line's `spawn`, else the scene's `map.spawn`, else its `map.area`, placed with 14.1; all tokens of one send avoid each other and the party.

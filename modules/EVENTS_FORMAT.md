@@ -36,7 +36,7 @@ Merging and name collisions:
 
 The load report names the file for every warning, such as `fomhoire.json: table "bog-hazards" already defined in bog-hazards.json`.
 
-Every `procedures.json` declares which rulesets it serves: `{"format": "e9-procedures/1", "rules": ["e9mm"], ...}`. `rules` is a list, so one file may serve several rulesets that share conditions and dice. A campaign only offers procedures written for its own ruleset.
+Every `procedures.json` declares which rulesets it serves: `{"format": "hexmarch-procedures/1", "rules": ["e9mm"], ...}`. `rules` is a list, so one file may serve several rulesets that share conditions and dice. A campaign only offers procedures written for its own ruleset.
 
 ## 3. Name lookup and the contract
 

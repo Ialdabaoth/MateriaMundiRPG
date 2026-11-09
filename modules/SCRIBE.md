@@ -122,7 +122,7 @@ A player's Companion never sees the referee's device. It sees two small files, b
 
 ```json
 {
-  "format": "e9-campaign-pointer",
+  "format": "hexmarch-campaign-pointer",
   "version": 1,
   "campaign": "kells-1422",
   "title": "Kells, 1422",
@@ -137,7 +137,7 @@ A player's Companion never sees the referee's device. It sees two small files, b
 
 ```json
 {
-  "format": "e9-snapshot",
+  "format": "hexmarch-snapshot",
   "version": 1,
   "campaign": "kells-1422",
   "revision": 1,

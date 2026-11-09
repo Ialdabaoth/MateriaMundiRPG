@@ -1,4 +1,4 @@
-# Materia Mundi open module protocol (`mm-module/1`)
+# Materia Mundi open module protocol (`hexmarch-module/1`)
 
 An open way to publish adventures, regions and campaigns for **Materia Mundi** and **E9** so they can be played entirely in a web browser or the Companion app, with no VTT, and printed as books from the same source.
 
@@ -11,7 +11,7 @@ This repository is the reference implementation: `modules/isle-of-mists` (Beyond
 ## 1. Repository layout
 
 ```
-mm.json                      discovery file: what this repository publishes (section 2)
+hexmarch.json                      discovery file: what this repository publishes (section 2)
 modules/
   <module-id>/
     module.json              the module source (section 3)
@@ -27,13 +27,13 @@ campaign/                    only in a referee's fork (section 7)
 
 A publisher may hold several modules in one repository. Module ids are lowercase ASCII with hyphens (`isle-of-mists`, `hansa-1`).
 
-## 2. Discovery: `mm.json`
+## 2. Discovery: `hexmarch.json`
 
 At the repository root, and copied to the root of the published site:
 
 ```json
 {
-  "format": "mm-repo/1",
+  "format": "hexmarch-repo/1",
   "name": "Materia Mundi: Beyond the Pale",
   "publisher": "Heph",
   "systems": ["materia-mundi", "e9"],
@@ -42,7 +42,7 @@ At the repository root, and copied to the root of the published site:
 }
 ```
 
-The Companion adds a repository from its published URL. It reads `mm.json` and then each module's built `module.json`.
+The Companion adds a repository from its published URL. It reads `hexmarch.json` and then each module's built `module.json`.
 
 ## 3. Module source: `modules/<id>/module.json`
 
@@ -110,7 +110,7 @@ A referee **forks** a module repository and adds a `campaign/` folder. Module au
 
 ```
 campaign/
-  campaign.json              {"format": "mm-campaign/1", "modules": ["isle-of-mists"], "start": "1422-05-01", "referee": "…"}
+  campaign.json              the campaign pointer (hexmarch-campaign-pointer/1, SCRIBE.md)
   chronicle/2026-11-08-session-01.md   what happened, written after each session
   state.json                 the campaign state file: party, clock, reveals, session, characters (STATE_FORMAT.md)
   state/hexes.json           {"<map>:<hex>": {"explored": true, "notes": "…"}}   map = "world" or a League key
@@ -130,7 +130,7 @@ Building `modules/<id>` writes:
 
 ```
 <id>/index.html              the module page: places, scenes, creatures and NPCs, factions, credits and changes, each place linked into the E9 Atlas
-<id>/module.json             the manifest (format "mm-module/1")
+<id>/module.json             the manifest (format "hexmarch-module/1")
 <id>/print/atlas.pdf (March pages), print/leagues.pdf  (only with build.py --pdf: print PDFs are paused until the print process is settled, Heph 2026-11-07)
 <id>/atlas/map.json, atlas/terrain/<march>.png (E9 Atlas format, when atlas.centroid is set)
 <id>/atlas/tiles/ (the tiles the E9 Atlas draws this module with)
@@ -139,7 +139,7 @@ Building `modules/<id>` writes:
 
 A module publishes **no map renders** (Heph 2026-11-08, Atlas 0.5.7): every map is the Atlas's to draw, so the build no longer writes `maps/*.svg`. The March and League page drawings stay in the build's work folder, where the print PDFs (`--pdf`) and the manifest's `marches`, `leagues` and `sites` come from. The module page carries its text and reference, and its encounter maps open in the same encounter viewer the Atlas uses.
 
-The **E9 Atlas** (Atlas 0.3.0) is one app for the whole site, at `<site>/atlas/` (`tools/atlas_app.py` writes it). It reads the site's `mm.json`, shows which module is loaded, and its Modules button loads another one. `?module=<id>` picks a module; links are `#world`, `#march:MMMM`, `#world:LLLL[:HHHH]`.
+The **E9 Atlas** (Atlas 0.3.0) is one app for the whole site, at `<site>/atlas/` (`tools/atlas_app.py` writes it). It reads the site's `hexmarch.json`, shows which module is loaded, and its Modules button loads another one. `?module=<id>` picks a module; links are `#world`, `#march:MMMM`, `#world:LLLL[:HHHH]`.
 
 The manifest contains `format`, `id`, `title`, `version`, `license`, `scales`, `books`, `world`, `marches`, `leagues`, `sites`, `aliases`, `links` and `print`, and `atlas_map` (`atlas/map.json`) when the module has an E9 Atlas map. `scales` gives `mile_ft` (5000) and the hex size of each zoom level. `world` holds the old Region grid's pixel geometry and every 3-mile hex's terrain. `marches` has one entry per atlas page, with its 24-mile hex, centre, radius, neighbours and sites. `leagues` has one entry per League page, with its 3-mile hex, title, book, March terrain, centre and sites with their pixel positions. `sites` gives each site's slug, kind, book, county, latitude and longitude, world hex, March page and League. `aliases` maps old page keys to League keys. A module with creatures (CREATURES_FORMAT.md) also has `encounters` (the merged fiction file, `encounters.json`) and `bestiary` (`{"<ruleset>": "bestiary/<ruleset>.json"}`); the Companion's Creatures › Add list offers them, and the viewer and the E9 Atlas list who lives in a tapped hex, each name opening an index card (`atlas/creatures.json` holds the resolved list for the Atlas). The web viewer, the PDFs and the manifest come from one build and carry the same `version` (semver, plus the commit and the date), printed in each page footer. If the versions match, the three agree.
 
@@ -152,7 +152,7 @@ python3 -I modules/tools/build.py modules/isle-of-mists dist/modules/isle-of-mis
 
 ## 9. Compatibility and licence
 
-A module states its licence in `mm.json` and `module.json`. Materia Mundi's own modules are **CC BY 4.0**: fork, change and republish freely, as long as you credit Heph (Bakagaijin Productions). A third-party module may use any licence, but a module that says it is "Materia Mundi compatible" must follow sections 3 to 6, so that the Companion and the viewer can read it.
+A module states its licence in `hexmarch.json` and `module.json`. Materia Mundi's own modules are **CC BY 4.0**: fork, change and republish freely, as long as you credit Heph (Bakagaijin Productions). A third-party module may use any licence, but a module that says it is "Materia Mundi compatible" must follow sections 3 to 6, so that the Companion and the viewer can read it.
 
 The map icons in `assets/tiles` are [Hex Tiles: Fantasy](https://cmartins.itch.io/hex-tiles-fantasy) by cmartins, licensed CC BY-SA 4.0. The Atlas, the module page and the Companion credit them; keep that credit in anything built from them.
 The bonus Desert, Forest, Mountain and Tundra packs in `assets/tiles/packs` (and their keyed-out copies in `assets/tiles/features`) are art by C. Martins, licensed CC BY. Credit "Art by C. Martins" wherever they appear.

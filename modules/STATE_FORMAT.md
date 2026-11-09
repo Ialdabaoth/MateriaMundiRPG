@@ -1,14 +1,14 @@
-# Campaign state file (e9-campaign-state/1)
+# Campaign state file (hexmarch-campaign-state/1)
 
 One small JSON file holds the campaign's shared record between sessions: where the party stands, the game clock, what the party has found, the current session and who is playing. The E9 Companion and the E9 Atlas both read it. Only the referee writes it.
 
 - **Where it lives.** For now each device keeps one per campaign (the Companion has one for "This device" too), and the referee can save and load it by hand (Campaign › State). With referee sign-in, **Update campaign** commits it to the campaign repository as `campaign/state.json` (MODULE_FORMAT.md section 7), and players read it from there.
-- **The E9 Atlas** (0.5.11) reads it from the Companion that embeds it: the Companion sends `{"type": "e9-atlas", "state": <the file>}` when the map opens and after every change. On its own, the Atlas reads the Companion's saved file for the campaign in use on this device, since both apps share the site. Failing that, it keeps its own copy in the browser: a file loaded with **Load state file…**, or a party placed before 0.5.11. Party moves made in the Atlas follow "How it changes" below. They are written back to the device's file, or posted to the embedding app as party events. **Save state file** downloads the file. When the Companion's tab comes back into view, it reads the file again if a newer revision was saved meanwhile.
+- **The E9 Atlas** (0.5.11) reads it from the Companion that embeds it: the Companion sends `{"type": "hexmarch-atlas", "state": <the file>}` when the map opens and after every change. On its own, the Atlas reads the Companion's saved file for the campaign in use on this device, since both apps share the site. Failing that, it keeps its own copy in the browser: a file loaded with **Load state file…**, or a party placed before 0.5.11. Party moves made in the Atlas follow "How it changes" below. They are written back to the device's file, or posted to the embedding app as party events. **Save state file** downloads the file. When the Companion's tab comes back into view, it reads the file again if a newer revision was saved meanwhile.
 - **Since Companion 0.5.6** it replaces the Companion's `partyAt` setting. A party placed earlier moves into This device's state the first time the app opens.
 
 ```json
 {
-  "format": "e9-campaign-state",
+  "format": "hexmarch-campaign-state",
   "version": 1,
   "campaign": "kells-1422",
   "revision": 42,
@@ -26,7 +26,7 @@ One small JSON file holds the campaign's shared record between sessions: where t
 |---|---|
 | `campaign` | The campaign file's `id`; `""` for This device. A file from another campaign is refused. |
 | `revision`, `updated` | Every change adds one to `revision`. Loading a file older than the device's copy asks first. |
-| `rules` | The ruleset the campaign plays with and the core rules module that provides it (format `e9-rules/1`: `e9-core`, or `mm-core` and its `e9` option for Materia Mundi for E9), with that module's version. `module` is `""` when the campaign file links a ruleset file of its own. Written by the referee's device each time the file is saved. |
+| `rules` | The ruleset the campaign plays with and the core rules module that provides it (format `hexmarch-rules/1`: `e9-core`, or `mm-core` and its `e9` option for Materia Mundi for E9), with that module's version. `module` is `""` when the campaign file links a ruleset file of its own. Written by the referee's device each time the file is saved. |
 | `clock.start` | The first day, `YYYY-MM-DD` in the setting's own years (Materia Mundi: AD + 2085, so 1 May 1422 is `3507-05-01`). Months and days run as in the Gregorian calendar. |
 | `clock.hours` | Game hours since midnight of the start day (a new campaign starts at 8, 08:00). |
 | `party` | Where the party stands, or `null`: the module's site (`base`) and `id`, and a 100-ft hex address (ATLAS_FORMAT.md "Party marker"). `hours` is the Atlas's running travel time since the party was placed. |
