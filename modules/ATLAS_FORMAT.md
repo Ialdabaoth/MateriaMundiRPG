@@ -94,6 +94,31 @@ The first working form of the ladder above, built for Mystara (Heph 2026-11-08).
 
 The Atlas opens it with **Modules › Open a map file…**. It is kept in that browser only (IndexedDB), listed as "on this device" with a Remove button, and never uploaded. That is how private modules (Mystara, ACKS) are played without a public repo. A public flat module can be built into its module folder the same way later.
 
+## Fog of war (Atlas 0.5.17, Heph 2026-11-09)
+
+Each hex of the League (painted) level is in one of six states for the creature whose map it is:
+
+| State | Look |
+|---|---|
+| in sight + explored | full colour, thin gold rim |
+| in sight + visited | full colour |
+| explored | sepia |
+| visited | faded sepia |
+| rumoured | blank parchment with a dotted outline; rumoured places show as a faded icon with "Name ?" |
+| unknown | blank parchment |
+
+**Visited** means seen or passed through: seeing a hex visits it. **Explored** means searched thoroughly, which reveals hidden sites. Visiting a hex replaces any rumour of it.
+
+**Storage.** What one creature knows is stored on that creature as dated `knowledge` entries (CREATURES_FORMAT, Companion CHARACTER_FORMAT), never per 100-ft hex. A fog entry names the League by its centre address in `hex`, with `"how": "seen"`. Entries can also carry `"explored": true` or `"rumour": true`. Common knowledge stays in the state file's `revealed`.
+
+**Travel.** When the party travels, every hex within sight of any point on the route is visited, for **each character** in the party. When the Atlas runs inside the Companion, it sends `{type: "e9-atlas", event: "knowledge", module, ids, add, remove}` and the Companion saves the entries to those sheets. On its own, the Atlas writes the sheets in the browser.
+
+**Sight range is a procedure.** The Atlas asks for procedure `sight-range` in the ruleset's or module's procedures.json. That procedure takes the terrain (and later light and height) and returns miles. Until the Atlas can run procedures, it uses a stand-in table: grass and clear 3, light woods 1.5, heavy forest 0.5, hills 6, mountains 12, bog 2, sea 6, desert 4.
+
+**Views.** The referee view has no fog. The Party box has a **Preview fog** toggle and a brush that marks hexes as visited, explored or rumoured, or hides them, for the party. Character mode (Party › Show the map as) always shows that creature's fog.
+
+**Later.** A "charted" state, where a map reveals coarse terrain only.
+
 ## The lattice
 
 The whole region shares one grid of 100-ft hexes, with flat tops and **odd columns shifted down half a hex**. A hex's global address is `(C, R)`, and its centre in feet is
