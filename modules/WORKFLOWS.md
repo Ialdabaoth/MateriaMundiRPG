@@ -95,7 +95,7 @@ The 0.8 and 0.9 versions are plain semver minors (no `-alpha` or `-beta` suffix)
 
 The apps run any OSR hexcrawl core rules, so the names machines read say **hexmarch**, not E9 or MM. That covers format ids, the discovery file, messages between apps, browser storage keys, file extensions, app ids and sheet layout tags. Ids keep the name even if the apps are renamed later. Content stays as it is: module ids `e9-core` and `mm-core`, their content ids (`mm:longsword`, `e9-core/spell/sleep`), and a module's own data files.
 
-The rename lands in 0.6.X, before the 0.9.0 format lock. Apps write the new names. Readers accept both the new and old names until 1.0.0, so existing files, links and saved data keep working. Browser storage moves to the new keys once, on first start.
+The rename lands in 0.6.X, before the 0.9.0 format lock. Until the 0.8.X private alpha the only users are Heph and Claude (Heph, 2026-11-09), so it is a clean rename with no compatibility layer: apps read and write only the new names, and old test files are rebuilt rather than migrated.
 
 | Old | New |
 | --- | --- |
@@ -103,8 +103,8 @@ The rename lands in 0.6.X, before the 0.9.0 format lock. Apps write the new name
 | `e9-rules/1`, `e9-derive/1`, `e9-procedures/1`, `e9-bestiary/1`, `e9-encounter-map/1` | `hexmarch-rules/1`, `hexmarch-derive/1`, `hexmarch-procedures/1`, `hexmarch-bestiary/1`, `hexmarch-encounter-map/1` |
 | `e9-atlas/1`, `e9-atlas-cache/1`, `e9-vtt/1`, `e9-vtt-links/1` | `hexmarch-atlas/1`, `hexmarch-atlas-cache/1`, `hexmarch-vtt/1`, `hexmarch-vtt-links/1` |
 | `mm-module/1`, `mm-module/2`, `mm-repo/1` | `hexmarch-module/1`, `hexmarch-module/2`, `hexmarch-repo/1` (version numbers carry over) |
-| `mm-campaign/1` | read only, never written |
-| `mm.json` (a repo's discovery file) | `hexmarch.json`; readers try `hexmarch.json`, then `mm.json` |
+| `mm-campaign/1` | dropped |
+| `mm.json` (a repo's discovery file) | `hexmarch.json` |
 | messages `e9-atlas`, `e9-bridge` | `hexmarch-atlas`, `hexmarch-bridge` |
 | storage keys `e9-*`, `mm-lang` | `hexmarch-*`, `hexmarch-lang` |
 | `<id>.e9atlas.json` | `<id>.hexmarch-atlas.json` |
