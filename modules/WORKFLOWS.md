@@ -75,16 +75,17 @@ Each module, each app (E9 Companion, E9 Atlas) and the tools keep their own vers
 
 Versions before 1.0.0 make no promises, as in semver.
 
-**The apps' road to 1.0 (Heph, 2026-11-09; replaces the 1.0.0-alpha/-beta plan of 2026-11-08).** All the apps (E9 Companion, E9 Atlas, E9 Scribe) move through the same minor versions together. Each sprint is one minor:
+**The apps' road to 1.0 (Heph, 2026-11-09; replaces the 1.0.0-alpha/-beta plan of 2026-11-08).** All the apps (Hexmarch Companion, Hexmarch Atlas, Hexmarch Scribe) move through the same minor versions together. Each sprint is one minor:
 
 | Version | Sprint |
 | --- | --- |
-| 0.5.X | The first full walkthrough: create a campaign in Scribe, invite, accept, roll a character, approve it, explore the map as that character. Then Scribe makes other sample systems work. |
-| 0.6.X | Real-life tools in the workflow, only ones that cost nothing, including the fundamentals of remote play (the tools that carry it). Scribe skips ahead to 0.6 if needed. |
-| 0.7.X | UX pass, including privacy and encryption (seats, join codes, per-character secrets), content readiness and the remote-play experience. |
+| 0.5.X | **Alpha:** the first full walkthrough: create a campaign in Scribe, invite, accept, roll a character, approve it, explore the map as that character. Then Scribe makes other sample systems work. |
+| 0.6.X | **Integration sprint:** real-life tools in the workflow, only ones that cost nothing, including the fundamentals of remote play (the tools that carry it). Scribe skips ahead to 0.6 if needed. |
+| 0.7.X | **UX sprint:** a UX pass, including privacy and encryption (seats, join codes, per-character secrets), content readiness and the remote-play experience. |
 | 0.8.X | **Private alpha:** real campaigns with invited tables, and their feedback. |
+| 0.9.0 | **Format lock:** the formats freeze. After this, a format change needs a migration and a major version. |
 | 0.9.X | **Public beta**, open to everyone. |
-| 1.0.0 | Release, once the beta is ready. |
+| 1.0.0 | **Release and maintenance.** |
 
 The 0.8 and 0.9 versions are plain semver minors (no `-alpha` or `-beta` suffix), so npm, version ranges and sorting work as usual. The Compendium's revised edition (January 2027 at the earliest) would be a major version of `mm-core`.
 
