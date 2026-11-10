@@ -2,7 +2,7 @@
 
 Hexmarch Scribe ("⬢ Scribe") is the module editor, the third app beside the Hexmarch Atlas and the Hexmarch Companion, at `/scribe/` from day one. It is part of the MVP. A campaign is a private module (PROPOSALS.md P3), so a campaign is made in Scribe, through a simplified **campaign view** of the full creator suite. This file covers that view, how a referee's edits to someone else's module are stored, and the **update checker** that runs whenever a module is opened.
 
-Status: agreed in outline with Heph on 2026-11-08. Built in Scribe 0.1.x: steps 1 to 3, 7, 8 and 9, the two files in section 5 (which follow WORKFLOWS.md "Invitations", agreed 2026-11-09), and the hand-over to the other apps by links. The alpha walkthrough worked end to end on 2026-11-09 and Scribe moved to 0.6.0 with the other apps. Still to build, in 0.6.x: steps 4 to 6 and the update checker (section 4). The format ids here (`e9-…`) move to `hexmarch-…` in 0.6.x (WORKFLOWS.md "Protocol names"). Builds on WORKFLOWS.md (Dependencies, Campaign stack, Trust, Invitations), PROPOSALS.md P1 to P3, MODULE_FORMAT.md and STATE_FORMAT.md.
+Status: agreed in outline with Heph on 2026-11-08. Built in Scribe 0.1.x: steps 1 to 3, 7, 8 and 9 (step 3 became the start positions list in 0.6.x), the two files in section 5 (which follow WORKFLOWS.md "Invitations", agreed 2026-11-09), and the hand-over to the other apps by links. The alpha walkthrough worked end to end on 2026-11-09 and Scribe moved to 0.6.0 with the other apps. Still to build, in 0.6.x: steps 4 to 6 and the update checker (section 4). The format ids here (`e9-…`) move to `hexmarch-…` in 0.6.x (WORKFLOWS.md "Protocol names"). Builds on WORKFLOWS.md (Dependencies, Campaign stack, Trust, Invitations), PROPOSALS.md P1 to P3, MODULE_FORMAT.md and STATE_FORMAT.md.
 
 ## 1. From modules to a campaign
 
@@ -12,11 +12,11 @@ The campaign view is a short sequence of steps. Each step writes part of the cam
 | --- | --- | --- |
 | 1. Root | Pick one root module and its option (for example `mm-core` with its `e9` option). A campaign has exactly one root (P2). | `requires` entry for the root |
 | 2. Modules | Add modules, or a bundle that offers several. Scribe resolves `requires`, offers `recommends`, refuses `conflicts`. | Further `requires`, in order; `campaign.lock.json` with exact versions and manifest hashes |
-| 3. Start | Pick one of the modules' **starts** (section 2), or place the party by hand on the Atlas and set a date. | `campaign/state.json`: `clock.start`, `party`, the `all` audience in `revealed` |
+| 3. Start positions | Nothing to pick (Heph 2026-11-10): the campaign's **start positions** are every start of the modules it uses (section 2). Scribe lists them under each module ("Show Player Start Locations"). Leaving a start out is a job for the module editor tools, after 0.6.x. | Nothing: a new `campaign/state.json` has no parties and no start |
 | 4. Conflicts and slicing | Settle each id that two modules change without a declared override; leave out any id, group or system half. | `overrides` with the referee's note and optional spoiler flag; the exclusion list |
 | 5. Own content | House rules, plus the referee's own sites, NPCs, handouts and tables. Edits to another module's content are stored as patches (section 3). | The campaign module's own content and `patches` |
-| 6. Parties and secrets | One party, or several (West Marches). Seed each character's private reveals from their background. | `party:` and `character:` audiences in `private` (P3 section 4) |
-| 7. Ready | Save the campaign. Scribe makes the creator's **Referee invitation** to it (below), then "Open in Atlas" and "Open in Companion". | The campaign on this device and one Referee invitation for the creator. "Open in Companion" hands the campaign over in a link (WORKFLOWS.md "Apps talk by links"). The apps load the campaign like any module (P3 "One loader"). |
+| 6. Parties and secrets | Parties are made **after** the campaign is built, in the Atlas's Referee mode (Heph 2026-11-10): a name and one of the campaign's start positions, or a start placed by hand. Each party keeps its own clock and sessions, and every invitation is to a party. Seed each character's private reveals from their background. | `parties` in `campaign/state.json` (STATE_FORMAT.md); `party:` and `character:` audiences in `private` (P3 section 4) |
+| 7. Ready | **Build Campaign** saves the campaign. Scribe makes the creator's **Referee invitation** to it (below), then offers "Preview in Companion" and "Preview in Atlas". | The campaign on this device and one Referee invitation for the creator. "Open in Companion" hands the campaign over in a link (WORKFLOWS.md "Apps talk by links"). The apps load the campaign like any module (P3 "One loader"). |
 | 8. Services | Say where the campaign lives for players: a **read URL** (where the player snapshot is published) and a **post URL** (where players send requests). The default will be the referee's own Apps Script (WORKFLOWS.md "Invitations", step 4); until it exists, any static host the referee can upload to (section 5). | `services` in Scribe's record of the campaign |
 | 9. Publish | Publish the first player snapshot and the campaign pointer. **Invite stays disabled in the Companion until this is done**, because until then the campaign exists only on the referee's device. | `snapshot.json` and `campaign.json` (section 5); `published` in Scribe's record of the campaign |
 
@@ -50,15 +50,15 @@ Today a module says nothing about how play begins. A new optional field in the m
 | --- | --- |
 | `id` | Stable within the module, like every other id. |
 | `title`, `note` | The author's own words, shown to the referee when choosing. |
-| `date`, `hour` | The first day (`YYYY-MM-DD` in the setting's years) and hour; they become `clock.start` and `clock.hours`. |
+| `date`, `hour` | The first day (`YYYY-MM-DD` in the setting's years) and hour; they become the clock of a party that starts here (`parties[].clock`). |
 | `site` | Where the party begins; the party marker goes on that site's hex. A hex address may be given instead. |
-| `revealed` | Common knowledge at the start: becomes the `all` audience. |
+| `revealed` | What a party starting here knows: becomes knowledge of each of its characters as they join. |
 | `scenes` | The module's own scenes (encounters.json `scenes` ids) that open play, in order. The start's words come from these, so the text stays the author's and is never copied into the start. |
 | `handouts` | Handouts every player gets at the first session. |
 | `levels` | Suggested character levels, lowest and highest. |
-| `uses` | Optional: the parts of the module this start plays, for a module made of several adventures (Beyond the Pale's B2 to B5). Parts not listed are excluded in the campaign (step 4 slicing), and the referee can add them back at any time. Without it, the whole module is used. (Heph 2026-11-08) |
+| `uses` | Optional: the parts of the module this start plays, for a module made of several adventures (Beyond the Pale's B2 to B5). Without it, the whole module is used. (Heph 2026-11-08.) Since starts belong to parties (2026-11-10), a start no longer slices the campaign; slicing is step 4's job. |
 
-A module may offer any number of starts, or none. With none, or when the referee prefers, step 3 is done by hand.
+A module may offer any number of starts, or none. With none, or when the referee prefers, a party's start is placed by hand.
 
 ## 3. Patches: editing someone else's module
 
