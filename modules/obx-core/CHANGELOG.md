@@ -1,7 +1,7 @@
 # obx-core changelog
 
 ## 0.1.1 (2026-11-13)
-- `text/ability-scores.md`: the six ability descriptions, Heph's E9 System Reference Handbook text verbatim ("What Abilities Do"). Its mentions of talents are E9's and stand as written until Heph changes them.
+- `text/ability-scores.md`: the six ability descriptions, the first sentence of each from Heph's E9 System Reference Handbook ("What Abilities Do"), verbatim.
 
 ## 0.1.0 (2026-11-08)
 - New root module `obx-core`, `provides: "obx"`, under the OGL 1.0a.
