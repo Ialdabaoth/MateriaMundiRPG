@@ -4,7 +4,7 @@ obx-core is released under the Open Game License 1.0a, not CC BY 4.0, because it
 
 ## Designation of Open Game Content and Product Identity
 
-**Open Game Content:** everything in `modules/obx-core/` (rules.json, derive.json, equipment.json, and the rules text in text/) is Open Game Content.
+**Open Game Content:** everything in `modules/obx-core/` (rules.json, derive.json, equipment.json, and the rules text in text/) is Open Game Content. Some of that text is Heph's own from the E9 System Reference Handbook (© 2026 Bakagaijin Productions, published under CC BY-SA 4.0), which he, as its author, also releases here as Open Game Content (text/ability-scores.md).
 
 **Product Identity:** the names "Hexmarch", "E9", "Materia Mundi", "Bakagaijin Productions" and "OBX" when used as a product name; all logos, icons and artwork; the apps' code and visual design. The names "Necrotic Gnome" and "Old-School Essentials" are product identity of Necrotic Gnome and appear below only in the copyright notice the OGL requires; obx-core makes no claim of compatibility with any trademark.
 
