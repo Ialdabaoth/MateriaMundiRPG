@@ -2,6 +2,10 @@
 
 This module's version is its own. It does not follow the E9 Atlas (`modules/tools/ATLAS_VERSION`) or the E9 Companion; a change to the tools or apps alone never bumps it. Bump it only for changes to this module's content (text, sites, creatures, encounters, maps), using the rules in [WORKFLOWS.md](../WORKFLOWS.md#versioning).
 
+## 0.4.14 (2026-11-15)
+
+- The "Arriving in the Pale" start puts the party on hex `world:6847:8553`, on the road outside the Pale Keep's drawbridge (Heph), with the new optional start field `hex` (SCRIBE.md section 2). Atlas support is pending in Hexmarch.
+
 ## 0.4.13 (2026-11-15)
 
 - The Bóinn at Trim follows Heph's traced bends (module.json `atlas.rivers`, needs Hexmarch #74): it wraps the north and east of the castle, as on the real ground.
