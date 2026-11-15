@@ -130,6 +130,7 @@ A procedure is a list of steps. Every step may carry a description template that
 | `note` | emits text only |
 
 | `result` | gives the procedure's answer, for a procedure the Atlas asks a question of (below) |
+| `walk` | runs another procedure once for each hex of a route (below) |
 
 **Questions the Atlas asks.** Some procedures answer a question instead of changing state, and the Atlas calls them by these names whenever it needs the answer. Every ruleset implements them, so the Atlas has no rules numbers of its own:
 
@@ -140,7 +141,15 @@ A procedure is a list of steps. Every step may carry a description template that
 
 A `result` step answers with a number, or looks it up: `{"result": {"by": "terrain", "of": {"woods": 1.5, "hills": 6}, "else": 3}}`. A module's terrain type keeps the last word on its own map: its `travel` and `sight` fields in the atlas (ATLAS_FORMAT.md) win over the procedure, so a module can say its bog is worse than most. Questions run silently: they write nothing to the Events log.
 
-**Effects** are a fixed list, not a scripting language: `damage`, `condition` (from the ruleset's `conditions` list, with a duration), `heal`, `clock` (advance time), `ratchet` (±n on a region ratchet), `explore` (mark a hex), `site` (set a site's status), `scene` (add creatures to the current scene), `encounter-map` (open one, section 10), `note`. Every effect writes campaign state, so undo is a git revert.
+**Arithmetic.** A field whose template fills to plain arithmetic is worked out: `"hours": "{mi} * {pace} / {mph}"` becomes a number. Numbers, `+ - * /` and brackets only; anything else stays text.
+
+**Walking a route** (Heph 2026-11-15). `{"walk": "move", "stop": "queued"}` runs `move` once for each hex from the party to where it is going, at the level the map shows, with the params `from`, `to` (hex addresses), `terrain`, `road`, `mi` (miles crossed in that hex), `mph` (the module's pace) and `pace` (the `travel` answer for that hex, or the module's own multiplier). After each hex the terrain and place triggers it sets off join the queue. **The procedure decides where the walk stops**: `"stop": "queued"` stops at the first hex where something joined the queue, so it is resolved where it happens, and the referee taps Continue to go on; `"stop": "never"` goes to the end and queues everything. A `halt` effect in the walked procedure (a failed lost check, say) stops it at that hex either way. A hex with no travel on foot ends the walk before it.
+
+**Offers** (Heph 2026-11-15). A procedure can offer itself on the map: `"offer": "hex"` lists it when the referee has a party shown and clicks another hex, with `"label"` ("Navigate to here") and `"about"` (its tooltip). Each item previews itself without rolling: the hexes and time, where it would stop and for what, and the rolls its steps make (each `roll` step's `label`, or its dice). A second click on the same hex runs the default: the campaign's choice (`defaults.hex` in the state file, set with the menu's star), else the procedure the ruleset marks `"default": true`. The Route tool runs `navigate` along the stops picked by hand. Later contexts may be `party`, `site` and `creature`.
+
+The ruleset's `navigate` is the move: `{"offer": "hex", "label": "Navigate to here", "default": true, "steps": [{"walk": "move", "stop": "queued"}]}`, and its `move` passes the time and moves the party (`clock`, `move`, `reveal`). What a ruleset rolls on the way (getting lost, wandering checks, forced marches) is written in that ruleset's own module.
+
+**Effects** are a fixed list, not a scripting language: `damage`, `condition` (from the ruleset's `conditions` list, with a duration), `heal`, `clock` (advance time), `ratchet` (±n on a region ratchet), `explore` (mark a hex), `site` (set a site's status), `scene` (add creatures to the current scene), `encounter-map` (open one, section 10), `move` (the party's position), `reveal` (what is in sight from there becomes the members' knowledge), `halt` (stops a walk), `note`. Every effect writes campaign state, so undo is a git revert.
 
 **Text**: each step may have `text` (the referee's line) and `players` (the player-facing line). Templates fill `{who}`, `{target}`, `{target.player}`, `{roll}`, `{result}`, `{amount}`, `{place}`, `{terrain}`, `{action}`, any param, and any macro field.
 

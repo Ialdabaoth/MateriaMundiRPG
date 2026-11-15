@@ -44,6 +44,7 @@ One small JSON file holds the campaign's shared record between sessions: its par
 | `parties[].at` | Where the party stands, or `null` until the Atlas places it: the module's site (`base`) and `id`, and a 100-ft hex address (ATLAS_FORMAT.md "Party marker"). `hours` is the Atlas's running travel time since the party was placed. |
 | `parties[].session` | The party's last session started (`0` before the first) and whether it is in play. Parties play their own sessions. |
 | `parties[].log` | The party's Events log for its current session (EVENTS_FORMAT.md section 8), oldest first; `[]` when nothing has run. Closing the session moves it to `campaign/sessions/<party>-<number>.json`. |
+| `defaults` | The referee's choices for procedures, such as `{"hex": "navigate"}`: what a second click on a hex runs (EVENTS_FORMAT.md "Offers"). Optional. |
 | `active` | The party the referee used last, so the apps open on the same one; `""` when there are none. |
 | `revealed` | Common knowledge, by module id: hexes and place slugs (module.json `sites`) that everyone knows. What a party or a character knows beyond that is stored by each character as `knowledge` entries (CHARACTER_FORMAT.md "Knowledge"): a party's map is the union of its members' knowledge and this. |
 | `characters` | Everyone playing: sheet id, name, the player once players join by invite, and `party`, the party they are in (`null` until they join one; an NPC follower is in its leader's party). The sheets themselves live in `campaign/characters/`. |
