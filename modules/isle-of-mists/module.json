@@ -108,7 +108,7 @@
    {"name": "Slí Dála", "class": "roman", "via": ["Cnoc na Teamhrach", "An Nás", "Cill Dara", "Mainistir Laoise", "Ros Cré", "Aonach Urmhumhan", "Cill Dalua", "Luimneach"]},
    {"name": "Slí Chualann", "class": "roman", "via": ["Cnoc na Teamhrach", "Baile Átha Cliath", "Cill Mhantáin", "An tInbhear Mór", "Fearna", "Loch Garman"]},
    {"name": "The Trim road", "class": "local", "via": ["Baile Átha Cliath", "Baile Átha Troim", "Baile Átha Buí"]},
-   {"name": "The Boyne road", "class": "local", "via": ["Droichead Átha", "Baile Shláine", "An Uaimh", "Baile Átha Troim"]},
+   {"name": "The Boyne road", "class": "local", "via": ["Droichead Átha", "Baile Shláine", "An Uaimh", [53.5547, -6.78853]]},
    {"name": "The Kells road", "class": "local", "via": ["An Uaimh", "Ceanannas Mór", "An Cabhán"]},
    {"name": "The coast road north", "class": "local", "via": ["Baile Átha Cliath", "Sord", "Droichead Átha", "Dún Dealgan", "Cairlinn"]},
    {"name": "The Barrow road", "class": "local", "via": ["An Nás", "Cill Chuillinn", "Ceatharlach", "An Caisleán Dubh", "Cill Chainnigh"]},
