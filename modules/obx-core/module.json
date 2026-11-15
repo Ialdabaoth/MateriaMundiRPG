@@ -3,7 +3,7 @@
  "kind": "rules",
  "id": "obx-core",
  "title": "OBX",
- "version": "0.1.0",
+ "version": "0.1.1",
  "provides": "obx",
  "license": "OGL-1.0a",
  "licenseFile": "LICENSE.OGL.md",

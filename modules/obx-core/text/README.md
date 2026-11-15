@@ -9,7 +9,7 @@ Status: `[ ]` waiting for Heph, `[x]` written.
 ## 0.1.0: what a character sheet needs
 
 ### Characters
-- [ ] `ability-scores`: what each score modifies (Ability Scores)
+- [x] `ability-scores`: what each score modifies (Ability Scores). Heph's E9 Handbook text, verbatim (2026-11-13).
 - [ ] `prime-requisite`: XP modifier from prime requisites (Ability Scores > Prime Requisite)
 - [ ] `creating-a-character`: the steps, in order (Creating a Character)
 - [ ] `hit-points`: rolling hit points at 1st level and on levelling (Game Statistics; Creating a Character > 7)
