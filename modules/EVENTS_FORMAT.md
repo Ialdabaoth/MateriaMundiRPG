@@ -165,7 +165,7 @@ An `encounter-map` effect opens the hand-made Encounter map of the site if it ha
 Each slice is usable at the table on its own:
 
 1. This spec.
-2. **The runner, in the Atlas** (2026-11-15): loading and merging, name lookup, the depth limit and the load report; the referee's queue and Events log in the party box; and the Atlas's own rules numbers moved into procedures (`travel` and `sight-range` in e9-core), so its maps work as before but a ruleset can change them.
-3. Place, terrain and clock triggers off each party's marker and clock (the module calendar, ruleset time units), with the wandering check as the first table-driven procedure for each of e9, e9mm and mm, and manual buttons.
+2. **The runner, in the Atlas** (2026-11-15): loading and merging, name lookup, the depth limit and the load report; the referee's queue and Events log in the party box; **manual triggers** (`on: "manual"`, Heph 2026-11-15), a button for each in the party box that queues it; and the Atlas's own rules numbers moved into procedures (`travel` and `sight-range` in e9-core), so its maps work as before but a ruleset can change them.
+3. Place, terrain and clock triggers off each party's marker and clock (the module calendar, ruleset time units), with the wandering check as the first table-driven procedure for each of e9, e9mm and mm.
 4. What spills over to the other apps: `show` lines and roll requests to the Companion, closed sessions' logs published through Scribe.
 5. Encounter maps.
