@@ -6,6 +6,7 @@ This module's version is its own. It does not follow the E9 Atlas (`modules/tool
 
 - Baile Átha Troim moved 200 ft north and 100 ft east (53.555548, −6.789539), so the Pale Keep no longer sits in the Bóinn as the Atlas draws it (Heph).
 - The `pale-keep` battle map is cut down to the curtain walls and the east ditch under the drawbridge (60 by 75 squares, was 82 by 108). The ravine, cliffs, road and trees outside are gone; outside the walls the Atlas shows the hexmap (Heph). Its `surface` picture is transparent outside the walls and is now fixed in the plan, so the drawing tool no longer redraws it. All 26 areas keep their ids.
+- The keep is turned 90° clockwise (75 by 60 squares), so the gate and drawbridge face south onto the Bóinn; the anchor's `ft` offset (75 ft west, 145 ft south of the site's hex) sets the drawbridge on the north bank (Heph).
 
 ## 0.4.11 (2026-11-08)
 
