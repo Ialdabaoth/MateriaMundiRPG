@@ -36,6 +36,7 @@ Today a module says nothing about how play begins. A new optional field in the m
     "date": "3507-05-01",
     "hour": 8,
     "site": "<site name>",
+    "hex": "world:LLLL:HHHH",
     "revealed": { "places": ["<site name>", "<site name>"], "hexes": [] },
     "scenes": ["<scene id>"],
     "handouts": ["<handout id>"],
@@ -52,6 +53,7 @@ Today a module says nothing about how play begins. A new optional field in the m
 | `title`, `note` | The author's own words, shown to the referee when choosing. |
 | `date`, `hour` | The first day (`YYYY-MM-DD` in the setting's years) and hour; they become the clock of a party that starts here (`parties[].clock`). |
 | `site` | Where the party begins; the party marker goes on that site's hex. A hex address may be given instead. |
+| `hex` | Optional: the exact 100-ft hex the party marker starts on, as the Atlas prints it (`world:LLLL:HHHH`), when it should stand beside the site rather than on the site's own hex (Heph 2026-11-15: the road outside the Pale Keep's drawbridge). `site` still names the place. |
 | `revealed` | What a party starting here knows: becomes knowledge of each of its characters as they join. |
 | `scenes` | The module's own scenes (encounters.json `scenes` ids) that open play, in order. The start's words come from these, so the text stays the author's and is never copied into the start. |
 | `handouts` | Handouts every player gets at the first session. |
