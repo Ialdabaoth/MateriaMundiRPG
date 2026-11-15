@@ -17,7 +17,7 @@
  "ground": "none",
  "anchor": {
   "square": [36, 30],
-  "ft": [-75, 145]
+  "ft": [-75, 45]
  },
  "areas": {
   "east-gate": {
