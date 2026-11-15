@@ -5,7 +5,7 @@
  ],
  "title": "Beyond the Pale: The Isle of Mists, 1422",
  "short": "Beyond the Pale · The Isle of Mists, 1422",
- "version": "0.4.12",
+ "version": "0.4.13",
  "license": "CC-BY-4.0",
  "languages": {"ga": "Gaeilge", "en": "English"},
  "starts": [
@@ -100,6 +100,7 @@
   "extent": [-10.7, 51.4, -5.4, 55.45],
   "land": "island",
   "travel": {"terrain": {"woods": 2, "forest": 2}},
+  "rivers": [{"name": "Bóinn", "via": [[53.551977, -6.783916], [53.552989, -6.786521], [53.555212, -6.788793], [53.55582, -6.789966], [53.556349, -6.792766], [53.557039, -6.795027], [53.557218, -6.796298]]}],
   "roads": [
    {"name": "Slí Midluachra", "class": "roman", "via": ["Cnoc na Teamhrach", "Baile Shláine", "Baile Átha Fhirdhia", "Dún Dealgan", "Iúr Cinn Trá", "Eamhain Mhacha", "Ard Mhacha", "Cúil Raithin", "Dún Sobhairce"]},
    {"name": "Slí Asail", "class": "roman", "via": ["Cnoc na Teamhrach", "Baile Átha Buí", "An Muileann gCearr", "Uisneach", "Baile Átha Luain", "Ros Comáin", "Ráth Chruachan"]},
@@ -107,7 +108,7 @@
    {"name": "Slí Dála", "class": "roman", "via": ["Cnoc na Teamhrach", "An Nás", "Cill Dara", "Mainistir Laoise", "Ros Cré", "Aonach Urmhumhan", "Cill Dalua", "Luimneach"]},
    {"name": "Slí Chualann", "class": "roman", "via": ["Cnoc na Teamhrach", "Baile Átha Cliath", "Cill Mhantáin", "An tInbhear Mór", "Fearna", "Loch Garman"]},
    {"name": "The Trim road", "class": "local", "via": ["Baile Átha Cliath", "Baile Átha Troim", "Baile Átha Buí"]},
-   {"name": "The Boyne road", "class": "local", "via": ["Droichead Átha", "Baile Shláine", "An Uaimh", "Baile Átha Troim"]},
+   {"name": "The Boyne road", "class": "local", "via": ["Droichead Átha", "Baile Shláine", "An Uaimh", [53.554836, -6.788129], [53.5547, -6.78853]]},
    {"name": "The Kells road", "class": "local", "via": ["An Uaimh", "Ceanannas Mór", "An Cabhán"]},
    {"name": "The coast road north", "class": "local", "via": ["Baile Átha Cliath", "Sord", "Droichead Átha", "Dún Dealgan", "Cairlinn"]},
    {"name": "The Barrow road", "class": "local", "via": ["An Nás", "Cill Chuillinn", "Ceatharlach", "An Caisleán Dubh", "Cill Chainnigh"]},

@@ -2,6 +2,13 @@
 
 This module's version is its own. It does not follow the E9 Atlas (`modules/tools/ATLAS_VERSION`) or the E9 Companion; a change to the tools or apps alone never bumps it. Bump it only for changes to this module's content (text, sites, creatures, encounters, maps), using the rules in [WORKFLOWS.md](../WORKFLOWS.md#versioning).
 
+## 0.4.13 (2026-11-15)
+
+- The Bóinn at Trim follows Heph's traced bends (module.json `atlas.rivers`, needs Hexmarch #74): it wraps the north and east of the castle, as on the real ground.
+- The Pale Keep is back to north-south with its gate on the east (0.4.12's turn undone), anchored by its drawbridge on Heph's point 53.554802, −6.788648, over the river, and turned 30° counterclockwise on the Atlas (anchor `rotate` -30) so its east wall follows the Bóinn (Heph). The battle map itself stays square to its grid.
+- The Boyne road (from An Uaimh) now ends at the Pale Keep's drawbridge instead of the site's centre, its last 100 ft square to the gate wall (Heph).
+- Battle maps lose their thick black frame when the build redraws them (Hexmarch #74).
+
 ## 0.4.12 (2026-11-15)
 
 - Baile Átha Troim moved 200 ft north and 100 ft east (53.555548, −6.789539), so the Pale Keep no longer sits in the Bóinn as the Atlas draws it (Heph).
