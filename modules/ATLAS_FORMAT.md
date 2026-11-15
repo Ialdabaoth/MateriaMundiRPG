@@ -223,7 +223,31 @@ Sections appear in this order: base terrain, then rivers and roads, then region 
   ```
   A via point is any site name in the module or a `[lat, lon]` point; an unknown site, class or point fails the build. `tools/atlas_roads.py` (run by build.py after the tile cache) lays each leg between via points along the cheapest way on foot over the Field (half-mile) terrain, using the map's travel multipliers: no leg crosses sea or a lake, and grass wins over bog and mountain. It then straightens the path wherever a straight line stays within 600 ft of it on passable ground, gives it a seeded sway (a gentle wander of up to about 150 ft on a roman road, 200 ft on a local road and 260 ft on a trail, pinned at the via points and never onto ground with no way on foot; Heph 2026-11-07), and writes each road to map.json as a polyline in feet. Where a road meets a river it writes a crossing: a `bridge` on a `roman` road, a `ford` on the others, or what the road's optional `"crossing": "bridge" | "ford"` says. A crossing carries its 100-ft `hex`, the exact point `at` (feet), the road's heading `angle` (degrees) and the `span` it needs (feet, from the river's width), plus the `road` and `river` names. The Atlas draws roman and local roads from the Region view and trails from the League view down, at true width (30, 15 and 6 ft) once zoomed in, and crossings from the League view down. Plain marks stand in for the bridge and ford icons Heph is drawing. The Route tool counts a sample as on a road when it is within about a third of a hex of one, and the road's multiplier replaces the terrain's there (so a bridge carries the route over a river). Hovering over a road names it.
 - **POI positions** (Heph 2026-11-06) are a whole lattice hex `"hex": [C, R]`: a PoI is always one 100-ft hex, with no offset inside it. The hex gives every level its address for free (which Field, League and March the place is in). At the 100-ft (Furlong) level a PoI draws centred in its hex and never past the hex's edge; its icon and label shrink to fit, and the label is left off when it would be too small to read. Visibility at the other levels is still to be worked out (open question). Older files with an `"ft"` offset still load; the offset is ignored.
-- **Travel** (Heph 2026-11-06, Atlas 0.4.11) prepares the path tool (plot a route, estimate the time), which will later hand off to the travel procedures (EVENTS_FORMAT.md). Each terrain type's `travel` is a time multiplier against the module's pace: `1` is normal pace, `2` takes twice as long, and `null` means no travel on foot (sea, lake: boats come later). The top-level `travel` block gives the pace and the road multipliers. On a road the road's multiplier replaces the terrain's:
+- **Terrain traits** (Heph 2026-11-15) replace the travel multipliers below. Every terrain type has five **traits**, each graded on the handbook's five difficulty steps, `automatic`, `easy`, `normal`, `hard` or `impossible`:
+
+  | Trait | What it grades |
+  | --- | --- |
+  | `orient` | keeping your bearings (getting lost) |
+  | `traverse` | crossing the ground (footing, climbing, swimming) |
+  | `hide` | moving unseen, setting an ambush |
+  | `investigate` | finding tracks, forage and hidden things |
+  | `view` | how far you can see: automatic two leagues, easy one league, normal into the next hex, hard only within the hex, impossible nothing (provisional: Heph will redo it once line of sight is settled) |
+
+  The traits are rules-neutral verbs. Each ruleset says what a grade does, in its rules module (for E9, `e9-core` `movement`: traverse sets the speed, and each grade is the difficulty of the matching talent roll). A road makes `orient` and `traverse` automatic in its hex, and every road is 1x (Heph 2026-11-15): a ruleset may let road quality ease rolls instead (E9: the Forced March roll is easy on a Roman or local road, normal on a trail). Weather and light will shift grades by a step, as circumstances shift any roll (later; EVENTS_FORMAT.md).
+
+  **Layers** (Heph 2026-11-15: "overridable per-hex, but should inherit from a rules-based default"). A hex's traits come from, weakest first:
+
+  1. the **ruleset's default** for its terrain id, in the root module's `rules.json` `terrain` block (`{"forest": {"orient": "hard", "traverse": "normal", ...}}`; E9's table is in `e9-core`);
+  2. the **module's terrain type**, `atlas.terrain` (`"traits": {"traverse": "hard"}`), which is how a module says its bog is worse than most;
+  3. **per hex**, module.json `atlas.hex_traits`: `{"<hex address>": {"view": "automatic"}}`, at any level; a finer hex wins over the coarser hex it sits in;
+  4. the referee's **campaign** layer, with the same `hex_traits` shape (STATE_FORMAT.md / MODULE_FORMAT.md section 7).
+
+  build.py copies the module's two layers into the built module.json as `"traits": {"terrain": {id: traits}, "hexes": {address: traits}}` and leaves them out of the map cache, so changing them redraws nothing (Atlas, Hexmarch #70).
+
+  Each layer gives only the traits it changes; the rest fall through. An id that no layer knows is `normal` throughout. Traits are read at the level shown (League, Field, Furlong, 100-ft), from that hex's summary terrain plus any `hex_traits` on it or a coarser hex containing it.
+
+  Orient against traverse makes a grid, and a terrain type is a cell in it. Once the Atlas reads traits, `travel` multipliers are ignored, and the road builder costs a hex by its traverse grade.
+- **Travel** (Heph 2026-11-06, Atlas 0.4.11; **being replaced by terrain traits**, above) prepares the path tool (plot a route, estimate the time), which will later hand off to the travel procedures (EVENTS_FORMAT.md). Each terrain type's `travel` is a time multiplier against the module's pace: `1` is normal pace, `2` takes twice as long, and `null` means no travel on foot (sea, lake: boats come later). The top-level `travel` block gives the pace and the road multipliers. On a road the road's multiplier replaces the terrain's:
   ```json
   "travel": {"pace": {"mi_per_hour": 3, "hours_per_day": 8}, "roads": {"roman": 0.5, "local": 0.75, "trail": 1}}
   ```
