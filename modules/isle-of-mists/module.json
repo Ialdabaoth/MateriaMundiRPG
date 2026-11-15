@@ -100,6 +100,7 @@
   "extent": [-10.7, 51.4, -5.4, 55.45],
   "land": "island",
   "travel": {"terrain": {"woods": 2, "forest": 2}},
+  "rivers": [{"name": "Bóinn", "via": [[53.551977, -6.783916], [53.552989, -6.786521], [53.555212, -6.788793], [53.55582, -6.789966], [53.556349, -6.792766], [53.557039, -6.795027], [53.557218, -6.796298]]}],
   "roads": [
    {"name": "Slí Midluachra", "class": "roman", "via": ["Cnoc na Teamhrach", "Baile Shláine", "Baile Átha Fhirdhia", "Dún Dealgan", "Iúr Cinn Trá", "Eamhain Mhacha", "Ard Mhacha", "Cúil Raithin", "Dún Sobhairce"]},
    {"name": "Slí Asail", "class": "roman", "via": ["Cnoc na Teamhrach", "Baile Átha Buí", "An Muileann gCearr", "Uisneach", "Baile Átha Luain", "Ros Comáin", "Ráth Chruachan"]},

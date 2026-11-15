@@ -1746,11 +1746,15 @@
  },
  "anchor": {
   "square": [
-   30,
-   39
+   57.4,
+   51.2
+  ],
+  "ft": [
+   196,
+   227
   ]
  },
- "notes": "Rebuilt to the dimensions of the reference keep plan Heph supplied (2026-11-06, 10-ft squares doubled to 5-ft), in the E9 ink style; names and roofs as before. Cropped to the curtain walls and the east ditch (Heph 2026-11-15): outside the walls the Atlas shows the hexmap.",
+ "notes": "Rebuilt to the dimensions of the reference keep plan Heph supplied (2026-11-06, 10-ft squares doubled to 5-ft), in the E9 ink style; names and roofs as before. Cropped to the curtain walls and the east ditch (Heph 2026-11-15): outside the walls the Atlas shows the hexmap. Anchored by the drawbridge (square [57.4, 51.2]) on Heph's point 53.554802, -6.788648, over the traced Bóinn (Heph 2026-11-15).",
  "surface": {
   "src": "pale-keep/surface.png",
   "px": 8,
