@@ -135,10 +135,12 @@ A procedure is a list of steps. Every step may carry a description template that
 
 | Name | Params | Answers |
 |---|---|---|
-| `travel` | `terrain`, `road` (`roman`, `local`, `trail` or none) | the time multiplier against the module's pace (`1` normal pace, `2` twice as slow, `null` no travel on foot) |
-| `sight-range` | `terrain` (later light and height) | how far one sees, in miles |
+| `travel` | `terrain`, `road` | *retired by terrain traits (Heph 2026-11-15)*: the time multiplier against the module's pace |
+| `sight-range` | `view` (the hex's view grade, ATLAS_FORMAT.md "Terrain traits"; was `terrain`) | how far one sees, in miles |
 
 A `result` step answers with a number, or looks it up: `{"result": {"by": "terrain", "of": {"woods": 1.5, "hills": 6}, "else": 3}}`. A module's terrain type keeps the last word on its own map: its `travel` and `sight` fields in the atlas (ATLAS_FORMAT.md) win over the procedure, so a module can say its bog is worse than most. Questions run silently: they write nothing to the Events log.
+
+**Terrain traits in `move`** (Heph 2026-11-15). For each walked hex the Atlas passes `move` the hex's five traits as params `orient`, `traverse`, `hide`, `investigate` and `view` (after a road upgrades orient and traverse), with the party's `speed` (worked out from the ruleset's `movement` data and the members' modes) and `modes`. The ruleset's `move` decides the time and any rolls. Terrain `travel` multipliers no longer apply.
 
 **Effects** are a fixed list, not a scripting language: `damage`, `condition` (from the ruleset's `conditions` list, with a duration), `heal`, `clock` (advance time), `ratchet` (±n on a region ratchet), `explore` (mark a hex), `site` (set a site's status), `scene` (add creatures to the current scene), `encounter-map` (open one, section 10), `note`. Every effect writes campaign state, so undo is a git revert.
 
