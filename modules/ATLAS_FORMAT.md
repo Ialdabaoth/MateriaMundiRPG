@@ -242,6 +242,8 @@ Sections appear in this order: base terrain, then rivers and roads, then region 
   3. **per hex**, module.json `atlas.hex_traits`: `{"<hex address>": {"view": "automatic"}}`, at any level; a finer hex wins over the coarser hex it sits in;
   4. the referee's **campaign** layer, with the same `hex_traits` shape (STATE_FORMAT.md / MODULE_FORMAT.md section 7).
 
+  build.py copies the module's two layers into the built module.json as `"traits": {"terrain": {id: traits}, "hexes": {address: traits}}` and leaves them out of the map cache, so changing them redraws nothing (Atlas, Hexmarch #70).
+
   Each layer gives only the traits it changes; the rest fall through. An id that no layer knows is `normal` throughout. Traits are read at the level shown (League, Field, Furlong, 100-ft), from that hex's summary terrain plus any `hex_traits` on it or a coarser hex containing it.
 
   Orient against traverse makes a grid, and a terrain type is a cell in it. Once the Atlas reads traits, `travel` multipliers are ignored, and the road builder costs a hex by its traverse grade.
