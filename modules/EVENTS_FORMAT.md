@@ -1,7 +1,9 @@
 # E9 Events and Procedures format (draft)
 
-How a module says *what can happen* on its maps, and how each ruleset says *how it is resolved*, so the Hexmarch Companion and Hexmarch Atlas can run a hexcrawl at the table.
-Designed with Heph on 2026-11-05. Status: **draft, nothing built yet**. Tables here extend the table format in MODULE_FORMAT.md section 6.
+How a module says *what can happen* on its maps, and how each ruleset says *how it is resolved*, so the Hexmarch Atlas can run a hexcrawl at the table.
+Designed with Heph on 2026-11-05. Status: **draft, being built in the Atlas** (Heph 2026-11-15: "Procedures lives primarily in the Atlas"). Tables here extend the table format in MODULE_FORMAT.md section 6.
+
+**Where it runs.** The Atlas runs procedures, in Referee mode: it loads the events and procedures, queues what applies when a party moves or its clock passes, runs what the referee taps, and keeps each party's Events log. The Companion and Scribe take part only where play spills over to them (a `show` line in a player's Inbox, a roll request, a closed session's log to publish); those parts are specified when they are built.
 
 ## 1. The idea in one paragraph
 
@@ -13,10 +15,12 @@ A module's `events.json` speaks only in **fiction**: triggers (when something ca
 modules/<module-id>/
   events.json                         triggers, tables, macro vocabularies, calendar (rule-generic; any *.json with an "events" block also counts)
   procedures/<ruleset-id>.json        this module's procedures for one ruleset
-companion-app/src/rules/
-  options/<ruleset-id>-options.json   gains a "conditions" list and "time" units (sections 6, 7)
-  procedures/<ruleset-id>.json        the ruleset's generic procedures (save, morale, reaction, damage...)
+modules/<rules-module>/               the ruleset's own module (e9-core, mm-core, obx-core...; rules-modules.md)
+  rules.json                          gains a "conditions" list and "time" units (sections 6, 7)
+  procedures/<ruleset-id>.json        the ruleset's generic procedures (travel, sight-range, save, morale, reaction, damage...)
 ```
+
+The ruleset's procedures live in its rules module (2026-11-15), not inside an app: rules are modules, and the Atlas reads modules. A campaign's lockfile therefore pins the procedures it plays with.
 
 ### Multiple files (Heph 2026-11-05)
 
@@ -125,13 +129,26 @@ A procedure is a list of steps. Every step may carry a description template that
 | `effect` | changes state (below) |
 | `note` | emits text only |
 
+| `result` | gives the procedure's answer, for a procedure the Atlas asks a question of (below) |
+
+**Questions the Atlas asks.** Some procedures answer a question instead of changing state, and the Atlas calls them by these names whenever it needs the answer. Every ruleset implements them, so the Atlas has no rules numbers of its own:
+
+| Name | Params | Answers |
+|---|---|---|
+| `travel` | `terrain`, `road` (`roman`, `local`, `trail` or none) | the time multiplier against the module's pace (`1` normal pace, `2` twice as slow, `null` no travel on foot) |
+| `sight-range` | `terrain` (later light and height) | how far one sees, in miles |
+
+A `result` step answers with a number, or looks it up: `{"result": {"by": "terrain", "of": {"woods": 1.5, "hills": 6}, "else": 3}}`. A module's terrain type keeps the last word on its own map: its `travel` and `sight` fields in the atlas (ATLAS_FORMAT.md) win over the procedure, so a module can say its bog is worse than most. Questions run silently: they write nothing to the Events log.
+
 **Effects** are a fixed list, not a scripting language: `damage`, `condition` (from the ruleset's `conditions` list, with a duration), `heal`, `clock` (advance time), `ratchet` (±n on a region ratchet), `explore` (mark a hex), `site` (set a site's status), `scene` (add creatures to the current scene), `encounter-map` (open one, section 10), `note`. Every effect writes campaign state, so undo is a git revert.
 
 **Text**: each step may have `text` (the referee's line) and `players` (the player-facing line). Templates fill `{who}`, `{target}`, `{target.player}`, `{roll}`, `{result}`, `{amount}`, `{place}`, `{terrain}`, `{action}`, any param, and any macro field.
 
 ## 8. Running: the referee confirms everything
 
-Moving the party marker on the Atlas **queues** every trigger that applies (time by terrain, getting lost, encounter check, weather, terrain and place triggers). The referee runs each one with a tap, skips it, or reorders the queue. Nothing rolls without a tap, and every result can be applied or overridden before it touches state. Clock triggers queue the same way when time advances.
+Moving the party marker on the Atlas **queues** every trigger that applies (time by terrain, getting lost, encounter check, weather, terrain and place triggers). The referee runs each one with a tap, skips it, or reorders the queue. Nothing rolls without a tap, and every result can be applied or overridden before it touches state. Clock triggers queue the same way when time advances. The queue and the log sit in the referee's party box, one per party.
+
+**The Events log** is kept by each party, in the state file as `parties[].log` (STATE_FORMAT.md): the current session's entries, oldest first, each `{"at": <party clock hours>, "proc": <name>, "text": <referee line>, "players": <player line, if shown>, "rolls": [...], "effects": [...]}`. Every party has its own clock and session, so its log runs on that clock. Closing a session moves its log out of the state file into the session's record (`campaign/sessions/<party>-<number>.json`), which becomes the session's commit (MODULE_FORMAT.md section 7), and the next session starts an empty log.
 
 ## 9. Who sees and who rolls
 
@@ -148,7 +165,7 @@ An `encounter-map` effect opens the hand-made Encounter map of the site if it ha
 Each slice is usable at the table on its own:
 
 1. This spec.
-2. Manual procedure buttons and the Events log, with one real procedure (the wandering check) for each of e9, e9mm and mm.
-3. Clock triggers, the module calendar and ruleset time units.
-4. Place and terrain triggers off the party marker, with the referee queue.
+2. **The runner, in the Atlas** (2026-11-15): loading and merging, name lookup, the depth limit and the load report; the referee's queue and Events log in the party box; and the Atlas's own rules numbers moved into procedures (`travel` and `sight-range` in e9-core), so its maps work as before but a ruleset can change them.
+3. Place, terrain and clock triggers off each party's marker and clock (the module calendar, ruleset time units), with the wandering check as the first table-driven procedure for each of e9, e9mm and mm, and manual buttons.
+4. What spills over to the other apps: `show` lines and roll requests to the Companion, closed sessions' logs published through Scribe.
 5. Encounter maps.

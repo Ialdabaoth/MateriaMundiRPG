@@ -21,7 +21,8 @@ One small JSON file holds the campaign's shared record between sessions: its par
       "start": { "module": "isle-of-mists", "id": "arrive-at-the-keep" },
       "clock": { "start": "3507-05-01", "hours": 34.5 },
       "at": { "base": "https://ialdabaoth.github.io/MateriaMundiRPG/", "module": "isle-of-mists", "map": "atlas", "hex": "world:6947:25B2", "label": "6947:25B2", "hours": 2.5 },
-      "session": { "number": 3, "open": false }
+      "session": { "number": 3, "open": false },
+      "log": []
     }
   ],
   "active": "p-kells",
@@ -42,6 +43,7 @@ One small JSON file holds the campaign's shared record between sessions: its par
 | `parties[].clock.hours` | Game hours since midnight of that day (from the start's `hour`; 8, 08:00, when it gives none). |
 | `parties[].at` | Where the party stands, or `null` until the Atlas places it: the module's site (`base`) and `id`, and a 100-ft hex address (ATLAS_FORMAT.md "Party marker"). `hours` is the Atlas's running travel time since the party was placed. |
 | `parties[].session` | The party's last session started (`0` before the first) and whether it is in play. Parties play their own sessions. |
+| `parties[].log` | The party's Events log for its current session (EVENTS_FORMAT.md section 8), oldest first; `[]` when nothing has run. Closing the session moves it to `campaign/sessions/<party>-<number>.json`. |
 | `active` | The party the referee used last, so the apps open on the same one; `""` when there are none. |
 | `revealed` | Common knowledge, by module id: hexes and place slugs (module.json `sites`) that everyone knows. What a party or a character knows beyond that is stored by each character as `knowledge` entries (CHARACTER_FORMAT.md "Knowledge"): a party's map is the union of its members' knowledge and this. |
 | `characters` | Everyone playing: sheet id, name, the player once players join by invite, and `party`, the party they are in (`null` until they join one; an NPC follower is in its leader's party). The sheets themselves live in `campaign/characters/`. |
