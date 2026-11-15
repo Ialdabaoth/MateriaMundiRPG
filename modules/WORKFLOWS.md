@@ -426,6 +426,9 @@ The Companion, the Atlas and Scribe **do not rely on shared browser storage** to
 - **Safe to open twice.** Every message has an id; the receiving app ignores one it has already applied.
 - **Each app owns its own data.** Scribe owns the campaign's definition (modules, lock, house rules, starts). The Companion owns characters, requests and answers. The Atlas owns what it draws from: the party's position and fog. Each sends the others the changes they need and keeps its own copy in its own storage.
 - **Storage is a cache.** An app's browser storage is a fast local copy, never the only one.
+- **Same profile, shared storage, as a shortcut (Heph, 2026-11-10).** The apps share one web address, so in the same browser profile on the same device they also share storage, and may read each other's copy to save a step. A link is still the guaranteed route, because another profile, browser or device shares nothing.
+- **Scribe is the only publisher (Heph, 2026-11-10).** Only Scribe writes the published campaign, and only Scribe holds the referee's publish key. The referee's first publish is a deliberate button in Scribe. After that, a change players need (a new party, a move, an approval) is sent to Scribe as an update link carrying a return address. Scribe publishes it and sends the referee back. When Scribe hosts the Atlas in a frame, it publishes the Atlas's changes itself, with no round trip.
+- **Setup flows from app to app (Heph, 2026-11-10).** Scribe sets up the campaign and hands it to the Atlas. The Atlas builds the parties. For each invite, the Atlas's party builder hands the campaign and that party to the Companion, which makes the invite.
 
 **What goes where (Heph, 2026-11-09).**
 
