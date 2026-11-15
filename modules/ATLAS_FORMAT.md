@@ -231,7 +231,7 @@ Sections appear in this order: base terrain, then rivers and roads, then region 
   | `traverse` | crossing the ground (footing, climbing, swimming) |
   | `hide` | moving unseen, setting an ambush |
   | `investigate` | finding tracks, forage and hidden things |
-  | `view` | how far you can see: automatic two leagues, easy one league, normal into the next hex, hard only within the hex, impossible nothing |
+  | `view` | how far you can see: automatic two leagues, easy one league, normal into the next hex, hard only within the hex, impossible nothing (provisional: Heph will redo it once line of sight is settled) |
 
   The traits are rules-neutral verbs. Each ruleset says what a grade does, in its rules module (for E9, `e9-core` `movement`: traverse sets the speed, and each grade is the difficulty of the matching talent roll). A road makes `orient` and `traverse` automatic in its hex, and every road is 1x (Heph 2026-11-15): a ruleset may let road quality ease rolls instead (E9: the Forced March roll is easy on a Roman or local road, normal on a trail). Weather and light will shift grades by a step, as circumstances shift any roll (later; EVENTS_FORMAT.md).
 
