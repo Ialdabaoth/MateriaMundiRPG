@@ -111,6 +111,7 @@
    {"name": "The Trim road", "class": "local", "via": ["Baile Átha Cliath", [53.552572, -6.788213]]},
    {"name": "The Trim road", "class": "local", "traced": true, "crossing": "bridge", "via": [[53.552572, -6.788213], [53.552915, -6.788801], [53.553265, -6.789270], [53.553897, -6.789939], [53.554143, -6.790133], [53.554748, -6.790359], [53.555483, -6.790807], [53.555808, -6.790966], [53.556035, -6.791022], [53.556633, -6.791060], [53.557192, -6.791162]]},
    {"name": "The Trim road", "class": "local", "via": [[53.557192, -6.791162], "Baile Átha Buí"]},
+   {"name": "The postern path", "class": "trail", "traced": true, "via": [[53.554506, -6.789899], [53.554479, -6.78998], [53.554443, -6.790245]]},
    {"name": "The Boyne road", "class": "local", "via": ["Droichead Átha", "Baile Shláine", "An Uaimh", [53.554836, -6.788129], [53.5547, -6.78853]]},
    {"name": "The Kells road", "class": "local", "via": ["An Uaimh", "Ceanannas Mór", "An Cabhán"]},
    {"name": "The coast road north", "class": "local", "via": ["Baile Átha Cliath", "Sord", "Droichead Átha", "Dún Dealgan", "Cairlinn"]},
