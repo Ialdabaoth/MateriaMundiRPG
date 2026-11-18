@@ -2,6 +2,10 @@
 
 This module's version is its own. It does not follow the E9 Atlas (`modules/tools/ATLAS_VERSION`) or the E9 Companion; a change to the tools or apps alone never bumps it. Bump it only for changes to this module's content (text, sites, creatures, encounters, maps), using the rules in [WORKFLOWS.md](../WORKFLOWS.md#versioning).
 
+## 0.4.16 (2026-11-18)
+
+- The Trim road crosses the Bóinn on a bridge at Heph's toll-bridge point (53.552750, -6.786110, today's R154), then runs north to meet the Boyne road and on to Baile Átha Buí. It no longer fords the river west of the keep, so the gate crossing serves only the keep. The bridge stretch is a traced course, so module.json now lists the Trim road in three pieces.
+
 ## 0.4.15 (2026-11-15)
 
 - The "Arriving in the Pale" start moves to hex `world:6847:8352`, the drawbridge hex between the keep and the river (Heph). 0.4.14's `world:6847:8553` was on grass south of the road.
