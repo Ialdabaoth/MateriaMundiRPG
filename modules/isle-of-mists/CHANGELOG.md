@@ -4,7 +4,7 @@ This module's version is its own. It does not follow the E9 Atlas (`modules/tool
 
 ## 0.4.16 (2026-11-18)
 
-- The Trim road crosses the Bóinn on a bridge at Heph's toll-bridge point (53.552750, -6.786110, today's R154), then runs north to meet the Boyne road and on to Baile Átha Buí. It no longer fords the river west of the keep, so the gate crossing serves only the keep. The bridge stretch is a traced course, so module.json now lists the Trim road in three pieces.
+- The Trim road crosses the Bóinn on a toll bridge at 53.553609, -6.787245, 400 ft upriver of the real one (today's R154 at 53.552750, -6.786110), so it sits about 320 ft from the keep's south-east tower, inside bow range (Heph). The road then runs north past the Boyne road and on to Baile Átha Buí. It no longer fords the river west of the keep, so the gate crossing serves only the keep. The bridge stretch is a traced course, so module.json now lists the Trim road in three pieces.
 
 ## 0.4.15 (2026-11-15)
 
