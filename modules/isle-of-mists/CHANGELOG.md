@@ -2,6 +2,11 @@
 
 This module's version is its own. It does not follow the E9 Atlas (`modules/tools/ATLAS_VERSION`) or the E9 Companion; a change to the tools or apps alone never bumps it. Bump it only for changes to this module's content (text, sites, creatures, encounters, maps), using the rules in [WORKFLOWS.md](../WORKFLOWS.md#versioning).
 
+## 0.4.16 (2026-11-18)
+
+- The Trim road crosses the Bóinn on the original medieval bridge at 53.556035, -6.791022, off the keep's north-west corner (Heph). On the keep's bank the road sweeps in one smooth curve close under the west wall and past the north-west tower to the bridge (Heph), then runs north to Baile Átha Buí. It no longer fords the river west of the keep, so the gate crossing serves only the keep. The bridge stretch is a traced course, so module.json now lists the Trim road in three pieces.
+- The Pale Keep's west watchtower holds a postern, a footgate built into the existing tower (Heph). It is labelled as an area on the battle map (`postern`) and has its own short trail in `atlas.roads`, "The postern path", out to the Trim road. The map pictures are unchanged.
+
 ## 0.4.15 (2026-11-15)
 
 - The "Arriving in the Pale" start moves to hex `world:6847:8352`, the drawbridge hex between the keep and the river (Heph). 0.4.14's `world:6847:8553` was on grass south of the road.

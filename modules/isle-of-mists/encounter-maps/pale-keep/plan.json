@@ -1689,6 +1689,15 @@
    ],
    "title": "Watchtowers at the ends of the inner wall (ballista on the east one)"
   },
+  "postern": {
+   "squares": [
+    1,
+    32,
+    6,
+    5
+   ],
+   "title": "Postern (footgate) in the west watchtower, out to the Trim road"
+  },
   "inner-bailey": {
    "squares": [
     7,
